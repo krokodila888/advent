@@ -1,0 +1,1956 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  --background: #ffffff;
+  --foreground: oklch(0.145 0 0);
+  --card: #ffffff;
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: #030213;
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.95 0.0058 264.53);
+  --secondary-foreground: #030213;
+  --muted: #ececf0;
+  --muted-foreground: #717182;
+  --accent: #e9ebef;
+  --accent-foreground: #030213;
+  --destructive: #d4183d;
+  --destructive-foreground: #ffffff;
+  --border: rgba(0, 0, 0, 0.1);
+  --input: transparent;
+  --input-background: #f3f3f5;
+  --switch-background: #cbced4;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: #030213;
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.145 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.439 0 0);
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(
+    --sidebar-primary-foreground
+  );
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(
+    --sidebar-accent-foreground
+  );
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/**
+ * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
+ */
+@layer base {
+  :where(
+    :not(:has([class*=" text-"]), :not(:has([class^="text-"])))
+  ) {
+    h1 {
+      font-size: var(--text-2xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h2 {
+      font-size: var(--text-xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h3 {
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h4 {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    label {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    button {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    input {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+  }
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+/* ========================================
+   ADVENT CALENDAR CUSTOM STYLES
+   ======================================== */
+
+/* App Container */
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #0f1729 0%,
+    #1a2744 50%,
+    #0d1421 100%
+  );
+  overflow-x: hidden;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 10;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* ========================================
+   BACKGROUND SCENE
+   ======================================== */
+
+.background-scene {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.background-scene * {
+  pointer-events: auto;
+}
+
+.layer {
+  position: absolute;
+  width: 100%;
+}
+
+.layer-sky {
+  height: 100%;
+  background: radial-gradient(
+    ellipse at top,
+    #1e3a5f 0%,
+    #0a1628 100%
+  );
+}
+
+.moon {
+  position: absolute;
+  top: 10%;
+  right: 15%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 30% 30%,
+    #ffeaa7,
+    #dfe6e9
+  );
+  box-shadow: 0 0 60px rgba(255, 234, 167, 0.6);
+}
+
+.stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 3s infinite;
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.layer-clouds {
+  top: 10%;
+  height: 30vh;
+  overflow: hidden; /* clip clouds so they don't expand viewport */
+}
+
+.cloud {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 100px;
+  will-change: transform, opacity;
+}
+
+.cloud::before,
+.cloud::after {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 100px;
+}
+
+.cloud-1 {
+  width: 150px;
+  height: 50px;
+  left: 10%;
+  top: 20px;
+  animation: float 20s infinite ease-in-out;
+}
+
+.cloud-1::before {
+  width: 60px;
+  height: 60px;
+  top: -30px;
+  left: 20px;
+}
+
+.cloud-1::after {
+  width: 80px;
+  height: 40px;
+  top: -15px;
+  right: 20px;
+}
+
+.cloud-2 {
+  width: 120px;
+  height: 40px;
+  right: 20%;
+  top: 60px;
+  animation: float 20s infinite ease-in-out;
+  animation-delay: -5s;
+}
+
+.cloud-2::before {
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  left: 15px;
+}
+
+.cloud-2::after {
+  width: 60px;
+  height: 35px;
+  top: -10px;
+  right: 15px;
+}
+
+.cloud-3 {
+  width: 100px;
+  height: 35px;
+  left: 50%;
+  top: 40px;
+  animation: float 20s infinite ease-in-out;
+  animation-delay: -10s;
+}
+
+.cloud-3::before {
+  width: 40px;
+  height: 40px;
+  top: -20px;
+  left: 10px;
+}
+
+.cloud-3::after {
+  width: 50px;
+  height: 30px;
+  top: -8px;
+  right: 10px;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-20px) translateX(30px);
+  }
+}
+
+/* Slow horizontal drift for clouds. Elements animate using this keyframe.
+   Use overflow:hidden on the cloud layer so transforms don't create scrollbars. */
+@keyframes cloud-drift {
+  0% {
+    transform: translateX(-30%);
+  }
+  100% {
+    transform: translateX(130%);
+  }
+}
+
+.layer-mountains {
+  bottom: 0;
+  height: 50%;
+}
+
+.mountain-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.layer-trees {
+  bottom: 0;
+  height: 40%;
+}
+
+.trees-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.layer-deer {
+  bottom: 0;
+  height: 100%;
+}
+
+.deer {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  opacity: 0.7;
+}
+
+.deer-1 {
+  animation: deerWalk 30s infinite linear;
+}
+
+.deer-2 {
+  animation: deerWalk 40s infinite linear reverse;
+}
+
+@keyframes deerWalk {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}
+
+.layer-fireplace {
+  bottom: 50px;
+  left: 50px;
+  width: 120px;
+  height: 150px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 0 10px rgba(255, 107, 53, 0.3));
+}
+
+.layer-fireplace:hover {
+  transform: scale(1.05);
+}
+
+.fireplace-svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* ========================================
+   SNOWFALL
+   ======================================== */
+
+.snowfall {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.snowflake {
+  position: absolute;
+  top: -10px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(200, 230, 255, 0.4) 100%);
+  border-radius: 50%;
+  user-select: none;
+  animation: fall linear infinite;
+  box-shadow: 
+    0 0 8px rgba(255, 255, 255, 0.8),
+    0 0 15px rgba(200, 230, 255, 0.6),
+    0 0 20px rgba(200, 230, 255, 0.4);
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) translateX(20px);
+    opacity: 0;
+  }
+}
+
+/* ========================================
+   AUDIO CONTROLS
+   ======================================== */
+
+.audio-controls {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  gap: 12px;
+}
+
+.audio-button {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.audio-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.audio-button.audio-active {
+  background: rgba(255, 215, 0, 0.3);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+.audio-icon-secondary {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 2px;
+}
+
+/* ========================================
+   USER IDENTIFICATION
+   ======================================== */
+
+.user-selection,
+.user-greeting {
+  text-align: center;
+  margin-bottom: 3rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.selection-prompt {
+  color: #e8dcc4;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.user-options {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.user-button {
+  padding: 1rem 2.5rem;
+  font-size: 1.25rem;
+  background: linear-gradient(135deg, #d4a574 0%, #c99456 100%);
+  color: #2c1810;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(212, 165, 116, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.user-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.user-button:hover::before {
+  left: 100%;
+}
+
+.user-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 165, 116, 0.6);
+}
+
+.greeting-text {
+  color: #e8dcc4;
+  font-size: 2rem;
+}
+
+.user-name {
+  color: #ffd700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+/* ========================================
+   CALENDAR GRID
+   ======================================== */
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+}
+
+/* ========================================
+   CALENDAR WINDOWS
+   ======================================== */
+
+.calendar-window {
+  position: relative;
+  background: linear-gradient(135deg, #625c00 0%, #875c1a 100%);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  border: 2px solid #d4c4a8;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.calendar-window::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.03) 0px,
+      transparent 1px,
+      transparent 2px,
+      rgba(0, 0, 0, 0.03) 3px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.03) 0px,
+      transparent 1px,
+      transparent 2px,
+      rgba(0, 0, 0, 0.03) 3px
+    );
+  pointer-events: none;
+}
+
+.window-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.window-number {
+  font-size: 2rem;
+  color: #4a3728;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Round wrapper: enforce circular clipping on wrapper and inner frames */
+.calendar-window.window-round,
+.calendar-window.window-round .window-element,
+.calendar-window.window-round .door-element,
+.calendar-window.window-round .window-frame,
+.calendar-window.window-round .door-panel {
+  border-radius: 50%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Rounded window: number badge styling and absolute centering */
+.calendar-window.window-round .window-number {
+  display: inline-grid;
+  place-items: center;
+  height: 36px;
+  width: auto;
+  aspect-ratio: 1 / 1;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: #3b2a1e;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+/* Slight vertical offsets for round wrappers by size to create visual variety */
+.calendar-window:has(.wood-pine) { margin-top: 16px; }
+.calendar-window:has(.window-glass) { margin-top: 22px; }
+.calendar-window:has(.wood-aged) { margin-top: 0; }
+.calendar-window:has(.window-small) { margin-top: -8px; }
+
+.owl-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: #8b6f47;
+  opacity: 0.7;
+}
+
+/* Window sizes */
+.window-small {
+  min-height: 120px;
+}
+
+.window-medium {
+  min-height: 140px;
+}
+
+.window-large {
+  min-height: 160px;
+}
+
+/* Window shapes */
+.window-rect {
+  aspect-ratio: 3/2;
+}
+
+.window-square {
+  aspect-ratio: 1;
+}
+
+.window-tall {
+  aspect-ratio: 2/3;
+}
+
+/* Window states */
+.window-inactive {
+  opacity: 0.5;
+  cursor: not-allowed;
+  filter: grayscale(0.5);
+}
+
+.window-active:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow:
+    0 8px 16px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.window-glow-subtle {
+  animation: glowSubtle 2s ease-in-out infinite;
+}
+
+.window-glow-intense {
+  animation: glowIntense 1.5s ease-in-out infinite;
+}
+
+@keyframes glowSubtle {
+  0%,
+  100% {
+    box-shadow:
+      0 4px 6px rgba(0, 0, 0, 0.3),
+      0 0 15px rgba(212, 165, 116, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    box-shadow:
+      0 4px 6px rgba(0, 0, 0, 0.3),
+      0 0 25px rgba(212, 165, 116, 0.6),
+      inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  }
+}
+
+@keyframes glowIntense {
+  0%,
+  100% {
+    box-shadow:
+      0 4px 6px rgba(0, 0, 0, 0.3),
+      0 0 25px rgba(255, 215, 0, 0.6),
+      0 0 40px rgba(255, 215, 0, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    border-color: #ffd700;
+  }
+  50% {
+    box-shadow:
+      0 4px 6px rgba(0, 0, 0, 0.3),
+      0 0 35px rgba(255, 215, 0, 0.8),
+      0 0 60px rgba(255, 215, 0, 0.6),
+      inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    border-color: #ffed4e;
+  }
+}
+
+.window-opened {
+  opacity: 0.7;
+  filter: saturate(0.7);
+}
+
+/* ========================================
+   MODAL
+   ======================================== */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  max-height: 80vh;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-paper {
+  position: relative;
+  background: linear-gradient(135deg, #f9f1e7 0%, #ede1d1 100%);
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  border: 3px solid #d4c4a8;
+
+  /* Torn paper effect */
+  clip-path: polygon(
+    0% 2%,
+    2% 0%,
+    4% 2%,
+    6% 0%,
+    8% 1%,
+    10% 0%,
+    12% 2%,
+    14% 0%,
+    16% 1%,
+    18% 0%,
+    20% 2%,
+    22% 0%,
+    24% 1%,
+    26% 0%,
+    28% 2%,
+    30% 0%,
+    32% 1%,
+    34% 0%,
+    36% 2%,
+    38% 0%,
+    40% 1%,
+    42% 0%,
+    44% 2%,
+    46% 0%,
+    48% 1%,
+    50% 0%,
+    52% 2%,
+    54% 0%,
+    56% 1%,
+    58% 0%,
+    60% 2%,
+    62% 0%,
+    64% 1%,
+    66% 0%,
+    68% 2%,
+    70% 0%,
+    72% 1%,
+    74% 0%,
+    76% 2%,
+    78% 0%,
+    80% 1%,
+    82% 0%,
+    84% 2%,
+    86% 0%,
+    88% 1%,
+    90% 0%,
+    92% 2%,
+    94% 0%,
+    96% 1%,
+    98% 0%,
+    100% 2%,
+    100% 100%,
+    98% 100%,
+    96% 99%,
+    94% 100%,
+    92% 98%,
+    90% 100%,
+    88% 99%,
+    86% 100%,
+    84% 98%,
+    82% 100%,
+    80% 99%,
+    78% 100%,
+    76% 98%,
+    74% 100%,
+    72% 99%,
+    70% 100%,
+    68% 98%,
+    66% 100%,
+    64% 99%,
+    62% 100%,
+    60% 98%,
+    58% 100%,
+    56% 99%,
+    54% 100%,
+    52% 98%,
+    50% 100%,
+    48% 99%,
+    46% 100%,
+    44% 98%,
+    42% 100%,
+    40% 99%,
+    38% 100%,
+    36% 98%,
+    34% 100%,
+    32% 99%,
+    30% 100%,
+    28% 98%,
+    26% 100%,
+    24% 99%,
+    22% 100%,
+    20% 98%,
+    18% 100%,
+    16% 99%,
+    14% 100%,
+    12% 98%,
+    10% 100%,
+    8% 99%,
+    6% 100%,
+    4% 98%,
+    2% 100%,
+    0% 98%
+  );
+}
+
+.modal-paper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent 0px,
+    transparent 24px,
+    rgba(139, 111, 71, 0.1) 24px,
+    rgba(139, 111, 71, 0.1) 25px
+  );
+  pointer-events: none;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: rgba(139, 111, 71, 0.2);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4a3728;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.modal-close:hover {
+  background: rgba(139, 111, 71, 0.3);
+  transform: scale(1.1);
+}
+
+.modal-title {
+  color: #4a3728;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.75rem;
+}
+
+.modal-message {
+  color: #5a4a3a;
+  line-height: 1.8;
+  max-height: 50vh;
+  overflow-y: auto;
+  padding-right: 1rem;
+}
+
+.modal-message::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-message::-webkit-scrollbar-track {
+  background: rgba(139, 111, 71, 0.1);
+  border-radius: 4px;
+}
+
+.modal-message::-webkit-scrollbar-thumb {
+  background: rgba(139, 111, 71, 0.3);
+  border-radius: 4px;
+}
+
+.modal-message::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 111, 71, 0.5);
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 768px) {
+  .calendar-grid {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(100px, 1fr)
+    );
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .content-wrapper {
+    padding: 1rem;
+  }
+
+  .user-options {
+    flex-direction: column;
+  }
+
+  .modal-paper {
+    padding: 2rem;
+  }
+
+  .audio-controls {
+    top: 10px;
+    right: 10px;
+    gap: 8px;
+  }
+
+  .audio-button {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* ========================================
+   DETAILED DOORS & WINDOWS
+   ======================================== */
+
+/* Golden number styling */
+.window-number.gold {
+  color: #d4a65d;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  text-shadow: 
+    0 1px 2px rgba(0, 0, 0, 0.3),
+    0 0 8px rgba(212, 166, 93, 0.6);
+  font-weight: bold;
+  z-index: 10;
+}
+
+/* ========================================
+   DOOR ELEMENTS
+   ======================================== */
+
+.door-element {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 140px;
+}
+
+.door-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 6px;
+  background: linear-gradient(135deg, #8b7355 0%, #6b563f 100%);
+  box-shadow: 
+    inset 0 0 8px rgba(0, 0, 0, 0.3),
+    0 2px 4px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+.door-frame.frame-carved {
+  background: 
+    repeating-linear-gradient(
+      45deg,
+      #8b7355 0px,
+      #8b7355 2px,
+      #7a6449 2px,
+      #7a6449 4px
+    );
+}
+
+.door-frame.frame-molding {
+  border: 2px solid #5a4a3a;
+  box-shadow: 
+    inset 0 0 0 1px #a89070,
+    inset 0 0 8px rgba(0, 0, 0, 0.3),
+    0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.door-frame.frame-simple {
+  background: linear-gradient(135deg, #a08060 0%, #8b7355 100%);
+}
+
+.door-panel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Wood textures */
+.wood-oak {
+  background: linear-gradient(90deg, transparent 0%, rgba(101, 67, 33, 0.1) 50%, transparent 100%), linear-gradient(135deg, #5e4639 0%, #8b892c 100%);
+  background-size: 20px 100%, 100% 100%;
+}
+
+.wood-pine {
+  background: repeating-linear-gradient(90deg, #5e3009 0px, #5b360f 15px, #351f06 15px, #492904 16px, #633709 16px, #6b3906 30px);
+}
+
+.wood-aged {
+      background: linear-gradient(180deg, #5d472c 0%, #583821 50%, #583120 100%), repeating-linear-gradient(0deg, transparent 0px, rgba(0, 0, 0, 0.1) 10px, transparent 11px, transparent 25px);
+}
+
+/* Door types */
+.door-rect .door-panel {
+  border-radius: 4px;
+}
+
+.door-arched .door-panel {
+  border-radius: 4px 4px 0 0;
+  clip-path: polygon(
+    0 20%, 5% 10%, 15% 5%, 30% 2%, 50% 0%, 70% 2%, 85% 5%, 95% 10%, 100% 20%,
+    100% 100%, 0 100%
+  );
+}
+
+.door-double .door-panel {
+  border-radius: 4px;
+}
+
+.door-split {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, #5a4a3a, #3a2a1a, #5a4a3a);
+  transform: translateX(-50%);
+  box-shadow: 
+    -1px 0 0 rgba(255, 255, 255, 0.1),
+    1px 0 0 rgba(0, 0, 0, 0.3);
+}
+
+.door-decorative-panels {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  right: 15%;
+  bottom: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.panel-top,
+.panel-bottom {
+  flex: 1;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.05);
+  box-shadow: 
+    inset 0 1px 2px rgba(0, 0, 0, 0.2),
+    0 1px 0 rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+
+/* Door hardware */
+.door-hardware {
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.door-handle {
+  color: #d4a65d;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.4));
+}
+
+.door-handle.brass-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #f4d766 0%, #d4a65d 50%, #b8935c 100%);
+  box-shadow: 
+    0 2px 3px rgba(0, 0, 0, 0.4),
+    inset 0 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.door-handle.ring {
+  color: #d4a65d;
+}
+
+.door-handle.star {
+  color: #f4d766;
+}
+
+.door-handle.pinecone {
+  width: 10px;
+  height: 14px;
+  background: 
+    radial-gradient(ellipse at center, #8b7355 0%, #6b5642 100%);
+  border-radius: 50% 50% 40% 40%;
+  position: relative;
+}
+
+.door-handle.pinecone::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background: 
+    repeating-linear-gradient(
+      45deg,
+      #5a4a3a 0px,
+      #5a4a3a 2px,
+      transparent 2px,
+      transparent 4px
+    );
+  border-radius: inherit;
+}
+
+.door-handle.fantasy {
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(135deg, #f4d766 0%, #d4a65d 100%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  box-shadow: 
+    0 2px 3px rgba(0, 0, 0, 0.4),
+    inset 0 1px 1px rgba(255, 255, 255, 0.3);
+}
+
+.door-keyhole {
+  color: #2a1a0a;
+  opacity: 0.6;
+}
+
+/* ========================================
+   WINDOW ELEMENTS
+   ======================================== */
+
+.window-element {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+}
+
+.window-frame {
+  position: relative;
+  flex: 1;
+  background: linear-gradient(135deg, #4b2e18 0%, #6b563f 100%);
+  padding: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), inset 0 0 6px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+.window-glass {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Window shapes */
+.window-shape-square .window-frame {
+  border-radius: 4px;
+}
+
+.window-shape-square .window-glass {
+  border-radius: 2px;
+}
+
+.window-shape-circular .window-frame {
+  border-radius: 50%;
+}
+
+.window-shape-circular .window-glass {
+  border-radius: 50%;
+}
+
+.window-shape-arched .window-frame {
+  border-radius: 50% 50% 0 0;
+}
+
+.window-shape-arched .window-glass {
+  border-radius: 50% 50% 0 0;
+}
+
+.window-shape-diamond .window-frame {
+  transform: rotate(45deg);
+  margin: 10%;
+}
+
+.window-shape-diamond .window-glass {
+  border-radius: 4px;
+}
+
+.window-shape-diamond .window-number {
+  transform: rotate(-45deg);
+}
+
+.window-shape-hexagonal .window-frame {
+  clip-path: polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%);
+}
+
+/* Glass types */
+.glass-frosted {
+  background: 
+    radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.9) 0%, rgb(255 254 189 / 80%) 100%);
+    backdrop-filter: blur(2px);
+  
+}
+
+.glass-stained {
+  background: 
+    radial-gradient(circle at 20% 20%, rgba(180, 200, 255, 0.6) 0%, transparent 30%),
+    radial-gradient(circle at 80% 60%, rgba(255, 200, 150, 0.5) 0%, transparent 25%),
+    radial-gradient(circle at 50% 80%, rgba(200, 180, 255, 0.4) 0%, transparent 20%),
+    linear-gradient(135deg, rgba(255, 250, 240, 0.8) 0%, rgba(240, 245, 255, 0.8) 100%);
+}
+
+.glass-cracked {
+  background: 
+    linear-gradient(42deg, transparent 48%, rgba(200, 200, 220, 0.8) 49%, rgba(200, 200, 220, 0.8) 51%, transparent 52%),
+    linear-gradient(118deg, transparent 48%, rgba(200, 200, 220, 0.6) 49%, rgba(200, 200, 220, 0.6) 51%, transparent 52%),
+    linear-gradient(78deg, transparent 48%, rgba(200, 200, 220, 0.5) 49%, rgba(200, 200, 220, 0.5) 51%, transparent 52%),
+    linear-gradient(135deg, rgba(240, 245, 255, 0.9) 0%, rgba(230, 240, 250, 0.85) 100%);
+}
+
+/* Window panes */
+.window-panes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  gap: 3px;
+  padding: 3px;
+}
+
+.window-pane {
+  background: rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(107, 86, 63, 0.8);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Window sill */
+.window-sill {
+  height: 20px;
+  background: linear-gradient(180deg, #5e320d 0%, #664f36 100%);
+  margin-top: 2px;
+  box-shadow: 
+    0 2px 3px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-radius: 0 0 4px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Window plant */
+.window-plant {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plant-pot {
+  width: 10px;
+  height: 6px;
+  background: linear-gradient(135deg, #b8825c 0%, #8b5a3c 100%);
+  border-radius: 0 0 2px 2px;
+  margin-top: auto;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.plant-leaves {
+  position: absolute;
+  top: 0;
+  display: flex;
+  gap: 2px;
+}
+
+.leaf {
+  width: 4px;
+  height: 8px;
+  background: linear-gradient(135deg, #6b8e23 0%, #556b2f 100%);
+  border-radius: 50% 50% 50% 0%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.leaf:nth-child(1) {
+  transform: rotate(-25deg);
+}
+
+.leaf:nth-child(2) {
+  transform: rotate(0deg) translateY(-2px);
+}
+
+.leaf:nth-child(3) {
+  transform: rotate(25deg);
+}
+
+/* Owl icon positioning for windows */
+.window-glass .owl-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #5a4a3a;
+  opacity: 0.4;
+  z-index: 5;
+}
+
+/* ========================================
+   CHRISTMAS DECORATIONS
+   ======================================== */
+
+/* DOOR DECORATIONS */
+
+/* Christmas Wreath */
+.christmas-wreath {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15;
+  width: 30px;
+  height: 30px;
+}
+
+.wreath-circle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 4px solid #2d5016;
+  background: 
+    radial-gradient(circle at 20% 30%, #3a6b1f 0%, transparent 60%),
+    radial-gradient(circle at 80% 40%, #4a7b2f 0%, transparent 50%),
+    radial-gradient(circle at 50% 70%, #2d5016 0%, transparent 55%),
+    #3f6b24;
+  box-shadow: 
+    inset 0 0 4px rgba(0, 0, 0, 0.3),
+    0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.wreath-bow {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 6px;
+  background: linear-gradient(135deg, #c41e3a 0%, #a01828 100%);
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.wreath-berries {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 2px;
+}
+
+.wreath-berries .berry {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ff4444, #cc0000);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* Christmas Garland */
+.christmas-garland {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  height: 20px;
+  z-index: 15;
+}
+
+.garland-swag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 15px;
+  background: 
+    radial-gradient(ellipse at 25% 50%, #3a6b1f 0%, transparent 70%),
+    radial-gradient(ellipse at 50% 50%, #4a7b2f 0%, transparent 70%),
+    radial-gradient(ellipse at 75% 50%, #3a6b1f 0%, transparent 70%),
+    linear-gradient(180deg, #2d5016 0%, #3f6b24 100%);
+  border-radius: 0 0 50% 50%;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.garland-bow {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 7px;
+  background: linear-gradient(135deg, #c41e3a 0%, #a01828 100%);
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Large Bow (for doors) */
+.christmas-bow-large {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15;
+  width: 25px;
+  height: 20px;
+}
+
+.christmas-bow-large .bow-left,
+.christmas-bow-large .bow-right {
+  position: absolute;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(135deg, #c41e3a 0%, #a01828 100%);
+  border-radius: 50% 50% 50% 0%;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.christmas-bow-large .bow-left {
+  left: 0;
+  transform: rotate(-45deg);
+}
+
+.christmas-bow-large .bow-right {
+  right: 0;
+  transform: rotate(45deg);
+}
+
+.christmas-bow-large .bow-center {
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(135deg, #d4455a 0%, #c41e3a 100%);
+  border-radius: 2px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.christmas-bow-large .bow-ribbon-left,
+.christmas-bow-large .bow-ribbon-right {
+  position: absolute;
+  top: 12px;
+  width: 4px;
+  height: 10px;
+  background: linear-gradient(180deg, #c41e3a 0%, #8b1520 100%);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.christmas-bow-large .bow-ribbon-left {
+  left: 6px;
+  transform: rotate(-15deg);
+}
+
+.christmas-bow-large .bow-ribbon-right {
+  right: 6px;
+  transform: rotate(15deg);
+}
+
+/* Holly (for doors) */
+.christmas-holly {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15;
+  width: 30px;
+  height: 20px;
+}
+
+.christmas-holly .holly-leaf {
+  position: absolute;
+  width: 12px;
+  height: 8px;
+  background: linear-gradient(135deg, #2d5016 0%, #4a7b2f 100%);
+  clip-path: polygon(
+    50% 0%, 60% 20%, 80% 15%, 70% 40%, 100% 60%, 75% 65%, 
+    80% 90%, 50% 75%, 20% 90%, 25% 65%, 0% 60%, 30% 40%, 
+    20% 15%, 40% 20%
+  );
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.christmas-holly .holly-leaf.left {
+  left: 0;
+  top: 5px;
+  transform: rotate(-20deg);
+}
+
+.christmas-holly .holly-leaf.right {
+  right: 0;
+  top: 5px;
+  transform: rotate(20deg);
+}
+
+.christmas-holly .holly-berry {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ff4444, #cc0000);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  top: 10px;
+  left: 50%;
+}
+
+.christmas-holly .holly-berry:first-of-type {
+  transform: translateX(-5px);
+}
+
+.christmas-holly .holly-berry:last-of-type {
+  transform: translateX(1px);
+}
+
+/* WINDOW DECORATIONS */
+
+/* Christmas Candle */
+.christmas-candle {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15;
+  width: 12px;
+  height: 25px;
+}
+
+.candle-flame {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 12px;
+  background: 
+    radial-gradient(ellipse at 50% 60%, #ffeb3b 0%, #ff9800 40%, transparent 70%);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  animation: flicker 2s infinite ease-in-out;
+  filter: drop-shadow(0 0 4px rgba(255, 235, 59, 0.8));
+}
+
+@keyframes flicker {
+  0%, 100% {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-50%) scale(0.95, 1.05);
+    opacity: 0.9;
+  }
+}
+
+.candle-body {
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 18px;
+  background: linear-gradient(180deg, #fffdf7 0%, #f4e4c1 100%);
+  border-radius: 2px 2px 0 0;
+  box-shadow: 
+    inset 0 0 2px rgba(0, 0, 0, 0.1),
+    0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.candle-base {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 5px;
+  background: linear-gradient(180deg, #d4a65d 0%, #b8935c 100%);
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Christmas Lights */
+.christmas-lights {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  right: 5%;
+  height: 15px;
+  z-index: 15;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.light-bulb {
+  width: 6px;
+  height: 8px;
+  border-radius: 40% 40% 50% 50%;
+  position: relative;
+  animation: twinkleLights 2s infinite ease-in-out;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.light-bulb::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 2px;
+  background: #2a2a2a;
+  border-radius: 2px 2px 0 0;
+}
+
+.light-bulb.red {
+  background: radial-gradient(circle at 30% 30%, #ff6b6b, #c41e3a);
+  animation-delay: 0s;
+}
+
+.light-bulb.gold {
+  background: radial-gradient(circle at 30% 30%, #ffd700, #d4a65d);
+  animation-delay: 0.5s;
+}
+
+.light-bulb.green {
+  background: radial-gradient(circle at 30% 30%, #4ecdc4, #2d8b7e);
+  animation-delay: 1s;
+}
+
+.light-bulb.blue {
+  background: radial-gradient(circle at 30% 30%, #6ba3ff, #4169e1);
+  animation-delay: 1.5s;
+}
+
+@keyframes twinkleLights {
+  0%, 100% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+  50% {
+    opacity: 0.6;
+    filter: brightness(1.3);
+  }
+}
+
+/* Small Bow (for windows) */
+.christmas-bow-small {
+  position: absolute;
+  top: 5%;
+  right: 8%;
+  z-index: 15;
+  width: 18px;
+  height: 14px;
+}
+
+.christmas-bow-small .bow-left,
+.christmas-bow-small .bow-right {
+  position: absolute;
+  top: 0;
+  width: 9px;
+  height: 9px;
+  background: linear-gradient(135deg, #c41e3a 0%, #a01828 100%);
+  border-radius: 50% 50% 50% 0%;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.christmas-bow-small .bow-left {
+  left: 0;
+  transform: rotate(-45deg);
+}
+
+.christmas-bow-small .bow-right {
+  right: 0;
+  transform: rotate(45deg);
+}
+
+.christmas-bow-small .bow-center {
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  background: linear-gradient(135deg, #d4455a 0%, #c41e3a 100%);
+  border-radius: 2px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Small Holly (for windows) */
+.christmas-holly-small {
+  position: absolute;
+  top: 5%;
+  right: 8%;
+  z-index: 15;
+  width: 20px;
+  height: 14px;
+}
+
+.christmas-holly-small .holly-leaf {
+  position: absolute;
+  width: 10px;
+  height: 6px;
+  background: linear-gradient(135deg, #2d5016 0%, #4a7b2f 100%);
+  clip-path: polygon(
+    50% 0%, 60% 20%, 80% 15%, 70% 40%, 100% 60%, 75% 65%, 
+    80% 90%, 50% 75%, 20% 90%, 25% 65%, 0% 60%, 30% 40%, 
+    20% 15%, 40% 20%
+  );
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  top: 3px;
+}
+
+.christmas-holly-small .holly-leaf:first-of-type {
+  left: 0;
+  transform: rotate(-15deg);
+}
+
+.christmas-holly-small .holly-leaf:nth-of-type(2) {
+  right: 0;
+  transform: rotate(15deg);
+}
+
+.christmas-holly-small .holly-berry {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ff4444, #cc0000);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
