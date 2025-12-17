@@ -1,0 +1,55 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ master ] # Убедитесь, что ветка называется master
+
+# Разрешаем запись в репозиторий и создание страниц
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 👇 ДОБАВЬТЕ ЭТИ СТРОКИ (конфигурация для всего workflow):
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    # 👇 ДОБАВЬТЕ ЭТОТ БЛОК environment:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }} # Опционально, но полезно для логирования
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Загружаем код репозитория
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 2. Устанавливаем Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Укажите вашу версию Node
+
+      # 3. Устанавливаем зависимости и собираем проект
+      - name: Install and Build
+        run: |
+          npm ci
+          npm run build # Стандартная команда для Vite
+
+      # 4. Загружаем артефакт сборки для деплоя
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Укажите путь к папке со сборкой (у вас это build)
+          path: './build'
+
+      # 5. Деплоим на GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment # 👈 Этот ID нужен для получения URL (см. выше в environment)
+        uses: actions/deploy-pages@v4
