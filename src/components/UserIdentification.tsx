@@ -32,7 +32,7 @@ export function UserIdentification({ userName, onUserSelect }: UserIdentificatio
     return (
       <div className="user-greeting">
         <p className="greeting-text">
-          {greeting}, <span className="user-name">{userName === 'Tenya' ? 'Таня' : userName === 'Zebra' ? 'Зёбра' : 'неведомый гость'}</span>!
+          {greeting}, <span className="user-name">{userName === 'Tanya' ? 'Таня' : userName === 'Zebra' ? 'Зёбра' : 'неведомый гость'}</span>!
         </p>
       </div>
     );
