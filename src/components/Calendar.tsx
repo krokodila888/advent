@@ -67,7 +67,7 @@ export function Calendar({ currentDate, userName }: CalendarProps) {
 
       {selectedWindow !== null && (() => {
         const data = windowMessages[selectedWindow - 1];
-        const message = userName === 'tanya' ? data.tanya_message : data.zebra_message;
+        const message = userName === 'Tanya' ? data.tanya_message : userName === 'Zebra' ? data.zebra_message : '<p>Тут ничего нет.</p> <p>Никаких секретных посланий</p>';
         return (
           <Modal
             windowNumber={selectedWindow}

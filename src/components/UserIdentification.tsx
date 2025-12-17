@@ -32,7 +32,7 @@ export function UserIdentification({ userName, onUserSelect }: UserIdentificatio
     return (
       <div className="user-greeting">
         <p className="greeting-text">
-          {greeting}, <span className="user-name">{userName}</span>!
+          {greeting}, <span className="user-name">{userName === 'Tenya' ? 'Таня' : userName === 'Zebra' ? 'Зёбра' : 'неведомый гость'}</span>!
         </p>
       </div>
     );
@@ -44,15 +44,15 @@ export function UserIdentification({ userName, onUserSelect }: UserIdentificatio
       <div className="user-options">
         <button 
           className="user-button"
-          onClick={() => onUserSelect('tanya')}
+          onClick={() => onUserSelect('Tanya')}
         >
-          Tanya
+          Таня
         </button>
         <button 
           className="user-button"
-          onClick={() => onUserSelect('zebra')}
+          onClick={() => onUserSelect('Zebra')}
         >
-          Zebra
+          Зёбра
         </button>
       </div>
     </div>
