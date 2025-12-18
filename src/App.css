@@ -873,7 +873,7 @@ html {
 
 .modal-content {
   position: relative;
-  max-width: 600px;
+  max-width: 900px;
   width: 100%;
   max-height: 80vh;
   animation: slideUp 0.3s ease;
