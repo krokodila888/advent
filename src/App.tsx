@@ -17,9 +17,9 @@ export default function App() {
     const savedName = localStorage.getItem(
       "adventCalendarUser",
     );
-    if (savedName) {
+    if (savedName === ('Tanya' || 'Zebra')) {
       setUserName(savedName);
-    }
+    } else localStorage.clear()
 
     // Fetch current date from API
     fetchCurrentDate();
