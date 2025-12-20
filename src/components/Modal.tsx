@@ -4,6 +4,8 @@ interface ModalProps {
   windowNumber: number;
   message: string;
   onClose: () => void;
+  onCancel?: () => void;
+  onConfitm?: () => void;
 }
 
 export function Modal({ windowNumber, message, onClose }: ModalProps) {

@@ -69,6 +69,20 @@ export default function App() {
       <AudioControls />
 
       <div className="content-wrapper">
+        {!userName && (
+          <div className="welcome-message">
+            <p>
+              Привет! 👋 Это Женя, и вот мой адвент. Я писала его с четырьмя нейронками на бегу 🏃‍♀️💨, 
+              и тексты порой всратые - но в этом есть свое очарование ✨. Вычитывала ли я их? 
+              Ну вот еще, вы вообще представляете мой график?! 😅 (это "да, но не очень внимательно" 👀). 
+              Он будет меняться по ходу дела, глючить и падать 🐛💥
+            </p>
+            <p>
+              В общем, с наступающим всяким! 🎄🎁🎉
+            </p>
+          </div>
+        )}
+
         <UserIdentification
           userName={userName}
           onUserSelect={handleUserSelect} 
