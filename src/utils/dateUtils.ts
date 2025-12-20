@@ -26,7 +26,7 @@ export function isWindowActive(
   const normalizedCurrentDate = new Date(currentDate);
   normalizedCurrentDate.setHours(0, 0, 0, 0);
 
-  return /*normalizedCurrentDate >= normalizedWindowDate*/ true;
+  return normalizedCurrentDate >= normalizedWindowDate;
 }
 
 /**

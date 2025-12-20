@@ -78,7 +78,15 @@ export function UserIdentification({ userName, onUserSelect }: UserIdentificatio
 
   return (
     <div className="user-selection">
-      <p className="selection-prompt">I am...</p>
+
+                      <p className="selection-prompt" style={{margin: '0'}}>
+                        Привет! Это Женя, и вот мой адвент. </p>
+                      <p className="selection-prompt" style={{margin: '0'}}> Я писала его с четырьмя нейронками на бегу, так что тексты порой всратые. </p>
+                      <p className="selection-prompt" style={{margin: '0'}}>Вычитывала ли я их? Ну вот еще, вы вообще представляете мой график?!</p>
+                      <p className="selection-prompt" style={{margin: '0'}}>(это "да, но не очень внимательно" 👀). </p>
+                      <p className="selection-prompt" style={{margin: '0'}}>Он будет меняться по ходу дела, глючить и падать.</p>
+                      
+      <p className="selection-prompt">Но кто здесь?</p>
       <div className="user-options">
         <button 
           className="user-button"
