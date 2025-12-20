@@ -84,7 +84,7 @@ export function AudioControls() {
         ref={musicRef}
         loop
         preload="auto"
-        src="/audio/Frost_Waltz.mp3"
+        src="audio/Frost_Waltz.mp3"
         onCanPlay={() => console.debug('[AudioControls] audio canplay')}
         onPlay={() => console.debug('[AudioControls] audio event: play')}
         onPause={() => console.debug('[AudioControls] audio event: pause')}

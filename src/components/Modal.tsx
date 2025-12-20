@@ -14,7 +14,8 @@ export function Modal({ windowNumber, message, onClose }: ModalProps) {
           <button className="modal-close" onClick={onClose}>
             <X size={24} />
           </button>
-          <h2 className="modal-title">Day {windowNumber}</h2>
+          {windowNumber !== -1 &&
+          <h2 className="modal-title">Day {windowNumber}</h2>}
           <div className="modal-message" dangerouslySetInnerHTML={{ __html: message }} />
         </div>
       </div>

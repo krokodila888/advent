@@ -46,3 +46,7 @@ export function getUserName(): string | null {
 export function setUserName(name: string): void {
   localStorage.setItem('adventCalendarUser', name);
 }
+
+export function clearUserName(): void {
+  localStorage.removeItem('adventCalendarUser');
+}
