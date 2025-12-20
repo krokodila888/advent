@@ -4,10 +4,11 @@
  * Window 25 = Jan 13, 2026
  */
 export function getWindowDate(windowNumber: number): Date {
-  const startDate = new Date("2025-12-20T00:00:00");
+  // Use UTC to avoid timezone issues
+  const startDate = new Date(Date.UTC(2025, 11, 20, 0, 0, 0, 0)); // December 20, 2025 00:00 UTC
   const dayOffset = windowNumber - 1;
   const windowDate = new Date(startDate);
-  windowDate.setDate(startDate.getDate() + dayOffset);
+  windowDate.setUTCDate(startDate.getUTCDate() + dayOffset);
   return windowDate;
 }
 
@@ -37,7 +38,11 @@ export function isExactDateMatch(
   windowDate: Date,
   currentDate: Date,
 ): boolean {
-  const normalizedWindowDate = new Date(windowDate);
+  // Convert window date from UTC to Moscow time for comparison
+  const moscowWindowDate = new Date(windowDate);
+  moscowWindowDate.setHours(moscowWindowDate.getHours() + 3);
+  
+  const normalizedWindowDate = new Date(moscowWindowDate);
   normalizedWindowDate.setHours(0, 0, 0, 0);
 
   const normalizedCurrentDate = new Date(currentDate);

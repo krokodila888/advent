@@ -26,6 +26,7 @@ export default function App() {
   const [currentDate, setCurrentDate] = useState<Date>(getInitialDate);
 
   const handleUserSelect = (name: string) => {
+    localStorage.clear();
     setUserName(name);
     localStorage.setItem("adventCalendarUser", name);
   };

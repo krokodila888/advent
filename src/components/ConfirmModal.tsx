@@ -30,7 +30,8 @@ export function ConfirmModal({ displayName, onConfirm, onCancel, onClose }: Conf
                   borderRadius: '8px', 
                   fontSize: '1em', 
                   cursor: 'pointer', 
-                  fontWeight: '500' 
+                  fontWeight: '500',
+                  maxWidth: '240px',
                 }}
               >
                 Я передумала. Я не {displayName}
@@ -45,7 +46,8 @@ export function ConfirmModal({ displayName, onConfirm, onCancel, onClose }: Conf
                   borderRadius: '8px', 
                   fontSize: '1em', 
                   cursor: 'pointer', 
-                  fontWeight: '500' 
+                  fontWeight: '500', 
+                  maxWidth: '240px',
                 }}
               >
                 Никакого!
