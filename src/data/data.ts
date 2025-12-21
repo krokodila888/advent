@@ -385,7 +385,8 @@ tanya_message: `
     <ol>
       <li>Завари Колумбия декаф</li>
       <li><strong>Размешай винтажной ложечкой</strong></li>
-      <li>Музыка: <a href="https://www.youtube.com/watch?v=Yop62wQH498" target="_blank">Carlos Vives — "La Tierra del Olvido"</a> (колумбийская классика!)</li>
+      <li>Музыка: колумбийская классика!</li>
+      <iframe width="100%" src="https://www.youtube.com/embed/6exx0sB_iOA?si=VZXrYhIW90t_6BNU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </ol>
   `
   },
