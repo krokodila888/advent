@@ -32,6 +32,7 @@ export function ConfirmModal({ displayName, onConfirm, onCancel, onClose }: Conf
                   cursor: 'pointer', 
                   fontWeight: '500',
                   maxWidth: '240px',
+                  alignSelf: 'center'
                 }}
               >
                 Я передумала. Я не {displayName}
@@ -48,6 +49,7 @@ export function ConfirmModal({ displayName, onConfirm, onCancel, onClose }: Conf
                   cursor: 'pointer', 
                   fontWeight: '500', 
                   maxWidth: '240px',
+                  alignSelf: 'center'
                 }}
               >
                 Никакого!
