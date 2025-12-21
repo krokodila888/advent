@@ -92,7 +92,7 @@ const sortedWindows = [...windowNumbers].sort((a, b) => {
           const windowDate = getWindowDate(windowNumber);
           const isActive = isWindowActive(windowDate, currentDate);
           const isOpened = openedWindows.has(windowNumber);
-          const isExactMatch = isExactDateMatch(windowDate, currentDate);
+          //const isExactMatch = isExactDateMatch(windowDate, currentDate);
           
           return (
             <CalendarWindow
@@ -100,7 +100,7 @@ const sortedWindows = [...windowNumbers].sort((a, b) => {
               windowNumber={windowNumber}
               isActive={isActive}
               isOpened={isOpened}
-              isExactMatch={isExactMatch}
+              //isExactMatch={isExactMatch}
               onClick={() => handleWindowClick(windowNumber)}
             />
           );

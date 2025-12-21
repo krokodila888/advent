@@ -5,7 +5,7 @@ interface CalendarWindowProps {
   windowNumber: number;
   isActive: boolean;
   isOpened: boolean;
-  isExactMatch: boolean;
+  //isExactMatch: boolean;
   onClick: () => void;
 }
 
@@ -194,7 +194,7 @@ export function CalendarWindow({
   windowNumber, 
   isActive, 
   isOpened, 
-  isExactMatch,
+  //isExactMatch,
   onClick 
 }: CalendarWindowProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -210,7 +210,7 @@ export function CalendarWindow({
   const sizeClass = windowSizes[windowNumber - 1];
   const shapeClass = windowShapes[windowNumber - 1];
   const glowClass = isActive && !isOpened 
-    ? (isExactMatch ? 'window-glow-intense' : 'window-glow-subtle')
+    ? 'window-glow-intense'
     : '';
   const roundSet = new Set([11, 6, 12, 16, 25]);
   const isRound = roundSet.has(windowNumber);
