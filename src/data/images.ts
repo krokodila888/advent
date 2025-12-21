@@ -8,6 +8,9 @@ import kolumb2 from '../images/kolumb2.webp';
 import melhior from '../images/melhior.webp';
 import shir from '../images/shir.jpg';
 import markes from '../images/markes.jpg';
+import meal from '../images/meal2.png';
+import tolkin from '../images/tolkin.jpg';
+import tolkin1 from '../images/tolkin1.jpg';
 
 export const images = {
   muerte,
@@ -19,5 +22,8 @@ export const images = {
   kolumbia,
   melhior,
   shir,
-  markes
+  markes,
+  meal,
+  tolkin, 
+  tolkin1
 };
