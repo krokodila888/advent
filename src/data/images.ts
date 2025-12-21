@@ -7,6 +7,7 @@ import kolumbia from '../images/kolumbia.webp';
 import kolumb2 from '../images/kolumb2.webp';
 import melhior from '../images/melhior.webp';
 import shir from '../images/shir.jpg';
+import markes from '../images/markes.jpg';
 
 export const images = {
   muerte,
@@ -18,4 +19,5 @@ export const images = {
   kolumbia,
   melhior,
   shir,
+  markes
 };
