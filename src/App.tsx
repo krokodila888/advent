@@ -9,7 +9,7 @@ import "./App.css";
 const getInitialDate = () => {
   const localDate = new Date();
   // Прибавляем 3 часа для московского времени
-  localDate.setHours(localDate.getHours() + 3);
+  //localDate.setHours(localDate.getHours() + 3);
   return localDate;
 };
 
@@ -34,25 +34,23 @@ export default function App() {
   useEffect(() => {
     // Асинхронно обновляем дату с API
     const fetchCurrentDate = async () => {
-      try {
-        const response = await fetch(
-          "https://worldtimeapi.org/api/ip",
-        );
-        const data = await response.json();
-        const originalDate = new Date(data.datetime);
-
-        const moscowDate = new Date(originalDate);
-        moscowDate.setHours(moscowDate.getHours() + 3);
-
-        setCurrentDate(moscowDate);
-      } catch (error) {
-        console.error(
-          "Failed to fetch current date, using local time:",
-          error,
-        );
-        // При ошибке оставляем локальное время, которое уже установлено
-      }
-    };
+  try {
+    const response = await fetch("https://worldtimeapi.org/api/ip");
+    const data = await response.json();
+    const moscowDate = new Date(data.datetime); // Это уже московское время!
+    
+    // Вычитаем год для тестирования
+    /*const testDate = new Date(moscowDate);
+    testDate.setFullYear(testDate.getFullYear() - 1);*/
+    
+    setCurrentDate(moscowDate);
+  } catch (error) {
+    console.error("Failed to fetch current date:", error);
+    const localDate = new Date(); // Локальное время
+    //localDate.setFullYear(localDate.getFullYear() - 1);
+    setCurrentDate(localDate);
+  }
+};
 
     fetchCurrentDate();
   }, []);

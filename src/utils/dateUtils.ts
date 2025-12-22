@@ -1,14 +1,13 @@
 /**
  * Get the date for a specific window number
- * Window 1 = Dec 20, 2025
- * Window 25 = Jan 13, 2026
+ * Window 1 = Dec 20, 2025 (Moscow time)
+ * Window 25 = Jan 13, 2026 (Moscow time)
  */
 export function getWindowDate(windowNumber: number): Date {
-  // Use UTC to avoid timezone issues
-  const startDate = new Date(Date.UTC(2025, 11, 20, 0, 0, 0, 0)); // December 20, 2025 00:00 UTC
+  // Moscow is UTC+3, so Dec 20 00:00 MSK = Dec 19 21:00 UTC
+  const startDate = new Date(Date.UTC(2025, 11, 19, 21, 0, 0, 0)); // Dec 19, 21:00 UTC = Dec 20, 00:00 MSK
   const dayOffset = windowNumber - 1;
-  const windowDate = new Date(startDate);
-  windowDate.setUTCDate(startDate.getUTCDate() + dayOffset);
+  const windowDate = new Date(startDate.getTime() + dayOffset * 24 * 60 * 60 * 1000);
   return windowDate;
 }
 
@@ -20,14 +19,8 @@ export function isWindowActive(
   windowDate: Date,
   currentDate: Date,
 ): boolean {
-  // Normalize both dates to midnight for fair comparison
-  const normalizedWindowDate = new Date(windowDate);
-  normalizedWindowDate.setHours(0, 0, 0, 0);
-
-  const normalizedCurrentDate = new Date(currentDate);
-  normalizedCurrentDate.setHours(0, 0, 0, 0);
-
-  return normalizedCurrentDate >= normalizedWindowDate;
+  // Compare timestamps directly - both should be in the same timezone
+  return currentDate.getTime() >= windowDate.getTime();
 }
 
 /**
@@ -38,20 +31,14 @@ export function isExactDateMatch(
   windowDate: Date,
   currentDate: Date,
 ): boolean {
-  // Convert window date from UTC to Moscow time for comparison
-  const moscowWindowDate = new Date(windowDate);
-  moscowWindowDate.setHours(moscowWindowDate.getHours() + 3);
-  
-  const normalizedWindowDate = new Date(moscowWindowDate);
-  normalizedWindowDate.setHours(0, 0, 0, 0);
+  // Normalize both to UTC midnight
+  const normalizedWindowDate = new Date(windowDate);
+  normalizedWindowDate.setUTCHours(0, 0, 0, 0);
 
   const normalizedCurrentDate = new Date(currentDate);
-  normalizedCurrentDate.setHours(0, 0, 0, 0);
+  normalizedCurrentDate.setUTCHours(0, 0, 0, 0);
 
-  return (
-    normalizedWindowDate.getTime() ===
-    normalizedCurrentDate.getTime()
-  );
+  return normalizedWindowDate.getTime() === normalizedCurrentDate.getTime();
 }
 
 /**
