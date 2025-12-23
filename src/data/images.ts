@@ -19,6 +19,8 @@ import graves from '../images/graves.jpg';
 import carpet1 from '../images/carpet1.jpg';
 import airsnake from '../images/airsnake.jpg';
 import airsnake2 from '../images/airsnakes.jpg';
+import fish from '../images/fish.jpg';
+import fish1 from '../images/fish1.jpg'
 
 export const images = {
   muerte,
@@ -41,5 +43,7 @@ export const images = {
   graves,
   carpet1,
   airsnake,
-  airsnake2
+  airsnake2,
+  fish,
+  fish1
 };
