@@ -22,6 +22,9 @@ import airsnake2 from '../images/airsnakes.jpg';
 import fish from '../images/fish.jpg';
 import fish1 from '../images/fish1.jpg';
 import brazil1 from '../images/brazil1.webp';
+import ethiopia from '../images/ethiopia.jpg';
+import goats from '../images/goats.jpg';
+import rabanda from '../images/rabanda.jpg';
 
 export const images = {
   muerte,
@@ -47,5 +50,8 @@ export const images = {
   airsnake2,
   fish,
   fish1,
-  brazil1
+  brazil1,
+  ethiopia,
+  goats,
+  rabanda,
 };
