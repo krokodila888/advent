@@ -781,9 +781,7 @@ html {
 
 /* Window states */
 .window-inactive {
-  opacity: 0.5;
   cursor: not-allowed;
-  filter: grayscale(0.5);
 }
 
 .window-active:hover {
@@ -832,7 +830,7 @@ html {
 }
 
 .window-opened {
-  opacity: 0.7;
+  opacity: 0.9;
   filter: saturate(0.7);
 }
 
