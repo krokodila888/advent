@@ -20,7 +20,8 @@ import carpet1 from '../images/carpet1.jpg';
 import airsnake from '../images/airsnake.jpg';
 import airsnake2 from '../images/airsnakes.jpg';
 import fish from '../images/fish.jpg';
-import fish1 from '../images/fish1.jpg'
+import fish1 from '../images/fish1.jpg';
+import brazil1 from '../images/brazil1.webp';
 
 export const images = {
   muerte,
@@ -45,5 +46,6 @@ export const images = {
   airsnake,
   airsnake2,
   fish,
-  fish1
+  fish1,
+  brazil1
 };
