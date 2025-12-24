@@ -177,30 +177,6 @@ export function Background() {
           </g>
         </svg>
       </div>
-
-      {/* Layer 6: Fireplace */}
-      <div 
-        className="layer layer-fireplace"
-        //onMouseEnter={() => handleFireplaceHover(true)}
-        //onMouseLeave={() => handleFireplaceHover(false)}
-      >
-        <svg viewBox="0 0 120 150" className="fireplace-svg">
-          <rect x="10" y="60" width="100" height="80" fill="#4a3933" stroke="#2d1f1a" strokeWidth="2" />
-          <rect x="30" y="80" width="60" height="50" fill="#1a1410" />
-          <g className="fire">
-            <ellipse cx="60" cy="110" rx="15" ry="20" fill="#ff6b35" opacity="0.8">
-              <animate attributeName="ry" values="20;25;20" dur="1s" repeatCount="indefinite" />
-            </ellipse>
-            <ellipse cx="55" cy="105" rx="10" ry="15" fill="#ffd93d" opacity="0.9">
-              <animate attributeName="ry" values="15;20;15" dur="0.8s" repeatCount="indefinite" />
-            </ellipse>
-            <ellipse cx="65" cy="108" rx="8" ry="12" fill="#ffd93d" opacity="0.9">
-              <animate attributeName="ry" values="12;18;12" dur="1.2s" repeatCount="indefinite" />
-            </ellipse>
-          </g>
-          <rect x="5" y="55" width="110" height="8" fill="#5a4943" />
-        </svg>
-      </div>
     </div>
   );
 }

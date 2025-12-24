@@ -25,6 +25,12 @@ import brazil1 from '../images/brazil1.webp';
 import ethiopia from '../images/ethiopia.jpg';
 import goats from '../images/goats.jpg';
 import rabanda from '../images/rabanda.jpg';
+import honduras from '../images/honduras.jpg';
+import honduras1 from '../images/honduras1.jpg';
+import resp from '../images/resp.png';
+import cicoriy from '../images/cicoriy.webp';
+import carob from '../images/carob.jpg';
+import tonka from '../images/tonka.webp';
 
 export const images = {
   muerte,
@@ -54,4 +60,10 @@ export const images = {
   ethiopia,
   goats,
   rabanda,
+  honduras,
+  honduras1,
+  resp,
+  cicoriy,
+  carob,
+  tonka,
 };
