@@ -33,6 +33,7 @@ import carob from '../images/carob.jpg';
 import tonka from '../images/tonka.webp';
 import kardamon from '../images/kardamon.webp';
 import mem from '../images/mem1.jpg';
+import cafe from '../images/cafe.jpg';
 
 export const images = {
   muerte,
@@ -70,4 +71,5 @@ export const images = {
   tonka,
   kardamon,
   mem,
+  cafe,
 };
