@@ -32,6 +32,7 @@ import cicoriy from '../images/cicoriy.webp';
 import carob from '../images/carob.jpg';
 import tonka from '../images/tonka.webp';
 import kardamon from '../images/kardamon.webp';
+import mem from '../images/mem1.jpg';
 
 export const images = {
   muerte,
@@ -67,5 +68,6 @@ export const images = {
   cicoriy,
   carob,
   tonka,
-  kardamon
+  kardamon,
+  mem,
 };
