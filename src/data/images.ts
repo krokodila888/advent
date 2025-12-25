@@ -34,6 +34,15 @@ import tonka from '../images/tonka.webp';
 import kardamon from '../images/kardamon.webp';
 import mem from '../images/mem1.jpg';
 import cafe from '../images/cafe.jpg';
+import yerevan1 from '../images/yerevan1.jpg';
+import yerevan2 from '../images/yerevan2.jpg';
+import yerevan3 from '../images/yerevan3.jpg';
+import lion from '../images/lion.webp'; 
+import bears from '../images/bears.jpg';
+import ararat from '../images/ararat.jpg';
+import yazzve from '../images/jazzve.jpg';
+import abc from '../images/abc.webp';
+import noy from '../images/noy.jpg';
 
 export const images = {
   muerte,
@@ -72,4 +81,13 @@ export const images = {
   kardamon,
   mem,
   cafe,
+  yerevan1,
+  yerevan2,
+  yerevan3,
+  lion,
+  bears,
+  ararat,
+  yazzve,
+  abc,
+  noy
 };
