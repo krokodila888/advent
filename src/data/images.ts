@@ -53,6 +53,10 @@ import possaMom from '../images/possa-mom.jpg';
 import possaMom1 from '../images/possa-mom1.jpg';
 import possOrOposs from '../images/poss-and-oposs.webp';
 import possaKnowl from '../images/possaKnowl.jpg';
+import thief from '../images/thief.jpg';
+import smile from '../images/smile.jpg';
+import merch from '../images/merch.jpg';
+import merch1 from '../images/merch1.jpg';
 
 export const images = {
   muerte,
@@ -110,4 +114,8 @@ export const images = {
   poss3,
   poss4,
   poss5,
+  thief,
+  smile,
+  merch,
+  merch1
 };
