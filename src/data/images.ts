@@ -43,6 +43,16 @@ import ararat from '../images/ararat.jpg';
 import yazzve from '../images/jazzve.jpg';
 import abc from '../images/abc.webp';
 import noy from '../images/noy.jpg';
+import poss from '../images/poss.jpg';
+import poss1 from '../images/poss1.jpg';
+import poss2 from '../images/poss2.jpg';
+import poss3 from '../images/poss3.jpg';
+import poss4 from '../images/poss4.jpg';
+import poss5 from '../images/poss5.jpg';
+import possaMom from '../images/possa-mom.jpg';
+import possaMom1 from '../images/possa-mom1.jpg';
+import possOrOposs from '../images/poss-and-oposs.webp';
+import possaKnowl from '../images/possaKnowl.jpg';
 
 export const images = {
   muerte,
@@ -89,5 +99,15 @@ export const images = {
   ararat,
   yazzve,
   abc,
-  noy
+  noy,
+  poss,
+  possaMom,
+  possaMom1,
+  possOrOposs,
+  possaKnowl,
+  poss1,
+  poss2,
+  poss3,
+  poss4,
+  poss5,
 };
