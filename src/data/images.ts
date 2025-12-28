@@ -61,6 +61,15 @@ import cammomile from '../images/cammomile.jpg';
 import chamomileTea from '../images/cham-tea.jpg';
 import chamomile1 from '../images/chamomile1.jpg';
 import chamomile2 from '../images/chamomile2.jpg';
+import juniper from '../images/juniper.jpg';
+import juniper1 from '../images/juniper1.jpg';
+import juniper3 from '../images/juniper3.jpg';
+import juniperTea from '../images/juniperTea.jpg';
+import chamSci from '../images/cham-sci.jpg';
+import juniperTattoo from '../images/juniperTattoo.jpg';
+import chamomileTattoo from '../images/chamomileTattoo.jpg';
+import juniperSci from '../images/juniper-sci.jpg';
+import juniperSci1 from '../images/jun-sci2.jpg';
 
 export const images = {
   muerte,
@@ -125,5 +134,14 @@ export const images = {
   cammomile,
   chamomile2,
   chamomileTea,
-  chamomile1
+  chamomile1,
+  juniper,
+  juniper1,
+  juniper3,
+  juniperTea,
+  chamSci,
+  juniperTattoo,
+  chamomileTattoo,
+  juniperSci,
+  juniperSci1
 };
