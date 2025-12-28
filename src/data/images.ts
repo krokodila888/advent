@@ -57,6 +57,10 @@ import thief from '../images/thief.jpg';
 import smile from '../images/smile.jpg';
 import merch from '../images/merch.jpg';
 import merch1 from '../images/merch1.jpg';
+import cammomile from '../images/cammomile.jpg';
+import chamomileTea from '../images/cham-tea.jpg';
+import chamomile1 from '../images/chamomile1.jpg';
+import chamomile2 from '../images/chamomile2.jpg';
 
 export const images = {
   muerte,
@@ -117,5 +121,9 @@ export const images = {
   thief,
   smile,
   merch,
-  merch1
+  merch1,
+  cammomile,
+  chamomile2,
+  chamomileTea,
+  chamomile1
 };
