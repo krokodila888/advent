@@ -70,6 +70,22 @@ import juniperTattoo from '../images/juniperTattoo.jpg';
 import chamomileTattoo from '../images/chamomileTattoo.jpg';
 import juniperSci from '../images/juniper-sci.jpg';
 import juniperSci1 from '../images/jun-sci2.jpg';
+import solovki from '../images/solovki.webp';
+import solovki1 from '../images/solovki1.webp';
+import solovki2 from '../images/solovki2.jpg';
+import coffeCard1 from '../images/coffeCard1.webp';
+import coffeCard2 from '../images/coffeCard2.webp';
+import coffeCard3 from '../images/coffeCard3.webp';
+import coffeCard4 from '../images/coffeCard4.webp';
+import coffeCard5 from '../images/coffeCard5.webp';
+import coffeCard6 from '../images/coffeCard6.webp';
+import atitlan from '../images/atitlan.jpg';
+import atitlan1 from '../images/atitlan1.jpg';
+import guatemala8 from '../images/guatemala8.jpg';
+import guatemalaCorn from '../images/guatemalaCorn.jpg';
+import guatemalaTkan from '../images/guatemalaTkan.jpg';
+import himalaya from '../images/himalaya1.avif';
+import pinkSalt from '../images/pinkSalt.jpg';
 
 export const images = {
   muerte,
@@ -143,5 +159,21 @@ export const images = {
   juniperTattoo,
   chamomileTattoo,
   juniperSci,
-  juniperSci1
+  juniperSci1,
+  solovki,
+  solovki1,
+  solovki2,
+  coffeCard1,
+  coffeCard2,
+  coffeCard3,
+  coffeCard4,
+  coffeCard5,
+  coffeCard6,
+  atitlan,
+  atitlan1,
+  guatemala8,
+  guatemalaCorn,
+  guatemalaTkan,
+  himalaya,
+  pinkSalt,
 };
