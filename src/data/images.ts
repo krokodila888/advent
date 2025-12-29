@@ -86,6 +86,7 @@ import guatemalaCorn from '../images/guatemalaCorn.jpg';
 import guatemalaTkan from '../images/guatemalaTkan.jpg';
 import himalaya from '../images/himalaya1.avif';
 import pinkSalt from '../images/pinkSalt.jpg';
+import saltMeme from '../images/saltMeme.jpg'
 
 export const images = {
   muerte,
@@ -176,4 +177,5 @@ export const images = {
   guatemalaTkan,
   himalaya,
   pinkSalt,
+  saltMeme,
 };
