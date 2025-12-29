@@ -86,7 +86,16 @@ import guatemalaCorn from '../images/guatemalaCorn.jpg';
 import guatemalaTkan from '../images/guatemalaTkan.jpg';
 import himalaya from '../images/himalaya1.avif';
 import pinkSalt from '../images/pinkSalt.jpg';
-import saltMeme from '../images/saltMeme.jpg'
+import saltMeme from '../images/saltMeme.jpg';
+import matcha11 from '../images/matcha11.jpg';
+import matcha from '../images/matcha.jpg';
+import matcha2 from '../images/matcha2.jpg';
+import matcha3 from '../images/matcha3.jpg';
+import matchaOld from '../images/matchaOld.jpg';
+import matchaOld1 from '../images/matchaOld1.jpg';
+import harvest from '../images/harvest.jpg';
+import harvest1 from '../images/harvest1.jpg';
+import matchaColors from '../images/matchaColors.jpg';
 
 export const images = {
   muerte,
@@ -178,4 +187,13 @@ export const images = {
   himalaya,
   pinkSalt,
   saltMeme,
+  harvest,
+  harvest1,
+  matcha,
+  matcha2,
+  matcha3,
+  matcha11,
+  matchaOld,
+  matchaOld1,
+  matchaColors,
 };
