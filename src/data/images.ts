@@ -96,6 +96,12 @@ import matchaOld1 from '../images/matchaOld1.jpg';
 import harvest from '../images/harvest.jpg';
 import harvest1 from '../images/harvest1.jpg';
 import matchaColors from '../images/matchaColors.jpg';
+import cat1 from '../images/cat1.jpg';
+import cat2 from '../images/cat2.jpg';
+import cat3 from '../images/cat3.jpg';
+import cat4 from '../images/cat4.jpg';
+import cat5 from '../images/cat5.jpg';
+import piterMeme from '../images/piterMeme.jpg';
 
 export const images = {
   muerte,
@@ -196,4 +202,11 @@ export const images = {
   matchaOld,
   matchaOld1,
   matchaColors,
+  cat1,
+  cat2,
+  cat3,
+  cat4,
+  cat5,
+  piterMeme,
+  
 };
