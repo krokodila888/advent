@@ -102,6 +102,7 @@ import cat3 from '../images/cat3.jpg';
 import cat4 from '../images/cat4.jpg';
 import cat5 from '../images/cat5.jpg';
 import piterMeme from '../images/piterMeme.jpg';
+import monk from '../images/monk.jpg';
 
 export const images = {
   muerte,
@@ -208,5 +209,5 @@ export const images = {
   cat4,
   cat5,
   piterMeme,
-  
+  monk,
 };
