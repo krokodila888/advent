@@ -103,6 +103,15 @@ import cat4 from '../images/cat4.jpg';
 import cat5 from '../images/cat5.jpg';
 import piterMeme from '../images/piterMeme.jpg';
 import monk from '../images/monk.jpg';
+import nyMeme1 from '../images/nyMeme1.jpg';
+import nyMeme2 from '../images/nyMeme2.jpg';
+import nyMeme3 from '../images/nyMeme3.jpg';
+import nyMeme4 from '../images/nyMeme4.jpg';
+import nyMeme5 from '../images/nyMeme5.jpg';
+import nyMeme6 from '../images/nyMeme6.jpg';
+import nyMeme7 from '../images/nyMeme7.jpg';
+import nyMeme8 from '../images/nyMeme8.jpg';
+import nyMeme9 from '../images/nyMeme9.jpg';
 
 export const images = {
   muerte,
@@ -210,4 +219,13 @@ export const images = {
   cat5,
   piterMeme,
   monk,
+  nyMeme1,
+  nyMeme2,
+  nyMeme3,
+  nyMeme4,
+  nyMeme5,
+  nyMeme6,
+  nyMeme7,
+  nyMeme8,
+  nyMeme9,
 };
