@@ -112,6 +112,20 @@ import nyMeme6 from '../images/nyMeme6.jpg';
 import nyMeme7 from '../images/nyMeme7.jpg';
 import nyMeme8 from '../images/nyMeme8.jpg';
 import nyMeme9 from '../images/nyMeme9.jpg';
+import gerb1 from '../images/gerb1.jpg';
+import gerb2 from '../images/gerb2.jpg';
+import okMeme from '../images/okMeme.jpg';
+import unk from '../images/unk.jpg';
+import uk70 from '../images/uk70.jpg';
+import u70 from '../images/u70.jpg';
+import map from '../images/map.jpg';
+import chasha from '../images/chasha.jpg';
+import ft0 from '../images/ft0.jpg';
+import ft1 from '../images/ft1.jpg';
+import ft2 from '../images/ft2.jpg';
+import cheese from '../images/cheese.jpg';
+import cheese1 from '../images/cheese2.jpg';
+import reishi from '../images/reishi.webp';
 
 export const images = {
   muerte,
@@ -228,4 +242,18 @@ export const images = {
   nyMeme7,
   nyMeme8,
   nyMeme9,
+  gerb1,
+  gerb2,
+  okMeme,
+  chasha,
+  map,
+  u70,
+  uk70,
+  unk,
+  ft0,
+  ft1,
+  ft2,
+  cheese,
+  cheese1,
+  reishi,
 };
