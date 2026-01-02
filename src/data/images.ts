@@ -126,6 +126,16 @@ import ft2 from '../images/ft2.jpg';
 import cheese from '../images/cheese.jpg';
 import cheese1 from '../images/cheese2.jpg';
 import reishi from '../images/reishi.webp';
+import kamakura from '../images/kamakura.webp';
+import kamakura1 from '../images/kamakura1.jpg';
+import kamakura2 from '../images/kamakura2.webp';
+import dragon from '../images/dragon2.jpg';
+import dragon1 from '../images/dragon1.jpg';
+import kissaten from '../images/kissaten.jpg';
+import kissaten1 from '../images/kissaten1.jpg';
+import kissaten2 from '../images/kissaten2.jpg';
+import sakura from '../images/sakura.jpg';
+import sakura1 from '../images/sakura1.jpg';
 
 export const images = {
   muerte,
@@ -256,4 +266,14 @@ export const images = {
   cheese,
   cheese1,
   reishi,
+  kamakura,
+  kamakura1,
+  kamakura2,
+  dragon,
+  dragon1,
+  kissaten,
+  kissaten1,
+  kissaten2,
+  sakura,
+  sakura1,
 };
