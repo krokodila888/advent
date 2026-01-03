@@ -142,7 +142,7 @@ import pistachios2 from '../images/pistachios2.jpg';
 import pistachios3 from '../images/pistachios3.jpg';
 import pistachioLatte from '../images/pistachioLatte.jpg';
 import chains from '../images/chains.jpg';
-import unicornGerb from '../images/unicornGerb.webp';
+import unicornGerb from '../images/unicornGerb.jpg';
 import scotish from '../images/scotish.jpg';
 
 export const images = {
