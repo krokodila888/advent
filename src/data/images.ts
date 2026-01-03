@@ -136,6 +136,14 @@ import kissaten1 from '../images/kissaten1.jpg';
 import kissaten2 from '../images/kissaten2.jpg';
 import sakura from '../images/sakura.jpg';
 import sakura1 from '../images/sakura1.jpg';
+import pistachios from '../images/pistachios.jpg';
+import pistachios1 from '../images/pistachios1.jpg';
+import pistachios2 from '../images/pistachios2.jpg';
+import pistachios3 from '../images/pistachios3.jpg';
+import pistachioLatte from '../images/pistachioLatte.jpg';
+import chains from '../images/chains.jpg';
+import unicornGerb from '../images/unicornGerb.webp';
+import scotish from '../images/scotish.jpg';
 
 export const images = {
   muerte,
@@ -276,4 +284,12 @@ export const images = {
   kissaten2,
   sakura,
   sakura1,
+  pistachios,
+  pistachios1,
+  pistachios2,
+  pistachios3,
+  pistachioLatte,
+  chains,
+  unicornGerb,
+  scotish,
 };
