@@ -144,6 +144,12 @@ import pistachioLatte from '../images/pistachioLatte.jpg';
 import chains from '../images/chains.jpg';
 import unicornGerb from '../images/unicornGerb.jpg';
 import scotish from '../images/scotish.jpg';
+import pinecone from '../images/pinecons.jpg';
+import pinecone0 from '../images/pinecons0.jpg';
+import pinecone1 from '../images/pinecons1.jpg';
+import pinecone2 from '../images/pinecons3.jpg';
+import noma from '../images/noma.jpg';
+import coffee06 from '../images/coffee05.jpg';
 
 export const images = {
   muerte,
@@ -292,4 +298,10 @@ export const images = {
   chains,
   unicornGerb,
   scotish,
+  pinecone,
+  pinecone0,
+  pinecone1,
+  pinecone2,
+  noma,
+  coffee06
 };
