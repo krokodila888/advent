@@ -150,6 +150,16 @@ import pinecone1 from '../images/pinecons1.jpg';
 import pinecone2 from '../images/pinecons3.jpg';
 import noma from '../images/noma.jpg';
 import coffee06 from '../images/coffee05.jpg';
+import koliadky from '../images/koliadky.jpg';
+import koliadky1 from '../images/koliadky1.jpg';
+import koliadky2 from '../images/koliadky2.jpg';
+import koliadky3 from '../images/koliadky3.jpg';
+import koliadky4 from '../images/koliadky4.jpg';
+import smolensk from '../images/smolensk.jpg';
+import smolensk1 from '../images/smolensk1.jpg';
+import smolensk2 from '../images/smolensk3.jpg';
+import tower from '../images/tower.jpg';
+import tower1 from '../images/tower1.jpg';
 
 export const images = {
   muerte,
@@ -303,5 +313,15 @@ export const images = {
   pinecone1,
   pinecone2,
   noma,
-  coffee06
+  coffee06,
+  koliadky,
+  koliadky1,
+  koliadky2,
+  koliadky3,
+  koliadky4,
+  smolensk,
+  smolensk1,
+  smolensk2,
+  tower,
+  tower1,
 };
