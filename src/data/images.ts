@@ -164,6 +164,9 @@ import christmas from '../images/christmas.jpg';
 import christmas1 from '../images/christmas1.jpg';
 import christmas2 from '../images/christmas2.jpg';
 import drogo from '../images/drogo.jpg';
+import cedar from '../images/cedar.jpg';
+import cedar1 from '../images/cedar1.jpg';
+import choko from '../images/choko.jpg';
 
 export const images = {
   muerte,
@@ -332,4 +335,7 @@ export const images = {
   christmas1,
   christmas2,
   drogo,
+  cedar,
+  cedar1,
+  choko
 };
