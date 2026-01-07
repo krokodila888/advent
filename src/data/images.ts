@@ -160,6 +160,10 @@ import smolensk1 from '../images/smolensk1.jpg';
 import smolensk2 from '../images/smolensk3.jpg';
 import tower from '../images/tower.jpg';
 import tower1 from '../images/tower1.jpg';
+import christmas from '../images/christmas.jpg';
+import christmas1 from '../images/christmas1.jpg';
+import christmas2 from '../images/christmas2.jpg';
+import drogo from '../images/drogo.jpg';
 
 export const images = {
   muerte,
@@ -324,4 +328,8 @@ export const images = {
   smolensk2,
   tower,
   tower1,
+  christmas,
+  christmas1,
+  christmas2,
+  drogo,
 };

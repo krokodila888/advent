@@ -6,7 +6,7 @@
 export function getWindowDate(windowNumber: number): Date {
   // Moscow is UTC+3, so Dec 20 00:00 MSK = Dec 19 21:00 UTC
   const startDate = new Date(Date.UTC(2025, 11, 19, 21, 0, 0, 0)); // Dec 19, 21:00 UTC = Dec 20, 00:00 MSK
-  const dayOffset = windowNumber - 2;
+  const dayOffset = windowNumber - 1;
   const windowDate = new Date(startDate.getTime() + dayOffset * 24 * 60 * 60 * 1000);
   return windowDate;
 }
