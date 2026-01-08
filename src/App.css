@@ -1990,3 +1990,15 @@ html {
   margin-bottom: 0;
   font-weight: 500;
 }
+
+@media (min-width: 768px) {
+  iframe {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 467px) {
+  iframe {
+    min-height: 200px;
+  }
+}
