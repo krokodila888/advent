@@ -168,6 +168,31 @@ import cedar from '../images/cedar.jpg';
 import cedar1 from '../images/cedar1.jpg';
 import choko from '../images/choko.jpg';
 import blessed1 from '../images/blessed1.jpg';
+import blessed2 from '../images/blessed2.jpg';
+import blessed3 from '../images/blessed3.jpg';
+import blessed5 from '../images/blessed5.jpg';
+import bless5 from '../images/bless5.jpg';
+import bless6 from '../images/bless6.jpg';
+import bless7 from '../images/bless7.jpg';
+import bless8 from '../images/bless8.jpg';
+import bless9 from '../images/bless9.jpg';
+import teabag from '../images/teabag.jpg';
+import sombrero from '../images/ombrero.jpg';
+import sombrero1 from '../images/sombrero1.jpg';
+import sombrero2 from '../images/sombrero2.jpg';
+import sombrero3 from '../images/sombrero3.jpg';
+import musik from '../images/musik.jpg';
+import musik1 from '../images/musik1.jpg';
+import mex1 from '../images/mex.jpg';
+import mex2 from '../images/mex2.jpg';
+import mex3 from '../images/mex3.jpg';
+import sanmiguel from '../images/sanmiguel.jpg';
+import frida from '../images/frida.webp';
+import frida1 from '../images/frida1.jpg';
+import frida2 from '../images/frida2.jpg';
+import frida3 from '../images/frida3.jpg';
+import teabag1 from '../images/tea_bag.jpg';
+import guilt from '../images/guilt.jpg';
 
 export const images = {
   muerte,
@@ -340,4 +365,29 @@ export const images = {
   cedar1,
   choko,
   blessed1,
+  blessed2,
+  blessed3,
+  blessed5,
+  bless5,
+  bless6,
+  bless7,
+  bless8,
+  bless9,
+  teabag,
+  sombrero,
+  sombrero1,
+  sombrero2,
+  sombrero3,
+  musik,
+  musik1,
+  mex1,
+  mex2,
+  mex3,
+  sanmiguel,
+  frida,
+  frida1,
+  frida2,
+  frida3,
+  teabag1,
+  guilt,
 };
