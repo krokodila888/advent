@@ -193,6 +193,12 @@ import frida2 from '../images/frida2.jpg';
 import frida3 from '../images/frida3.jpg';
 import teabag1 from '../images/tea_bag.jpg';
 import guilt from '../images/guilt.jpg';
+import bosphorus from '../images/bosphorus.jpg';
+import bosphorus1 from '../images/bosphorus1.jpg';
+import turkish1 from '../images/turkish1.jpg';
+import turkish2 from '../images/turkish2.jpg';
+import turkish3 from '../images/turkish3.jpg';
+import turkish4 from '../images/turkish4.jpg';
 
 export const images = {
   muerte,
@@ -390,4 +396,10 @@ export const images = {
   frida3,
   teabag1,
   guilt,
+  bosphorus,
+  bosphorus1,
+  turkish1,
+  turkish2,
+  turkish3,
+  turkish4,
 };
