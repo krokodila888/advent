@@ -171,6 +171,7 @@ import blessed1 from '../images/blessed1.jpg';
 import blessed2 from '../images/blessed2.jpg';
 import blessed3 from '../images/blessed3.jpg';
 import blessed5 from '../images/blessed5.jpg';
+import bless4 from '../images/bless4.jpg';
 import bless5 from '../images/bless5.jpg';
 import bless6 from '../images/bless6.jpg';
 import bless7 from '../images/bless7.jpg';
@@ -199,6 +200,9 @@ import turkish1 from '../images/turkish1.jpg';
 import turkish2 from '../images/turkish2.jpg';
 import turkish3 from '../images/turkish3.jpg';
 import turkish4 from '../images/turkish4.jpg';
+import moon1 from '../images/moon1.jpg';
+import mooncoffee from '../images/mooncoffe.jpg';
+import scarycoffee from '../images/scarycoffee.jpg';
 
 export const images = {
   muerte,
@@ -374,6 +378,7 @@ export const images = {
   blessed2,
   blessed3,
   blessed5,
+  bless4,
   bless5,
   bless6,
   bless7,
@@ -402,4 +407,7 @@ export const images = {
   turkish2,
   turkish3,
   turkish4,
+  moon1,
+  mooncoffee,
+  scarycoffee,
 };
