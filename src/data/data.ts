@@ -4392,7 +4392,7 @@ tanya_message: `
   <p>Мимо этого кофе я не смогла пройти: это была целая серия дрипов с картинками о том, как <strong>"Иисус любит тебя"</strong>☕✝️</p>
   <img src="${images.christmas1}" />
 
-        <p>Между тем <strong>Christian Coffee</strong> — целый жанр в США!</p>
+      <p>Между тем <strong>Christian Coffee</strong> — целый жанр в США!</p>
       
       <p><strong>Бренды:</strong> Faith Coffee, Gospel Grounds, Holy Grounds. Часть прибыли идёт миссионерам или церквям.</p>
       
@@ -5041,8 +5041,17 @@ tanya_message: `
     tanya_bonus: 'Бэггинс кофе',
     zebra_bonus: 'Бэггинс кофе (х2)',
     title: 'День 23',
-    tanya_message: `<p>Подарок: Декаф Гватемала</p><p>Бонус: Бэггинс кофе</p>`,
-    zebra_message: `<p>Подарок: Декаф Мексика (х2)</p><p>Бонус: Бэггинс кофе (х2)</p>`
+    tanya_message: `<p>Напишите, что у вас сегодня! У меня день совершенного провала в записях.</p>
+    <img src="${images.bless6}" />
+    <p>Но вот самый странный госпел, который мне подвернулся.</p>
+      <iframe width="100%" src="https://www.youtube.com/embed/qYhzhASuWrI?si=MPQGdSplONZ0w99g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+`,
+    zebra_message: `<p>Напишите, что у вас сегодня! У меня день совершенного провала в записях.</p>
+    <img src="${images.bless6}" />
+    <p>Но вот самый странный госпел, который мне подвернулся.</p>
+    
+      <iframe width="100%" src="https://www.youtube.com/embed/qYhzhASuWrI?si=MPQGdSplONZ0w99g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+`
   },
   {
     day: 25,
