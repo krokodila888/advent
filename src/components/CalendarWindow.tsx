@@ -17,7 +17,8 @@ const windowSizes = [
   'window-small', 'window-medium', 'window-large', 'window-small',
   'window-medium', 'window-large', 'window-small', 'window-medium',
   'window-large', 'window-small', 'window-medium', 'window-large',
-  'window-medium'
+  'window-medium', 'window-large', 'window-small', 'window-medium', 'window-large',
+  'window-small', 'window-medium', 'window-large'
 ];
 
 const windowShapes = [
@@ -27,7 +28,8 @@ const windowShapes = [
   'window-rect', 'window-square', 'window-tall', 'window-rect',
   'window-square', 'window-tall', 'window-rect', 'window-square',
   'window-tall', 'window-rect', 'window-square', 'window-tall',
-  'window-square'
+  'window-square', 'window-tall', 'window-square', 'window-rect', 'window-tall',
+  'window-rect', 'window-square', 'window-tall'
 ];
 
 // Element layout/types (doors/windows) and designs (textures/backgrounds)
@@ -36,7 +38,9 @@ const elementTypes = [
   'door', 'window', 'window', 'door', 'window',
   'door', 'window', 'window', 'door', 'window',
   'window', 'door', 'window', 'door', 'window',
-  'door', 'window', 'window', 'door', 'window'
+  'door', 'window', 'window', 'door', 'window',  
+  'door', 'window', 'door', 'window', 'window',
+  'door', 'window'
 ];
 
 const doorDesigns = [
@@ -212,7 +216,7 @@ export function CalendarWindow({
   const glowClass = isActive && !isOpened 
     ? 'window-glow-intense'
     : (isActive && isExactMatch)  ? 'window-glow-intense' : '';
-  const roundSet = new Set([11, 6, 12, 16, 25]);
+  const roundSet = new Set([11, 6, 12, 16, 25, 30]);
   const isRound = roundSet.has(windowNumber);
   const appliedShapeClass = isRound ? 'window-round' : shapeClass;
   // Determine whether this slot is a door or window (layout from CalendarWindow1)
