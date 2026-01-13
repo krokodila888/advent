@@ -203,6 +203,10 @@ import turkish4 from '../images/turkish4.jpg';
 import moon1 from '../images/moon1.jpg';
 import mooncoffee from '../images/mooncoffe.jpg';
 import scarycoffee from '../images/scarycoffee.jpg';
+import beatles from '../images/beatles.jpg';
+import beatles1 from '../images/beatles1.jpg';
+import sweets from '../images/sweets.jpg';
+import bless10 from '../images/bless10.jpg';
 
 export const images = {
   muerte,
@@ -410,4 +414,8 @@ export const images = {
   moon1,
   mooncoffee,
   scarycoffee,
+  beatles,
+  bless10,
+  beatles1,
+  sweets,
 };
