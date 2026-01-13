@@ -4799,14 +4799,14 @@ Error generating stack: `+n.message+`
   
   <p><strong>Единственное упоминание кофе в песнях Beatles:</strong></p>
   <ul>
-    <li>**"Savoy Truffle"** (George Harrison, White Album 1968). Вся песня "Savoy Truffle" — список конфет!</li>
-    <li>Строка: *"A coffee dessert, yes you know it's good news"*. Это не про кофе, а про **шоколадную конфету с кофейным вкусом** из коробки Mackintosh's Good News!</li>
+    <li>"Savoy Truffle" (George Harrison, White Album 1968). Вся песня "Savoy Truffle" — список конфет!</li>
+    <li>Строка: "A coffee dessert, yes you know it's good news". Это не про кофе, а про шоколадную конфету с кофейным вкусом из коробки Mackintosh's Good News!</li>
     <li>Песня написана про друга Джорджа — **Эрика Клэптона**, который обожал шоколад и от этого портил зубы</li>
     <img src="${r.sweets}" />
     <li>И больше ни единого упоминания кофе, потому что чертовы британцы ☕🚫</li>
     <li>А еще кофе в 1960-е был редкостью. В Британии кофе = растворимый Nescafé (фу!)</li>
     <li>Эспрессо-культура пришла только в 1980-1990-х</li>
-    <li>Битлы, скорее всего, **не пили хороший кофе вообще**! По крайней мере, до Америки, да и там свидетелей не осталось</li>
+    <li>Битлы, скорее всего, не пили хороший кофе вообще. По крайней мере, до Америки, да и там свидетелей не осталось</li>
   </ul>
   <iframe width="100%" src="https://www.youtube.com/embed/CD5LEdgpKi8?si=QnM97xpcsTziDSss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   <h3>Так почему Yellow Submarine называется кофе? 🤔</h3>
@@ -4814,14 +4814,13 @@ Error generating stack: `+n.message+`
   <p>И внезапные Битлы в гладиолусах</p>
   <p><strong>Yellow Submarine = метафора убежища:</strong></p>
   <ul>
-    <li>Место, где **все друзья рядом** ("And our friends are all aboard")</li>
-    <li>Где **жизнь легка** ("Life of ease")</li>
-    <li>Где **всё ярко и просто** ("Sky of blue and sea of green")</li>
+    <li>Место, где все друзья рядом ("And our friends are all aboard")</li>
+    <li>Где жизнь легка ("Life of ease")</li>
+    <li>Где всё ярко и просто ("Sky of blue and sea of green")</li>
   </ul>
   <img src="${r.beatles}" />
 
   <h3>Задание 🎯</h3>
-  <p><strong>Для Тани:</strong></p>
   <ol>
     <li>Завари Yellow Submarine, съешь кофейную пастилу</li>
     <li>Beatles-философия: All You Need Is... что? ☕💕</li>
@@ -4832,20 +4831,20 @@ Error generating stack: `+n.message+`
   <ul>
     <li>Зависит от производителя, но примерно: **5-15 мг кофеина на штуку**</li>
     <li>Это не много по сравнению с чашкой кофе (95-200 мг), НО...</li>
-    <li>10 штук = **50-150 мг кофеина** = почти чашка кофе! ☕😱 У нас ,правда, их нет)</li>
-    <li>Для сравнения: **Чашка кофе (240 мл):** 95-200 мг кофеина</li>
-    <li>**Эспрессо (30 мл):** 60-80 мг</li>
-    <li>**Чашка чая (240 мл):** 30-50 мг</li>
-    <li>**Кусочек тёмного шоколада (30г):** 20-30 мг</li>
-    <li>**Кофейная пастила (1 шт):** 5-15 мг. Это почти так же жутко, как считать каллории!</li>
+    <li>10 штук = 50-150 мг кофеина = почти чашка кофе! ☕😱 У нас ,правда, их нет)</li>
+    <li>Для сравнения: Чашка кофе (240 мл): 95-200 мг кофеина</li>
+    <li>Эспрессо (30 мл): 60-80 мг</li>
+    <li>Чашка чая (240 мл): 30-50 мг</li>
+    <li>Кусочек тёмного шоколада (30г): 20-30 мг</li>
+    <li>Кофейная пастила (1 шт): 5-15 мг. Это почти так же жутко, как считать каллории!</li>
   </ul>
 
   <p>Вставка от нейросети:</p>
   <p><strong>Математика кофеиновой опасности для Зёбры:</strong></p>
   <ul>
-    <li>Чашка чая: **40 мг кофеина**</li>
-    <li>5 кофейных пастилок: **50 мг кофеина**</li>
-    <li>**Итого: 90 мг** = почти как чашка кофе! ☕🍬</li>
+    <li>Чашка чая: 40 мг кофеина</li>
+    <li>5 кофейных пастилок: 50 мг кофеина</li>
+    <li>Итого: 90 мг = почти как чашка кофе! ☕🍬</li>
   </ul>
   
   <p><em>"Я делаю паузу от кофе" — говорит Зёбра, жуя кофейную пастилу. Кофеин смеётся злодейски! 😈☕</em></p>
@@ -4858,13 +4857,13 @@ Error generating stack: `+n.message+`
   <iframe width="100%" src="https://www.youtube.com/embed/CD5LEdgpKi8?si=QnM97xpcsTziDSss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   <h3>Задание 🎯</h3>
   <ol>
-    <li>**Завари чай**</li>
-    <li>**Съешь кофейную пастилу** (и поймай себя на мысли: "Я же делаю паузу!")</li>
-    <li>**Посчитай кофеин:** Чай (40 мг) + 5 пастилок (50 мг) = **90 мг** = почти кофе! 😄</li>
-    <li>**Подумай:** "Пауза" — это иллюзия, кофеин везде!</li>
+    <li>Завари чай, cъешь кофейную пастилу.</li>
+    <li>Посчитай кофеин: Чай (40 мг) + 10 = 50 мг = почти кофе!</li>
+    <li>Подумай: "Пауза" — это иллюзия, кофеин везде!</li>
     <li>"Я делаю паузу от кофе, но кофеин нашёл меня через пастилу. Touché, caffeine!" 🫖🍬⚡</li>
+    <li>Beatles-философия: All You Need Is... что? ☕💕</li>
   </ol>
 
   <img src="${r.beatles1}" />
-  <p>И внезапные Битлы в гладиолусах</p>
+  <p>И внезапные Битлы в гладиолусах.</p>
   `},{day:26,date:"2026-01-14",tanya_gift:"Иисус любит тебя",zebra_gift:"Эфиопия Гуджи (х2)",tanya_bonus:"Бразилия Фенси",zebra_bonus:"Бразилия Фенси (х2)",title:"День 25",tanya_message:"<p>Подарок: Иисус любит тебя</p><p>Бонус: Бразилия Фенси</p>",zebra_message:"<p>Подарок: Эфиопия Гуджи (х2)</p><p>Бонус: Бразилия Фенси (х2)</p>"}];function Dy({currentDate:v,userName:M}){const[O,p]=zl.useState(()=>Xf()),[A,x]=zl.useState(null),Y=C=>{const N=La(C);if(Qa(N,v)&&(x(C),!O.has(C))){const V=qm(C);p(V)}},P=()=>{x(null)},w=[...Array.from({length:25},(C,N)=>N+1)].sort((C,N)=>{const V=La(C),yl=La(N),vl=mr(V,v),_l=mr(yl,v),Ul=O.has(C),bl=O.has(N),Al=Qa(V,v),ol=Qa(yl,v),wl=Al&&!Ul,$l=ol&&!bl,Sl=vl&&Ul,K=_l&&bl,Hl=!Al,kl=!ol,Ft=Ul&&!vl&&Al,pt=bl&&!_l&&ol;return wl&&!$l?-1:!wl&&$l?1:wl&&$l?C-N:Sl&&!K?-1:!Sl&&K?1:Hl&&!kl?-1:!Hl&&kl?1:Hl&&kl||Ft&&pt?C-N:0});return d.jsxs(d.Fragment,{children:[d.jsx("div",{className:"calendar-grid",children:w.map(C=>{const N=La(C),V=Qa(N,v),yl=O.has(C),vl=mr(N,v);return d.jsx(Wm,{windowNumber:C,isActive:V,isOpened:yl,isExactMatch:vl,onClick:()=>Y(C)},C)})}),A!==null&&(()=>{const C=Cy[A-1],N=M==="Tanya"?C.tanya_message:M==="Zebra"?C.zebra_message:"<p>Тут ничего нет.</p> <p>Никаких секретных посланий</p>";return d.jsx(Fm,{windowNumber:A,message:N,onClose:P})})()]})}function Oy(){const[v,M]=zl.useState(!1),O=zl.useRef(null),[p,A]=zl.useState(!1);zl.useEffect(()=>{const Y=localStorage.getItem("musicEnabled");console.debug("[AudioControls] mount - musicPref=",Y),Y==="true"&&(console.debug("[AudioControls] stored preference requests autoplay but user gesture required"),A(!0))},[]),zl.useEffect(()=>{if(!p)return;const Y=()=>{console.debug("[AudioControls] user gesture detected, starting audio"),M(!0),A(!1),window.removeEventListener("pointerdown",Y),window.removeEventListener("keydown",Y)};return window.addEventListener("pointerdown",Y,{once:!0}),window.addEventListener("keydown",Y,{once:!0}),()=>{window.removeEventListener("pointerdown",Y),window.removeEventListener("keydown",Y)}},[p]),zl.useEffect(()=>{if(console.debug("[AudioControls] effect isMusicPlaying=",v,"ref=",O.current),!O.current)return;const Y=O.current;if(v)console.debug("[AudioControls] calling play()"),Y.play().then(()=>console.debug("[AudioControls] play() fulfilled")).catch(P=>{console.error("[AudioControls] Music play failed:",P),P&&P.name==="NotAllowedError"&&(console.debug("[AudioControls] play blocked; awaiting user gesture to resume"),A(!0))});else{console.debug("[AudioControls] calling pause()");try{Y.pause()}catch(P){console.error("[AudioControls] pause() failed:",P)}}},[v]);const x=()=>{const Y=!v;console.debug("[AudioControls] toggleMusic ->",Y),M(Y),localStorage.setItem("musicEnabled",String(Y))};return d.jsxs("div",{className:"audio-controls",children:[d.jsxs("button",{className:`audio-button ${v?"audio-active":""}`,onClick:x,title:"Toggle Christmas Music",children:[v?d.jsx(Bm,{size:20}):d.jsx(Rm,{size:20}),d.jsx(Om,{size:16,className:"audio-icon-secondary"})]}),d.jsx("audio",{ref:O,loop:!0,preload:"auto",src:"audio/Frost_Waltz.mp3",onCanPlay:()=>console.debug("[AudioControls] audio canplay"),onPlay:()=>console.debug("[AudioControls] audio event: play"),onPause:()=>console.debug("[AudioControls] audio event: pause"),onError:Y=>console.error("[AudioControls] audio event: error",Y)})]})}function xy(){return d.jsx("div",{className:"snowfall",children:Array.from({length:100}).map((v,M)=>d.jsx("div",{className:"snowflake",style:{left:`${Math.random()*100}%`,animationDuration:`${Math.random()*8+10}s`,animationDelay:`${Math.random()*8}s`,width:`${Math.random()*6+4}px`,height:`${Math.random()*6+4}px`}},M))})}const Ny=()=>new Date;function Uy(){const[v,M]=zl.useState(()=>{const x=localStorage.getItem("adventCalendarUser");return x==="Tanya"||x==="Zebra"?x:(localStorage.clear(),null)}),[O,p]=zl.useState(Ny),A=x=>{localStorage.clear(),M(x),localStorage.setItem("adventCalendarUser",x)};return zl.useEffect(()=>{(async()=>{try{const P=await(await fetch("https://worldtimeapi.org/api/ip")).json(),U=new Date(P.datetime);p(U)}catch(Y){console.error("Failed to fetch current date:",Y),p(new Date)}})()},[]),d.jsxs("div",{className:"app-container",children:[d.jsx(Qm,{}),d.jsx(xy,{}),d.jsx(Oy,{}),d.jsxs("div",{className:"content-wrapper",children:[d.jsx(Lm,{userName:v,onUserSelect:A}),d.jsx(Dy,{currentDate:O,userName:v})]})]})}vm.createRoot(document.getElementById("root")).render(d.jsx(zl.StrictMode,{children:d.jsx(Uy,{})}));
