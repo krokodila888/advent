@@ -207,6 +207,7 @@ import beatles from '../images/beatles.jpg';
 import beatles1 from '../images/beatles1.jpg';
 import sweets from '../images/sweets.jpg';
 import bless10 from '../images/bless10.jpg';
+import blessed4 from '../images/blessed4.jpg'
 
 export const images = {
   muerte,
@@ -418,4 +419,5 @@ export const images = {
   bless10,
   beatles1,
   sweets,
+  blessed4,
 };

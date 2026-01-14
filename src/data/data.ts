@@ -5148,8 +5148,72 @@ tanya_message: `
     tanya_bonus: 'Бразилия Фенси',
     zebra_bonus: 'Бразилия Фенси (х2)',
     title: 'День 25',
-    tanya_message: `<p>Подарок: Иисус любит тебя</p><p>Бонус: Бразилия Фенси</p>`,
-    zebra_message: `<p>Подарок: Эфиопия Гуджи (х2)</p><p>Бонус: Бразилия Фенси (х2)</p>`
+    tanya_message: `
+      <p>Внезапный день английского. Сорян, на русском такого эээээ еще не завезли.</p>
+      <img src="${images.blessed4}" />
+      <h2>5 Cozy Coffee Date Ideas with Jesus ☕✝️</h2>
+
+      <h3>1. Morning Devotional Coffee Date 🌅</h3>
+      <p>Brew coffee, read a Bible passage, pray, journal. Start your day talking to Jesus like a friend.</p>
+
+      <h3>2. Coffee Shop Contemplation ☕🪟</h3>
+      <p>Take your Bible to a café. Sit by the window, people-watch with Jesus, pray for strangers you see.</p>
+
+      <h3>3. Scripture Study + Sip 📖☕</h3>
+      <p>Deep dive into a passage. Read slowly, sip slowly. Ask Jesus: "What does this mean for my life?"</p>
+
+      <h3>4. Gratitude Coffee Walk 🚶‍♀️☕</h3>
+      <p>Walk + pray + coffee. Notice creation, list things you're grateful for out loud, talk to Jesus as you go.</p>
+
+      <h3>5. Evening Reflection Coffee Date 🌙☕</h3>
+      <p>End your day with decaf. Review your day with Jesus: "Where were You today? What did I miss?"</p>
+
+      <hr>
+
+      <p><strong>Bonus Tips:</strong> Turn off phone • Be present • Talk out loud • Listen in silence • Journal</p>
+
+      <p><strong>Remember:</strong> Jesus doesn't care about the coffee. He just wants time with you. ☕🙏✨</p>
+
+      <p>Я искала госпел в старом стиле, чтобы жизнерадостные афроамериканки пели в церкви, лучась, а не вот этот весь нейрослоп - и обнаружила себя на афро-американских стандапах про колониализм. Теперь они здесь.</p>
+      <iframe width="100%" src="https://www.youtube.com/embed/0x9Pq4qzaXc?si=EJj-Prk28a_ozum8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="100%" src="https://www.youtube.com/embed/QhMO5SSmiaA?si=z4KMMLb87nGBJOkk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      
+      <iframe width="100%" src="https://www.youtube.com/embed/EEjZ0Gh_y8I?si=zKBCIgl1vA2KzC7Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p>Все равно я не помню, какой у вас сегодня кофе. Надеюсь, что это сырновый/лавандовый раф - дайте знать, если это так, я накидаю сюда лавандовых полей. Хорошего дня!</p>
+    `,
+    zebra_message: `
+      <p>Внезапный день английского. Сорян, на русском такого эээээ еще не завезли.</p>
+      <img src="${images.blessed4}" />
+      <h2>5 Cozy Coffee Date Ideas with Jesus ☕✝️</h2>
+
+      <h3>1. Morning Devotional Coffee Date 🌅</h3>
+      <p>Brew coffee, read a Bible passage, pray, journal. Start your day talking to Jesus like a friend.</p>
+
+      <h3>2. Coffee Shop Contemplation ☕🪟</h3>
+      <p>Take your Bible to a café. Sit by the window, people-watch with Jesus, pray for strangers you see.</p>
+
+      <h3>3. Scripture Study + Sip 📖☕</h3>
+      <p>Deep dive into a passage. Read slowly, sip slowly. Ask Jesus: "What does this mean for my life?"</p>
+
+      <h3>4. Gratitude Coffee Walk 🚶‍♀️☕</h3>
+      <p>Walk + pray + coffee. Notice creation, list things you're grateful for out loud, talk to Jesus as you go.</p>
+
+      <h3>5. Evening Reflection Coffee Date 🌙☕</h3>
+      <p>End your day with decaf. Review your day with Jesus: "Where were You today? What did I miss?"</p>
+
+      <hr>
+
+      <p><strong>Bonus Tips:</strong> Turn off phone • Be present • Talk out loud • Listen in silence • Journal</p>
+
+      <p><strong>Remember:</strong> Jesus doesn't care about the coffee. He just wants time with you. ☕🙏✨</p>
+
+      <p>Я искала госпел в старом стиле, чтобы жизнерадостные афроамериканки пели в церкви, лучась, а не вот этот весь нейрослоп - и обнаружила себя на афро-американских стандапах про колониализм. Теперь они здесь.</p>
+      <iframe width="100%" src="https://www.youtube.com/embed/0x9Pq4qzaXc?si=EJj-Prk28a_ozum8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="100%" src="https://www.youtube.com/embed/QhMO5SSmiaA?si=z4KMMLb87nGBJOkk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      
+      <iframe width="100%" src="https://www.youtube.com/embed/EEjZ0Gh_y8I?si=zKBCIgl1vA2KzC7Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p>Все равно я не помню, какой у вас сегодня кофе. Надеюсь, что это сырновый/лавандовый раф - дайте знать, если это так, я накидаю сюда лавандовых полей. Хорошего дня!</p>
+    `
   },
   {
     day: 27,
