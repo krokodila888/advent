@@ -20,36 +20,36 @@ export function ConfirmModal({ displayName, onConfirm, onCancel, onClose }: Conf
               Есть ли сомнение, что ты <strong>{displayName}?</strong>
             </p>
             <div style={{ display: 'flex', gap: '12px', flexDirection: 'column' }}>
-              <button 
+              <button
                 onClick={onConfirm}
-                style={{ 
-                  padding: '12px 20px', 
-                  background: '#d35400', 
-                  color: 'white', 
-                  border: 'none', 
-                  borderRadius: '8px', 
-                  fontSize: '1em', 
-                  cursor: 'pointer', 
+                style={{
+                  padding: '12px 20px',
+                  background: '#d35400',
+                  color: 'white',
+                  border: 'none',
+                  borderRadius: '8px',
+                  fontSize: '1em',
+                  cursor: 'pointer',
                   fontWeight: '500',
                   maxWidth: '240px',
-                  alignSelf: 'center'
+                  alignSelf: 'center',
                 }}
               >
                 Я передумала. Я не {displayName}
               </button>
-              <button 
+              <button
                 onClick={onCancel}
-                style={{ 
-                  padding: '12px 20px', 
-                  background: '#ecf0f1', 
-                  color: '#333', 
-                  border: 'none', 
-                  borderRadius: '8px', 
-                  fontSize: '1em', 
-                  cursor: 'pointer', 
-                  fontWeight: '500', 
+                style={{
+                  padding: '12px 20px',
+                  background: '#ecf0f1',
+                  color: '#333',
+                  border: 'none',
+                  borderRadius: '8px',
+                  fontSize: '1em',
+                  cursor: 'pointer',
+                  fontWeight: '500',
                   maxWidth: '240px',
-                  alignSelf: 'center'
+                  alignSelf: 'center',
                 }}
               >
                 Никакого!

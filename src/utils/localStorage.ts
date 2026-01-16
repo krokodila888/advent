@@ -4,7 +4,7 @@
 export function getOpenedWindows(): Set<number> {
   const stored = localStorage.getItem('openedWindows');
   if (!stored) return new Set();
-  
+
   try {
     const array = JSON.parse(stored);
     return new Set(array);
@@ -21,7 +21,7 @@ export function getOpenedWindows(): Set<number> {
 export function markWindowAsOpened(windowNumber: number): Set<number> {
   const opened = getOpenedWindows();
   opened.add(windowNumber);
-  
+
   localStorage.setItem('openedWindows', JSON.stringify([...opened]));
   return opened;
 }

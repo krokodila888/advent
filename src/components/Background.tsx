@@ -32,7 +32,7 @@ export function Background() {
         left: `${Math.floor(rand(1) * 100)}%`,
         top: `${Math.floor(rand(2) * 70)}%`,
         animationDelay: `${(rand(3) * 3).toFixed(2)}s`,
-        opacity: +(0.3 + rand(4) * 0.7).toFixed(2)
+        opacity: +(0.3 + rand(4) * 0.7).toFixed(2),
       };
     });
 
@@ -40,7 +40,7 @@ export function Background() {
       'rgba(255,255,255,VAR)',
       'rgba(245,250,255,VAR)',
       'rgba(230,240,250,VAR)',
-      'rgba(210,225,235,VAR)'
+      'rgba(210,225,235,VAR)',
     ];
 
     const generatedClouds: Cloud[] = Array.from({ length: 4 }).map((_, idx) => {
@@ -72,7 +72,7 @@ export function Background() {
         color,
         borderRadius,
         duration,
-        delay
+        delay,
       };
     });
 
@@ -92,7 +92,12 @@ export function Background() {
             <div
               key={i}
               className="star"
-              style={{ left: s.left, top: s.top, animationDelay: s.animationDelay, opacity: s.opacity }}
+              style={{
+                left: s.left,
+                top: s.top,
+                animationDelay: s.animationDelay,
+                opacity: s.opacity,
+              }}
             />
           ))}
         </div>
@@ -115,7 +120,7 @@ export function Background() {
               borderRadius: c.borderRadius,
               filter: 'blur(6px)',
               transform: 'translateX(-30%)',
-              animation: `cloud-drift ${c.duration}s linear ${c.delay}s infinite`
+              animation: `cloud-drift ${c.duration}s linear ${c.delay}s infinite`,
             }}
           />
         ))}
@@ -124,12 +129,12 @@ export function Background() {
       {/* Layer 3: Mountains */}
       <div className="layer layer-mountains">
         <svg viewBox="0 0 1200 400" className="mountain-svg">
-          <path 
-            d="M0,400 L0,250 L200,150 L400,200 L600,100 L800,180 L1000,120 L1200,200 L1200,400 Z" 
+          <path
+            d="M0,400 L0,250 L200,150 L400,200 L600,100 L800,180 L1000,120 L1200,200 L1200,400 Z"
             fill="#1a2332"
           />
-          <path 
-            d="M0,400 L0,300 L300,200 L500,250 L700,180 L900,220 L1200,260 L1200,400 Z" 
+          <path
+            d="M0,400 L0,300 L300,200 L500,250 L700,180 L900,220 L1200,260 L1200,400 Z"
             fill="#0f1419"
           />
         </svg>
@@ -140,11 +145,11 @@ export function Background() {
         <svg viewBox="0 0 1200 300" className="trees-svg">
           {[100, 250, 400, 550, 700, 850, 1000, 1100].map((x, i) => (
             <g key={i}>
-              <polygon 
-                points={`${x},300 ${x-20},250 ${x-15},250 ${x-30},200 ${x-25},200 ${x-40},150 ${x+40},150 ${x+25},200 ${x+30},200 ${x+15},250 ${x+20},250`}
+              <polygon
+                points={`${x},300 ${x - 20},250 ${x - 15},250 ${x - 30},200 ${x - 25},200 ${x - 40},150 ${x + 40},150 ${x + 25},200 ${x + 30},200 ${x + 15},250 ${x + 20},250`}
                 fill="#1f2937"
               />
-              <rect x={x-5} y="280" width="10" height="20" fill="#111827" />
+              <rect x={x - 5} y="280" width="10" height="20" fill="#111827" />
             </g>
           ))}
         </svg>

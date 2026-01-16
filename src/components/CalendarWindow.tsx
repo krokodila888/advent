@@ -11,36 +11,109 @@ interface CalendarWindowProps {
 
 // Define different sizes for windows
 const windowSizes = [
-  'window-small', 'window-medium', 'window-large', 'window-small',
-  'window-medium', 'window-large', 'window-small', 'window-medium',
-  'window-large', 'window-small', 'window-medium', 'window-large',
-  'window-small', 'window-medium', 'window-large', 'window-small',
-  'window-medium', 'window-large', 'window-small', 'window-medium',
-  'window-large', 'window-small', 'window-medium', 'window-large',
-  'window-medium', 'window-large', 'window-small', 'window-medium', 'window-large',
-  'window-small', 'window-medium', 'window-large'
+  'window-small',
+  'window-medium',
+  'window-large',
+  'window-small',
+  'window-medium',
+  'window-large',
+  'window-small',
+  'window-medium',
+  'window-large',
+  'window-small',
+  'window-medium',
+  'window-large',
+  'window-small',
+  'window-medium',
+  'window-large',
+  'window-small',
+  'window-medium',
+  'window-large',
+  'window-small',
+  'window-medium',
+  'window-large',
+  'window-small',
+  'window-medium',
+  'window-large',
+  'window-medium',
+  'window-large',
+  'window-small',
+  'window-medium',
+  'window-large',
+  'window-small',
+  'window-medium',
+  'window-large',
 ];
 
 const windowShapes = [
-  'window-rect', 'window-square', 'window-tall', 'window-rect',
-  'window-square', 'window-tall', 'window-rect', 'window-square',
-  'window-tall', 'window-rect', 'window-square', 'window-tall',
-  'window-rect', 'window-square', 'window-tall', 'window-rect',
-  'window-square', 'window-tall', 'window-rect', 'window-square',
-  'window-tall', 'window-rect', 'window-square', 'window-tall',
-  'window-square', 'window-tall', 'window-square', 'window-rect', 'window-tall',
-  'window-rect', 'window-square', 'window-tall'
+  'window-rect',
+  'window-square',
+  'window-tall',
+  'window-rect',
+  'window-square',
+  'window-tall',
+  'window-rect',
+  'window-square',
+  'window-tall',
+  'window-rect',
+  'window-square',
+  'window-tall',
+  'window-rect',
+  'window-square',
+  'window-tall',
+  'window-rect',
+  'window-square',
+  'window-tall',
+  'window-rect',
+  'window-square',
+  'window-tall',
+  'window-rect',
+  'window-square',
+  'window-tall',
+  'window-square',
+  'window-tall',
+  'window-square',
+  'window-rect',
+  'window-tall',
+  'window-rect',
+  'window-square',
+  'window-tall',
 ];
 
 // Element layout/types (doors/windows) and designs (textures/backgrounds)
 const elementTypes = [
-  'door', 'window', 'window', 'door', 'window',
-  'door', 'window', 'window', 'door', 'window',
-  'door', 'window', 'window', 'door', 'window',
-  'window', 'door', 'window', 'door', 'window',
-  'door', 'window', 'window', 'door', 'window',  
-  'door', 'window', 'door', 'window', 'window',
-  'door', 'window'
+  'door',
+  'window',
+  'window',
+  'door',
+  'window',
+  'door',
+  'window',
+  'window',
+  'door',
+  'window',
+  'door',
+  'window',
+  'window',
+  'door',
+  'window',
+  'window',
+  'door',
+  'window',
+  'door',
+  'window',
+  'door',
+  'window',
+  'window',
+  'door',
+  'window',
+  'door',
+  'window',
+  'door',
+  'window',
+  'window',
+  'door',
+  'window',
 ];
 
 const doorDesigns = [
@@ -55,7 +128,7 @@ const doorDesigns = [
   { type: 'door-double', wood: 'aged', handle: 'pinecone', hasKeyhole: true, frame: 'carved' },
   { type: 'door-rect', wood: 'oak', handle: 'fantasy', hasKeyhole: false, frame: 'simple' },
   { type: 'door-arched', wood: 'pine', handle: 'brass-dot', hasKeyhole: true, frame: 'molding' },
-  { type: 'door-double', wood: 'aged', handle: 'ring', hasKeyhole: false, frame: 'carved' }
+  { type: 'door-double', wood: 'aged', handle: 'ring', hasKeyhole: false, frame: 'carved' },
 ];
 
 const windowDesigns = [
@@ -71,11 +144,38 @@ const windowDesigns = [
   { shape: 'diamond', panes: 0, glass: 'cracked', hasPlant: false, hasSill: false },
   { shape: 'hexagonal', panes: 0, glass: 'stained', hasPlant: true, hasSill: true },
   { shape: 'square', panes: 4, glass: 'frosted', hasPlant: false, hasSill: true },
-  { shape: 'arched', panes: 6, glass: 'cracked', hasPlant: false, hasSill: true }
+  { shape: 'arched', panes: 6, glass: 'cracked', hasPlant: false, hasSill: true },
 ];
 
-const doorDecorations = ['wreath', 'garland', 'none', 'wreath', 'bow', 'holly', 'garland', 'wreath', 'none', 'bow', 'wreath', 'holly'];
-const windowDecorations = ['candle', 'lights', 'bow', 'none', 'candle', 'lights', 'holly', 'candle', 'bow', 'none', 'lights', 'candle', 'holly'];
+const doorDecorations = [
+  'wreath',
+  'garland',
+  'none',
+  'wreath',
+  'bow',
+  'holly',
+  'garland',
+  'wreath',
+  'none',
+  'bow',
+  'wreath',
+  'holly',
+];
+const windowDecorations = [
+  'candle',
+  'lights',
+  'bow',
+  'none',
+  'candle',
+  'lights',
+  'holly',
+  'candle',
+  'bow',
+  'none',
+  'lights',
+  'candle',
+  'holly',
+];
 
 const renderHandle = (handleType: string) => {
   switch (handleType) {
@@ -99,7 +199,13 @@ const renderWindowPanes = (panes: number) => {
   const cols = panes === 4 ? 2 : panes === 6 ? 2 : 4;
   const rows = panes === 4 ? 2 : panes === 6 ? 3 : 2;
   return (
-    <div className="window-panes" style={{ gridTemplateColumns: `repeat(${cols}, 1fr)`, gridTemplateRows: `repeat(${rows}, 1fr)` }}>
+    <div
+      className="window-panes"
+      style={{
+        gridTemplateColumns: `repeat(${cols}, 1fr)`,
+        gridTemplateRows: `repeat(${rows}, 1fr)`,
+      }}
+    >
       {Array.from({ length: panes }).map((_, i) => (
         <div key={i} className="window-pane" />
       ))}
@@ -194,12 +300,12 @@ const renderWindowDecoration = (decoration: string) => {
   }
 };
 
-export function CalendarWindow({ 
-  windowNumber, 
-  isActive, 
-  isOpened, 
+export function CalendarWindow({
+  windowNumber,
+  isActive,
+  isOpened,
   isExactMatch,
-  onClick 
+  onClick,
 }: CalendarWindowProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const isOwlWindow = windowNumber === 17;
@@ -207,15 +313,18 @@ export function CalendarWindow({
   const handleMouseEnter = () => {
     if (isOwlWindow && audioRef.current) {
       audioRef.current.currentTime = 0;
-      audioRef.current.play().catch(e => console.log('Audio play failed:', e));
+      audioRef.current.play().catch((e) => console.log('Audio play failed:', e));
     }
   };
 
   const sizeClass = windowSizes[windowNumber - 1];
   const shapeClass = windowShapes[windowNumber - 1];
-  const glowClass = isActive && !isOpened 
-    ? 'window-glow-intense'
-    : (isActive && isExactMatch)  ? 'window-glow-intense' : '';
+  const glowClass =
+    isActive && !isOpened
+      ? 'window-glow-intense'
+      : isActive && isExactMatch
+        ? 'window-glow-intense'
+        : '';
   const roundSet = new Set([11, 6, 12, 16, 25, 30]);
   const isRound = roundSet.has(windowNumber);
   const appliedShapeClass = isRound ? 'window-round' : shapeClass;
@@ -256,7 +365,7 @@ export function CalendarWindow({
                 width: '100%',
                 height: '100%',
                 borderRadius: isRound ? '50%' : undefined,
-                overflow: 'hidden'
+                overflow: 'hidden',
               }}
             >
               {doorDesign.type === 'door-double' && <div className="door-split" />}
@@ -284,7 +393,7 @@ export function CalendarWindow({
                 width: '100%',
                 height: '100%',
                 borderRadius: isRound ? '50%' : undefined,
-                overflow: 'hidden'
+                overflow: 'hidden',
               }}
             >
               {renderWindowPanes(windowDesign.panes)}

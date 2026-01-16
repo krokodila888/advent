@@ -30,60 +30,60 @@ export function Calendar({ currentDate, userName }: CalendarProps) {
   };
 
   // Sort windows: today's window first, then unopened in chronological order, then opened in chronological order
- // Sort windows: 
-// 1. Unopened available windows (chronological)
-// 2. Unavailable windows (chronological)
-// 3. Today's window (if opened)
-// 4. Other opened windows (chronological)
-// Sort windows: 
-// 1. Unopened available windows (chronological)
-// 2. Today's window (if opened) - special position for easy access
-// 3. Unavailable windows (chronological)
-// 4. Other opened windows (chronological)
-const windowNumbers = Array.from({ length: 32 }, (_, i) => i + 1);
-const sortedWindows = [...windowNumbers].sort((a, b) => {
-  const aDate = getWindowDate(a);
-  const bDate = getWindowDate(b);
-  const aIsToday = isExactDateMatch(aDate, currentDate);
-  const bIsToday = isExactDateMatch(bDate, currentDate);
-  const aOpened = openedWindows.has(a);
-  const bOpened = openedWindows.has(b);
-  const aAvailable = isWindowActive(aDate, currentDate);
-  const bAvailable = isWindowActive(bDate, currentDate);
+  // Sort windows:
+  // 1. Unopened available windows (chronological)
+  // 2. Unavailable windows (chronological)
+  // 3. Today's window (if opened)
+  // 4. Other opened windows (chronological)
+  // Sort windows:
+  // 1. Unopened available windows (chronological)
+  // 2. Today's window (if opened) - special position for easy access
+  // 3. Unavailable windows (chronological)
+  // 4. Other opened windows (chronological)
+  const windowNumbers = Array.from({ length: 32 }, (_, i) => i + 1);
+  const sortedWindows = [...windowNumbers].sort((a, b) => {
+    const aDate = getWindowDate(a);
+    const bDate = getWindowDate(b);
+    const aIsToday = isExactDateMatch(aDate, currentDate);
+    const bIsToday = isExactDateMatch(bDate, currentDate);
+    const aOpened = openedWindows.has(a);
+    const bOpened = openedWindows.has(b);
+    const aAvailable = isWindowActive(aDate, currentDate);
+    const bAvailable = isWindowActive(bDate, currentDate);
 
-  // Group definitions
-  const aIsUnopened = aAvailable && !aOpened;
-  const bIsUnopened = bAvailable && !bOpened;
-  
-  const aIsTodayOpened = aIsToday && aOpened;
-  const bIsTodayOpened = bIsToday && bOpened;
-  
-  const aIsUnavailable = !aAvailable;
-  const bIsUnavailable = !bAvailable;
-  
-  const aIsOtherOpened = aOpened && !aIsToday && aAvailable;
-  const bIsOtherOpened = bOpened && !bIsToday && bAvailable;
+    // Group definitions
+    const aIsUnopened = aAvailable && !aOpened;
+    const bIsUnopened = bAvailable && !bOpened;
 
-  // Priority order:
-  // 1. Unopened available (including today if unopened)
-  if (aIsUnopened && !bIsUnopened) return -1;
-  if (!aIsUnopened && bIsUnopened) return 1;
-  if (aIsUnopened && bIsUnopened) return a - b;
+    const aIsTodayOpened = aIsToday && aOpened;
+    const bIsTodayOpened = bIsToday && bOpened;
 
-  // 2. Today's window if opened (before unavailable!)
-  if (aIsTodayOpened && !bIsTodayOpened) return -1;
-  if (!aIsTodayOpened && bIsTodayOpened) return 1;
+    const aIsUnavailable = !aAvailable;
+    const bIsUnavailable = !bAvailable;
 
-  // 3. Unavailable windows
-  if (aIsUnavailable && !bIsUnavailable) return -1;
-  if (!aIsUnavailable && bIsUnavailable) return 1;
-  if (aIsUnavailable && bIsUnavailable) return a - b;
+    const aIsOtherOpened = aOpened && !aIsToday && aAvailable;
+    const bIsOtherOpened = bOpened && !bIsToday && bAvailable;
 
-  // 4. Other opened windows
-  if (aIsOtherOpened && bIsOtherOpened) return a - b;
+    // Priority order:
+    // 1. Unopened available (including today if unopened)
+    if (aIsUnopened && !bIsUnopened) return -1;
+    if (!aIsUnopened && bIsUnopened) return 1;
+    if (aIsUnopened && bIsUnopened) return a - b;
 
-  return 0;
-});
+    // 2. Today's window if opened (before unavailable!)
+    if (aIsTodayOpened && !bIsTodayOpened) return -1;
+    if (!aIsTodayOpened && bIsTodayOpened) return 1;
+
+    // 3. Unavailable windows
+    if (aIsUnavailable && !bIsUnavailable) return -1;
+    if (!aIsUnavailable && bIsUnavailable) return 1;
+    if (aIsUnavailable && bIsUnavailable) return a - b;
+
+    // 4. Other opened windows
+    if (aIsOtherOpened && bIsOtherOpened) return a - b;
+
+    return 0;
+  });
 
   return (
     <>
@@ -93,7 +93,7 @@ const sortedWindows = [...windowNumbers].sort((a, b) => {
           const isActive = isWindowActive(windowDate, currentDate);
           const isOpened = openedWindows.has(windowNumber);
           const isExactMatch = isExactDateMatch(windowDate, currentDate);
-          
+
           return (
             <CalendarWindow
               key={windowNumber}
@@ -107,17 +107,17 @@ const sortedWindows = [...windowNumbers].sort((a, b) => {
         })}
       </div>
 
-      {selectedWindow !== null && (() => {
-        const data = windowMessages[selectedWindow - 1];
-        const message = userName === 'Tanya' ? data.tanya_message : userName === 'Zebra' ? data.zebra_message : '<p>Тут ничего нет.</p> <p>Никаких секретных посланий</p>';
-        return (
-          <Modal
-            windowNumber={selectedWindow}
-            message={message}
-            onClose={closeModal}
-          />
-        );
-      })()}
+      {selectedWindow !== null &&
+        (() => {
+          const data = windowMessages[selectedWindow - 1];
+          const message =
+            userName === 'Tanya'
+              ? data.tanya_message
+              : userName === 'Zebra'
+                ? data.zebra_message
+                : '<p>Тут ничего нет.</p> <p>Никаких секретных посланий</p>';
+          return <Modal windowNumber={selectedWindow} message={message} onClose={closeModal} />;
+        })()}
     </>
   );
 }

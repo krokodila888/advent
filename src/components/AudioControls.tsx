@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { Music, Volume2, VolumeX} from 'lucide-react';
+import { Music, Volume2, VolumeX } from 'lucide-react';
 
 export function AudioControls() {
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
@@ -11,7 +11,9 @@ export function AudioControls() {
     const musicPref = localStorage.getItem('musicEnabled');
     console.debug('[AudioControls] mount - musicPref=', musicPref);
     if (musicPref === 'true') {
-      console.debug('[AudioControls] stored preference requests autoplay but user gesture required');
+      console.debug(
+        '[AudioControls] stored preference requests autoplay but user gesture required'
+      );
       // mark that we should start playback as soon as the user interacts
       setPendingUserGesture(true);
     }
@@ -36,7 +38,12 @@ export function AudioControls() {
   }, [pendingUserGesture]);
 
   useEffect(() => {
-    console.debug('[AudioControls] effect isMusicPlaying=', isMusicPlaying, 'ref=', musicRef.current);
+    console.debug(
+      '[AudioControls] effect isMusicPlaying=',
+      isMusicPlaying,
+      'ref=',
+      musicRef.current
+    );
     if (!musicRef.current) return;
     const audio = musicRef.current;
     if (isMusicPlaying) {
@@ -71,7 +78,7 @@ export function AudioControls() {
 
   return (
     <div className="audio-controls">
-      <button 
+      <button
         className={`audio-button ${isMusicPlaying ? 'audio-active' : ''}`}
         onClick={toggleMusic}
         title="Toggle Christmas Music"

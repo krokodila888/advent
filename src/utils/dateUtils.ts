@@ -15,10 +15,7 @@ export function getWindowDate(windowNumber: number): Date {
  * Check if a window is active (can be opened)
  * A window is active if its date <= current date
  */
-export function isWindowActive(
-  windowDate: Date,
-  currentDate: Date,
-): boolean {
+export function isWindowActive(windowDate: Date, currentDate: Date): boolean {
   // Compare timestamps directly - both should be in the same timezone
   return currentDate.getTime() >= windowDate.getTime();
 }
@@ -27,10 +24,7 @@ export function isWindowActive(
  * Check if window date matches exactly with current date
  * Used for intense glow effect
  */
-export function isExactDateMatch(
-  windowDate: Date,
-  currentDate: Date,
-): boolean {
+export function isExactDateMatch(windowDate: Date, currentDate: Date): boolean {
   // Normalize both to UTC midnight
   const normalizedWindowDate = new Date(windowDate);
   normalizedWindowDate.setUTCHours(0, 0, 0, 0);
@@ -45,9 +39,9 @@ export function isExactDateMatch(
  * Format date for display
  */
 export function formatDate(date: Date): string {
-  return date.toLocaleDateString("en-US", {
-    month: "long",
-    day: "numeric",
-    year: "numeric",
+  return date.toLocaleDateString('en-US', {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
   });
 }

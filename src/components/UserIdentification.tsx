@@ -17,16 +17,15 @@ const greetings = [
   'Howdy',
   'Salutations',
   'Hiya',
-  'Hey'
+  'Hey',
 ];
 
 export function UserIdentification({ userName, onUserSelect }: UserIdentificationProps) {
-  const [greeting] = useState(() => 
-    greetings[Math.floor(Math.random() * greetings.length)]
-  );
+  const [greeting] = useState(() => greetings[Math.floor(Math.random() * greetings.length)]);
   const [showChangeModal, setShowChangeModal] = useState(false);
 
-  const displayName = userName === 'Tanya' ? 'Таня' : userName === 'Zebra' ? 'Зёбра' : 'неведомый гость';
+  const displayName =
+    userName === 'Tanya' ? 'Таня' : userName === 'Zebra' ? 'Зёбра' : 'неведомый гость';
 
   const handleNameClick = () => {
     setShowChangeModal(true);
@@ -54,13 +53,14 @@ export function UserIdentification({ userName, onUserSelect }: UserIdentificatio
         <div className="user-greeting">
           <p className="greeting-text">
             {greeting},{' '}
-            <span 
+            <span
               className="user-name clickable"
               onClick={handleNameClick}
               title={`А точно ли я ${displayName}?..`}
             >
               {displayName}
-            </span>!
+            </span>
+            !
           </p>
         </div>
 
@@ -78,26 +78,29 @@ export function UserIdentification({ userName, onUserSelect }: UserIdentificatio
 
   return (
     <div className="user-selection">
+      <p className="selection-prompt" style={{ margin: '0' }}>
+        Привет! Это Женя, и вот мой адвент.{' '}
+      </p>
+      <p className="selection-prompt" style={{ margin: '0' }}>
+        {' '}
+        Я писала его с четырьмя нейронками на бегу, так что тексты порой всратые.{' '}
+      </p>
+      <p className="selection-prompt" style={{ margin: '0' }}>
+        Вычитывала ли я их? Ну вот еще, вы вообще представляете мой график?!
+      </p>
+      <p className="selection-prompt" style={{ margin: '0' }}>
+        (это "да, но не очень внимательно" 👀).{' '}
+      </p>
+      <p className="selection-prompt" style={{ margin: '0' }}>
+        Он будет меняться по ходу дела, глючить и падать.
+      </p>
 
-                      <p className="selection-prompt" style={{margin: '0'}}>
-                        Привет! Это Женя, и вот мой адвент. </p>
-                      <p className="selection-prompt" style={{margin: '0'}}> Я писала его с четырьмя нейронками на бегу, так что тексты порой всратые. </p>
-                      <p className="selection-prompt" style={{margin: '0'}}>Вычитывала ли я их? Ну вот еще, вы вообще представляете мой график?!</p>
-                      <p className="selection-prompt" style={{margin: '0'}}>(это "да, но не очень внимательно" 👀). </p>
-                      <p className="selection-prompt" style={{margin: '0'}}>Он будет меняться по ходу дела, глючить и падать.</p>
-                      
       <p className="selection-prompt">Но кто здесь?</p>
       <div className="user-options">
-        <button 
-          className="user-button"
-          onClick={() => onUserSelect('Tanya')}
-        >
+        <button className="user-button" onClick={() => onUserSelect('Tanya')}>
           Таня
         </button>
-        <button 
-          className="user-button"
-          onClick={() => onUserSelect('Zebra')}
-        >
+        <button className="user-button" onClick={() => onUserSelect('Zebra')}>
           Зёбра
         </button>
       </div>

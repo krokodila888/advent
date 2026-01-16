@@ -37,7 +37,7 @@ import cafe from '../images/cafe.jpg';
 import yerevan1 from '../images/yerevan1.jpg';
 import yerevan2 from '../images/yerevan2.jpg';
 import yerevan3 from '../images/yerevan3.jpg';
-import lion from '../images/lion.webp'; 
+import lion from '../images/lion.webp';
 import bears from '../images/bears.jpg';
 import ararat from '../images/ararat.jpg';
 import yazzve from '../images/jazzve.jpg';
@@ -207,7 +207,7 @@ import beatles from '../images/beatles.jpg';
 import beatles1 from '../images/beatles1.jpg';
 import sweets from '../images/sweets.jpg';
 import bless10 from '../images/bless10.jpg';
-import blessed4 from '../images/blessed4.jpg'
+import blessed4 from '../images/blessed4.jpg';
 import blessed12 from '../images/blessed12.jpg';
 import blessed13 from '../images/blessed13.jpg';
 import blessed11 from '../images/blessed11.jpg';
@@ -229,7 +229,7 @@ export const images = {
   shir,
   markes,
   meal,
-  tolkin, 
+  tolkin,
   tolkin1,
   berries,
   berries1,

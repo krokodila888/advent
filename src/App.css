@@ -112,13 +112,9 @@
   --color-sidebar: var(--sidebar);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(
-    --sidebar-primary-foreground
-  );
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
   --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(
-    --sidebar-accent-foreground
-  );
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 }
@@ -139,9 +135,7 @@
  * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
  */
 @layer base {
-  :where(
-    :not(:has([class*=" text-"]), :not(:has([class^="text-"])))
-  ) {
+  :where(:not(:has([class*=' text-']), :not(:has([class^='text-'])))) {
     h1 {
       font-size: var(--text-2xl);
       font-weight: var(--font-weight-medium);
@@ -198,12 +192,7 @@ html {
 .app-container {
   position: relative;
   min-height: 100vh;
-  background: linear-gradient(
-    180deg,
-    #0f1729 0%,
-    #1a2744 50%,
-    #0d1421 100%
-  );
+  background: linear-gradient(180deg, #0f1729 0%, #1a2744 50%, #0d1421 100%);
   overflow-x: hidden;
 }
 
@@ -240,11 +229,7 @@ html {
 
 .layer-sky {
   height: 100%;
-  background: radial-gradient(
-    ellipse at top,
-    #1e3a5f 0%,
-    #0a1628 100%
-  );
+  background: radial-gradient(ellipse at top, #1e3a5f 0%, #0a1628 100%);
 }
 
 .moon {
@@ -254,11 +239,7 @@ html {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: radial-gradient(
-    circle at 30% 30%,
-    #ffeaa7,
-    #dfe6e9
-  );
+  background: radial-gradient(circle at 30% 30%, #ffeaa7, #dfe6e9);
   box-shadow: 0 0 60px rgba(255, 234, 167, 0.6);
 }
 
@@ -302,7 +283,7 @@ html {
 
 .cloud::before,
 .cloud::after {
-  content: "";
+  content: '';
   position: absolute;
   background: rgba(255, 255, 255, 0.15);
   border-radius: 100px;
@@ -463,11 +444,16 @@ html {
 .snowflake {
   position: absolute;
   top: -10px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(200, 230, 255, 0.4) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(200, 230, 255, 0.4) 100%
+  );
   border-radius: 50%;
   user-select: none;
   animation: fall linear infinite;
-  box-shadow: 
+  box-shadow:
     0 0 8px rgba(255, 255, 255, 0.8),
     0 0 15px rgba(200, 230, 255, 0.6),
     0 0 20px rgba(200, 230, 255, 0.4);
@@ -547,7 +533,14 @@ html {
 .user-greeting {
   text-align: center;
   margin-bottom: 3rem;
-  background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05), 85%, transparent 100%);
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.05),
+    85%,
+    transparent 100%
+  );
   backdrop-filter: blur(6px);
   padding: 2rem;
   border-radius: 20px;
@@ -581,18 +574,13 @@ html {
 }
 
 .user-button::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.3),
-    transparent
-  );
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
   transition: left 0.5s;
 }
 
@@ -648,7 +636,7 @@ html {
 }
 
 .calendar-window::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -712,7 +700,7 @@ html {
   background: rgba(255, 255, 255, 0.9);
   color: #3b2a1e;
   border-radius: 6px;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -721,10 +709,18 @@ html {
 }
 
 /* Slight vertical offsets for round wrappers by size to create visual variety */
-.calendar-window:has(.wood-pine) { margin-top: 16px; }
-.calendar-window:has(.window-glass) { margin-top: 22px; }
-.calendar-window:has(.wood-aged) { margin-top: 0; }
-.calendar-window:has(.window-small) { margin-top: -8px; }
+.calendar-window:has(.wood-pine) {
+  margin-top: 16px;
+}
+.calendar-window:has(.window-glass) {
+  margin-top: 22px;
+}
+.calendar-window:has(.wood-aged) {
+  margin-top: 0;
+}
+.calendar-window:has(.window-small) {
+  margin-top: -8px;
+}
 
 .owl-icon {
   position: absolute;
@@ -783,10 +779,16 @@ html {
 @keyframes glowSubtle {
   0%,
   100% {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 0 15px rgb(179 142 0 / 80%), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    box-shadow:
+      0 4px 6px rgba(0, 0, 0, 0.3),
+      0 0 15px rgb(179 142 0 / 80%),
+      inset 0 1px 0 rgba(255, 255, 255, 0.5);
   }
   50% {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 0 25px rgb(212 195 0 / 90%), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    box-shadow:
+      0 4px 6px rgba(0, 0, 0, 0.3),
+      0 0 25px rgb(212 195 0 / 90%),
+      inset 0 1px 0 rgba(255, 255, 255, 0.5);
   }
 }
 
@@ -981,7 +983,7 @@ html {
 }
 
 .modal-paper::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -1059,10 +1061,7 @@ html {
 
 @media (max-width: 768px) {
   .calendar-grid {
-    grid-template-columns: repeat(
-      auto-fill,
-      minmax(100px, 1fr)
-    );
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     gap: 1rem;
     padding: 1rem;
   }
@@ -1102,7 +1101,7 @@ html {
   position: absolute;
   bottom: 12px;
   right: 52px;
-  text-shadow: 
+  text-shadow:
     0 1px 2px rgba(0, 0, 0, 0.3),
     0 0 8px rgba(212, 166, 93, 0.6);
   font-weight: bold;
@@ -1127,26 +1126,19 @@ html {
   height: 100%;
   padding: 6px;
   background: linear-gradient(135deg, #8b7355 0%, #6b563f 100%);
-  box-shadow: 
+  box-shadow:
     inset 0 0 8px rgba(0, 0, 0, 0.3),
     0 2px 4px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
 }
 
 .door-frame.frame-carved {
-  background: 
-    repeating-linear-gradient(
-      45deg,
-      #8b7355 0px,
-      #8b7355 2px,
-      #7a6449 2px,
-      #7a6449 4px
-    );
+  background: repeating-linear-gradient(45deg, #8b7355 0px, #8b7355 2px, #7a6449 2px, #7a6449 4px);
 }
 
 .door-frame.frame-molding {
   border: 2px solid #5a4a3a;
-  box-shadow: 
+  box-shadow:
     inset 0 0 0 1px #a89070,
     inset 0 0 8px rgba(0, 0, 0, 0.3),
     0 2px 4px rgba(0, 0, 0, 0.2);
@@ -1160,23 +1152,43 @@ html {
   position: relative;
   width: 100%;
   height: 100%;
-  box-shadow: 
+  box-shadow:
     0 2px 4px rgba(0, 0, 0, 0.3),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 /* Wood textures */
 .wood-oak {
-  background: linear-gradient(90deg, transparent 0%, rgba(101, 67, 33, 0.1) 50%, transparent 100%), linear-gradient(135deg, #5e4639 0%, #8b892c 100%);
-  background-size: 20px 100%, 100% 100%;
+  background:
+    linear-gradient(90deg, transparent 0%, rgba(101, 67, 33, 0.1) 50%, transparent 100%),
+    linear-gradient(135deg, #5e4639 0%, #8b892c 100%);
+  background-size:
+    20px 100%,
+    100% 100%;
 }
 
 .wood-pine {
-  background: repeating-linear-gradient(90deg, #5e3009 0px, #5b360f 15px, #351f06 15px, #492904 16px, #633709 16px, #6b3906 30px);
+  background: repeating-linear-gradient(
+    90deg,
+    #5e3009 0px,
+    #5b360f 15px,
+    #351f06 15px,
+    #492904 16px,
+    #633709 16px,
+    #6b3906 30px
+  );
 }
 
 .wood-aged {
-      background: linear-gradient(180deg, #5d472c 0%, #583821 50%, #583120 100%), repeating-linear-gradient(0deg, transparent 0px, rgba(0, 0, 0, 0.1) 10px, transparent 11px, transparent 25px);
+  background:
+    linear-gradient(180deg, #5d472c 0%, #583821 50%, #583120 100%),
+    repeating-linear-gradient(
+      0deg,
+      transparent 0px,
+      rgba(0, 0, 0, 0.1) 10px,
+      transparent 11px,
+      transparent 25px
+    );
 }
 
 /* Door types */
@@ -1187,8 +1199,17 @@ html {
 .door-arched .door-panel {
   border-radius: 4px 4px 0 0;
   clip-path: polygon(
-    0 20%, 5% 10%, 15% 5%, 30% 2%, 50% 0%, 70% 2%, 85% 5%, 95% 10%, 100% 20%,
-    100% 100%, 0 100%
+    0 20%,
+    5% 10%,
+    15% 5%,
+    30% 2%,
+    50% 0%,
+    70% 2%,
+    85% 5%,
+    95% 10%,
+    100% 20%,
+    100% 100%,
+    0 100%
   );
 }
 
@@ -1204,7 +1225,7 @@ html {
   width: 2px;
   background: linear-gradient(180deg, #5a4a3a, #3a2a1a, #5a4a3a);
   transform: translateX(-50%);
-  box-shadow: 
+  box-shadow:
     -1px 0 0 rgba(255, 255, 255, 0.1),
     1px 0 0 rgba(0, 0, 0, 0.3);
 }
@@ -1225,7 +1246,7 @@ html {
   flex: 1;
   border: 2px solid rgba(0, 0, 0, 0.2);
   background: rgba(0, 0, 0, 0.05);
-  box-shadow: 
+  box-shadow:
     inset 0 1px 2px rgba(0, 0, 0, 0.2),
     0 1px 0 rgba(255, 255, 255, 0.1);
   border-radius: 2px;
@@ -1253,7 +1274,7 @@ html {
   height: 8px;
   border-radius: 50%;
   background: radial-gradient(circle, #f4d766 0%, #d4a65d 50%, #b8935c 100%);
-  box-shadow: 
+  box-shadow:
     0 2px 3px rgba(0, 0, 0, 0.4),
     inset 0 1px 1px rgba(255, 255, 255, 0.5);
 }
@@ -1269,8 +1290,7 @@ html {
 .door-handle.pinecone {
   width: 10px;
   height: 14px;
-  background: 
-    radial-gradient(ellipse at center, #8b7355 0%, #6b5642 100%);
+  background: radial-gradient(ellipse at center, #8b7355 0%, #6b5642 100%);
   border-radius: 50% 50% 40% 40%;
   position: relative;
 }
@@ -1282,14 +1302,13 @@ html {
   left: 2px;
   right: 2px;
   bottom: 2px;
-  background: 
-    repeating-linear-gradient(
-      45deg,
-      #5a4a3a 0px,
-      #5a4a3a 2px,
-      transparent 2px,
-      transparent 4px
-    );
+  background: repeating-linear-gradient(
+    45deg,
+    #5a4a3a 0px,
+    #5a4a3a 2px,
+    transparent 2px,
+    transparent 4px
+  );
   border-radius: inherit;
 }
 
@@ -1298,7 +1317,7 @@ html {
   height: 12px;
   background: linear-gradient(135deg, #f4d766 0%, #d4a65d 100%);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  box-shadow: 
+  box-shadow:
     0 2px 3px rgba(0, 0, 0, 0.4),
     inset 0 1px 1px rgba(255, 255, 255, 0.3);
 }
@@ -1326,7 +1345,9 @@ html {
   flex: 1;
   background: linear-gradient(135deg, #4b2e18 0%, #6b563f 100%);
   padding: 18px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), inset 0 0 6px rgba(0, 0, 0, 0.2);
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.3),
+    inset 0 0 6px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
 }
 
@@ -1382,14 +1403,16 @@ html {
 
 /* Glass types */
 .glass-frosted {
-  background: 
-    radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.9) 0%, rgb(255 254 189 / 80%) 100%);
-    backdrop-filter: blur(2px);
-  
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgb(255 254 189 / 80%) 100%
+  );
+  backdrop-filter: blur(2px);
 }
 
 .glass-stained {
-  background: 
+  background:
     radial-gradient(circle at 20% 20%, rgba(180, 200, 255, 0.6) 0%, transparent 30%),
     radial-gradient(circle at 80% 60%, rgba(255, 200, 150, 0.5) 0%, transparent 25%),
     radial-gradient(circle at 50% 80%, rgba(200, 180, 255, 0.4) 0%, transparent 20%),
@@ -1397,10 +1420,28 @@ html {
 }
 
 .glass-cracked {
-  background: 
-    linear-gradient(42deg, transparent 48%, rgba(200, 200, 220, 0.8) 49%, rgba(200, 200, 220, 0.8) 51%, transparent 52%),
-    linear-gradient(118deg, transparent 48%, rgba(200, 200, 220, 0.6) 49%, rgba(200, 200, 220, 0.6) 51%, transparent 52%),
-    linear-gradient(78deg, transparent 48%, rgba(200, 200, 220, 0.5) 49%, rgba(200, 200, 220, 0.5) 51%, transparent 52%),
+  background:
+    linear-gradient(
+      42deg,
+      transparent 48%,
+      rgba(200, 200, 220, 0.8) 49%,
+      rgba(200, 200, 220, 0.8) 51%,
+      transparent 52%
+    ),
+    linear-gradient(
+      118deg,
+      transparent 48%,
+      rgba(200, 200, 220, 0.6) 49%,
+      rgba(200, 200, 220, 0.6) 51%,
+      transparent 52%
+    ),
+    linear-gradient(
+      78deg,
+      transparent 48%,
+      rgba(200, 200, 220, 0.5) 49%,
+      rgba(200, 200, 220, 0.5) 51%,
+      transparent 52%
+    ),
     linear-gradient(135deg, rgba(240, 245, 255, 0.9) 0%, rgba(230, 240, 250, 0.85) 100%);
 }
 
@@ -1427,7 +1468,7 @@ html {
   height: 20px;
   background: linear-gradient(180deg, #5e320d 0%, #664f36 100%);
   margin-top: 2px;
-  box-shadow: 
+  box-shadow:
     0 2px 3px rgba(0, 0, 0, 0.3),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
   border-radius: 0 0 4px 4px;
@@ -1516,12 +1557,11 @@ html {
   height: 30px;
   border-radius: 50%;
   border: 4px solid #2d5016;
-  background: 
+  background:
     radial-gradient(circle at 20% 30%, #3a6b1f 0%, transparent 60%),
     radial-gradient(circle at 80% 40%, #4a7b2f 0%, transparent 50%),
-    radial-gradient(circle at 50% 70%, #2d5016 0%, transparent 55%),
-    #3f6b24;
-  box-shadow: 
+    radial-gradient(circle at 50% 70%, #2d5016 0%, transparent 55%), #3f6b24;
+  box-shadow:
     inset 0 0 4px rgba(0, 0, 0, 0.3),
     0 2px 4px rgba(0, 0, 0, 0.3);
 }
@@ -1571,7 +1611,7 @@ html {
   left: 0;
   right: 0;
   height: 15px;
-  background: 
+  background:
     radial-gradient(ellipse at 25% 50%, #3a6b1f 0%, transparent 70%),
     radial-gradient(ellipse at 50% 50%, #4a7b2f 0%, transparent 70%),
     radial-gradient(ellipse at 75% 50%, #3a6b1f 0%, transparent 70%),
@@ -1673,9 +1713,20 @@ html {
   height: 8px;
   background: linear-gradient(135deg, #2d5016 0%, #4a7b2f 100%);
   clip-path: polygon(
-    50% 0%, 60% 20%, 80% 15%, 70% 40%, 100% 60%, 75% 65%, 
-    80% 90%, 50% 75%, 20% 90%, 25% 65%, 0% 60%, 30% 40%, 
-    20% 15%, 40% 20%
+    50% 0%,
+    60% 20%,
+    80% 15%,
+    70% 40%,
+    100% 60%,
+    75% 65%,
+    80% 90%,
+    50% 75%,
+    20% 90%,
+    25% 65%,
+    0% 60%,
+    30% 40%,
+    20% 15%,
+    40% 20%
   );
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
 }
@@ -1731,15 +1782,15 @@ html {
   transform: translateX(-50%);
   width: 8px;
   height: 12px;
-  background: 
-    radial-gradient(ellipse at 50% 60%, #ffeb3b 0%, #ff9800 40%, transparent 70%);
+  background: radial-gradient(ellipse at 50% 60%, #ffeb3b 0%, #ff9800 40%, transparent 70%);
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   animation: flicker 2s infinite ease-in-out;
   filter: drop-shadow(0 0 4px rgba(255, 235, 59, 0.8));
 }
 
 @keyframes flicker {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateX(-50%) scale(1);
     opacity: 1;
   }
@@ -1758,7 +1809,7 @@ html {
   height: 18px;
   background: linear-gradient(180deg, #fffdf7 0%, #f4e4c1 100%);
   border-radius: 2px 2px 0 0;
-  box-shadow: 
+  box-shadow:
     inset 0 0 2px rgba(0, 0, 0, 0.1),
     0 2px 3px rgba(0, 0, 0, 0.2);
 }
@@ -1830,7 +1881,8 @@ html {
 }
 
 @keyframes twinkleLights {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
     filter: brightness(1);
   }
@@ -1899,9 +1951,20 @@ html {
   height: 6px;
   background: linear-gradient(135deg, #2d5016 0%, #4a7b2f 100%);
   clip-path: polygon(
-    50% 0%, 60% 20%, 80% 15%, 70% 40%, 100% 60%, 75% 65%, 
-    80% 90%, 50% 75%, 20% 90%, 25% 65%, 0% 60%, 30% 40%, 
-    20% 15%, 40% 20%
+    50% 0%,
+    60% 20%,
+    80% 15%,
+    70% 40%,
+    100% 60%,
+    75% 65%,
+    80% 90%,
+    50% 75%,
+    20% 90%,
+    25% 65%,
+    0% 60%,
+    30% 40%,
+    20% 15%,
+    40% 20%
   );
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
   top: 3px;
