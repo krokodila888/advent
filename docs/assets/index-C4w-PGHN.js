@@ -1,18 +1,15 @@
-import { images } from './images';
-
-export const windowMessages = [
-  {
-    day: 1,
-    date: '2025-12-20',
-    tanya_gift: 'Мексика + специи (по-мексикански)',
-    zebra_gift: 'Декаф Мексика + специи (х2)',
-    tanya_bonus: 'Специи для Café de Olla',
-    zebra_bonus: 'Специи для Café de Olla',
-    title: 'Café de Olla — кофе революции',
-    zebra_message: `
+(function(){const A=document.createElement("link").relList;if(A&&A.supports&&A.supports("modulepreload"))return;for(const j of document.querySelectorAll('link[rel="modulepreload"]'))p(j);new MutationObserver(j=>{for(const x of j)if(x.type==="childList")for(const Y of x.addedNodes)Y.tagName==="LINK"&&Y.rel==="modulepreload"&&p(Y)}).observe(document,{childList:!0,subtree:!0});function O(j){const x={};return j.integrity&&(x.integrity=j.integrity),j.referrerPolicy&&(x.referrerPolicy=j.referrerPolicy),j.crossOrigin==="use-credentials"?x.credentials="include":j.crossOrigin==="anonymous"?x.credentials="omit":x.credentials="same-origin",x}function p(j){if(j.ep)return;j.ep=!0;const x=O(j);fetch(j.href,x)}})();var ur={exports:{}},zn={};var bf;function um(){if(bf)return zn;bf=1;var v=Symbol.for("react.transitional.element"),A=Symbol.for("react.fragment");function O(p,j,x){var Y=null;if(x!==void 0&&(Y=""+x),j.key!==void 0&&(Y=""+j.key),"key"in j){x={};for(var P in j)P!=="key"&&(x[P]=j[P])}else x=j;return j=x.ref,{$$typeof:v,type:p,key:Y,ref:j!==void 0?j:null,props:x}}return zn.Fragment=A,zn.jsx=O,zn.jsxs=O,zn}var Sf;function cm(){return Sf||(Sf=1,ur.exports=um()),ur.exports}var d=cm(),cr={exports:{}},L={};var wf;function gm(){if(wf)return L;wf=1;var v=Symbol.for("react.transitional.element"),A=Symbol.for("react.portal"),O=Symbol.for("react.fragment"),p=Symbol.for("react.strict_mode"),j=Symbol.for("react.profiler"),x=Symbol.for("react.consumer"),Y=Symbol.for("react.context"),P=Symbol.for("react.forward_ref"),U=Symbol.for("react.suspense"),_=Symbol.for("react.memo"),E=Symbol.for("react.lazy"),N=Symbol.for("react.activity"),V=Symbol.iterator;function yl(g){return g===null||typeof g!="object"?null:(g=V&&g[V]||g["@@iterator"],typeof g=="function"?g:null)}var vl={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}},zl=Object.assign,Ul={};function bl(g,M,D){this.props=g,this.context=M,this.refs=Ul,this.updater=D||vl}bl.prototype.isReactComponent={},bl.prototype.setState=function(g,M){if(typeof g!="object"&&typeof g!="function"&&g!=null)throw Error("takes an object of state variables to update or a function which returns an object of state variables.");this.updater.enqueueSetState(this,g,M,"setState")},bl.prototype.forceUpdate=function(g){this.updater.enqueueForceUpdate(this,g,"forceUpdate")};function jl(){}jl.prototype=bl.prototype;function ol(g,M,D){this.props=g,this.context=M,this.refs=Ul,this.updater=D||vl}var _l=ol.prototype=new jl;_l.constructor=ol,zl(_l,bl.prototype),_l.isPureReactComponent=!0;var Ql=Array.isArray;function Sl(){}var k={H:null,A:null,T:null,S:null},Rl=Object.prototype.hasOwnProperty;function Kl(g,M,D){var R=D.ref;return{$$typeof:v,type:g,key:M,ref:R!==void 0?R:null,props:D}}function Ft(g,M){return Kl(g.type,M,g.props)}function pt(g){return typeof g=="object"&&g!==null&&g.$$typeof===v}function Jl(g){var M={"=":"=0",":":"=2"};return"$"+g.replace(/[=:]/g,function(D){return M[D]})}var Ti=/\/+/g;function xt(g,M){return typeof g=="object"&&g!==null&&g.key!=null?Jl(""+g.key):M.toString(36)}function Tt(g){switch(g.status){case"fulfilled":return g.value;case"rejected":throw g.reason;default:switch(typeof g.status=="string"?g.then(Sl,Sl):(g.status="pending",g.then(function(M){g.status==="pending"&&(g.status="fulfilled",g.value=M)},function(M){g.status==="pending"&&(g.status="rejected",g.reason=M)})),g.status){case"fulfilled":return g.value;case"rejected":throw g.reason}}throw g}function w(g,M,D,R,$){var K=typeof g;(K==="undefined"||K==="boolean")&&(g=null);var nl=!1;if(g===null)nl=!0;else switch(K){case"bigint":case"string":case"number":nl=!0;break;case"object":switch(g.$$typeof){case v:case A:nl=!0;break;case E:return nl=g._init,w(nl(g._payload),M,D,R,$)}}if(nl)return $=$(g),nl=R===""?"."+xt(g,0):R,Ql($)?(D="",nl!=null&&(D=nl.replace(Ti,"$&/")+"/"),w($,M,D,"",function(Ce){return Ce})):$!=null&&(pt($)&&($=Ft($,D+($.key==null||g&&g.key===$.key?"":(""+$.key).replace(Ti,"$&/")+"/")+nl)),M.push($)),1;nl=0;var Vl=R===""?".":R+":";if(Ql(g))for(var Al=0;Al<g.length;Al++)R=g[Al],K=Vl+xt(R,Al),nl+=w(R,M,D,K,$);else if(Al=yl(g),typeof Al=="function")for(g=Al.call(g),Al=0;!(R=g.next()).done;)R=R.value,K=Vl+xt(R,Al++),nl+=w(R,M,D,K,$);else if(K==="object"){if(typeof g.then=="function")return w(Tt(g),M,D,R,$);throw M=String(g),Error("Objects are not valid as a React child (found: "+(M==="[object Object]"?"object with keys {"+Object.keys(g).join(", ")+"}":M)+"). If you meant to render a collection of children, use an array instead.")}return nl}function C(g,M,D){if(g==null)return g;var R=[],$=0;return w(g,R,"","",function(K){return M.call(D,K,$++)}),R}function G(g){if(g._status===-1){var M=g._result;M=M(),M.then(function(D){(g._status===0||g._status===-1)&&(g._status=1,g._result=D)},function(D){(g._status===0||g._status===-1)&&(g._status=2,g._result=D)}),g._status===-1&&(g._status=0,g._result=M)}if(g._status===1)return g._result.default;throw g._result}var rl=typeof reportError=="function"?reportError:function(g){if(typeof window=="object"&&typeof window.ErrorEvent=="function"){var M=new window.ErrorEvent("error",{bubbles:!0,cancelable:!0,message:typeof g=="object"&&g!==null&&typeof g.message=="string"?String(g.message):String(g),error:g});if(!window.dispatchEvent(M))return}else if(typeof process=="object"&&typeof process.emit=="function"){process.emit("uncaughtException",g);return}console.error(g)},fl={map:C,forEach:function(g,M,D){C(g,function(){M.apply(this,arguments)},D)},count:function(g){var M=0;return C(g,function(){M++}),M},toArray:function(g){return C(g,function(M){return M})||[]},only:function(g){if(!pt(g))throw Error("React.Children.only expected to receive a single React element child.");return g}};return L.Activity=N,L.Children=fl,L.Component=bl,L.Fragment=O,L.Profiler=j,L.PureComponent=ol,L.StrictMode=p,L.Suspense=U,L.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE=k,L.__COMPILER_RUNTIME={__proto__:null,c:function(g){return k.H.useMemoCache(g)}},L.cache=function(g){return function(){return g.apply(null,arguments)}},L.cacheSignal=function(){return null},L.cloneElement=function(g,M,D){if(g==null)throw Error("The argument must be a React element, but you passed "+g+".");var R=zl({},g.props),$=g.key;if(M!=null)for(K in M.key!==void 0&&($=""+M.key),M)!Rl.call(M,K)||K==="key"||K==="__self"||K==="__source"||K==="ref"&&M.ref===void 0||(R[K]=M[K]);var K=arguments.length-2;if(K===1)R.children=D;else if(1<K){for(var nl=Array(K),Vl=0;Vl<K;Vl++)nl[Vl]=arguments[Vl+2];R.children=nl}return Kl(g.type,$,R)},L.createContext=function(g){return g={$$typeof:Y,_currentValue:g,_currentValue2:g,_threadCount:0,Provider:null,Consumer:null},g.Provider=g,g.Consumer={$$typeof:x,_context:g},g},L.createElement=function(g,M,D){var R,$={},K=null;if(M!=null)for(R in M.key!==void 0&&(K=""+M.key),M)Rl.call(M,R)&&R!=="key"&&R!=="__self"&&R!=="__source"&&($[R]=M[R]);var nl=arguments.length-2;if(nl===1)$.children=D;else if(1<nl){for(var Vl=Array(nl),Al=0;Al<nl;Al++)Vl[Al]=arguments[Al+2];$.children=Vl}if(g&&g.defaultProps)for(R in nl=g.defaultProps,nl)$[R]===void 0&&($[R]=nl[R]);return Kl(g,K,$)},L.createRef=function(){return{current:null}},L.forwardRef=function(g){return{$$typeof:P,render:g}},L.isValidElement=pt,L.lazy=function(g){return{$$typeof:E,_payload:{_status:-1,_result:g},_init:G}},L.memo=function(g,M){return{$$typeof:_,type:g,compare:M===void 0?null:M}},L.startTransition=function(g){var M=k.T,D={};k.T=D;try{var R=g(),$=k.S;$!==null&&$(D,R),typeof R=="object"&&R!==null&&typeof R.then=="function"&&R.then(Sl,rl)}catch(K){rl(K)}finally{M!==null&&D.types!==null&&(M.types=D.types),k.T=M}},L.unstable_useCacheRefresh=function(){return k.H.useCacheRefresh()},L.use=function(g){return k.H.use(g)},L.useActionState=function(g,M,D){return k.H.useActionState(g,M,D)},L.useCallback=function(g,M){return k.H.useCallback(g,M)},L.useContext=function(g){return k.H.useContext(g)},L.useDebugValue=function(){},L.useDeferredValue=function(g,M){return k.H.useDeferredValue(g,M)},L.useEffect=function(g,M){return k.H.useEffect(g,M)},L.useEffectEvent=function(g){return k.H.useEffectEvent(g)},L.useId=function(){return k.H.useId()},L.useImperativeHandle=function(g,M,D){return k.H.useImperativeHandle(g,M,D)},L.useInsertionEffect=function(g,M){return k.H.useInsertionEffect(g,M)},L.useLayoutEffect=function(g,M){return k.H.useLayoutEffect(g,M)},L.useMemo=function(g,M){return k.H.useMemo(g,M)},L.useOptimistic=function(g,M){return k.H.useOptimistic(g,M)},L.useReducer=function(g,M,D){return k.H.useReducer(g,M,D)},L.useRef=function(g){return k.H.useRef(g)},L.useState=function(g){return k.H.useState(g)},L.useSyncExternalStore=function(g,M,D){return k.H.useSyncExternalStore(g,M,D)},L.useTransition=function(){return k.H.useTransition()},L.version="19.2.3",L}var zf;function hr(){return zf||(zf=1,cr.exports=gm()),cr.exports}var wl=hr(),gr={exports:{}},_n={},fr={exports:{}},pr={};var _f;function fm(){return _f||(_f=1,(function(v){function A(w,C){var G=w.length;w.push(C);l:for(;0<G;){var rl=G-1>>>1,fl=w[rl];if(0<j(fl,C))w[rl]=C,w[G]=fl,G=rl;else break l}}function O(w){return w.length===0?null:w[0]}function p(w){if(w.length===0)return null;var C=w[0],G=w.pop();if(G!==C){w[0]=G;l:for(var rl=0,fl=w.length,g=fl>>>1;rl<g;){var M=2*(rl+1)-1,D=w[M],R=M+1,$=w[R];if(0>j(D,G))R<fl&&0>j($,D)?(w[rl]=$,w[R]=G,rl=R):(w[rl]=D,w[M]=G,rl=M);else if(R<fl&&0>j($,G))w[rl]=$,w[R]=G,rl=R;else break l}}return C}function j(w,C){var G=w.sortIndex-C.sortIndex;return G!==0?G:w.id-C.id}if(v.unstable_now=void 0,typeof performance=="object"&&typeof performance.now=="function"){var x=performance;v.unstable_now=function(){return x.now()}}else{var Y=Date,P=Y.now();v.unstable_now=function(){return Y.now()-P}}var U=[],_=[],E=1,N=null,V=3,yl=!1,vl=!1,zl=!1,Ul=!1,bl=typeof setTimeout=="function"?setTimeout:null,jl=typeof clearTimeout=="function"?clearTimeout:null,ol=typeof setImmediate<"u"?setImmediate:null;function _l(w){for(var C=O(_);C!==null;){if(C.callback===null)p(_);else if(C.startTime<=w)p(_),C.sortIndex=C.expirationTime,A(U,C);else break;C=O(_)}}function Ql(w){if(zl=!1,_l(w),!vl)if(O(U)!==null)vl=!0,Sl||(Sl=!0,Jl());else{var C=O(_);C!==null&&Tt(Ql,C.startTime-w)}}var Sl=!1,k=-1,Rl=5,Kl=-1;function Ft(){return Ul?!0:!(v.unstable_now()-Kl<Rl)}function pt(){if(Ul=!1,Sl){var w=v.unstable_now();Kl=w;var C=!0;try{l:{vl=!1,zl&&(zl=!1,jl(k),k=-1),yl=!0;var G=V;try{t:{for(_l(w),N=O(U);N!==null&&!(N.expirationTime>w&&Ft());){var rl=N.callback;if(typeof rl=="function"){N.callback=null,V=N.priorityLevel;var fl=rl(N.expirationTime<=w);if(w=v.unstable_now(),typeof fl=="function"){N.callback=fl,_l(w),C=!0;break t}N===O(U)&&p(U),_l(w)}else p(U);N=O(U)}if(N!==null)C=!0;else{var g=O(_);g!==null&&Tt(Ql,g.startTime-w),C=!1}}break l}finally{N=null,V=G,yl=!1}C=void 0}}finally{C?Jl():Sl=!1}}}var Jl;if(typeof ol=="function")Jl=function(){ol(pt)};else if(typeof MessageChannel<"u"){var Ti=new MessageChannel,xt=Ti.port2;Ti.port1.onmessage=pt,Jl=function(){xt.postMessage(null)}}else Jl=function(){bl(pt,0)};function Tt(w,C){k=bl(function(){w(v.unstable_now())},C)}v.unstable_IdlePriority=5,v.unstable_ImmediatePriority=1,v.unstable_LowPriority=4,v.unstable_NormalPriority=3,v.unstable_Profiling=null,v.unstable_UserBlockingPriority=2,v.unstable_cancelCallback=function(w){w.callback=null},v.unstable_forceFrameRate=function(w){0>w||125<w?console.error("forceFrameRate takes a positive int between 0 and 125, forcing frame rates higher than 125 fps is not supported"):Rl=0<w?Math.floor(1e3/w):5},v.unstable_getCurrentPriorityLevel=function(){return V},v.unstable_next=function(w){switch(V){case 1:case 2:case 3:var C=3;break;default:C=V}var G=V;V=C;try{return w()}finally{V=G}},v.unstable_requestPaint=function(){Ul=!0},v.unstable_runWithPriority=function(w,C){switch(w){case 1:case 2:case 3:case 4:case 5:break;default:w=3}var G=V;V=w;try{return C()}finally{V=G}},v.unstable_scheduleCallback=function(w,C,G){var rl=v.unstable_now();switch(typeof G=="object"&&G!==null?(G=G.delay,G=typeof G=="number"&&0<G?rl+G:rl):G=rl,w){case 1:var fl=-1;break;case 2:fl=250;break;case 5:fl=1073741823;break;case 4:fl=1e4;break;default:fl=5e3}return fl=G+fl,w={id:E++,callback:C,priorityLevel:w,startTime:G,expirationTime:fl,sortIndex:-1},G>rl?(w.sortIndex=G,A(_,w),O(U)===null&&w===O(_)&&(zl?(jl(k),k=-1):zl=!0,Tt(Ql,G-rl))):(w.sortIndex=fl,A(U,w),vl||yl||(vl=!0,Sl||(Sl=!0,Jl()))),w},v.unstable_shouldYield=Ft,v.unstable_wrapCallback=function(w){var C=V;return function(){var G=V;V=C;try{return w.apply(this,arguments)}finally{V=G}}}})(pr)),pr}var Tf;function pm(){return Tf||(Tf=1,fr.exports=fm()),fr.exports}var dr={exports:{}},Zl={};var Mf;function dm(){if(Mf)return Zl;Mf=1;var v=hr();function A(U){var _="https://react.dev/errors/"+U;if(1<arguments.length){_+="?args[]="+encodeURIComponent(arguments[1]);for(var E=2;E<arguments.length;E++)_+="&args[]="+encodeURIComponent(arguments[E])}return"Minified React error #"+U+"; visit "+_+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}function O(){}var p={d:{f:O,r:function(){throw Error(A(522))},D:O,C:O,L:O,m:O,X:O,S:O,M:O},p:0,findDOMNode:null},j=Symbol.for("react.portal");function x(U,_,E){var N=3<arguments.length&&arguments[3]!==void 0?arguments[3]:null;return{$$typeof:j,key:N==null?null:""+N,children:U,containerInfo:_,implementation:E}}var Y=v.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;function P(U,_){if(U==="font")return"";if(typeof _=="string")return _==="use-credentials"?_:""}return Zl.__DOM_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE=p,Zl.createPortal=function(U,_){var E=2<arguments.length&&arguments[2]!==void 0?arguments[2]:null;if(!_||_.nodeType!==1&&_.nodeType!==9&&_.nodeType!==11)throw Error(A(299));return x(U,_,null,E)},Zl.flushSync=function(U){var _=Y.T,E=p.p;try{if(Y.T=null,p.p=2,U)return U()}finally{Y.T=_,p.p=E,p.d.f()}},Zl.preconnect=function(U,_){typeof U=="string"&&(_?(_=_.crossOrigin,_=typeof _=="string"?_==="use-credentials"?_:"":void 0):_=null,p.d.C(U,_))},Zl.prefetchDNS=function(U){typeof U=="string"&&p.d.D(U)},Zl.preinit=function(U,_){if(typeof U=="string"&&_&&typeof _.as=="string"){var E=_.as,N=P(E,_.crossOrigin),V=typeof _.integrity=="string"?_.integrity:void 0,yl=typeof _.fetchPriority=="string"?_.fetchPriority:void 0;E==="style"?p.d.S(U,typeof _.precedence=="string"?_.precedence:void 0,{crossOrigin:N,integrity:V,fetchPriority:yl}):E==="script"&&p.d.X(U,{crossOrigin:N,integrity:V,fetchPriority:yl,nonce:typeof _.nonce=="string"?_.nonce:void 0})}},Zl.preinitModule=function(U,_){if(typeof U=="string")if(typeof _=="object"&&_!==null){if(_.as==null||_.as==="script"){var E=P(_.as,_.crossOrigin);p.d.M(U,{crossOrigin:E,integrity:typeof _.integrity=="string"?_.integrity:void 0,nonce:typeof _.nonce=="string"?_.nonce:void 0})}}else _==null&&p.d.M(U)},Zl.preload=function(U,_){if(typeof U=="string"&&typeof _=="object"&&_!==null&&typeof _.as=="string"){var E=_.as,N=P(E,_.crossOrigin);p.d.L(U,E,{crossOrigin:N,integrity:typeof _.integrity=="string"?_.integrity:void 0,nonce:typeof _.nonce=="string"?_.nonce:void 0,type:typeof _.type=="string"?_.type:void 0,fetchPriority:typeof _.fetchPriority=="string"?_.fetchPriority:void 0,referrerPolicy:typeof _.referrerPolicy=="string"?_.referrerPolicy:void 0,imageSrcSet:typeof _.imageSrcSet=="string"?_.imageSrcSet:void 0,imageSizes:typeof _.imageSizes=="string"?_.imageSizes:void 0,media:typeof _.media=="string"?_.media:void 0})}},Zl.preloadModule=function(U,_){if(typeof U=="string")if(_){var E=P(_.as,_.crossOrigin);p.d.m(U,{as:typeof _.as=="string"&&_.as!=="script"?_.as:void 0,crossOrigin:E,integrity:typeof _.integrity=="string"?_.integrity:void 0})}else p.d.m(U)},Zl.requestFormReset=function(U){p.d.r(U)},Zl.unstable_batchedUpdates=function(U,_){return U(_)},Zl.useFormState=function(U,_,E){return Y.H.useFormState(U,_,E)},Zl.useFormStatus=function(){return Y.H.useHostTransitionStatus()},Zl.version="19.2.3",Zl}var jf;function mm(){if(jf)return dr.exports;jf=1;function v(){if(!(typeof __REACT_DEVTOOLS_GLOBAL_HOOK__>"u"||typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE!="function"))try{__REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE(v)}catch(A){console.error(A)}}return v(),dr.exports=dm(),dr.exports}var Af;function hm(){if(Af)return _n;Af=1;var v=pm(),A=hr(),O=mm();function p(l){var t="https://react.dev/errors/"+l;if(1<arguments.length){t+="?args[]="+encodeURIComponent(arguments[1]);for(var i=2;i<arguments.length;i++)t+="&args[]="+encodeURIComponent(arguments[i])}return"Minified React error #"+l+"; visit "+t+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}function j(l){return!(!l||l.nodeType!==1&&l.nodeType!==9&&l.nodeType!==11)}function x(l){var t=l,i=l;if(l.alternate)for(;t.return;)t=t.return;else{l=t;do t=l,(t.flags&4098)!==0&&(i=t.return),l=t.return;while(l)}return t.tag===3?i:null}function Y(l){if(l.tag===13){var t=l.memoizedState;if(t===null&&(l=l.alternate,l!==null&&(t=l.memoizedState)),t!==null)return t.dehydrated}return null}function P(l){if(l.tag===31){var t=l.memoizedState;if(t===null&&(l=l.alternate,l!==null&&(t=l.memoizedState)),t!==null)return t.dehydrated}return null}function U(l){if(x(l)!==l)throw Error(p(188))}function _(l){var t=l.alternate;if(!t){if(t=x(l),t===null)throw Error(p(188));return t!==l?null:l}for(var i=l,e=t;;){var n=i.return;if(n===null)break;var a=n.alternate;if(a===null){if(e=n.return,e!==null){i=e;continue}break}if(n.child===a.child){for(a=n.child;a;){if(a===i)return U(n),l;if(a===e)return U(n),t;a=a.sibling}throw Error(p(188))}if(i.return!==e.return)i=n,e=a;else{for(var s=!1,r=n.child;r;){if(r===i){s=!0,i=n,e=a;break}if(r===e){s=!0,e=n,i=a;break}r=r.sibling}if(!s){for(r=a.child;r;){if(r===i){s=!0,i=a,e=n;break}if(r===e){s=!0,e=a,i=n;break}r=r.sibling}if(!s)throw Error(p(189))}}if(i.alternate!==e)throw Error(p(190))}if(i.tag!==3)throw Error(p(188));return i.stateNode.current===i?l:t}function E(l){var t=l.tag;if(t===5||t===26||t===27||t===6)return l;for(l=l.child;l!==null;){if(t=E(l),t!==null)return t;l=l.sibling}return null}var N=Object.assign,V=Symbol.for("react.element"),yl=Symbol.for("react.transitional.element"),vl=Symbol.for("react.portal"),zl=Symbol.for("react.fragment"),Ul=Symbol.for("react.strict_mode"),bl=Symbol.for("react.profiler"),jl=Symbol.for("react.consumer"),ol=Symbol.for("react.context"),_l=Symbol.for("react.forward_ref"),Ql=Symbol.for("react.suspense"),Sl=Symbol.for("react.suspense_list"),k=Symbol.for("react.memo"),Rl=Symbol.for("react.lazy"),Kl=Symbol.for("react.activity"),Ft=Symbol.for("react.memo_cache_sentinel"),pt=Symbol.iterator;function Jl(l){return l===null||typeof l!="object"?null:(l=pt&&l[pt]||l["@@iterator"],typeof l=="function"?l:null)}var Ti=Symbol.for("react.client.reference");function xt(l){if(l==null)return null;if(typeof l=="function")return l.$$typeof===Ti?null:l.displayName||l.name||null;if(typeof l=="string")return l;switch(l){case zl:return"Fragment";case bl:return"Profiler";case Ul:return"StrictMode";case Ql:return"Suspense";case Sl:return"SuspenseList";case Kl:return"Activity"}if(typeof l=="object")switch(l.$$typeof){case vl:return"Portal";case ol:return l.displayName||"Context";case jl:return(l._context.displayName||"Context")+".Consumer";case _l:var t=l.render;return l=l.displayName,l||(l=t.displayName||t.name||"",l=l!==""?"ForwardRef("+l+")":"ForwardRef"),l;case k:return t=l.displayName||null,t!==null?t:xt(l.type)||"Memo";case Rl:t=l._payload,l=l._init;try{return xt(l(t))}catch{}}return null}var Tt=Array.isArray,w=A.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE,C=O.__DOM_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE,G={pending:!1,data:null,method:null,action:null},rl=[],fl=-1;function g(l){return{current:l}}function M(l){0>fl||(l.current=rl[fl],rl[fl]=null,fl--)}function D(l,t){fl++,rl[fl]=l.current,l.current=t}var R=g(null),$=g(null),K=g(null),nl=g(null);function Vl(l,t){switch(D(K,t),D($,l),D(R,null),t.nodeType){case 9:case 11:l=(l=t.documentElement)&&(l=l.namespaceURI)?Gg(l):0;break;default:if(l=t.tagName,t=t.namespaceURI)t=Gg(t),l=Lg(t,l);else switch(l){case"svg":l=1;break;case"math":l=2;break;default:l=0}}M(R),D(R,l)}function Al(){M(R),M($),M(K)}function Ce(l){l.memoizedState!==null&&D(nl,l);var t=R.current,i=Lg(t,l.type);t!==i&&(D($,l),D(R,i))}function Tn(l){$.current===l&&(M(R),M($)),nl.current===l&&(M(nl),vn._currentValue=G)}var Qa,yr;function Mi(l){if(Qa===void 0)try{throw Error()}catch(i){var t=i.stack.trim().match(/\n( *(at )?)/);Qa=t&&t[1]||"",yr=-1<i.stack.indexOf(`
+    at`)?" (<anonymous>)":-1<i.stack.indexOf("@")?"@unknown:0:0":""}return`
+`+Qa+l+yr}var Za=!1;function Va(l,t){if(!l||Za)return"";Za=!0;var i=Error.prepareStackTrace;Error.prepareStackTrace=void 0;try{var e={DetermineComponentFrameRoot:function(){try{if(t){var T=function(){throw Error()};if(Object.defineProperty(T.prototype,"props",{set:function(){throw Error()}}),typeof Reflect=="object"&&Reflect.construct){try{Reflect.construct(T,[])}catch(b){var y=b}Reflect.construct(l,[],T)}else{try{T.call()}catch(b){y=b}l.call(T.prototype)}}else{try{throw Error()}catch(b){y=b}(T=l())&&typeof T.catch=="function"&&T.catch(function(){})}}catch(b){if(b&&y&&typeof b.stack=="string")return[b.stack,y.stack]}return[null,null]}};e.DetermineComponentFrameRoot.displayName="DetermineComponentFrameRoot";var n=Object.getOwnPropertyDescriptor(e.DetermineComponentFrameRoot,"name");n&&n.configurable&&Object.defineProperty(e.DetermineComponentFrameRoot,"name",{value:"DetermineComponentFrameRoot"});var a=e.DetermineComponentFrameRoot(),s=a[0],r=a[1];if(s&&r){var u=s.split(`
+`),h=r.split(`
+`);for(n=e=0;e<u.length&&!u[e].includes("DetermineComponentFrameRoot");)e++;for(;n<h.length&&!h[n].includes("DetermineComponentFrameRoot");)n++;if(e===u.length||n===h.length)for(e=u.length-1,n=h.length-1;1<=e&&0<=n&&u[e]!==h[n];)n--;for(;1<=e&&0<=n;e--,n--)if(u[e]!==h[n]){if(e!==1||n!==1)do if(e--,n--,0>n||u[e]!==h[n]){var S=`
+`+u[e].replace(" at new "," at ");return l.displayName&&S.includes("<anonymous>")&&(S=S.replace("<anonymous>",l.displayName)),S}while(1<=e&&0<=n);break}}}finally{Za=!1,Error.prepareStackTrace=i}return(i=l?l.displayName||l.name:"")?Mi(i):""}function Xf(l,t){switch(l.tag){case 26:case 27:case 5:return Mi(l.type);case 16:return Mi("Lazy");case 13:return l.child!==t&&t!==null?Mi("Suspense Fallback"):Mi("Suspense");case 19:return Mi("SuspenseList");case 0:case 15:return Va(l.type,!1);case 11:return Va(l.type.render,!1);case 1:return Va(l.type,!0);case 31:return Mi("Activity");default:return""}}function vr(l){try{var t="",i=null;do t+=Xf(l,i),i=l,l=l.return;while(l);return t}catch(e){return`
+Error generating stack: `+e.message+`
+`+e.stack}}var ka=Object.prototype.hasOwnProperty,Ka=v.unstable_scheduleCallback,Ja=v.unstable_cancelCallback,Gf=v.unstable_shouldYield,Lf=v.unstable_requestPaint,et=v.unstable_now,$f=v.unstable_getCurrentPriorityLevel,br=v.unstable_ImmediatePriority,Sr=v.unstable_UserBlockingPriority,Mn=v.unstable_NormalPriority,Qf=v.unstable_LowPriority,wr=v.unstable_IdlePriority,Zf=v.log,Vf=v.unstable_setDisableYieldValue,Ee=null,nt=null;function It(l){if(typeof Zf=="function"&&Vf(l),nt&&typeof nt.setStrictMode=="function")try{nt.setStrictMode(Ee,l)}catch{}}var at=Math.clz32?Math.clz32:Jf,kf=Math.log,Kf=Math.LN2;function Jf(l){return l>>>=0,l===0?32:31-(kf(l)/Kf|0)|0}var jn=256,An=262144,Cn=4194304;function ji(l){var t=l&42;if(t!==0)return t;switch(l&-l){case 1:return 1;case 2:return 2;case 4:return 4;case 8:return 8;case 16:return 16;case 32:return 32;case 64:return 64;case 128:return 128;case 256:case 512:case 1024:case 2048:case 4096:case 8192:case 16384:case 32768:case 65536:case 131072:return l&261888;case 262144:case 524288:case 1048576:case 2097152:return l&3932160;case 4194304:case 8388608:case 16777216:case 33554432:return l&62914560;case 67108864:return 67108864;case 134217728:return 134217728;case 268435456:return 268435456;case 536870912:return 536870912;case 1073741824:return 0;default:return l}}function En(l,t,i){var e=l.pendingLanes;if(e===0)return 0;var n=0,a=l.suspendedLanes,s=l.pingedLanes;l=l.warmLanes;var r=e&134217727;return r!==0?(e=r&~a,e!==0?n=ji(e):(s&=r,s!==0?n=ji(s):i||(i=r&~l,i!==0&&(n=ji(i))))):(r=e&~a,r!==0?n=ji(r):s!==0?n=ji(s):i||(i=e&~l,i!==0&&(n=ji(i)))),n===0?0:t!==0&&t!==n&&(t&a)===0&&(a=n&-n,i=t&-t,a>=i||a===32&&(i&4194048)!==0)?t:n}function De(l,t){return(l.pendingLanes&~(l.suspendedLanes&~l.pingedLanes)&t)===0}function Wf(l,t){switch(l){case 1:case 2:case 4:case 8:case 64:return t+250;case 16:case 32:case 128:case 256:case 512:case 1024:case 2048:case 4096:case 8192:case 16384:case 32768:case 65536:case 131072:case 262144:case 524288:case 1048576:case 2097152:return t+5e3;case 4194304:case 8388608:case 16777216:case 33554432:return-1;case 67108864:case 134217728:case 268435456:case 536870912:case 1073741824:return-1;default:return-1}}function zr(){var l=Cn;return Cn<<=1,(Cn&62914560)===0&&(Cn=4194304),l}function Wa(l){for(var t=[],i=0;31>i;i++)t.push(l);return t}function Oe(l,t){l.pendingLanes|=t,t!==268435456&&(l.suspendedLanes=0,l.pingedLanes=0,l.warmLanes=0)}function Ff(l,t,i,e,n,a){var s=l.pendingLanes;l.pendingLanes=i,l.suspendedLanes=0,l.pingedLanes=0,l.warmLanes=0,l.expiredLanes&=i,l.entangledLanes&=i,l.errorRecoveryDisabledLanes&=i,l.shellSuspendCounter=0;var r=l.entanglements,u=l.expirationTimes,h=l.hiddenUpdates;for(i=s&~i;0<i;){var S=31-at(i),T=1<<S;r[S]=0,u[S]=-1;var y=h[S];if(y!==null)for(h[S]=null,S=0;S<y.length;S++){var b=y[S];b!==null&&(b.lane&=-536870913)}i&=~T}e!==0&&_r(l,e,0),a!==0&&n===0&&l.tag!==0&&(l.suspendedLanes|=a&~(s&~t))}function _r(l,t,i){l.pendingLanes|=t,l.suspendedLanes&=~t;var e=31-at(t);l.entangledLanes|=t,l.entanglements[e]=l.entanglements[e]|1073741824|i&261930}function Tr(l,t){var i=l.entangledLanes|=t;for(l=l.entanglements;i;){var e=31-at(i),n=1<<e;n&t|l[e]&t&&(l[e]|=t),i&=~n}}function Mr(l,t){var i=t&-t;return i=(i&42)!==0?1:Fa(i),(i&(l.suspendedLanes|t))!==0?0:i}function Fa(l){switch(l){case 2:l=1;break;case 8:l=4;break;case 32:l=16;break;case 256:case 512:case 1024:case 2048:case 4096:case 8192:case 16384:case 32768:case 65536:case 131072:case 262144:case 524288:case 1048576:case 2097152:case 4194304:case 8388608:case 16777216:case 33554432:l=128;break;case 268435456:l=134217728;break;default:l=0}return l}function Ia(l){return l&=-l,2<l?8<l?(l&134217727)!==0?32:268435456:8:2}function jr(){var l=C.p;return l!==0?l:(l=window.event,l===void 0?32:ff(l.type))}function Ar(l,t){var i=C.p;try{return C.p=l,t()}finally{C.p=i}}var Pt=Math.random().toString(36).slice(2),ql="__reactFiber$"+Pt,Wl="__reactProps$"+Pt,Qi="__reactContainer$"+Pt,Pa="__reactEvents$"+Pt,If="__reactListeners$"+Pt,Pf="__reactHandles$"+Pt,Cr="__reactResources$"+Pt,xe="__reactMarker$"+Pt;function ls(l){delete l[ql],delete l[Wl],delete l[Pa],delete l[If],delete l[Pf]}function Zi(l){var t=l[ql];if(t)return t;for(var i=l.parentNode;i;){if(t=i[Qi]||i[ql]){if(i=t.alternate,t.child!==null||i!==null&&i.child!==null)for(l=Jg(l);l!==null;){if(i=l[ql])return i;l=Jg(l)}return t}l=i,i=l.parentNode}return null}function Vi(l){if(l=l[ql]||l[Qi]){var t=l.tag;if(t===5||t===6||t===13||t===31||t===26||t===27||t===3)return l}return null}function Ne(l){var t=l.tag;if(t===5||t===26||t===27||t===6)return l.stateNode;throw Error(p(33))}function ki(l){var t=l[Cr];return t||(t=l[Cr]={hoistableStyles:new Map,hoistableScripts:new Map}),t}function Hl(l){l[xe]=!0}var Er=new Set,Dr={};function Ai(l,t){Ki(l,t),Ki(l+"Capture",t)}function Ki(l,t){for(Dr[l]=t,l=0;l<t.length;l++)Er.add(t[l])}var lp=RegExp("^[:A-Z_a-z\\u00C0-\\u00D6\\u00D8-\\u00F6\\u00F8-\\u02FF\\u0370-\\u037D\\u037F-\\u1FFF\\u200C-\\u200D\\u2070-\\u218F\\u2C00-\\u2FEF\\u3001-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFFD][:A-Z_a-z\\u00C0-\\u00D6\\u00D8-\\u00F6\\u00F8-\\u02FF\\u0370-\\u037D\\u037F-\\u1FFF\\u200C-\\u200D\\u2070-\\u218F\\u2C00-\\u2FEF\\u3001-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFFD\\-.0-9\\u00B7\\u0300-\\u036F\\u203F-\\u2040]*$"),Or={},xr={};function tp(l){return ka.call(xr,l)?!0:ka.call(Or,l)?!1:lp.test(l)?xr[l]=!0:(Or[l]=!0,!1)}function Dn(l,t,i){if(tp(t))if(i===null)l.removeAttribute(t);else{switch(typeof i){case"undefined":case"function":case"symbol":l.removeAttribute(t);return;case"boolean":var e=t.toLowerCase().slice(0,5);if(e!=="data-"&&e!=="aria-"){l.removeAttribute(t);return}}l.setAttribute(t,""+i)}}function On(l,t,i){if(i===null)l.removeAttribute(t);else{switch(typeof i){case"undefined":case"function":case"symbol":case"boolean":l.removeAttribute(t);return}l.setAttribute(t,""+i)}}function Nt(l,t,i,e){if(e===null)l.removeAttribute(i);else{switch(typeof e){case"undefined":case"function":case"symbol":case"boolean":l.removeAttribute(i);return}l.setAttributeNS(t,i,""+e)}}function dt(l){switch(typeof l){case"bigint":case"boolean":case"number":case"string":case"undefined":return l;case"object":return l;default:return""}}function Nr(l){var t=l.type;return(l=l.nodeName)&&l.toLowerCase()==="input"&&(t==="checkbox"||t==="radio")}function ip(l,t,i){var e=Object.getOwnPropertyDescriptor(l.constructor.prototype,t);if(!l.hasOwnProperty(t)&&typeof e<"u"&&typeof e.get=="function"&&typeof e.set=="function"){var n=e.get,a=e.set;return Object.defineProperty(l,t,{configurable:!0,get:function(){return n.call(this)},set:function(s){i=""+s,a.call(this,s)}}),Object.defineProperty(l,t,{enumerable:e.enumerable}),{getValue:function(){return i},setValue:function(s){i=""+s},stopTracking:function(){l._valueTracker=null,delete l[t]}}}}function ts(l){if(!l._valueTracker){var t=Nr(l)?"checked":"value";l._valueTracker=ip(l,t,""+l[t])}}function Ur(l){if(!l)return!1;var t=l._valueTracker;if(!t)return!0;var i=t.getValue(),e="";return l&&(e=Nr(l)?l.checked?"true":"false":l.value),l=e,l!==i?(t.setValue(l),!0):!1}function xn(l){if(l=l||(typeof document<"u"?document:void 0),typeof l>"u")return null;try{return l.activeElement||l.body}catch{return l.body}}var ep=/[\n"\\]/g;function mt(l){return l.replace(ep,function(t){return"\\"+t.charCodeAt(0).toString(16)+" "})}function is(l,t,i,e,n,a,s,r){l.name="",s!=null&&typeof s!="function"&&typeof s!="symbol"&&typeof s!="boolean"?l.type=s:l.removeAttribute("type"),t!=null?s==="number"?(t===0&&l.value===""||l.value!=t)&&(l.value=""+dt(t)):l.value!==""+dt(t)&&(l.value=""+dt(t)):s!=="submit"&&s!=="reset"||l.removeAttribute("value"),t!=null?es(l,s,dt(t)):i!=null?es(l,s,dt(i)):e!=null&&l.removeAttribute("value"),n==null&&a!=null&&(l.defaultChecked=!!a),n!=null&&(l.checked=n&&typeof n!="function"&&typeof n!="symbol"),r!=null&&typeof r!="function"&&typeof r!="symbol"&&typeof r!="boolean"?l.name=""+dt(r):l.removeAttribute("name")}function Br(l,t,i,e,n,a,s,r){if(a!=null&&typeof a!="function"&&typeof a!="symbol"&&typeof a!="boolean"&&(l.type=a),t!=null||i!=null){if(!(a!=="submit"&&a!=="reset"||t!=null)){ts(l);return}i=i!=null?""+dt(i):"",t=t!=null?""+dt(t):i,r||t===l.value||(l.value=t),l.defaultValue=t}e=e??n,e=typeof e!="function"&&typeof e!="symbol"&&!!e,l.checked=r?l.checked:!!e,l.defaultChecked=!!e,s!=null&&typeof s!="function"&&typeof s!="symbol"&&typeof s!="boolean"&&(l.name=s),ts(l)}function es(l,t,i){t==="number"&&xn(l.ownerDocument)===l||l.defaultValue===""+i||(l.defaultValue=""+i)}function Ji(l,t,i,e){if(l=l.options,t){t={};for(var n=0;n<i.length;n++)t["$"+i[n]]=!0;for(i=0;i<l.length;i++)n=t.hasOwnProperty("$"+l[i].value),l[i].selected!==n&&(l[i].selected=n),n&&e&&(l[i].defaultSelected=!0)}else{for(i=""+dt(i),t=null,n=0;n<l.length;n++){if(l[n].value===i){l[n].selected=!0,e&&(l[n].defaultSelected=!0);return}t!==null||l[n].disabled||(t=l[n])}t!==null&&(t.selected=!0)}}function Rr(l,t,i){if(t!=null&&(t=""+dt(t),t!==l.value&&(l.value=t),i==null)){l.defaultValue!==t&&(l.defaultValue=t);return}l.defaultValue=i!=null?""+dt(i):""}function Hr(l,t,i,e){if(t==null){if(e!=null){if(i!=null)throw Error(p(92));if(Tt(e)){if(1<e.length)throw Error(p(93));e=e[0]}i=e}i==null&&(i=""),t=i}i=dt(t),l.defaultValue=i,e=l.textContent,e===i&&e!==""&&e!==null&&(l.value=e),ts(l)}function Wi(l,t){if(t){var i=l.firstChild;if(i&&i===l.lastChild&&i.nodeType===3){i.nodeValue=t;return}}l.textContent=t}var np=new Set("animationIterationCount aspectRatio borderImageOutset borderImageSlice borderImageWidth boxFlex boxFlexGroup boxOrdinalGroup columnCount columns flex flexGrow flexPositive flexShrink flexNegative flexOrder gridArea gridRow gridRowEnd gridRowSpan gridRowStart gridColumn gridColumnEnd gridColumnSpan gridColumnStart fontWeight lineClamp lineHeight opacity order orphans scale tabSize widows zIndex zoom fillOpacity floodOpacity stopOpacity strokeDasharray strokeDashoffset strokeMiterlimit strokeOpacity strokeWidth MozAnimationIterationCount MozBoxFlex MozBoxFlexGroup MozLineClamp msAnimationIterationCount msFlex msZoom msFlexGrow msFlexNegative msFlexOrder msFlexPositive msFlexShrink msGridColumn msGridColumnSpan msGridRow msGridRowSpan WebkitAnimationIterationCount WebkitBoxFlex WebKitBoxFlexGroup WebkitBoxOrdinalGroup WebkitColumnCount WebkitColumns WebkitFlex WebkitFlexGrow WebkitFlexPositive WebkitFlexShrink WebkitLineClamp".split(" "));function Yr(l,t,i){var e=t.indexOf("--")===0;i==null||typeof i=="boolean"||i===""?e?l.setProperty(t,""):t==="float"?l.cssFloat="":l[t]="":e?l.setProperty(t,i):typeof i!="number"||i===0||np.has(t)?t==="float"?l.cssFloat=i:l[t]=(""+i).trim():l[t]=i+"px"}function qr(l,t,i){if(t!=null&&typeof t!="object")throw Error(p(62));if(l=l.style,i!=null){for(var e in i)!i.hasOwnProperty(e)||t!=null&&t.hasOwnProperty(e)||(e.indexOf("--")===0?l.setProperty(e,""):e==="float"?l.cssFloat="":l[e]="");for(var n in t)e=t[n],t.hasOwnProperty(n)&&i[n]!==e&&Yr(l,n,e)}else for(var a in t)t.hasOwnProperty(a)&&Yr(l,a,t[a])}function ns(l){if(l.indexOf("-")===-1)return!1;switch(l){case"annotation-xml":case"color-profile":case"font-face":case"font-face-src":case"font-face-uri":case"font-face-format":case"font-face-name":case"missing-glyph":return!1;default:return!0}}var ap=new Map([["acceptCharset","accept-charset"],["htmlFor","for"],["httpEquiv","http-equiv"],["crossOrigin","crossorigin"],["accentHeight","accent-height"],["alignmentBaseline","alignment-baseline"],["arabicForm","arabic-form"],["baselineShift","baseline-shift"],["capHeight","cap-height"],["clipPath","clip-path"],["clipRule","clip-rule"],["colorInterpolation","color-interpolation"],["colorInterpolationFilters","color-interpolation-filters"],["colorProfile","color-profile"],["colorRendering","color-rendering"],["dominantBaseline","dominant-baseline"],["enableBackground","enable-background"],["fillOpacity","fill-opacity"],["fillRule","fill-rule"],["floodColor","flood-color"],["floodOpacity","flood-opacity"],["fontFamily","font-family"],["fontSize","font-size"],["fontSizeAdjust","font-size-adjust"],["fontStretch","font-stretch"],["fontStyle","font-style"],["fontVariant","font-variant"],["fontWeight","font-weight"],["glyphName","glyph-name"],["glyphOrientationHorizontal","glyph-orientation-horizontal"],["glyphOrientationVertical","glyph-orientation-vertical"],["horizAdvX","horiz-adv-x"],["horizOriginX","horiz-origin-x"],["imageRendering","image-rendering"],["letterSpacing","letter-spacing"],["lightingColor","lighting-color"],["markerEnd","marker-end"],["markerMid","marker-mid"],["markerStart","marker-start"],["overlinePosition","overline-position"],["overlineThickness","overline-thickness"],["paintOrder","paint-order"],["panose-1","panose-1"],["pointerEvents","pointer-events"],["renderingIntent","rendering-intent"],["shapeRendering","shape-rendering"],["stopColor","stop-color"],["stopOpacity","stop-opacity"],["strikethroughPosition","strikethrough-position"],["strikethroughThickness","strikethrough-thickness"],["strokeDasharray","stroke-dasharray"],["strokeDashoffset","stroke-dashoffset"],["strokeLinecap","stroke-linecap"],["strokeLinejoin","stroke-linejoin"],["strokeMiterlimit","stroke-miterlimit"],["strokeOpacity","stroke-opacity"],["strokeWidth","stroke-width"],["textAnchor","text-anchor"],["textDecoration","text-decoration"],["textRendering","text-rendering"],["transformOrigin","transform-origin"],["underlinePosition","underline-position"],["underlineThickness","underline-thickness"],["unicodeBidi","unicode-bidi"],["unicodeRange","unicode-range"],["unitsPerEm","units-per-em"],["vAlphabetic","v-alphabetic"],["vHanging","v-hanging"],["vIdeographic","v-ideographic"],["vMathematical","v-mathematical"],["vectorEffect","vector-effect"],["vertAdvY","vert-adv-y"],["vertOriginX","vert-origin-x"],["vertOriginY","vert-origin-y"],["wordSpacing","word-spacing"],["writingMode","writing-mode"],["xmlnsXlink","xmlns:xlink"],["xHeight","x-height"]]),sp=/^[\u0000-\u001F ]*j[\r\n\t]*a[\r\n\t]*v[\r\n\t]*a[\r\n\t]*s[\r\n\t]*c[\r\n\t]*r[\r\n\t]*i[\r\n\t]*p[\r\n\t]*t[\r\n\t]*:/i;function Nn(l){return sp.test(""+l)?"javascript:throw new Error('React has blocked a javascript: URL as a security precaution.')":l}function Ut(){}var as=null;function ss(l){return l=l.target||l.srcElement||window,l.correspondingUseElement&&(l=l.correspondingUseElement),l.nodeType===3?l.parentNode:l}var Fi=null,Ii=null;function Xr(l){var t=Vi(l);if(t&&(l=t.stateNode)){var i=l[Wl]||null;l:switch(l=t.stateNode,t.type){case"input":if(is(l,i.value,i.defaultValue,i.defaultValue,i.checked,i.defaultChecked,i.type,i.name),t=i.name,i.type==="radio"&&t!=null){for(i=l;i.parentNode;)i=i.parentNode;for(i=i.querySelectorAll('input[name="'+mt(""+t)+'"][type="radio"]'),t=0;t<i.length;t++){var e=i[t];if(e!==l&&e.form===l.form){var n=e[Wl]||null;if(!n)throw Error(p(90));is(e,n.value,n.defaultValue,n.defaultValue,n.checked,n.defaultChecked,n.type,n.name)}}for(t=0;t<i.length;t++)e=i[t],e.form===l.form&&Ur(e)}break l;case"textarea":Rr(l,i.value,i.defaultValue);break l;case"select":t=i.value,t!=null&&Ji(l,!!i.multiple,t,!1)}}}var os=!1;function Gr(l,t,i){if(os)return l(t,i);os=!0;try{var e=l(t);return e}finally{if(os=!1,(Fi!==null||Ii!==null)&&(Sa(),Fi&&(t=Fi,l=Ii,Ii=Fi=null,Xr(t),l)))for(t=0;t<l.length;t++)Xr(l[t])}}function Ue(l,t){var i=l.stateNode;if(i===null)return null;var e=i[Wl]||null;if(e===null)return null;i=e[t];l:switch(t){case"onClick":case"onClickCapture":case"onDoubleClick":case"onDoubleClickCapture":case"onMouseDown":case"onMouseDownCapture":case"onMouseMove":case"onMouseMoveCapture":case"onMouseUp":case"onMouseUpCapture":case"onMouseEnter":(e=!e.disabled)||(l=l.type,e=!(l==="button"||l==="input"||l==="select"||l==="textarea")),l=!e;break l;default:l=!1}if(l)return null;if(i&&typeof i!="function")throw Error(p(231,t,typeof i));return i}var Bt=!(typeof window>"u"||typeof window.document>"u"||typeof window.document.createElement>"u"),rs=!1;if(Bt)try{var Be={};Object.defineProperty(Be,"passive",{get:function(){rs=!0}}),window.addEventListener("test",Be,Be),window.removeEventListener("test",Be,Be)}catch{rs=!1}var li=null,us=null,Un=null;function Lr(){if(Un)return Un;var l,t=us,i=t.length,e,n="value"in li?li.value:li.textContent,a=n.length;for(l=0;l<i&&t[l]===n[l];l++);var s=i-l;for(e=1;e<=s&&t[i-e]===n[a-e];e++);return Un=n.slice(l,1<e?1-e:void 0)}function Bn(l){var t=l.keyCode;return"charCode"in l?(l=l.charCode,l===0&&t===13&&(l=13)):l=t,l===10&&(l=13),32<=l||l===13?l:0}function Rn(){return!0}function $r(){return!1}function Fl(l){function t(i,e,n,a,s){this._reactName=i,this._targetInst=n,this.type=e,this.nativeEvent=a,this.target=s,this.currentTarget=null;for(var r in l)l.hasOwnProperty(r)&&(i=l[r],this[r]=i?i(a):a[r]);return this.isDefaultPrevented=(a.defaultPrevented!=null?a.defaultPrevented:a.returnValue===!1)?Rn:$r,this.isPropagationStopped=$r,this}return N(t.prototype,{preventDefault:function(){this.defaultPrevented=!0;var i=this.nativeEvent;i&&(i.preventDefault?i.preventDefault():typeof i.returnValue!="unknown"&&(i.returnValue=!1),this.isDefaultPrevented=Rn)},stopPropagation:function(){var i=this.nativeEvent;i&&(i.stopPropagation?i.stopPropagation():typeof i.cancelBubble!="unknown"&&(i.cancelBubble=!0),this.isPropagationStopped=Rn)},persist:function(){},isPersistent:Rn}),t}var Ci={eventPhase:0,bubbles:0,cancelable:0,timeStamp:function(l){return l.timeStamp||Date.now()},defaultPrevented:0,isTrusted:0},Hn=Fl(Ci),Re=N({},Ci,{view:0,detail:0}),op=Fl(Re),cs,gs,He,Yn=N({},Re,{screenX:0,screenY:0,clientX:0,clientY:0,pageX:0,pageY:0,ctrlKey:0,shiftKey:0,altKey:0,metaKey:0,getModifierState:ps,button:0,buttons:0,relatedTarget:function(l){return l.relatedTarget===void 0?l.fromElement===l.srcElement?l.toElement:l.fromElement:l.relatedTarget},movementX:function(l){return"movementX"in l?l.movementX:(l!==He&&(He&&l.type==="mousemove"?(cs=l.screenX-He.screenX,gs=l.screenY-He.screenY):gs=cs=0,He=l),cs)},movementY:function(l){return"movementY"in l?l.movementY:gs}}),Qr=Fl(Yn),rp=N({},Yn,{dataTransfer:0}),up=Fl(rp),cp=N({},Re,{relatedTarget:0}),fs=Fl(cp),gp=N({},Ci,{animationName:0,elapsedTime:0,pseudoElement:0}),fp=Fl(gp),pp=N({},Ci,{clipboardData:function(l){return"clipboardData"in l?l.clipboardData:window.clipboardData}}),dp=Fl(pp),mp=N({},Ci,{data:0}),Zr=Fl(mp),hp={Esc:"Escape",Spacebar:" ",Left:"ArrowLeft",Up:"ArrowUp",Right:"ArrowRight",Down:"ArrowDown",Del:"Delete",Win:"OS",Menu:"ContextMenu",Apps:"ContextMenu",Scroll:"ScrollLock",MozPrintableKey:"Unidentified"},yp={8:"Backspace",9:"Tab",12:"Clear",13:"Enter",16:"Shift",17:"Control",18:"Alt",19:"Pause",20:"CapsLock",27:"Escape",32:" ",33:"PageUp",34:"PageDown",35:"End",36:"Home",37:"ArrowLeft",38:"ArrowUp",39:"ArrowRight",40:"ArrowDown",45:"Insert",46:"Delete",112:"F1",113:"F2",114:"F3",115:"F4",116:"F5",117:"F6",118:"F7",119:"F8",120:"F9",121:"F10",122:"F11",123:"F12",144:"NumLock",145:"ScrollLock",224:"Meta"},vp={Alt:"altKey",Control:"ctrlKey",Meta:"metaKey",Shift:"shiftKey"};function bp(l){var t=this.nativeEvent;return t.getModifierState?t.getModifierState(l):(l=vp[l])?!!t[l]:!1}function ps(){return bp}var Sp=N({},Re,{key:function(l){if(l.key){var t=hp[l.key]||l.key;if(t!=="Unidentified")return t}return l.type==="keypress"?(l=Bn(l),l===13?"Enter":String.fromCharCode(l)):l.type==="keydown"||l.type==="keyup"?yp[l.keyCode]||"Unidentified":""},code:0,location:0,ctrlKey:0,shiftKey:0,altKey:0,metaKey:0,repeat:0,locale:0,getModifierState:ps,charCode:function(l){return l.type==="keypress"?Bn(l):0},keyCode:function(l){return l.type==="keydown"||l.type==="keyup"?l.keyCode:0},which:function(l){return l.type==="keypress"?Bn(l):l.type==="keydown"||l.type==="keyup"?l.keyCode:0}}),wp=Fl(Sp),zp=N({},Yn,{pointerId:0,width:0,height:0,pressure:0,tangentialPressure:0,tiltX:0,tiltY:0,twist:0,pointerType:0,isPrimary:0}),Vr=Fl(zp),_p=N({},Re,{touches:0,targetTouches:0,changedTouches:0,altKey:0,metaKey:0,ctrlKey:0,shiftKey:0,getModifierState:ps}),Tp=Fl(_p),Mp=N({},Ci,{propertyName:0,elapsedTime:0,pseudoElement:0}),jp=Fl(Mp),Ap=N({},Yn,{deltaX:function(l){return"deltaX"in l?l.deltaX:"wheelDeltaX"in l?-l.wheelDeltaX:0},deltaY:function(l){return"deltaY"in l?l.deltaY:"wheelDeltaY"in l?-l.wheelDeltaY:"wheelDelta"in l?-l.wheelDelta:0},deltaZ:0,deltaMode:0}),Cp=Fl(Ap),Ep=N({},Ci,{newState:0,oldState:0}),Dp=Fl(Ep),Op=[9,13,27,32],ds=Bt&&"CompositionEvent"in window,Ye=null;Bt&&"documentMode"in document&&(Ye=document.documentMode);var xp=Bt&&"TextEvent"in window&&!Ye,kr=Bt&&(!ds||Ye&&8<Ye&&11>=Ye),Kr=" ",Jr=!1;function Wr(l,t){switch(l){case"keyup":return Op.indexOf(t.keyCode)!==-1;case"keydown":return t.keyCode!==229;case"keypress":case"mousedown":case"focusout":return!0;default:return!1}}function Fr(l){return l=l.detail,typeof l=="object"&&"data"in l?l.data:null}var Pi=!1;function Np(l,t){switch(l){case"compositionend":return Fr(t);case"keypress":return t.which!==32?null:(Jr=!0,Kr);case"textInput":return l=t.data,l===Kr&&Jr?null:l;default:return null}}function Up(l,t){if(Pi)return l==="compositionend"||!ds&&Wr(l,t)?(l=Lr(),Un=us=li=null,Pi=!1,l):null;switch(l){case"paste":return null;case"keypress":if(!(t.ctrlKey||t.altKey||t.metaKey)||t.ctrlKey&&t.altKey){if(t.char&&1<t.char.length)return t.char;if(t.which)return String.fromCharCode(t.which)}return null;case"compositionend":return kr&&t.locale!=="ko"?null:t.data;default:return null}}var Bp={color:!0,date:!0,datetime:!0,"datetime-local":!0,email:!0,month:!0,number:!0,password:!0,range:!0,search:!0,tel:!0,text:!0,time:!0,url:!0,week:!0};function Ir(l){var t=l&&l.nodeName&&l.nodeName.toLowerCase();return t==="input"?!!Bp[l.type]:t==="textarea"}function Pr(l,t,i,e){Fi?Ii?Ii.push(e):Ii=[e]:Fi=e,t=Aa(t,"onChange"),0<t.length&&(i=new Hn("onChange","change",null,i,e),l.push({event:i,listeners:t}))}var qe=null,Xe=null;function Rp(l){Bg(l,0)}function qn(l){var t=Ne(l);if(Ur(t))return l}function lu(l,t){if(l==="change")return t}var tu=!1;if(Bt){var ms;if(Bt){var hs="oninput"in document;if(!hs){var iu=document.createElement("div");iu.setAttribute("oninput","return;"),hs=typeof iu.oninput=="function"}ms=hs}else ms=!1;tu=ms&&(!document.documentMode||9<document.documentMode)}function eu(){qe&&(qe.detachEvent("onpropertychange",nu),Xe=qe=null)}function nu(l){if(l.propertyName==="value"&&qn(Xe)){var t=[];Pr(t,Xe,l,ss(l)),Gr(Rp,t)}}function Hp(l,t,i){l==="focusin"?(eu(),qe=t,Xe=i,qe.attachEvent("onpropertychange",nu)):l==="focusout"&&eu()}function Yp(l){if(l==="selectionchange"||l==="keyup"||l==="keydown")return qn(Xe)}function qp(l,t){if(l==="click")return qn(t)}function Xp(l,t){if(l==="input"||l==="change")return qn(t)}function Gp(l,t){return l===t&&(l!==0||1/l===1/t)||l!==l&&t!==t}var st=typeof Object.is=="function"?Object.is:Gp;function Ge(l,t){if(st(l,t))return!0;if(typeof l!="object"||l===null||typeof t!="object"||t===null)return!1;var i=Object.keys(l),e=Object.keys(t);if(i.length!==e.length)return!1;for(e=0;e<i.length;e++){var n=i[e];if(!ka.call(t,n)||!st(l[n],t[n]))return!1}return!0}function au(l){for(;l&&l.firstChild;)l=l.firstChild;return l}function su(l,t){var i=au(l);l=0;for(var e;i;){if(i.nodeType===3){if(e=l+i.textContent.length,l<=t&&e>=t)return{node:i,offset:t-l};l=e}l:{for(;i;){if(i.nextSibling){i=i.nextSibling;break l}i=i.parentNode}i=void 0}i=au(i)}}function ou(l,t){return l&&t?l===t?!0:l&&l.nodeType===3?!1:t&&t.nodeType===3?ou(l,t.parentNode):"contains"in l?l.contains(t):l.compareDocumentPosition?!!(l.compareDocumentPosition(t)&16):!1:!1}function ru(l){l=l!=null&&l.ownerDocument!=null&&l.ownerDocument.defaultView!=null?l.ownerDocument.defaultView:window;for(var t=xn(l.document);t instanceof l.HTMLIFrameElement;){try{var i=typeof t.contentWindow.location.href=="string"}catch{i=!1}if(i)l=t.contentWindow;else break;t=xn(l.document)}return t}function ys(l){var t=l&&l.nodeName&&l.nodeName.toLowerCase();return t&&(t==="input"&&(l.type==="text"||l.type==="search"||l.type==="tel"||l.type==="url"||l.type==="password")||t==="textarea"||l.contentEditable==="true")}var Lp=Bt&&"documentMode"in document&&11>=document.documentMode,le=null,vs=null,Le=null,bs=!1;function uu(l,t,i){var e=i.window===i?i.document:i.nodeType===9?i:i.ownerDocument;bs||le==null||le!==xn(e)||(e=le,"selectionStart"in e&&ys(e)?e={start:e.selectionStart,end:e.selectionEnd}:(e=(e.ownerDocument&&e.ownerDocument.defaultView||window).getSelection(),e={anchorNode:e.anchorNode,anchorOffset:e.anchorOffset,focusNode:e.focusNode,focusOffset:e.focusOffset}),Le&&Ge(Le,e)||(Le=e,e=Aa(vs,"onSelect"),0<e.length&&(t=new Hn("onSelect","select",null,t,i),l.push({event:t,listeners:e}),t.target=le)))}function Ei(l,t){var i={};return i[l.toLowerCase()]=t.toLowerCase(),i["Webkit"+l]="webkit"+t,i["Moz"+l]="moz"+t,i}var te={animationend:Ei("Animation","AnimationEnd"),animationiteration:Ei("Animation","AnimationIteration"),animationstart:Ei("Animation","AnimationStart"),transitionrun:Ei("Transition","TransitionRun"),transitionstart:Ei("Transition","TransitionStart"),transitioncancel:Ei("Transition","TransitionCancel"),transitionend:Ei("Transition","TransitionEnd")},Ss={},cu={};Bt&&(cu=document.createElement("div").style,"AnimationEvent"in window||(delete te.animationend.animation,delete te.animationiteration.animation,delete te.animationstart.animation),"TransitionEvent"in window||delete te.transitionend.transition);function Di(l){if(Ss[l])return Ss[l];if(!te[l])return l;var t=te[l],i;for(i in t)if(t.hasOwnProperty(i)&&i in cu)return Ss[l]=t[i];return l}var gu=Di("animationend"),fu=Di("animationiteration"),pu=Di("animationstart"),$p=Di("transitionrun"),Qp=Di("transitionstart"),Zp=Di("transitioncancel"),du=Di("transitionend"),mu=new Map,ws="abort auxClick beforeToggle cancel canPlay canPlayThrough click close contextMenu copy cut drag dragEnd dragEnter dragExit dragLeave dragOver dragStart drop durationChange emptied encrypted ended error gotPointerCapture input invalid keyDown keyPress keyUp load loadedData loadedMetadata loadStart lostPointerCapture mouseDown mouseMove mouseOut mouseOver mouseUp paste pause play playing pointerCancel pointerDown pointerMove pointerOut pointerOver pointerUp progress rateChange reset resize seeked seeking stalled submit suspend timeUpdate touchCancel touchEnd touchStart volumeChange scroll toggle touchMove waiting wheel".split(" ");ws.push("scrollEnd");function Mt(l,t){mu.set(l,t),Ai(t,[l])}var Xn=typeof reportError=="function"?reportError:function(l){if(typeof window=="object"&&typeof window.ErrorEvent=="function"){var t=new window.ErrorEvent("error",{bubbles:!0,cancelable:!0,message:typeof l=="object"&&l!==null&&typeof l.message=="string"?String(l.message):String(l),error:l});if(!window.dispatchEvent(t))return}else if(typeof process=="object"&&typeof process.emit=="function"){process.emit("uncaughtException",l);return}console.error(l)},ht=[],ie=0,zs=0;function Gn(){for(var l=ie,t=zs=ie=0;t<l;){var i=ht[t];ht[t++]=null;var e=ht[t];ht[t++]=null;var n=ht[t];ht[t++]=null;var a=ht[t];if(ht[t++]=null,e!==null&&n!==null){var s=e.pending;s===null?n.next=n:(n.next=s.next,s.next=n),e.pending=n}a!==0&&hu(i,n,a)}}function Ln(l,t,i,e){ht[ie++]=l,ht[ie++]=t,ht[ie++]=i,ht[ie++]=e,zs|=e,l.lanes|=e,l=l.alternate,l!==null&&(l.lanes|=e)}function _s(l,t,i,e){return Ln(l,t,i,e),$n(l)}function Oi(l,t){return Ln(l,null,null,t),$n(l)}function hu(l,t,i){l.lanes|=i;var e=l.alternate;e!==null&&(e.lanes|=i);for(var n=!1,a=l.return;a!==null;)a.childLanes|=i,e=a.alternate,e!==null&&(e.childLanes|=i),a.tag===22&&(l=a.stateNode,l===null||l._visibility&1||(n=!0)),l=a,a=a.return;return l.tag===3?(a=l.stateNode,n&&t!==null&&(n=31-at(i),l=a.hiddenUpdates,e=l[n],e===null?l[n]=[t]:e.push(t),t.lane=i|536870912),a):null}function $n(l){if(50<gn)throw gn=0,No=null,Error(p(185));for(var t=l.return;t!==null;)l=t,t=l.return;return l.tag===3?l.stateNode:null}var ee={};function Vp(l,t,i,e){this.tag=l,this.key=i,this.sibling=this.child=this.return=this.stateNode=this.type=this.elementType=null,this.index=0,this.refCleanup=this.ref=null,this.pendingProps=t,this.dependencies=this.memoizedState=this.updateQueue=this.memoizedProps=null,this.mode=e,this.subtreeFlags=this.flags=0,this.deletions=null,this.childLanes=this.lanes=0,this.alternate=null}function ot(l,t,i,e){return new Vp(l,t,i,e)}function Ts(l){return l=l.prototype,!(!l||!l.isReactComponent)}function Rt(l,t){var i=l.alternate;return i===null?(i=ot(l.tag,t,l.key,l.mode),i.elementType=l.elementType,i.type=l.type,i.stateNode=l.stateNode,i.alternate=l,l.alternate=i):(i.pendingProps=t,i.type=l.type,i.flags=0,i.subtreeFlags=0,i.deletions=null),i.flags=l.flags&65011712,i.childLanes=l.childLanes,i.lanes=l.lanes,i.child=l.child,i.memoizedProps=l.memoizedProps,i.memoizedState=l.memoizedState,i.updateQueue=l.updateQueue,t=l.dependencies,i.dependencies=t===null?null:{lanes:t.lanes,firstContext:t.firstContext},i.sibling=l.sibling,i.index=l.index,i.ref=l.ref,i.refCleanup=l.refCleanup,i}function yu(l,t){l.flags&=65011714;var i=l.alternate;return i===null?(l.childLanes=0,l.lanes=t,l.child=null,l.subtreeFlags=0,l.memoizedProps=null,l.memoizedState=null,l.updateQueue=null,l.dependencies=null,l.stateNode=null):(l.childLanes=i.childLanes,l.lanes=i.lanes,l.child=i.child,l.subtreeFlags=0,l.deletions=null,l.memoizedProps=i.memoizedProps,l.memoizedState=i.memoizedState,l.updateQueue=i.updateQueue,l.type=i.type,t=i.dependencies,l.dependencies=t===null?null:{lanes:t.lanes,firstContext:t.firstContext}),l}function Qn(l,t,i,e,n,a){var s=0;if(e=l,typeof l=="function")Ts(l)&&(s=1);else if(typeof l=="string")s=Fd(l,i,R.current)?26:l==="html"||l==="head"||l==="body"?27:5;else l:switch(l){case Kl:return l=ot(31,i,t,n),l.elementType=Kl,l.lanes=a,l;case zl:return xi(i.children,n,a,t);case Ul:s=8,n|=24;break;case bl:return l=ot(12,i,t,n|2),l.elementType=bl,l.lanes=a,l;case Ql:return l=ot(13,i,t,n),l.elementType=Ql,l.lanes=a,l;case Sl:return l=ot(19,i,t,n),l.elementType=Sl,l.lanes=a,l;default:if(typeof l=="object"&&l!==null)switch(l.$$typeof){case ol:s=10;break l;case jl:s=9;break l;case _l:s=11;break l;case k:s=14;break l;case Rl:s=16,e=null;break l}s=29,i=Error(p(130,l===null?"null":typeof l,"")),e=null}return t=ot(s,i,t,n),t.elementType=l,t.type=e,t.lanes=a,t}function xi(l,t,i,e){return l=ot(7,l,e,t),l.lanes=i,l}function Ms(l,t,i){return l=ot(6,l,null,t),l.lanes=i,l}function vu(l){var t=ot(18,null,null,0);return t.stateNode=l,t}function js(l,t,i){return t=ot(4,l.children!==null?l.children:[],l.key,t),t.lanes=i,t.stateNode={containerInfo:l.containerInfo,pendingChildren:null,implementation:l.implementation},t}var bu=new WeakMap;function yt(l,t){if(typeof l=="object"&&l!==null){var i=bu.get(l);return i!==void 0?i:(t={value:l,source:t,stack:vr(t)},bu.set(l,t),t)}return{value:l,source:t,stack:vr(t)}}var ne=[],ae=0,Zn=null,$e=0,vt=[],bt=0,ti=null,Ct=1,Et="";function Ht(l,t){ne[ae++]=$e,ne[ae++]=Zn,Zn=l,$e=t}function Su(l,t,i){vt[bt++]=Ct,vt[bt++]=Et,vt[bt++]=ti,ti=l;var e=Ct;l=Et;var n=32-at(e)-1;e&=~(1<<n),i+=1;var a=32-at(t)+n;if(30<a){var s=n-n%5;a=(e&(1<<s)-1).toString(32),e>>=s,n-=s,Ct=1<<32-at(t)+n|i<<n|e,Et=a+l}else Ct=1<<a|i<<n|e,Et=l}function As(l){l.return!==null&&(Ht(l,1),Su(l,1,0))}function Cs(l){for(;l===Zn;)Zn=ne[--ae],ne[ae]=null,$e=ne[--ae],ne[ae]=null;for(;l===ti;)ti=vt[--bt],vt[bt]=null,Et=vt[--bt],vt[bt]=null,Ct=vt[--bt],vt[bt]=null}function wu(l,t){vt[bt++]=Ct,vt[bt++]=Et,vt[bt++]=ti,Ct=t.id,Et=t.overflow,ti=l}var Xl=null,dl=null,ll=!1,ii=null,St=!1,Es=Error(p(519));function ei(l){var t=Error(p(418,1<arguments.length&&arguments[1]!==void 0&&arguments[1]?"text":"HTML",""));throw Qe(yt(t,l)),Es}function zu(l){var t=l.stateNode,i=l.type,e=l.memoizedProps;switch(t[ql]=l,t[Wl]=e,i){case"dialog":W("cancel",t),W("close",t);break;case"iframe":case"object":case"embed":W("load",t);break;case"video":case"audio":for(i=0;i<pn.length;i++)W(pn[i],t);break;case"source":W("error",t);break;case"img":case"image":case"link":W("error",t),W("load",t);break;case"details":W("toggle",t);break;case"input":W("invalid",t),Br(t,e.value,e.defaultValue,e.checked,e.defaultChecked,e.type,e.name,!0);break;case"select":W("invalid",t);break;case"textarea":W("invalid",t),Hr(t,e.value,e.defaultValue,e.children)}i=e.children,typeof i!="string"&&typeof i!="number"&&typeof i!="bigint"||t.textContent===""+i||e.suppressHydrationWarning===!0||qg(t.textContent,i)?(e.popover!=null&&(W("beforetoggle",t),W("toggle",t)),e.onScroll!=null&&W("scroll",t),e.onScrollEnd!=null&&W("scrollend",t),e.onClick!=null&&(t.onclick=Ut),t=!0):t=!1,t||ei(l,!0)}function _u(l){for(Xl=l.return;Xl;)switch(Xl.tag){case 5:case 31:case 13:St=!1;return;case 27:case 3:St=!0;return;default:Xl=Xl.return}}function se(l){if(l!==Xl)return!1;if(!ll)return _u(l),ll=!0,!1;var t=l.tag,i;if((i=t!==3&&t!==27)&&((i=t===5)&&(i=l.type,i=!(i!=="form"&&i!=="button")||Ko(l.type,l.memoizedProps)),i=!i),i&&dl&&ei(l),_u(l),t===13){if(l=l.memoizedState,l=l!==null?l.dehydrated:null,!l)throw Error(p(317));dl=Kg(l)}else if(t===31){if(l=l.memoizedState,l=l!==null?l.dehydrated:null,!l)throw Error(p(317));dl=Kg(l)}else t===27?(t=dl,yi(l.type)?(l=Po,Po=null,dl=l):dl=t):dl=Xl?zt(l.stateNode.nextSibling):null;return!0}function Ni(){dl=Xl=null,ll=!1}function Ds(){var l=ii;return l!==null&&(tt===null?tt=l:tt.push.apply(tt,l),ii=null),l}function Qe(l){ii===null?ii=[l]:ii.push(l)}var Os=g(null),Ui=null,Yt=null;function ni(l,t,i){D(Os,t._currentValue),t._currentValue=i}function qt(l){l._currentValue=Os.current,M(Os)}function xs(l,t,i){for(;l!==null;){var e=l.alternate;if((l.childLanes&t)!==t?(l.childLanes|=t,e!==null&&(e.childLanes|=t)):e!==null&&(e.childLanes&t)!==t&&(e.childLanes|=t),l===i)break;l=l.return}}function Ns(l,t,i,e){var n=l.child;for(n!==null&&(n.return=l);n!==null;){var a=n.dependencies;if(a!==null){var s=n.child;a=a.firstContext;l:for(;a!==null;){var r=a;a=n;for(var u=0;u<t.length;u++)if(r.context===t[u]){a.lanes|=i,r=a.alternate,r!==null&&(r.lanes|=i),xs(a.return,i,l),e||(s=null);break l}a=r.next}}else if(n.tag===18){if(s=n.return,s===null)throw Error(p(341));s.lanes|=i,a=s.alternate,a!==null&&(a.lanes|=i),xs(s,i,l),s=null}else s=n.child;if(s!==null)s.return=n;else for(s=n;s!==null;){if(s===l){s=null;break}if(n=s.sibling,n!==null){n.return=s.return,s=n;break}s=s.return}n=s}}function oe(l,t,i,e){l=null;for(var n=t,a=!1;n!==null;){if(!a){if((n.flags&524288)!==0)a=!0;else if((n.flags&262144)!==0)break}if(n.tag===10){var s=n.alternate;if(s===null)throw Error(p(387));if(s=s.memoizedProps,s!==null){var r=n.type;st(n.pendingProps.value,s.value)||(l!==null?l.push(r):l=[r])}}else if(n===nl.current){if(s=n.alternate,s===null)throw Error(p(387));s.memoizedState.memoizedState!==n.memoizedState.memoizedState&&(l!==null?l.push(vn):l=[vn])}n=n.return}l!==null&&Ns(t,l,i,e),t.flags|=262144}function Vn(l){for(l=l.firstContext;l!==null;){if(!st(l.context._currentValue,l.memoizedValue))return!0;l=l.next}return!1}function Bi(l){Ui=l,Yt=null,l=l.dependencies,l!==null&&(l.firstContext=null)}function Gl(l){return Tu(Ui,l)}function kn(l,t){return Ui===null&&Bi(l),Tu(l,t)}function Tu(l,t){var i=t._currentValue;if(t={context:t,memoizedValue:i,next:null},Yt===null){if(l===null)throw Error(p(308));Yt=t,l.dependencies={lanes:0,firstContext:t},l.flags|=524288}else Yt=Yt.next=t;return i}var kp=typeof AbortController<"u"?AbortController:function(){var l=[],t=this.signal={aborted:!1,addEventListener:function(i,e){l.push(e)}};this.abort=function(){t.aborted=!0,l.forEach(function(i){return i()})}},Kp=v.unstable_scheduleCallback,Jp=v.unstable_NormalPriority,Dl={$$typeof:ol,Consumer:null,Provider:null,_currentValue:null,_currentValue2:null,_threadCount:0};function Us(){return{controller:new kp,data:new Map,refCount:0}}function Ze(l){l.refCount--,l.refCount===0&&Kp(Jp,function(){l.controller.abort()})}var Ve=null,Bs=0,re=0,ue=null;function Wp(l,t){if(Ve===null){var i=Ve=[];Bs=0,re=qo(),ue={status:"pending",value:void 0,then:function(e){i.push(e)}}}return Bs++,t.then(Mu,Mu),t}function Mu(){if(--Bs===0&&Ve!==null){ue!==null&&(ue.status="fulfilled");var l=Ve;Ve=null,re=0,ue=null;for(var t=0;t<l.length;t++)(0,l[t])()}}function Fp(l,t){var i=[],e={status:"pending",value:null,reason:null,then:function(n){i.push(n)}};return l.then(function(){e.status="fulfilled",e.value=t;for(var n=0;n<i.length;n++)(0,i[n])(t)},function(n){for(e.status="rejected",e.reason=n,n=0;n<i.length;n++)(0,i[n])(void 0)}),e}var ju=w.S;w.S=function(l,t){ug=et(),typeof t=="object"&&t!==null&&typeof t.then=="function"&&Wp(l,t),ju!==null&&ju(l,t)};var Ri=g(null);function Rs(){var l=Ri.current;return l!==null?l:pl.pooledCache}function Kn(l,t){t===null?D(Ri,Ri.current):D(Ri,t.pool)}function Au(){var l=Rs();return l===null?null:{parent:Dl._currentValue,pool:l}}var ce=Error(p(460)),Hs=Error(p(474)),Jn=Error(p(542)),Wn={then:function(){}};function Cu(l){return l=l.status,l==="fulfilled"||l==="rejected"}function Eu(l,t,i){switch(i=l[i],i===void 0?l.push(t):i!==t&&(t.then(Ut,Ut),t=i),t.status){case"fulfilled":return t.value;case"rejected":throw l=t.reason,Ou(l),l;default:if(typeof t.status=="string")t.then(Ut,Ut);else{if(l=pl,l!==null&&100<l.shellSuspendCounter)throw Error(p(482));l=t,l.status="pending",l.then(function(e){if(t.status==="pending"){var n=t;n.status="fulfilled",n.value=e}},function(e){if(t.status==="pending"){var n=t;n.status="rejected",n.reason=e}})}switch(t.status){case"fulfilled":return t.value;case"rejected":throw l=t.reason,Ou(l),l}throw Yi=t,ce}}function Hi(l){try{var t=l._init;return t(l._payload)}catch(i){throw i!==null&&typeof i=="object"&&typeof i.then=="function"?(Yi=i,ce):i}}var Yi=null;function Du(){if(Yi===null)throw Error(p(459));var l=Yi;return Yi=null,l}function Ou(l){if(l===ce||l===Jn)throw Error(p(483))}var ge=null,ke=0;function Fn(l){var t=ke;return ke+=1,ge===null&&(ge=[]),Eu(ge,l,t)}function Ke(l,t){t=t.props.ref,l.ref=t!==void 0?t:null}function In(l,t){throw t.$$typeof===V?Error(p(525)):(l=Object.prototype.toString.call(t),Error(p(31,l==="[object Object]"?"object with keys {"+Object.keys(t).join(", ")+"}":l)))}function xu(l){function t(f,c){if(l){var m=f.deletions;m===null?(f.deletions=[c],f.flags|=16):m.push(c)}}function i(f,c){if(!l)return null;for(;c!==null;)t(f,c),c=c.sibling;return null}function e(f){for(var c=new Map;f!==null;)f.key!==null?c.set(f.key,f):c.set(f.index,f),f=f.sibling;return c}function n(f,c){return f=Rt(f,c),f.index=0,f.sibling=null,f}function a(f,c,m){return f.index=m,l?(m=f.alternate,m!==null?(m=m.index,m<c?(f.flags|=67108866,c):m):(f.flags|=67108866,c)):(f.flags|=1048576,c)}function s(f){return l&&f.alternate===null&&(f.flags|=67108866),f}function r(f,c,m,z){return c===null||c.tag!==6?(c=Ms(m,f.mode,z),c.return=f,c):(c=n(c,m),c.return=f,c)}function u(f,c,m,z){var q=m.type;return q===zl?S(f,c,m.props.children,z,m.key):c!==null&&(c.elementType===q||typeof q=="object"&&q!==null&&q.$$typeof===Rl&&Hi(q)===c.type)?(c=n(c,m.props),Ke(c,m),c.return=f,c):(c=Qn(m.type,m.key,m.props,null,f.mode,z),Ke(c,m),c.return=f,c)}function h(f,c,m,z){return c===null||c.tag!==4||c.stateNode.containerInfo!==m.containerInfo||c.stateNode.implementation!==m.implementation?(c=js(m,f.mode,z),c.return=f,c):(c=n(c,m.children||[]),c.return=f,c)}function S(f,c,m,z,q){return c===null||c.tag!==7?(c=xi(m,f.mode,z,q),c.return=f,c):(c=n(c,m),c.return=f,c)}function T(f,c,m){if(typeof c=="string"&&c!==""||typeof c=="number"||typeof c=="bigint")return c=Ms(""+c,f.mode,m),c.return=f,c;if(typeof c=="object"&&c!==null){switch(c.$$typeof){case yl:return m=Qn(c.type,c.key,c.props,null,f.mode,m),Ke(m,c),m.return=f,m;case vl:return c=js(c,f.mode,m),c.return=f,c;case Rl:return c=Hi(c),T(f,c,m)}if(Tt(c)||Jl(c))return c=xi(c,f.mode,m,null),c.return=f,c;if(typeof c.then=="function")return T(f,Fn(c),m);if(c.$$typeof===ol)return T(f,kn(f,c),m);In(f,c)}return null}function y(f,c,m,z){var q=c!==null?c.key:null;if(typeof m=="string"&&m!==""||typeof m=="number"||typeof m=="bigint")return q!==null?null:r(f,c,""+m,z);if(typeof m=="object"&&m!==null){switch(m.$$typeof){case yl:return m.key===q?u(f,c,m,z):null;case vl:return m.key===q?h(f,c,m,z):null;case Rl:return m=Hi(m),y(f,c,m,z)}if(Tt(m)||Jl(m))return q!==null?null:S(f,c,m,z,null);if(typeof m.then=="function")return y(f,c,Fn(m),z);if(m.$$typeof===ol)return y(f,c,kn(f,m),z);In(f,m)}return null}function b(f,c,m,z,q){if(typeof z=="string"&&z!==""||typeof z=="number"||typeof z=="bigint")return f=f.get(m)||null,r(c,f,""+z,q);if(typeof z=="object"&&z!==null){switch(z.$$typeof){case yl:return f=f.get(z.key===null?m:z.key)||null,u(c,f,z,q);case vl:return f=f.get(z.key===null?m:z.key)||null,h(c,f,z,q);case Rl:return z=Hi(z),b(f,c,m,z,q)}if(Tt(z)||Jl(z))return f=f.get(m)||null,S(c,f,z,q,null);if(typeof z.then=="function")return b(f,c,m,Fn(z),q);if(z.$$typeof===ol)return b(f,c,m,kn(c,z),q);In(c,z)}return null}function B(f,c,m,z){for(var q=null,tl=null,H=c,Z=c=0,I=null;H!==null&&Z<m.length;Z++){H.index>Z?(I=H,H=null):I=H.sibling;var il=y(f,H,m[Z],z);if(il===null){H===null&&(H=I);break}l&&H&&il.alternate===null&&t(f,H),c=a(il,c,Z),tl===null?q=il:tl.sibling=il,tl=il,H=I}if(Z===m.length)return i(f,H),ll&&Ht(f,Z),q;if(H===null){for(;Z<m.length;Z++)H=T(f,m[Z],z),H!==null&&(c=a(H,c,Z),tl===null?q=H:tl.sibling=H,tl=H);return ll&&Ht(f,Z),q}for(H=e(H);Z<m.length;Z++)I=b(H,f,Z,m[Z],z),I!==null&&(l&&I.alternate!==null&&H.delete(I.key===null?Z:I.key),c=a(I,c,Z),tl===null?q=I:tl.sibling=I,tl=I);return l&&H.forEach(function(zi){return t(f,zi)}),ll&&Ht(f,Z),q}function X(f,c,m,z){if(m==null)throw Error(p(151));for(var q=null,tl=null,H=c,Z=c=0,I=null,il=m.next();H!==null&&!il.done;Z++,il=m.next()){H.index>Z?(I=H,H=null):I=H.sibling;var zi=y(f,H,il.value,z);if(zi===null){H===null&&(H=I);break}l&&H&&zi.alternate===null&&t(f,H),c=a(zi,c,Z),tl===null?q=zi:tl.sibling=zi,tl=zi,H=I}if(il.done)return i(f,H),ll&&Ht(f,Z),q;if(H===null){for(;!il.done;Z++,il=m.next())il=T(f,il.value,z),il!==null&&(c=a(il,c,Z),tl===null?q=il:tl.sibling=il,tl=il);return ll&&Ht(f,Z),q}for(H=e(H);!il.done;Z++,il=m.next())il=b(H,f,Z,il.value,z),il!==null&&(l&&il.alternate!==null&&H.delete(il.key===null?Z:il.key),c=a(il,c,Z),tl===null?q=il:tl.sibling=il,tl=il);return l&&H.forEach(function(rm){return t(f,rm)}),ll&&Ht(f,Z),q}function gl(f,c,m,z){if(typeof m=="object"&&m!==null&&m.type===zl&&m.key===null&&(m=m.props.children),typeof m=="object"&&m!==null){switch(m.$$typeof){case yl:l:{for(var q=m.key;c!==null;){if(c.key===q){if(q=m.type,q===zl){if(c.tag===7){i(f,c.sibling),z=n(c,m.props.children),z.return=f,f=z;break l}}else if(c.elementType===q||typeof q=="object"&&q!==null&&q.$$typeof===Rl&&Hi(q)===c.type){i(f,c.sibling),z=n(c,m.props),Ke(z,m),z.return=f,f=z;break l}i(f,c);break}else t(f,c);c=c.sibling}m.type===zl?(z=xi(m.props.children,f.mode,z,m.key),z.return=f,f=z):(z=Qn(m.type,m.key,m.props,null,f.mode,z),Ke(z,m),z.return=f,f=z)}return s(f);case vl:l:{for(q=m.key;c!==null;){if(c.key===q)if(c.tag===4&&c.stateNode.containerInfo===m.containerInfo&&c.stateNode.implementation===m.implementation){i(f,c.sibling),z=n(c,m.children||[]),z.return=f,f=z;break l}else{i(f,c);break}else t(f,c);c=c.sibling}z=js(m,f.mode,z),z.return=f,f=z}return s(f);case Rl:return m=Hi(m),gl(f,c,m,z)}if(Tt(m))return B(f,c,m,z);if(Jl(m)){if(q=Jl(m),typeof q!="function")throw Error(p(150));return m=q.call(m),X(f,c,m,z)}if(typeof m.then=="function")return gl(f,c,Fn(m),z);if(m.$$typeof===ol)return gl(f,c,kn(f,m),z);In(f,m)}return typeof m=="string"&&m!==""||typeof m=="number"||typeof m=="bigint"?(m=""+m,c!==null&&c.tag===6?(i(f,c.sibling),z=n(c,m),z.return=f,f=z):(i(f,c),z=Ms(m,f.mode,z),z.return=f,f=z),s(f)):i(f,c)}return function(f,c,m,z){try{ke=0;var q=gl(f,c,m,z);return ge=null,q}catch(H){if(H===ce||H===Jn)throw H;var tl=ot(29,H,null,f.mode);return tl.lanes=z,tl.return=f,tl}}}var qi=xu(!0),Nu=xu(!1),ai=!1;function Ys(l){l.updateQueue={baseState:l.memoizedState,firstBaseUpdate:null,lastBaseUpdate:null,shared:{pending:null,lanes:0,hiddenCallbacks:null},callbacks:null}}function qs(l,t){l=l.updateQueue,t.updateQueue===l&&(t.updateQueue={baseState:l.baseState,firstBaseUpdate:l.firstBaseUpdate,lastBaseUpdate:l.lastBaseUpdate,shared:l.shared,callbacks:null})}function si(l){return{lane:l,tag:0,payload:null,callback:null,next:null}}function oi(l,t,i){var e=l.updateQueue;if(e===null)return null;if(e=e.shared,(el&2)!==0){var n=e.pending;return n===null?t.next=t:(t.next=n.next,n.next=t),e.pending=t,t=$n(l),hu(l,null,i),t}return Ln(l,e,t,i),$n(l)}function Je(l,t,i){if(t=t.updateQueue,t!==null&&(t=t.shared,(i&4194048)!==0)){var e=t.lanes;e&=l.pendingLanes,i|=e,t.lanes=i,Tr(l,i)}}function Xs(l,t){var i=l.updateQueue,e=l.alternate;if(e!==null&&(e=e.updateQueue,i===e)){var n=null,a=null;if(i=i.firstBaseUpdate,i!==null){do{var s={lane:i.lane,tag:i.tag,payload:i.payload,callback:null,next:null};a===null?n=a=s:a=a.next=s,i=i.next}while(i!==null);a===null?n=a=t:a=a.next=t}else n=a=t;i={baseState:e.baseState,firstBaseUpdate:n,lastBaseUpdate:a,shared:e.shared,callbacks:e.callbacks},l.updateQueue=i;return}l=i.lastBaseUpdate,l===null?i.firstBaseUpdate=t:l.next=t,i.lastBaseUpdate=t}var Gs=!1;function We(){if(Gs){var l=ue;if(l!==null)throw l}}function Fe(l,t,i,e){Gs=!1;var n=l.updateQueue;ai=!1;var a=n.firstBaseUpdate,s=n.lastBaseUpdate,r=n.shared.pending;if(r!==null){n.shared.pending=null;var u=r,h=u.next;u.next=null,s===null?a=h:s.next=h,s=u;var S=l.alternate;S!==null&&(S=S.updateQueue,r=S.lastBaseUpdate,r!==s&&(r===null?S.firstBaseUpdate=h:r.next=h,S.lastBaseUpdate=u))}if(a!==null){var T=n.baseState;s=0,S=h=u=null,r=a;do{var y=r.lane&-536870913,b=y!==r.lane;if(b?(F&y)===y:(e&y)===y){y!==0&&y===re&&(Gs=!0),S!==null&&(S=S.next={lane:0,tag:r.tag,payload:r.payload,callback:null,next:null});l:{var B=l,X=r;y=t;var gl=i;switch(X.tag){case 1:if(B=X.payload,typeof B=="function"){T=B.call(gl,T,y);break l}T=B;break l;case 3:B.flags=B.flags&-65537|128;case 0:if(B=X.payload,y=typeof B=="function"?B.call(gl,T,y):B,y==null)break l;T=N({},T,y);break l;case 2:ai=!0}}y=r.callback,y!==null&&(l.flags|=64,b&&(l.flags|=8192),b=n.callbacks,b===null?n.callbacks=[y]:b.push(y))}else b={lane:y,tag:r.tag,payload:r.payload,callback:r.callback,next:null},S===null?(h=S=b,u=T):S=S.next=b,s|=y;if(r=r.next,r===null){if(r=n.shared.pending,r===null)break;b=r,r=b.next,b.next=null,n.lastBaseUpdate=b,n.shared.pending=null}}while(!0);S===null&&(u=T),n.baseState=u,n.firstBaseUpdate=h,n.lastBaseUpdate=S,a===null&&(n.shared.lanes=0),fi|=s,l.lanes=s,l.memoizedState=T}}function Uu(l,t){if(typeof l!="function")throw Error(p(191,l));l.call(t)}function Bu(l,t){var i=l.callbacks;if(i!==null)for(l.callbacks=null,l=0;l<i.length;l++)Uu(i[l],t)}var fe=g(null),Pn=g(0);function Ru(l,t){l=Kt,D(Pn,l),D(fe,t),Kt=l|t.baseLanes}function Ls(){D(Pn,Kt),D(fe,fe.current)}function $s(){Kt=Pn.current,M(fe),M(Pn)}var rt=g(null),wt=null;function ri(l){var t=l.alternate;D(Cl,Cl.current&1),D(rt,l),wt===null&&(t===null||fe.current!==null||t.memoizedState!==null)&&(wt=l)}function Qs(l){D(Cl,Cl.current),D(rt,l),wt===null&&(wt=l)}function Hu(l){l.tag===22?(D(Cl,Cl.current),D(rt,l),wt===null&&(wt=l)):ui()}function ui(){D(Cl,Cl.current),D(rt,rt.current)}function ut(l){M(rt),wt===l&&(wt=null),M(Cl)}var Cl=g(0);function la(l){for(var t=l;t!==null;){if(t.tag===13){var i=t.memoizedState;if(i!==null&&(i=i.dehydrated,i===null||Fo(i)||Io(i)))return t}else if(t.tag===19&&(t.memoizedProps.revealOrder==="forwards"||t.memoizedProps.revealOrder==="backwards"||t.memoizedProps.revealOrder==="unstable_legacy-backwards"||t.memoizedProps.revealOrder==="together")){if((t.flags&128)!==0)return t}else if(t.child!==null){t.child.return=t,t=t.child;continue}if(t===l)break;for(;t.sibling===null;){if(t.return===null||t.return===l)return null;t=t.return}t.sibling.return=t.return,t=t.sibling}return null}var Xt=0,Q=null,ul=null,Ol=null,ta=!1,pe=!1,Xi=!1,ia=0,Ie=0,de=null,Ip=0;function Tl(){throw Error(p(321))}function Zs(l,t){if(t===null)return!1;for(var i=0;i<t.length&&i<l.length;i++)if(!st(l[i],t[i]))return!1;return!0}function Vs(l,t,i,e,n,a){return Xt=a,Q=t,t.memoizedState=null,t.updateQueue=null,t.lanes=0,w.H=l===null||l.memoizedState===null?Sc:oo,Xi=!1,a=i(e,n),Xi=!1,pe&&(a=qu(t,i,e,n)),Yu(l),a}function Yu(l){w.H=tn;var t=ul!==null&&ul.next!==null;if(Xt=0,Ol=ul=Q=null,ta=!1,Ie=0,de=null,t)throw Error(p(300));l===null||xl||(l=l.dependencies,l!==null&&Vn(l)&&(xl=!0))}function qu(l,t,i,e){Q=l;var n=0;do{if(pe&&(de=null),Ie=0,pe=!1,25<=n)throw Error(p(301));if(n+=1,Ol=ul=null,l.updateQueue!=null){var a=l.updateQueue;a.lastEffect=null,a.events=null,a.stores=null,a.memoCache!=null&&(a.memoCache.index=0)}w.H=wc,a=t(i,e)}while(pe);return a}function Pp(){var l=w.H,t=l.useState()[0];return t=typeof t.then=="function"?Pe(t):t,l=l.useState()[0],(ul!==null?ul.memoizedState:null)!==l&&(Q.flags|=1024),t}function ks(){var l=ia!==0;return ia=0,l}function Ks(l,t,i){t.updateQueue=l.updateQueue,t.flags&=-2053,l.lanes&=~i}function Js(l){if(ta){for(l=l.memoizedState;l!==null;){var t=l.queue;t!==null&&(t.pending=null),l=l.next}ta=!1}Xt=0,Ol=ul=Q=null,pe=!1,Ie=ia=0,de=null}function kl(){var l={memoizedState:null,baseState:null,baseQueue:null,queue:null,next:null};return Ol===null?Q.memoizedState=Ol=l:Ol=Ol.next=l,Ol}function El(){if(ul===null){var l=Q.alternate;l=l!==null?l.memoizedState:null}else l=ul.next;var t=Ol===null?Q.memoizedState:Ol.next;if(t!==null)Ol=t,ul=l;else{if(l===null)throw Q.alternate===null?Error(p(467)):Error(p(310));ul=l,l={memoizedState:ul.memoizedState,baseState:ul.baseState,baseQueue:ul.baseQueue,queue:ul.queue,next:null},Ol===null?Q.memoizedState=Ol=l:Ol=Ol.next=l}return Ol}function ea(){return{lastEffect:null,events:null,stores:null,memoCache:null}}function Pe(l){var t=Ie;return Ie+=1,de===null&&(de=[]),l=Eu(de,l,t),t=Q,(Ol===null?t.memoizedState:Ol.next)===null&&(t=t.alternate,w.H=t===null||t.memoizedState===null?Sc:oo),l}function na(l){if(l!==null&&typeof l=="object"){if(typeof l.then=="function")return Pe(l);if(l.$$typeof===ol)return Gl(l)}throw Error(p(438,String(l)))}function Ws(l){var t=null,i=Q.updateQueue;if(i!==null&&(t=i.memoCache),t==null){var e=Q.alternate;e!==null&&(e=e.updateQueue,e!==null&&(e=e.memoCache,e!=null&&(t={data:e.data.map(function(n){return n.slice()}),index:0})))}if(t==null&&(t={data:[],index:0}),i===null&&(i=ea(),Q.updateQueue=i),i.memoCache=t,i=t.data[t.index],i===void 0)for(i=t.data[t.index]=Array(l),e=0;e<l;e++)i[e]=Ft;return t.index++,i}function Gt(l,t){return typeof t=="function"?t(l):t}function aa(l){var t=El();return Fs(t,ul,l)}function Fs(l,t,i){var e=l.queue;if(e===null)throw Error(p(311));e.lastRenderedReducer=i;var n=l.baseQueue,a=e.pending;if(a!==null){if(n!==null){var s=n.next;n.next=a.next,a.next=s}t.baseQueue=n=a,e.pending=null}if(a=l.baseState,n===null)l.memoizedState=a;else{t=n.next;var r=s=null,u=null,h=t,S=!1;do{var T=h.lane&-536870913;if(T!==h.lane?(F&T)===T:(Xt&T)===T){var y=h.revertLane;if(y===0)u!==null&&(u=u.next={lane:0,revertLane:0,gesture:null,action:h.action,hasEagerState:h.hasEagerState,eagerState:h.eagerState,next:null}),T===re&&(S=!0);else if((Xt&y)===y){h=h.next,y===re&&(S=!0);continue}else T={lane:0,revertLane:h.revertLane,gesture:null,action:h.action,hasEagerState:h.hasEagerState,eagerState:h.eagerState,next:null},u===null?(r=u=T,s=a):u=u.next=T,Q.lanes|=y,fi|=y;T=h.action,Xi&&i(a,T),a=h.hasEagerState?h.eagerState:i(a,T)}else y={lane:T,revertLane:h.revertLane,gesture:h.gesture,action:h.action,hasEagerState:h.hasEagerState,eagerState:h.eagerState,next:null},u===null?(r=u=y,s=a):u=u.next=y,Q.lanes|=T,fi|=T;h=h.next}while(h!==null&&h!==t);if(u===null?s=a:u.next=r,!st(a,l.memoizedState)&&(xl=!0,S&&(i=ue,i!==null)))throw i;l.memoizedState=a,l.baseState=s,l.baseQueue=u,e.lastRenderedState=a}return n===null&&(e.lanes=0),[l.memoizedState,e.dispatch]}function Is(l){var t=El(),i=t.queue;if(i===null)throw Error(p(311));i.lastRenderedReducer=l;var e=i.dispatch,n=i.pending,a=t.memoizedState;if(n!==null){i.pending=null;var s=n=n.next;do a=l(a,s.action),s=s.next;while(s!==n);st(a,t.memoizedState)||(xl=!0),t.memoizedState=a,t.baseQueue===null&&(t.baseState=a),i.lastRenderedState=a}return[a,e]}function Xu(l,t,i){var e=Q,n=El(),a=ll;if(a){if(i===void 0)throw Error(p(407));i=i()}else i=t();var s=!st((ul||n).memoizedState,i);if(s&&(n.memoizedState=i,xl=!0),n=n.queue,to($u.bind(null,e,n,l),[l]),n.getSnapshot!==t||s||Ol!==null&&Ol.memoizedState.tag&1){if(e.flags|=2048,me(9,{destroy:void 0},Lu.bind(null,e,n,i,t),null),pl===null)throw Error(p(349));a||(Xt&127)!==0||Gu(e,t,i)}return i}function Gu(l,t,i){l.flags|=16384,l={getSnapshot:t,value:i},t=Q.updateQueue,t===null?(t=ea(),Q.updateQueue=t,t.stores=[l]):(i=t.stores,i===null?t.stores=[l]:i.push(l))}function Lu(l,t,i,e){t.value=i,t.getSnapshot=e,Qu(t)&&Zu(l)}function $u(l,t,i){return i(function(){Qu(t)&&Zu(l)})}function Qu(l){var t=l.getSnapshot;l=l.value;try{var i=t();return!st(l,i)}catch{return!0}}function Zu(l){var t=Oi(l,2);t!==null&&it(t,l,2)}function Ps(l){var t=kl();if(typeof l=="function"){var i=l;if(l=i(),Xi){It(!0);try{i()}finally{It(!1)}}}return t.memoizedState=t.baseState=l,t.queue={pending:null,lanes:0,dispatch:null,lastRenderedReducer:Gt,lastRenderedState:l},t}function Vu(l,t,i,e){return l.baseState=i,Fs(l,ul,typeof e=="function"?e:Gt)}function ld(l,t,i,e,n){if(ra(l))throw Error(p(485));if(l=t.action,l!==null){var a={payload:n,action:l,next:null,isTransition:!0,status:"pending",value:null,reason:null,listeners:[],then:function(s){a.listeners.push(s)}};w.T!==null?i(!0):a.isTransition=!1,e(a),i=t.pending,i===null?(a.next=t.pending=a,ku(t,a)):(a.next=i.next,t.pending=i.next=a)}}function ku(l,t){var i=t.action,e=t.payload,n=l.state;if(t.isTransition){var a=w.T,s={};w.T=s;try{var r=i(n,e),u=w.S;u!==null&&u(s,r),Ku(l,t,r)}catch(h){lo(l,t,h)}finally{a!==null&&s.types!==null&&(a.types=s.types),w.T=a}}else try{a=i(n,e),Ku(l,t,a)}catch(h){lo(l,t,h)}}function Ku(l,t,i){i!==null&&typeof i=="object"&&typeof i.then=="function"?i.then(function(e){Ju(l,t,e)},function(e){return lo(l,t,e)}):Ju(l,t,i)}function Ju(l,t,i){t.status="fulfilled",t.value=i,Wu(t),l.state=i,t=l.pending,t!==null&&(i=t.next,i===t?l.pending=null:(i=i.next,t.next=i,ku(l,i)))}function lo(l,t,i){var e=l.pending;if(l.pending=null,e!==null){e=e.next;do t.status="rejected",t.reason=i,Wu(t),t=t.next;while(t!==e)}l.action=null}function Wu(l){l=l.listeners;for(var t=0;t<l.length;t++)(0,l[t])()}function Fu(l,t){return t}function Iu(l,t){if(ll){var i=pl.formState;if(i!==null){l:{var e=Q;if(ll){if(dl){t:{for(var n=dl,a=St;n.nodeType!==8;){if(!a){n=null;break t}if(n=zt(n.nextSibling),n===null){n=null;break t}}a=n.data,n=a==="F!"||a==="F"?n:null}if(n){dl=zt(n.nextSibling),e=n.data==="F!";break l}}ei(e)}e=!1}e&&(t=i[0])}}return i=kl(),i.memoizedState=i.baseState=t,e={pending:null,lanes:0,dispatch:null,lastRenderedReducer:Fu,lastRenderedState:t},i.queue=e,i=yc.bind(null,Q,e),e.dispatch=i,e=Ps(!1),a=so.bind(null,Q,!1,e.queue),e=kl(),n={state:t,dispatch:null,action:l,pending:null},e.queue=n,i=ld.bind(null,Q,n,a,i),n.dispatch=i,e.memoizedState=l,[t,i,!1]}function Pu(l){var t=El();return lc(t,ul,l)}function lc(l,t,i){if(t=Fs(l,t,Fu)[0],l=aa(Gt)[0],typeof t=="object"&&t!==null&&typeof t.then=="function")try{var e=Pe(t)}catch(s){throw s===ce?Jn:s}else e=t;t=El();var n=t.queue,a=n.dispatch;return i!==t.memoizedState&&(Q.flags|=2048,me(9,{destroy:void 0},td.bind(null,n,i),null)),[e,a,l]}function td(l,t){l.action=t}function tc(l){var t=El(),i=ul;if(i!==null)return lc(t,i,l);El(),t=t.memoizedState,i=El();var e=i.queue.dispatch;return i.memoizedState=l,[t,e,!1]}function me(l,t,i,e){return l={tag:l,create:i,deps:e,inst:t,next:null},t=Q.updateQueue,t===null&&(t=ea(),Q.updateQueue=t),i=t.lastEffect,i===null?t.lastEffect=l.next=l:(e=i.next,i.next=l,l.next=e,t.lastEffect=l),l}function ic(){return El().memoizedState}function sa(l,t,i,e){var n=kl();Q.flags|=l,n.memoizedState=me(1|t,{destroy:void 0},i,e===void 0?null:e)}function oa(l,t,i,e){var n=El();e=e===void 0?null:e;var a=n.memoizedState.inst;ul!==null&&e!==null&&Zs(e,ul.memoizedState.deps)?n.memoizedState=me(t,a,i,e):(Q.flags|=l,n.memoizedState=me(1|t,a,i,e))}function ec(l,t){sa(8390656,8,l,t)}function to(l,t){oa(2048,8,l,t)}function id(l){Q.flags|=4;var t=Q.updateQueue;if(t===null)t=ea(),Q.updateQueue=t,t.events=[l];else{var i=t.events;i===null?t.events=[l]:i.push(l)}}function nc(l){var t=El().memoizedState;return id({ref:t,nextImpl:l}),function(){if((el&2)!==0)throw Error(p(440));return t.impl.apply(void 0,arguments)}}function ac(l,t){return oa(4,2,l,t)}function sc(l,t){return oa(4,4,l,t)}function oc(l,t){if(typeof t=="function"){l=l();var i=t(l);return function(){typeof i=="function"?i():t(null)}}if(t!=null)return l=l(),t.current=l,function(){t.current=null}}function rc(l,t,i){i=i!=null?i.concat([l]):null,oa(4,4,oc.bind(null,t,l),i)}function io(){}function uc(l,t){var i=El();t=t===void 0?null:t;var e=i.memoizedState;return t!==null&&Zs(t,e[1])?e[0]:(i.memoizedState=[l,t],l)}function cc(l,t){var i=El();t=t===void 0?null:t;var e=i.memoizedState;if(t!==null&&Zs(t,e[1]))return e[0];if(e=l(),Xi){It(!0);try{l()}finally{It(!1)}}return i.memoizedState=[e,t],e}function eo(l,t,i){return i===void 0||(Xt&1073741824)!==0&&(F&261930)===0?l.memoizedState=t:(l.memoizedState=i,l=gg(),Q.lanes|=l,fi|=l,i)}function gc(l,t,i,e){return st(i,t)?i:fe.current!==null?(l=eo(l,i,e),st(l,t)||(xl=!0),l):(Xt&42)===0||(Xt&1073741824)!==0&&(F&261930)===0?(xl=!0,l.memoizedState=i):(l=gg(),Q.lanes|=l,fi|=l,t)}function fc(l,t,i,e,n){var a=C.p;C.p=a!==0&&8>a?a:8;var s=w.T,r={};w.T=r,so(l,!1,t,i);try{var u=n(),h=w.S;if(h!==null&&h(r,u),u!==null&&typeof u=="object"&&typeof u.then=="function"){var S=Fp(u,e);ln(l,t,S,ft(l))}else ln(l,t,e,ft(l))}catch(T){ln(l,t,{then:function(){},status:"rejected",reason:T},ft())}finally{C.p=a,s!==null&&r.types!==null&&(s.types=r.types),w.T=s}}function ed(){}function no(l,t,i,e){if(l.tag!==5)throw Error(p(476));var n=pc(l).queue;fc(l,n,t,G,i===null?ed:function(){return dc(l),i(e)})}function pc(l){var t=l.memoizedState;if(t!==null)return t;t={memoizedState:G,baseState:G,baseQueue:null,queue:{pending:null,lanes:0,dispatch:null,lastRenderedReducer:Gt,lastRenderedState:G},next:null};var i={};return t.next={memoizedState:i,baseState:i,baseQueue:null,queue:{pending:null,lanes:0,dispatch:null,lastRenderedReducer:Gt,lastRenderedState:i},next:null},l.memoizedState=t,l=l.alternate,l!==null&&(l.memoizedState=t),t}function dc(l){var t=pc(l);t.next===null&&(t=l.alternate.memoizedState),ln(l,t.next.queue,{},ft())}function ao(){return Gl(vn)}function mc(){return El().memoizedState}function hc(){return El().memoizedState}function nd(l){for(var t=l.return;t!==null;){switch(t.tag){case 24:case 3:var i=ft();l=si(i);var e=oi(t,l,i);e!==null&&(it(e,t,i),Je(e,t,i)),t={cache:Us()},l.payload=t;return}t=t.return}}function ad(l,t,i){var e=ft();i={lane:e,revertLane:0,gesture:null,action:i,hasEagerState:!1,eagerState:null,next:null},ra(l)?vc(t,i):(i=_s(l,t,i,e),i!==null&&(it(i,l,e),bc(i,t,e)))}function yc(l,t,i){var e=ft();ln(l,t,i,e)}function ln(l,t,i,e){var n={lane:e,revertLane:0,gesture:null,action:i,hasEagerState:!1,eagerState:null,next:null};if(ra(l))vc(t,n);else{var a=l.alternate;if(l.lanes===0&&(a===null||a.lanes===0)&&(a=t.lastRenderedReducer,a!==null))try{var s=t.lastRenderedState,r=a(s,i);if(n.hasEagerState=!0,n.eagerState=r,st(r,s))return Ln(l,t,n,0),pl===null&&Gn(),!1}catch{}if(i=_s(l,t,n,e),i!==null)return it(i,l,e),bc(i,t,e),!0}return!1}function so(l,t,i,e){if(e={lane:2,revertLane:qo(),gesture:null,action:e,hasEagerState:!1,eagerState:null,next:null},ra(l)){if(t)throw Error(p(479))}else t=_s(l,i,e,2),t!==null&&it(t,l,2)}function ra(l){var t=l.alternate;return l===Q||t!==null&&t===Q}function vc(l,t){pe=ta=!0;var i=l.pending;i===null?t.next=t:(t.next=i.next,i.next=t),l.pending=t}function bc(l,t,i){if((i&4194048)!==0){var e=t.lanes;e&=l.pendingLanes,i|=e,t.lanes=i,Tr(l,i)}}var tn={readContext:Gl,use:na,useCallback:Tl,useContext:Tl,useEffect:Tl,useImperativeHandle:Tl,useLayoutEffect:Tl,useInsertionEffect:Tl,useMemo:Tl,useReducer:Tl,useRef:Tl,useState:Tl,useDebugValue:Tl,useDeferredValue:Tl,useTransition:Tl,useSyncExternalStore:Tl,useId:Tl,useHostTransitionStatus:Tl,useFormState:Tl,useActionState:Tl,useOptimistic:Tl,useMemoCache:Tl,useCacheRefresh:Tl};tn.useEffectEvent=Tl;var Sc={readContext:Gl,use:na,useCallback:function(l,t){return kl().memoizedState=[l,t===void 0?null:t],l},useContext:Gl,useEffect:ec,useImperativeHandle:function(l,t,i){i=i!=null?i.concat([l]):null,sa(4194308,4,oc.bind(null,t,l),i)},useLayoutEffect:function(l,t){return sa(4194308,4,l,t)},useInsertionEffect:function(l,t){sa(4,2,l,t)},useMemo:function(l,t){var i=kl();t=t===void 0?null:t;var e=l();if(Xi){It(!0);try{l()}finally{It(!1)}}return i.memoizedState=[e,t],e},useReducer:function(l,t,i){var e=kl();if(i!==void 0){var n=i(t);if(Xi){It(!0);try{i(t)}finally{It(!1)}}}else n=t;return e.memoizedState=e.baseState=n,l={pending:null,lanes:0,dispatch:null,lastRenderedReducer:l,lastRenderedState:n},e.queue=l,l=l.dispatch=ad.bind(null,Q,l),[e.memoizedState,l]},useRef:function(l){var t=kl();return l={current:l},t.memoizedState=l},useState:function(l){l=Ps(l);var t=l.queue,i=yc.bind(null,Q,t);return t.dispatch=i,[l.memoizedState,i]},useDebugValue:io,useDeferredValue:function(l,t){var i=kl();return eo(i,l,t)},useTransition:function(){var l=Ps(!1);return l=fc.bind(null,Q,l.queue,!0,!1),kl().memoizedState=l,[!1,l]},useSyncExternalStore:function(l,t,i){var e=Q,n=kl();if(ll){if(i===void 0)throw Error(p(407));i=i()}else{if(i=t(),pl===null)throw Error(p(349));(F&127)!==0||Gu(e,t,i)}n.memoizedState=i;var a={value:i,getSnapshot:t};return n.queue=a,ec($u.bind(null,e,a,l),[l]),e.flags|=2048,me(9,{destroy:void 0},Lu.bind(null,e,a,i,t),null),i},useId:function(){var l=kl(),t=pl.identifierPrefix;if(ll){var i=Et,e=Ct;i=(e&~(1<<32-at(e)-1)).toString(32)+i,t="_"+t+"R_"+i,i=ia++,0<i&&(t+="H"+i.toString(32)),t+="_"}else i=Ip++,t="_"+t+"r_"+i.toString(32)+"_";return l.memoizedState=t},useHostTransitionStatus:ao,useFormState:Iu,useActionState:Iu,useOptimistic:function(l){var t=kl();t.memoizedState=t.baseState=l;var i={pending:null,lanes:0,dispatch:null,lastRenderedReducer:null,lastRenderedState:null};return t.queue=i,t=so.bind(null,Q,!0,i),i.dispatch=t,[l,t]},useMemoCache:Ws,useCacheRefresh:function(){return kl().memoizedState=nd.bind(null,Q)},useEffectEvent:function(l){var t=kl(),i={impl:l};return t.memoizedState=i,function(){if((el&2)!==0)throw Error(p(440));return i.impl.apply(void 0,arguments)}}},oo={readContext:Gl,use:na,useCallback:uc,useContext:Gl,useEffect:to,useImperativeHandle:rc,useInsertionEffect:ac,useLayoutEffect:sc,useMemo:cc,useReducer:aa,useRef:ic,useState:function(){return aa(Gt)},useDebugValue:io,useDeferredValue:function(l,t){var i=El();return gc(i,ul.memoizedState,l,t)},useTransition:function(){var l=aa(Gt)[0],t=El().memoizedState;return[typeof l=="boolean"?l:Pe(l),t]},useSyncExternalStore:Xu,useId:mc,useHostTransitionStatus:ao,useFormState:Pu,useActionState:Pu,useOptimistic:function(l,t){var i=El();return Vu(i,ul,l,t)},useMemoCache:Ws,useCacheRefresh:hc};oo.useEffectEvent=nc;var wc={readContext:Gl,use:na,useCallback:uc,useContext:Gl,useEffect:to,useImperativeHandle:rc,useInsertionEffect:ac,useLayoutEffect:sc,useMemo:cc,useReducer:Is,useRef:ic,useState:function(){return Is(Gt)},useDebugValue:io,useDeferredValue:function(l,t){var i=El();return ul===null?eo(i,l,t):gc(i,ul.memoizedState,l,t)},useTransition:function(){var l=Is(Gt)[0],t=El().memoizedState;return[typeof l=="boolean"?l:Pe(l),t]},useSyncExternalStore:Xu,useId:mc,useHostTransitionStatus:ao,useFormState:tc,useActionState:tc,useOptimistic:function(l,t){var i=El();return ul!==null?Vu(i,ul,l,t):(i.baseState=l,[l,i.queue.dispatch])},useMemoCache:Ws,useCacheRefresh:hc};wc.useEffectEvent=nc;function ro(l,t,i,e){t=l.memoizedState,i=i(e,t),i=i==null?t:N({},t,i),l.memoizedState=i,l.lanes===0&&(l.updateQueue.baseState=i)}var uo={enqueueSetState:function(l,t,i){l=l._reactInternals;var e=ft(),n=si(e);n.payload=t,i!=null&&(n.callback=i),t=oi(l,n,e),t!==null&&(it(t,l,e),Je(t,l,e))},enqueueReplaceState:function(l,t,i){l=l._reactInternals;var e=ft(),n=si(e);n.tag=1,n.payload=t,i!=null&&(n.callback=i),t=oi(l,n,e),t!==null&&(it(t,l,e),Je(t,l,e))},enqueueForceUpdate:function(l,t){l=l._reactInternals;var i=ft(),e=si(i);e.tag=2,t!=null&&(e.callback=t),t=oi(l,e,i),t!==null&&(it(t,l,i),Je(t,l,i))}};function zc(l,t,i,e,n,a,s){return l=l.stateNode,typeof l.shouldComponentUpdate=="function"?l.shouldComponentUpdate(e,a,s):t.prototype&&t.prototype.isPureReactComponent?!Ge(i,e)||!Ge(n,a):!0}function _c(l,t,i,e){l=t.state,typeof t.componentWillReceiveProps=="function"&&t.componentWillReceiveProps(i,e),typeof t.UNSAFE_componentWillReceiveProps=="function"&&t.UNSAFE_componentWillReceiveProps(i,e),t.state!==l&&uo.enqueueReplaceState(t,t.state,null)}function Gi(l,t){var i=t;if("ref"in t){i={};for(var e in t)e!=="ref"&&(i[e]=t[e])}if(l=l.defaultProps){i===t&&(i=N({},i));for(var n in l)i[n]===void 0&&(i[n]=l[n])}return i}function Tc(l){Xn(l)}function Mc(l){console.error(l)}function jc(l){Xn(l)}function ua(l,t){try{var i=l.onUncaughtError;i(t.value,{componentStack:t.stack})}catch(e){setTimeout(function(){throw e})}}function Ac(l,t,i){try{var e=l.onCaughtError;e(i.value,{componentStack:i.stack,errorBoundary:t.tag===1?t.stateNode:null})}catch(n){setTimeout(function(){throw n})}}function co(l,t,i){return i=si(i),i.tag=3,i.payload={element:null},i.callback=function(){ua(l,t)},i}function Cc(l){return l=si(l),l.tag=3,l}function Ec(l,t,i,e){var n=i.type.getDerivedStateFromError;if(typeof n=="function"){var a=e.value;l.payload=function(){return n(a)},l.callback=function(){Ac(t,i,e)}}var s=i.stateNode;s!==null&&typeof s.componentDidCatch=="function"&&(l.callback=function(){Ac(t,i,e),typeof n!="function"&&(pi===null?pi=new Set([this]):pi.add(this));var r=e.stack;this.componentDidCatch(e.value,{componentStack:r!==null?r:""})})}function sd(l,t,i,e,n){if(i.flags|=32768,e!==null&&typeof e=="object"&&typeof e.then=="function"){if(t=i.alternate,t!==null&&oe(t,i,n,!0),i=rt.current,i!==null){switch(i.tag){case 31:case 13:return wt===null?wa():i.alternate===null&&Ml===0&&(Ml=3),i.flags&=-257,i.flags|=65536,i.lanes=n,e===Wn?i.flags|=16384:(t=i.updateQueue,t===null?i.updateQueue=new Set([e]):t.add(e),Ro(l,e,n)),!1;case 22:return i.flags|=65536,e===Wn?i.flags|=16384:(t=i.updateQueue,t===null?(t={transitions:null,markerInstances:null,retryQueue:new Set([e])},i.updateQueue=t):(i=t.retryQueue,i===null?t.retryQueue=new Set([e]):i.add(e)),Ro(l,e,n)),!1}throw Error(p(435,i.tag))}return Ro(l,e,n),wa(),!1}if(ll)return t=rt.current,t!==null?((t.flags&65536)===0&&(t.flags|=256),t.flags|=65536,t.lanes=n,e!==Es&&(l=Error(p(422),{cause:e}),Qe(yt(l,i)))):(e!==Es&&(t=Error(p(423),{cause:e}),Qe(yt(t,i))),l=l.current.alternate,l.flags|=65536,n&=-n,l.lanes|=n,e=yt(e,i),n=co(l.stateNode,e,n),Xs(l,n),Ml!==4&&(Ml=2)),!1;var a=Error(p(520),{cause:e});if(a=yt(a,i),cn===null?cn=[a]:cn.push(a),Ml!==4&&(Ml=2),t===null)return!0;e=yt(e,i),i=t;do{switch(i.tag){case 3:return i.flags|=65536,l=n&-n,i.lanes|=l,l=co(i.stateNode,e,l),Xs(i,l),!1;case 1:if(t=i.type,a=i.stateNode,(i.flags&128)===0&&(typeof t.getDerivedStateFromError=="function"||a!==null&&typeof a.componentDidCatch=="function"&&(pi===null||!pi.has(a))))return i.flags|=65536,n&=-n,i.lanes|=n,n=Cc(n),Ec(n,l,i,e),Xs(i,n),!1}i=i.return}while(i!==null);return!1}var go=Error(p(461)),xl=!1;function Ll(l,t,i,e){t.child=l===null?Nu(t,null,i,e):qi(t,l.child,i,e)}function Dc(l,t,i,e,n){i=i.render;var a=t.ref;if("ref"in e){var s={};for(var r in e)r!=="ref"&&(s[r]=e[r])}else s=e;return Bi(t),e=Vs(l,t,i,s,a,n),r=ks(),l!==null&&!xl?(Ks(l,t,n),Lt(l,t,n)):(ll&&r&&As(t),t.flags|=1,Ll(l,t,e,n),t.child)}function Oc(l,t,i,e,n){if(l===null){var a=i.type;return typeof a=="function"&&!Ts(a)&&a.defaultProps===void 0&&i.compare===null?(t.tag=15,t.type=a,xc(l,t,a,e,n)):(l=Qn(i.type,null,e,t,t.mode,n),l.ref=t.ref,l.return=t,t.child=l)}if(a=l.child,!So(l,n)){var s=a.memoizedProps;if(i=i.compare,i=i!==null?i:Ge,i(s,e)&&l.ref===t.ref)return Lt(l,t,n)}return t.flags|=1,l=Rt(a,e),l.ref=t.ref,l.return=t,t.child=l}function xc(l,t,i,e,n){if(l!==null){var a=l.memoizedProps;if(Ge(a,e)&&l.ref===t.ref)if(xl=!1,t.pendingProps=e=a,So(l,n))(l.flags&131072)!==0&&(xl=!0);else return t.lanes=l.lanes,Lt(l,t,n)}return fo(l,t,i,e,n)}function Nc(l,t,i,e){var n=e.children,a=l!==null?l.memoizedState:null;if(l===null&&t.stateNode===null&&(t.stateNode={_visibility:1,_pendingMarkers:null,_retryCache:null,_transitions:null}),e.mode==="hidden"){if((t.flags&128)!==0){if(a=a!==null?a.baseLanes|i:i,l!==null){for(e=t.child=l.child,n=0;e!==null;)n=n|e.lanes|e.childLanes,e=e.sibling;e=n&~a}else e=0,t.child=null;return Uc(l,t,a,i,e)}if((i&536870912)!==0)t.memoizedState={baseLanes:0,cachePool:null},l!==null&&Kn(t,a!==null?a.cachePool:null),a!==null?Ru(t,a):Ls(),Hu(t);else return e=t.lanes=536870912,Uc(l,t,a!==null?a.baseLanes|i:i,i,e)}else a!==null?(Kn(t,a.cachePool),Ru(t,a),ui(),t.memoizedState=null):(l!==null&&Kn(t,null),Ls(),ui());return Ll(l,t,n,i),t.child}function en(l,t){return l!==null&&l.tag===22||t.stateNode!==null||(t.stateNode={_visibility:1,_pendingMarkers:null,_retryCache:null,_transitions:null}),t.sibling}function Uc(l,t,i,e,n){var a=Rs();return a=a===null?null:{parent:Dl._currentValue,pool:a},t.memoizedState={baseLanes:i,cachePool:a},l!==null&&Kn(t,null),Ls(),Hu(t),l!==null&&oe(l,t,e,!0),t.childLanes=n,null}function ca(l,t){return t=fa({mode:t.mode,children:t.children},l.mode),t.ref=l.ref,l.child=t,t.return=l,t}function Bc(l,t,i){return qi(t,l.child,null,i),l=ca(t,t.pendingProps),l.flags|=2,ut(t),t.memoizedState=null,l}function od(l,t,i){var e=t.pendingProps,n=(t.flags&128)!==0;if(t.flags&=-129,l===null){if(ll){if(e.mode==="hidden")return l=ca(t,e),t.lanes=536870912,en(null,l);if(Qs(t),(l=dl)?(l=kg(l,St),l=l!==null&&l.data==="&"?l:null,l!==null&&(t.memoizedState={dehydrated:l,treeContext:ti!==null?{id:Ct,overflow:Et}:null,retryLane:536870912,hydrationErrors:null},i=vu(l),i.return=t,t.child=i,Xl=t,dl=null)):l=null,l===null)throw ei(t);return t.lanes=536870912,null}return ca(t,e)}var a=l.memoizedState;if(a!==null){var s=a.dehydrated;if(Qs(t),n)if(t.flags&256)t.flags&=-257,t=Bc(l,t,i);else if(t.memoizedState!==null)t.child=l.child,t.flags|=128,t=null;else throw Error(p(558));else if(xl||oe(l,t,i,!1),n=(i&l.childLanes)!==0,xl||n){if(e=pl,e!==null&&(s=Mr(e,i),s!==0&&s!==a.retryLane))throw a.retryLane=s,Oi(l,s),it(e,l,s),go;wa(),t=Bc(l,t,i)}else l=a.treeContext,dl=zt(s.nextSibling),Xl=t,ll=!0,ii=null,St=!1,l!==null&&wu(t,l),t=ca(t,e),t.flags|=4096;return t}return l=Rt(l.child,{mode:e.mode,children:e.children}),l.ref=t.ref,t.child=l,l.return=t,l}function ga(l,t){var i=t.ref;if(i===null)l!==null&&l.ref!==null&&(t.flags|=4194816);else{if(typeof i!="function"&&typeof i!="object")throw Error(p(284));(l===null||l.ref!==i)&&(t.flags|=4194816)}}function fo(l,t,i,e,n){return Bi(t),i=Vs(l,t,i,e,void 0,n),e=ks(),l!==null&&!xl?(Ks(l,t,n),Lt(l,t,n)):(ll&&e&&As(t),t.flags|=1,Ll(l,t,i,n),t.child)}function Rc(l,t,i,e,n,a){return Bi(t),t.updateQueue=null,i=qu(t,e,i,n),Yu(l),e=ks(),l!==null&&!xl?(Ks(l,t,a),Lt(l,t,a)):(ll&&e&&As(t),t.flags|=1,Ll(l,t,i,a),t.child)}function Hc(l,t,i,e,n){if(Bi(t),t.stateNode===null){var a=ee,s=i.contextType;typeof s=="object"&&s!==null&&(a=Gl(s)),a=new i(e,a),t.memoizedState=a.state!==null&&a.state!==void 0?a.state:null,a.updater=uo,t.stateNode=a,a._reactInternals=t,a=t.stateNode,a.props=e,a.state=t.memoizedState,a.refs={},Ys(t),s=i.contextType,a.context=typeof s=="object"&&s!==null?Gl(s):ee,a.state=t.memoizedState,s=i.getDerivedStateFromProps,typeof s=="function"&&(ro(t,i,s,e),a.state=t.memoizedState),typeof i.getDerivedStateFromProps=="function"||typeof a.getSnapshotBeforeUpdate=="function"||typeof a.UNSAFE_componentWillMount!="function"&&typeof a.componentWillMount!="function"||(s=a.state,typeof a.componentWillMount=="function"&&a.componentWillMount(),typeof a.UNSAFE_componentWillMount=="function"&&a.UNSAFE_componentWillMount(),s!==a.state&&uo.enqueueReplaceState(a,a.state,null),Fe(t,e,a,n),We(),a.state=t.memoizedState),typeof a.componentDidMount=="function"&&(t.flags|=4194308),e=!0}else if(l===null){a=t.stateNode;var r=t.memoizedProps,u=Gi(i,r);a.props=u;var h=a.context,S=i.contextType;s=ee,typeof S=="object"&&S!==null&&(s=Gl(S));var T=i.getDerivedStateFromProps;S=typeof T=="function"||typeof a.getSnapshotBeforeUpdate=="function",r=t.pendingProps!==r,S||typeof a.UNSAFE_componentWillReceiveProps!="function"&&typeof a.componentWillReceiveProps!="function"||(r||h!==s)&&_c(t,a,e,s),ai=!1;var y=t.memoizedState;a.state=y,Fe(t,e,a,n),We(),h=t.memoizedState,r||y!==h||ai?(typeof T=="function"&&(ro(t,i,T,e),h=t.memoizedState),(u=ai||zc(t,i,u,e,y,h,s))?(S||typeof a.UNSAFE_componentWillMount!="function"&&typeof a.componentWillMount!="function"||(typeof a.componentWillMount=="function"&&a.componentWillMount(),typeof a.UNSAFE_componentWillMount=="function"&&a.UNSAFE_componentWillMount()),typeof a.componentDidMount=="function"&&(t.flags|=4194308)):(typeof a.componentDidMount=="function"&&(t.flags|=4194308),t.memoizedProps=e,t.memoizedState=h),a.props=e,a.state=h,a.context=s,e=u):(typeof a.componentDidMount=="function"&&(t.flags|=4194308),e=!1)}else{a=t.stateNode,qs(l,t),s=t.memoizedProps,S=Gi(i,s),a.props=S,T=t.pendingProps,y=a.context,h=i.contextType,u=ee,typeof h=="object"&&h!==null&&(u=Gl(h)),r=i.getDerivedStateFromProps,(h=typeof r=="function"||typeof a.getSnapshotBeforeUpdate=="function")||typeof a.UNSAFE_componentWillReceiveProps!="function"&&typeof a.componentWillReceiveProps!="function"||(s!==T||y!==u)&&_c(t,a,e,u),ai=!1,y=t.memoizedState,a.state=y,Fe(t,e,a,n),We();var b=t.memoizedState;s!==T||y!==b||ai||l!==null&&l.dependencies!==null&&Vn(l.dependencies)?(typeof r=="function"&&(ro(t,i,r,e),b=t.memoizedState),(S=ai||zc(t,i,S,e,y,b,u)||l!==null&&l.dependencies!==null&&Vn(l.dependencies))?(h||typeof a.UNSAFE_componentWillUpdate!="function"&&typeof a.componentWillUpdate!="function"||(typeof a.componentWillUpdate=="function"&&a.componentWillUpdate(e,b,u),typeof a.UNSAFE_componentWillUpdate=="function"&&a.UNSAFE_componentWillUpdate(e,b,u)),typeof a.componentDidUpdate=="function"&&(t.flags|=4),typeof a.getSnapshotBeforeUpdate=="function"&&(t.flags|=1024)):(typeof a.componentDidUpdate!="function"||s===l.memoizedProps&&y===l.memoizedState||(t.flags|=4),typeof a.getSnapshotBeforeUpdate!="function"||s===l.memoizedProps&&y===l.memoizedState||(t.flags|=1024),t.memoizedProps=e,t.memoizedState=b),a.props=e,a.state=b,a.context=u,e=S):(typeof a.componentDidUpdate!="function"||s===l.memoizedProps&&y===l.memoizedState||(t.flags|=4),typeof a.getSnapshotBeforeUpdate!="function"||s===l.memoizedProps&&y===l.memoizedState||(t.flags|=1024),e=!1)}return a=e,ga(l,t),e=(t.flags&128)!==0,a||e?(a=t.stateNode,i=e&&typeof i.getDerivedStateFromError!="function"?null:a.render(),t.flags|=1,l!==null&&e?(t.child=qi(t,l.child,null,n),t.child=qi(t,null,i,n)):Ll(l,t,i,n),t.memoizedState=a.state,l=t.child):l=Lt(l,t,n),l}function Yc(l,t,i,e){return Ni(),t.flags|=256,Ll(l,t,i,e),t.child}var po={dehydrated:null,treeContext:null,retryLane:0,hydrationErrors:null};function mo(l){return{baseLanes:l,cachePool:Au()}}function ho(l,t,i){return l=l!==null?l.childLanes&~i:0,t&&(l|=gt),l}function qc(l,t,i){var e=t.pendingProps,n=!1,a=(t.flags&128)!==0,s;if((s=a)||(s=l!==null&&l.memoizedState===null?!1:(Cl.current&2)!==0),s&&(n=!0,t.flags&=-129),s=(t.flags&32)!==0,t.flags&=-33,l===null){if(ll){if(n?ri(t):ui(),(l=dl)?(l=kg(l,St),l=l!==null&&l.data!=="&"?l:null,l!==null&&(t.memoizedState={dehydrated:l,treeContext:ti!==null?{id:Ct,overflow:Et}:null,retryLane:536870912,hydrationErrors:null},i=vu(l),i.return=t,t.child=i,Xl=t,dl=null)):l=null,l===null)throw ei(t);return Io(l)?t.lanes=32:t.lanes=536870912,null}var r=e.children;return e=e.fallback,n?(ui(),n=t.mode,r=fa({mode:"hidden",children:r},n),e=xi(e,n,i,null),r.return=t,e.return=t,r.sibling=e,t.child=r,e=t.child,e.memoizedState=mo(i),e.childLanes=ho(l,s,i),t.memoizedState=po,en(null,e)):(ri(t),yo(t,r))}var u=l.memoizedState;if(u!==null&&(r=u.dehydrated,r!==null)){if(a)t.flags&256?(ri(t),t.flags&=-257,t=vo(l,t,i)):t.memoizedState!==null?(ui(),t.child=l.child,t.flags|=128,t=null):(ui(),r=e.fallback,n=t.mode,e=fa({mode:"visible",children:e.children},n),r=xi(r,n,i,null),r.flags|=2,e.return=t,r.return=t,e.sibling=r,t.child=e,qi(t,l.child,null,i),e=t.child,e.memoizedState=mo(i),e.childLanes=ho(l,s,i),t.memoizedState=po,t=en(null,e));else if(ri(t),Io(r)){if(s=r.nextSibling&&r.nextSibling.dataset,s)var h=s.dgst;s=h,e=Error(p(419)),e.stack="",e.digest=s,Qe({value:e,source:null,stack:null}),t=vo(l,t,i)}else if(xl||oe(l,t,i,!1),s=(i&l.childLanes)!==0,xl||s){if(s=pl,s!==null&&(e=Mr(s,i),e!==0&&e!==u.retryLane))throw u.retryLane=e,Oi(l,e),it(s,l,e),go;Fo(r)||wa(),t=vo(l,t,i)}else Fo(r)?(t.flags|=192,t.child=l.child,t=null):(l=u.treeContext,dl=zt(r.nextSibling),Xl=t,ll=!0,ii=null,St=!1,l!==null&&wu(t,l),t=yo(t,e.children),t.flags|=4096);return t}return n?(ui(),r=e.fallback,n=t.mode,u=l.child,h=u.sibling,e=Rt(u,{mode:"hidden",children:e.children}),e.subtreeFlags=u.subtreeFlags&65011712,h!==null?r=Rt(h,r):(r=xi(r,n,i,null),r.flags|=2),r.return=t,e.return=t,e.sibling=r,t.child=e,en(null,e),e=t.child,r=l.child.memoizedState,r===null?r=mo(i):(n=r.cachePool,n!==null?(u=Dl._currentValue,n=n.parent!==u?{parent:u,pool:u}:n):n=Au(),r={baseLanes:r.baseLanes|i,cachePool:n}),e.memoizedState=r,e.childLanes=ho(l,s,i),t.memoizedState=po,en(l.child,e)):(ri(t),i=l.child,l=i.sibling,i=Rt(i,{mode:"visible",children:e.children}),i.return=t,i.sibling=null,l!==null&&(s=t.deletions,s===null?(t.deletions=[l],t.flags|=16):s.push(l)),t.child=i,t.memoizedState=null,i)}function yo(l,t){return t=fa({mode:"visible",children:t},l.mode),t.return=l,l.child=t}function fa(l,t){return l=ot(22,l,null,t),l.lanes=0,l}function vo(l,t,i){return qi(t,l.child,null,i),l=yo(t,t.pendingProps.children),l.flags|=2,t.memoizedState=null,l}function Xc(l,t,i){l.lanes|=t;var e=l.alternate;e!==null&&(e.lanes|=t),xs(l.return,t,i)}function bo(l,t,i,e,n,a){var s=l.memoizedState;s===null?l.memoizedState={isBackwards:t,rendering:null,renderingStartTime:0,last:e,tail:i,tailMode:n,treeForkCount:a}:(s.isBackwards=t,s.rendering=null,s.renderingStartTime=0,s.last=e,s.tail=i,s.tailMode=n,s.treeForkCount=a)}function Gc(l,t,i){var e=t.pendingProps,n=e.revealOrder,a=e.tail;e=e.children;var s=Cl.current,r=(s&2)!==0;if(r?(s=s&1|2,t.flags|=128):s&=1,D(Cl,s),Ll(l,t,e,i),e=ll?$e:0,!r&&l!==null&&(l.flags&128)!==0)l:for(l=t.child;l!==null;){if(l.tag===13)l.memoizedState!==null&&Xc(l,i,t);else if(l.tag===19)Xc(l,i,t);else if(l.child!==null){l.child.return=l,l=l.child;continue}if(l===t)break l;for(;l.sibling===null;){if(l.return===null||l.return===t)break l;l=l.return}l.sibling.return=l.return,l=l.sibling}switch(n){case"forwards":for(i=t.child,n=null;i!==null;)l=i.alternate,l!==null&&la(l)===null&&(n=i),i=i.sibling;i=n,i===null?(n=t.child,t.child=null):(n=i.sibling,i.sibling=null),bo(t,!1,n,i,a,e);break;case"backwards":case"unstable_legacy-backwards":for(i=null,n=t.child,t.child=null;n!==null;){if(l=n.alternate,l!==null&&la(l)===null){t.child=n;break}l=n.sibling,n.sibling=i,i=n,n=l}bo(t,!0,i,null,a,e);break;case"together":bo(t,!1,null,null,void 0,e);break;default:t.memoizedState=null}return t.child}function Lt(l,t,i){if(l!==null&&(t.dependencies=l.dependencies),fi|=t.lanes,(i&t.childLanes)===0)if(l!==null){if(oe(l,t,i,!1),(i&t.childLanes)===0)return null}else return null;if(l!==null&&t.child!==l.child)throw Error(p(153));if(t.child!==null){for(l=t.child,i=Rt(l,l.pendingProps),t.child=i,i.return=t;l.sibling!==null;)l=l.sibling,i=i.sibling=Rt(l,l.pendingProps),i.return=t;i.sibling=null}return t.child}function So(l,t){return(l.lanes&t)!==0?!0:(l=l.dependencies,!!(l!==null&&Vn(l)))}function rd(l,t,i){switch(t.tag){case 3:Vl(t,t.stateNode.containerInfo),ni(t,Dl,l.memoizedState.cache),Ni();break;case 27:case 5:Ce(t);break;case 4:Vl(t,t.stateNode.containerInfo);break;case 10:ni(t,t.type,t.memoizedProps.value);break;case 31:if(t.memoizedState!==null)return t.flags|=128,Qs(t),null;break;case 13:var e=t.memoizedState;if(e!==null)return e.dehydrated!==null?(ri(t),t.flags|=128,null):(i&t.child.childLanes)!==0?qc(l,t,i):(ri(t),l=Lt(l,t,i),l!==null?l.sibling:null);ri(t);break;case 19:var n=(l.flags&128)!==0;if(e=(i&t.childLanes)!==0,e||(oe(l,t,i,!1),e=(i&t.childLanes)!==0),n){if(e)return Gc(l,t,i);t.flags|=128}if(n=t.memoizedState,n!==null&&(n.rendering=null,n.tail=null,n.lastEffect=null),D(Cl,Cl.current),e)break;return null;case 22:return t.lanes=0,Nc(l,t,i,t.pendingProps);case 24:ni(t,Dl,l.memoizedState.cache)}return Lt(l,t,i)}function Lc(l,t,i){if(l!==null)if(l.memoizedProps!==t.pendingProps)xl=!0;else{if(!So(l,i)&&(t.flags&128)===0)return xl=!1,rd(l,t,i);xl=(l.flags&131072)!==0}else xl=!1,ll&&(t.flags&1048576)!==0&&Su(t,$e,t.index);switch(t.lanes=0,t.tag){case 16:l:{var e=t.pendingProps;if(l=Hi(t.elementType),t.type=l,typeof l=="function")Ts(l)?(e=Gi(l,e),t.tag=1,t=Hc(null,t,l,e,i)):(t.tag=0,t=fo(null,t,l,e,i));else{if(l!=null){var n=l.$$typeof;if(n===_l){t.tag=11,t=Dc(null,t,l,e,i);break l}else if(n===k){t.tag=14,t=Oc(null,t,l,e,i);break l}}throw t=xt(l)||l,Error(p(306,t,""))}}return t;case 0:return fo(l,t,t.type,t.pendingProps,i);case 1:return e=t.type,n=Gi(e,t.pendingProps),Hc(l,t,e,n,i);case 3:l:{if(Vl(t,t.stateNode.containerInfo),l===null)throw Error(p(387));e=t.pendingProps;var a=t.memoizedState;n=a.element,qs(l,t),Fe(t,e,null,i);var s=t.memoizedState;if(e=s.cache,ni(t,Dl,e),e!==a.cache&&Ns(t,[Dl],i,!0),We(),e=s.element,a.isDehydrated)if(a={element:e,isDehydrated:!1,cache:s.cache},t.updateQueue.baseState=a,t.memoizedState=a,t.flags&256){t=Yc(l,t,e,i);break l}else if(e!==n){n=yt(Error(p(424)),t),Qe(n),t=Yc(l,t,e,i);break l}else{switch(l=t.stateNode.containerInfo,l.nodeType){case 9:l=l.body;break;default:l=l.nodeName==="HTML"?l.ownerDocument.body:l}for(dl=zt(l.firstChild),Xl=t,ll=!0,ii=null,St=!0,i=Nu(t,null,e,i),t.child=i;i;)i.flags=i.flags&-3|4096,i=i.sibling}else{if(Ni(),e===n){t=Lt(l,t,i);break l}Ll(l,t,e,i)}t=t.child}return t;case 26:return ga(l,t),l===null?(i=Pg(t.type,null,t.pendingProps,null))?t.memoizedState=i:ll||(i=t.type,l=t.pendingProps,e=Ca(K.current).createElement(i),e[ql]=t,e[Wl]=l,$l(e,i,l),Hl(e),t.stateNode=e):t.memoizedState=Pg(t.type,l.memoizedProps,t.pendingProps,l.memoizedState),null;case 27:return Ce(t),l===null&&ll&&(e=t.stateNode=Wg(t.type,t.pendingProps,K.current),Xl=t,St=!0,n=dl,yi(t.type)?(Po=n,dl=zt(e.firstChild)):dl=n),Ll(l,t,t.pendingProps.children,i),ga(l,t),l===null&&(t.flags|=4194304),t.child;case 5:return l===null&&ll&&((n=e=dl)&&(e=Yd(e,t.type,t.pendingProps,St),e!==null?(t.stateNode=e,Xl=t,dl=zt(e.firstChild),St=!1,n=!0):n=!1),n||ei(t)),Ce(t),n=t.type,a=t.pendingProps,s=l!==null?l.memoizedProps:null,e=a.children,Ko(n,a)?e=null:s!==null&&Ko(n,s)&&(t.flags|=32),t.memoizedState!==null&&(n=Vs(l,t,Pp,null,null,i),vn._currentValue=n),ga(l,t),Ll(l,t,e,i),t.child;case 6:return l===null&&ll&&((l=i=dl)&&(i=qd(i,t.pendingProps,St),i!==null?(t.stateNode=i,Xl=t,dl=null,l=!0):l=!1),l||ei(t)),null;case 13:return qc(l,t,i);case 4:return Vl(t,t.stateNode.containerInfo),e=t.pendingProps,l===null?t.child=qi(t,null,e,i):Ll(l,t,e,i),t.child;case 11:return Dc(l,t,t.type,t.pendingProps,i);case 7:return Ll(l,t,t.pendingProps,i),t.child;case 8:return Ll(l,t,t.pendingProps.children,i),t.child;case 12:return Ll(l,t,t.pendingProps.children,i),t.child;case 10:return e=t.pendingProps,ni(t,t.type,e.value),Ll(l,t,e.children,i),t.child;case 9:return n=t.type._context,e=t.pendingProps.children,Bi(t),n=Gl(n),e=e(n),t.flags|=1,Ll(l,t,e,i),t.child;case 14:return Oc(l,t,t.type,t.pendingProps,i);case 15:return xc(l,t,t.type,t.pendingProps,i);case 19:return Gc(l,t,i);case 31:return od(l,t,i);case 22:return Nc(l,t,i,t.pendingProps);case 24:return Bi(t),e=Gl(Dl),l===null?(n=Rs(),n===null&&(n=pl,a=Us(),n.pooledCache=a,a.refCount++,a!==null&&(n.pooledCacheLanes|=i),n=a),t.memoizedState={parent:e,cache:n},Ys(t),ni(t,Dl,n)):((l.lanes&i)!==0&&(qs(l,t),Fe(t,null,null,i),We()),n=l.memoizedState,a=t.memoizedState,n.parent!==e?(n={parent:e,cache:e},t.memoizedState=n,t.lanes===0&&(t.memoizedState=t.updateQueue.baseState=n),ni(t,Dl,e)):(e=a.cache,ni(t,Dl,e),e!==n.cache&&Ns(t,[Dl],i,!0))),Ll(l,t,t.pendingProps.children,i),t.child;case 29:throw t.pendingProps}throw Error(p(156,t.tag))}function $t(l){l.flags|=4}function wo(l,t,i,e,n){if((t=(l.mode&32)!==0)&&(t=!1),t){if(l.flags|=16777216,(n&335544128)===n)if(l.stateNode.complete)l.flags|=8192;else if(mg())l.flags|=8192;else throw Yi=Wn,Hs}else l.flags&=-16777217}function $c(l,t){if(t.type!=="stylesheet"||(t.state.loading&4)!==0)l.flags&=-16777217;else if(l.flags|=16777216,!af(t))if(mg())l.flags|=8192;else throw Yi=Wn,Hs}function pa(l,t){t!==null&&(l.flags|=4),l.flags&16384&&(t=l.tag!==22?zr():536870912,l.lanes|=t,be|=t)}function nn(l,t){if(!ll)switch(l.tailMode){case"hidden":t=l.tail;for(var i=null;t!==null;)t.alternate!==null&&(i=t),t=t.sibling;i===null?l.tail=null:i.sibling=null;break;case"collapsed":i=l.tail;for(var e=null;i!==null;)i.alternate!==null&&(e=i),i=i.sibling;e===null?t||l.tail===null?l.tail=null:l.tail.sibling=null:e.sibling=null}}function ml(l){var t=l.alternate!==null&&l.alternate.child===l.child,i=0,e=0;if(t)for(var n=l.child;n!==null;)i|=n.lanes|n.childLanes,e|=n.subtreeFlags&65011712,e|=n.flags&65011712,n.return=l,n=n.sibling;else for(n=l.child;n!==null;)i|=n.lanes|n.childLanes,e|=n.subtreeFlags,e|=n.flags,n.return=l,n=n.sibling;return l.subtreeFlags|=e,l.childLanes=i,t}function ud(l,t,i){var e=t.pendingProps;switch(Cs(t),t.tag){case 16:case 15:case 0:case 11:case 7:case 8:case 12:case 9:case 14:return ml(t),null;case 1:return ml(t),null;case 3:return i=t.stateNode,e=null,l!==null&&(e=l.memoizedState.cache),t.memoizedState.cache!==e&&(t.flags|=2048),qt(Dl),Al(),i.pendingContext&&(i.context=i.pendingContext,i.pendingContext=null),(l===null||l.child===null)&&(se(t)?$t(t):l===null||l.memoizedState.isDehydrated&&(t.flags&256)===0||(t.flags|=1024,Ds())),ml(t),null;case 26:var n=t.type,a=t.memoizedState;return l===null?($t(t),a!==null?(ml(t),$c(t,a)):(ml(t),wo(t,n,null,e,i))):a?a!==l.memoizedState?($t(t),ml(t),$c(t,a)):(ml(t),t.flags&=-16777217):(l=l.memoizedProps,l!==e&&$t(t),ml(t),wo(t,n,l,e,i)),null;case 27:if(Tn(t),i=K.current,n=t.type,l!==null&&t.stateNode!=null)l.memoizedProps!==e&&$t(t);else{if(!e){if(t.stateNode===null)throw Error(p(166));return ml(t),null}l=R.current,se(t)?zu(t):(l=Wg(n,e,i),t.stateNode=l,$t(t))}return ml(t),null;case 5:if(Tn(t),n=t.type,l!==null&&t.stateNode!=null)l.memoizedProps!==e&&$t(t);else{if(!e){if(t.stateNode===null)throw Error(p(166));return ml(t),null}if(a=R.current,se(t))zu(t);else{var s=Ca(K.current);switch(a){case 1:a=s.createElementNS("http://www.w3.org/2000/svg",n);break;case 2:a=s.createElementNS("http://www.w3.org/1998/Math/MathML",n);break;default:switch(n){case"svg":a=s.createElementNS("http://www.w3.org/2000/svg",n);break;case"math":a=s.createElementNS("http://www.w3.org/1998/Math/MathML",n);break;case"script":a=s.createElement("div"),a.innerHTML="<script><\/script>",a=a.removeChild(a.firstChild);break;case"select":a=typeof e.is=="string"?s.createElement("select",{is:e.is}):s.createElement("select"),e.multiple?a.multiple=!0:e.size&&(a.size=e.size);break;default:a=typeof e.is=="string"?s.createElement(n,{is:e.is}):s.createElement(n)}}a[ql]=t,a[Wl]=e;l:for(s=t.child;s!==null;){if(s.tag===5||s.tag===6)a.appendChild(s.stateNode);else if(s.tag!==4&&s.tag!==27&&s.child!==null){s.child.return=s,s=s.child;continue}if(s===t)break l;for(;s.sibling===null;){if(s.return===null||s.return===t)break l;s=s.return}s.sibling.return=s.return,s=s.sibling}t.stateNode=a;l:switch($l(a,n,e),n){case"button":case"input":case"select":case"textarea":e=!!e.autoFocus;break l;case"img":e=!0;break l;default:e=!1}e&&$t(t)}}return ml(t),wo(t,t.type,l===null?null:l.memoizedProps,t.pendingProps,i),null;case 6:if(l&&t.stateNode!=null)l.memoizedProps!==e&&$t(t);else{if(typeof e!="string"&&t.stateNode===null)throw Error(p(166));if(l=K.current,se(t)){if(l=t.stateNode,i=t.memoizedProps,e=null,n=Xl,n!==null)switch(n.tag){case 27:case 5:e=n.memoizedProps}l[ql]=t,l=!!(l.nodeValue===i||e!==null&&e.suppressHydrationWarning===!0||qg(l.nodeValue,i)),l||ei(t,!0)}else l=Ca(l).createTextNode(e),l[ql]=t,t.stateNode=l}return ml(t),null;case 31:if(i=t.memoizedState,l===null||l.memoizedState!==null){if(e=se(t),i!==null){if(l===null){if(!e)throw Error(p(318));if(l=t.memoizedState,l=l!==null?l.dehydrated:null,!l)throw Error(p(557));l[ql]=t}else Ni(),(t.flags&128)===0&&(t.memoizedState=null),t.flags|=4;ml(t),l=!1}else i=Ds(),l!==null&&l.memoizedState!==null&&(l.memoizedState.hydrationErrors=i),l=!0;if(!l)return t.flags&256?(ut(t),t):(ut(t),null);if((t.flags&128)!==0)throw Error(p(558))}return ml(t),null;case 13:if(e=t.memoizedState,l===null||l.memoizedState!==null&&l.memoizedState.dehydrated!==null){if(n=se(t),e!==null&&e.dehydrated!==null){if(l===null){if(!n)throw Error(p(318));if(n=t.memoizedState,n=n!==null?n.dehydrated:null,!n)throw Error(p(317));n[ql]=t}else Ni(),(t.flags&128)===0&&(t.memoizedState=null),t.flags|=4;ml(t),n=!1}else n=Ds(),l!==null&&l.memoizedState!==null&&(l.memoizedState.hydrationErrors=n),n=!0;if(!n)return t.flags&256?(ut(t),t):(ut(t),null)}return ut(t),(t.flags&128)!==0?(t.lanes=i,t):(i=e!==null,l=l!==null&&l.memoizedState!==null,i&&(e=t.child,n=null,e.alternate!==null&&e.alternate.memoizedState!==null&&e.alternate.memoizedState.cachePool!==null&&(n=e.alternate.memoizedState.cachePool.pool),a=null,e.memoizedState!==null&&e.memoizedState.cachePool!==null&&(a=e.memoizedState.cachePool.pool),a!==n&&(e.flags|=2048)),i!==l&&i&&(t.child.flags|=8192),pa(t,t.updateQueue),ml(t),null);case 4:return Al(),l===null&&$o(t.stateNode.containerInfo),ml(t),null;case 10:return qt(t.type),ml(t),null;case 19:if(M(Cl),e=t.memoizedState,e===null)return ml(t),null;if(n=(t.flags&128)!==0,a=e.rendering,a===null)if(n)nn(e,!1);else{if(Ml!==0||l!==null&&(l.flags&128)!==0)for(l=t.child;l!==null;){if(a=la(l),a!==null){for(t.flags|=128,nn(e,!1),l=a.updateQueue,t.updateQueue=l,pa(t,l),t.subtreeFlags=0,l=i,i=t.child;i!==null;)yu(i,l),i=i.sibling;return D(Cl,Cl.current&1|2),ll&&Ht(t,e.treeForkCount),t.child}l=l.sibling}e.tail!==null&&et()>va&&(t.flags|=128,n=!0,nn(e,!1),t.lanes=4194304)}else{if(!n)if(l=la(a),l!==null){if(t.flags|=128,n=!0,l=l.updateQueue,t.updateQueue=l,pa(t,l),nn(e,!0),e.tail===null&&e.tailMode==="hidden"&&!a.alternate&&!ll)return ml(t),null}else 2*et()-e.renderingStartTime>va&&i!==536870912&&(t.flags|=128,n=!0,nn(e,!1),t.lanes=4194304);e.isBackwards?(a.sibling=t.child,t.child=a):(l=e.last,l!==null?l.sibling=a:t.child=a,e.last=a)}return e.tail!==null?(l=e.tail,e.rendering=l,e.tail=l.sibling,e.renderingStartTime=et(),l.sibling=null,i=Cl.current,D(Cl,n?i&1|2:i&1),ll&&Ht(t,e.treeForkCount),l):(ml(t),null);case 22:case 23:return ut(t),$s(),e=t.memoizedState!==null,l!==null?l.memoizedState!==null!==e&&(t.flags|=8192):e&&(t.flags|=8192),e?(i&536870912)!==0&&(t.flags&128)===0&&(ml(t),t.subtreeFlags&6&&(t.flags|=8192)):ml(t),i=t.updateQueue,i!==null&&pa(t,i.retryQueue),i=null,l!==null&&l.memoizedState!==null&&l.memoizedState.cachePool!==null&&(i=l.memoizedState.cachePool.pool),e=null,t.memoizedState!==null&&t.memoizedState.cachePool!==null&&(e=t.memoizedState.cachePool.pool),e!==i&&(t.flags|=2048),l!==null&&M(Ri),null;case 24:return i=null,l!==null&&(i=l.memoizedState.cache),t.memoizedState.cache!==i&&(t.flags|=2048),qt(Dl),ml(t),null;case 25:return null;case 30:return null}throw Error(p(156,t.tag))}function cd(l,t){switch(Cs(t),t.tag){case 1:return l=t.flags,l&65536?(t.flags=l&-65537|128,t):null;case 3:return qt(Dl),Al(),l=t.flags,(l&65536)!==0&&(l&128)===0?(t.flags=l&-65537|128,t):null;case 26:case 27:case 5:return Tn(t),null;case 31:if(t.memoizedState!==null){if(ut(t),t.alternate===null)throw Error(p(340));Ni()}return l=t.flags,l&65536?(t.flags=l&-65537|128,t):null;case 13:if(ut(t),l=t.memoizedState,l!==null&&l.dehydrated!==null){if(t.alternate===null)throw Error(p(340));Ni()}return l=t.flags,l&65536?(t.flags=l&-65537|128,t):null;case 19:return M(Cl),null;case 4:return Al(),null;case 10:return qt(t.type),null;case 22:case 23:return ut(t),$s(),l!==null&&M(Ri),l=t.flags,l&65536?(t.flags=l&-65537|128,t):null;case 24:return qt(Dl),null;case 25:return null;default:return null}}function Qc(l,t){switch(Cs(t),t.tag){case 3:qt(Dl),Al();break;case 26:case 27:case 5:Tn(t);break;case 4:Al();break;case 31:t.memoizedState!==null&&ut(t);break;case 13:ut(t);break;case 19:M(Cl);break;case 10:qt(t.type);break;case 22:case 23:ut(t),$s(),l!==null&&M(Ri);break;case 24:qt(Dl)}}function an(l,t){try{var i=t.updateQueue,e=i!==null?i.lastEffect:null;if(e!==null){var n=e.next;i=n;do{if((i.tag&l)===l){e=void 0;var a=i.create,s=i.inst;e=a(),s.destroy=e}i=i.next}while(i!==n)}}catch(r){sl(t,t.return,r)}}function ci(l,t,i){try{var e=t.updateQueue,n=e!==null?e.lastEffect:null;if(n!==null){var a=n.next;e=a;do{if((e.tag&l)===l){var s=e.inst,r=s.destroy;if(r!==void 0){s.destroy=void 0,n=t;var u=i,h=r;try{h()}catch(S){sl(n,u,S)}}}e=e.next}while(e!==a)}}catch(S){sl(t,t.return,S)}}function Zc(l){var t=l.updateQueue;if(t!==null){var i=l.stateNode;try{Bu(t,i)}catch(e){sl(l,l.return,e)}}}function Vc(l,t,i){i.props=Gi(l.type,l.memoizedProps),i.state=l.memoizedState;try{i.componentWillUnmount()}catch(e){sl(l,t,e)}}function sn(l,t){try{var i=l.ref;if(i!==null){switch(l.tag){case 26:case 27:case 5:var e=l.stateNode;break;case 30:e=l.stateNode;break;default:e=l.stateNode}typeof i=="function"?l.refCleanup=i(e):i.current=e}}catch(n){sl(l,t,n)}}function Dt(l,t){var i=l.ref,e=l.refCleanup;if(i!==null)if(typeof e=="function")try{e()}catch(n){sl(l,t,n)}finally{l.refCleanup=null,l=l.alternate,l!=null&&(l.refCleanup=null)}else if(typeof i=="function")try{i(null)}catch(n){sl(l,t,n)}else i.current=null}function kc(l){var t=l.type,i=l.memoizedProps,e=l.stateNode;try{l:switch(t){case"button":case"input":case"select":case"textarea":i.autoFocus&&e.focus();break l;case"img":i.src?e.src=i.src:i.srcSet&&(e.srcset=i.srcSet)}}catch(n){sl(l,l.return,n)}}function zo(l,t,i){try{var e=l.stateNode;xd(e,l.type,i,t),e[Wl]=t}catch(n){sl(l,l.return,n)}}function Kc(l){return l.tag===5||l.tag===3||l.tag===26||l.tag===27&&yi(l.type)||l.tag===4}function _o(l){l:for(;;){for(;l.sibling===null;){if(l.return===null||Kc(l.return))return null;l=l.return}for(l.sibling.return=l.return,l=l.sibling;l.tag!==5&&l.tag!==6&&l.tag!==18;){if(l.tag===27&&yi(l.type)||l.flags&2||l.child===null||l.tag===4)continue l;l.child.return=l,l=l.child}if(!(l.flags&2))return l.stateNode}}function To(l,t,i){var e=l.tag;if(e===5||e===6)l=l.stateNode,t?(i.nodeType===9?i.body:i.nodeName==="HTML"?i.ownerDocument.body:i).insertBefore(l,t):(t=i.nodeType===9?i.body:i.nodeName==="HTML"?i.ownerDocument.body:i,t.appendChild(l),i=i._reactRootContainer,i!=null||t.onclick!==null||(t.onclick=Ut));else if(e!==4&&(e===27&&yi(l.type)&&(i=l.stateNode,t=null),l=l.child,l!==null))for(To(l,t,i),l=l.sibling;l!==null;)To(l,t,i),l=l.sibling}function da(l,t,i){var e=l.tag;if(e===5||e===6)l=l.stateNode,t?i.insertBefore(l,t):i.appendChild(l);else if(e!==4&&(e===27&&yi(l.type)&&(i=l.stateNode),l=l.child,l!==null))for(da(l,t,i),l=l.sibling;l!==null;)da(l,t,i),l=l.sibling}function Jc(l){var t=l.stateNode,i=l.memoizedProps;try{for(var e=l.type,n=t.attributes;n.length;)t.removeAttributeNode(n[0]);$l(t,e,i),t[ql]=l,t[Wl]=i}catch(a){sl(l,l.return,a)}}var Qt=!1,Nl=!1,Mo=!1,Wc=typeof WeakSet=="function"?WeakSet:Set,Yl=null;function gd(l,t){if(l=l.containerInfo,Vo=Ba,l=ru(l),ys(l)){if("selectionStart"in l)var i={start:l.selectionStart,end:l.selectionEnd};else l:{i=(i=l.ownerDocument)&&i.defaultView||window;var e=i.getSelection&&i.getSelection();if(e&&e.rangeCount!==0){i=e.anchorNode;var n=e.anchorOffset,a=e.focusNode;e=e.focusOffset;try{i.nodeType,a.nodeType}catch{i=null;break l}var s=0,r=-1,u=-1,h=0,S=0,T=l,y=null;t:for(;;){for(var b;T!==i||n!==0&&T.nodeType!==3||(r=s+n),T!==a||e!==0&&T.nodeType!==3||(u=s+e),T.nodeType===3&&(s+=T.nodeValue.length),(b=T.firstChild)!==null;)y=T,T=b;for(;;){if(T===l)break t;if(y===i&&++h===n&&(r=s),y===a&&++S===e&&(u=s),(b=T.nextSibling)!==null)break;T=y,y=T.parentNode}T=b}i=r===-1||u===-1?null:{start:r,end:u}}else i=null}i=i||{start:0,end:0}}else i=null;for(ko={focusedElem:l,selectionRange:i},Ba=!1,Yl=t;Yl!==null;)if(t=Yl,l=t.child,(t.subtreeFlags&1028)!==0&&l!==null)l.return=t,Yl=l;else for(;Yl!==null;){switch(t=Yl,a=t.alternate,l=t.flags,t.tag){case 0:if((l&4)!==0&&(l=t.updateQueue,l=l!==null?l.events:null,l!==null))for(i=0;i<l.length;i++)n=l[i],n.ref.impl=n.nextImpl;break;case 11:case 15:break;case 1:if((l&1024)!==0&&a!==null){l=void 0,i=t,n=a.memoizedProps,a=a.memoizedState,e=i.stateNode;try{var B=Gi(i.type,n);l=e.getSnapshotBeforeUpdate(B,a),e.__reactInternalSnapshotBeforeUpdate=l}catch(X){sl(i,i.return,X)}}break;case 3:if((l&1024)!==0){if(l=t.stateNode.containerInfo,i=l.nodeType,i===9)Wo(l);else if(i===1)switch(l.nodeName){case"HEAD":case"HTML":case"BODY":Wo(l);break;default:l.textContent=""}}break;case 5:case 26:case 27:case 6:case 4:case 17:break;default:if((l&1024)!==0)throw Error(p(163))}if(l=t.sibling,l!==null){l.return=t.return,Yl=l;break}Yl=t.return}}function Fc(l,t,i){var e=i.flags;switch(i.tag){case 0:case 11:case 15:Vt(l,i),e&4&&an(5,i);break;case 1:if(Vt(l,i),e&4)if(l=i.stateNode,t===null)try{l.componentDidMount()}catch(s){sl(i,i.return,s)}else{var n=Gi(i.type,t.memoizedProps);t=t.memoizedState;try{l.componentDidUpdate(n,t,l.__reactInternalSnapshotBeforeUpdate)}catch(s){sl(i,i.return,s)}}e&64&&Zc(i),e&512&&sn(i,i.return);break;case 3:if(Vt(l,i),e&64&&(l=i.updateQueue,l!==null)){if(t=null,i.child!==null)switch(i.child.tag){case 27:case 5:t=i.child.stateNode;break;case 1:t=i.child.stateNode}try{Bu(l,t)}catch(s){sl(i,i.return,s)}}break;case 27:t===null&&e&4&&Jc(i);case 26:case 5:Vt(l,i),t===null&&e&4&&kc(i),e&512&&sn(i,i.return);break;case 12:Vt(l,i);break;case 31:Vt(l,i),e&4&&lg(l,i);break;case 13:Vt(l,i),e&4&&tg(l,i),e&64&&(l=i.memoizedState,l!==null&&(l=l.dehydrated,l!==null&&(i=Sd.bind(null,i),Xd(l,i))));break;case 22:if(e=i.memoizedState!==null||Qt,!e){t=t!==null&&t.memoizedState!==null||Nl,n=Qt;var a=Nl;Qt=e,(Nl=t)&&!a?kt(l,i,(i.subtreeFlags&8772)!==0):Vt(l,i),Qt=n,Nl=a}break;case 30:break;default:Vt(l,i)}}function Ic(l){var t=l.alternate;t!==null&&(l.alternate=null,Ic(t)),l.child=null,l.deletions=null,l.sibling=null,l.tag===5&&(t=l.stateNode,t!==null&&ls(t)),l.stateNode=null,l.return=null,l.dependencies=null,l.memoizedProps=null,l.memoizedState=null,l.pendingProps=null,l.stateNode=null,l.updateQueue=null}var hl=null,Il=!1;function Zt(l,t,i){for(i=i.child;i!==null;)Pc(l,t,i),i=i.sibling}function Pc(l,t,i){if(nt&&typeof nt.onCommitFiberUnmount=="function")try{nt.onCommitFiberUnmount(Ee,i)}catch{}switch(i.tag){case 26:Nl||Dt(i,t),Zt(l,t,i),i.memoizedState?i.memoizedState.count--:i.stateNode&&(i=i.stateNode,i.parentNode.removeChild(i));break;case 27:Nl||Dt(i,t);var e=hl,n=Il;yi(i.type)&&(hl=i.stateNode,Il=!1),Zt(l,t,i),mn(i.stateNode),hl=e,Il=n;break;case 5:Nl||Dt(i,t);case 6:if(e=hl,n=Il,hl=null,Zt(l,t,i),hl=e,Il=n,hl!==null)if(Il)try{(hl.nodeType===9?hl.body:hl.nodeName==="HTML"?hl.ownerDocument.body:hl).removeChild(i.stateNode)}catch(a){sl(i,t,a)}else try{hl.removeChild(i.stateNode)}catch(a){sl(i,t,a)}break;case 18:hl!==null&&(Il?(l=hl,Zg(l.nodeType===9?l.body:l.nodeName==="HTML"?l.ownerDocument.body:l,i.stateNode),Ae(l)):Zg(hl,i.stateNode));break;case 4:e=hl,n=Il,hl=i.stateNode.containerInfo,Il=!0,Zt(l,t,i),hl=e,Il=n;break;case 0:case 11:case 14:case 15:ci(2,i,t),Nl||ci(4,i,t),Zt(l,t,i);break;case 1:Nl||(Dt(i,t),e=i.stateNode,typeof e.componentWillUnmount=="function"&&Vc(i,t,e)),Zt(l,t,i);break;case 21:Zt(l,t,i);break;case 22:Nl=(e=Nl)||i.memoizedState!==null,Zt(l,t,i),Nl=e;break;default:Zt(l,t,i)}}function lg(l,t){if(t.memoizedState===null&&(l=t.alternate,l!==null&&(l=l.memoizedState,l!==null))){l=l.dehydrated;try{Ae(l)}catch(i){sl(t,t.return,i)}}}function tg(l,t){if(t.memoizedState===null&&(l=t.alternate,l!==null&&(l=l.memoizedState,l!==null&&(l=l.dehydrated,l!==null))))try{Ae(l)}catch(i){sl(t,t.return,i)}}function fd(l){switch(l.tag){case 31:case 13:case 19:var t=l.stateNode;return t===null&&(t=l.stateNode=new Wc),t;case 22:return l=l.stateNode,t=l._retryCache,t===null&&(t=l._retryCache=new Wc),t;default:throw Error(p(435,l.tag))}}function ma(l,t){var i=fd(l);t.forEach(function(e){if(!i.has(e)){i.add(e);var n=wd.bind(null,l,e);e.then(n,n)}})}function Pl(l,t){var i=t.deletions;if(i!==null)for(var e=0;e<i.length;e++){var n=i[e],a=l,s=t,r=s;l:for(;r!==null;){switch(r.tag){case 27:if(yi(r.type)){hl=r.stateNode,Il=!1;break l}break;case 5:hl=r.stateNode,Il=!1;break l;case 3:case 4:hl=r.stateNode.containerInfo,Il=!0;break l}r=r.return}if(hl===null)throw Error(p(160));Pc(a,s,n),hl=null,Il=!1,a=n.alternate,a!==null&&(a.return=null),n.return=null}if(t.subtreeFlags&13886)for(t=t.child;t!==null;)ig(t,l),t=t.sibling}var jt=null;function ig(l,t){var i=l.alternate,e=l.flags;switch(l.tag){case 0:case 11:case 14:case 15:Pl(t,l),lt(l),e&4&&(ci(3,l,l.return),an(3,l),ci(5,l,l.return));break;case 1:Pl(t,l),lt(l),e&512&&(Nl||i===null||Dt(i,i.return)),e&64&&Qt&&(l=l.updateQueue,l!==null&&(e=l.callbacks,e!==null&&(i=l.shared.hiddenCallbacks,l.shared.hiddenCallbacks=i===null?e:i.concat(e))));break;case 26:var n=jt;if(Pl(t,l),lt(l),e&512&&(Nl||i===null||Dt(i,i.return)),e&4){var a=i!==null?i.memoizedState:null;if(e=l.memoizedState,i===null)if(e===null)if(l.stateNode===null){l:{e=l.type,i=l.memoizedProps,n=n.ownerDocument||n;t:switch(e){case"title":a=n.getElementsByTagName("title")[0],(!a||a[xe]||a[ql]||a.namespaceURI==="http://www.w3.org/2000/svg"||a.hasAttribute("itemprop"))&&(a=n.createElement(e),n.head.insertBefore(a,n.querySelector("head > title"))),$l(a,e,i),a[ql]=l,Hl(a),e=a;break l;case"link":var s=ef("link","href",n).get(e+(i.href||""));if(s){for(var r=0;r<s.length;r++)if(a=s[r],a.getAttribute("href")===(i.href==null||i.href===""?null:i.href)&&a.getAttribute("rel")===(i.rel==null?null:i.rel)&&a.getAttribute("title")===(i.title==null?null:i.title)&&a.getAttribute("crossorigin")===(i.crossOrigin==null?null:i.crossOrigin)){s.splice(r,1);break t}}a=n.createElement(e),$l(a,e,i),n.head.appendChild(a);break;case"meta":if(s=ef("meta","content",n).get(e+(i.content||""))){for(r=0;r<s.length;r++)if(a=s[r],a.getAttribute("content")===(i.content==null?null:""+i.content)&&a.getAttribute("name")===(i.name==null?null:i.name)&&a.getAttribute("property")===(i.property==null?null:i.property)&&a.getAttribute("http-equiv")===(i.httpEquiv==null?null:i.httpEquiv)&&a.getAttribute("charset")===(i.charSet==null?null:i.charSet)){s.splice(r,1);break t}}a=n.createElement(e),$l(a,e,i),n.head.appendChild(a);break;default:throw Error(p(468,e))}a[ql]=l,Hl(a),e=a}l.stateNode=e}else nf(n,l.type,l.stateNode);else l.stateNode=tf(n,e,l.memoizedProps);else a!==e?(a===null?i.stateNode!==null&&(i=i.stateNode,i.parentNode.removeChild(i)):a.count--,e===null?nf(n,l.type,l.stateNode):tf(n,e,l.memoizedProps)):e===null&&l.stateNode!==null&&zo(l,l.memoizedProps,i.memoizedProps)}break;case 27:Pl(t,l),lt(l),e&512&&(Nl||i===null||Dt(i,i.return)),i!==null&&e&4&&zo(l,l.memoizedProps,i.memoizedProps);break;case 5:if(Pl(t,l),lt(l),e&512&&(Nl||i===null||Dt(i,i.return)),l.flags&32){n=l.stateNode;try{Wi(n,"")}catch(B){sl(l,l.return,B)}}e&4&&l.stateNode!=null&&(n=l.memoizedProps,zo(l,n,i!==null?i.memoizedProps:n)),e&1024&&(Mo=!0);break;case 6:if(Pl(t,l),lt(l),e&4){if(l.stateNode===null)throw Error(p(162));e=l.memoizedProps,i=l.stateNode;try{i.nodeValue=e}catch(B){sl(l,l.return,B)}}break;case 3:if(Oa=null,n=jt,jt=Ea(t.containerInfo),Pl(t,l),jt=n,lt(l),e&4&&i!==null&&i.memoizedState.isDehydrated)try{Ae(t.containerInfo)}catch(B){sl(l,l.return,B)}Mo&&(Mo=!1,eg(l));break;case 4:e=jt,jt=Ea(l.stateNode.containerInfo),Pl(t,l),lt(l),jt=e;break;case 12:Pl(t,l),lt(l);break;case 31:Pl(t,l),lt(l),e&4&&(e=l.updateQueue,e!==null&&(l.updateQueue=null,ma(l,e)));break;case 13:Pl(t,l),lt(l),l.child.flags&8192&&l.memoizedState!==null!=(i!==null&&i.memoizedState!==null)&&(ya=et()),e&4&&(e=l.updateQueue,e!==null&&(l.updateQueue=null,ma(l,e)));break;case 22:n=l.memoizedState!==null;var u=i!==null&&i.memoizedState!==null,h=Qt,S=Nl;if(Qt=h||n,Nl=S||u,Pl(t,l),Nl=S,Qt=h,lt(l),e&8192)l:for(t=l.stateNode,t._visibility=n?t._visibility&-2:t._visibility|1,n&&(i===null||u||Qt||Nl||Li(l)),i=null,t=l;;){if(t.tag===5||t.tag===26){if(i===null){u=i=t;try{if(a=u.stateNode,n)s=a.style,typeof s.setProperty=="function"?s.setProperty("display","none","important"):s.display="none";else{r=u.stateNode;var T=u.memoizedProps.style,y=T!=null&&T.hasOwnProperty("display")?T.display:null;r.style.display=y==null||typeof y=="boolean"?"":(""+y).trim()}}catch(B){sl(u,u.return,B)}}}else if(t.tag===6){if(i===null){u=t;try{u.stateNode.nodeValue=n?"":u.memoizedProps}catch(B){sl(u,u.return,B)}}}else if(t.tag===18){if(i===null){u=t;try{var b=u.stateNode;n?Vg(b,!0):Vg(u.stateNode,!1)}catch(B){sl(u,u.return,B)}}}else if((t.tag!==22&&t.tag!==23||t.memoizedState===null||t===l)&&t.child!==null){t.child.return=t,t=t.child;continue}if(t===l)break l;for(;t.sibling===null;){if(t.return===null||t.return===l)break l;i===t&&(i=null),t=t.return}i===t&&(i=null),t.sibling.return=t.return,t=t.sibling}e&4&&(e=l.updateQueue,e!==null&&(i=e.retryQueue,i!==null&&(e.retryQueue=null,ma(l,i))));break;case 19:Pl(t,l),lt(l),e&4&&(e=l.updateQueue,e!==null&&(l.updateQueue=null,ma(l,e)));break;case 30:break;case 21:break;default:Pl(t,l),lt(l)}}function lt(l){var t=l.flags;if(t&2){try{for(var i,e=l.return;e!==null;){if(Kc(e)){i=e;break}e=e.return}if(i==null)throw Error(p(160));switch(i.tag){case 27:var n=i.stateNode,a=_o(l);da(l,a,n);break;case 5:var s=i.stateNode;i.flags&32&&(Wi(s,""),i.flags&=-33);var r=_o(l);da(l,r,s);break;case 3:case 4:var u=i.stateNode.containerInfo,h=_o(l);To(l,h,u);break;default:throw Error(p(161))}}catch(S){sl(l,l.return,S)}l.flags&=-3}t&4096&&(l.flags&=-4097)}function eg(l){if(l.subtreeFlags&1024)for(l=l.child;l!==null;){var t=l;eg(t),t.tag===5&&t.flags&1024&&t.stateNode.reset(),l=l.sibling}}function Vt(l,t){if(t.subtreeFlags&8772)for(t=t.child;t!==null;)Fc(l,t.alternate,t),t=t.sibling}function Li(l){for(l=l.child;l!==null;){var t=l;switch(t.tag){case 0:case 11:case 14:case 15:ci(4,t,t.return),Li(t);break;case 1:Dt(t,t.return);var i=t.stateNode;typeof i.componentWillUnmount=="function"&&Vc(t,t.return,i),Li(t);break;case 27:mn(t.stateNode);case 26:case 5:Dt(t,t.return),Li(t);break;case 22:t.memoizedState===null&&Li(t);break;case 30:Li(t);break;default:Li(t)}l=l.sibling}}function kt(l,t,i){for(i=i&&(t.subtreeFlags&8772)!==0,t=t.child;t!==null;){var e=t.alternate,n=l,a=t,s=a.flags;switch(a.tag){case 0:case 11:case 15:kt(n,a,i),an(4,a);break;case 1:if(kt(n,a,i),e=a,n=e.stateNode,typeof n.componentDidMount=="function")try{n.componentDidMount()}catch(h){sl(e,e.return,h)}if(e=a,n=e.updateQueue,n!==null){var r=e.stateNode;try{var u=n.shared.hiddenCallbacks;if(u!==null)for(n.shared.hiddenCallbacks=null,n=0;n<u.length;n++)Uu(u[n],r)}catch(h){sl(e,e.return,h)}}i&&s&64&&Zc(a),sn(a,a.return);break;case 27:Jc(a);case 26:case 5:kt(n,a,i),i&&e===null&&s&4&&kc(a),sn(a,a.return);break;case 12:kt(n,a,i);break;case 31:kt(n,a,i),i&&s&4&&lg(n,a);break;case 13:kt(n,a,i),i&&s&4&&tg(n,a);break;case 22:a.memoizedState===null&&kt(n,a,i),sn(a,a.return);break;case 30:break;default:kt(n,a,i)}t=t.sibling}}function jo(l,t){var i=null;l!==null&&l.memoizedState!==null&&l.memoizedState.cachePool!==null&&(i=l.memoizedState.cachePool.pool),l=null,t.memoizedState!==null&&t.memoizedState.cachePool!==null&&(l=t.memoizedState.cachePool.pool),l!==i&&(l!=null&&l.refCount++,i!=null&&Ze(i))}function Ao(l,t){l=null,t.alternate!==null&&(l=t.alternate.memoizedState.cache),t=t.memoizedState.cache,t!==l&&(t.refCount++,l!=null&&Ze(l))}function At(l,t,i,e){if(t.subtreeFlags&10256)for(t=t.child;t!==null;)ng(l,t,i,e),t=t.sibling}function ng(l,t,i,e){var n=t.flags;switch(t.tag){case 0:case 11:case 15:At(l,t,i,e),n&2048&&an(9,t);break;case 1:At(l,t,i,e);break;case 3:At(l,t,i,e),n&2048&&(l=null,t.alternate!==null&&(l=t.alternate.memoizedState.cache),t=t.memoizedState.cache,t!==l&&(t.refCount++,l!=null&&Ze(l)));break;case 12:if(n&2048){At(l,t,i,e),l=t.stateNode;try{var a=t.memoizedProps,s=a.id,r=a.onPostCommit;typeof r=="function"&&r(s,t.alternate===null?"mount":"update",l.passiveEffectDuration,-0)}catch(u){sl(t,t.return,u)}}else At(l,t,i,e);break;case 31:At(l,t,i,e);break;case 13:At(l,t,i,e);break;case 23:break;case 22:a=t.stateNode,s=t.alternate,t.memoizedState!==null?a._visibility&2?At(l,t,i,e):on(l,t):a._visibility&2?At(l,t,i,e):(a._visibility|=2,he(l,t,i,e,(t.subtreeFlags&10256)!==0||!1)),n&2048&&jo(s,t);break;case 24:At(l,t,i,e),n&2048&&Ao(t.alternate,t);break;default:At(l,t,i,e)}}function he(l,t,i,e,n){for(n=n&&((t.subtreeFlags&10256)!==0||!1),t=t.child;t!==null;){var a=l,s=t,r=i,u=e,h=s.flags;switch(s.tag){case 0:case 11:case 15:he(a,s,r,u,n),an(8,s);break;case 23:break;case 22:var S=s.stateNode;s.memoizedState!==null?S._visibility&2?he(a,s,r,u,n):on(a,s):(S._visibility|=2,he(a,s,r,u,n)),n&&h&2048&&jo(s.alternate,s);break;case 24:he(a,s,r,u,n),n&&h&2048&&Ao(s.alternate,s);break;default:he(a,s,r,u,n)}t=t.sibling}}function on(l,t){if(t.subtreeFlags&10256)for(t=t.child;t!==null;){var i=l,e=t,n=e.flags;switch(e.tag){case 22:on(i,e),n&2048&&jo(e.alternate,e);break;case 24:on(i,e),n&2048&&Ao(e.alternate,e);break;default:on(i,e)}t=t.sibling}}var rn=8192;function ye(l,t,i){if(l.subtreeFlags&rn)for(l=l.child;l!==null;)ag(l,t,i),l=l.sibling}function ag(l,t,i){switch(l.tag){case 26:ye(l,t,i),l.flags&rn&&l.memoizedState!==null&&Id(i,jt,l.memoizedState,l.memoizedProps);break;case 5:ye(l,t,i);break;case 3:case 4:var e=jt;jt=Ea(l.stateNode.containerInfo),ye(l,t,i),jt=e;break;case 22:l.memoizedState===null&&(e=l.alternate,e!==null&&e.memoizedState!==null?(e=rn,rn=16777216,ye(l,t,i),rn=e):ye(l,t,i));break;default:ye(l,t,i)}}function sg(l){var t=l.alternate;if(t!==null&&(l=t.child,l!==null)){t.child=null;do t=l.sibling,l.sibling=null,l=t;while(l!==null)}}function un(l){var t=l.deletions;if((l.flags&16)!==0){if(t!==null)for(var i=0;i<t.length;i++){var e=t[i];Yl=e,rg(e,l)}sg(l)}if(l.subtreeFlags&10256)for(l=l.child;l!==null;)og(l),l=l.sibling}function og(l){switch(l.tag){case 0:case 11:case 15:un(l),l.flags&2048&&ci(9,l,l.return);break;case 3:un(l);break;case 12:un(l);break;case 22:var t=l.stateNode;l.memoizedState!==null&&t._visibility&2&&(l.return===null||l.return.tag!==13)?(t._visibility&=-3,ha(l)):un(l);break;default:un(l)}}function ha(l){var t=l.deletions;if((l.flags&16)!==0){if(t!==null)for(var i=0;i<t.length;i++){var e=t[i];Yl=e,rg(e,l)}sg(l)}for(l=l.child;l!==null;){switch(t=l,t.tag){case 0:case 11:case 15:ci(8,t,t.return),ha(t);break;case 22:i=t.stateNode,i._visibility&2&&(i._visibility&=-3,ha(t));break;default:ha(t)}l=l.sibling}}function rg(l,t){for(;Yl!==null;){var i=Yl;switch(i.tag){case 0:case 11:case 15:ci(8,i,t);break;case 23:case 22:if(i.memoizedState!==null&&i.memoizedState.cachePool!==null){var e=i.memoizedState.cachePool.pool;e!=null&&e.refCount++}break;case 24:Ze(i.memoizedState.cache)}if(e=i.child,e!==null)e.return=i,Yl=e;else l:for(i=l;Yl!==null;){e=Yl;var n=e.sibling,a=e.return;if(Ic(e),e===i){Yl=null;break l}if(n!==null){n.return=a,Yl=n;break l}Yl=a}}}var pd={getCacheForType:function(l){var t=Gl(Dl),i=t.data.get(l);return i===void 0&&(i=l(),t.data.set(l,i)),i},cacheSignal:function(){return Gl(Dl).controller.signal}},dd=typeof WeakMap=="function"?WeakMap:Map,el=0,pl=null,J=null,F=0,al=0,ct=null,gi=!1,ve=!1,Co=!1,Kt=0,Ml=0,fi=0,$i=0,Eo=0,gt=0,be=0,cn=null,tt=null,Do=!1,ya=0,ug=0,va=1/0,ba=null,pi=null,Bl=0,di=null,Se=null,Jt=0,Oo=0,xo=null,cg=null,gn=0,No=null;function ft(){return(el&2)!==0&&F!==0?F&-F:w.T!==null?qo():jr()}function gg(){if(gt===0)if((F&536870912)===0||ll){var l=An;An<<=1,(An&3932160)===0&&(An=262144),gt=l}else gt=536870912;return l=rt.current,l!==null&&(l.flags|=32),gt}function it(l,t,i){(l===pl&&(al===2||al===9)||l.cancelPendingCommit!==null)&&(we(l,0),mi(l,F,gt,!1)),Oe(l,i),((el&2)===0||l!==pl)&&(l===pl&&((el&2)===0&&($i|=i),Ml===4&&mi(l,F,gt,!1)),Ot(l))}function fg(l,t,i){if((el&6)!==0)throw Error(p(327));var e=!i&&(t&127)===0&&(t&l.expiredLanes)===0||De(l,t),n=e?yd(l,t):Bo(l,t,!0),a=e;do{if(n===0){ve&&!e&&mi(l,t,0,!1);break}else{if(i=l.current.alternate,a&&!md(i)){n=Bo(l,t,!1),a=!1;continue}if(n===2){if(a=t,l.errorRecoveryDisabledLanes&a)var s=0;else s=l.pendingLanes&-536870913,s=s!==0?s:s&536870912?536870912:0;if(s!==0){t=s;l:{var r=l;n=cn;var u=r.current.memoizedState.isDehydrated;if(u&&(we(r,s).flags|=256),s=Bo(r,s,!1),s!==2){if(Co&&!u){r.errorRecoveryDisabledLanes|=a,$i|=a,n=4;break l}a=tt,tt=n,a!==null&&(tt===null?tt=a:tt.push.apply(tt,a))}n=s}if(a=!1,n!==2)continue}}if(n===1){we(l,0),mi(l,t,0,!0);break}l:{switch(e=l,a=n,a){case 0:case 1:throw Error(p(345));case 4:if((t&4194048)!==t)break;case 6:mi(e,t,gt,!gi);break l;case 2:tt=null;break;case 3:case 5:break;default:throw Error(p(329))}if((t&62914560)===t&&(n=ya+300-et(),10<n)){if(mi(e,t,gt,!gi),En(e,0,!0)!==0)break l;Jt=t,e.timeoutHandle=$g(pg.bind(null,e,i,tt,ba,Do,t,gt,$i,be,gi,a,"Throttled",-0,0),n);break l}pg(e,i,tt,ba,Do,t,gt,$i,be,gi,a,null,-0,0)}}break}while(!0);Ot(l)}function pg(l,t,i,e,n,a,s,r,u,h,S,T,y,b){if(l.timeoutHandle=-1,T=t.subtreeFlags,T&8192||(T&16785408)===16785408){T={stylesheets:null,count:0,imgCount:0,imgBytes:0,suspenseyImages:[],waitingForImages:!0,waitingForViewTransition:!1,unsuspend:Ut},ag(t,a,T);var B=(a&62914560)===a?ya-et():(a&4194048)===a?ug-et():0;if(B=Pd(T,B),B!==null){Jt=a,l.cancelPendingCommit=B(wg.bind(null,l,t,a,i,e,n,s,r,u,S,T,null,y,b)),mi(l,a,s,!h);return}}wg(l,t,a,i,e,n,s,r,u)}function md(l){for(var t=l;;){var i=t.tag;if((i===0||i===11||i===15)&&t.flags&16384&&(i=t.updateQueue,i!==null&&(i=i.stores,i!==null)))for(var e=0;e<i.length;e++){var n=i[e],a=n.getSnapshot;n=n.value;try{if(!st(a(),n))return!1}catch{return!1}}if(i=t.child,t.subtreeFlags&16384&&i!==null)i.return=t,t=i;else{if(t===l)break;for(;t.sibling===null;){if(t.return===null||t.return===l)return!0;t=t.return}t.sibling.return=t.return,t=t.sibling}}return!0}function mi(l,t,i,e){t&=~Eo,t&=~$i,l.suspendedLanes|=t,l.pingedLanes&=~t,e&&(l.warmLanes|=t),e=l.expirationTimes;for(var n=t;0<n;){var a=31-at(n),s=1<<a;e[a]=-1,n&=~s}i!==0&&_r(l,i,t)}function Sa(){return(el&6)===0?(fn(0),!1):!0}function Uo(){if(J!==null){if(al===0)var l=J.return;else l=J,Yt=Ui=null,Js(l),ge=null,ke=0,l=J;for(;l!==null;)Qc(l.alternate,l),l=l.return;J=null}}function we(l,t){var i=l.timeoutHandle;i!==-1&&(l.timeoutHandle=-1,Bd(i)),i=l.cancelPendingCommit,i!==null&&(l.cancelPendingCommit=null,i()),Jt=0,Uo(),pl=l,J=i=Rt(l.current,null),F=t,al=0,ct=null,gi=!1,ve=De(l,t),Co=!1,be=gt=Eo=$i=fi=Ml=0,tt=cn=null,Do=!1,(t&8)!==0&&(t|=t&32);var e=l.entangledLanes;if(e!==0)for(l=l.entanglements,e&=t;0<e;){var n=31-at(e),a=1<<n;t|=l[n],e&=~a}return Kt=t,Gn(),i}function dg(l,t){Q=null,w.H=tn,t===ce||t===Jn?(t=Du(),al=3):t===Hs?(t=Du(),al=4):al=t===go?8:t!==null&&typeof t=="object"&&typeof t.then=="function"?6:1,ct=t,J===null&&(Ml=1,ua(l,yt(t,l.current)))}function mg(){var l=rt.current;return l===null?!0:(F&4194048)===F?wt===null:(F&62914560)===F||(F&536870912)!==0?l===wt:!1}function hg(){var l=w.H;return w.H=tn,l===null?tn:l}function yg(){var l=w.A;return w.A=pd,l}function wa(){Ml=4,gi||(F&4194048)!==F&&rt.current!==null||(ve=!0),(fi&134217727)===0&&($i&134217727)===0||pl===null||mi(pl,F,gt,!1)}function Bo(l,t,i){var e=el;el|=2;var n=hg(),a=yg();(pl!==l||F!==t)&&(ba=null,we(l,t)),t=!1;var s=Ml;l:do try{if(al!==0&&J!==null){var r=J,u=ct;switch(al){case 8:Uo(),s=6;break l;case 3:case 2:case 9:case 6:rt.current===null&&(t=!0);var h=al;if(al=0,ct=null,ze(l,r,u,h),i&&ve){s=0;break l}break;default:h=al,al=0,ct=null,ze(l,r,u,h)}}hd(),s=Ml;break}catch(S){dg(l,S)}while(!0);return t&&l.shellSuspendCounter++,Yt=Ui=null,el=e,w.H=n,w.A=a,J===null&&(pl=null,F=0,Gn()),s}function hd(){for(;J!==null;)vg(J)}function yd(l,t){var i=el;el|=2;var e=hg(),n=yg();pl!==l||F!==t?(ba=null,va=et()+500,we(l,t)):ve=De(l,t);l:do try{if(al!==0&&J!==null){t=J;var a=ct;t:switch(al){case 1:al=0,ct=null,ze(l,t,a,1);break;case 2:case 9:if(Cu(a)){al=0,ct=null,bg(t);break}t=function(){al!==2&&al!==9||pl!==l||(al=7),Ot(l)},a.then(t,t);break l;case 3:al=7;break l;case 4:al=5;break l;case 7:Cu(a)?(al=0,ct=null,bg(t)):(al=0,ct=null,ze(l,t,a,7));break;case 5:var s=null;switch(J.tag){case 26:s=J.memoizedState;case 5:case 27:var r=J;if(s?af(s):r.stateNode.complete){al=0,ct=null;var u=r.sibling;if(u!==null)J=u;else{var h=r.return;h!==null?(J=h,za(h)):J=null}break t}}al=0,ct=null,ze(l,t,a,5);break;case 6:al=0,ct=null,ze(l,t,a,6);break;case 8:Uo(),Ml=6;break l;default:throw Error(p(462))}}vd();break}catch(S){dg(l,S)}while(!0);return Yt=Ui=null,w.H=e,w.A=n,el=i,J!==null?0:(pl=null,F=0,Gn(),Ml)}function vd(){for(;J!==null&&!Gf();)vg(J)}function vg(l){var t=Lc(l.alternate,l,Kt);l.memoizedProps=l.pendingProps,t===null?za(l):J=t}function bg(l){var t=l,i=t.alternate;switch(t.tag){case 15:case 0:t=Rc(i,t,t.pendingProps,t.type,void 0,F);break;case 11:t=Rc(i,t,t.pendingProps,t.type.render,t.ref,F);break;case 5:Js(t);default:Qc(i,t),t=J=yu(t,Kt),t=Lc(i,t,Kt)}l.memoizedProps=l.pendingProps,t===null?za(l):J=t}function ze(l,t,i,e){Yt=Ui=null,Js(t),ge=null,ke=0;var n=t.return;try{if(sd(l,n,t,i,F)){Ml=1,ua(l,yt(i,l.current)),J=null;return}}catch(a){if(n!==null)throw J=n,a;Ml=1,ua(l,yt(i,l.current)),J=null;return}t.flags&32768?(ll||e===1?l=!0:ve||(F&536870912)!==0?l=!1:(gi=l=!0,(e===2||e===9||e===3||e===6)&&(e=rt.current,e!==null&&e.tag===13&&(e.flags|=16384))),Sg(t,l)):za(t)}function za(l){var t=l;do{if((t.flags&32768)!==0){Sg(t,gi);return}l=t.return;var i=ud(t.alternate,t,Kt);if(i!==null){J=i;return}if(t=t.sibling,t!==null){J=t;return}J=t=l}while(t!==null);Ml===0&&(Ml=5)}function Sg(l,t){do{var i=cd(l.alternate,l);if(i!==null){i.flags&=32767,J=i;return}if(i=l.return,i!==null&&(i.flags|=32768,i.subtreeFlags=0,i.deletions=null),!t&&(l=l.sibling,l!==null)){J=l;return}J=l=i}while(l!==null);Ml=6,J=null}function wg(l,t,i,e,n,a,s,r,u){l.cancelPendingCommit=null;do _a();while(Bl!==0);if((el&6)!==0)throw Error(p(327));if(t!==null){if(t===l.current)throw Error(p(177));if(a=t.lanes|t.childLanes,a|=zs,Ff(l,i,a,s,r,u),l===pl&&(J=pl=null,F=0),Se=t,di=l,Jt=i,Oo=a,xo=n,cg=e,(t.subtreeFlags&10256)!==0||(t.flags&10256)!==0?(l.callbackNode=null,l.callbackPriority=0,zd(Mn,function(){return jg(),null})):(l.callbackNode=null,l.callbackPriority=0),e=(t.flags&13878)!==0,(t.subtreeFlags&13878)!==0||e){e=w.T,w.T=null,n=C.p,C.p=2,s=el,el|=4;try{gd(l,t,i)}finally{el=s,C.p=n,w.T=e}}Bl=1,zg(),_g(),Tg()}}function zg(){if(Bl===1){Bl=0;var l=di,t=Se,i=(t.flags&13878)!==0;if((t.subtreeFlags&13878)!==0||i){i=w.T,w.T=null;var e=C.p;C.p=2;var n=el;el|=4;try{ig(t,l);var a=ko,s=ru(l.containerInfo),r=a.focusedElem,u=a.selectionRange;if(s!==r&&r&&r.ownerDocument&&ou(r.ownerDocument.documentElement,r)){if(u!==null&&ys(r)){var h=u.start,S=u.end;if(S===void 0&&(S=h),"selectionStart"in r)r.selectionStart=h,r.selectionEnd=Math.min(S,r.value.length);else{var T=r.ownerDocument||document,y=T&&T.defaultView||window;if(y.getSelection){var b=y.getSelection(),B=r.textContent.length,X=Math.min(u.start,B),gl=u.end===void 0?X:Math.min(u.end,B);!b.extend&&X>gl&&(s=gl,gl=X,X=s);var f=su(r,X),c=su(r,gl);if(f&&c&&(b.rangeCount!==1||b.anchorNode!==f.node||b.anchorOffset!==f.offset||b.focusNode!==c.node||b.focusOffset!==c.offset)){var m=T.createRange();m.setStart(f.node,f.offset),b.removeAllRanges(),X>gl?(b.addRange(m),b.extend(c.node,c.offset)):(m.setEnd(c.node,c.offset),b.addRange(m))}}}}for(T=[],b=r;b=b.parentNode;)b.nodeType===1&&T.push({element:b,left:b.scrollLeft,top:b.scrollTop});for(typeof r.focus=="function"&&r.focus(),r=0;r<T.length;r++){var z=T[r];z.element.scrollLeft=z.left,z.element.scrollTop=z.top}}Ba=!!Vo,ko=Vo=null}finally{el=n,C.p=e,w.T=i}}l.current=t,Bl=2}}function _g(){if(Bl===2){Bl=0;var l=di,t=Se,i=(t.flags&8772)!==0;if((t.subtreeFlags&8772)!==0||i){i=w.T,w.T=null;var e=C.p;C.p=2;var n=el;el|=4;try{Fc(l,t.alternate,t)}finally{el=n,C.p=e,w.T=i}}Bl=3}}function Tg(){if(Bl===4||Bl===3){Bl=0,Lf();var l=di,t=Se,i=Jt,e=cg;(t.subtreeFlags&10256)!==0||(t.flags&10256)!==0?Bl=5:(Bl=0,Se=di=null,Mg(l,l.pendingLanes));var n=l.pendingLanes;if(n===0&&(pi=null),Ia(i),t=t.stateNode,nt&&typeof nt.onCommitFiberRoot=="function")try{nt.onCommitFiberRoot(Ee,t,void 0,(t.current.flags&128)===128)}catch{}if(e!==null){t=w.T,n=C.p,C.p=2,w.T=null;try{for(var a=l.onRecoverableError,s=0;s<e.length;s++){var r=e[s];a(r.value,{componentStack:r.stack})}}finally{w.T=t,C.p=n}}(Jt&3)!==0&&_a(),Ot(l),n=l.pendingLanes,(i&261930)!==0&&(n&42)!==0?l===No?gn++:(gn=0,No=l):gn=0,fn(0)}}function Mg(l,t){(l.pooledCacheLanes&=t)===0&&(t=l.pooledCache,t!=null&&(l.pooledCache=null,Ze(t)))}function _a(){return zg(),_g(),Tg(),jg()}function jg(){if(Bl!==5)return!1;var l=di,t=Oo;Oo=0;var i=Ia(Jt),e=w.T,n=C.p;try{C.p=32>i?32:i,w.T=null,i=xo,xo=null;var a=di,s=Jt;if(Bl=0,Se=di=null,Jt=0,(el&6)!==0)throw Error(p(331));var r=el;if(el|=4,og(a.current),ng(a,a.current,s,i),el=r,fn(0,!1),nt&&typeof nt.onPostCommitFiberRoot=="function")try{nt.onPostCommitFiberRoot(Ee,a)}catch{}return!0}finally{C.p=n,w.T=e,Mg(l,t)}}function Ag(l,t,i){t=yt(i,t),t=co(l.stateNode,t,2),l=oi(l,t,2),l!==null&&(Oe(l,2),Ot(l))}function sl(l,t,i){if(l.tag===3)Ag(l,l,i);else for(;t!==null;){if(t.tag===3){Ag(t,l,i);break}else if(t.tag===1){var e=t.stateNode;if(typeof t.type.getDerivedStateFromError=="function"||typeof e.componentDidCatch=="function"&&(pi===null||!pi.has(e))){l=yt(i,l),i=Cc(2),e=oi(t,i,2),e!==null&&(Ec(i,e,t,l),Oe(e,2),Ot(e));break}}t=t.return}}function Ro(l,t,i){var e=l.pingCache;if(e===null){e=l.pingCache=new dd;var n=new Set;e.set(t,n)}else n=e.get(t),n===void 0&&(n=new Set,e.set(t,n));n.has(i)||(Co=!0,n.add(i),l=bd.bind(null,l,t,i),t.then(l,l))}function bd(l,t,i){var e=l.pingCache;e!==null&&e.delete(t),l.pingedLanes|=l.suspendedLanes&i,l.warmLanes&=~i,pl===l&&(F&i)===i&&(Ml===4||Ml===3&&(F&62914560)===F&&300>et()-ya?(el&2)===0&&we(l,0):Eo|=i,be===F&&(be=0)),Ot(l)}function Cg(l,t){t===0&&(t=zr()),l=Oi(l,t),l!==null&&(Oe(l,t),Ot(l))}function Sd(l){var t=l.memoizedState,i=0;t!==null&&(i=t.retryLane),Cg(l,i)}function wd(l,t){var i=0;switch(l.tag){case 31:case 13:var e=l.stateNode,n=l.memoizedState;n!==null&&(i=n.retryLane);break;case 19:e=l.stateNode;break;case 22:e=l.stateNode._retryCache;break;default:throw Error(p(314))}e!==null&&e.delete(t),Cg(l,i)}function zd(l,t){return Ka(l,t)}var Ta=null,_e=null,Ho=!1,Ma=!1,Yo=!1,hi=0;function Ot(l){l!==_e&&l.next===null&&(_e===null?Ta=_e=l:_e=_e.next=l),Ma=!0,Ho||(Ho=!0,Td())}function fn(l,t){if(!Yo&&Ma){Yo=!0;do for(var i=!1,e=Ta;e!==null;){if(l!==0){var n=e.pendingLanes;if(n===0)var a=0;else{var s=e.suspendedLanes,r=e.pingedLanes;a=(1<<31-at(42|l)+1)-1,a&=n&~(s&~r),a=a&201326741?a&201326741|1:a?a|2:0}a!==0&&(i=!0,xg(e,a))}else a=F,a=En(e,e===pl?a:0,e.cancelPendingCommit!==null||e.timeoutHandle!==-1),(a&3)===0||De(e,a)||(i=!0,xg(e,a));e=e.next}while(i);Yo=!1}}function _d(){Eg()}function Eg(){Ma=Ho=!1;var l=0;hi!==0&&Ud()&&(l=hi);for(var t=et(),i=null,e=Ta;e!==null;){var n=e.next,a=Dg(e,t);a===0?(e.next=null,i===null?Ta=n:i.next=n,n===null&&(_e=i)):(i=e,(l!==0||(a&3)!==0)&&(Ma=!0)),e=n}Bl!==0&&Bl!==5||fn(l),hi!==0&&(hi=0)}function Dg(l,t){for(var i=l.suspendedLanes,e=l.pingedLanes,n=l.expirationTimes,a=l.pendingLanes&-62914561;0<a;){var s=31-at(a),r=1<<s,u=n[s];u===-1?((r&i)===0||(r&e)!==0)&&(n[s]=Wf(r,t)):u<=t&&(l.expiredLanes|=r),a&=~r}if(t=pl,i=F,i=En(l,l===t?i:0,l.cancelPendingCommit!==null||l.timeoutHandle!==-1),e=l.callbackNode,i===0||l===t&&(al===2||al===9)||l.cancelPendingCommit!==null)return e!==null&&e!==null&&Ja(e),l.callbackNode=null,l.callbackPriority=0;if((i&3)===0||De(l,i)){if(t=i&-i,t===l.callbackPriority)return t;switch(e!==null&&Ja(e),Ia(i)){case 2:case 8:i=Sr;break;case 32:i=Mn;break;case 268435456:i=wr;break;default:i=Mn}return e=Og.bind(null,l),i=Ka(i,e),l.callbackPriority=t,l.callbackNode=i,t}return e!==null&&e!==null&&Ja(e),l.callbackPriority=2,l.callbackNode=null,2}function Og(l,t){if(Bl!==0&&Bl!==5)return l.callbackNode=null,l.callbackPriority=0,null;var i=l.callbackNode;if(_a()&&l.callbackNode!==i)return null;var e=F;return e=En(l,l===pl?e:0,l.cancelPendingCommit!==null||l.timeoutHandle!==-1),e===0?null:(fg(l,e,t),Dg(l,et()),l.callbackNode!=null&&l.callbackNode===i?Og.bind(null,l):null)}function xg(l,t){if(_a())return null;fg(l,t,!0)}function Td(){Rd(function(){(el&6)!==0?Ka(br,_d):Eg()})}function qo(){if(hi===0){var l=re;l===0&&(l=jn,jn<<=1,(jn&261888)===0&&(jn=256)),hi=l}return hi}function Ng(l){return l==null||typeof l=="symbol"||typeof l=="boolean"?null:typeof l=="function"?l:Nn(""+l)}function Ug(l,t){var i=t.ownerDocument.createElement("input");return i.name=t.name,i.value=t.value,l.id&&i.setAttribute("form",l.id),t.parentNode.insertBefore(i,t),l=new FormData(l),i.parentNode.removeChild(i),l}function Md(l,t,i,e,n){if(t==="submit"&&i&&i.stateNode===n){var a=Ng((n[Wl]||null).action),s=e.submitter;s&&(t=(t=s[Wl]||null)?Ng(t.formAction):s.getAttribute("formAction"),t!==null&&(a=t,s=null));var r=new Hn("action","action",null,e,n);l.push({event:r,listeners:[{instance:null,listener:function(){if(e.defaultPrevented){if(hi!==0){var u=s?Ug(n,s):new FormData(n);no(i,{pending:!0,data:u,method:n.method,action:a},null,u)}}else typeof a=="function"&&(r.preventDefault(),u=s?Ug(n,s):new FormData(n),no(i,{pending:!0,data:u,method:n.method,action:a},a,u))},currentTarget:n}]})}}for(var Xo=0;Xo<ws.length;Xo++){var Go=ws[Xo],jd=Go.toLowerCase(),Ad=Go[0].toUpperCase()+Go.slice(1);Mt(jd,"on"+Ad)}Mt(gu,"onAnimationEnd"),Mt(fu,"onAnimationIteration"),Mt(pu,"onAnimationStart"),Mt("dblclick","onDoubleClick"),Mt("focusin","onFocus"),Mt("focusout","onBlur"),Mt($p,"onTransitionRun"),Mt(Qp,"onTransitionStart"),Mt(Zp,"onTransitionCancel"),Mt(du,"onTransitionEnd"),Ki("onMouseEnter",["mouseout","mouseover"]),Ki("onMouseLeave",["mouseout","mouseover"]),Ki("onPointerEnter",["pointerout","pointerover"]),Ki("onPointerLeave",["pointerout","pointerover"]),Ai("onChange","change click focusin focusout input keydown keyup selectionchange".split(" ")),Ai("onSelect","focusout contextmenu dragend focusin keydown keyup mousedown mouseup selectionchange".split(" ")),Ai("onBeforeInput",["compositionend","keypress","textInput","paste"]),Ai("onCompositionEnd","compositionend focusout keydown keypress keyup mousedown".split(" ")),Ai("onCompositionStart","compositionstart focusout keydown keypress keyup mousedown".split(" ")),Ai("onCompositionUpdate","compositionupdate focusout keydown keypress keyup mousedown".split(" "));var pn="abort canplay canplaythrough durationchange emptied encrypted ended error loadeddata loadedmetadata loadstart pause play playing progress ratechange resize seeked seeking stalled suspend timeupdate volumechange waiting".split(" "),Cd=new Set("beforetoggle cancel close invalid load scroll scrollend toggle".split(" ").concat(pn));function Bg(l,t){t=(t&4)!==0;for(var i=0;i<l.length;i++){var e=l[i],n=e.event;e=e.listeners;l:{var a=void 0;if(t)for(var s=e.length-1;0<=s;s--){var r=e[s],u=r.instance,h=r.currentTarget;if(r=r.listener,u!==a&&n.isPropagationStopped())break l;a=r,n.currentTarget=h;try{a(n)}catch(S){Xn(S)}n.currentTarget=null,a=u}else for(s=0;s<e.length;s++){if(r=e[s],u=r.instance,h=r.currentTarget,r=r.listener,u!==a&&n.isPropagationStopped())break l;a=r,n.currentTarget=h;try{a(n)}catch(S){Xn(S)}n.currentTarget=null,a=u}}}}function W(l,t){var i=t[Pa];i===void 0&&(i=t[Pa]=new Set);var e=l+"__bubble";i.has(e)||(Rg(t,l,2,!1),i.add(e))}function Lo(l,t,i){var e=0;t&&(e|=4),Rg(i,l,e,t)}var ja="_reactListening"+Math.random().toString(36).slice(2);function $o(l){if(!l[ja]){l[ja]=!0,Er.forEach(function(i){i!=="selectionchange"&&(Cd.has(i)||Lo(i,!1,l),Lo(i,!0,l))});var t=l.nodeType===9?l:l.ownerDocument;t===null||t[ja]||(t[ja]=!0,Lo("selectionchange",!1,t))}}function Rg(l,t,i,e){switch(ff(t)){case 2:var n=im;break;case 8:n=em;break;default:n=nr}i=n.bind(null,t,i,l),n=void 0,!rs||t!=="touchstart"&&t!=="touchmove"&&t!=="wheel"||(n=!0),e?n!==void 0?l.addEventListener(t,i,{capture:!0,passive:n}):l.addEventListener(t,i,!0):n!==void 0?l.addEventListener(t,i,{passive:n}):l.addEventListener(t,i,!1)}function Qo(l,t,i,e,n){var a=e;if((t&1)===0&&(t&2)===0&&e!==null)l:for(;;){if(e===null)return;var s=e.tag;if(s===3||s===4){var r=e.stateNode.containerInfo;if(r===n)break;if(s===4)for(s=e.return;s!==null;){var u=s.tag;if((u===3||u===4)&&s.stateNode.containerInfo===n)return;s=s.return}for(;r!==null;){if(s=Zi(r),s===null)return;if(u=s.tag,u===5||u===6||u===26||u===27){e=a=s;continue l}r=r.parentNode}}e=e.return}Gr(function(){var h=a,S=ss(i),T=[];l:{var y=mu.get(l);if(y!==void 0){var b=Hn,B=l;switch(l){case"keypress":if(Bn(i)===0)break l;case"keydown":case"keyup":b=wp;break;case"focusin":B="focus",b=fs;break;case"focusout":B="blur",b=fs;break;case"beforeblur":case"afterblur":b=fs;break;case"click":if(i.button===2)break l;case"auxclick":case"dblclick":case"mousedown":case"mousemove":case"mouseup":case"mouseout":case"mouseover":case"contextmenu":b=Qr;break;case"drag":case"dragend":case"dragenter":case"dragexit":case"dragleave":case"dragover":case"dragstart":case"drop":b=up;break;case"touchcancel":case"touchend":case"touchmove":case"touchstart":b=Tp;break;case gu:case fu:case pu:b=fp;break;case du:b=jp;break;case"scroll":case"scrollend":b=op;break;case"wheel":b=Cp;break;case"copy":case"cut":case"paste":b=dp;break;case"gotpointercapture":case"lostpointercapture":case"pointercancel":case"pointerdown":case"pointermove":case"pointerout":case"pointerover":case"pointerup":b=Vr;break;case"toggle":case"beforetoggle":b=Dp}var X=(t&4)!==0,gl=!X&&(l==="scroll"||l==="scrollend"),f=X?y!==null?y+"Capture":null:y;X=[];for(var c=h,m;c!==null;){var z=c;if(m=z.stateNode,z=z.tag,z!==5&&z!==26&&z!==27||m===null||f===null||(z=Ue(c,f),z!=null&&X.push(dn(c,z,m))),gl)break;c=c.return}0<X.length&&(y=new b(y,B,null,i,S),T.push({event:y,listeners:X}))}}if((t&7)===0){l:{if(y=l==="mouseover"||l==="pointerover",b=l==="mouseout"||l==="pointerout",y&&i!==as&&(B=i.relatedTarget||i.fromElement)&&(Zi(B)||B[Qi]))break l;if((b||y)&&(y=S.window===S?S:(y=S.ownerDocument)?y.defaultView||y.parentWindow:window,b?(B=i.relatedTarget||i.toElement,b=h,B=B?Zi(B):null,B!==null&&(gl=x(B),X=B.tag,B!==gl||X!==5&&X!==27&&X!==6)&&(B=null)):(b=null,B=h),b!==B)){if(X=Qr,z="onMouseLeave",f="onMouseEnter",c="mouse",(l==="pointerout"||l==="pointerover")&&(X=Vr,z="onPointerLeave",f="onPointerEnter",c="pointer"),gl=b==null?y:Ne(b),m=B==null?y:Ne(B),y=new X(z,c+"leave",b,i,S),y.target=gl,y.relatedTarget=m,z=null,Zi(S)===h&&(X=new X(f,c+"enter",B,i,S),X.target=m,X.relatedTarget=gl,z=X),gl=z,b&&B)t:{for(X=Ed,f=b,c=B,m=0,z=f;z;z=X(z))m++;z=0;for(var q=c;q;q=X(q))z++;for(;0<m-z;)f=X(f),m--;for(;0<z-m;)c=X(c),z--;for(;m--;){if(f===c||c!==null&&f===c.alternate){X=f;break t}f=X(f),c=X(c)}X=null}else X=null;b!==null&&Hg(T,y,b,X,!1),B!==null&&gl!==null&&Hg(T,gl,B,X,!0)}}l:{if(y=h?Ne(h):window,b=y.nodeName&&y.nodeName.toLowerCase(),b==="select"||b==="input"&&y.type==="file")var tl=lu;else if(Ir(y))if(tu)tl=Xp;else{tl=Yp;var H=Hp}else b=y.nodeName,!b||b.toLowerCase()!=="input"||y.type!=="checkbox"&&y.type!=="radio"?h&&ns(h.elementType)&&(tl=lu):tl=qp;if(tl&&(tl=tl(l,h))){Pr(T,tl,i,S);break l}H&&H(l,y,h),l==="focusout"&&h&&y.type==="number"&&h.memoizedProps.value!=null&&es(y,"number",y.value)}switch(H=h?Ne(h):window,l){case"focusin":(Ir(H)||H.contentEditable==="true")&&(le=H,vs=h,Le=null);break;case"focusout":Le=vs=le=null;break;case"mousedown":bs=!0;break;case"contextmenu":case"mouseup":case"dragend":bs=!1,uu(T,i,S);break;case"selectionchange":if(Lp)break;case"keydown":case"keyup":uu(T,i,S)}var Z;if(ds)l:{switch(l){case"compositionstart":var I="onCompositionStart";break l;case"compositionend":I="onCompositionEnd";break l;case"compositionupdate":I="onCompositionUpdate";break l}I=void 0}else Pi?Wr(l,i)&&(I="onCompositionEnd"):l==="keydown"&&i.keyCode===229&&(I="onCompositionStart");I&&(kr&&i.locale!=="ko"&&(Pi||I!=="onCompositionStart"?I==="onCompositionEnd"&&Pi&&(Z=Lr()):(li=S,us="value"in li?li.value:li.textContent,Pi=!0)),H=Aa(h,I),0<H.length&&(I=new Zr(I,l,null,i,S),T.push({event:I,listeners:H}),Z?I.data=Z:(Z=Fr(i),Z!==null&&(I.data=Z)))),(Z=xp?Np(l,i):Up(l,i))&&(I=Aa(h,"onBeforeInput"),0<I.length&&(H=new Zr("onBeforeInput","beforeinput",null,i,S),T.push({event:H,listeners:I}),H.data=Z)),Md(T,l,h,i,S)}Bg(T,t)})}function dn(l,t,i){return{instance:l,listener:t,currentTarget:i}}function Aa(l,t){for(var i=t+"Capture",e=[];l!==null;){var n=l,a=n.stateNode;if(n=n.tag,n!==5&&n!==26&&n!==27||a===null||(n=Ue(l,i),n!=null&&e.unshift(dn(l,n,a)),n=Ue(l,t),n!=null&&e.push(dn(l,n,a))),l.tag===3)return e;l=l.return}return[]}function Ed(l){if(l===null)return null;do l=l.return;while(l&&l.tag!==5&&l.tag!==27);return l||null}function Hg(l,t,i,e,n){for(var a=t._reactName,s=[];i!==null&&i!==e;){var r=i,u=r.alternate,h=r.stateNode;if(r=r.tag,u!==null&&u===e)break;r!==5&&r!==26&&r!==27||h===null||(u=h,n?(h=Ue(i,a),h!=null&&s.unshift(dn(i,h,u))):n||(h=Ue(i,a),h!=null&&s.push(dn(i,h,u)))),i=i.return}s.length!==0&&l.push({event:t,listeners:s})}var Dd=/\r\n?/g,Od=/\u0000|\uFFFD/g;function Yg(l){return(typeof l=="string"?l:""+l).replace(Dd,`
+`).replace(Od,"")}function qg(l,t){return t=Yg(t),Yg(l)===t}function cl(l,t,i,e,n,a){switch(i){case"children":typeof e=="string"?t==="body"||t==="textarea"&&e===""||Wi(l,e):(typeof e=="number"||typeof e=="bigint")&&t!=="body"&&Wi(l,""+e);break;case"className":On(l,"class",e);break;case"tabIndex":On(l,"tabindex",e);break;case"dir":case"role":case"viewBox":case"width":case"height":On(l,i,e);break;case"style":qr(l,e,a);break;case"data":if(t!=="object"){On(l,"data",e);break}case"src":case"href":if(e===""&&(t!=="a"||i!=="href")){l.removeAttribute(i);break}if(e==null||typeof e=="function"||typeof e=="symbol"||typeof e=="boolean"){l.removeAttribute(i);break}e=Nn(""+e),l.setAttribute(i,e);break;case"action":case"formAction":if(typeof e=="function"){l.setAttribute(i,"javascript:throw new Error('A React form was unexpectedly submitted. If you called form.submit() manually, consider using form.requestSubmit() instead. If you\\'re trying to use event.stopPropagation() in a submit event handler, consider also calling event.preventDefault().')");break}else typeof a=="function"&&(i==="formAction"?(t!=="input"&&cl(l,t,"name",n.name,n,null),cl(l,t,"formEncType",n.formEncType,n,null),cl(l,t,"formMethod",n.formMethod,n,null),cl(l,t,"formTarget",n.formTarget,n,null)):(cl(l,t,"encType",n.encType,n,null),cl(l,t,"method",n.method,n,null),cl(l,t,"target",n.target,n,null)));if(e==null||typeof e=="symbol"||typeof e=="boolean"){l.removeAttribute(i);break}e=Nn(""+e),l.setAttribute(i,e);break;case"onClick":e!=null&&(l.onclick=Ut);break;case"onScroll":e!=null&&W("scroll",l);break;case"onScrollEnd":e!=null&&W("scrollend",l);break;case"dangerouslySetInnerHTML":if(e!=null){if(typeof e!="object"||!("__html"in e))throw Error(p(61));if(i=e.__html,i!=null){if(n.children!=null)throw Error(p(60));l.innerHTML=i}}break;case"multiple":l.multiple=e&&typeof e!="function"&&typeof e!="symbol";break;case"muted":l.muted=e&&typeof e!="function"&&typeof e!="symbol";break;case"suppressContentEditableWarning":case"suppressHydrationWarning":case"defaultValue":case"defaultChecked":case"innerHTML":case"ref":break;case"autoFocus":break;case"xlinkHref":if(e==null||typeof e=="function"||typeof e=="boolean"||typeof e=="symbol"){l.removeAttribute("xlink:href");break}i=Nn(""+e),l.setAttributeNS("http://www.w3.org/1999/xlink","xlink:href",i);break;case"contentEditable":case"spellCheck":case"draggable":case"value":case"autoReverse":case"externalResourcesRequired":case"focusable":case"preserveAlpha":e!=null&&typeof e!="function"&&typeof e!="symbol"?l.setAttribute(i,""+e):l.removeAttribute(i);break;case"inert":case"allowFullScreen":case"async":case"autoPlay":case"controls":case"default":case"defer":case"disabled":case"disablePictureInPicture":case"disableRemotePlayback":case"formNoValidate":case"hidden":case"loop":case"noModule":case"noValidate":case"open":case"playsInline":case"readOnly":case"required":case"reversed":case"scoped":case"seamless":case"itemScope":e&&typeof e!="function"&&typeof e!="symbol"?l.setAttribute(i,""):l.removeAttribute(i);break;case"capture":case"download":e===!0?l.setAttribute(i,""):e!==!1&&e!=null&&typeof e!="function"&&typeof e!="symbol"?l.setAttribute(i,e):l.removeAttribute(i);break;case"cols":case"rows":case"size":case"span":e!=null&&typeof e!="function"&&typeof e!="symbol"&&!isNaN(e)&&1<=e?l.setAttribute(i,e):l.removeAttribute(i);break;case"rowSpan":case"start":e==null||typeof e=="function"||typeof e=="symbol"||isNaN(e)?l.removeAttribute(i):l.setAttribute(i,e);break;case"popover":W("beforetoggle",l),W("toggle",l),Dn(l,"popover",e);break;case"xlinkActuate":Nt(l,"http://www.w3.org/1999/xlink","xlink:actuate",e);break;case"xlinkArcrole":Nt(l,"http://www.w3.org/1999/xlink","xlink:arcrole",e);break;case"xlinkRole":Nt(l,"http://www.w3.org/1999/xlink","xlink:role",e);break;case"xlinkShow":Nt(l,"http://www.w3.org/1999/xlink","xlink:show",e);break;case"xlinkTitle":Nt(l,"http://www.w3.org/1999/xlink","xlink:title",e);break;case"xlinkType":Nt(l,"http://www.w3.org/1999/xlink","xlink:type",e);break;case"xmlBase":Nt(l,"http://www.w3.org/XML/1998/namespace","xml:base",e);break;case"xmlLang":Nt(l,"http://www.w3.org/XML/1998/namespace","xml:lang",e);break;case"xmlSpace":Nt(l,"http://www.w3.org/XML/1998/namespace","xml:space",e);break;case"is":Dn(l,"is",e);break;case"innerText":case"textContent":break;default:(!(2<i.length)||i[0]!=="o"&&i[0]!=="O"||i[1]!=="n"&&i[1]!=="N")&&(i=ap.get(i)||i,Dn(l,i,e))}}function Zo(l,t,i,e,n,a){switch(i){case"style":qr(l,e,a);break;case"dangerouslySetInnerHTML":if(e!=null){if(typeof e!="object"||!("__html"in e))throw Error(p(61));if(i=e.__html,i!=null){if(n.children!=null)throw Error(p(60));l.innerHTML=i}}break;case"children":typeof e=="string"?Wi(l,e):(typeof e=="number"||typeof e=="bigint")&&Wi(l,""+e);break;case"onScroll":e!=null&&W("scroll",l);break;case"onScrollEnd":e!=null&&W("scrollend",l);break;case"onClick":e!=null&&(l.onclick=Ut);break;case"suppressContentEditableWarning":case"suppressHydrationWarning":case"innerHTML":case"ref":break;case"innerText":case"textContent":break;default:if(!Dr.hasOwnProperty(i))l:{if(i[0]==="o"&&i[1]==="n"&&(n=i.endsWith("Capture"),t=i.slice(2,n?i.length-7:void 0),a=l[Wl]||null,a=a!=null?a[i]:null,typeof a=="function"&&l.removeEventListener(t,a,n),typeof e=="function")){typeof a!="function"&&a!==null&&(i in l?l[i]=null:l.hasAttribute(i)&&l.removeAttribute(i)),l.addEventListener(t,e,n);break l}i in l?l[i]=e:e===!0?l.setAttribute(i,""):Dn(l,i,e)}}}function $l(l,t,i){switch(t){case"div":case"span":case"svg":case"path":case"a":case"g":case"p":case"li":break;case"img":W("error",l),W("load",l);var e=!1,n=!1,a;for(a in i)if(i.hasOwnProperty(a)){var s=i[a];if(s!=null)switch(a){case"src":e=!0;break;case"srcSet":n=!0;break;case"children":case"dangerouslySetInnerHTML":throw Error(p(137,t));default:cl(l,t,a,s,i,null)}}n&&cl(l,t,"srcSet",i.srcSet,i,null),e&&cl(l,t,"src",i.src,i,null);return;case"input":W("invalid",l);var r=a=s=n=null,u=null,h=null;for(e in i)if(i.hasOwnProperty(e)){var S=i[e];if(S!=null)switch(e){case"name":n=S;break;case"type":s=S;break;case"checked":u=S;break;case"defaultChecked":h=S;break;case"value":a=S;break;case"defaultValue":r=S;break;case"children":case"dangerouslySetInnerHTML":if(S!=null)throw Error(p(137,t));break;default:cl(l,t,e,S,i,null)}}Br(l,a,r,u,h,s,n,!1);return;case"select":W("invalid",l),e=s=a=null;for(n in i)if(i.hasOwnProperty(n)&&(r=i[n],r!=null))switch(n){case"value":a=r;break;case"defaultValue":s=r;break;case"multiple":e=r;default:cl(l,t,n,r,i,null)}t=a,i=s,l.multiple=!!e,t!=null?Ji(l,!!e,t,!1):i!=null&&Ji(l,!!e,i,!0);return;case"textarea":W("invalid",l),a=n=e=null;for(s in i)if(i.hasOwnProperty(s)&&(r=i[s],r!=null))switch(s){case"value":e=r;break;case"defaultValue":n=r;break;case"children":a=r;break;case"dangerouslySetInnerHTML":if(r!=null)throw Error(p(91));break;default:cl(l,t,s,r,i,null)}Hr(l,e,n,a);return;case"option":for(u in i)if(i.hasOwnProperty(u)&&(e=i[u],e!=null))switch(u){case"selected":l.selected=e&&typeof e!="function"&&typeof e!="symbol";break;default:cl(l,t,u,e,i,null)}return;case"dialog":W("beforetoggle",l),W("toggle",l),W("cancel",l),W("close",l);break;case"iframe":case"object":W("load",l);break;case"video":case"audio":for(e=0;e<pn.length;e++)W(pn[e],l);break;case"image":W("error",l),W("load",l);break;case"details":W("toggle",l);break;case"embed":case"source":case"link":W("error",l),W("load",l);case"area":case"base":case"br":case"col":case"hr":case"keygen":case"meta":case"param":case"track":case"wbr":case"menuitem":for(h in i)if(i.hasOwnProperty(h)&&(e=i[h],e!=null))switch(h){case"children":case"dangerouslySetInnerHTML":throw Error(p(137,t));default:cl(l,t,h,e,i,null)}return;default:if(ns(t)){for(S in i)i.hasOwnProperty(S)&&(e=i[S],e!==void 0&&Zo(l,t,S,e,i,void 0));return}}for(r in i)i.hasOwnProperty(r)&&(e=i[r],e!=null&&cl(l,t,r,e,i,null))}function xd(l,t,i,e){switch(t){case"div":case"span":case"svg":case"path":case"a":case"g":case"p":case"li":break;case"input":var n=null,a=null,s=null,r=null,u=null,h=null,S=null;for(b in i){var T=i[b];if(i.hasOwnProperty(b)&&T!=null)switch(b){case"checked":break;case"value":break;case"defaultValue":u=T;default:e.hasOwnProperty(b)||cl(l,t,b,null,e,T)}}for(var y in e){var b=e[y];if(T=i[y],e.hasOwnProperty(y)&&(b!=null||T!=null))switch(y){case"type":a=b;break;case"name":n=b;break;case"checked":h=b;break;case"defaultChecked":S=b;break;case"value":s=b;break;case"defaultValue":r=b;break;case"children":case"dangerouslySetInnerHTML":if(b!=null)throw Error(p(137,t));break;default:b!==T&&cl(l,t,y,b,e,T)}}is(l,s,r,u,h,S,a,n);return;case"select":b=s=r=y=null;for(a in i)if(u=i[a],i.hasOwnProperty(a)&&u!=null)switch(a){case"value":break;case"multiple":b=u;default:e.hasOwnProperty(a)||cl(l,t,a,null,e,u)}for(n in e)if(a=e[n],u=i[n],e.hasOwnProperty(n)&&(a!=null||u!=null))switch(n){case"value":y=a;break;case"defaultValue":r=a;break;case"multiple":s=a;default:a!==u&&cl(l,t,n,a,e,u)}t=r,i=s,e=b,y!=null?Ji(l,!!i,y,!1):!!e!=!!i&&(t!=null?Ji(l,!!i,t,!0):Ji(l,!!i,i?[]:"",!1));return;case"textarea":b=y=null;for(r in i)if(n=i[r],i.hasOwnProperty(r)&&n!=null&&!e.hasOwnProperty(r))switch(r){case"value":break;case"children":break;default:cl(l,t,r,null,e,n)}for(s in e)if(n=e[s],a=i[s],e.hasOwnProperty(s)&&(n!=null||a!=null))switch(s){case"value":y=n;break;case"defaultValue":b=n;break;case"children":break;case"dangerouslySetInnerHTML":if(n!=null)throw Error(p(91));break;default:n!==a&&cl(l,t,s,n,e,a)}Rr(l,y,b);return;case"option":for(var B in i)if(y=i[B],i.hasOwnProperty(B)&&y!=null&&!e.hasOwnProperty(B))switch(B){case"selected":l.selected=!1;break;default:cl(l,t,B,null,e,y)}for(u in e)if(y=e[u],b=i[u],e.hasOwnProperty(u)&&y!==b&&(y!=null||b!=null))switch(u){case"selected":l.selected=y&&typeof y!="function"&&typeof y!="symbol";break;default:cl(l,t,u,y,e,b)}return;case"img":case"link":case"area":case"base":case"br":case"col":case"embed":case"hr":case"keygen":case"meta":case"param":case"source":case"track":case"wbr":case"menuitem":for(var X in i)y=i[X],i.hasOwnProperty(X)&&y!=null&&!e.hasOwnProperty(X)&&cl(l,t,X,null,e,y);for(h in e)if(y=e[h],b=i[h],e.hasOwnProperty(h)&&y!==b&&(y!=null||b!=null))switch(h){case"children":case"dangerouslySetInnerHTML":if(y!=null)throw Error(p(137,t));break;default:cl(l,t,h,y,e,b)}return;default:if(ns(t)){for(var gl in i)y=i[gl],i.hasOwnProperty(gl)&&y!==void 0&&!e.hasOwnProperty(gl)&&Zo(l,t,gl,void 0,e,y);for(S in e)y=e[S],b=i[S],!e.hasOwnProperty(S)||y===b||y===void 0&&b===void 0||Zo(l,t,S,y,e,b);return}}for(var f in i)y=i[f],i.hasOwnProperty(f)&&y!=null&&!e.hasOwnProperty(f)&&cl(l,t,f,null,e,y);for(T in e)y=e[T],b=i[T],!e.hasOwnProperty(T)||y===b||y==null&&b==null||cl(l,t,T,y,e,b)}function Xg(l){switch(l){case"css":case"script":case"font":case"img":case"image":case"input":case"link":return!0;default:return!1}}function Nd(){if(typeof performance.getEntriesByType=="function"){for(var l=0,t=0,i=performance.getEntriesByType("resource"),e=0;e<i.length;e++){var n=i[e],a=n.transferSize,s=n.initiatorType,r=n.duration;if(a&&r&&Xg(s)){for(s=0,r=n.responseEnd,e+=1;e<i.length;e++){var u=i[e],h=u.startTime;if(h>r)break;var S=u.transferSize,T=u.initiatorType;S&&Xg(T)&&(u=u.responseEnd,s+=S*(u<r?1:(r-h)/(u-h)))}if(--e,t+=8*(a+s)/(n.duration/1e3),l++,10<l)break}}if(0<l)return t/l/1e6}return navigator.connection&&(l=navigator.connection.downlink,typeof l=="number")?l:5}var Vo=null,ko=null;function Ca(l){return l.nodeType===9?l:l.ownerDocument}function Gg(l){switch(l){case"http://www.w3.org/2000/svg":return 1;case"http://www.w3.org/1998/Math/MathML":return 2;default:return 0}}function Lg(l,t){if(l===0)switch(t){case"svg":return 1;case"math":return 2;default:return 0}return l===1&&t==="foreignObject"?0:l}function Ko(l,t){return l==="textarea"||l==="noscript"||typeof t.children=="string"||typeof t.children=="number"||typeof t.children=="bigint"||typeof t.dangerouslySetInnerHTML=="object"&&t.dangerouslySetInnerHTML!==null&&t.dangerouslySetInnerHTML.__html!=null}var Jo=null;function Ud(){var l=window.event;return l&&l.type==="popstate"?l===Jo?!1:(Jo=l,!0):(Jo=null,!1)}var $g=typeof setTimeout=="function"?setTimeout:void 0,Bd=typeof clearTimeout=="function"?clearTimeout:void 0,Qg=typeof Promise=="function"?Promise:void 0,Rd=typeof queueMicrotask=="function"?queueMicrotask:typeof Qg<"u"?function(l){return Qg.resolve(null).then(l).catch(Hd)}:$g;function Hd(l){setTimeout(function(){throw l})}function yi(l){return l==="head"}function Zg(l,t){var i=t,e=0;do{var n=i.nextSibling;if(l.removeChild(i),n&&n.nodeType===8)if(i=n.data,i==="/$"||i==="/&"){if(e===0){l.removeChild(n),Ae(t);return}e--}else if(i==="$"||i==="$?"||i==="$~"||i==="$!"||i==="&")e++;else if(i==="html")mn(l.ownerDocument.documentElement);else if(i==="head"){i=l.ownerDocument.head,mn(i);for(var a=i.firstChild;a;){var s=a.nextSibling,r=a.nodeName;a[xe]||r==="SCRIPT"||r==="STYLE"||r==="LINK"&&a.rel.toLowerCase()==="stylesheet"||i.removeChild(a),a=s}}else i==="body"&&mn(l.ownerDocument.body);i=n}while(i);Ae(t)}function Vg(l,t){var i=l;l=0;do{var e=i.nextSibling;if(i.nodeType===1?t?(i._stashedDisplay=i.style.display,i.style.display="none"):(i.style.display=i._stashedDisplay||"",i.getAttribute("style")===""&&i.removeAttribute("style")):i.nodeType===3&&(t?(i._stashedText=i.nodeValue,i.nodeValue=""):i.nodeValue=i._stashedText||""),e&&e.nodeType===8)if(i=e.data,i==="/$"){if(l===0)break;l--}else i!=="$"&&i!=="$?"&&i!=="$~"&&i!=="$!"||l++;i=e}while(i)}function Wo(l){var t=l.firstChild;for(t&&t.nodeType===10&&(t=t.nextSibling);t;){var i=t;switch(t=t.nextSibling,i.nodeName){case"HTML":case"HEAD":case"BODY":Wo(i),ls(i);continue;case"SCRIPT":case"STYLE":continue;case"LINK":if(i.rel.toLowerCase()==="stylesheet")continue}l.removeChild(i)}}function Yd(l,t,i,e){for(;l.nodeType===1;){var n=i;if(l.nodeName.toLowerCase()!==t.toLowerCase()){if(!e&&(l.nodeName!=="INPUT"||l.type!=="hidden"))break}else if(e){if(!l[xe])switch(t){case"meta":if(!l.hasAttribute("itemprop"))break;return l;case"link":if(a=l.getAttribute("rel"),a==="stylesheet"&&l.hasAttribute("data-precedence"))break;if(a!==n.rel||l.getAttribute("href")!==(n.href==null||n.href===""?null:n.href)||l.getAttribute("crossorigin")!==(n.crossOrigin==null?null:n.crossOrigin)||l.getAttribute("title")!==(n.title==null?null:n.title))break;return l;case"style":if(l.hasAttribute("data-precedence"))break;return l;case"script":if(a=l.getAttribute("src"),(a!==(n.src==null?null:n.src)||l.getAttribute("type")!==(n.type==null?null:n.type)||l.getAttribute("crossorigin")!==(n.crossOrigin==null?null:n.crossOrigin))&&a&&l.hasAttribute("async")&&!l.hasAttribute("itemprop"))break;return l;default:return l}}else if(t==="input"&&l.type==="hidden"){var a=n.name==null?null:""+n.name;if(n.type==="hidden"&&l.getAttribute("name")===a)return l}else return l;if(l=zt(l.nextSibling),l===null)break}return null}function qd(l,t,i){if(t==="")return null;for(;l.nodeType!==3;)if((l.nodeType!==1||l.nodeName!=="INPUT"||l.type!=="hidden")&&!i||(l=zt(l.nextSibling),l===null))return null;return l}function kg(l,t){for(;l.nodeType!==8;)if((l.nodeType!==1||l.nodeName!=="INPUT"||l.type!=="hidden")&&!t||(l=zt(l.nextSibling),l===null))return null;return l}function Fo(l){return l.data==="$?"||l.data==="$~"}function Io(l){return l.data==="$!"||l.data==="$?"&&l.ownerDocument.readyState!=="loading"}function Xd(l,t){var i=l.ownerDocument;if(l.data==="$~")l._reactRetry=t;else if(l.data!=="$?"||i.readyState!=="loading")t();else{var e=function(){t(),i.removeEventListener("DOMContentLoaded",e)};i.addEventListener("DOMContentLoaded",e),l._reactRetry=e}}function zt(l){for(;l!=null;l=l.nextSibling){var t=l.nodeType;if(t===1||t===3)break;if(t===8){if(t=l.data,t==="$"||t==="$!"||t==="$?"||t==="$~"||t==="&"||t==="F!"||t==="F")break;if(t==="/$"||t==="/&")return null}}return l}var Po=null;function Kg(l){l=l.nextSibling;for(var t=0;l;){if(l.nodeType===8){var i=l.data;if(i==="/$"||i==="/&"){if(t===0)return zt(l.nextSibling);t--}else i!=="$"&&i!=="$!"&&i!=="$?"&&i!=="$~"&&i!=="&"||t++}l=l.nextSibling}return null}function Jg(l){l=l.previousSibling;for(var t=0;l;){if(l.nodeType===8){var i=l.data;if(i==="$"||i==="$!"||i==="$?"||i==="$~"||i==="&"){if(t===0)return l;t--}else i!=="/$"&&i!=="/&"||t++}l=l.previousSibling}return null}function Wg(l,t,i){switch(t=Ca(i),l){case"html":if(l=t.documentElement,!l)throw Error(p(452));return l;case"head":if(l=t.head,!l)throw Error(p(453));return l;case"body":if(l=t.body,!l)throw Error(p(454));return l;default:throw Error(p(451))}}function mn(l){for(var t=l.attributes;t.length;)l.removeAttributeNode(t[0]);ls(l)}var _t=new Map,Fg=new Set;function Ea(l){return typeof l.getRootNode=="function"?l.getRootNode():l.nodeType===9?l:l.ownerDocument}var Wt=C.d;C.d={f:Gd,r:Ld,D:$d,C:Qd,L:Zd,m:Vd,X:Kd,S:kd,M:Jd};function Gd(){var l=Wt.f(),t=Sa();return l||t}function Ld(l){var t=Vi(l);t!==null&&t.tag===5&&t.type==="form"?dc(t):Wt.r(l)}var Te=typeof document>"u"?null:document;function Ig(l,t,i){var e=Te;if(e&&typeof t=="string"&&t){var n=mt(t);n='link[rel="'+l+'"][href="'+n+'"]',typeof i=="string"&&(n+='[crossorigin="'+i+'"]'),Fg.has(n)||(Fg.add(n),l={rel:l,crossOrigin:i,href:t},e.querySelector(n)===null&&(t=e.createElement("link"),$l(t,"link",l),Hl(t),e.head.appendChild(t)))}}function $d(l){Wt.D(l),Ig("dns-prefetch",l,null)}function Qd(l,t){Wt.C(l,t),Ig("preconnect",l,t)}function Zd(l,t,i){Wt.L(l,t,i);var e=Te;if(e&&l&&t){var n='link[rel="preload"][as="'+mt(t)+'"]';t==="image"&&i&&i.imageSrcSet?(n+='[imagesrcset="'+mt(i.imageSrcSet)+'"]',typeof i.imageSizes=="string"&&(n+='[imagesizes="'+mt(i.imageSizes)+'"]')):n+='[href="'+mt(l)+'"]';var a=n;switch(t){case"style":a=Me(l);break;case"script":a=je(l)}_t.has(a)||(l=N({rel:"preload",href:t==="image"&&i&&i.imageSrcSet?void 0:l,as:t},i),_t.set(a,l),e.querySelector(n)!==null||t==="style"&&e.querySelector(hn(a))||t==="script"&&e.querySelector(yn(a))||(t=e.createElement("link"),$l(t,"link",l),Hl(t),e.head.appendChild(t)))}}function Vd(l,t){Wt.m(l,t);var i=Te;if(i&&l){var e=t&&typeof t.as=="string"?t.as:"script",n='link[rel="modulepreload"][as="'+mt(e)+'"][href="'+mt(l)+'"]',a=n;switch(e){case"audioworklet":case"paintworklet":case"serviceworker":case"sharedworker":case"worker":case"script":a=je(l)}if(!_t.has(a)&&(l=N({rel:"modulepreload",href:l},t),_t.set(a,l),i.querySelector(n)===null)){switch(e){case"audioworklet":case"paintworklet":case"serviceworker":case"sharedworker":case"worker":case"script":if(i.querySelector(yn(a)))return}e=i.createElement("link"),$l(e,"link",l),Hl(e),i.head.appendChild(e)}}}function kd(l,t,i){Wt.S(l,t,i);var e=Te;if(e&&l){var n=ki(e).hoistableStyles,a=Me(l);t=t||"default";var s=n.get(a);if(!s){var r={loading:0,preload:null};if(s=e.querySelector(hn(a)))r.loading=5;else{l=N({rel:"stylesheet",href:l,"data-precedence":t},i),(i=_t.get(a))&&lr(l,i);var u=s=e.createElement("link");Hl(u),$l(u,"link",l),u._p=new Promise(function(h,S){u.onload=h,u.onerror=S}),u.addEventListener("load",function(){r.loading|=1}),u.addEventListener("error",function(){r.loading|=2}),r.loading|=4,Da(s,t,e)}s={type:"stylesheet",instance:s,count:1,state:r},n.set(a,s)}}}function Kd(l,t){Wt.X(l,t);var i=Te;if(i&&l){var e=ki(i).hoistableScripts,n=je(l),a=e.get(n);a||(a=i.querySelector(yn(n)),a||(l=N({src:l,async:!0},t),(t=_t.get(n))&&tr(l,t),a=i.createElement("script"),Hl(a),$l(a,"link",l),i.head.appendChild(a)),a={type:"script",instance:a,count:1,state:null},e.set(n,a))}}function Jd(l,t){Wt.M(l,t);var i=Te;if(i&&l){var e=ki(i).hoistableScripts,n=je(l),a=e.get(n);a||(a=i.querySelector(yn(n)),a||(l=N({src:l,async:!0,type:"module"},t),(t=_t.get(n))&&tr(l,t),a=i.createElement("script"),Hl(a),$l(a,"link",l),i.head.appendChild(a)),a={type:"script",instance:a,count:1,state:null},e.set(n,a))}}function Pg(l,t,i,e){var n=(n=K.current)?Ea(n):null;if(!n)throw Error(p(446));switch(l){case"meta":case"title":return null;case"style":return typeof i.precedence=="string"&&typeof i.href=="string"?(t=Me(i.href),i=ki(n).hoistableStyles,e=i.get(t),e||(e={type:"style",instance:null,count:0,state:null},i.set(t,e)),e):{type:"void",instance:null,count:0,state:null};case"link":if(i.rel==="stylesheet"&&typeof i.href=="string"&&typeof i.precedence=="string"){l=Me(i.href);var a=ki(n).hoistableStyles,s=a.get(l);if(s||(n=n.ownerDocument||n,s={type:"stylesheet",instance:null,count:0,state:{loading:0,preload:null}},a.set(l,s),(a=n.querySelector(hn(l)))&&!a._p&&(s.instance=a,s.state.loading=5),_t.has(l)||(i={rel:"preload",as:"style",href:i.href,crossOrigin:i.crossOrigin,integrity:i.integrity,media:i.media,hrefLang:i.hrefLang,referrerPolicy:i.referrerPolicy},_t.set(l,i),a||Wd(n,l,i,s.state))),t&&e===null)throw Error(p(528,""));return s}if(t&&e!==null)throw Error(p(529,""));return null;case"script":return t=i.async,i=i.src,typeof i=="string"&&t&&typeof t!="function"&&typeof t!="symbol"?(t=je(i),i=ki(n).hoistableScripts,e=i.get(t),e||(e={type:"script",instance:null,count:0,state:null},i.set(t,e)),e):{type:"void",instance:null,count:0,state:null};default:throw Error(p(444,l))}}function Me(l){return'href="'+mt(l)+'"'}function hn(l){return'link[rel="stylesheet"]['+l+"]"}function lf(l){return N({},l,{"data-precedence":l.precedence,precedence:null})}function Wd(l,t,i,e){l.querySelector('link[rel="preload"][as="style"]['+t+"]")?e.loading=1:(t=l.createElement("link"),e.preload=t,t.addEventListener("load",function(){return e.loading|=1}),t.addEventListener("error",function(){return e.loading|=2}),$l(t,"link",i),Hl(t),l.head.appendChild(t))}function je(l){return'[src="'+mt(l)+'"]'}function yn(l){return"script[async]"+l}function tf(l,t,i){if(t.count++,t.instance===null)switch(t.type){case"style":var e=l.querySelector('style[data-href~="'+mt(i.href)+'"]');if(e)return t.instance=e,Hl(e),e;var n=N({},i,{"data-href":i.href,"data-precedence":i.precedence,href:null,precedence:null});return e=(l.ownerDocument||l).createElement("style"),Hl(e),$l(e,"style",n),Da(e,i.precedence,l),t.instance=e;case"stylesheet":n=Me(i.href);var a=l.querySelector(hn(n));if(a)return t.state.loading|=4,t.instance=a,Hl(a),a;e=lf(i),(n=_t.get(n))&&lr(e,n),a=(l.ownerDocument||l).createElement("link"),Hl(a);var s=a;return s._p=new Promise(function(r,u){s.onload=r,s.onerror=u}),$l(a,"link",e),t.state.loading|=4,Da(a,i.precedence,l),t.instance=a;case"script":return a=je(i.src),(n=l.querySelector(yn(a)))?(t.instance=n,Hl(n),n):(e=i,(n=_t.get(a))&&(e=N({},i),tr(e,n)),l=l.ownerDocument||l,n=l.createElement("script"),Hl(n),$l(n,"link",e),l.head.appendChild(n),t.instance=n);case"void":return null;default:throw Error(p(443,t.type))}else t.type==="stylesheet"&&(t.state.loading&4)===0&&(e=t.instance,t.state.loading|=4,Da(e,i.precedence,l));return t.instance}function Da(l,t,i){for(var e=i.querySelectorAll('link[rel="stylesheet"][data-precedence],style[data-precedence]'),n=e.length?e[e.length-1]:null,a=n,s=0;s<e.length;s++){var r=e[s];if(r.dataset.precedence===t)a=r;else if(a!==n)break}a?a.parentNode.insertBefore(l,a.nextSibling):(t=i.nodeType===9?i.head:i,t.insertBefore(l,t.firstChild))}function lr(l,t){l.crossOrigin==null&&(l.crossOrigin=t.crossOrigin),l.referrerPolicy==null&&(l.referrerPolicy=t.referrerPolicy),l.title==null&&(l.title=t.title)}function tr(l,t){l.crossOrigin==null&&(l.crossOrigin=t.crossOrigin),l.referrerPolicy==null&&(l.referrerPolicy=t.referrerPolicy),l.integrity==null&&(l.integrity=t.integrity)}var Oa=null;function ef(l,t,i){if(Oa===null){var e=new Map,n=Oa=new Map;n.set(i,e)}else n=Oa,e=n.get(i),e||(e=new Map,n.set(i,e));if(e.has(l))return e;for(e.set(l,null),i=i.getElementsByTagName(l),n=0;n<i.length;n++){var a=i[n];if(!(a[xe]||a[ql]||l==="link"&&a.getAttribute("rel")==="stylesheet")&&a.namespaceURI!=="http://www.w3.org/2000/svg"){var s=a.getAttribute(t)||"";s=l+s;var r=e.get(s);r?r.push(a):e.set(s,[a])}}return e}function nf(l,t,i){l=l.ownerDocument||l,l.head.insertBefore(i,t==="title"?l.querySelector("head > title"):null)}function Fd(l,t,i){if(i===1||t.itemProp!=null)return!1;switch(l){case"meta":case"title":return!0;case"style":if(typeof t.precedence!="string"||typeof t.href!="string"||t.href==="")break;return!0;case"link":if(typeof t.rel!="string"||typeof t.href!="string"||t.href===""||t.onLoad||t.onError)break;switch(t.rel){case"stylesheet":return l=t.disabled,typeof t.precedence=="string"&&l==null;default:return!0}case"script":if(t.async&&typeof t.async!="function"&&typeof t.async!="symbol"&&!t.onLoad&&!t.onError&&t.src&&typeof t.src=="string")return!0}return!1}function af(l){return!(l.type==="stylesheet"&&(l.state.loading&3)===0)}function Id(l,t,i,e){if(i.type==="stylesheet"&&(typeof e.media!="string"||matchMedia(e.media).matches!==!1)&&(i.state.loading&4)===0){if(i.instance===null){var n=Me(e.href),a=t.querySelector(hn(n));if(a){t=a._p,t!==null&&typeof t=="object"&&typeof t.then=="function"&&(l.count++,l=xa.bind(l),t.then(l,l)),i.state.loading|=4,i.instance=a,Hl(a);return}a=t.ownerDocument||t,e=lf(e),(n=_t.get(n))&&lr(e,n),a=a.createElement("link"),Hl(a);var s=a;s._p=new Promise(function(r,u){s.onload=r,s.onerror=u}),$l(a,"link",e),i.instance=a}l.stylesheets===null&&(l.stylesheets=new Map),l.stylesheets.set(i,t),(t=i.state.preload)&&(i.state.loading&3)===0&&(l.count++,i=xa.bind(l),t.addEventListener("load",i),t.addEventListener("error",i))}}var ir=0;function Pd(l,t){return l.stylesheets&&l.count===0&&Ua(l,l.stylesheets),0<l.count||0<l.imgCount?function(i){var e=setTimeout(function(){if(l.stylesheets&&Ua(l,l.stylesheets),l.unsuspend){var a=l.unsuspend;l.unsuspend=null,a()}},6e4+t);0<l.imgBytes&&ir===0&&(ir=62500*Nd());var n=setTimeout(function(){if(l.waitingForImages=!1,l.count===0&&(l.stylesheets&&Ua(l,l.stylesheets),l.unsuspend)){var a=l.unsuspend;l.unsuspend=null,a()}},(l.imgBytes>ir?50:800)+t);return l.unsuspend=i,function(){l.unsuspend=null,clearTimeout(e),clearTimeout(n)}}:null}function xa(){if(this.count--,this.count===0&&(this.imgCount===0||!this.waitingForImages)){if(this.stylesheets)Ua(this,this.stylesheets);else if(this.unsuspend){var l=this.unsuspend;this.unsuspend=null,l()}}}var Na=null;function Ua(l,t){l.stylesheets=null,l.unsuspend!==null&&(l.count++,Na=new Map,t.forEach(lm,l),Na=null,xa.call(l))}function lm(l,t){if(!(t.state.loading&4)){var i=Na.get(l);if(i)var e=i.get(null);else{i=new Map,Na.set(l,i);for(var n=l.querySelectorAll("link[data-precedence],style[data-precedence]"),a=0;a<n.length;a++){var s=n[a];(s.nodeName==="LINK"||s.getAttribute("media")!=="not all")&&(i.set(s.dataset.precedence,s),e=s)}e&&i.set(null,e)}n=t.instance,s=n.getAttribute("data-precedence"),a=i.get(s)||e,a===e&&i.set(null,n),i.set(s,n),this.count++,e=xa.bind(this),n.addEventListener("load",e),n.addEventListener("error",e),a?a.parentNode.insertBefore(n,a.nextSibling):(l=l.nodeType===9?l.head:l,l.insertBefore(n,l.firstChild)),t.state.loading|=4}}var vn={$$typeof:ol,Provider:null,Consumer:null,_currentValue:G,_currentValue2:G,_threadCount:0};function tm(l,t,i,e,n,a,s,r,u){this.tag=1,this.containerInfo=l,this.pingCache=this.current=this.pendingChildren=null,this.timeoutHandle=-1,this.callbackNode=this.next=this.pendingContext=this.context=this.cancelPendingCommit=null,this.callbackPriority=0,this.expirationTimes=Wa(-1),this.entangledLanes=this.shellSuspendCounter=this.errorRecoveryDisabledLanes=this.expiredLanes=this.warmLanes=this.pingedLanes=this.suspendedLanes=this.pendingLanes=0,this.entanglements=Wa(0),this.hiddenUpdates=Wa(null),this.identifierPrefix=e,this.onUncaughtError=n,this.onCaughtError=a,this.onRecoverableError=s,this.pooledCache=null,this.pooledCacheLanes=0,this.formState=u,this.incompleteTransitions=new Map}function sf(l,t,i,e,n,a,s,r,u,h,S,T){return l=new tm(l,t,i,s,u,h,S,T,r),t=1,a===!0&&(t|=24),a=ot(3,null,null,t),l.current=a,a.stateNode=l,t=Us(),t.refCount++,l.pooledCache=t,t.refCount++,a.memoizedState={element:e,isDehydrated:i,cache:t},Ys(a),l}function of(l){return l?(l=ee,l):ee}function rf(l,t,i,e,n,a){n=of(n),e.context===null?e.context=n:e.pendingContext=n,e=si(t),e.payload={element:i},a=a===void 0?null:a,a!==null&&(e.callback=a),i=oi(l,e,t),i!==null&&(it(i,l,t),Je(i,l,t))}function uf(l,t){if(l=l.memoizedState,l!==null&&l.dehydrated!==null){var i=l.retryLane;l.retryLane=i!==0&&i<t?i:t}}function er(l,t){uf(l,t),(l=l.alternate)&&uf(l,t)}function cf(l){if(l.tag===13||l.tag===31){var t=Oi(l,67108864);t!==null&&it(t,l,67108864),er(l,67108864)}}function gf(l){if(l.tag===13||l.tag===31){var t=ft();t=Fa(t);var i=Oi(l,t);i!==null&&it(i,l,t),er(l,t)}}var Ba=!0;function im(l,t,i,e){var n=w.T;w.T=null;var a=C.p;try{C.p=2,nr(l,t,i,e)}finally{C.p=a,w.T=n}}function em(l,t,i,e){var n=w.T;w.T=null;var a=C.p;try{C.p=8,nr(l,t,i,e)}finally{C.p=a,w.T=n}}function nr(l,t,i,e){if(Ba){var n=ar(e);if(n===null)Qo(l,t,e,Ra,i),pf(l,e);else if(am(n,l,t,i,e))e.stopPropagation();else if(pf(l,e),t&4&&-1<nm.indexOf(l)){for(;n!==null;){var a=Vi(n);if(a!==null)switch(a.tag){case 3:if(a=a.stateNode,a.current.memoizedState.isDehydrated){var s=ji(a.pendingLanes);if(s!==0){var r=a;for(r.pendingLanes|=2,r.entangledLanes|=2;s;){var u=1<<31-at(s);r.entanglements[1]|=u,s&=~u}Ot(a),(el&6)===0&&(va=et()+500,fn(0))}}break;case 31:case 13:r=Oi(a,2),r!==null&&it(r,a,2),Sa(),er(a,2)}if(a=ar(e),a===null&&Qo(l,t,e,Ra,i),a===n)break;n=a}n!==null&&e.stopPropagation()}else Qo(l,t,e,null,i)}}function ar(l){return l=ss(l),sr(l)}var Ra=null;function sr(l){if(Ra=null,l=Zi(l),l!==null){var t=x(l);if(t===null)l=null;else{var i=t.tag;if(i===13){if(l=Y(t),l!==null)return l;l=null}else if(i===31){if(l=P(t),l!==null)return l;l=null}else if(i===3){if(t.stateNode.current.memoizedState.isDehydrated)return t.tag===3?t.stateNode.containerInfo:null;l=null}else t!==l&&(l=null)}}return Ra=l,null}function ff(l){switch(l){case"beforetoggle":case"cancel":case"click":case"close":case"contextmenu":case"copy":case"cut":case"auxclick":case"dblclick":case"dragend":case"dragstart":case"drop":case"focusin":case"focusout":case"input":case"invalid":case"keydown":case"keypress":case"keyup":case"mousedown":case"mouseup":case"paste":case"pause":case"play":case"pointercancel":case"pointerdown":case"pointerup":case"ratechange":case"reset":case"resize":case"seeked":case"submit":case"toggle":case"touchcancel":case"touchend":case"touchstart":case"volumechange":case"change":case"selectionchange":case"textInput":case"compositionstart":case"compositionend":case"compositionupdate":case"beforeblur":case"afterblur":case"beforeinput":case"blur":case"fullscreenchange":case"focus":case"hashchange":case"popstate":case"select":case"selectstart":return 2;case"drag":case"dragenter":case"dragexit":case"dragleave":case"dragover":case"mousemove":case"mouseout":case"mouseover":case"pointermove":case"pointerout":case"pointerover":case"scroll":case"touchmove":case"wheel":case"mouseenter":case"mouseleave":case"pointerenter":case"pointerleave":return 8;case"message":switch($f()){case br:return 2;case Sr:return 8;case Mn:case Qf:return 32;case wr:return 268435456;default:return 32}default:return 32}}var or=!1,vi=null,bi=null,Si=null,bn=new Map,Sn=new Map,wi=[],nm="mousedown mouseup touchcancel touchend touchstart auxclick dblclick pointercancel pointerdown pointerup dragend dragstart drop compositionend compositionstart keydown keypress keyup input textInput copy cut paste click change contextmenu reset".split(" ");function pf(l,t){switch(l){case"focusin":case"focusout":vi=null;break;case"dragenter":case"dragleave":bi=null;break;case"mouseover":case"mouseout":Si=null;break;case"pointerover":case"pointerout":bn.delete(t.pointerId);break;case"gotpointercapture":case"lostpointercapture":Sn.delete(t.pointerId)}}function wn(l,t,i,e,n,a){return l===null||l.nativeEvent!==a?(l={blockedOn:t,domEventName:i,eventSystemFlags:e,nativeEvent:a,targetContainers:[n]},t!==null&&(t=Vi(t),t!==null&&cf(t)),l):(l.eventSystemFlags|=e,t=l.targetContainers,n!==null&&t.indexOf(n)===-1&&t.push(n),l)}function am(l,t,i,e,n){switch(t){case"focusin":return vi=wn(vi,l,t,i,e,n),!0;case"dragenter":return bi=wn(bi,l,t,i,e,n),!0;case"mouseover":return Si=wn(Si,l,t,i,e,n),!0;case"pointerover":var a=n.pointerId;return bn.set(a,wn(bn.get(a)||null,l,t,i,e,n)),!0;case"gotpointercapture":return a=n.pointerId,Sn.set(a,wn(Sn.get(a)||null,l,t,i,e,n)),!0}return!1}function df(l){var t=Zi(l.target);if(t!==null){var i=x(t);if(i!==null){if(t=i.tag,t===13){if(t=Y(i),t!==null){l.blockedOn=t,Ar(l.priority,function(){gf(i)});return}}else if(t===31){if(t=P(i),t!==null){l.blockedOn=t,Ar(l.priority,function(){gf(i)});return}}else if(t===3&&i.stateNode.current.memoizedState.isDehydrated){l.blockedOn=i.tag===3?i.stateNode.containerInfo:null;return}}}l.blockedOn=null}function Ha(l){if(l.blockedOn!==null)return!1;for(var t=l.targetContainers;0<t.length;){var i=ar(l.nativeEvent);if(i===null){i=l.nativeEvent;var e=new i.constructor(i.type,i);as=e,i.target.dispatchEvent(e),as=null}else return t=Vi(i),t!==null&&cf(t),l.blockedOn=i,!1;t.shift()}return!0}function mf(l,t,i){Ha(l)&&i.delete(t)}function sm(){or=!1,vi!==null&&Ha(vi)&&(vi=null),bi!==null&&Ha(bi)&&(bi=null),Si!==null&&Ha(Si)&&(Si=null),bn.forEach(mf),Sn.forEach(mf)}function Ya(l,t){l.blockedOn===t&&(l.blockedOn=null,or||(or=!0,v.unstable_scheduleCallback(v.unstable_NormalPriority,sm)))}var qa=null;function hf(l){qa!==l&&(qa=l,v.unstable_scheduleCallback(v.unstable_NormalPriority,function(){qa===l&&(qa=null);for(var t=0;t<l.length;t+=3){var i=l[t],e=l[t+1],n=l[t+2];if(typeof e!="function"){if(sr(e||i)===null)continue;break}var a=Vi(i);a!==null&&(l.splice(t,3),t-=3,no(a,{pending:!0,data:n,method:i.method,action:e},e,n))}}))}function Ae(l){function t(u){return Ya(u,l)}vi!==null&&Ya(vi,l),bi!==null&&Ya(bi,l),Si!==null&&Ya(Si,l),bn.forEach(t),Sn.forEach(t);for(var i=0;i<wi.length;i++){var e=wi[i];e.blockedOn===l&&(e.blockedOn=null)}for(;0<wi.length&&(i=wi[0],i.blockedOn===null);)df(i),i.blockedOn===null&&wi.shift();if(i=(l.ownerDocument||l).$$reactFormReplay,i!=null)for(e=0;e<i.length;e+=3){var n=i[e],a=i[e+1],s=n[Wl]||null;if(typeof a=="function")s||hf(i);else if(s){var r=null;if(a&&a.hasAttribute("formAction")){if(n=a,s=a[Wl]||null)r=s.formAction;else if(sr(n)!==null)continue}else r=s.action;typeof r=="function"?i[e+1]=r:(i.splice(e,3),e-=3),hf(i)}}}function yf(){function l(a){a.canIntercept&&a.info==="react-transition"&&a.intercept({handler:function(){return new Promise(function(s){return n=s})},focusReset:"manual",scroll:"manual"})}function t(){n!==null&&(n(),n=null),e||setTimeout(i,20)}function i(){if(!e&&!navigation.transition){var a=navigation.currentEntry;a&&a.url!=null&&navigation.navigate(a.url,{state:a.getState(),info:"react-transition",history:"replace"})}}if(typeof navigation=="object"){var e=!1,n=null;return navigation.addEventListener("navigate",l),navigation.addEventListener("navigatesuccess",t),navigation.addEventListener("navigateerror",t),setTimeout(i,100),function(){e=!0,navigation.removeEventListener("navigate",l),navigation.removeEventListener("navigatesuccess",t),navigation.removeEventListener("navigateerror",t),n!==null&&(n(),n=null)}}}function rr(l){this._internalRoot=l}Xa.prototype.render=rr.prototype.render=function(l){var t=this._internalRoot;if(t===null)throw Error(p(409));var i=t.current,e=ft();rf(i,e,l,t,null,null)},Xa.prototype.unmount=rr.prototype.unmount=function(){var l=this._internalRoot;if(l!==null){this._internalRoot=null;var t=l.containerInfo;rf(l.current,2,null,l,null,null),Sa(),t[Qi]=null}};function Xa(l){this._internalRoot=l}Xa.prototype.unstable_scheduleHydration=function(l){if(l){var t=jr();l={blockedOn:null,target:l,priority:t};for(var i=0;i<wi.length&&t!==0&&t<wi[i].priority;i++);wi.splice(i,0,l),i===0&&df(l)}};var vf=A.version;if(vf!=="19.2.3")throw Error(p(527,vf,"19.2.3"));C.findDOMNode=function(l){var t=l._reactInternals;if(t===void 0)throw typeof l.render=="function"?Error(p(188)):(l=Object.keys(l).join(","),Error(p(268,l)));return l=_(t),l=l!==null?E(l):null,l=l===null?null:l.stateNode,l};var om={bundleType:0,version:"19.2.3",rendererPackageName:"react-dom",currentDispatcherRef:w,reconcilerVersion:"19.2.3"};if(typeof __REACT_DEVTOOLS_GLOBAL_HOOK__<"u"){var Ga=__REACT_DEVTOOLS_GLOBAL_HOOK__;if(!Ga.isDisabled&&Ga.supportsFiber)try{Ee=Ga.inject(om),nt=Ga}catch{}}return _n.createRoot=function(l,t){if(!j(l))throw Error(p(299));var i=!1,e="",n=Tc,a=Mc,s=jc;return t!=null&&(t.unstable_strictMode===!0&&(i=!0),t.identifierPrefix!==void 0&&(e=t.identifierPrefix),t.onUncaughtError!==void 0&&(n=t.onUncaughtError),t.onCaughtError!==void 0&&(a=t.onCaughtError),t.onRecoverableError!==void 0&&(s=t.onRecoverableError)),t=sf(l,1,!1,null,null,i,e,null,n,a,s,yf),l[Qi]=t.current,$o(l),new rr(t)},_n.hydrateRoot=function(l,t,i){if(!j(l))throw Error(p(299));var e=!1,n="",a=Tc,s=Mc,r=jc,u=null;return i!=null&&(i.unstable_strictMode===!0&&(e=!0),i.identifierPrefix!==void 0&&(n=i.identifierPrefix),i.onUncaughtError!==void 0&&(a=i.onUncaughtError),i.onCaughtError!==void 0&&(s=i.onCaughtError),i.onRecoverableError!==void 0&&(r=i.onRecoverableError),i.formState!==void 0&&(u=i.formState)),t=sf(l,1,!0,t,i??null,e,n,u,a,s,r,yf),t.context=of(null),i=t.current,e=ft(),e=Fa(e),n=si(e),n.callback=null,oi(i,n,e),i=e,t.current.lanes=i,Oe(t,i),Ot(t),l[Qi]=t.current,$o(l),new Xa(t)},_n.version="19.2.3",_n}var Cf;function ym(){if(Cf)return gr.exports;Cf=1;function v(){if(!(typeof __REACT_DEVTOOLS_GLOBAL_HOOK__>"u"||typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE!="function"))try{__REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE(v)}catch(A){console.error(A)}}return v(),gr.exports=hm(),gr.exports}var vm=ym();const bm=v=>v.replace(/([a-z0-9])([A-Z])/g,"$1-$2").toLowerCase(),Sm=v=>v.replace(/^([A-Z])|[\s-_]+(\w)/g,(A,O,p)=>p?p.toUpperCase():O.toLowerCase()),Ef=v=>{const A=Sm(v);return A.charAt(0).toUpperCase()+A.slice(1)},Hf=(...v)=>v.filter((A,O,p)=>!!A&&A.trim()!==""&&p.indexOf(A)===O).join(" ").trim(),wm=v=>{for(const A in v)if(A.startsWith("aria-")||A==="role"||A==="title")return!0};var zm={xmlns:"http://www.w3.org/2000/svg",width:24,height:24,viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:2,strokeLinecap:"round",strokeLinejoin:"round"};const _m=wl.forwardRef(({color:v="currentColor",size:A=24,strokeWidth:O=2,absoluteStrokeWidth:p,className:j="",children:x,iconNode:Y,...P},U)=>wl.createElement("svg",{ref:U,...zm,width:A,height:A,stroke:v,strokeWidth:p?Number(O)*24/Number(A):O,className:Hf("lucide",j),...!x&&!wm(P)&&{"aria-hidden":"true"},...P},[...Y.map(([_,E])=>wl.createElement(_,E)),...Array.isArray(x)?x:[x]]));const _i=(v,A)=>{const O=wl.forwardRef(({className:p,...j},x)=>wl.createElement(_m,{ref:x,iconNode:A,className:Hf(`lucide-${bm(Ef(v))}`,`lucide-${v}`,p),...j}));return O.displayName=Ef(v),O};const Tm=[["path",{d:"M16 7h.01",key:"1kdx03"}],["path",{d:"M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20",key:"oj1oa8"}],["path",{d:"m20 7 2 .5-2 .5",key:"12nv4d"}],["path",{d:"M10 18v3",key:"1yea0a"}],["path",{d:"M14 17.75V21",key:"1pymcb"}],["path",{d:"M7 18a6 6 0 0 0 3.84-10.61",key:"1npnn0"}]],Mm=_i("bird",Tm);const jm=[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}]],Am=_i("circle",jm);const Cm=[["path",{d:"m15.5 7.5 2.3 2.3a1 1 0 0 0 1.4 0l2.1-2.1a1 1 0 0 0 0-1.4L19 4",key:"g0fldk"}],["path",{d:"m21 2-9.6 9.6",key:"1j0ho8"}],["circle",{cx:"7.5",cy:"15.5",r:"5.5",key:"yqb3hr"}]],Em=_i("key",Cm);const Dm=[["path",{d:"M9 18V5l12-2v13",key:"1jmyc2"}],["circle",{cx:"6",cy:"18",r:"3",key:"fqmcym"}],["circle",{cx:"18",cy:"16",r:"3",key:"1hluhg"}]],Om=_i("music",Dm);const xm=[["path",{d:"M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z",key:"r04s7s"}]],Nm=_i("star",xm);const Um=[["path",{d:"M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z",key:"uqj9uw"}],["path",{d:"M16 9a5 5 0 0 1 0 6",key:"1q6k2b"}],["path",{d:"M19.364 18.364a9 9 0 0 0 0-12.728",key:"ijwkga"}]],Bm=_i("volume-2",Um);const Rm=[["path",{d:"M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z",key:"uqj9uw"}],["line",{x1:"22",x2:"16",y1:"9",y2:"15",key:"1ewh16"}],["line",{x1:"16",x2:"22",y1:"9",y2:"15",key:"5ykzw1"}]],Hm=_i("volume-x",Rm);const Ym=[["path",{d:"M18 6 6 18",key:"1bl5f8"}],["path",{d:"m6 6 12 12",key:"d8bk6v"}]],Yf=_i("x",Ym);function qm({displayName:v,onConfirm:A,onCancel:O,onClose:p}){return d.jsx("div",{className:"modal-overlay",onClick:p,children:d.jsx("div",{className:"modal-content",onClick:j=>j.stopPropagation(),children:d.jsxs("div",{className:"modal-paper",children:[d.jsx("button",{className:"modal-close",onClick:p,children:d.jsx(Yf,{size:24})}),d.jsxs("div",{style:{textAlign:"center"},children:[d.jsxs("p",{style:{margin:"10px 0"},children:["Есть ли сомнение, что ты ",d.jsxs("strong",{children:[v,"?"]})]}),d.jsxs("div",{style:{display:"flex",gap:"12px",flexDirection:"column"},children:[d.jsxs("button",{onClick:A,style:{padding:"12px 20px",background:"#d35400",color:"white",border:"none",borderRadius:"8px",fontSize:"1em",cursor:"pointer",fontWeight:"500",maxWidth:"240px",alignSelf:"center"},children:["Я передумала. Я не ",v]}),d.jsx("button",{onClick:O,style:{padding:"12px 20px",background:"#ecf0f1",color:"#333",border:"none",borderRadius:"8px",fontSize:"1em",cursor:"pointer",fontWeight:"500",maxWidth:"240px",alignSelf:"center"},children:"Никакого!"})]})]})]})})})}function qf(){const v=localStorage.getItem("openedWindows");if(!v)return new Set;try{const A=JSON.parse(v);return new Set(A)}catch(A){return console.error("Failed to parse opened windows:",A),new Set}}function Xm(v){const A=qf();return A.add(v),localStorage.setItem("openedWindows",JSON.stringify([...A])),A}function Df(){localStorage.removeItem("openedWindows")}function Gm(){localStorage.removeItem("adventCalendarUser")}const Of=["Привет","Хорошего дня","Здравствуй","Добро пожаловать","Hey there","Good day","Howdy","Salutations","Hiya","Hey"];function Lm({userName:v,onUserSelect:A}){const[O]=wl.useState(()=>Of[Math.floor(Math.random()*Of.length)]),[p,j]=wl.useState(!1),x=v==="Tanya"?"Таня":v==="Zebra"?"Зёбра":"неведомый гость",Y=()=>{j(!0)},P=()=>{Gm(),Df(),j(!1),window.location.reload()},U=()=>{Df(),j(!1)},_=()=>{j(!1)};return v?d.jsxs(d.Fragment,{children:[d.jsx("div",{className:"user-greeting",children:d.jsxs("p",{className:"greeting-text",children:[O,","," ",d.jsx("span",{className:"user-name clickable",onClick:Y,title:`А точно ли я ${x}?..`,children:x}),"!"]})}),p&&(v==="Tanya"||v==="Zebra")&&d.jsx(qm,{displayName:x,onConfirm:P,onCancel:U,onClose:_})]}):d.jsxs("div",{className:"user-selection",children:[d.jsxs("p",{className:"selection-prompt",style:{margin:"0"},children:["Привет! Это Женя, и вот мой адвент."," "]}),d.jsxs("p",{className:"selection-prompt",style:{margin:"0"},children:[" ","Я писала его с четырьмя нейронками на бегу, так что тексты порой всратые."," "]}),d.jsx("p",{className:"selection-prompt",style:{margin:"0"},children:"Вычитывала ли я их? Ну вот еще, вы вообще представляете мой график?!"}),d.jsxs("p",{className:"selection-prompt",style:{margin:"0"},children:['(это "да, но не очень внимательно" 👀).'," "]}),d.jsx("p",{className:"selection-prompt",style:{margin:"0"},children:"Он будет меняться по ходу дела, глючить и падать."}),d.jsx("p",{className:"selection-prompt",children:"Но кто здесь?"}),d.jsxs("div",{className:"user-options",children:[d.jsx("button",{className:"user-button",onClick:()=>A("Tanya"),children:"Таня"}),d.jsx("button",{className:"user-button",onClick:()=>A("Zebra"),children:"Зёбра"})]})]})}function $m(){const[v,A]=wl.useState([]),[O,p]=wl.useState([]);return wl.useEffect(()=>{const j=U=>_=>{const E=Math.sin(U*9301+_*49297)*43758.5453;return E-Math.floor(E)},x=Array.from({length:60}).map((U,_)=>{const E=j(_+1);return{left:`${Math.floor(E(1)*100)}%`,top:`${Math.floor(E(2)*70)}%`,animationDelay:`${(E(3)*3).toFixed(2)}s`,opacity:+(.3+E(4)*.7).toFixed(2)}}),Y=["rgba(255,255,255,VAR)","rgba(245,250,255,VAR)","rgba(230,240,250,VAR)","rgba(210,225,235,VAR)"],P=Array.from({length:4}).map((U,_)=>{const E=j(100+_);let N=30+Math.floor(E(1)*60),V=Math.max(10,Math.floor(E(2)*30));const yl=Y[_%Y.length],vl=+(.35+E(3)*.55).toFixed(2),zl=yl.replace("VAR",String(vl)),Ul=`${40+Math.floor(E(4)*30)}% ${30+Math.floor(E(5)*30)}%`,bl=40+Math.floor(E(6)*40),jl=Math.floor(E(7)*20),ol=-20+Math.floor(E(8)*140);let _l=5+Math.floor(E(9)*40);return _===0&&(_l=Math.max(2,_l-8),N=Math.max(20,Math.floor(N*.85)),V=Math.max(8,Math.floor(V*.8))),{left:`${ol}%`,top:`${_l}%`,width:`${N}vw`,height:`${V}vh`,opacity:vl,color:zl,borderRadius:Ul,duration:bl,delay:jl}});window.requestAnimationFrame(()=>{A(x),p(P)})},[]),d.jsxs("div",{className:"background-scene",children:[d.jsxs("div",{className:"layer layer-sky",children:[d.jsx("div",{className:"moon"}),d.jsx("div",{className:"stars",children:v.map((j,x)=>d.jsx("div",{className:"star",style:{left:j.left,top:j.top,animationDelay:j.animationDelay,opacity:j.opacity}},x))})]}),d.jsx("div",{className:"layer layer-clouds",children:O.map((j,x)=>d.jsx("div",{className:`cloud cloud-${x+1}`,style:{position:"absolute",left:j.left,top:j.top,width:j.width,height:j.height,background:j.color,opacity:j.opacity,borderRadius:j.borderRadius,filter:"blur(6px)",transform:"translateX(-30%)",animation:`cloud-drift ${j.duration}s linear ${j.delay}s infinite`}},x))}),d.jsx("div",{className:"layer layer-mountains",children:d.jsxs("svg",{viewBox:"0 0 1200 400",className:"mountain-svg",children:[d.jsx("path",{d:"M0,400 L0,250 L200,150 L400,200 L600,100 L800,180 L1000,120 L1200,200 L1200,400 Z",fill:"#1a2332"}),d.jsx("path",{d:"M0,400 L0,300 L300,200 L500,250 L700,180 L900,220 L1200,260 L1200,400 Z",fill:"#0f1419"})]})}),d.jsx("div",{className:"layer layer-trees",children:d.jsx("svg",{viewBox:"0 0 1200 300",className:"trees-svg",children:[100,250,400,550,700,850,1e3,1100].map((j,x)=>d.jsxs("g",{children:[d.jsx("polygon",{points:`${j},300 ${j-20},250 ${j-15},250 ${j-30},200 ${j-25},200 ${j-40},150 ${j+40},150 ${j+25},200 ${j+30},200 ${j+15},250 ${j+20},250`,fill:"#1f2937"}),d.jsx("rect",{x:j-5,y:"280",width:"10",height:"20",fill:"#111827"})]},x))})}),d.jsxs("div",{className:"layer layer-deer",children:[d.jsx("svg",{viewBox:"0 0 100 100",className:"deer deer-1",style:{left:"20%",bottom:"15%"},children:d.jsxs("g",{fill:"#2d3748",children:[d.jsx("ellipse",{cx:"50",cy:"60",rx:"15",ry:"20"}),d.jsx("ellipse",{cx:"65",cy:"50",rx:"10",ry:"12"}),d.jsx("line",{x1:"58",y1:"35",x2:"62",y2:"25",stroke:"#2d3748",strokeWidth:"2"}),d.jsx("line",{x1:"72",y1:"35",x2:"76",y2:"25",stroke:"#2d3748",strokeWidth:"2"}),d.jsx("rect",{x:"45",y:"75",width:"3",height:"15"}),d.jsx("rect",{x:"52",y:"75",width:"3",height:"15"}),d.jsx("rect",{x:"58",y:"75",width:"3",height:"15"}),d.jsx("rect",{x:"65",y:"75",width:"3",height:"15"})]})}),d.jsx("svg",{viewBox:"0 0 100 100",className:"deer deer-2",style:{right:"25%",bottom:"18%"},children:d.jsxs("g",{fill:"#374151",children:[d.jsx("ellipse",{cx:"50",cy:"60",rx:"12",ry:"16"}),d.jsx("ellipse",{cx:"38",cy:"52",rx:"8",ry:"10"}),d.jsx("line",{x1:"35",y1:"38",x2:"32",y2:"28",stroke:"#374151",strokeWidth:"2"}),d.jsx("line",{x1:"42",y1:"38",x2:"39",y2:"28",stroke:"#374151",strokeWidth:"2"}),d.jsx("rect",{x:"45",y:"72",width:"2",height:"12"}),d.jsx("rect",{x:"50",y:"72",width:"2",height:"12"}),d.jsx("rect",{x:"55",y:"72",width:"2",height:"12"}),d.jsx("rect",{x:"60",y:"72",width:"2",height:"12"})]})})]})]})}const Qm=["window-small","window-medium","window-large","window-small","window-medium","window-large","window-small","window-medium","window-large","window-small","window-medium","window-large","window-small","window-medium","window-large","window-small","window-medium","window-large","window-small","window-medium","window-large","window-small","window-medium","window-large","window-medium","window-large","window-small","window-medium","window-large","window-small","window-medium","window-large"],Zm=["window-rect","window-square","window-tall","window-rect","window-square","window-tall","window-rect","window-square","window-tall","window-rect","window-square","window-tall","window-rect","window-square","window-tall","window-rect","window-square","window-tall","window-rect","window-square","window-tall","window-rect","window-square","window-tall","window-square","window-tall","window-square","window-rect","window-tall","window-rect","window-square","window-tall"],xf=["door","window","window","door","window","door","window","window","door","window","door","window","window","door","window","window","door","window","door","window","door","window","window","door","window","door","window","door","window","window","door","window"],Nf=[{type:"door-rect",wood:"oak",handle:"brass-dot",hasKeyhole:!0,frame:"carved"},{type:"door-arched",wood:"pine",handle:"ring",hasKeyhole:!1,frame:"molding"},{type:"door-double",wood:"aged",handle:"star",hasKeyhole:!0,frame:"simple"},{type:"door-rect",wood:"oak",handle:"pinecone",hasKeyhole:!1,frame:"carved"},{type:"door-arched",wood:"pine",handle:"fantasy",hasKeyhole:!0,frame:"molding"},{type:"door-double",wood:"aged",handle:"brass-dot",hasKeyhole:!1,frame:"carved"},{type:"door-rect",wood:"oak",handle:"ring",hasKeyhole:!0,frame:"simple"},{type:"door-arched",wood:"pine",handle:"star",hasKeyhole:!1,frame:"molding"},{type:"door-double",wood:"aged",handle:"pinecone",hasKeyhole:!0,frame:"carved"},{type:"door-rect",wood:"oak",handle:"fantasy",hasKeyhole:!1,frame:"simple"},{type:"door-arched",wood:"pine",handle:"brass-dot",hasKeyhole:!0,frame:"molding"},{type:"door-double",wood:"aged",handle:"ring",hasKeyhole:!1,frame:"carved"}],Uf=[{shape:"square",panes:4,glass:"frosted",hasPlant:!0,hasSill:!0},{shape:"circular",panes:0,glass:"stained",hasPlant:!1,hasSill:!1},{shape:"arched",panes:6,glass:"cracked",hasPlant:!1,hasSill:!0},{shape:"diamond",panes:0,glass:"frosted",hasPlant:!1,hasSill:!1},{shape:"hexagonal",panes:0,glass:"stained",hasPlant:!0,hasSill:!0},{shape:"square",panes:8,glass:"frosted",hasPlant:!1,hasSill:!0},{shape:"arched",panes:4,glass:"cracked",hasPlant:!0,hasSill:!0},{shape:"square",panes:6,glass:"stained",hasPlant:!1,hasSill:!0},{shape:"circular",panes:0,glass:"frosted",hasPlant:!1,hasSill:!1},{shape:"diamond",panes:0,glass:"cracked",hasPlant:!1,hasSill:!1},{shape:"hexagonal",panes:0,glass:"stained",hasPlant:!0,hasSill:!0},{shape:"square",panes:4,glass:"frosted",hasPlant:!1,hasSill:!0},{shape:"arched",panes:6,glass:"cracked",hasPlant:!1,hasSill:!0}],Bf=["wreath","garland","none","wreath","bow","holly","garland","wreath","none","bow","wreath","holly"],Rf=["candle","lights","bow","none","candle","lights","holly","candle","bow","none","lights","candle","holly"],Vm=v=>{switch(v){case"brass-dot":return d.jsx("div",{className:"door-handle brass-dot"});case"ring":return d.jsx(Am,{className:"door-handle ring",size:12});case"star":return d.jsx(Nm,{className:"door-handle star",size:12,fill:"currentColor"});case"pinecone":return d.jsx("div",{className:"door-handle pinecone"});case"fantasy":return d.jsx("div",{className:"door-handle fantasy"});default:return d.jsx("div",{className:"door-handle brass-dot"})}},km=v=>{if(v===0)return null;const A=v===4||v===6?2:4,O=v===4?2:v===6?3:2;return d.jsx("div",{className:"window-panes",style:{gridTemplateColumns:`repeat(${A}, 1fr)`,gridTemplateRows:`repeat(${O}, 1fr)`},children:Array.from({length:v}).map((p,j)=>d.jsx("div",{className:"window-pane"},j))})},Km=v=>{if(v==="none")return null;switch(v){case"wreath":return d.jsxs("div",{className:"christmas-wreath",children:[d.jsx("div",{className:"wreath-circle"}),d.jsx("div",{className:"wreath-bow"}),d.jsxs("div",{className:"wreath-berries",children:[d.jsx("div",{className:"berry"}),d.jsx("div",{className:"berry"}),d.jsx("div",{className:"berry"})]})]});case"garland":return d.jsxs("div",{className:"christmas-garland",children:[d.jsx("div",{className:"garland-swag"}),d.jsx("div",{className:"garland-bow"})]});case"bow":return d.jsxs("div",{className:"christmas-bow-large",children:[d.jsx("div",{className:"bow-left"}),d.jsx("div",{className:"bow-right"}),d.jsx("div",{className:"bow-center"}),d.jsx("div",{className:"bow-ribbon-left"}),d.jsx("div",{className:"bow-ribbon-right"})]});case"holly":return d.jsxs("div",{className:"christmas-holly",children:[d.jsx("div",{className:"holly-leaf left"}),d.jsx("div",{className:"holly-leaf right"}),d.jsx("div",{className:"holly-berry"}),d.jsx("div",{className:"holly-berry"})]});default:return null}},Jm=v=>{if(v==="none")return null;switch(v){case"candle":return d.jsxs("div",{className:"christmas-candle",children:[d.jsx("div",{className:"candle-flame"}),d.jsx("div",{className:"candle-body"}),d.jsx("div",{className:"candle-base"})]});case"lights":return d.jsxs("div",{className:"christmas-lights",children:[d.jsx("div",{className:"light-bulb red"}),d.jsx("div",{className:"light-bulb gold"}),d.jsx("div",{className:"light-bulb green"}),d.jsx("div",{className:"light-bulb blue"})]});case"bow":return d.jsxs("div",{className:"christmas-bow-small",children:[d.jsx("div",{className:"bow-left"}),d.jsx("div",{className:"bow-right"}),d.jsx("div",{className:"bow-center"})]});case"holly":return d.jsxs("div",{className:"christmas-holly-small",children:[d.jsx("div",{className:"holly-leaf"}),d.jsx("div",{className:"holly-leaf"}),d.jsx("div",{className:"holly-berry"})]});default:return null}};function Wm({windowNumber:v,isActive:A,isOpened:O,isExactMatch:p,onClick:j}){const x=wl.useRef(null),Y=v===17,P=()=>{Y&&x.current&&(x.current.currentTime=0,x.current.play().catch(Sl=>console.log("Audio play failed:",Sl)))},U=Qm[v-1],_=Zm[v-1],E=A&&!O||A&&p?"window-glow-intense":"",V=new Set([11,6,12,16,25,30]).has(v),yl=V?"window-round":_,zl=xf[v-1]==="door";let Ul=0,bl=0;for(let Sl=0;Sl<v;Sl++)xf[Sl]==="door"?Ul++:bl++;const jl=Nf[(Ul-1)%Nf.length],ol=Uf[(bl-1)%Uf.length],_l=Bf[(Ul-1)%Bf.length],Ql=Rf[(bl-1)%Rf.length];return d.jsx("div",{className:`calendar-window ${U} ${yl} ${E} ${O?"window-opened":""} ${A?"window-active":"window-inactive"}`,onClick:j,onMouseEnter:P,children:zl?d.jsxs("div",{className:`door-element ${jl.type}`,children:[Km(_l),d.jsx("div",{className:`door-frame frame-${jl.frame}`,children:d.jsxs("div",{className:`door-panel wood-${jl.wood}`,style:{backgroundSize:"cover",backgroundPosition:"center",width:"100%",height:"100%",borderRadius:V?"50%":void 0,overflow:"hidden"},children:[jl.type==="door-double"&&d.jsx("div",{className:"door-split"}),d.jsxs("div",{className:"door-decorative-panels",children:[d.jsx("div",{className:"panel-top"}),d.jsx("div",{className:"panel-bottom"})]}),d.jsxs("div",{className:"door-hardware",children:[Vm(jl.handle),jl.hasKeyhole&&d.jsx(Em,{className:"door-keyhole",size:10})]}),d.jsx("span",{className:"window-number gold",children:v})]})})]}):d.jsxs("div",{className:`window-element ${yl} ${U}`,children:[Jm(Ql),d.jsxs("div",{className:"window-frame",children:[d.jsxs("div",{className:`window-glass glass-${ol.glass}`,style:{backgroundSize:"cover",backgroundPosition:"center",width:"100%",height:"100%",borderRadius:V?"50%":void 0,overflow:"hidden"},children:[km(ol.panes),ol.shape==="arched"&&d.jsx("div",{className:"window-arch"}),Y&&d.jsx(Mm,{className:"owl-icon",size:16})]}),d.jsx("span",{className:"window-number gold",children:v})]}),ol.hasSill&&d.jsx("div",{className:"window-sill",children:ol.hasPlant&&d.jsxs("div",{className:"window-plant",children:[d.jsx("div",{className:"plant-pot"}),d.jsxs("div",{className:"plant-leaves",children:[d.jsx("div",{className:"leaf"}),d.jsx("div",{className:"leaf"}),d.jsx("div",{className:"leaf"})]})]})})]})})}function Fm({windowNumber:v,message:A,onClose:O}){return d.jsx("div",{className:"modal-overlay",onClick:O,children:d.jsx("div",{className:"modal-content",onClick:p=>p.stopPropagation(),children:d.jsxs("div",{className:"modal-paper",children:[d.jsx("button",{className:"modal-close",onClick:O,children:d.jsx(Yf,{size:24})}),v!==-1&&d.jsxs("h2",{className:"modal-title",children:["День ",v]}),d.jsx("div",{className:"modal-message",dangerouslySetInnerHTML:{__html:A}})]})})})}function La(v){const A=new Date(Date.UTC(2025,11,19,21,0,0,0)),O=v;return new Date(A.getTime()+O*24*60*60*1e3)}function $a(v,A){return A.getTime()>=v.getTime()}function mr(v,A){const O=new Date(v);O.setUTCHours(0,0,0,0);const p=new Date(A);return p.setUTCHours(0,0,0,0),O.getTime()===p.getTime()}const Im="/advent/assets/muerte-DfSvC3Z-.jpg",Pm="/advent/assets/katrina-C9VtcZzC.jpg",lh="/advent/assets/pink-sexSAVbt.jpg",th="/advent/assets/rese-BUqLNboV.jpg",ih="/advent/assets/Ofrenda-DDd9dlHK.jpg",eh="/advent/assets/kolumbia-DUKl5Drs.webp",nh="/advent/assets/kolumb2--JWazZNY.webp",ah="/advent/assets/melhior-5oqVeQRz.webp",sh="/advent/assets/shir-CPxmcAyu.jpg",oh="/advent/assets/markes-DHTR6R5s.jpg",rh="/advent/assets/tolkin-Bkb1qdyy.jpg",uh="/advent/assets/tolkin1-Gt7VHXrl.jpg",ch="/advent/assets/berry-BayIKnFN.jpg",gh="/advent/assets/berry1-aZtyDiG8.jpg",fh="/advent/assets/gvatemala1-C3fdq1S5.jpg",ph="/advent/assets/graves-B4Ep0a2x.jpg",dh="/advent/assets/carpet1-BHoBEQUm.jpg",mh="/advent/assets/airsnakes-BtpaN7a0.jpg",hh="/advent/assets/fish-C0IMh9Dv.jpg",yh="/advent/assets/fish1-KO92JEwH.jpg",vh="/advent/assets/brazil1-C1nzNzga.webp",bh="/advent/assets/ethiopia-CfI92xpA.jpg",Sh="/advent/assets/goats-B1iHvHcl.jpg",wh="/advent/assets/rabanda-ClmJ6Exb.jpg",zh="/advent/assets/honduras-DTj2TRgE.jpg",_h="/advent/assets/honduras1-BfVuI_LD.jpg",Th="/advent/assets/resp-DBSDT0A7.png",Mh="/advent/assets/cicoriy-DL-J_EKv.webp",jh="/advent/assets/carob-DDo_E6jz.jpg",Ah="/advent/assets/tonka-CaSKsR3p.webp",Ch="/advent/assets/kardamon-D-LlmV-v.webp",Eh="/advent/assets/mem1-Coiz1JZ3.jpg",Dh="/advent/assets/cafe-DrSeHG9j.jpg",Oh="/advent/assets/yerevan1-0r9N0UnH.jpg",xh="/advent/assets/yerevan2-fQnNyY8p.jpg",Nh="/advent/assets/yerevan3-Dt5WJLMC.jpg",Uh="/advent/assets/lion-DzBmcp3Q.webp",Bh="/advent/assets/bears-BwIhEuov.jpg",Rh="/advent/assets/ararat-DAhBMtll.jpg",Hh="/advent/assets/jazzve-DliHyYYl.jpg",Yh="/advent/assets/abc-C__8usP9.webp",qh="/advent/assets/noy-KD54xzv8.jpg",Xh="/advent/assets/poss-LSCreopJ.jpg",Gh="/advent/assets/poss1-CPSySb8a.jpg",Lh="/advent/assets/poss2-4TAHhBM7.jpg",$h="/advent/assets/poss3-BBe7PtjI.jpg",Qh="/advent/assets/poss4-B0yE7kHZ.jpg",Zh="/advent/assets/poss5-DtHf0aUR.jpg",Vh="/advent/assets/possa-mom-BPlrTPcT.jpg",kh="/advent/assets/possa-mom1-D9ySRpWd.jpg",Kh="/advent/assets/poss-and-oposs-DDSg4YaG.webp",Jh="/advent/assets/possaKnowl-CYkQIhVz.jpg",Wh="/advent/assets/thief-CoIDv1iT.jpg",Fh="/advent/assets/smile-1-5jdl68.jpg",Ih="/advent/assets/merch-DdoKdpQb.jpg",Ph="/advent/assets/merch1-CtZos-AO.jpg",l0="/advent/assets/cammomile-Byca6E_e.jpg",t0="/advent/assets/cham-tea-BPAncxo6.jpg",i0="/advent/assets/chamomile1-DbctfrkQ.jpg",e0="/advent/assets/chamomile2-k1NNuBaK.jpg",n0="/advent/assets/juniper-r5wxtBRx.jpg",a0="/advent/assets/juniper1-BWoP6YHZ.jpg",s0="/advent/assets/juniper3-BXCLBj8d.jpg",o0="/advent/assets/juniperTea-0KTJdRf4.jpg",r0="/advent/assets/cham-sci-ixEH2xhc.jpg",u0="/advent/assets/juniperTattoo-Drp4YpCt.jpg",c0="/advent/assets/chamomileTattoo-BGNh6NOB.jpg",g0="/advent/assets/juniper-sci-hXzXrr9H.jpg",f0="/advent/assets/jun-sci2-zIGUP1FK.jpg",p0="/advent/assets/solovki-B95fDwav.webp",d0="/advent/assets/solovki1-u3Varh4x.webp",m0="/advent/assets/solovki2-D19kpuou.jpg",h0="/advent/assets/coffeCard1-DNW-HsaJ.webp",y0="/advent/assets/coffeCard2-BNxhtL4t.webp",v0="/advent/assets/coffeCard3-AyYO0wak.webp",b0="/advent/assets/coffeCard4-DI2_0NqK.webp",S0="/advent/assets/coffeCard5-dUEpTs6X.webp",w0="/advent/assets/coffeCard6-BDW-PLix.webp",z0="/advent/assets/atitlan-dYAI5eYf.jpg",_0="/advent/assets/atitlan1-C5ZSs572.jpg",T0="/advent/assets/guatemala8-Bi5KoB48.jpg",M0="/advent/assets/guatemalaCorn-ClR7vTSk.jpg",j0="/advent/assets/guatemalaTkan-DTKRCwUa.jpg",A0="/advent/assets/himalaya1-nN0t50Ma.avif",C0="/advent/assets/pinkSalt-BizDWWT4.jpg",E0="/advent/assets/saltMeme-Dq0p8Dwq.jpg",D0="/advent/assets/matcha11-CE8SBYA1.jpg",O0="/advent/assets/matcha-C8bXd3OR.jpg",x0="/advent/assets/matcha2-6Pc5CGop.jpg",N0="/advent/assets/matcha3-PqMaWA5u.jpg",U0="/advent/assets/matchaOld-BdH0N0Hr.jpg",B0="/advent/assets/matchaOld1-d7pxtrP4.jpg",R0="/advent/assets/harvest-DiJhXofV.jpg",H0="/advent/assets/harvest1-f7uXoVQt.jpg",Y0="/advent/assets/matchaColors-CePGvb-v.jpg",q0="/advent/assets/cat1-CteOJfo2.jpg",X0="/advent/assets/cat2-CI2WaIbw.jpg",G0="/advent/assets/cat3-wi61L9Ty.jpg",L0="/advent/assets/cat4-BQJa7vAE.jpg",$0="/advent/assets/cat5-D7xwVjOS.jpg",Q0="/advent/assets/piterMeme-ClYb6GkP.jpg",Z0="/advent/assets/monk-D17MXC2B.jpg",V0="/advent/assets/nyMeme1-6GOagR6o.jpg",k0="/advent/assets/nyMeme2-7Telpurx.jpg",K0="/advent/assets/nyMeme4-BNwb-aPZ.jpg",J0="/advent/assets/nyMeme5-mCJoC8cu.jpg",W0="/advent/assets/nyMeme6-BndRKfA9.jpg",F0="/advent/assets/nyMeme7-CBDPmv-H.jpg",I0="/advent/assets/nyMeme8-Dq-5p2Cs.jpg",P0="/advent/assets/nyMeme9-DtlbkQI_.jpg",ly="/advent/assets/gerb1-BxSMTsFR.jpg",ty="/advent/assets/gerb2-B_qnuNFN.jpg",iy="/advent/assets/okMeme--p34fXU_.jpg",ey="/advent/assets/unk-BB2m3QLz.jpg",ny="/advent/assets/u70-DIKlKj5y.jpg",ay="/advent/assets/map-BdUX3X-y.jpg",sy="/advent/assets/chasha-Ctu2v-xB.jpg",oy="/advent/assets/ft0-COvPvYCF.jpg",ry="/advent/assets/ft1-BgWi-igf.jpg",uy="/advent/assets/ft2-ctNJAFEu.jpg",cy="/advent/assets/cheese-BSnE0RhA.jpg",gy="/advent/assets/cheese2-DJbQoeGH.jpg",fy="/advent/assets/reishi-DE1KAqzF.webp",py="/advent/assets/kamakura-_Vb1gjNI.webp",dy="/advent/assets/kamakura2-D_nBSmvm.webp",my="/advent/assets/dragon2-BcyxgPxK.jpg",hy="/advent/assets/dragon1-BlTPZene.jpg",yy="/advent/assets/kissaten-nwC-faWE.jpg",vy="/advent/assets/kissaten1-DZ7zOaJ5.jpg",by="/advent/assets/sakura-CKPCINYL.jpg",Sy="/advent/assets/sakura1-eJ7b3pjZ.jpg",wy="/advent/assets/pistachios-2oIphEJF.jpg",zy="/advent/assets/pistachios1-DxqEClZb.jpg",_y="/advent/assets/pistachios2-U22W4XjX.jpg",Ty="/advent/assets/pistachios3-CekkXn2S.jpg",My="/advent/assets/pistachioLatte-CX5fY4GJ.jpg",jy="/advent/assets/unicornGerb-B1IgHAym.jpg",Ay="/advent/assets/scotish-DuOWD4BU.jpg",Cy="/advent/assets/pinecons-DN4xaoQh.jpg",Ey="/advent/assets/pinecons0-t__cQNmk.jpg",Dy="/advent/assets/pinecons1-DGIeou-f.jpg",Oy="/advent/assets/pinecons3-xCOek82c.jpg",xy="/advent/assets/noma-CtxKXYmb.jpg",Ny="/advent/assets/coffee05-CtvbYTlI.jpg",Uy="/advent/assets/koliadky-DFZjday1.jpg",By="/advent/assets/koliadky1-D8kgwEZZ.jpg",Ry="/advent/assets/koliadky4-CDUgUMip.jpg",Hy="/advent/assets/smolensk-DSJa0qX2.jpg",Yy="/advent/assets/smolensk1-C8faW8yG.jpg",qy="/advent/assets/smolensk3-BR8avWFN.jpg",Xy="/advent/assets/tower-LkqE0Ps6.jpg",Gy="/advent/assets/tower1-Df1m5F8Z.jpg",Ly="/advent/assets/christmas-DDkkr5ot.jpg",$y="/advent/assets/christmas1-BeD30mht.jpg",Qy="/advent/assets/christmas2-BesTWRrW.jpg",Zy="/advent/assets/drogo-CUI54dn7.jpg",Vy="/advent/assets/cedar-t4INFow4.jpg",ky="/advent/assets/cedar1-DZqAq6zZ.jpg",Ky="/advent/assets/choko-Baf9JYP3.jpg",Jy="/advent/assets/blessed1-CWF1o7u1.jpg",Wy="/advent/assets/blessed2-CU2p4ypS.jpg",Fy="/advent/assets/blessed3-5rhrqKyi.jpg",Iy="/advent/assets/bless4-4Ll_GvpY.jpg",Py="/advent/assets/bless5-UTCmR7lr.jpg",l1="/advent/assets/bless6-CJxznB30.jpg",t1="/advent/assets/bless9-DcH5d8C6.jpg",i1="/advent/assets/teabag-7cU4nlRp.jpg",e1="/advent/assets/sombrero1-ToxUavrc.jpg",n1="/advent/assets/sombrero2-CoV60mUj.jpg",a1="/advent/assets/sombrero3-CtpxCN50.jpg",s1="/advent/assets/musik-DGR0Ibv7.jpg",o1="/advent/assets/musik1-CxBli7oM.jpg",r1="/advent/assets/mex-C1sNijnv.jpg",u1="/advent/assets/mex3-CB0LfBt5.jpg",c1="/advent/assets/sanmiguel-CybJiYPe.jpg",g1="/advent/assets/frida-07UEoWIv.webp",f1="/advent/assets/frida1-B9HyRZK3.jpg",p1="/advent/assets/frida3-SOwYbJa9.jpg",d1="/advent/assets/tea_bag-DRWtL3Mc.jpg",m1="/advent/assets/guilt-DLHr3T3c.jpg",h1="/advent/assets/bosphorus-BURA-rTJ.jpg",y1="/advent/assets/bosphorus1-BdEkWYac.jpg",v1="/advent/assets/turkish1-BLD0BNe9.jpg",b1="/advent/assets/turkish2-jH-U0BZA.jpg",S1="/advent/assets/turkish3-yGiMzEP9.jpg",w1="/advent/assets/turkish4-C37DGkOD.jpg",z1="/advent/assets/moon1-4f8TvoJs.jpg",_1="/advent/assets/mooncoffe-Dx5_ymHM.jpg",T1="/advent/assets/scarycoffee-BVstMak1.jpg",M1="/advent/assets/beatles-BMUnAxoJ.jpg",j1="/advent/assets/beatles1-BdTV_cMa.jpg",A1="/advent/assets/sweets-h4TtI9FD.jpg",C1="/advent/assets/bless10-DqiWaUm6.jpg",E1="/advent/assets/blessed4-Dy78_OG_.jpg",D1="/advent/assets/blessed12-BMt05-MF.jpg",O1="/advent/assets/blessed11-DD-pI5pL.jpg",x1="/advent/assets/pb1-CmsDttyT.jpg",N1="/advent/assets/pb2-scSdFpT7.jpg",U1="/advent/assets/pb3-CXZBsr-q.jpg",B1="/advent/assets/pb4-sWWVmf-k.jpg",R1="/advent/assets/secrets-BzshSfFv.jpg",H1="/advent/assets/bomb-7vp9rKw0.jpg",Y1="/advent/assets/bomb1-D3-b_goP.jpg",q1="/advent/assets/rr-LNEySDYi.jpg",X1="/advent/assets/nm1-Z6tSzJYu.jpg",G1="/advent/assets/nm2-3MPvoxsL.jpg",L1="/advent/assets/nap1-s81St9IO.jpg",o={muerte:Im,katrina:Pm,pink:lh,rese:th,Ofrenda:ih,kolumb2:nh,kolumbia:eh,melhior:ah,shir:sh,markes:oh,tolkin:rh,tolkin1:uh,berries:ch,berries1:gh,gvatemala1:fh,graves:ph,carpet1:dh,airsnake2:mh,fish:hh,fish1:yh,brazil1:vh,ethiopia:bh,goats:Sh,rabanda:wh,honduras:zh,honduras1:_h,resp:Th,cicoriy:Mh,carob:jh,tonka:Ah,kardamon:Ch,mem:Eh,cafe:Dh,yerevan1:Oh,yerevan2:xh,yerevan3:Nh,lion:Uh,bears:Bh,ararat:Rh,yazzve:Hh,abc:Yh,noy:qh,poss:Xh,possaMom:Vh,possaMom1:kh,possOrOposs:Kh,possaKnowl:Jh,poss1:Gh,poss2:Lh,poss3:$h,poss4:Qh,poss5:Zh,thief:Wh,smile:Fh,merch:Ih,merch1:Ph,cammomile:l0,chamomile2:e0,chamomileTea:t0,chamomile1:i0,juniper:n0,juniper1:a0,juniper3:s0,juniperTea:o0,chamSci:r0,juniperTattoo:u0,chamomileTattoo:c0,juniperSci:g0,juniperSci1:f0,solovki:p0,solovki1:d0,solovki2:m0,coffeCard1:h0,coffeCard2:y0,coffeCard3:v0,coffeCard4:b0,coffeCard5:S0,coffeCard6:w0,atitlan:z0,atitlan1:_0,guatemala8:T0,guatemalaCorn:M0,guatemalaTkan:j0,himalaya:A0,pinkSalt:C0,saltMeme:E0,harvest:R0,harvest1:H0,matcha:O0,matcha2:x0,matcha3:N0,matcha11:D0,matchaOld:U0,matchaOld1:B0,matchaColors:Y0,cat1:q0,cat2:X0,cat3:G0,cat4:L0,cat5:$0,piterMeme:Q0,monk:Z0,nyMeme1:V0,nyMeme2:k0,nyMeme4:K0,nyMeme5:J0,nyMeme6:W0,nyMeme7:F0,nyMeme8:I0,nyMeme9:P0,gerb1:ly,gerb2:ty,okMeme:iy,chasha:sy,map:ay,u70:ny,unk:ey,ft0:oy,ft1:ry,ft2:uy,cheese:cy,cheese1:gy,reishi:fy,kamakura:py,kamakura2:dy,dragon:my,dragon1:hy,kissaten:yy,kissaten1:vy,sakura:by,sakura1:Sy,pistachios:wy,pistachios1:zy,pistachios2:_y,pistachios3:Ty,pistachioLatte:My,unicornGerb:jy,scotish:Ay,pinecone:Cy,pinecone0:Ey,pinecone1:Dy,pinecone2:Oy,noma:xy,coffee06:Ny,koliadky:Uy,koliadky1:By,koliadky4:Ry,smolensk:Hy,smolensk1:Yy,smolensk2:qy,tower:Xy,tower1:Gy,christmas:Ly,christmas1:$y,christmas2:Qy,drogo:Zy,cedar:Vy,cedar1:ky,choko:Ky,blessed1:Jy,blessed2:Wy,blessed3:Fy,bless4:Iy,bless5:Py,bless6:l1,bless9:t1,teabag:i1,sombrero1:e1,sombrero2:n1,sombrero3:a1,musik:s1,musik1:o1,mex1:r1,mex3:u1,sanmiguel:c1,frida:g1,frida1:f1,frida3:p1,teabag1:d1,guilt:m1,bosphorus:h1,bosphorus1:y1,turkish1:v1,turkish2:b1,turkish3:S1,turkish4:w1,moon1:z1,mooncoffee:_1,scarycoffee:T1,beatles:M1,bless10:C1,beatles1:j1,sweets:A1,blessed4:E1,blessed12:D1,blessed11:O1,pb1:x1,pb2:N1,pb3:U1,pb4:B1,secrets:R1,bomb:H1,bomb1:Y1,rr:q1,nm1:X1,nm2:G1,nap1:L1},$1=[{day:1,date:"2025-12-20",tanya_gift:"Мексика + специи (по-мексикански)",zebra_gift:"Декаф Мексика + специи (х2)",tanya_bonus:"Специи для Café de Olla",zebra_bonus:"Специи для Café de Olla",title:"Café de Olla — кофе революции",zebra_message:`
       <p><strong>Добро пожаловать в адвент!</strong> Начинаем с <strong>Мексики</strong> — страны кофе, революции и Дня мёртвых! ☕💀</p>
       <h3>Café de Olla — народный кофе Мексики</h3>
-      <img src="${images.muerte}" />
+      <img src="${o.muerte}" />
       <p><strong>Café de Olla</strong> (кофе в горшке) — это кофе, сваренный в <strong>глиняном горшке</strong> с <strong>корицей</strong> и <strong>piloncillo</strong> (нерафинированный тростниковый сахар).</p>      
       <p><strong>История:</strong> Во время <strong>Мексиканской Революции (1910-1920)</strong> солдаты варили кофе в котелках над костром. Сахара не было, но был дешёвый piloncillo. Корицу добавляли для аромата и чтобы перебить вкус плохой воды.</p>
       <p><strong>Adelitas</strong> (женщины-солдаты и повара) варили café de olla для войск. Это был <strong>ритуал единения</strong> — все сидели вокруг огня, пили кофе, пели <strong>corridos</strong> (народные баллады).</p>
@@ -36,7 +33,7 @@ export const windowMessages = [
         <li><strong>Любимая еда покойного</strong> — часто <strong>café de olla</strong>!</li>
         <li><strong>Фото, свечи, копал</strong> (благовония)</li>
       </ul>
-      <img src="${images.Ofrenda}" />
+      <img src="${o.Ofrenda}" />
       <h3>Что такое офренда?</h3>
       <p><strong>Ofrenda</strong> (исп. "подношение") — это временный алтарь для встречи душ умерших во время Día de Muertos.</p>
 
@@ -66,7 +63,7 @@ export const windowMessages = [
       <p><strong>Это мост между мирами</strong> — не страшный, а тёплый, наполненный любовью и воспоминаниями! 💀🌼✨</p>
       
       <p><strong>La Catrina</strong> — элегантная дама-скелет в шляпе, символ праздника. Создана художником José Guadalupe Posada (1910-е) как сатира. <strong>Смысл:</strong> Смерть — великая уравнительница. Богатый ты или бедный — в конце все скелеты!</p>
-       <img src="${images.katrina}" />
+       <img src="${o.katrina}" />
       <h3>Задание</h3>
       <ol>
         <li>Завари кофе со специями (если есть корица — добавь! А она у вас есть, она в том же конверте)</li>
@@ -79,11 +76,10 @@ export const windowMessages = [
       </ol>
       
       <p>Представь себя у костра с revolucionarios, 1915 год, вы варите кофе под звёздами в чьем-то котелке, пахнет корицей и порохом 🔥☕⭐</p>
-    `,
-    tanya_message: `
+    `,tanya_message:`
       <p><strong>Добро пожаловать в адвент!</strong> Начинаем с <strong>Мексики</strong> — страны кофе, революции и Дня мёртвых! ☕💀</p>
       <h3>Café de Olla — народный кофе Мексики</h3>
-      <img src="${images.muerte}" />
+      <img src="${o.muerte}" />
       <p><strong>Café de Olla</strong> (кофе в горшке) — это кофе, сваренный в <strong>глиняном горшке</strong> с <strong>корицей</strong> и <strong>piloncillo</strong> (нерафинированный тростниковый сахар).</p>      
       <p><strong>История:</strong> Во время <strong>Мексиканской Революции (1910-1920)</strong> солдаты варили кофе в котелках над костром. Сахара не было, но был дешёвый piloncillo. Корицу добавляли для аромата и чтобы перебить вкус плохой воды.</p>
       <p><strong>Adelitas</strong> (женщины-солдаты и повара) варили café de olla для войск. Это был <strong>ритуал единения</strong> — все сидели вокруг огня, пили кофе, пели <strong>corridos</strong> (народные баллады).</p>
@@ -108,7 +104,7 @@ export const windowMessages = [
         <li><strong>Фото, свечи, копал</strong> (благовония)</li>
       </ul>
 
-      <img src="${images.Ofrenda}" />
+      <img src="${o.Ofrenda}" />
 
       <h3>Что такое офренда?</h3>
       <p><strong>Ofrenda</strong> (исп. "подношение") — это временный алтарь для встречи душ умерших во время Día de Muertos.</p>
@@ -139,7 +135,7 @@ export const windowMessages = [
       <p><strong>Это мост между мирами</strong> — не страшный, а тёплый, наполненный любовью и воспоминаниями! 💀🌼✨</p>
       
       <p><strong>La Catrina</strong> — элегантная дама-скелет в шляпе, символ праздника. Создана художником José Guadalupe Posada (1910-е) как сатира. <strong>Смысл:</strong> Смерть — великая уравнительница. Богатый ты или бедный — в конце все скелеты!</p>
-      <img src="${images.katrina}" />
+      <img src="${o.katrina}" />
       <h3>Задание</h3>
       <ol>
         <li>Завари кофе со специями (если есть корица — добавь! А она у вас есть, она в том же конверте)</li>
@@ -153,31 +149,20 @@ export const windowMessages = [
       </ol>
       
       <p>Представь себя у костра с revolucionarios, 1915 год, вы варите кофе под звёздами в чьем-то котелке, пахнет корицей и порохом 🔥☕⭐</p>
-    `,
-  },
-
-  {
-    day: 2,
-    date: '2025-12-21',
-    tanya_gift: 'Розовый латте 3в1',
-    zebra_gift: 'Розовый латте 3в1 (х2)',
-    tanya_bonus: 'Золотой леденец на палочке',
-    zebra_bonus: 'Золотой леденец на палочке',
-    title: 'Розовый латте и съедобное золото',
-    zebra_message: `
+    `},{day:2,date:"2025-12-21",tanya_gift:"Розовый латте 3в1",zebra_gift:"Розовый латте 3в1 (х2)",tanya_bonus:"Золотой леденец на палочке",zebra_bonus:"Золотой леденец на палочке",title:"Розовый латте и съедобное золото",zebra_message:`
       <p><strong>Розовый латте</strong> — напиток, который выглядит как unicorn frappuccino из Starbucks, но стоит в 20 раз дешевле! 🦄💕</p>
   
       <h3>История розового латте</h3>
       <p><strong>Началось в Корее (2016-2017):</strong> Корейские кофейни добавляли <strong>розовую воду</strong> или лепестки роз в латте — wellness-тренд.</p>
   
       <p><strong>Starbucks Unicorn Frappuccino (апрель 2017):</strong> Взрывная бомба из розового, фиолетового и сахара. Интернет сошёл с ума! За неделю продали миллионы.</p>
-      <img src="${images.pink}" />
+      <img src="${o.pink}" />
       <p>После этого началась эра <strong>цветного кофе</strong>: Pink Latte, Beetroot Latte, Blue Spirulina Latte. Instagram требовал красоты — кафе давали!</p>
   
       <p><strong>Что внутри нашего розового латте?</strong> Сухое молоко, сахар, растворимый кофе и краситель E122 (кармуазин) или экстракт свеклы. Честно говоря, это ближе к десерту, чем к кофе. Но кто считает калории в адвент-календаре?</p>
       
       <p><strong>Fun fact:</strong> В Австралии есть Ruby Chocolate Latte из натурального <strong>розового какао</strong> (сорт Ruby). Бобы растут в Эквадоре и Бразилии, естественный розовый цвет, вкус ягодный!</p>
-      <img src="${images.rese}" />
+      <img src="${o.rese}" />
       <h3>Золотой леденец — съедобная алхимия ✨</h3>
       <p>Твой бонус — <strong>кристаллический леденец на палочке с кандуриновым напылением</strong>! Это настоящее пересечение науки и магии.</p>
   
@@ -224,22 +209,20 @@ export const windowMessages = [
       <li>Съешь леденец, запей кофе.</li>
       <li><strong>Чатовое:</strong> "В золоте я увидела [образ/чувство/мысль]" 💭✨</li>
     </ol>
-  `,
-
-    tanya_message: `
+  `,tanya_message:`
       <p><strong>Розовый латте</strong> — напиток, который выглядит как unicorn frappuccino из Starbucks, но стоит в 20 раз дешевле! 🦄💕</p>
   
       <h3>История розового латте</h3>
       <p><strong>Началось в Корее (2016-2017):</strong> Корейские кофейни добавляли <strong>розовую воду</strong> или лепестки роз в латте — wellness-тренд.</p>
   
       <p><strong>Starbucks Unicorn Frappuccino (апрель 2017):</strong> Взрывная бомба из розового, фиолетового и сахара. Интернет сошёл с ума! За неделю продали миллионы.</p>
-      <img src="${images.pink}" />
+      <img src="${o.pink}" />
       <p>После этого началась эра <strong>цветного кофе</strong>: Pink Latte, Beetroot Latte, Blue Spirulina Latte. Instagram требовал красоты — кафе давали!</p>
   
       <p><strong>Что внутри нашего розового латте?</strong> Сухое молоко, сахар, растворимый кофе и краситель E122 (кармуазин) или экстракт свеклы. Честно говоря, это ближе к десерту, чем к кофе. Но кто считает калории в адвент-календаре?</p>
       
       <p><strong>Fun fact:</strong> В Австралии есть Ruby Chocolate Latte из натурального <strong>розового какао</strong> (сорт Ruby). Бобы растут в Эквадоре и Бразилии, естественный розовый цвет, вкус ягодный!</p>
-      <img src="${images.rese}" />
+      <img src="${o.rese}" />
       <h3>Золотой леденец — съедобная алхимия ✨</h3>
       <p>Твой бонус — <strong>кристаллический леденец на палочке с кандуриновым напылением</strong>! Это настоящее пересечение науки и магии.</p>
   
@@ -285,29 +268,19 @@ export const windowMessages = [
       <li>Съешь леденец, запей кофе.</li>
       <li><strong>Чатовое:</strong> "В золоте я увидела [образ/чувство/мысль]" 💭✨</li>
     </ol>
-  `,
-  },
-  {
-    day: 3,
-    date: '2025-12-22',
-    tanya_gift: 'Бэггинс кофе',
-    zebra_gift: 'Колумбия декаф',
-    tanya_bonus: 'Ложечка мельхиоровая новогодняя',
-    zebra_bonus: 'Ложечка мельхиоровая новогодняя',
-    title: 'Кофе и мельхиор',
-    tanya_message: `
+  `},{day:3,date:"2025-12-22",tanya_gift:"Бэггинс кофе",zebra_gift:"Колумбия декаф",tanya_bonus:"Ложечка мельхиоровая новогодняя",zebra_bonus:"Ложечка мельхиоровая новогодняя",title:"Кофе и мельхиор",tanya_message:`
     <h3>Йоль прошёл! ☀️</h3>
     <p><strong>21-22 декабря</strong> — только что была <strong>самая длинная ночь</strong> (зимнее солнцестояние)!</p>
 
     <p><strong>Йоль</strong> — древний праздник. Люди боялись: вернётся ли солнце? Или ночь будет удлинняться и дальше, пока света не станет совсем?..</p>
     <p>Но с этого понедельника день растет. Свет возвращается - самое время для кофе 🌅</p>
     <p><strong>"Шииир! Бэггинс!.." 💍</p>
-    <img src="${images.shir}" />
+    <img src="${o.shir}" />
     <p><strong>Baggins Coffee</strong> — это реальная сеть кофеен из Санкт-Петербурга! 195 кофеен по всей России, большинство работает по франшизе.</p>
     <p><strong>Судебная битва с Толкином:</strong> В 2024 году американская компания <strong>Middle-Earth Enterprises LLC</strong> (владеет правами на "Властелина колец" и "Хоббита") попыталась запретить российской компании использовать название Baggins! Они считали, что это вводит в заблуждение — ведь Baggins = фамилия Фродо и Бильбо.</p>
     
     <p><strong>Результат:</strong> Российская компания <strong>выиграла</strong>! Палата по патентным спорам решила: слово "coffee" и изображение козла на логотипе исключают путаницу с хоббитами. Кофейни сохранили название! ☕🎉</p>
-    <img src="${images.tolkin}" />
+    <img src="${o.tolkin}" />
     <h3>Толкин и Льюис</h3>
     <p><strong>J.R.R. Tolkien</strong> и <strong>C.S. Lewis</strong> (автор "Хроник Нарнии") были друзьями, состояли в литературном клубе <strong>Инклинги</strong> (Оксфорд, 1930-1960-е). Встречались в пабах, читали друг другу свои рукописи.</p>
     <p><strong>Толкин НЕ любил "Хроники Нарнии":</strong></p>
@@ -319,7 +292,7 @@ export const windowMessages = [
     
     <h3>Мельхиоровая ложечка 🥄✨</h3>
     <p><strong>Мельхиор</strong> — сплав меди (80-90%) с никелем (10-20%). Цвет серебристый, не ржавеет, прочнее серебра, дешевле в 20-50 раз!</p>
-    <img src="${images.melhior}" />
+    <img src="${o.melhior}" />
     <p><strong>В СССР:</strong> Мельхиор = "народное серебро". Настоящее серебро дорогое, мельхиор — доступная роскошь!</p>
     
     <p><strong>Твоя ложечка:</strong> <strong>Новогодняя серия с ёлочкой!</strong> Такие дарили на свадьбы, хранили в сервантах за стеклом.</p>
@@ -333,14 +306,13 @@ export const windowMessages = [
       <li>Размешай винтажной ложечкой.</li>
       <li><p>Погадай на книге через нейросеть. Зайди в умную нейронку и попроси выдать тебе два абзаца из книги Толкина, идущих подряд. </p>
       <p>После попроси истолковать их, как если бы они были результатом книжного гадания. Повтори, если результат так себе)</p></li>
-      <img src="${images.tolkin1}" />
+      <img src="${o.tolkin1}" />
       <li>Поделись результатами в чате.</li>
       <li><strong>Отметь возвращение света</strong> после самой длинной ночи! ☀️</li>
       <li>Музыка: <a href="https://www.youtube.com/watch?v=_pGaz_qN0cw" target="_blank">Howard Shore — "Concerning Hobbits"</a></li>
     </ol>
     
-  `,
-    zebra_message: `
+  `,zebra_message:`
       <p><strong>Колумбия декаф</strong> — классика specialty! ☕</p>
       <h3>Йоль прошёл! ☀️</h3>
       <p><strong>21-22 декабря</strong> — только что была <strong>самая длинная ночь</strong> (зимнее солнцестояние)!</p>
@@ -348,7 +320,7 @@ export const windowMessages = [
       <p>Но с этого понедельника день растет. Свет возвращается - самое время для кофе 🌅</p>
       <h3>Колумбия</h3>
       <p><strong>Колумбия</strong> = третий крупнейший производитель кофе в мире (после Бразилии и Вьетнама)!</p>
-      <img src="${images.kolumbia}" />
+      <img src="${o.kolumbia}" />
       <p><strong>География:</strong> Анды, высота 1200-2000 м, вулканическая почва, два сезона дождей = урожай круглый год!</p>
     
       <p><strong>Вкус:</strong> Сбалансированный, средняя кислотность, карамель, орехи, чистый профиль. <strong>"Безопасный выбор"</strong> — почти всегда вкусно!</p>
@@ -357,7 +329,7 @@ export const windowMessages = [
     
       <h3>Габриэль Гарсиа Маркес и кофе ☕📖</h3>
       <p><strong>Габо</strong> (как его называли в Колумбии) родился в <strong>Аракатаке</strong> — маленьком городке в зоне банановых плантаций. Но кофе был везде!</p>
-      <img src="${images.markes}" />
+      <img src="${o.markes}" />
       <p><strong>Кофе в его книгах:</strong></p>
       <ul>
         <li>В <strong>"Ста годах одиночества"</strong> герои постоянно пьют кофе — это ритм колумбийской жизни</li>
@@ -380,12 +352,12 @@ export const windowMessages = [
     
       <h3>Декаф Swiss Water Process 💧</h3>
       <p>Колумбия часто использует <strong>Swiss Water Process</strong> — без химии, только вода!</p>
-      <img src="${images.kolumb2}" />
+      <img src="${o.kolumb2}" />
       <p>Качественное зерно → даже без кофеина сохраняется вкус!</p>
     
       <h3>Мельхиоровая ложечка 🥄✨</h3>
       <p><strong>Мельхиор</strong> — сплав меди + никель. В СССР = "народное серебро" (дешевле настоящего, но красиво!).</p>
-      <img src="${images.melhior}" />
+      <img src="${o.melhior}" />
       <p><strong>Твоя ложечка:</strong> Новогодняя серия с ёлочкой (1970-1980-е). Дарили на свадьбы, хранили в сервантах!</p>
       <p>У нас с Танькой по такой же, так что теперь у нас на один общий предмет больше - не татуировкой единой.</p>
       <p>Антиквары советуют не очищать мельхиор эффектным методом с фольгой - это убивает какой-то бесценный слой.</p>
@@ -405,22 +377,12 @@ export const windowMessages = [
     
       </ul>
       <p>Помни: твой декаф — это магия. Кофе, который одновременно есть и нет. Как любовь Фермины и Флорентино — ждала 51 год, 9 месяцев и 4 дня. Терпение!</p>
-    `,
-  },
-  {
-    day: 4,
-    date: '2025-12-23',
-    tanya_gift: 'Гватемала декаф',
-    zebra_gift: 'Гватемала декаф IL DA DA MA',
-    tanya_bonus: 'Сироп Хлебная корочка и каштан',
-    zebra_bonus: 'Сироп соленая мисо-карамель',
-    title: 'Гватемальская солидарность',
-    tanya_message: `
+    `},{day:4,date:"2025-12-23",tanya_gift:"Гватемала декаф",zebra_gift:"Гватемала декаф IL DA DA MA",tanya_bonus:"Сироп Хлебная корочка и каштан",zebra_bonus:"Сироп соленая мисо-карамель",title:"Гватемальская солидарность",tanya_message:`
       <p><strong>Сегодня мы все пьём <strong>гватемальский декаф</strong> в знак солидарности с Зёброй! ☕🤝</p>
       <p>Зёбра не пьёт крепкий кофе, поэтому сегодня все на декафе. Дружба важнее кофеина! 💕</p>
     
       <h3>Гватемала — кофейная страна</h3>
-      <img src="${images.gvatemala1}" />
+      <img src="${o.gvatemala1}" />
       <p>Фото с вайбами Арарата, если бы в Армении было море. <strong>Гватемала</strong> входит в топ-10 производителей кофе в мире. <strong>Вулканическая страна</strong> — 37 вулканов, почва богата минералами = идеальна для кофе!</p>
     
       <p><strong>История гватемальского кофе:</strong></p>
@@ -445,11 +407,11 @@ export const windowMessages = [
 
       <h3>Día de los Muertos: Цветные кладбища и гигантские змеи, иногда вместе 💀🪁</h3>
       <p><strong>1 ноября</strong> — День мёртвых по-гватемальски!</p>
-      <img src="${images.graves}" />
+      <img src="${o.graves}" />
       <p><strong>Цветные кладбища:</strong> семьи красят могилы в яркие цвета: розовый, голубой, жёлтый</p>
     
       <p><strong>Барилетес (Barriletes Gigantes) — гигантские воздушные змеи:</strong></p>
-      <img src="${images.airsnake2}" />
+      <img src="${o.airsnake2}" />
       <ul>
         <li>Деревни Сантьяго Сакатепекес и Сумпанго</li>
         <li>Диаметр до <strong>12-14 метров</strong>! Вес - тяжелее Зёбры и даже меня.</li>
@@ -458,7 +420,7 @@ export const windowMessages = [
 
       <h3>Semana Santa: Ковры из опилок! 🎨</h3>
       <p><strong>Пасхальная неделя</strong> (март-апрель) в Антигуа — один из самых красивых праздников!</p>
-      <img src="${images.carpet1}" />
+      <img src="${o.carpet1}" />
       <p><strong>Alfombras</strong> (ковры):</p>
       <ul>
         <li>Жители создают <strong>цветные временные ковры</strong> на мостовых: опилки + цветы (сосновые иглы, бархатцы, лепестки роз)</li>
@@ -483,9 +445,9 @@ export const windowMessages = [
       <p>Где в Центральной/Латинской Америке нет какой-нибудь ужасной диктатуры? Я прочитала столько клевого, что мне хочется туда переехать.</p>
 
       <p>Мне казалось, за названием бренда IL DA DA MA должна стоять какая-то история. В их телеграм-канале я ее не нашла - зато нашла фотки кофейных ягод!</p>
-      <img src="${images.berries}" />
+      <img src="${o.berries}" />
       <p>И заодно узнала, что ягода кофе - на самом деле не ягода, а косточковый фрукт, как персик или вишня. Однако этой классификацией пользуются только ученые-ботаники. Оттуда я украла эти фотки:</p>
-      <img src="${images.berries1}" />
+      <img src="${o.berries1}" />
       <p>История с названием казалась мне незавершенной, так что я спросила их в чате (вот каких вершин достигла моя социальная смелость!) - но пока они мне не ответили.</p>
     
       <h3>Сироп "Печёный каштан и хлебная корочка" 🌰🍞</h3>
@@ -501,13 +463,12 @@ export const windowMessages = [
       </ol>
     
       <p>Представь кофейные плантации на склонах вулканов, цветные ковры под ногами процессий, гигантские змеи над кладбищами, и маримба, которая играет песню свободы! 🌋🪁🎶</p>
-    `,
-    zebra_message: `
+    `,zebra_message:`
       <p><strong>Сегодня все пьют декаф!</strong> Таня тоже на гватемальском декафе в знак вынужденной солидарности с тобой! ☕🤝</p>
       <p>Дружба важнее кофеина! </p>
     
       <h3>Гватемала — кофейная страна</h3>
-      <img src="${images.gvatemala1}" />
+      <img src="${o.gvatemala1}" />
       <p>Фото с вайбами Арарата, если бы в Армении было море. <strong>Гватемала</strong> входит в топ-10 производителей кофе в мире. <strong>Вулканическая страна</strong> — 37 вулканов, почва богата минералами = идеальна для кофе!</p>
     
       <p><strong>История гватемальского кофе:</strong></p>
@@ -532,11 +493,11 @@ export const windowMessages = [
 
       <h3>Día de los Muertos: Цветные кладбища и гигантские змеи, иногда вместе 💀🪁</h3>
       <p><strong>1 ноября</strong> — День мёртвых по-гватемальски!</p>
-      <img src="${images.graves}" />
+      <img src="${o.graves}" />
       <p><strong>Цветные кладбища:</strong> семьи красят могилы в яркие цвета: розовый, голубой, жёлтый</p>
     
       <p><strong>Барилетес (Barriletes Gigantes) — гигантские воздушные змеи:</strong></p>
-      <img src="${images.airsnake2}" />
+      <img src="${o.airsnake2}" />
       <ul>
         <li>Деревни Сантьяго Сакатепекес и Сумпанго</li>
         <li>Диаметр до <strong>12-14 метров</strong>! Вес - тяжелее тебя и даже меня.</li>
@@ -545,7 +506,7 @@ export const windowMessages = [
 
       <h3>Semana Santa: Ковры из опилок! 🎨</h3>
       <p><strong>Пасхальная неделя</strong> (март-апрель) в Антигуа — один из самых красивых праздников!</p>
-      <img src="${images.carpet1}" />
+      <img src="${o.carpet1}" />
       <p><strong>Alfombras</strong> (ковры):</p>
       <ul>
         <li>Жители создают <strong>цветные временные ковры</strong> на мостовых: опилки + цветы (сосновые иглы, бархатцы, лепестки роз)</li>
@@ -568,9 +529,9 @@ export const windowMessages = [
       <p>Где в Центральной/Латинской Америке нет какой-нибудь ужасной диктатуры? Я прочитала столько клевого, что мне хочется туда переехать.</p>
 
       <p>Мне казалось, за названием бренда IL DA DA MA должна стоять какая-то история. В их телеграм-канале я ее не нашла - зато нашла фотки кофейных ягод!</p>
-      <img src="${images.berries}" />
+      <img src="${o.berries}" />
       <p>И заодно узнала, что ягода кофе - на самом деле не ягода, а косточковый фрукт, как персик или вишня. Однако этой классификацией пользуются только ученые-ботаники. Оттуда я украла эти фотки:</p>
-      <img src="${images.berries1}" />
+      <img src="${o.berries1}" />
       <p>История с названием казалась мне незавершенной, так что я спросила их в чате (вот каких вершин достигла моя социальная смелость!) - но пока они мне не ответили.</p>
     
       <h3>Сироп "Соленая мисо-карамель" 🧂🍮</h3>
@@ -589,17 +550,7 @@ export const windowMessages = [
       </ol>
     
       <p>Представь кофейные плантации на склонах вулканов, цветные ковры под ногами процессий, гигантские змеи над кладбищами, и маримба, которая играет песню свободы! 🌋🪁🎶</p>
-  `,
-  },
-  {
-    day: 5,
-    date: '2025-12-24',
-    tanya_gift: 'Дрип-кофе: Эфиопия + Бразилия',
-    zebra_gift: 'Дрип-кофе декаф (Вкусвилл)',
-    tanya_bonus: 'Ириски с гималайской солью',
-    zebra_bonus: 'Ириски с гималайской солью',
-    title: 'Сочельник: дрип-кофе и розовая соль',
-    tanya_message: `
+  `},{day:5,date:"2025-12-24",tanya_gift:"Дрип-кофе: Эфиопия + Бразилия",zebra_gift:"Дрип-кофе декаф (Вкусвилл)",tanya_bonus:"Ириски с гималайской солью",zebra_bonus:"Ириски с гималайской солью",title:"Сочельник: дрип-кофе и розовая соль",tanya_message:`
       <p>Сегодня отдыхаем от лонгридов про кофе - у тебя микс зерен из разных частей света от Вкусвилла. Но сегодня Сочельник, так что отдыхаем от лонгридов не от всей души.</p>
       <h3>Сочельник — что это, собственно? 🕯️</h3>
       <p><strong>24 декабря</strong> — канун католического Рождества (25 декабря). Последний день перед праздником.</p>
@@ -608,7 +559,7 @@ export const windowMessages = [
       <p><strong>Традиции:</strong> Пост до первой звезды, свечи, семейный ужин, тишина. Момент остановиться.</p>
     
       <h3>Сочельник в разных странах 🌍</h3>
-      <img src="${images.fish}" />
+      <img src="${o.fish}" />
     
       <h4>Польша (Wigilia).Самая красивая традиция!</h4>
       <ul>
@@ -637,7 +588,7 @@ export const windowMessages = [
         <li>Panettone (рождественский кекс) с вином 🍷</li>
       </ul>
 
-      <img src="${images.fish1}" />
+      <img src="${o.fish1}" />
     
       <h4>Испания (Nochebuena) 🇪🇸</h4>
       <ul>
@@ -683,7 +634,7 @@ export const windowMessages = [
       <li>Пляжное Рождество на побережье! 🏖️</li>
     </ul>
 
-    <img src="${images.brazil1}" />
+    <img src="${o.brazil1}" />
     
     <h3>Общие темы Сочельника:</h3>
     <ul>
@@ -698,7 +649,7 @@ export const windowMessages = [
     <p> Твои психоделические пакеты:</strong> Specialty-волна! Яркие цвета = молодые обжарщики, которые отказались от "серьёзного" дизайна. Кофе = радость, а не элитарность!</p>
     
     <h3>Эфиопия — родина кофе 🇪🇹</h3>
-    <img src="${images.ethiopia}" />
+    <img src="${o.ethiopia}" />
     <p><strong>Легенда Калди (IX век):</strong></p>
     <ul>
       <li>Пастух Калди заметил: его козы ели красные ягоды → танцевали всю ночь!</li>
@@ -707,7 +658,7 @@ export const windowMessages = [
       <li>Но запах был так хорош, что решили заваривать!</li>
     </ul>
     <p>Между прочим, есть фотопруф:</p>
-    <img src="${images.goats}" />
+    <img src="${o.goats}" />
     
     <p><strong>Кофейная церемония (bunna):</strong></p>
     <ul>
@@ -813,7 +764,7 @@ export const windowMessages = [
 
 <p><strong>Rabanada</strong> — это бразильская версия French Toast, традиционный десерт на Рождество и Новый год!</p>
 <p><strong>История:</strong> Португальцы привезли рецепт в Бразилию в XVI веке. Изначально делали из чёрствого хлеба (не выбрасывать же), но блюдо стало праздничным.</p>
-<img src="${images.rabanda}" />
+<img src="${o.rabanda}" />
 <h4>Приготовление:</h4>
 
 <ol>
@@ -842,8 +793,7 @@ export const windowMessages = [
   <li><strong>С порто:</strong> Добавить 50 мл портвейна в молочную смесь (взрослая версия!)</li>
 </ul>
     <p>Пусть этот Сочельник будет тихим, тёплым и уютным! 🕯️☕💕</p>
-  `,
-    zebra_message: `
+  `,zebra_message:`
   <p>Сегодня отдыхаем от лонгридов про кофе - у тебя микс зерен из разных частей света от Вкусвилла. Но сегодня Сочельник, так что отдыхаем от лонгридов не от всей души.</p>
     <h3>Сочельник — что это, собственно? 🕯️</h3>
     <p><strong>24 декабря</strong> — канун католического Рождества (25 декабря). Последний день перед праздником.</p>
@@ -852,7 +802,7 @@ export const windowMessages = [
     <p><strong>Традиции:</strong> Пост до первой звезды, свечи, семейный ужин, тишина. Момент остановиться.</p>
     
     <h3>Сочельник в разных странах 🌍</h3>
-    <img src="${images.fish}" />
+    <img src="${o.fish}" />
     
     <h4>Польша (Wigilia).Самая красивая традиция!</h4>
     <ul>
@@ -881,7 +831,7 @@ export const windowMessages = [
       <li>Panettone (рождественский кекс) с вином 🍷</li>
     </ul>
 
-    <img src="${images.fish1}" />
+    <img src="${o.fish1}" />
     
     <h4>Испания (Nochebuena) 🇪🇸</h4>
     <ul>
@@ -927,7 +877,7 @@ export const windowMessages = [
       <li>Пляжное Рождество на побережье 🏖️</li>
     </ul>
 
-    <img src="${images.brazil1}" />
+    <img src="${o.brazil1}" />
     
     <h3>Общие темы Сочельника:</h3>
     <ul>
@@ -981,7 +931,7 @@ export const windowMessages = [
 
     <p>На всякий случай вот рецепт бразильских гренок:</p>
     <h3>Rabanada — бразильские рождественские гренки 🍞</h3>
-    <img src="${images.rabanda}" />
+    <img src="${o.rabanda}" />
 
 <p><strong>Rabanada</strong> — это бразильская версия French Toast, традиционный десерт на Рождество и Новый год!</p>
 <p><strong>История:</strong> Португальцы привезли рецепт в Бразилию в XVI веке. Изначально делали из чёрствого хлеба (не выбрасывать же), но блюдо стало праздничным.</p>
@@ -1015,17 +965,7 @@ export const windowMessages = [
 </ul>
     
     <p>Пусть этот Сочельник будет тихим, тёплым и уютным! 🕯️☕💕</p>
-  `,
-  },
-  {
-    day: 6,
-    date: '2025-12-25',
-    tanya_gift: 'Кофе из Гондураса',
-    zebra_gift: 'Напиток: кэроб, цикорий, бобы тонка, кардамон',
-    tanya_bonus: 'Протеиновое печенье',
-    zebra_bonus: 'Протеиновое печенье',
-    title: 'Рождество: Гондурас и кофейные блокады',
-    tanya_message: `
+  `},{day:6,date:"2025-12-25",tanya_gift:"Кофе из Гондураса",zebra_gift:"Напиток: кэроб, цикорий, бобы тонка, кардамон",tanya_bonus:"Протеиновое печенье",zebra_bonus:"Протеиновое печенье",title:"Рождество: Гондурас и кофейные блокады",tanya_message:`
     <h3>С Рождеством! 🎄🎁</h3>
     <p><strong>25 декабря</strong> — католическое и протестантское Рождество.</p>
     
@@ -1033,7 +973,7 @@ export const windowMessages = [
     
     <h3>Гондурас — неизвестный кофейный герой</h3>
     <p><strong>Гондурас</strong> — страна, о которой мало кто думает, когда пьёт кофе. Но это <strong>крупнейший производитель кофе в Центральной Америке</strong>!</p>
-    <img src="${images.honduras}" />
+    <img src="${o.honduras}" />
     <p><strong>География:</strong></p>
     <ul>
       <li>Центральная Америка, между Гватемалой и Никарагуа. Карибское побережье + Тихий океан</li>
@@ -1049,7 +989,7 @@ export const windowMessages = [
       <li>Долго продавали как "Central American blend" без имени страны. Репутация: "дешёвый, для блендов"</li>
       <li><strong>Сейчас:</strong> Specialty-волна меняет всё! Гондурас в топовых обжарках</li>
     </ul>
-    <img src="${images.resp}" />
+    <img src="${o.resp}" />
     
     <p><strong>6 кофейных регионов:</strong></p>
     <ul>
@@ -1060,7 +1000,7 @@ export const windowMessages = [
       <li><strong>Agalta</strong> — восточный, тропические фрукты.</li>
       <li><strong>El Paraíso</strong> — у границы с Никарагуа, сладкий, мягкий.</li>
     </ul>
-    <img src="${images.honduras1}" />
+    <img src="${o.honduras1}" />
     <p><strong>Вкус Гондураса: "надёжный"</strong> — похож на бразильский, но с большей сложностью.</p>
     <p><strong>Fun fact:</strong> В 2012 Гондурас впервые выиграл Cup of Excellence (международный конкурс качества кофе)! Многие фермеры — потомки майя, выращивают кофе традиционными методами.</p>
     
@@ -1123,9 +1063,8 @@ export const windowMessages = [
       <li>Нейронки считают, что после протеинового печенья задание должно быть про приседания, но это бессмысленно и подло.</li>
       <li>Мне больше нравится другое - поделись в чате твоей самой любимой рождественской песней/музыкой, а потом самой раздражающей.</li>
     </ol>
-    <img src="${images.mem}" />
-  `,
-    zebra_message: `
+    <img src="${o.mem}" />
+  `,zebra_message:`
     <h3>С Рождеством! 🎄🎁</h3>
     <p><strong>25 декабря</strong> — католическое и протестантское Рождество!</p>
     
@@ -1150,7 +1089,7 @@ export const windowMessages = [
     
     <h3>Кофейные блокады — история заменителей ☕🚫</h3>
     <p>На протяжении истории кофе периодически исчезал (войны, блокады, дефицит). Люди искали замену!</p>
-    <img src="${images.cicoriy}" />
+    <img src="${o.cicoriy}" />
     <h4>1. Цикорий — король заменителей ☕</h4>
     <p><strong>Что это:</strong> Корень растения Cichorium intybus (родственник одуванчика!). Сушат, обжаривают, мелют.</p>
     
@@ -1190,7 +1129,7 @@ export const windowMessages = [
       <li><strong>Первая и Вторая мировые войны:</strong> Германия, Франция использовали жёлуди</li>
       <li><strong>Корейская война:</strong> Dotorimuk (желудёвое желе) + жёлудёвый чай</li>
     </ul>
-    <img src="${images.cafe}" />
+    <img src="${o.cafe}" />
     
     <p><strong>Вкус:</strong> Древесный, ореховый, землистый. Вяжущий (танины!).</p>
     
@@ -1198,7 +1137,7 @@ export const windowMessages = [
     
     <h4>4. Кэроб — шоколадный заменитель 🍫</h4>
     <p><strong>Что это:</strong> Порошок из стручков рожкового дерева (Средиземноморье).</p>
-    <img src="${images.carob}" />
+    <img src="${o.carob}" />
     <p><strong>История:</strong></p>
     <ul>
       <li>Древние египтяне и греки ели стручки</li>
@@ -1232,12 +1171,12 @@ export const windowMessages = [
     </ul>
     
     <p><strong>Вкус:</strong> Ваниль, миндаль, вишня, карамель. Тёплый, обволакивающий.</p>
-    <img src="${images.tonka}" />
+    <img src="${o.tonka}" />
     <p><strong>⚠️ Важно:</strong> Содержат кумарин (в больших дозах токсичен). В США запрещены в еде с 1954! В Европе разрешены в микродозах. В твоём стике — безопасная доза!</p>
     
     <h4>7. Зелёный кардамон — королева специй 👑</h4>
     <p><strong>Что это:</strong> Специя из семейства имбирных (Индия).</p>
-    <img src="${images.kardamon}" />
+    <img src="${o.kardamon}" />
     <p><strong>Вкус:</strong> Цитрусовый, эвкалиптовый, мятный, сладко-пряный.</p>
     
     <p><strong>Где используют:</strong></p>
@@ -1293,28 +1232,18 @@ export const windowMessages = [
     </ol>
     
     <p><strong>С Рождеством!</strong> 🎄☕</p>
-    <img src="${images.mem}" />
-  `,
-  },
-  {
-    day: 7,
-    date: '2025-12-26',
-    tanya_gift: 'Армянский детский растворимый кофе',
-    zebra_gift: 'Армянский детский растворимый кофе',
-    tanya_bonus: 'Зефир в виде кошачьей лапки',
-    zebra_bonus: 'Зефир в виде кошачьей лапки',
-    title: 'Ереван — город, в который я влюбилась',
-    tanya_message: `
+    <img src="${o.mem}" />
+  `},{day:7,date:"2025-12-26",tanya_gift:"Армянский детский растворимый кофе",zebra_gift:"Армянский детский растворимый кофе",tanya_bonus:"Зефир в виде кошачьей лапки",zebra_bonus:"Зефир в виде кошачьей лапки",title:"Ереван — город, в который я влюбилась",tanya_message:`
     <h3>Сегодня у нас Ереван ❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥</h3>
-    <img src="${images.yerevan2}" />
+    <img src="${o.yerevan2}" />
     <p>Ереван — это город, где утром пьют кофе, днём пьют кофе, вечером пьют кофе, а потом пьют коньяк. Где на каждом углу кофейня и свежие цветы, а еще отличные фонтанчики с питьевой водой.</p>
-    <img src="${images.lion}" />    
+    <img src="${o.lion}" />    
     <p>Если спускаешься вниз по Каскаду (а подниматься — 572 ступени! — никто не любит), первое, что видишь внизу — <strong>огромный лев из автомобильных покрышек</strong>.</p>
     <p>Его сделал уличный художник. Просто взял старые покрышки и собрал льва — гриву, лапы, морду. Лев сидит там годами и всеми обожаем.</p>
     <p><strong>Это Ереван:</strong> античные колонны в музеях, советские панельки на окраинах с коврами и бельем на веревках от окна к окну, розовый туф в центре — и лев из покрышек. Всё вместе. И это нормально.</p>
-    <img src="${images.yerevan1}" />
+    <img src="${o.yerevan1}" />
     <p>Сейчас там достаточно тепло, чтобы цвели розы - а еще все украшено к Рождеству в три слоя, даром что празднуют они в январе.</p>
-    <img src="${images.bears}" />
+    <img src="${o.bears}" />
     <h3>Армяне и кофе — это серьёзно ☕</h3>
 
     <p><strong>Как готовят:</strong></p>
@@ -1327,7 +1256,7 @@ export const windowMessages = [
       <li>С стаканом воды (чтобы "очистить вкус")</li>
       <li>Иногда с кардамоном</li>
     </ul>
-    <img src="${images.yazzve}" />
+    <img src="${o.yazzve}" />
     <p><strong>Как пьют:</strong></p>
     <ul>
       <li>Маленькими глотками</li>
@@ -1349,7 +1278,7 @@ export const windowMessages = [
     <h3>Арарат — гора, которую украли 🏔️💔</h3>
     <p>Если стоишь в Ереване и смотришь на северо-запад — видишь <strong>две снежные вершины</strong>. Большой Арарат и Малый Арарат.</p>
     <p><strong>Проблема:</strong> Арарат сейчас в Турции.</p>
-    <img src="${images.ararat}" />
+    <img src="${o.ararat}" />
     <p><strong>Как так вышло:</strong></p>
     <ul>
       <li>Арарат — символ Армении (на гербе, на бутылках коньяка, в сердцах).</li>
@@ -1371,7 +1300,7 @@ export const windowMessages = [
       <li>39 букву добавили в советское время по сложносоставным причинам (я прочитала, но не въехала - как будто добавили третью букву для звука о, потому что у соседей была и такая тоже. Но это неточно).</li>
       <li>Округлые, плавные линии. Выглядят почти как орнамент. Я пыталась учить их по вывескам.</li>
     </ul>
-    <img src="${images.abc}" />
+    <img src="${o.abc}" />
     
     <p><strong>Где увидеть:</strong></p>
     <p>В Ереване на склоне горы Арагац есть <strong>памятник армянскому алфавиту</strong> — 38 огромных каменных букв (2-3 метра высотой!). Люди ходят между ними, фотографируются, трогают.</p>
@@ -1385,7 +1314,7 @@ export const windowMessages = [
       <li>1899 год — завод купил Николай Шустов, привёз французских мастеров, внедрил технологии.</li>
       <li>1900 год — армянский коньяк выиграл Гран-при на Всемирной выставке в Париже! Французы были в шоке.</li>
     </ul>
-    <img src="${images.noy}" />
+    <img src="${o.noy}" />
     <p><strong>Почему армянский коньяк особенный:</strong></p>
     <ul>
       <li><strong>Терруар:</strong> Араратская долина, вулканическая почва, горный климат</li>
@@ -1433,19 +1362,18 @@ export const windowMessages = [
     
    <p><em>В Средние века европейские короли и рыцари хоронили своё сердце отдельно от тела — в месте, которое любили больше всего. Ричард Львиное Сердце завещал своё сердце Руану, Шопен — Варшаве, Ливингстон — Африке.</em></p>
 <p><em>Я бы завещала похоронить свое сердце в Ереване, если бы кто-то взялся.</em></p>
-<img src="${images.yerevan3}" />
-`,
-    zebra_message: `
+<img src="${o.yerevan3}" />
+`,zebra_message:`
     <h3>Сегодня у нас Ереван ❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥</h3>
-    <img src="${images.yerevan2}" />
+    <img src="${o.yerevan2}" />
     <p>Ереван — это город, где утром пьют кофе, днём пьют кофе, вечером пьют кофе, а потом пьют коньяк. Где на каждом углу кофейня и свежие цветы, а еще отличные фонтанчики с питьевой водой.</p>
-    <img src="${images.lion}" />    
+    <img src="${o.lion}" />    
     <p>Если спускаешься вниз по Каскаду (а подниматься — 572 ступени! — никто не любит), первое, что видишь внизу — <strong>огромный лев из автомобильных покрышек</strong>.</p>
     <p>Его сделал уличный художник. Просто взял старые покрышки и собрал льва — гриву, лапы, морду. Лев сидит там годами и всеми обожаем.</p>
     <p><strong>Это Ереван:</strong> античные колонны в музеях, советские панельки на окраинах с коврами и бельем на веревках от окна к окну, розовый туф в центре — и лев из покрышек. Всё вместе. И это нормально.</p>
-    <img src="${images.yerevan1}" />
+    <img src="${o.yerevan1}" />
     <p>Сейчас там достаточно тепло, чтобы цвели розы - а еще все украшено к Рождеству в три слоя, даром что празднуют они в январе.</p>
-    <img src="${images.bears}" />
+    <img src="${o.bears}" />
     <h3>Армяне и кофе — это серьёзно ☕</h3>
 
     <p><strong>Как готовят:</strong></p>
@@ -1458,7 +1386,7 @@ export const windowMessages = [
       <li>С стаканом воды (чтобы "очистить вкус")</li>
       <li>Иногда с кардамоном</li>
     </ul>
-    <img src="${images.yazzve}" />
+    <img src="${o.yazzve}" />
     <p><strong>Как пьют:</strong></p>
     <ul>
       <li>Маленькими глотками</li>
@@ -1480,7 +1408,7 @@ export const windowMessages = [
     <h3>Арарат — гора, которую украли 🏔️💔</h3>
     <p>Если стоишь в Ереване и смотришь на северо-запад — видишь <strong>две снежные вершины</strong>. Большой Арарат и Малый Арарат.</p>
     <p><strong>Проблема:</strong> Арарат сейчас в Турции.</p>
-    <img src="${images.ararat}" />
+    <img src="${o.ararat}" />
     <p><strong>Как так вышло:</strong></p>
     <ul>
       <li>Арарат — символ Армении (на гербе, на бутылках коньяка, в сердцах).</li>
@@ -1502,7 +1430,7 @@ export const windowMessages = [
       <li>39 букву добавили в советское время по сложносоставным причинам (я прочитала, но не въехала - как будто добавили третью букву для звука о, потому что у соседей была и такая тоже. Но это неточно).</li>
       <li>Округлые, плавные линии. Выглядят почти как орнамент. Я пыталась учить их по вывескам.</li>
     </ul>
-    <img src="${images.abc}" />
+    <img src="${o.abc}" />
     
     <p><strong>Где увидеть:</strong></p>
     <p>В Ереване на склоне горы Арагац есть <strong>памятник армянскому алфавиту</strong> — 38 огромных каменных букв (2-3 метра высотой!). Люди ходят между ними, фотографируются, трогают.</p>
@@ -1516,7 +1444,7 @@ export const windowMessages = [
       <li>1899 год — завод купил Николай Шустов, привёз французских мастеров, внедрил технологии.</li>
       <li>1900 год — армянский коньяк выиграл Гран-при на Всемирной выставке в Париже! Французы были в шоке.</li>
     </ul>
-    <img src="${images.noy}" />
+    <img src="${o.noy}" />
     <p><strong>Почему армянский коньяк особенный:</strong></p>
     <ul>
       <li><strong>Терруар:</strong> Араратская долина, вулканическая почва, горный климат</li>
@@ -1564,22 +1492,12 @@ export const windowMessages = [
     
    <p><em>В Средние века европейские короли и рыцари хоронили своё сердце отдельно от тела — в месте, которое любили больше всего. Ричард Львиное Сердце завещал своё сердце Руану, Шопен — Варшаве, Ливингстон — Африке.</em></p>
 <p><em>Я бы завещала похоронить свое сердце в Ереване, если бы кто-то взялся.</em></p>
-<img src="${images.yerevan3}" />
-`,
-  },
-  {
-    day: 8,
-    date: '2025-12-27',
-    tanya_gift: 'Какао "Опоссум" (пьёт и больше не орёт)',
-    zebra_gift: 'Какао "Опоссум" (пьёт и больше не орёт)',
-    tanya_bonus: 'Маршмеллоу (маленькие)',
-    zebra_bonus: 'Маршмеллоу (маленькие)',
-    title: 'Опоссумы, какао и философия',
-    tanya_message: `
+<img src="${o.yerevan3}" />
+`},{day:8,date:"2025-12-27",tanya_gift:'Какао "Опоссум" (пьёт и больше не орёт)',zebra_gift:'Какао "Опоссум" (пьёт и больше не орёт)',tanya_bonus:"Маршмеллоу (маленькие)",zebra_bonus:"Маршмеллоу (маленькие)",title:"Опоссумы, какао и философия",tanya_message:`
     <p>Сегодня у нас особенный день — день <strong>опоссумов</strong>! И какао с маршмеллоу, потому что после какао действительно меньше орёшь (по крайней мере пока он не кончится).</p>
     <p>А еще это выходной, когда никуда не надо бежать, так что можно обойтись без кофеина.</p>
 
-    <img src="${images.possaMom}" />
+    <img src="${o.possaMom}" />
     <h3>Все, что вы хотели знать об опоссумах, но боялись спросить:</h3>
     
     <p><strong>1. "Playing possum" — притворяются мёртвыми!</strong></p>
@@ -1606,7 +1524,7 @@ export const windowMessages = [
       <li>Острые, как иголки</li>
       <li>Когда опоссумы шипят — выглядят страшно, но это блеф: опоссумы <strong>не агрессивные</strong></li>
     </ul>
-    <img src="${images.smile}" />
+    <img src="${o.smile}" />
     <p><strong>4. "Trash possums" — всеядные мусорщики</strong></p>
     <ul>
       <li>Едят всё: насекомых, фрукты, падаль, мусор</li>
@@ -1618,7 +1536,7 @@ export const windowMessages = [
       <li>В дикой природе: 2-4 года</li>
       <li>Много хищников (совы, койоты, машины)</li>
     </ul>
-    <img src="${images.merch}" />
+    <img src="${o.merch}" />
     <p><strong>6. Живые ископаемые!</strong></p>
     <ul>
       <li>Опоссумы почти не изменились за <strong>70 миллионов лет!</strong></li>
@@ -1627,7 +1545,7 @@ export const windowMessages = [
     </ul>
     
     <h3>Опоссумы vs Поссумы — не путать! 🐭🆚🐨</h3>
-    <img src="${images.possOrOposs}" />
+    <img src="${o.possOrOposs}" />
     <p><strong>Опоссумы (Opossums):</strong></p>
     <ul>
       <li>Северная и Южная Америка. Виргинский опоссум (Virginia opossum) — самый известный</li>
@@ -1647,7 +1565,7 @@ export const windowMessages = [
     <ul>
     <li>В США с 1988 года официально признан День признания роли опоссумов, который отмечается ежегодно в четвёртую субботу января. У нас есть шансы его отметить!</li>
       <li>"Они милые и полезные!"</li>
-      <img src="${images.poss}" />
+      <img src="${o.poss}" />
       <li>Футболки, стикеры, мерч, социальные медиа: #opossums, #trashanimals, #opossumpower</li>
     </ul>
     
@@ -1660,7 +1578,7 @@ export const windowMessages = [
       <li>Едят мусор</li>
       <li>Ночные существа</li>
     </ul>
-    <img src="${images.thief}" />
+    <img src="${o.thief}" />
 
     <h3>Больше про National Opossum Appreciation Day 🐭🎉</h3>
 
@@ -1686,7 +1604,7 @@ export const windowMessages = [
   <li>Посты в соцсетях с фактами про опоссумов</li>
   <li>Инфографика: "10 причин любить опоссумов"</li>
 </ul>
-<img src="${images.possaKnowl}" />
+<img src="${o.possaKnowl}" />
 <p><strong>Акции в зоопарках и центрах реабилитации:</strong></p>
 <ul>
   <li>Открытые дни</li>
@@ -1700,7 +1618,7 @@ export const windowMessages = [
   <li>Люди постят фото опоссумов, мемы про опоссумов взрывают интернет</li>
   <li>Инфлюенсеры (у них ест инфлюенсеры!) рассказывают о пользе опоссумов</li>
 </ul>
-<img src="${images.merch1}" />
+<img src="${o.merch1}" />
 <p><strong>Мерч и fundraising:</strong></p>
 <ul>
   <li>Футболки (у меня уже штук шест), стикеры, значки, открытки</li>
@@ -1721,21 +1639,20 @@ export const windowMessages = [
     <ol>
       <li>Завари какао, добавь маршмеллоу</li>
       <li><strong>Какой опоссум ты сегодня?</strong></li>
-      <img src="${images.poss1}" />
-      <img src="${images.poss2}" />
-      <img src="${images.poss3}" />
-      <img src="${images.poss4}" />
-      <img src="${images.poss5}" />
-      <img src="${images.possaMom1}" />
+      <img src="${o.poss1}" />
+      <img src="${o.poss2}" />
+      <img src="${o.poss3}" />
+      <img src="${o.poss4}" />
+      <img src="${o.poss5}" />
+      <img src="${o.possaMom1}" />
       <li>Выбери заслуживающую того проблему и притворись мертвым.</li>
       <li><strong>Чат:</strong> "Сегодня я опоссум №___, потому что ___"</li>
     </ol>
-  `,
-    zebra_message: `
+  `,zebra_message:`
     <p>Сегодня у нас особенный день — день <strong>опоссумов</strong>! И какао с маршмеллоу, потому что после какао действительно меньше орёшь (по крайней мере пока он не кончится).</p>
     <p>А еще это выходной, когда никуда не надо бежать, так что можно обойтись без кофеина.</p>
 
-    <img src="${images.possaMom}" />
+    <img src="${o.possaMom}" />
     <h3>Все, что вы хотели знать об опоссумах, но боялись спросить:</h3>
     
     <p><strong>1. "Playing possum" — притворяются мёртвыми!</strong></p>
@@ -1762,7 +1679,7 @@ export const windowMessages = [
       <li>Острые, как иголки</li>
       <li>Когда опоссумы шипят — выглядят страшно, но это блеф: опоссумы <strong>не агрессивные</strong></li>
     </ul>
-    <img src="${images.smile}" />
+    <img src="${o.smile}" />
     <p><strong>4. "Trash possums" — всеядные мусорщики</strong></p>
     <ul>
       <li>Едят всё: насекомых, фрукты, падаль, мусор</li>
@@ -1774,7 +1691,7 @@ export const windowMessages = [
       <li>В дикой природе: 2-4 года</li>
       <li>Много хищников (совы, койоты, машины)</li>
     </ul>
-    <img src="${images.merch}" />
+    <img src="${o.merch}" />
     <p><strong>6. Живые ископаемые!</strong></p>
     <ul>
       <li>Опоссумы почти не изменились за <strong>70 миллионов лет!</strong></li>
@@ -1783,7 +1700,7 @@ export const windowMessages = [
     </ul>
     
     <h3>Опоссумы vs Поссумы — не путать! 🐭🆚🐨</h3>
-    <img src="${images.possOrOposs}" />
+    <img src="${o.possOrOposs}" />
     <p><strong>Опоссумы (Opossums):</strong></p>
     <ul>
       <li>Северная и Южная Америка. Виргинский опоссум (Virginia opossum) — самый известный</li>
@@ -1803,7 +1720,7 @@ export const windowMessages = [
     <ul>
     <li>В США с 1988 года официально признан День признания роли опоссумов, который отмечается ежегодно в четвёртую субботу января. У нас есть шансы его отметить!</li>
       <li>"Они милые и полезные!"</li>
-      <img src="${images.poss}" />
+      <img src="${o.poss}" />
       <li>Футболки, стикеры, мерч, социальные медиа: #opossums, #trashanimals, #opossumpower</li>
     </ul>
     
@@ -1816,7 +1733,7 @@ export const windowMessages = [
       <li>Едят мусор</li>
       <li>Ночные существа</li>
     </ul>
-    <img src="${images.thief}" />
+    <img src="${o.thief}" />
 
     <h3>Больше про National Opossum Appreciation Day 🐭🎉</h3>
 
@@ -1842,7 +1759,7 @@ export const windowMessages = [
   <li>Посты в соцсетях с фактами про опоссумов</li>
   <li>Инфографика: "10 причин любить опоссумов"</li>
 </ul>
-<img src="${images.possaKnowl}" />
+<img src="${o.possaKnowl}" />
 <p><strong>Акции в зоопарках и центрах реабилитации:</strong></p>
 <ul>
   <li>Открытые дни</li>
@@ -1856,7 +1773,7 @@ export const windowMessages = [
   <li>Люди постят фото опоссумов, мемы про опоссумов взрывают интернет</li>
   <li>Инфлюенсеры (у них ест инфлюенсеры!) рассказывают о пользе опоссумов</li>
 </ul>
-<img src="${images.merch1}" />
+<img src="${o.merch1}" />
 <p><strong>Мерч и fundraising:</strong></p>
 <ul>
   <li>Футболки (у меня уже штук шест), стикеры, значки, открытки</li>
@@ -1877,31 +1794,21 @@ export const windowMessages = [
     <ol>
       <li>Завари какао, добавь маршмеллоу</li>
       <li><strong>Какой опоссум ты сегодня?</strong></li>
-      <img src="${images.poss1}" />
-      <img src="${images.poss2}" />
-      <img src="${images.poss3}" />
-      <img src="${images.poss4}" />
-      <img src="${images.poss5}" />
-      <img src="${images.possaMom1}" />
+      <img src="${o.poss1}" />
+      <img src="${o.poss2}" />
+      <img src="${o.poss3}" />
+      <img src="${o.poss4}" />
+      <img src="${o.poss5}" />
+      <img src="${o.possaMom1}" />
       <li>Выбери заслуживающую того проблему и притворись мертвым.</li>
       <li><strong>Чат:</strong> "Сегодня я опоссум №___, потому что ___"</li>
     </ol>
-  `,
-  },
-  {
-    day: 9,
-    date: '2025-12-28',
-    tanya_gift: 'Чай ромашковый',
-    zebra_gift: 'Чай ромашковый',
-    tanya_bonus: 'Твикс имбирный',
-    zebra_bonus: 'Твикс имбирный',
-    title: 'Ромашковый чай за 1000 рублей',
-    tanya_message: `
+  `},{day:9,date:"2025-12-28",tanya_gift:"Чай ромашковый",zebra_gift:"Чай ромашковый",tanya_bonus:"Твикс имбирный",zebra_bonus:"Твикс имбирный",title:"Ромашковый чай за 1000 рублей",tanya_message:`
       <p><strong>Ромашковый чай</strong> — напиток, который недавно был в центе московских обсуждений 🌼☕💸</p>
       
       <h3>История про чай за 1000 рублей</h3>
       <p>Оченью 2025 года в Кофемании поллитра ромшкового чая продавали почти за косарь. "Кипяток для избранных", писали в обзорах.</p>
-      <img src="${images.chamomileTea}" />
+      <img src="${o.chamomileTea}" />
       <p><strong>Реакция интернета:</strong></p>
       <ul>
         <li>"Это просто ромашка! Её в аптеке 50 рублей!"</li>
@@ -1917,14 +1824,14 @@ export const windowMessages = [
       <p><strong>Но:</strong> В Starbucks обычный латте стоит 400₽ (себестоимость 50₽). Наценка 700%! Это норма для HoReCa (отели-рестораны-кафе).</p>
       <p>Пока нейронка не ушла в историю ромашки, напомню, что теперь он у тебя совершенно даром - и даже с Твиксом, который весь из себя имбирная limit edition.</p>      
       <h3>Ромашка — простое, но мощное растение</h3>
-      <img src="${images.chamomile1}" />
+      <img src="${o.chamomile1}" />
       <p><strong>История:</strong></p>
       <ul>
         <li><strong>Древний Египет:</strong> Посвящали ромашку богу солнца Ра, лечили лихорадку.</li>
         <li><strong>Древний Рим:</strong> Солдаты пили ромашковый чай перед битвой (успокоение, хотя казалось бы).</li>
         <li><strong>Средневековье:</strong> "Растение-целитель" — от всего (за неимением подорожника, не иначе).</li>
       </ul>
-      <img src="${images.cammomile}" />
+      <img src="${o.cammomile}" />
       <p><strong>Польза:</strong></p>
       <ul>
         <li><strong>Успокоительное</strong> (апигенин связывается с GABA-рецепторами в мозге!)</li>
@@ -1947,7 +1854,7 @@ export const windowMessages = [
   <li>Дневная усталость снизилась</li>
   <li>Активное вещество: <strong>апигенин</strong> — связывается с ГАМК-рецепторами в мозге (те же рецепторы, что у бензодиазепинов, но мягко!)</li>
 </ul>
-<img src="${images.chamSci}" />
+<img src="${o.chamSci}" />
 <p><strong>2. Тревожность и депрессия (2012, University of Pennsylvania):</strong></p>
 <ul>
   <li>Исследование: 57 человек с генерализованным тревожным расстройством</li>
@@ -1981,12 +1888,12 @@ export const windowMessages = [
 
 <p>Короче, если буквально утопиться в ромашковом чае, может оказаться, что чуваки в Кофемани не так уж и неправы.</p>
 
-      <img src="${images.chamomile2}" />
+      <img src="${o.chamomile2}" />
       <h3>Твикс имбирный 🍪</h3>
       <p><strong>Имбирное печенье</strong> + карамель + шоколад = праздничный вкус!</p>
       
       <p><strong>Имбирь + шоколад</strong> — древнее сочетание. Ацтеки добавляли имбирь в <em>xocolātl</em> (горячий шоколад) для воинов.</p>
-      <img src="${images.chamomileTattoo}" />
+      <img src="${o.chamomileTattoo}" />
       <h3>Задание</h3>
       <ol>
         <li>Нет, не набить себе растительную тату (хотя никогда не поздно подумать в эту сторону)</li>
@@ -2008,12 +1915,11 @@ export const windowMessages = [
       <iframe width="100%" src="https://www.youtube.com/embed/CLeZyIID9Bo?si=M6M5WCS7VdaYRpOO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <p>(абстрактная как бы расслабляющая фигня от нейронки)</p>
 
-    `,
-    zebra_message: `
+    `,zebra_message:`
       <h3>Можжевельник и имбирь — сила для рабочих выходных! 💪</h3>
       <p>(если честно, я настолько задолбалась, что не помню, какой у тебя чай (два чая?..). Смутно помню, что сунула тебе какой-то многосоставный с можжевельником, но это не точно)</p>
       <p>Так или иначе, у нас продолжаются бескофеиновые вариативные выходные, теперь с чаем.</p>
-      <img src="${images.juniperTea}" />
+      <img src="${o.juniperTea}" />
       <p>У тебя <strong>рабочее воскресенье перед Новым годом</strong>. Тяжело. Все отдыхают, а ты работаешь (напоминает тебе сочувствующая юбездуховная нейронка).</p>
 
       <p>Надеемся (мы с нейронкой), что можжевельник и имбирь в твоём чае (окей, имбирь в печеньке в твоем limit edition Твиксе, если ты не съела его раньше, а я не перепутала и это) придали тебе сил! ☕💪</p>
@@ -2025,7 +1931,7 @@ export const windowMessages = [
   <li>Тёмно-синие, с восковым налётом.</li>
   <li>Вкус: хвойный, смолистый, немного сладковатый.</li>
 </ul>
-<img src="${images.juniper}" />
+<img src="${o.juniper}" />
 <p><strong>Можжевельник в истории:</strong></p>
 <ul>
   <li><strong>Джин!</strong> Главный ингредиент джина — можжевельник (gin = от голландского "jenever" = можжевельник).</li>
@@ -2042,7 +1948,7 @@ export const windowMessages = [
   <li><strong>Тонизирующее</strong> — бодрит!</li>
   <li><strong>Помогает пищеварению</strong> — стимулирует выработку желудочного сока.</li>
 </ul>
-<img src="${images.juniper1}" />
+<img src="${o.juniper1}" />
 <p><strong>Важно:</strong></p>
 <ul>
   <li>Нельзя при беременности (стимулирует матку!)</li>
@@ -2061,7 +1967,7 @@ export const windowMessages = [
   <p>Когда все отдыхают, а ты работаешь, нужен буст к силе духа 💪</p>
   <p><strong>Ты справишься. Ты справляешься. Чай поможет.</strong> ☕</p>
   <p>(кофе тоже помог бы, но я собирала адвент, не предполагая рабочих выходных)</p> 
-  <img src="${images.juniper3}" />
+  <img src="${o.juniper3}" />
 
   <h3>У ТАньки были исследвоания пр ромашку, так что во тебе про можжевельник — наука подтверждает! 🔬</h3>
     
@@ -2083,7 +1989,7 @@ export const windowMessages = [
       <li>Способность нейтрализовать свободные радикалы</li>
       <li>Сравнимо с синтетическими антиоксидантами! (я ни в зуб ногой, что это значит)</li>
     </ul>
-    <img src="${images.juniperSci}" />
+    <img src="${o.juniperSci}" />
     <p><strong>3. Противовоспалительное (2011, Italy):</strong></p>
     <ul>
       <li>Экстракт ягод можжевельника</li>
@@ -2107,7 +2013,7 @@ export const windowMessages = [
       <li>Помогает при вздутии, тяжести в желудке</li>
       <li>Традиционно используется в народной медицине</li>
     </ul>
-    <img src="${images.juniperSci1}" />
+    <img src="${o.juniperSci1}" />
     <p><strong>6. Расслабление и тревожность (2016, Korea):</strong></p>
     <ul>
       <li>Эфирное масло можжевельника на мышах</li>
@@ -2123,7 +2029,7 @@ export const windowMessages = [
       <li>Эффективен против других видов Candida</li>
       <li>Потенциал для лечения грибковых инфекций</li>
     </ul>
-    <img src="${images.juniperTattoo}" />
+    <img src="${o.juniperTattoo}" />
 
   <h3>Задание 🎯</h3>
 <ol>
@@ -2143,24 +2049,14 @@ export const windowMessages = [
        <p><strong>Музыка для релакса:</p>
       <iframe width="100%" src="https://www.youtube.com/embed/CLeZyIID9Bo?si=M6M5WCS7VdaYRpOO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <p>(абстрактная как бы расслабляющая фигня от нейронки)</p>
-    `,
-  },
-  {
-    day: 10,
-    date: '2025-12-29',
-    tanya_gift: 'Кофе в зёрнах из Колумбии (обжарен монахами на Соловках!)',
-    zebra_gift: 'Декаф из Гватемалы',
-    tanya_bonus: 'Стеклянная бутылочка с гималайской солью',
-    zebra_bonus: 'Стеклянная бутылочка с гималайской солью',
-    title: 'Братский кофе и декаф солидарность',
-    tanya_message: `
+    `},{day:10,date:"2025-12-29",tanya_gift:"Кофе в зёрнах из Колумбии (обжарен монахами на Соловках!)",zebra_gift:"Декаф из Гватемалы",tanya_bonus:"Стеклянная бутылочка с гималайской солью",zebra_bonus:"Стеклянная бутылочка с гималайской солью",title:"Братский кофе и декаф солидарность",tanya_message:`
     <h3>Братский кофе — обжарен с молитвой! ☕🙏</h3>
-    <img src="${images.coffeCard4}" />
+    <img src="${o.coffeCard4}" />
     <p><strong>Откуда:</strong> Колумбия (зёрна) → Соловецкий монастырь (обжарка) → твоя чашка</p>
     <p><strong>Кто обжаривал:</strong> Монахи Соловецкого монастыря!</p>
     <p><strong>Как:</strong> С молитвой! (серьёзно, так написано в карточке товара)</p>
     <h3>Соловецкий монастырь — внезапный кофе на краю света 🏔️</h3>
-    <img src="${images.solovki2}" />
+    <img src="${o.solovki2}" />
     <p><strong>Где:</strong></p>
     <ul>
       <li>Соловецкие острова, Белое море</li>
@@ -2168,7 +2064,7 @@ export const windowMessages = [
       <li>160 км от Полярного круга!</li>
       <li>Добраться можно только на корабле или вертолёте</li>
     </ul>
-    <img src="${images.coffeCard1}" />
+    <img src="${o.coffeCard1}" />
     <p><strong>Монастырь:</strong></p>
     <ul>
       <li>Основан в 1436 году</li>
@@ -2176,7 +2072,7 @@ export const windowMessages = [
       <li>ЮНЕСКО World Heritage</li>
       <li>Крепость, духовный центр, история</li>
     </ul>
-    <img src="${images.solovki1}" />
+    <img src="${o.solovki1}" />
     <p><strong>Тёмная история:</strong></p>
     <ul>
       <li>1920-1939 — ГУЛАГ (Соловецкий лагерь особого назначения)</li>
@@ -2186,7 +2082,7 @@ export const windowMessages = [
     </ul>
     
     <h3>Братский кофе — монашеский бизнес ☕</h3>
-    <img src="${images.coffeCard3}" />
+    <img src="${o.coffeCard3}" />
     <p><strong>Что это:</strong></p>
     <ul>
       <li>Социальное предприятие монастыря</li>
@@ -2195,7 +2091,7 @@ export const windowMessages = [
       <li>Продают под брендом "Братский кофе"</li>
       <li><strong>"Сделано с молитвой!"</strong> — буквально написано на упаковке 😄</li>
     </ul>
-    <img src="${images.solovki}" />
+    <img src="${o.solovki}" />
     <p><strong>Зачем монахи обжаривают кофе:</strong></p>
     <ul>
       <li>Деньги идут на восстановление монастыря</li>
@@ -2211,11 +2107,11 @@ export const windowMessages = [
       <li>Кофе — современная версия (и отлично продается. На "Братские дрипы" мне не хватило бабла)</li>
       <li>Каждая пачка обжарена с молитвой о тех, кто будет пить</li>
     </ul>
-    <img src="${images.coffeCard2}" />
+    <img src="${o.coffeCard2}" />
     <p><strong>Что это значит:</strong></p>
     <p>Монахи молятся во время обжарки. Буквально: "Господи, благослови тех, кто выпьет этот кофе!" Ну, в лучшей из версий.</p>
     <p>Представь: монахи на Белом море, на краю света, в древнем монастыре обжаривают колумбийский кофе c молитвой. В XXI веке. Чтобы потом продавать на Озоне втридорога. Это прекрасно и абсурдно одновременно!</p>
-    <img src="${images.coffeCard5}" />
+    <img src="${o.coffeCard5}" />
     
     
     <h3>Как заваривать:</h3>
@@ -2225,12 +2121,12 @@ export const windowMessages = [
       <li><strong>Перед первым глотком:</strong> Скажи "Спасибо, монахи!" 😄</li>
       <li>Наслаждайся</li>
     </ol>
-    <img src="${images.coffeCard6}" />
+    <img src="${o.coffeCard6}" />
     <h3>Гималайская соль — снова! 🧂</h3>
     
     <p>Помнишь из дня 5? <strong>Розовая соль из пакистанских шахт Khewra, 250+ миллионов лет, железо в составе = розовый цвет.</strong></p>
     <p>Я решила, что к такому кофе нужно что-то суровое.</p> 
-    <img src="${images.himalaya}" />
+    <img src="${o.himalaya}" />
     <p><strong>Зачем в кофе:</strong></p>
     <ul>
       <li>Щепотка соли в кофе → снижает горечь!</li>
@@ -2238,10 +2134,10 @@ export const windowMessages = [
       <li>Традиция в некоторых странах (Эфиопия, Турция)</li>
       <li>Попробуй заварить кофе и добавь крошечную щепотку соли</li>
     </ul>
-    <img src="${images.pinkSalt}" />
+    <img src="${o.pinkSalt}" />
     <p><strong>Можно просто хранить в красивой микробутылочке!</strong> 💗</p>
     <p>Измельчала до кондиции я ее ровно вот так:</p>
-    <img src="${images.saltMeme}" />
+    <img src="${o.saltMeme}" />
     
     <h3>Задание 🎯</h3>
     <ol>
@@ -2252,12 +2148,11 @@ export const windowMessages = [
       <li><strong>Философский вопрос:</strong> Как думаешь, молитва влияет на вкус? Или это просто хороший маркетинг? 😄</li>
     </ol>
     <p><em>Пусть этот кофе будет благословенным. Или хотя бы вкусным!</em> ☕🙏💕</p>
-  `,
-    zebra_message: `
+  `,zebra_message:`
     <h3>Декаф из Гватемалы — солидарность продолжается! ☕💕</h3>
     <p>Помнишь день 4? <strong>Мы пили декаф в солидарность!</strong></p>
     <p>Сегодня снова декаф. Из Гватемалы. Потому что солидарность — это навсегда! 😄 Хотя Танька сегодня пьет кофе от монахов с Валаама)</p>
-    <img src="${images.atitlan1}" />
+    <img src="${o.atitlan1}" />
     <h3>Гватемала — краткое напоминание 🇬🇹</h3>
     <p><strong>География:</strong></p>
     <ul>
@@ -2274,7 +2169,7 @@ export const windowMessages = [
       <li>Цветы, цитрус (Atitlán)</li>
       <li>Полное тело, средняя кислотность</li>
     </ul>
-    <img src="${images.guatemala8}" />
+    <img src="${o.guatemala8}" />
     <p><strong>Твой декаф:</strong></p>
     <ul>
       <li>Процесс Swiss Water (только вода, без химии!)</li>
@@ -2302,7 +2197,7 @@ export const windowMessages = [
     </ul>
     
     <h3>Гватемала — что ещё интересного? 🌋</h3>
-    <img src="${images.atitlan}" />
+    <img src="${o.atitlan}" />
     <p><strong>Озеро Атитлан:</strong></p>
     <ul>
       <li>Одно из красивейших озёр мира</li>
@@ -2313,7 +2208,7 @@ export const windowMessages = [
     </ul>
     
     <p><strong>Майя — живая культура:</strong></p>
-    <img src="${images.guatemalaCorn}" />
+    <img src="${o.guatemalaCorn}" />
     <ul>
       <li>40%+ населения Гватемалы — майя</li>
       <li>Говорят на языках майя (23 языка!)</li>
@@ -2322,7 +2217,7 @@ export const windowMessages = [
       <li>Многие работают на кофейных плантациях</li>
     </ul>
     
-    <img src="${images.guatemalaTkan}" />
+    <img src="${o.guatemalaTkan}" />
     <p><strong>Текстиль майя:</strong></p>
     <ul>
       <li>Знаменитые ткани — яркие, с геометрическими узорами</li>
@@ -2332,7 +2227,7 @@ export const windowMessages = [
     </ul>
     
     <h3>Гималайская соль — снова! 🧂</h3>
-    <img src="${images.himalaya}" />
+    <img src="${o.himalaya}" />
     <p>Помнишь из дня 5? <strong>Розовая соль из пакистанских шахт Khewra, 250+ миллионов лет, железо в составе = розовый цвет.</strong></p>
     
     <p><strong>Зачем в кофе:</strong></p>
@@ -2342,10 +2237,10 @@ export const windowMessages = [
       <li>Традиция в некоторых странах (Эфиопия, Турция)</li>
       <li>Попробуй: завари декаф, добавь крошечную щепотку соли</li>
     </ul>
-    <img src="${images.pinkSalt}" />
+    <img src="${o.pinkSalt}" />
     <p><strong>Можно и просто хранить в красивой микробутылочке!</strong> 💗</p>
     <p>Измельчала до кондиции я ее ровно вот так:</p>
-    <img src="${images.saltMeme}" />
+    <img src="${o.saltMeme}" />
     
     <h3>Солидарность — философия ☕🤝</h3>
     
@@ -2356,21 +2251,11 @@ export const windowMessages = [
       <li><strong>Чат:</strong> "Гватемала декаф на вкус: ___ (шоколад? цветы? винные ноты?)"</li>
       <li><strong>Мечта:</strong> Если бы ты могла поехать в Гватемалу, что бы ты хотела увидеть? (Озеро Атитлан? Альфомбрас? Кофейную плантацию?)</li>
     </ol>
-  `,
-  },
-  {
-    day: 11,
-    date: '2025-12-30',
-    tanya_gift: 'Матча латте в пакетике',
-    zebra_gift: 'Матча латте в пакетике',
-    tanya_bonus: 'Цветная шоколадка без сахара',
-    zebra_bonus: 'Цветная шоколадка без сахара',
-    title: 'Матча латте и ирония',
-    tanya_message: `
+  `},{day:11,date:"2025-12-30",tanya_gift:"Матча латте в пакетике",zebra_gift:"Матча латте в пакетике",tanya_bonus:"Цветная шоколадка без сахара",zebra_bonus:"Цветная шоколадка без сахара",title:"Матча латте и ирония",tanya_message:`
     <h3>Матча латте — от монахов до Instagram 🍵📸</h3>
     
     <p>Сегодня у нас у всех <strong>матча латте</strong> в пакетике. Удобно, быстро, модно - в самый раз дял последнего-мать-его-рабочего дня.</p>
-    <img src="${images.matcha}" />
+    <img src="${o.matcha}" />
     <p>Это напиток с <strong>1200-летней историей</strong> и <strong>10-летним хайпом</strong>. От японских монахов до хипстерских кофеен, от медитации до Instagram-эстетики.</p>
     <p><strong>Ирония:</strong> То, что монахи пили для просветления, мы пьём, чтобы выглядеть модно (и пережить этот день, конечно же).</p>
     
@@ -2383,7 +2268,7 @@ export const windowMessages = [
       <li>Яркий зелёный цвет (как неоновая краска!)</li>
       <li>Вкус: травянистый, слегка горький, с umami (пятый вкус!)</li>
     </ul>
-    <img src="${images.matchaOld}" />
+    <img src="${o.matchaOld}" />
     
     <p><strong>Чем отличается от обычного зелёного чая:</strong></p>
     <ul>
@@ -2393,7 +2278,7 @@ export const windowMessages = [
     </ul>
     
     <h3>История матча — 1200 лет! 🏯</h3>
-    <img src="${images.harvest1}" />
+    <img src="${o.harvest1}" />
     <p><strong>IX век, Китай (династия Тан):</strong></p>
     <ul>
       <li>Буддийские монахи изобрели порошковый чай</li>
@@ -2417,7 +2302,7 @@ export const windowMessages = [
       <li>Не просто напиток — духовная практика!</li>
       <li>Каждое движение продумано, каждый жест имеет значение.</li>
     </ul>
-    <img src="${images.matchaOld1}" />
+    <img src="${o.matchaOld1}" />
     <p><strong>XVII-XX века:</strong></p>
     <ul>
       <li>Матча = напиток элиты (самураи, аристократы, монахи), дорогая и редкая. Обычные люди пили сенча (листовой зелёный чай).</li>
@@ -2430,7 +2315,7 @@ export const windowMessages = [
       <li>Матча латте, матча смузи, матча мороженое, матча всё! Модно, эстетично, "полезно"</li>
       <li>Цена взлетает</li>
     </ul>
-    <img src="${images.matcha11}" />
+    <img src="${o.matcha11}" />
     <h3>Как делают матча? 🌱</h3>
     
     <p><strong>1. Выращивание (особый процесс!):</strong></p>
@@ -2452,7 +2337,7 @@ export const windowMessages = [
       <li>Удаляют стебли и прожилки (остаётся только мягкая часть листа)</li>
       <li>Получается <strong>тенча</strong> (碾茶) — полуфабрикат для матчи</li>
     </ul>
-    <img src="${images.harvest}" />
+    <img src="${o.harvest}" />
     <p><strong>4. Помол:</strong></p>
     <ul>
       <li>Тенчу мелют в <strong>каменных жерновах</strong> (медленно!)</li>
@@ -2472,7 +2357,7 @@ export const windowMessages = [
       <li>Пьют чистой (без молока, без сахара)</li>
       <li>Дорогая! ($30-100+ за 30 г)</li>
     </ul>
-    <img src="${images.matchaColors}" />
+    <img src="${o.matchaColors}" />
     <p><strong>2. Премиум (Premium Grade):</strong></p>
     <ul>
       <li>Хорошее качество, но не топ</li>
@@ -2508,7 +2393,7 @@ export const windowMessages = [
       <li>Starbucks запустила матча латте → массовый хайп.</li>
       <li>Матча латте с овсяным/миндальным молоком = веганская версия кофе.</li>
     </ul>
-    <img src="${images.matcha2}" />
+    <img src="${o.matcha2}" />
     <h3>Ирония матча латте</h3>
     
     <p><strong>Монахи vs Хипстеры:</strong></p>
@@ -2551,7 +2436,7 @@ export const windowMessages = [
 
     <p>Наша православная парикмахерша сказала мне спич о том, что через главенство духа достигается контроль над телом и подлыми телесными страстями и желаниями (например, про вкусную еду). Я сказала ей ответный спич о том, что этого контроля в моей жизни и так попой жуй: нет времени спать - не спишь, нет оказии поесть - не ешь. О, сказала она мне, так это же путь монашеского подвижничества!..</p>
     <p>(мне страшно понравилось, разумеется)</p>
-    <img src="${images.monk}" />
+    <img src="${o.monk}" />
     <p><strong>Но польза таки реально есть:</strong></p>
     <ul>
       <li>Матча содержит <strong>катехины</strong> (тип антиоксидантов).</li>
@@ -2565,7 +2450,7 @@ export const windowMessages = [
       <li>Катехины снижают "плохой" холестерин (LDL), снижают давление и типа защищают сосуды.</li>
       <li>Монахи были правы.</li>
     </ul>
-    <img src="${images.matcha3}" />
+    <img src="${o.matcha3}" />
     
     
     <h3>Шоколадка без сахара просто милая и дополняет капиталистический набор в рабочий день перед Новым годом 💼🎄</h3>
@@ -2583,12 +2468,11 @@ export const windowMessages = [
     </ol>
     
     <p><em>Держись! Последний рабочий день! Матча, монахи и хипстеры мысленно с тобой. А завтра — праздник!</em> 🍵💪🎄</p>
-  `,
-    zebra_message: `
+  `,zebra_message:`
     <h3>Матча латте — от монахов до Instagram 🍵📸</h3>
     
     <p>Сегодня у нас у всех <strong>матча латте</strong> в пакетике. Удобно, быстро, модно - в самый раз дял последнего-мать-его-рабочего дня.</p>
-    <img src="${images.matcha}" />
+    <img src="${o.matcha}" />
     <p>Это напиток с <strong>1200-летней историей</strong> и <strong>10-летним хайпом</strong>. От японских монахов до хипстерских кофеен, от медитации до Instagram-эстетики.</p>
     <p><strong>Ирония:</strong> То, что монахи пили для просветления, мы пьём, чтобы выглядеть модно (и пережить этот день, конечно же).</p>
     
@@ -2601,7 +2485,7 @@ export const windowMessages = [
       <li>Яркий зелёный цвет (как неоновая краска!)</li>
       <li>Вкус: травянистый, слегка горький, с umami (пятый вкус!)</li>
     </ul>
-    <img src="${images.matchaOld}" />
+    <img src="${o.matchaOld}" />
     
     <p><strong>Чем отличается от обычного зелёного чая:</strong></p>
     <ul>
@@ -2611,7 +2495,7 @@ export const windowMessages = [
     </ul>
     
     <h3>История матча — 1200 лет! 🏯</h3>
-    <img src="${images.harvest1}" />
+    <img src="${o.harvest1}" />
     <p><strong>IX век, Китай (династия Тан):</strong></p>
     <ul>
       <li>Буддийские монахи изобрели порошковый чай</li>
@@ -2635,7 +2519,7 @@ export const windowMessages = [
       <li>Не просто напиток — духовная практика!</li>
       <li>Каждое движение продумано, каждый жест имеет значение.</li>
     </ul>
-    <img src="${images.matchaOld1}" />
+    <img src="${o.matchaOld1}" />
     <p><strong>XVII-XX века:</strong></p>
     <ul>
       <li>Матча = напиток элиты (самураи, аристократы, монахи), дорогая и редкая. Обычные люди пили сенча (листовой зелёный чай).</li>
@@ -2648,7 +2532,7 @@ export const windowMessages = [
       <li>Матча латте, матча смузи, матча мороженое, матча всё! Модно, эстетично, "полезно"</li>
       <li>Цена взлетает</li>
     </ul>
-    <img src="${images.matcha11}" />
+    <img src="${o.matcha11}" />
     <h3>Как делают матча? 🌱</h3>
     
     <p><strong>1. Выращивание (особый процесс!):</strong></p>
@@ -2670,7 +2554,7 @@ export const windowMessages = [
       <li>Удаляют стебли и прожилки (остаётся только мягкая часть листа)</li>
       <li>Получается <strong>тенча</strong> (碾茶) — полуфабрикат для матчи</li>
     </ul>
-    <img src="${images.harvest}" />
+    <img src="${o.harvest}" />
     <p><strong>4. Помол:</strong></p>
     <ul>
       <li>Тенчу мелют в <strong>каменных жерновах</strong> (медленно!)</li>
@@ -2690,7 +2574,7 @@ export const windowMessages = [
       <li>Пьют чистой (без молока, без сахара)</li>
       <li>Дорогая! ($30-100+ за 30 г)</li>
     </ul>
-    <img src="${images.matchaColors}" />
+    <img src="${o.matchaColors}" />
     <p><strong>2. Премиум (Premium Grade):</strong></p>
     <ul>
       <li>Хорошее качество, но не топ</li>
@@ -2726,7 +2610,7 @@ export const windowMessages = [
       <li>Starbucks запустила матча латте → массовый хайп.</li>
       <li>Матча латте с овсяным/миндальным молоком = веганская версия кофе.</li>
     </ul>
-    <img src="${images.matcha2}" />
+    <img src="${o.matcha2}" />
     <h3>Ирония матча латте</h3>
     
     <p><strong>Монахи vs Хипстеры:</strong></p>
@@ -2768,7 +2652,7 @@ export const windowMessages = [
     <p><strong>Вывод:</strong> То, что было священным ритуалом, стало массовым трендом. Ирония капитализма! 😄</p>
     <p>Наша с Танькой православная парикмахерша сказала мне спич о том, что через главенство духа достигается контроль над телом и подлыми телесными страстями и желаниями (например, про вкусную еду). Я сказала ей ответный спич о том, что этого контроля в моей жизни и так попой жуй: нет времени спать - не спишь, нет оказии поесть - не ешь. О, сказала она мне, так это же путь монашеского подвижничества!..</p>
     <p>(мне страшно понравилось, разумеется)</p>
-    <img src="${images.monk}" />
+    <img src="${o.monk}" />
     <p><strong>Но польза таки реально есть:</strong></p>
     <ul>
       <li>Матча содержит <strong>катехины</strong> (тип антиоксидантов).</li>
@@ -2782,7 +2666,7 @@ export const windowMessages = [
       <li>Катехины снижают "плохой" холестерин (LDL), снижают давление и типа защищают сосуды.</li>
       <li>Монахи были правы.</li>
     </ul>
-    <img src="${images.matcha3}" />
+    <img src="${o.matcha3}" />
     
     
     <h3>Шоколадка без сахара просто милая и дополняет капиталистический набор в рабочий день перед Новым годом 💼🎄</h3>
@@ -2800,22 +2684,12 @@ export const windowMessages = [
     </ol>
     
     <p><em>Держись! Последний рабочий день! Матча, монахи и хипстеры мысленно с тобой. А завтра — праздник!</em> 🍵💪🎄</p>
-  `,
-  },
-  {
-    day: 12,
-    date: '2025-12-31',
-    tanya_gift: 'Рождественский кофе',
-    zebra_gift: 'Декаф "Питерская контркультурная обжарка"',
-    tanya_bonus: 'Конфеты "Буржуйские" со взрывной карамелью (вкус колы)',
-    zebra_bonus: 'Конфеты "Буржуйские" со взрывной карамелью (вкус колы)',
-    title: 'Новогоднее обращение президента',
-    tanya_message: `<h3>Новогоднее обращение президента Миссис Кошки 🐱👑</h3>
+  `},{day:12,date:"2025-12-31",tanya_gift:"Рождественский кофе",zebra_gift:'Декаф "Питерская контркультурная обжарка"',tanya_bonus:'Конфеты "Буржуйские" со взрывной карамелью (вкус колы)',zebra_bonus:'Конфеты "Буржуйские" со взрывной карамелью (вкус колы)',title:"Новогоднее обращение президента",tanya_message:`<h3>Новогоднее обращение президента Миссис Кошки 🐱👑</h3>
     
     <p><em>31 декабря, 23:00. Вместо традиционного обращения президента страны мы представляем вам обращение настоящего лидера — президента Миссис Кошки. 
     У Миссис Кошки достаточно политической воли, чтобы совместить ее, колпачок и елку в одном кадре было решительно невозможно.
     Вот ее эксклюзивное интервью.</em></p>
-    <img src="${images.cat2}" />
+    <img src="${o.cat2}" />
     <hr>
     
     <h3>Интервью с президентом Миссис Кошкой</h3>
@@ -2827,7 +2701,7 @@ export const windowMessages = [
     <p><strong>К:</strong> Понимаю. Давайте начнём с традиционного вопроса: как вы оцениваете уходящий 2025 год?</p>
     
     <p><strong>МК:</strong> Год был сложным. Корм иногда давали с опозданием. Это недопустимо. Но в целом я выжила, и это уже успех.</p>
-    <img src="${images.cat3}" />
+    <img src="${o.cat3}" />
     <p><strong>К:</strong> Мадам президент, многие граждане жалуются на экономические трудности. Что вы можете им сказать?</p>
     
     <p><strong>МК:</strong> <em>[Зевает]</em> Спите больше. Серьёзно. Я сплю 16 часов в день — и проблем нет. Попробуйте. Это работает.</p>
@@ -2841,7 +2715,7 @@ export const windowMessages = [
     <p><strong>МК:</strong> Научиться открывать холодильник. Это долгосрочная цель.</p>
     
     <p><strong>К:</strong> Амбициозно! А что вы пожелаете гражданам в Новом году?</p>
-    <img src="${images.cat5}" />
+    <img src="${o.cat5}" />
     <p><strong>МК:</strong>Год был тяжёлым для всех. Я знаю. Я видела, как вы смотрите в потолок в 3 часа ночи. Я была рядом. Поэтому вот что я скажу:</p>
     
     <p><strong>МК:</strong> Будьте как кошки. Упали — встали, вылизались, пошли дальше. Кто-то обидел — шипим, кусаем, потом забываем. Устали — спим. Хочется мяукать на невидимых духов — мяукаем. Нужна ласка — требуем. Нужно одиночество — сидим под диваном, хочется посидеть в коробке - сидим в коробке. Вот видите, все просто.</p>
@@ -2851,7 +2725,7 @@ export const windowMessages = [
     <p><strong>К:</strong> <em>[Утирает слезу]</em> Это... неожиданно мудро, мадам президент.</p>
     
     <p><strong>МК:</strong> Я знаю.</p>
-    <img src="${images.cat4}" />
+    <img src="${o.cat4}" />
     <p><strong>К:</strong> Последний вопрос! Что вы думаете о людях, которые читают это обращение?</p>
     
     <p><strong>МК:</strong> <em>[Хмуро смотрит в камеру]</em> Вы устали. Я вижу. Но вы дочитали до конца — значит, ещё держитесь. 
@@ -2863,7 +2737,7 @@ export const windowMessages = [
     <p><strong>К:</strong> Спасибо, мадам президент! С Новым годом!</p>
 
     <hr>
-    <img src="${images.cat1}" />
+    <img src="${o.cat1}" />
     <p><strong>Послание президента Миссис Кошки гражданам:</strong></p>
     <blockquote>
       <p><em>"Дорогие люди. 2025 год закончился. Вы пережили его. Это уже победа. 
@@ -2902,14 +2776,13 @@ export const windowMessages = [
     <p><strong>С Новым годом!</strong> 🎄✨🎆</p>
     
     <p><em>Ты пережила этот год! Ты молодец. Президент Миссис Кошка гордится тобой. Пусть 2026 будет добрее (это несложно).</em></p>
-  `,
-    zebra_message: `
+  `,zebra_message:`
     <h3>Новогоднее обращение президента Миссис Кошки 🐱👑</h3>
     
     <p><em>31 декабря, 23:00. Вместо традиционного обращения президента страны мы представляем вам обращение настоящего лидера — президента Миссис Кошки. 
     У Миссис Кошки достаточно политической воли, чтобы совместить ее, колпачок и елку в одном кадре было решительно невозможно.
     Вот ее эксклюзивное интервью.</em></p>
-    <img src="${images.cat2}" />
+    <img src="${o.cat2}" />
     <hr>
     
     <h3>Интервью с президентом Миссис Кошкой</h3>
@@ -2921,7 +2794,7 @@ export const windowMessages = [
     <p><strong>К:</strong> Понимаю. Давайте начнём с традиционного вопроса: как вы оцениваете уходящий 2025 год?</p>
     
     <p><strong>МК:</strong> Год был сложным. Корм иногда давали с опозданием. Это недопустимо. Но в целом я выжила, и это уже успех.</p>
-    <img src="${images.cat3}" />
+    <img src="${o.cat3}" />
     <p><strong>К:</strong> Мадам президент, многие граждане жалуются на экономические трудности. Что вы можете им сказать?</p>
     
     <p><strong>МК:</strong> <em>[Зевает]</em> Спите больше. Серьёзно. Я сплю 16 часов в день — и проблем нет. Попробуйте. Это работает.</p>
@@ -2935,7 +2808,7 @@ export const windowMessages = [
     <p><strong>МК:</strong> Научиться открывать холодильник. Это долгосрочная цель.</p>
     
     <p><strong>К:</strong> Амбициозно! А что вы пожелаете гражданам в Новом году?</p>
-    <img src="${images.cat5}" />
+    <img src="${o.cat5}" />
     <p><strong>МК:</strong> Год был тяжёлым для всех. Я знаю. Я видела, как вы смотрите в потолок в 3 часа ночи. Я была рядом. Поэтому вот что я скажу:</p>
     
     <p><strong>МК:</strong> Будьте как кошки. Упали — встали, вылизались, пошли дальше. Кто-то обидел — шипим, кусаем, потом забываем. Устали — спим. Хочется мяукать на невидимых духов — мяукаем. Нужна ласка — требуем. Нужно одиночество — сидим под диваном, хочется посидеть в коробке - сидим в коробке. Вот видите, все просто.</p>
@@ -2945,7 +2818,7 @@ export const windowMessages = [
     <p><strong>К:</strong> <em>[Утирает слезу]</em> Это... неожиданно мудро, мадам президент.</p>
     
     <p><strong>МК:</strong> Я знаю.</p>
-    <img src="${images.cat4}" />
+    <img src="${o.cat4}" />
     <p><strong>К:</strong> Последний вопрос! Что вы думаете о людях, которые читают это обращение?</p>
     
     <p><strong>МК:</strong> <em>[Хмуро смотрит в камеру]</em> Вы устали. Я вижу. Но вы дочитали до конца — значит, ещё держитесь. 
@@ -2957,7 +2830,7 @@ export const windowMessages = [
     <p><strong>К:</strong> Спасибо, мадам президент! С Новым годом!</p>
 
     <hr>
-    <img src="${images.cat1}" />
+    <img src="${o.cat1}" />
     <p><strong>Послание президента Миссис Кошки гражданам:</strong></p>
     <blockquote>
       <p><em>"Дорогие люди. 2025 год закончился. Вы пережили его. Это уже победа. 
@@ -2980,7 +2853,7 @@ export const windowMessages = [
       <li>Серое небо, меланхолия. За окном дождь, внутри уютно.</li>
       <li>Ты пьёшь декаф и думаешь о вечном.</li>
     </ul>
-    <img src="${images.piterMeme}" />
+    <img src="${o.piterMeme}" />
     <h3>Конфеты "Буржуйские" со взрывной карамелью 🍬💥</h3>
     
     <p><strong>Что это:</strong></p>
@@ -3004,22 +2877,12 @@ export const windowMessages = [
     <p><strong>С Новым годом!</strong> 🎄✨🎆</p>
     
     <p><em>Ты молодец. Ты работала, когда другие отдыхали. Президент Миссис Кошка гордится тобой. Пусть 2026 будет добрее (это несложно).</em></p>
-  `,
-  },
-  {
-    day: 13,
-    date: '2026-01-01',
-    tanya_gift: 'Два кофе: "Апельсин + шоколад" (Идальго) и "Манго + морошка"',
-    zebra_gift: 'Декаф',
-    tanya_bonus: 'Тканевая маска для лица с экстрактом кофе',
-    zebra_bonus: 'Тканевая маска для лица с экстрактом кофе',
-    title: 'Расслабься. Подыши. Ты дожила.',
-    tanya_message: `
+  `},{day:13,date:"2026-01-01",tanya_gift:'Два кофе: "Апельсин + шоколад" (Идальго) и "Манго + морошка"',zebra_gift:"Декаф",tanya_bonus:"Тканевая маска для лица с экстрактом кофе",zebra_bonus:"Тканевая маска для лица с экстрактом кофе",title:"Расслабься. Подыши. Ты дожила.",tanya_message:`
     <h3>1 января. И вот мы здесь 🌅</h3>
-    <img src="${images.nyMeme4}" />
+    <img src="${o.nyMeme4}" />
     <p>Пережили 2025 и встретили 2026. Время - это социальный конструкт, но что-то героическое в этом безусловно есть.</p>
     <p>Сегодня не нужно никуда бежать, и даже не нужно начинать новую жизнь. Выпить кофе будет в самый раз)</p>
-    <img src="${images.nyMeme2}" />
+    <img src="${o.nyMeme2}" />
     <h3>Инструкция на сегодня 📋</h3>
     
     <p><strong>1. Подышать.</strong></p>
@@ -3029,7 +2892,7 @@ export const windowMessages = [
       <li>Выдох (6 счётов)</li>
       <li>Повтори 3 раза</li>
     </ul>
-    <img src="${images.nyMeme6}" />
+    <img src="${o.nyMeme6}" />
     <p><strong>2. Никаких "надо":</strong></p>
     <ul>
       <li>Не строй планы на год</li>
@@ -3037,7 +2900,7 @@ export const windowMessages = [
       <li>Сегодня — день безделья. Официально.</li>
     </ul>
     
-    <img src="${images.nyMeme7}" />
+    <img src="${o.nyMeme7}" />
     
     <h3>Два кофе — два настроения ☕</h3>
     
@@ -3057,7 +2920,7 @@ export const windowMessages = [
       <li>Витамина C больше, чем в апельсине!</li>
       <li><strong>Когда пить:</strong> если хочется чего-то необычного, летнего</li>
     </ul>
-    <img src="${images.nyMeme8}" />
+    <img src="${o.nyMeme8}" />
     <p><strong>Или оба!</strong> Утром апельсин + шоколад, вечером манго + морошка. Сегодня можно всё (а еще подозреваю, что разница будет не так очевидна). Можно запивать этим кофе ваш селедочный хлеб)</p>
     
     <hr>
@@ -3072,7 +2935,7 @@ export const windowMessages = [
       <li>2010-е: весь мир помешался на K-beauty → маски везде!</li>
       <li>Сейчас: мировой рынок $1+ миллиард в год</li>
     </ul>
-    <img src="${images.nyMeme9}" />
+    <img src="${o.nyMeme9}" />
     
     <p><strong>Как работает:</strong></p>
     <ul>
@@ -3084,7 +2947,7 @@ export const windowMessages = [
     
     <p><strong>Философия маски:</strong> Нельзя говорить, смотреть в телефон (ага-ага, думаю я. Никакая чертова маска не будет указывать мне, что делать!..). Можно только лежать и дышать. Это медитация под видом ухода за кожей.</p>
     
-    <img src="${images.nyMeme5}" />
+    <img src="${o.nyMeme5}" />
     <h3>Послание на 1 января 💌</h3>
     
     <p>Ты дожила до 2026. Сегодня не нужно быть "новой тобой": старая ты прекрасна, она дошла досюда.</p>
@@ -3092,14 +2955,13 @@ export const windowMessages = [
     <p>Найди солнечный квадрат на полу (помнишь Миссис Кошку?). Ляг в него. Полежи, и съешь хлеба с селедкой.</p>
     
     <p>С Новым годом. Ты молодец. 🐱</p>
-    <img src="${images.nyMeme1}" />
-  `,
-    zebra_message: `
+    <img src="${o.nyMeme1}" />
+  `,zebra_message:`
     <h3>1 января. И вот мы здесь 🌅</h3>
-    <img src="${images.nyMeme4}" />
+    <img src="${o.nyMeme4}" />
     <p>Пережили 2025 и встретили 2026. Время - это социальный конструкт, но что-то героическое в этом безусловно есть.</p>
     <p>Сегодня не нужно никуда бежать, и даже не нужно начинать новую жизнь. Выпить кофе будет в самый раз)</p>
-    <img src="${images.nyMeme2}" />
+    <img src="${o.nyMeme2}" />
     <h3>Инструкция на сегодня 📋</h3>
     
     <p><strong>1. Подышать.</strong></p>
@@ -3109,7 +2971,7 @@ export const windowMessages = [
       <li>Выдох (6 счётов)</li>
       <li>Повтори 3 раза</li>
     </ul>
-    <img src="${images.nyMeme6}" />
+    <img src="${o.nyMeme6}" />
     <p><strong>2. Никаких "надо":</strong></p>
     <ul>
       <li>Не строй планы на год</li>
@@ -3117,14 +2979,14 @@ export const windowMessages = [
       <li>Сегодня — день безделья, официально.</li>
     </ul>
     
-    <img src="${images.nyMeme7}" />
+    <img src="${o.nyMeme7}" />
     
     
     <p>Совершенно не помню, какой у тебя сегодня кофе. У меня вообще нет уверенности, что это кофе - но если так, то можно запивать им какой-нибудь оливье)</p>
     <p>Хотя бы в тканевой маске для волос я уверена! Итак:</p>
     
     <h3>Тканевая маска для лица 🎭</h3>
-    <img src="${images.nyMeme8}" />
+    <img src="${o.nyMeme8}" />
     <ul>
       <li>Маска из <strong>нетканого материала</strong> (спанлейс — смесь вискозы и полиэстера)</li>
       <li>Пропитана сывороткой с активными компонентами</li>
@@ -3133,7 +2995,7 @@ export const windowMessages = [
       <li>2010-е: весь мир помешался на K-beauty → маски везде!</li>
       <li>Сейчас: мировой рынок $1+ миллиард в год</li>
     </ul>
-    <img src="${images.nyMeme9}" />
+    <img src="${o.nyMeme9}" />
     
     <p><strong>Как работает:</strong></p>
     <ul>
@@ -3145,7 +3007,7 @@ export const windowMessages = [
     
     <p><strong>Философия маски:</strong> Нельзя говорить, смотреть в телефон (ага-ага, думаю я. Никакая чертова маска не будет указывать мне, что делать!..). Можно только лежать и дышать. Это медитация под видом ухода за кожей.</p>
     
-    <img src="${images.nyMeme5}" />
+    <img src="${o.nyMeme5}" />
     <h3>Послание на 1 января 💌</h3>
     
     <p>Ты дожила до 2026. Сегодня не нужно быть "новой тобой": старая ты прекрасна, она дошла досюда.</p>
@@ -3153,19 +3015,8 @@ export const windowMessages = [
     <p>Найди солнечный квадрат на полу (помнишь Миссис Кошку?). Ляг в него. Полежи, и съешь какого-нибудь серпуховского оливье.</p>
     
     <p>С Новым годом. Ты молодец. 🐱</p>
-    <img src="${images.nyMeme1}" />
-  `,
-  },
-  {
-    day: 14,
-    date: '2026-01-02',
-    tanya_gift: 'Кофе с картами Таро (заряженный на удачу и любовь)',
-    tanya_uxazher_gift: 'Кофе с картами Таро (заряженный на удачу и любовь)',
-    zebra_gift: 'Какао с грибами (рейши, чага или львиная грива)',
-    tanya_bonus: 'Маленькая шоколадка',
-    zebra_bonus: 'Маленькая шоколадка',
-    title: 'Серпухов, гадания и грибы',
-    tanya_message: `
+    <img src="${o.nyMeme1}" />
+  `},{day:14,date:"2026-01-02",tanya_gift:"Кофе с картами Таро (заряженный на удачу и любовь)",tanya_uxazher_gift:"Кофе с картами Таро (заряженный на удачу и любовь)",zebra_gift:"Какао с грибами (рейши, чага или львиная грива)",tanya_bonus:"Маленькая шоколадка",zebra_bonus:"Маленькая шоколадка",title:"Серпухов, гадания и грибы",tanya_message:`
     <h3>Внезапно мы встретимся в Серпухове (и будем пить кофе, потому что ну а как). Что нейронки имеют сказать про Серпухов? 🦚🐒</h3>
     
     <p><strong>Серпухов — коротко:</strong></p>
@@ -3175,32 +3026,32 @@ export const windowMessages = [
     </ul>
     
     <h4>1. Павлин на гербе — история и советская версия 🦚⚙️</h4>
-    <img src="${images.gerb1}" />
+    <img src="${o.gerb1}" />
     <p><strong>Герб времен Российской Империи:</strong></p>
     <ul>
       <li>Окольничий Михаил Колупаев в 1691 году привёз в дар Высоцкому монастырю в Серпухове пару павлинов — самца и самку. Как у них там шли дела - вопрос спорный.</li>
       <li>Петр I предпринимает попытку выдать городам и дворянам централизованные гербы по европейскому образцу. Франциск Санти (итальянец) — обер-герольдмейстер, обрабатывает опросники, и цепляется за упоминание, что в серпуховском монастыре водятся павлины. Оп, новый герб.</li>
-      <img src="${images.okMeme}" />
+      <img src="${o.okMeme}" />
       <li>Екатерина II проводит свою губернскую реформу и заодно повторяет историю с гербами, но более организрванно. Павлин несколько меняет очертания.</li>
       <li>Советская власть решила: павлин — буржуазный символ! Но его каким-то чудом решили оставить.</li>
       <li>Зато добавили шестеренку (предположительно от трактора) и <strong>стилизованное изображение синхрофазотрона!!</strong> — Протвинского ускорителя частиц.</li>
 </ul>
-<img src="${images.gerb2}" />
+<img src="${o.gerb2}" />
 
 <p><strong>Протвинский ускоритель У-70:</strong></p>
 <ul>
   <li>В соседнем Протвино (10 км от Серпухова) в 1967 построили <strong>ускоритель частиц У-70</strong> - этакий адронный коллайдер своего времени. Кольцо длиной 1,5 км, энергия 70 ГэВ, что бы это ни значило.</li>
-  <img src="${images.u70}" />
+  <img src="${o.u70}" />
   <li><strong>С 1967 по 1972 — самый мощный ускоритель в мире!</strong>. На нём открывали новые частицы, изучали структуру материи. Символ научной мощи СССР</li>
   <li>Потом, правда, начали приделывать к нему кольцо ускорителя побольше, но СССР (и даньги) закончились раньше, а большой адронный коллайдер окончательно похоронил проект.</li>
-  <img src="${images.map}" />
+  <img src="${o.map}" />
   <li>После распада СССР вернули исторический герб 1730 года: павлин снова на месте. Ускоритель исчез с герба (эх), хотя продолжает работать в Протвино.</li>
   <li>Советский герб просуществовал 23 года (1969-1992)</li>
   <li>Царский герб — 262 года (1730-1992 с перерывом) и продолжает</li>
   <li><strong>Павлин: 1, Ускоритель частиц: 0</strong></li>
   <li>Но ускоритель работает до сих пор — и это круто! ⚛️</li>
   <li>Правда, его большой нерожденный брат - протон-протонного коллайдер УНК - так и не был запущен и стоит тут же в виде изрядной сети разрушающихся тоннелей.</li>
-  <img src="${images.unk}" />
+  <img src="${o.unk}" />
 </ul>    
     
     <p><strong>Факт:</strong> В Серпухове есть <strong>Научно-исследовательский институт медицинской приматологии</strong> (основан 1927).</p>
@@ -3226,7 +3077,7 @@ export const windowMessages = [
     </ul>
     
     <h4>В Серпухове есть "Неупиваемая Чаша" — специальная икона от разного рода зависимостей 🍷🙏</h4>
-    <img src="${images.chasha}" />
+    <img src="${o.chasha}" />
     <p><strong>Где:</strong> Введенский Владычный женский монастырь (Серпухов)</p>
     
     <p><strong>Что это:</strong></p>
@@ -3257,7 +3108,7 @@ export const windowMessages = [
     </ul>
     
     <h3>Кофе с сыром — неожиданная традиция 🧀☕</h3>
-    <img src="${images.cheese}" />
+    <img src="${o.cheese}" />
     <p>У нас будет сырная тарелка и кофе. А это не просто закуска — это <strong>традиция</strong>!</p>
     
     <p><strong>Финляндия — kaffeost (кофейный сыр) 🇫🇮</strong></p>
@@ -3281,7 +3132,7 @@ export const windowMessages = [
       <li><strong>Текстура:</strong> Сыр размягчается в горячем кофе → интересно</li>
       <li><strong>Традиция:</strong> В холодном климате (Лапландия, горы) сыр + кофе = сытно, калорийно</li>
     </ul>
-    <img src="${images.cheese1}" />
+    <img src="${o.cheese1}" />
     <p><strong>Какие сыры лучше с кофе:</strong></p>
     <ul>
       <li><strong>Мягкие:</strong> Бри, камамбер (сливочность смягчает кофе)</li>
@@ -3299,7 +3150,7 @@ export const windowMessages = [
     </ol>
     
     <hr>
-    <img src="${images.ft0}" />
+    <img src="${o.ft0}" />
     <h3>Кофе с картами Таро — гадание! 🔮☕</h3>
     
     <p>Сегодня у нас необычный кофе. На упаковке — карты Таро. Он заряжен на удачу и любовь (или хотя бы производитель так утверждает).</p>
@@ -3315,7 +3166,7 @@ export const windowMessages = [
     <hr>
     
     <h3>Как гадать на кофейной гуще (традиционный способ) ☕🔮</h3>
-    <img src="${images.ft1}" />
+    <img src="${o.ft1}" />
     <p><strong>Что нужно:</strong></p>
     <ul>
       <li>Кофе мелкого помола (турка или джезва)</li>
@@ -3335,7 +3186,7 @@ export const windowMessages = [
       <li><strong>Жди 3-5 минут,</strong> пока гуща стечёт и подсохнет</li>
       <li><strong>Переверни обратно</strong> — узоры готовы!</li>
     </ol>
-    <img src="${images.ft2}" />
+    <img src="${o.ft2}" />
     <p><strong>Традиционное толкование:</strong></p>
     <ul>
       <li><strong>Верх чашки</strong> = настоящее</li>
@@ -3426,8 +3277,7 @@ export const windowMessages = [
       <li>Если форма 60% похожа на птицу и 40% на лист — скажет "птица"</li>
       <li><strong>Галлюцинации:</strong> Иногда нейросеть "видит" то, чего нет (как люди в облаках). Но нейросеть хотя бы старается.</li>
     </ul>
-  `,
-    zebra_message: `
+  `,zebra_message:`
     <h3>Внезапно мы встретимся в Серпухове (и будем пить кофе, потому что ну а как). Что нейронки имеют сказать про Серпухов? 🦚🐒</h3>
     
     <p><strong>Серпухов — коротко:</strong></p>
@@ -3437,29 +3287,29 @@ export const windowMessages = [
     </ul>
     
     <h4>1. Павлин на гербе — история и советская версия 🦚⚙️</h4>
-    <img src="${images.gerb1}" />
+    <img src="${o.gerb1}" />
     <p><strong>Герб времен Российской Империи:</strong></p>
     <ul>
       <li>Окольничий Михаил Колупаев в 1691 году привёз в дар Высоцкому монастырю в Серпухове пару павлинов — самца и самку. Как у них там шли дела - вопрос спорный.</li>
       <li>Петр I предпринимает попытку выдать городам и дворянам централизованные гербы по европейскому образцу. Франциск Санти (итальянец) — обер-герольдмейстер, обрабатывает опросники, и цепляется за упоминание, что в серпуховском монастыре водятся павлины. Оп, новый герб.</li>
-      <img src="${images.okMeme}" />
+      <img src="${o.okMeme}" />
       <li>Екатерина II проводит свою губернскую реформу и заодно повторяет историю с гербами, но более организрванно. Павлин несколько меняет очертания.</li>
       <li>Советская власть решила: павлин — буржуазный символ! Но его каким-то чудом решили оставить.</li>
       <li>Зато добавили шестеренку (предположительно от трактора) и <strong>стилизованное изображение синхрофазотрона!!</strong> — Протвинского ускорителя частиц.</li>
 </ul>
-<img src="${images.gerb2}" />
+<img src="${o.gerb2}" />
 
 <p><strong>Протвинский ускоритель У-70:</strong></p>
 <ul>
   <li>В соседнем Протвино (10 км от Серпухова) в 1967 построили <strong>ускоритель частиц У-70</strong> - этакий адронный коллайдер своего времени. Кольцо длиной 1,5 км, энергия 70 ГэВ, что бы это ни значило.</li>
-  <img src="${images.u70}" />
+  <img src="${o.u70}" />
   <li><strong>С 1967 по 1972 — самый мощный ускоритель в мире!</strong>. На нём открывали новые частицы, изучали структуру материи. Символ научной мощи СССР</li>
   <li>Потом, правда, начали приделывать к нему кольцо ускорителя побольше, но СССР (и даньги) закончились раньше, а большой адронный коллайдер окончательно похоронил проект.</li>
-  <img src="${images.map}" />
+  <img src="${o.map}" />
   <li>После распада СССР вернули исторический герб 1730 года: павлин снова на месте. Ускоритель исчез с герба (эх), хотя продолжает работать в Протвино.</li>
   <li><strong>Павлин: 1, Ускоритель частиц: 0</strong></li>
   <li>Но ускоритель работает до сих пор — и это круто! ⚛️ Правда, его большой нерожденный брат - протон-протонного коллайдер УНК - так и не был запущен и стоит тут же в виде изрядной сети разрушающихся тоннелей.</li>
-  <img src="${images.unk}" />
+  <img src="${o.unk}" />
 </ul>    
     
     <p><strong>Факт:</strong> В Серпухове есть <strong>Научно-исследовательский институт медицинской приматологии</strong> (основан 1927).</p>
@@ -3484,7 +3334,7 @@ export const windowMessages = [
     </ul>
     
     <h4>В Серпухове есть "Неупиваемая Чаша" — специальная икона от разного рода зависимостей 🍷🙏</h4>
-    <img src="${images.chasha}" />
+    <img src="${o.chasha}" />
     <p><strong>Где:</strong> Введенский Владычный женский монастырь (Серпухов)</p>
     
     <p><strong>Что это:</strong></p>
@@ -3515,7 +3365,7 @@ export const windowMessages = [
     </ul>
     
     <h3>Кофе с сыром — неожиданная традиция 🧀☕</h3>
-    <img src="${images.cheese}" />
+    <img src="${o.cheese}" />
     <p>У нас будет сырная тарелка и кофе. А это не просто закуска — это <strong>традиция</strong>!</p>
     
     <p><strong>Финляндия — kaffeost (кофейный сыр) 🇫🇮</strong></p>
@@ -3539,7 +3389,7 @@ export const windowMessages = [
       <li><strong>Текстура:</strong> Сыр размягчается в горячем кофе → интересно</li>
       <li><strong>Традиция:</strong> В холодном климате (Лапландия, горы) сыр + кофе = сытно, калорийно</li>
     </ul>
-    <img src="${images.cheese1}" />
+    <img src="${o.cheese1}" />
     <p><strong>Какие сыры лучше с кофе:</strong></p>
     <ul>
       <li><strong>Мягкие:</strong> Бри, камамбер (сливочность смягчает кофе)</li>
@@ -3549,7 +3399,7 @@ export const windowMessages = [
     </ul>
     
     <hr>
-    <img src="${images.ft0}" />
+    <img src="${o.ft0}" />
     <h3>Кофе с картами Таро — гадание! 🔮☕</h3>
     
     <p>Сегодня у нас снова тот хэллоуиновский кофе. Он заряжен на удачу и любовь (по крайней мере, производитель так утверждает).</p>
@@ -3566,7 +3416,7 @@ export const windowMessages = [
     <hr>
     
     <h3>Как гадать на кофейной гуще (традиционный способ) ☕🔮</h3>
-    <img src="${images.ft1}" />
+    <img src="${o.ft1}" />
     <ul>
       <li>Кофе мелкого помола (турка или джезва)</li>
       <li>Небольшая чашка (лучше белая внутри)</li>
@@ -3585,7 +3435,7 @@ export const windowMessages = [
       <li><strong>Жди 3-5 минут,</strong> пока гуща стечёт и подсохнет</li>
       <li><strong>Переверни обратно</strong> — узоры готовы!</li>
     </ol>
-    <img src="${images.ft2}" />
+    <img src="${o.ft2}" />
     <p><strong>Традиционное толкование:</strong></p>
     <ul>
       <li><strong>Верх чашки</strong> = настоящее</li>
@@ -3663,7 +3513,7 @@ export const windowMessages = [
     </ul>
      
     <h3>А теперь о твоем какао. Что такое адаптогенные грибы? 🍄</h3>
-    <img src="${images.reishi}" />
+    <img src="${o.reishi}" />
     <p><strong>Адаптогены</strong> — вещества, которые помогают организму адаптироваться к стрессу.</p>
     
     <p><strong>Грибы-адаптогены:</strong></p>
@@ -3702,20 +3552,10 @@ export const windowMessages = [
       <li>Снижение стресса — данные есть, но исследований мало</li>
       <li>Долголетие — не доказано. Ну и черт с ним.</li>
     </ul>
-  `,
-  },
-  {
-    day: 15,
-    date: '2026-01-03',
-    tanya_gift: 'Кофе Kamakura Royal Blend (дрип-пакет, Япония)',
-    zebra_gift: 'Кофе Kamakura Royal Blend (дрип-пакет, Япония)',
-    tanya_bonus: 'Белорусская желейная конфета с вишней и перцем',
-    zebra_bonus: 'Белорусская желейная конфета с вишней и перцем',
-    title: 'Камакура и самураи',
-    tanya_message: `
+  `},{day:15,date:"2026-01-03",tanya_gift:"Кофе Kamakura Royal Blend (дрип-пакет, Япония)",zebra_gift:"Кофе Kamakura Royal Blend (дрип-пакет, Япония)",tanya_bonus:"Белорусская желейная конфета с вишней и перцем",zebra_bonus:"Белорусская желейная конфета с вишней и перцем",title:"Камакура и самураи",tanya_message:`
     <h3>Kamakura Royal Blend — кофе из города самураев 🇯🇵☕</h3>    
     <p>Сегодня у нас японский кофе (по такому поводу даже у Зёбры порция с кофеином). Не японские зёрна, кофе у них не растет, а <strong>японская обжарка</strong> — бразильско-колумбийская арабика, обжаренная в древней Камакуре.</p>
-    <img src="${images.kamakura2}" />
+    <img src="${o.kamakura2}" />
     <p><strong>Вкус:</strong> Тёмная обжарка, горечь 5/5, кислотность 1/5. Ноты тёмного шоколада, карамели, пряностей.</p>
 
     <p><strong>Камакура — город самураев, дзен и драконов 🏯🐉 История:</strong></p>
@@ -3726,7 +3566,7 @@ export const windowMessages = [
       <li><strong>Великий Будда</strong> — бронзовая статуя 13 м, 1252 год. Стоит под открытым небом (храм разрушило цунами в 1498)</li>
       <li>Там за сотню садов и святилищ, и найти городскую фотку с обычными домами практически невозможно.</li>
     </ul>
-    <img src="${images.kamakura}" />
+    <img src="${o.kamakura}" />
 
     <h4>Легенды о драконах Камакуры 🐉: их там немало, и некоторые отличаются от "ну, у нас тут есть белый дракон, который охраняет город"</h4>
 
@@ -3741,7 +3581,7 @@ export const windowMessages = [
       <li><strong>Важно:</strong> Нельзя копить вымытые деньги — надо потратить, тогда вернутся</li>
       <li>Очень популярно у японцев (особенно в Новый год — моют деньги на удачу!)</li>
     </ul>
-        <img src="${images.dragon1}" />
+        <img src="${o.dragon1}" />
     <p><strong>2. Пятиголовый дракон и богиня Бентен:</strong></p>
     <ul>
       <li>В древности в море у Камакуры жил <strong>пятиголовый дракон-людоед</strong></li>
@@ -3757,7 +3597,7 @@ export const windowMessages = [
     
     <p>Какой-то из них еще повышает женскую и мужскую плодовитость. Возможно, оба. Возможно, это вообще одна история, источники путанны.</p>
     
-    <img src="${images.dragon}" />
+    <img src="${o.dragon}" />
     
     <h3>Япония и кофе — парадокс ☕🍵</h3>
     
@@ -3781,7 +3621,7 @@ export const windowMessages = [
       <li>Бариста обжаривает зёрна сам</li>
       <li>Медленное заваривание — pour-over, сифон</li>
     </ul>
-    <img src="${images.kissaten}" />
+    <img src="${o.kissaten}" />
     
     <p><strong>Философия:</strong></p>
     <ul>
@@ -3791,21 +3631,20 @@ export const windowMessages = [
       <li>Тишина, созерцание, медитация с кофе</li>
     </ul>
     
-    <img src="${images.kissaten1}" />
+    <img src="${o.kissaten1}" />
     
     <h3>Сужду прочим, дрип-пакет — японское изобретение 📦</h3>
     <p>А белорусскую конфету с вишней и перцем будем считать некоторым приближением к сакуре </p>
 
-    <img src="${images.sakura}" />
+    <img src="${o.sakura}" />
     <h3>Задание 🎯</h3>
     <ol>
       <li>Выпить японский продукт, закусить белорусским</li>
       <li>Начать откладывать деньги на поездку в Японию, потому что цветение сакуры само себя не посмотрит</li>
     </ol>
 
-    <img src="${images.sakura1}" />
-  `,
-    zebra_message: `
+    <img src="${o.sakura1}" />
+  `,zebra_message:`
     <h3>⚠️ ВНИМАНИЕ! КОФЕИН! ⚠️</h3>
     
     <p style="background-color: #ffebee; border: 2px solid #f44336; padding: 15px; border-radius: 8px; font-weight: bold; color: #c62828;">
@@ -3823,7 +3662,7 @@ export const windowMessages = [
       <li><strong>Великий Будда</strong> — бронзовая статуя 13 м, 1252 год. Стоит под открытым небом (храм разрушило цунами в 1498)</li>
       <li>Там за сотню садов и святилищ, и найти городскую фотку с обычными домами практически невозможно.</li>
     </ul>
-    <img src="${images.kamakura}" />
+    <img src="${o.kamakura}" />
 
     <h4>Легенды о драконах Камакуры 🐉: их там немало, и некоторые отличаются от "ну, у нас тут есть белый дракон, который охраняет город"</h4>
 
@@ -3838,7 +3677,7 @@ export const windowMessages = [
       <li><strong>Важно:</strong> Нельзя копить вымытые деньги — надо потратить, тогда вернутся</li>
       <li>Очень популярно у японцев (особенно в Новый год — моют деньги на удачу!)</li>
     </ul>
-        <img src="${images.dragon1}" />
+        <img src="${o.dragon1}" />
     <p><strong>2. Пятиголовый дракон и богиня Бентен:</strong></p>
     <ul>
       <li>В древности в море у Камакуры жил <strong>пятиголовый дракон-людоед</strong></li>
@@ -3854,7 +3693,7 @@ export const windowMessages = [
     
     <p>Какой-то из них еще повышает женскую и мужскую плодовитость. Возможно, оба. Возможно, это вообще одна история, источники путанны.</p>
     
-    <img src="${images.dragon}" />
+    <img src="${o.dragon}" />
     
     <h3>Япония и кофе — парадокс ☕🍵</h3>
     
@@ -3878,7 +3717,7 @@ export const windowMessages = [
       <li>Бариста обжаривает зёрна сам</li>
       <li>Медленное заваривание — pour-over, сифон</li>
     </ul>
-    <img src="${images.kissaten}" />
+    <img src="${o.kissaten}" />
     
     <p><strong>Философия:</strong></p>
     <ul>
@@ -3888,12 +3727,12 @@ export const windowMessages = [
       <li>Тишина, созерцание, медитация с кофе</li>
     </ul>
     
-    <img src="${images.kissaten1}" />
+    <img src="${o.kissaten1}" />
     
     <h3>Сужду прочим, дрип-пакет — японское изобретение 📦</h3>
     <p>А белорусскую конфету с вишней и перцем будем считать некоторым приближением к сакуре </p>
 
-    <img src="${images.sakura}" />
+    <img src="${o.sakura}" />
 
     <h3>Задание 🎯</h3>
     <ol>
@@ -3901,18 +3740,8 @@ export const windowMessages = [
       <li>Начать откладывать деньги на поездку в Японию, потому что цветение сакуры само себя не посмотрит</li>
     </ol>
 
-    <img src="${images.sakura1}" />
-    `,
-  },
-  {
-    day: 16,
-    date: '2026-01-04',
-    tanya_gift: 'Shazel "Sütlü Menengiç" — фисташковый напиток с молоком (стик-пакет, Турция)',
-    zebra_gift: 'Shazel "Sütlü Menengiç" — фисташковый напиток с молоком (стик-пакет, Турция)',
-    tanya_bonus: 'Леденец "Единорог Лучистик" со светящейся неоновой палочкой',
-    zebra_bonus: 'Леденец "Единорог Лучистик" со светящейся неоновой палочкой',
-    title: 'Турецкие фисташки и волшебство',
-    tanya_message: `
+    <img src="${o.sakura1}" />
+    `},{day:16,date:"2026-01-04",tanya_gift:'Shazel "Sütlü Menengiç" — фисташковый напиток с молоком (стик-пакет, Турция)',zebra_gift:'Shazel "Sütlü Menengiç" — фисташковый напиток с молоком (стик-пакет, Турция)',tanya_bonus:'Леденец "Единорог Лучистик" со светящейся неоновой палочкой',zebra_bonus:'Леденец "Единорог Лучистик" со светящейся неоновой палочкой',title:"Турецкие фисташки и волшебство",tanya_message:`
     <h3>Загадка дня! 🕵️‍♀️</h3>
     <p>
       🦄 Единорог Лучистик должен быть съеден сегодня (день 16).<br>
@@ -3921,14 +3750,14 @@ export const windowMessages = [
     <h3>Shazel "Sütlü Menengiç" — турецкий фисташковый кофе ☕🌰</h3>
     <p>Сегодня у тебя напиток из Турции. Не кофе, но похож на кофе, из настоящих фисташек (<strong>"Menengiç"</strong> = дикая турецкая фисташка, растёт в Анатолии), <strong>без кофеина!</strong></p>
       <p>Похож на ореховый латте или фисташковое мороженое в жидком виде</p>
-    <img src="${images.pistachioLatte}" />
+    <img src="${o.pistachioLatte}" />
     <p><strong>История:</strong></p>
     <ul>
       <li>Дикая фисташка: меньше обычной, темнее, более ароматная. Собирают вручную в горах (трудоёмко!)</li>
       <li>Турки пьют напиток из menengiç <strong>веками</strong>.</li>
       <li>Зёрна дикой фисташки собирают в горах, жарят (как кофейные зёрна), мелют в порошок, смешивают с молоком и сахаром.</li>
     </ul>
-    <img src="${images.pistachios}" />
+    <img src="${o.pistachios}" />
     <p><strong>Почему "кофе":</strong></p>
     <ul>
       <li>Похож на кофе: горячий, ароматный, бодрящий (но без кофеина!)</li>
@@ -3936,7 +3765,7 @@ export const windowMessages = [
       <li>Ритуал похож: медленно, с наслаждением</li>
       <li>Но вкус совсем другой — ореховый, сладкий, мягкий</li>
     </ul>
-    <img src="${images.pistachios1}" />
+    <img src="${o.pistachios1}" />
     <p><strong>История фисташек:</strong></p>
     <ul>
       <li><strong>Родина:</strong> Ближний Восток, Средняя Азия (Иран, Турция, Сирия)</li>
@@ -3945,7 +3774,7 @@ export const windowMessages = [
       <li><strong>Царица Савская:</strong> Легенда — объявила фисташки царским орехом, простолюдинам запретила!</li>
       <li><strong>Шёлковый путь:</strong> Фисташки возили из Персии в Китай и Европу</li>
     </ul>
-    <img src="${images.pistachios2}" />
+    <img src="${o.pistachios2}" />
     
     <p><strong>Почему фисташки дорогие:</strong></p>
     <ul>
@@ -3954,18 +3783,18 @@ export const windowMessages = [
       <li>Требуют специфического климата (жаркое лето, холодная зима)</li>
       <li>Самые дорогие: фисташки из Бронте (Сицилия) — до €80/кг!</li>
     </ul>
-    <img src="${images.pistachios3}" />
+    <img src="${o.pistachios3}" />
     
     <h3>Единорог Лучистик — волшебство в леденце 🦄✨</h3>
     
-    <img src="${images.unicornGerb}" />
+    <img src="${o.unicornGerb}" />
     <p><strong>Внезапное включение про единорогов в геральдике:</strong></p>
     <ul>
       <li>Символ Шотландии (а на гербе Великобритании — единорог и лев!)</li>
       <li>В сегодня лет я узнала, что за счет их непростой совместной истории единорог на гербе в цепях.</li>
       <li>И бонусом - что шотландские единороги были теми еще опасными тварями, с которыми лучше не встречаться.</li>
     </ul>
-    <img src="${images.scotish}" />    
+    <img src="${o.scotish}" />    
     
     <h3>Задание 🎯</h3>
     <ol>
@@ -3976,8 +3805,7 @@ export const windowMessages = [
     </ol>
     
     <p><em>Пусть кофе будет нежным, единорог — волшебным, а ты — улыбающейся, как фисташка! 🌰🦄✨ (это звучит так упорото, что я решила это оставить)</em></p>
-  `,
-    zebra_message: `
+  `,zebra_message:`
     <h3>🎉 Сегодня БЕЗ кофеина! 🎉</h3>
     
     <p style="background-color: #e8f5e9; border: 2px solid #4caf50; padding: 15px; border-radius: 8px; font-weight: bold; color: #2e7d32;">
@@ -3990,14 +3818,14 @@ export const windowMessages = [
     
     <p>Сегодня у тебя напиток из Турции. Не кофе, но похож на кофе, из настоящих фисташек (<strong>"Menengiç"</strong> = дикая турецкая фисташка, растёт в Анатолии), <strong>без кофеина!</strong></p>
       <p>Похож на ореховый латте или фисташковое мороженое в жидком виде</p>
-    <img src="${images.pistachioLatte}" />
+    <img src="${o.pistachioLatte}" />
     <p><strong>История:</strong></p>
     <ul>
       <li>Дикая фисташка: меньше обычной, темнее, более ароматная. Собирают вручную в горах (трудоёмко!)</li>
       <li>Турки пьют напиток из menengiç <strong>веками</strong>.</li>
       <li>Зёрна дикой фисташки собирают в горах, жарят (как кофейные зёрна), мелют в порошок, смешивают с молоком и сахаром.</li>
     </ul>
-    <img src="${images.pistachios}" />
+    <img src="${o.pistachios}" />
     <p><strong>Почему "кофе":</strong></p>
     <ul>
       <li>Похож на кофе: горячий, ароматный, бодрящий (но без кофеина!)</li>
@@ -4005,7 +3833,7 @@ export const windowMessages = [
       <li>Ритуал похож: медленно, с наслаждением</li>
       <li>Но вкус совсем другой — ореховый, сладкий, мягкий</li>
     </ul>
-    <img src="${images.pistachios1}" />
+    <img src="${o.pistachios1}" />
     <p><strong>История фисташек:</strong></p>
     <ul>
       <li><strong>Родина:</strong> Ближний Восток, Средняя Азия (Иран, Турция, Сирия)</li>
@@ -4014,7 +3842,7 @@ export const windowMessages = [
       <li><strong>Царица Савская:</strong> Легенда — объявила фисташки царским орехом, простолюдинам запретила!</li>
       <li><strong>Шёлковый путь:</strong> Фисташки возили из Персии в Китай и Европу</li>
     </ul>
-    <img src="${images.pistachios2}" />
+    <img src="${o.pistachios2}" />
     
     <p><strong>Почему фисташки дорогие:</strong></p>
     <ul>
@@ -4023,18 +3851,18 @@ export const windowMessages = [
       <li>Требуют специфического климата (жаркое лето, холодная зима)</li>
       <li>Самые дорогие: фисташки из Бронте (Сицилия) — до €80/кг!</li>
     </ul>
-    <img src="${images.pistachios3}" />
+    <img src="${o.pistachios3}" />
     
     <h3>Единорог Лучистик — волшебство в леденце 🦄✨</h3>
     
-    <img src="${images.unicornGerb}" />
+    <img src="${o.unicornGerb}" />
     <p><strong>Внезапное включение про единорогов в геральдике:</strong></p>
     <ul>
       <li>Символ Шотландии (а на гербе Великобритании — единорог и лев!)</li>
       <li>В сегодня лет я узнала, что за счет их непростой совместной истории единорог на гербе в цепях.</li>
       <li>И бонусом - что шотландские единороги были теми еще опасными тварями, с которыми лучше не встречаться.</li>
     </ul>
-    <img src="${images.scotish}" />    
+    <img src="${o.scotish}" />    
     
     <h3>Задание 🎯</h3>
     <ol>
@@ -4045,24 +3873,14 @@ export const windowMessages = [
     </ol>
     
     <p><em>Пусть кофе будет нежным, единорог — волшебным, а ты — улыбающейся, как фисташка! 🌰🦄✨ (это звучит так упорото, что я решила это оставить)</em></p>
-  `,
-  },
-  {
-    day: 17,
-    date: '2026-01-05',
-    tanya_gift: 'Рождественский кофе (красивые пакетики)',
-    zebra_gift: 'Какао',
-    tanya_bonus: 'Шашлычок из цукатов сосновых шишек (3 шишки на палочке)',
-    zebra_bonus: 'Шашлычок из цукатов сосновых шишек (3 шишки на палочке)',
-    title: 'Съесть лес',
-    tanya_message: `
+  `},{day:17,date:"2026-01-05",tanya_gift:"Рождественский кофе (красивые пакетики)",zebra_gift:"Какао",tanya_bonus:"Шашлычок из цукатов сосновых шишек (3 шишки на палочке)",zebra_bonus:"Шашлычок из цукатов сосновых шишек (3 шишки на палочке)",title:"Съесть лес",tanya_message:`
     <h3>Рождественский кофе и съедобное дерево 🎄☕🌲</h3>
-    <img src="${images.coffee06}" />
+    <img src="${o.coffee06}" />
     <p>Сегодня у тебя рождественский кофе и шашлычок из сосновых цукатов.</p>
     <p>По крайней мере, я надеюсь, что это так. У меня совершенно выпал из записей какой-то день - кажется, 6-е - но я успею посмотреть, что у вас за кофе, на месте, и добавить это к завтрашнему тексту, если буду в кондиции. Если вдруг у тебя не шашки, открой следующее окошко - а дальше мои записи делаются точнее.</p>
     
     <h3>Итак, цукаты из шишек 🌲🍯</h3>
-    <img src="${images.pinecone1}" />
+    <img src="${o.pinecone1}" />
     
     <p><strong>Что это:</strong></p>
     <ul>
@@ -4071,7 +3889,7 @@ export const windowMessages = [
       <li>Шишки становятся мягкими, сладкими, янтарными</li>
       <li>Можно есть целиком (хрустят!)</li>
     </ul>
-    <img src="${images.pinecone2}" />
+    <img src="${o.pinecone2}" />
     
     <p><strong>Вкус:</strong></p>
     <ul>
@@ -4080,7 +3898,7 @@ export const windowMessages = [
       <li>Как мармелад, но с характером леса</li>
       <li><strong>Ощущение:</strong> "Я ем ёлку" 🎄</li>
     </ul>
-    <img src="${images.pinecone0}" />
+    <img src="${o.pinecone0}" />
     <hr>
     
     <h3>Кто это придумал? 🌲</h3>
@@ -4099,14 +3917,14 @@ export const windowMessages = [
       <li>"Murabba" (მურაბა) = варенье из чего угодно (айва, орехи, лепестки роз, <strong>шишки!</strong>)</li>
       <li>Традиция: угощать гостей чаем с вареньем из шишек</li>
     </ul>
-    <img src="${images.pinecone}" />
+    <img src="${o.pinecone}" />
     <p><strong>Скандинавия:</strong></p>
     <ul>
       <li>Форажинг (foraging) — сбор дикоросов в лесу</li>
       <li>Хипстерские рестораны добавляют цукаты из шишек в десерты</li>
       <li>Ресторан <strong>"Noma"</strong> (Копенгаген, лучший ресторан мира) подавал хвойные блюда: молодые побеги сосны, веточки ели и жареный олений мох</li>
     </ul>
-    <img src="${images.noma}" />
+    <img src="${o.noma}" />
     
     <h3>Польза 🌲💊</h3>
     
@@ -4122,15 +3940,14 @@ export const windowMessages = [
       <li><strong>Съешь шишку с палочки</strong> (осторожно, хрустит!)</li>
       <li>Почувствуй вкус елки, новогоднее настроение или связь с природой, как пойдет. Потом можно и выплюнуть)</li>
     </ol>
-  `,
-    zebra_message: `
+  `,zebra_message:`
     <h3>Рождественский какао и съедобное дерево 🎄☕🌲</h3>
-    <img src="${images.coffee06}" />
+    <img src="${o.coffee06}" />
     <p>Сегодня у тебя рождественский какао и шашлычок из сосновых цукатов.</p>
     <p>По крайней мере, я надеюсь, что это так. У меня совершенно выпал из записей какой-то день - кажется, 6-е - но я успею посмотреть, что у вас за какао, на месте, и добавить это к завтрашнему тексту, если буду в кондиции. Если вдруг у тебя не шашки, открой следующее окошко - а дальше мои записи делаются точнее.</p>
     
     <h3>Итак, цукаты из шишек 🌲🍯</h3>
-    <img src="${images.pinecone1}" />
+    <img src="${o.pinecone1}" />
     
     <p><strong>Что это:</strong></p>
     <ul>
@@ -4139,7 +3956,7 @@ export const windowMessages = [
       <li>Шишки становятся мягкими, сладкими, янтарными</li>
       <li>Можно есть целиком (хрустят!)</li>
     </ul>
-    <img src="${images.pinecone2}" />
+    <img src="${o.pinecone2}" />
     
     <p><strong>Вкус:</strong></p>
     <ul>
@@ -4148,7 +3965,7 @@ export const windowMessages = [
       <li>Как мармелад, но с характером леса</li>
       <li><strong>Ощущение:</strong> "Я ем ёлку" 🎄</li>
     </ul>
-    <img src="${images.pinecone0}" />
+    <img src="${o.pinecone0}" />
     <hr>
     
     <h3>Кто это придумал? 🌲</h3>
@@ -4167,14 +3984,14 @@ export const windowMessages = [
       <li>"Murabba" (მურაბა) = варенье из чего угодно (айва, орехи, лепестки роз, <strong>шишки!</strong>)</li>
       <li>Традиция: угощать гостей чаем с вареньем из шишек</li>
     </ul>
-    <img src="${images.pinecone}" />
+    <img src="${o.pinecone}" />
     <p><strong>Скандинавия:</strong></p>
     <ul>
       <li>Форажинг (foraging) — сбор дикоросов в лесу</li>
       <li>Хипстерские рестораны добавляют цукаты из шишек в десерты</li>
       <li>Ресторан <strong>"Noma"</strong> (Копенгаген, лучший ресторан мира) подавал хвойные блюда: молодые побеги сосны, веточки ели и жареный олений мох</li>
     </ul>
-    <img src="${images.noma}" />
+    <img src="${o.noma}" />
     
     <h3>Польза 🌲💊</h3>
     
@@ -4189,24 +4006,13 @@ export const windowMessages = [
       <li>Выпей рождественский какао</li>
       <li><strong>Съешь шишку с палочки</strong> (осторожно, хрустит!)</li>
       <li>Почувствуй вкус елки, новогоднее настроение или связь с природой, как пойдет. Потом можно и выплюнуть)</li>
-    </ol>`,
-  },
-  {
-    day: 18,
-    date: '2026-01-06',
-    tanya_gift: 'Смоленский кофе (какой — узнаем на месте!)',
-    tanya_uxazher_gift: 'Смоленский кофе (какой — узнаем на месте!)',
-    zebra_gift: 'Смоленский кофе или декаф (какой — узнаем на месте!)',
-    tanya_bonus: 'Колядки по барам',
-    zebra_bonus: 'Колядки по барам',
-    title: 'Смоленск: подземелья, контрабанда и колядки',
-    tanya_message: `
+    </ol>`},{day:18,date:"2026-01-06",tanya_gift:"Смоленский кофе (какой — узнаем на месте!)",tanya_uxazher_gift:"Смоленский кофе (какой — узнаем на месте!)",zebra_gift:"Смоленский кофе или декаф (какой — узнаем на месте!)",tanya_bonus:"Колядки по барам",zebra_bonus:"Колядки по барам",title:"Смоленск: подземелья, контрабанда и колядки",tanya_message:`
     <h3>Смоленск — город, где можно многое 🔑🕵️‍♀️🎭</h3>
-    <img src="${images.smolensk2}" />
+    <img src="${o.smolensk2}" />
     <p>Сегодня мы в Смоленске! Кофе? Загадка (узнаем на месте, я не записала), но если вдруг в конверте окажется болотная тина, то можно добыть из меня нормальный дрип.</p>
     
     <p>Нейронки генерят про Смоленск уже знакомую нам скучную пургу (Наполеон - ВОВ - храм-долгострой), но я попыталась выдавить из них что-нибудь сверх этого.</p>
-    <img src="${images.smolensk}" />
+    <img src="${o.smolensk}" />
     <h3>Башня Веселуха</h3>
     
     <p><strong>Легенда о башне Веселуха:</strong></p>
@@ -4218,7 +4024,7 @@ export const windowMessages = [
     </ul>
     
     <h3>А в <strong>Маховой башне</strong> - Музей счастья "Смоленские украсы" 🎨✨🦅</h3>
-    <img src="${images.tower}" />
+    <img src="${o.tower}" />
     <p>История — музей, сделанный энтузиастами, который быстро вошел в топ-10 музеев города</p>
     <ul>
       <li><strong>1970-е:</strong> Детский туристический клуб "Гамаюн" начал собирать артефакты в экспедиции по Смоленщине. Собрали более 2000 экспонатов (подлинные вещи XIX-XX века)</li>
@@ -4227,7 +4033,7 @@ export const windowMessages = [
     </ul>
     
     <p><strong>Концепция — три яруса башни:</strong></p>
-    <img src="${images.tower1}" />
+    <img src="${o.tower1}" />
     <ul>
       <li>1 ярус — Мать-Земля (женское начало): прялки, ткацкий станок XIX века, прочие женские штуки.</li>
       <li>2 ярус — Огонь и Воин (мужское начало): Топоры, серпы, молоты, скобели (инструменты). Гордость музея: коллекция орнаментированных печных дверец XIX-XX века.</li>
@@ -4248,7 +4054,7 @@ export const windowMessages = [
     <p><strong>Итог:</strong> Парень из бедной смоленской семьи стал такси-королём Америки. Американская мечта началась в Смоленске! 🚕✨</p>
     
     <h3>Подземелья Смоленска — город под городом 🕳️🔦</h3>
-    <img src="${images.smolensk1}" />
+    <img src="${o.smolensk1}" />
     <p><strong>Факты:</strong></p>
     <ul>
       <li>Под Смоленском — <strong>разветвлённая сеть подземных ходов</strong></li>
@@ -4260,7 +4066,7 @@ export const windowMessages = [
       </ul>
     
     <h3>Колядки по барам — рождественская традиция 2.0 🎄🍺🎶</h3>
-    <img src="${images.koliadky1}" />
+    <img src="${o.koliadky1}" />
     <p><strong>Традиционные колядки (Святки, 7-19 января):</strong></p>
     <ul>
       <li>Люди ходили от дома к дому, пели песни, желали счастья</li>
@@ -4270,7 +4076,7 @@ export const windowMessages = [
       <li><strong>Граница между мирами:</strong> В Святки граница между явью и навью (мир живых и мёртвых) истончается → духи могут проникнуть сюда</li>
       <li>Отсюда — ряженье в чертей и мертвецов (чтобы обмануть духов!)</li>
     </ul>
-    <img src="${images.koliadky4}" />
+    <img src="${o.koliadky4}" />
     <p><strong>Что пели:</strong></p>
     <ul>
       <li>Колядки (7-8 января) — про Рождество</li>
@@ -4281,20 +4087,19 @@ export const windowMessages = [
     <p>В общем, не рок-н-ролл, хотя это как посмотреть.</p>
     
     <p><em>Идём по барам, поём (что-то), пьём (в меру), веселимся! </em></p>
-    <img src="${images.koliadky}" />
+    <img src="${o.koliadky}" />
     <h3>Задание 🎯</h3>
     <ol>
       <li><strong>Выпить кофе в Смоленске, чтобы не спать</strong></li>
       <li><strong>Колядуем по барам!</strong> Духи предков одобряют (предположительно) 👻🍻</li>
     </ol>
-  `,
-    zebra_message: `
+  `,zebra_message:`
     <h3>Смоленск — город, где можно многое 🔑🕵️‍♀️🎭</h3>
-    <img src="${images.smolensk2}" />
+    <img src="${o.smolensk2}" />
     <p>Сегодня мы в Смоленске! Кофе? Загадка (узнаем на месте, я не записала), но если вдруг в конверте окажется болотная тина, то можно добыть из меня нормальный дрип (декаф тоже, хотя предлагаю рискнуть с опасным, чтобы шататься по барам в морозной тьме).</p>
     
     <p>Нейронки генерят про Смоленск уже знакомую нам скучную пургу (Наполеон - ВОВ - храм-долгострой), но я попыталась выдавить из них что-нибудь сверх этого.</p>
-    <img src="${images.smolensk}" />
+    <img src="${o.smolensk}" />
     <h3>Башня Веселуха</h3>
     
     <p><strong>Легенда о башне Веселуха:</strong></p>
@@ -4306,7 +4111,7 @@ export const windowMessages = [
     </ul>
     
     <h3>А в <strong>Маховой башне</strong> - Музей счастья "Смоленские украсы" 🎨✨🦅</h3>
-    <img src="${images.tower}" />
+    <img src="${o.tower}" />
     <p>История — музей, сделанный энтузиастами, который быстро вошел в топ-10 музеев города</p>
     <ul>
       <li><strong>1970-е:</strong> Детский туристический клуб "Гамаюн" начал собирать артефакты в экспедиции по Смоленщине. Собрали более 2000 экспонатов (подлинные вещи XIX-XX века)</li>
@@ -4315,7 +4120,7 @@ export const windowMessages = [
     </ul>
     
     <p><strong>Концепция — три яруса башни:</strong></p>
-    <img src="${images.tower1}" />
+    <img src="${o.tower1}" />
     <ul>
       <li>1 ярус — Мать-Земля (женское начало): прялки, ткацкий станок XIX века, прочие женские штуки.</li>
       <li>2 ярус — Огонь и Воин (мужское начало): Топоры, серпы, молоты, скобели (инструменты). Гордость музея: коллекция орнаментированных печных дверец XIX-XX века.</li>
@@ -4336,7 +4141,7 @@ export const windowMessages = [
     <p><strong>Итог:</strong> Парень из бедной смоленской семьи стал такси-королём Америки. Американская мечта началась в Смоленске! 🚕✨</p>
     
     <h3>Подземелья Смоленска — город под городом 🕳️🔦</h3>
-    <img src="${images.smolensk1}" />
+    <img src="${o.smolensk1}" />
     <p><strong>Факты:</strong></p>
     <ul>
       <li>Под Смоленском — <strong>разветвлённая сеть подземных ходов</strong></li>
@@ -4348,7 +4153,7 @@ export const windowMessages = [
       </ul>
     
     <h3>Колядки по барам — рождественская традиция 2.0 🎄🍺🎶</h3>
-    <img src="${images.koliadky1}" />
+    <img src="${o.koliadky1}" />
     <p><strong>Традиционные колядки (Святки, 7-19 января):</strong></p>
     <ul>
       <li>Люди ходили от дома к дому, пели песни, желали счастья</li>
@@ -4358,7 +4163,7 @@ export const windowMessages = [
       <li><strong>Граница между мирами:</strong> В Святки граница между явью и навью (мир живых и мёртвых) истончается → духи могут проникнуть сюда</li>
       <li>Отсюда — ряженье в чертей и мертвецов (чтобы обмануть духов!)</li>
     </ul>
-    <img src="${images.koliadky4}" />
+    <img src="${o.koliadky4}" />
     <p><strong>Что пели:</strong></p>
     <ul>
       <li>Колядки (7-8 января) — про Рождество</li>
@@ -4369,28 +4174,18 @@ export const windowMessages = [
     <p>В общем, не рок-н-ролл, хотя это как посмотреть.</p>
     
     <p><em>Идём по барам, поём (что-то), пьём (в меру), веселимся! </em></p>
-    <img src="${images.koliadky}" />
+    <img src="${o.koliadky}" />
     <h3>Задание 🎯</h3>
     <ol>
       <li><strong>Выпить кофе в Смоленске, чтобы не спать</strong></li>
       <li><strong>Колядуем по барам!</strong> Духи предков одобряют (предположительно) 👻🍻</li>
     </ol>
-  `,
-  },
-  {
-    day: 19,
-    date: '2026-01-07',
-    tanya_gift: 'Круиз: по-венски',
-    zebra_gift: 'Круиз: по-индийски (х2)',
-    tanya_bonus: 'Аскорбинка',
-    zebra_bonus: 'Аскорбинка',
-    title: 'День 18',
-    tanya_message: `
-      <img src="${images.christmas}" />
+  `},{day:19,date:"2026-01-07",tanya_gift:"Круиз: по-венски",zebra_gift:"Круиз: по-индийски (х2)",tanya_bonus:"Аскорбинка",zebra_bonus:"Аскорбинка",title:"День 18",tanya_message:`
+      <img src="${o.christmas}" />
   <p>А вот каких замечательных вертепов я нашла на Пинтересте</p>
   
   <p>Мимо этого кофе я не смогла пройти: это была целая серия дрипов с картинками о том, как <strong>"Иисус любит тебя"</strong>☕✝️</p>
-  <img src="${images.christmas1}" />
+  <img src="${o.christmas1}" />
 
       <p>Между тем <strong>Christian Coffee</strong> — целый жанр в США!</p>
       
@@ -4402,7 +4197,7 @@ export const windowMessages = [
         <li>"Grounds for faith"</li>
         <li>"Blessed beans"</li>
       </ul>
-      <img src="${images.blessed1}" />
+      <img src="${o.blessed1}" />
 
       <p>Есть маркетинговая легенда, что кофе изначально считался <strong>дьявольским напитком</strong>. Мусульмане его пили, христиане боялись, пока Папа Климент VIII не попробовал и не благословил (1600), сказав, что кощунством было бы оставлять дьяволу такую хорошую вещь.</p>
       
@@ -4410,7 +4205,7 @@ export const windowMessages = [
       <p><strong>Orthodox Coffee Prayer:</strong></p>
       
       <p><em>"Bless this coffee, O Lord, as You blessed the water at Cana. Give us strength for our work and keep us alert in Your service. Through the intercession of Saint Drogo, patron of coffee, may this drink refresh our bodies and enliven our spirits. Amen."</em></p>
-      <img src="${images.drogo}" />
+      <img src="${o.drogo}" />
       <p>У кофе есть даже свой святой покровитель - Saint Drogo. Его память отмечается 12 декабря. Сам он, правда, разминулся с кофе на пару столетий, если верить нейронкам - но заваривал какой-то ячмень и был гиперпродуктивен (его божественная суперсособность - находиться в нескольких местах одновременно).</p>
 
       <h3>Задание: Рождественский ритуал</h3>
@@ -4422,13 +4217,13 @@ export const windowMessages = [
         <li>Выпей кофе, послушай музыку, почувствуй благодать</li>
         <li>Иисус любит тебя. И кофе тоже. ☕✝️💕</li>
       </ol>
-      <img src="${images.christmas2}" />
+      <img src="${o.christmas2}" />
       
       <p>А вот текст про сегодняшний</p>
       <h3>Кедровый кофе + шоколад без сахара — загадочная сибирская магия ✨🌲</h3>
 
   <p>Сегодня у нас очередной кофезаменитель - <strong>кедровый кофе</strong> - и <strong>шоколад без сахара</strong>. Звучит как диета гламурного отшельника в тайге.</p>
-  <img src="${images.cedar}" />
+  <img src="${o.cedar}" />
   <h3>Кедровый кофе — что это? 🌲☕</h3>
   <p><strong>Состав:</strong> Обжаренные и молотые <strong>ядра кедрового ореха</strong> (иногда с добавлением цикория или ячменя).</p>
   <p><strong>Вкус:</strong> Ореховый, маслянистый, сливочный, с лёгкой сладостью. <strong>Похож на кофе, но мягче, без горечи.</strong></p>
@@ -4436,7 +4231,7 @@ export const windowMessages = [
   
   <h3>История кедрового кофе 🌲</h3>
   <p><strong>Сибирь и Урал:</strong> Кедровые орехи — традиционная еда коренных народов (ханты, манси, алтайцы). Их ели сырыми, жарили, толкли в муку, выжимали масло.</p>
-  <img src="${images.cedar1}" />
+  <img src="${o.cedar1}" />
   <p><strong>Откуда кофе?</strong></p>
   <ul>
     <li><strong>СССР, дефицит:</strong> Настоящий кофе был дефицитом, суррогаты — нормой</li>
@@ -4460,7 +4255,7 @@ export const windowMessages = [
   
   <h3>Шоколад без сахара — тёмная сторона какао 🍫</h3>
   <p><strong>Что внутри:</strong> Какао-масса, какао-масло, подсластитель (стевия, эритритол, мальтитол). В нашем случае бонусом идет хипстерский набор из сублимированных ягод, красителей и чего только не.</p>
-  <img src="${images.choko}" />
+  <img src="${o.choko}" />
   <p><strong>История шоколада без сахара:</strong></p>
   <ul>
     <li><strong>Ацтеки:</strong> Пили какао <strong>горьким!</strong> С перцем чили, без сахара</li>
@@ -4476,13 +4271,12 @@ export const windowMessages = [
     <li>Завари кедровый кофе, отломи кусочек шоколада без сахара</li>
     <li><strong>Аффирмация дня:</strong> "Сегодня я пью кофе без кофеина и ем шоколад без сахара. Я — взрослый человек и принимаю странные решения" 🌲🍫</li>
   </ol>
-      `,
-    zebra_message: `
-      <img src="${images.christmas}" />
+      `,zebra_message:`
+      <img src="${o.christmas}" />
   <p>А вот каких замечательных вертепов я нашла на Пинтересте</p>
   
   <p>Мимо этого кофе я не смогла пройти: это была целая серия дрипов с картинками о том, как <strong>"Иисус любит тебя"</strong>☕✝️</p>
-  <img src="${images.christmas1}" />
+  <img src="${o.christmas1}" />
 
         <p>Между тем <strong>Christian Coffee</strong> — целый жанр в США!</p>
       
@@ -4494,7 +4288,7 @@ export const windowMessages = [
         <li>"Grounds for faith"</li>
         <li>"Blessed beans"</li>
       </ul>
-      <img src="${images.blessed1}" />
+      <img src="${o.blessed1}" />
 
       <p>Есть маркетинговая легенда, что кофе изначально считался <strong>дьявольским напитком</strong>. Мусульмане его пили, христиане боялись, пока Папа Климент VIII не попробовал и не благословил (1600), сказав, что кощунством было бы оставлять дьяволу такую хорошую вещь.</p>
       
@@ -4502,7 +4296,7 @@ export const windowMessages = [
       <p><strong>Orthodox Coffee Prayer:</strong></p>
       
       <p><em>"Bless this coffee, O Lord, as You blessed the water at Cana. Give us strength for our work and keep us alert in Your service. Through the intercession of Saint Drogo, patron of coffee, may this drink refresh our bodies and enliven our spirits. Amen."</em></p>
-      <img src="${images.drogo}" />
+      <img src="${o.drogo}" />
       <p>У кофе есть даже свой святой покровитель - Saint Drogo. Его память отмечается 12 декабря. Сам он, правда, разминулся с кофе на пару столетий, если верить нейронкам - но заваривал какой-то ячмень и был гиперпродуктивен (его божественная суперсособность - находиться в нескольких местах одновременно).</p>
 
       <h3>Задание: Рождественский ритуал</h3>
@@ -4514,13 +4308,13 @@ export const windowMessages = [
         <li>Выпей кофе, послушай музыку, почувствуй благодать</li>
         <li>Иисус любит тебя. И кофе тоже. ☕✝️💕</li>
       </ol>
-      <img src="${images.christmas2}" />
+      <img src="${o.christmas2}" />
       
       <p>А вот текст про сегодняшний</p>
       <h3>Кедровый кофе + шоколад без сахара — загадочная сибирская магия ✨🌲</h3>
 
   <p>Сегодня у нас очередной кофезаменитель - <strong>кедровый кофе</strong> - и <strong>шоколад без сахара</strong>. Звучит как диета гламурного отшельника в тайге.</p>
-  <img src="${images.cedar}" />
+  <img src="${o.cedar}" />
   <h3>Кедровый кофе — что это? 🌲☕</h3>
   <p><strong>Состав:</strong> Обжаренные и молотые <strong>ядра кедрового ореха</strong> (иногда с добавлением цикория или ячменя).</p>
   <p><strong>Вкус:</strong> Ореховый, маслянистый, сливочный, с лёгкой сладостью. <strong>Похож на кофе, но мягче, без горечи.</strong></p>
@@ -4528,7 +4322,7 @@ export const windowMessages = [
   
   <h3>История кедрового кофе 🌲</h3>
   <p><strong>Сибирь и Урал:</strong> Кедровые орехи — традиционная еда коренных народов (ханты, манси, алтайцы). Их ели сырыми, жарили, толкли в муку, выжимали масло.</p>
-  <img src="${images.cedar1}" />
+  <img src="${o.cedar1}" />
   <p><strong>Откуда кофе?</strong></p>
   <ul>
     <li><strong>СССР, дефицит:</strong> Настоящий кофе был дефицитом, суррогаты — нормой</li>
@@ -4552,7 +4346,7 @@ export const windowMessages = [
   
   <h3>Шоколад без сахара — тёмная сторона какао 🍫</h3>
   <p><strong>Что внутри:</strong> Какао-масса, какао-масло, подсластитель (стевия, эритритол, мальтитол). В нашем случае бонусом идет хипстерский набор из сублимированных ягод, красителей и чего только не.</p>
-  <img src="${images.choko}" />
+  <img src="${o.choko}" />
   <p><strong>История шоколада без сахара:</strong></p>
   <ul>
     <li><strong>Ацтеки:</strong> Пили какао <strong>горьким!</strong> С перцем чили, без сахара</li>
@@ -4568,18 +4362,8 @@ export const windowMessages = [
     <li>Завари кедровый кофе, отломи кусочек шоколада без сахара</li>
     <li><strong>Аффирмация дня:</strong> "Сегодня я пью кофе без кофеина и ем шоколад без сахара. Я — взрослый человек и принимаю странные решения" 🌲🍫</li>
   </ol>
-      `,
-  },
-  {
-    day: 20,
-    date: '2026-01-08',
-    tanya_gift: 'Кофе в чайном сашете',
-    zebra_gift: 'Кофе Мексика',
-    tanya_bonus: 'Пастила',
-    zebra_bonus: 'Пастила',
-    title: 'День 19',
-    tanya_message: `<p>Мне так понравился концепт Christian Coffee, что теперь я собираюсь начинать каждый текст с короткого внезапного напоминания, что Иисус с нами.</p>
-    <img src="${images.blessed2}" />
+      `},{day:20,date:"2026-01-08",tanya_gift:"Кофе в чайном сашете",zebra_gift:"Кофе Мексика",tanya_bonus:"Пастила",zebra_bonus:"Пастила",title:"День 19",tanya_message:`<p>Мне так понравился концепт Christian Coffee, что теперь я собираюсь начинать каждый текст с короткого внезапного напоминания, что Иисус с нами.</p>
+    <img src="${o.blessed2}" />
     <h3>Сегодня у нас кофе, который не тонет (как наша вера!)</h3>
     <p>Он в <strong>сашетах</strong> — больших чайных пакетиках, которые склонны всплывать.</p>
   
@@ -4594,7 +4378,7 @@ export const windowMessages = [
     <li>Салливан получил заказы: "Пришлите ещё этих удобных пакетиков!"</li>
   </ul>
   
-  <img src="${images.teabag1}" />
+  <img src="${o.teabag1}" />
   <h4>Эволюция пакетика 📜</h4>
   <p><strong>1920-е:</strong></p>
   <ul>
@@ -4624,14 +4408,14 @@ export const windowMessages = [
     <li>Многие содержат <strong>пластик</strong> (полипропилен) для прочности: не разлагаются полностью.</li>
     <li>Современные бренды переходят на <strong>биоразлагаемые</strong> материалы, но этот едва ли из таких. Теперь живи с этим.</li>
   </ul>
-  <img src="${images.guilt}" />
+  <img src="${o.guilt}" />
   
   <p><strong>Фанфакт 2. Самый дорогой чайный пакетик в мире:</strong></p>
   <ul>
     <li>2005 год, компания PG Tips (UK). Пакетик украшен <strong>280 бриллиантами</strong>.</li>
     <li>Цена: <strong>$15,000</strong> (почти 2 миллиона рублей на нынешние деньги). Зачем? Благотворительность (продали на аукционе).</li>
   </ul>
-  <img src="${images.teabag}" />
+  <img src="${o.teabag}" />
 
   <h3>Задание 🎯</h3>
   <ol>
@@ -4639,10 +4423,9 @@ export const windowMessages = [
     <li><strong>Аффирмация дня:</strong> "Мой чертов кофе всплывает, но я держу его под контролем. Как и свою жизнь!"</li>
     <li>Выпей кофе. И так будет с каждым!..</li>
   </ol>
-  <img src="${images.bless9}" />
-    `,
-    zebra_message: `<p>Мне так понравился концепт Christian Coffee, что теперь я собираюсь начинать каждый текст с короткого внезапного напоминания, что Иисус с нами.</p>
-    <img src="${images.blessed2}" />
+  <img src="${o.bless9}" />
+    `,zebra_message:`<p>Мне так понравился концепт Christian Coffee, что теперь я собираюсь начинать каждый текст с короткого внезапного напоминания, что Иисус с нами.</p>
+    <img src="${o.blessed2}" />
   
   <p>Повторяем мексиканский декаф, добавляем пастилу со вкусом алкоголя - или кофе, и в этом случае в ней может быть больше кофеина, чем в напитке!..</p>
   
@@ -4651,32 +4434,32 @@ export const windowMessages = [
   <h4>🤠 Бонус: Сомбреро — шляпа-зонтик</h4>
 
 <p><strong>Sombrero</strong> = от испанского <em>"sombra"</em> (тень). Буквально: "делающий тень"!</p>
-<img src="${images.sombrero1}" />
+<img src="${o.sombrero1}" />
 <p><strong>История:</strong></p>
 <ul>
   <li><strong>XV век:</strong> у индейцев ничего подобного не было. Прародители сомбреро приплыли из Испании, а местные радикально увеличили поля.</li>
   <li><strong>Материал:</strong> Солома (для крестьян), фетр (для богатых)</li>
 </ul>
-<img src="${images.sombrero2}" />
+<img src="${o.sombrero2}" />
 <p><strong>Виды:</strong></p>
 <ul>
   <li><strong>Sombrero charro:</strong> Богато украшенное (золотая вышивка), для мариачи и наездников</li>
   <li><strong>Sombrero campesino:</strong> Простое соломенное, для работы в поле</li>
 </ul>
-<img src="${images.sombrero3}" />
+<img src="${o.sombrero3}" />
 
 <p><strong>Символика:</strong> Сомбреро стало символом Мексики (иногда стереотипным). Но для мексиканцев это часть национального костюма и гордости!</p>
   
   <h3>🎺 МАРИАЧИ — музыка, которую слышно из космоса</h3>
   <p>Мариачи — это не просто музыка, это <strong>мексиканская душа в звуке</strong>!</p>
-  <img src="${images.musik1}" />
+  <img src="${o.musik1}" />
   
   <p><strong>Состав оркестра:</strong> Трубы, скрипки, гитары, виуэла, гитаррон (огромная бас-гитара). От 3 до 12 человек.</p>
   
   <p><strong>Костюмы:</strong> Trajes de charro — расшитые серебром чёрные костюмы с широкими брюками, огромные сомбреро. Выглядят как ковбои на свадьбе!</p>
   
   <p><strong>Что играют:</strong> Романтические серенады, песни о любви, предательстве, родине. Громко, страстно, с душой!</p>
-  <img src="${images.musik}" />
+  <img src="${o.musik}" />
   <p><strong>Традиция:</strong> Нанять мариачи, чтобы они сыграли серенаду под окном любимой. Соседи не спят — но это романтично!</p>
   
   <p><strong>ЮНЕСКО:</strong> В 2011 году мариачи внесли в список нематериального культурного наследия человечества.</p>
@@ -4684,19 +4467,19 @@ export const windowMessages = [
   
   <h3>🎨 Немного про ФРИДУ КАЛО и ее мексиканской идентичности</h3>
   <p><strong>Фрида Кало</strong> (1907-1954) — мексиканская художница, икона феминизма и страдания.</p>
-  <img src="${images.frida}" />
+  <img src="${o.frida}" />
   <p>Вот ее фото авторства ее любовника</p>
   <p>Не будем писать про нее общеизвестные банальности (разве что чуть-чуть).</p>
   <p>Чтобы восстановиться после полиомиелита, Фрида занималась боксом и футболом. В качестве основного жанра выбрала автопортрет.</p>
-  <img src="${images.frida3}" />
+  <img src="${o.frida3}" />
   <p>Изменяла мужу с женщинами и с Троцким. Ходила в брюках, джинсах и национальных мексиканских платьях, раскрашивала свои медицинские гипсовые корсеты.</p>
   <p>Простудилась (и впоследствии умерла в 1954 году) на демонстрации. Продаваться задорого ее картины стали через пару десятилетий после ее смерти - тогда же мир ее переоткрыл.</p>
-  <img src="${images.frida1}" />
+  <img src="${o.frida1}" />
   <p>Цитата от Frida Kahlo Corporation: "Наряду с розами, кофе был одной из самых любимых вещей Фриды. Фрида любила кофе и рассматривала его приготовление и питьё как неотъемлемую часть своего повседневного вдохновения." Пила мексиканскую арабику за работой, варила традиционный Café de Olla с корицей и нерафинированным тростниковым сахаром.</p>
   
   <h3>🏠 МЕКСИКАНСКАЯ АРХИТЕКТУРА — розовые дома и синие дворы</h3>
   <p>Мексиканская архитектура — это <strong>взрыв цвета</strong>!</p>
-  <img src="${images.mex1}" />
+  <img src="${o.mex1}" />
   <p><strong>Колониальный стиль (XVI-XIX века):</strong></p>
   <ul>
     <li>Испанцы построили города с центральными площадями (zócalo)</li>
@@ -4704,14 +4487,14 @@ export const windowMessages = [
     <li>Дома с внутренними дворами (patios)</li>
     <li>Яркие фасады: красный, жёлтый, синий, розовый. ОЧЕНЬ МНОГО ЦВЕТА!</li>
   </ul>
-  <img src="${images.mex3}" />
+  <img src="${o.mex3}" />
   <p><strong>Знаменитые города:</strong></p>
   <ul>
     <li><strong>Гуанахуато</strong> — радужный город на холмах</li>
     <li><strong>Сан-Мигель-де-Альенде</strong> — колониальная жемчужина</li>
     <li><strong>Оахака</strong> — яркие дома + уличное искусство</li>
   </ul>
-  <img src="${images.sanmiguel}" />
+  <img src="${o.sanmiguel}" />
   <p><strong>Casa Azul (Синий дом):</strong> Дом-музей Фриды Кало в Мехико. Ярко-синие стены, тропический сад, её вещи, картины. Можно посетить!</p>
   
   <p><strong>Философия цвета:</strong> Мексиканцы верят, что яркие цвета отгоняют злых духов и привлекают радость. После серых европейских городов — это шок!</p>
@@ -4724,19 +4507,9 @@ export const windowMessages = [
     <li><strong>Съешь пастилу</strong> — таки там кофе или алкоголь?</li>
     <li>Фрида рисовала автопортреты - а ты можешь сделать кофейное селфи)</li>
   </ol>
-    `,
-  },
-  {
-    day: 21,
-    date: '2026-01-09',
-    tanya_gift: 'Турецкий кофе',
-    zebra_gift: 'Турецкий кофе',
-    tanya_bonus: 'Камни',
-    zebra_bonus: 'Камни',
-    title: 'День 20',
-    tanya_message: `
+    `},{day:21,date:"2026-01-09",tanya_gift:"Турецкий кофе",zebra_gift:"Турецкий кофе",tanya_bonus:"Камни",zebra_bonus:"Камни",title:"День 20",tanya_message:`
     <p>Кто однажды пытался сманить нас в Стамбул, а потом съехал с темы из-за экономии (и тут же сделал шугариг)? Мы знаем эту девочку! Но, может, в этом году мы сможем, хотя Зёбра там будет страдать: в Стамбуле вечно кто-то орет, от чаек до муэдзинов.</p>  
-    <img src="${images.bosphorus1}" />
+    <img src="${o.bosphorus1}" />
 
     <p>Сегодня у всех <strong>турецкий кофе</strong> — один из древнейших способов приготовления (смолотый в тончайшую пыль) - и съедобные камни правильной расцветки (правда, белорусские). У тебя прямо декаф (турки, вероятно, делали его без одобрения).</p>
 
@@ -4751,7 +4524,7 @@ export const windowMessages = [
       <li><strong>Медленно:</strong> Варится на слабом огне, поднимается 2-3 раза</li>
       <li><strong>Пьют маленькими глотками</strong> из маленьких чашечек</li>
     </ul>
-    <img src="${images.turkish2}" />
+    <img src="${o.turkish2}" />
     <h3>История турецкого кофе ☕📜</h3>
   
     <p><strong>1555 год — кофе приходит в Стамбул:</strong></p>
@@ -4767,7 +4540,7 @@ export const windowMessages = [
       <li>Обсуждали политику, поэзию, философию</li>
       <li>Так популярны, что <strong>конкурировали с мечетями!</strong></li>
     </ul>
-    <img src="${images.turkish3}" />
+    <img src="${o.turkish3}" />
     <p><strong>1633 год — султан Мурад IV запретил кофе!</strong></p>
     <ul>
     <li>Считал, что кофейни = место заговоров (вот ведь чертов параноик)</li>
@@ -4788,7 +4561,7 @@ export const windowMessages = [
     <li><strong>Повторить 2-3 раза</strong></li>
     <li><strong>Разлить по чашкам</strong> — сначала пенку (равномерно!), потом кофе</li>
   </ol>
-  <img src="${images.turkish1}" />
+  <img src="${o.turkish1}" />
   
   <p><strong>Упрощённый способ (для стиков):</strong></p>
   <ol>
@@ -4804,13 +4577,13 @@ export const windowMessages = [
     <li><strong>Menengiç kahvesi</strong> — кофе из фисташковых орехов (без кофеина!)</li>
     <li><strong>Çay</strong> — турецкий чай (да, турки пьют чая больше, чем кофе! ☕→🫖)</li>
   </ul>
-  <img src="${images.bosphorus}" />
+  <img src="${o.bosphorus}" />
   <p><strong>Пословицы про кофе:</strong></p>
   <ul>
     <li><em>"Bir fincan kahvenin kırk yıl hatırı vardır"</em> (Одна чашка кофе помнится сорок лет) — о том, что гостеприимство не забывается</li>
     <li><em>"Kahve içmeyen adamın ne yüzü kara, ne kalbi"</em> (Кто не пьёт кофе, у того ни лица нет, ни сердца) 😄</li>
   </ul>
-  <img src="${images.turkish4}" />
+  <img src="${o.turkish4}" />
   <h3>Задание 🎯</h3>
   <ol>
     <li><strong>Заварить турецкий кофе</strong>, закусить камнем.</li>
@@ -4818,10 +4591,9 @@ export const windowMessages = [
     <li>Напомни себе, что кофе переживет любого злобного султана.</li>
     <li>Подумай про Стамбул в 2026.</li>
   </ol>
-`,
-    zebra_message: `
+`,zebra_message:`
     <p>Надо бы как-нибудь повтрить Стамбул, но уже в полном составе.</p>
-  <img src="${images.bosphorus1}" />
+  <img src="${o.bosphorus1}" />
   <p>Сегодня у всех <strong>турецкий кофе</strong> — один из древнейших способов приготовления (смолотый в тончайшую пыль) - и съедобные камни правильной расцветки (правда, белорусские). У тебя прямо декаф (турки, вероятно, делали его без одобрения))</p>
   
   <h3>Что такое турецкий кофе?</h3>
@@ -4837,7 +4609,7 @@ export const windowMessages = [
   </ul>
   
   <h3>История турецкого кофе ☕📜</h3>
-  <img src="${images.turkish3}" />
+  <img src="${o.turkish3}" />
   <p><strong>1555 год — кофе приходит в Стамбул:</strong></p>
   <ul>
     <li>Два сирийца (Хакем и Шемс) открыли первую кофейню в Стамбуле</li>
@@ -4851,7 +4623,7 @@ export const windowMessages = [
     <li>Обсуждали политику, поэзию, философию</li>
     <li>Так популярны, что <strong>конкурировали с мечетями!</strong></li>
   </ul>
-  <img src="${images.turkish3}" />
+  <img src="${o.turkish3}" />
   <p><strong>1633 год — султан Мурад IV запретил кофе!</strong></p>
   <ul>
     <li>Считал, что кофейни = место заговоров (вот ведь чертов параноик)</li>
@@ -4861,7 +4633,7 @@ export const windowMessages = [
   </ul>
   
   <h3>Как правильно варить турецкий кофе? 🔥</h3>
-  <img src="${images.turkish1}" />
+  <img src="${o.turkish1}" />
   <p><strong>Традиционный способ (в турке):</strong></p>
   <ol>
     <li><strong>Вода + кофе + сахар</strong> (если нужен) — всё сразу в турку!</li>
@@ -4879,7 +4651,7 @@ export const windowMessages = [
     <li>Размешать, подождать 2-3 минуты (гуща осядет)</li>
     <li>Пить аккуратно, оставляя гущу на дне. Заедать камнями (сладкий бонус совершенно в традиции), думать о море.</li>
   </ol>
-  <img src="${images.bosphorus}" />
+  <img src="${o.bosphorus}" />
   <p><strong>Что попробовать в Стамбуле:</strong></p>
   <ul>
     <li><strong>Türk kahvesi</strong> — классический турецкий кофе</li>
@@ -4893,26 +4665,16 @@ export const windowMessages = [
     <li><em>"Bir fincan kahvenin kırk yıl hatırı vardır"</em> (Одна чашка кофе помнится сорок лет) — о том, что гостеприимство не забывается</li>
     <li><em>"Kahve içmeyen adamın ne yüzü kara, ne kalbi"</em> (Кто не пьёт кофе, у того ни лица нет, ни сердца) 😄</li>
   </ul>
-  <img src="${images.turkish4}" />
+  <img src="${o.turkish4}" />
   <h3>Задание 🎯</h3>
   <ol>
     <li><strong>Заварить турецкий кофе</strong>, закусить камнем.</li>
     <li>Нейронка предлагает глупое: вообрази себя султаншей, сплети какую-нибудь интригу.</li>
     <li>Напомни себе, что кофе переживет любого злобного султана.</li>
     <li>Подумай про Стамбул в 2026.</li>
-  </ol>`,
-  },
-  {
-    day: 22,
-    date: '2026-01-10',
-    tanya_gift: 'Who needs sleep',
-    zebra_gift: '???',
-    tanya_bonus: 'Пастила?',
-    zebra_bonus: 'Пастила?',
-    title: 'День 21',
-    tanya_message: `
+  </ol>`},{day:22,date:"2026-01-10",tanya_gift:"Who needs sleep",zebra_gift:"???",tanya_bonus:"Пастила?",zebra_bonus:"Пастила?",title:"День 21",tanya_message:`
     <p><strong>WHO NEEDS SLEEP?</strong> ☕️💚</p>
-    <img src="${images.blessed3}" />
+    <img src="${o.blessed3}" />
   
   <p><strong>Zero Roasters, Бразилия</strong> | 100% арабика средней обжарки</p>
   
@@ -4928,7 +4690,7 @@ export const windowMessages = [
     <li><strong>Внутренний голос говорит "надо бы поспать",</strong> а внешний — "давай ещё один сезон"</li>
     <li><strong>Утро после ночи,</strong> когда нужно быть человеком, но кофеин предлагает быть богом продуктивности</li>
   </ul>
-  <img src="${images.bless5}" />
+  <img src="${o.bless5}" />
 
   <p>Этот кофе — для тех, кто меняет мир, пока другие спят (иногда не по своему выбору). Для тех, у кого список дел длиннее, чем световой день. Эх. А предполагалось, что это кофе для тех, кто немного поживет, а потом поспит как следует.</p>
   
@@ -4940,13 +4702,12 @@ export const windowMessages = [
     <iframe width="100%" src="https://www.youtube.com/embed/0ZpqixUp4ek?si=uSe9lN0jU5KqtH9N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </ol>
   
-`,
-    zebra_message: `
-    <img src="${images.blessed3}" />
+`,zebra_message:`
+    <img src="${o.blessed3}" />
     <p>Совершенно не понимаю, что у тебя сегодня.</p>
     <p>Если на пакетике написано WHO NEEDS SLEEP, то это САМЫЙ КОФЕИНОВЫЙ КОФЕИН, который только можно найти. Берегись! И дай мне знать, я дополню текст.</p>
     <p>А пока у меня есть госпел и вайбы Christian Coffee.</p>
-    <img src="${images.bless5}" />
+    <img src="${o.bless5}" />
     
     <p><strong>⚠️ Предупреждение:</strong> Побочные эффекты включают внезапную способность закончить три проекта до обеда, желание организовать революцию и лёгкое презрение к тем, кто всё ещё спит в 6 утра/уже спит в два часа ночи. Но есть шанс, что я подсунула тебе какой-нибудь дублирующий декаф.</p>
     <h3>Задание 🎯</h3>
@@ -4955,25 +4716,15 @@ export const windowMessages = [
       <li>Быть богиней <s>христианской кофейной</s> продуктивной продуктивности под рождественский госпел.</li>
           <iframe width="100%" src="https://www.youtube.com/embed/0ZpqixUp4ek?si=uSe9lN0jU5KqtH9N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </ol>
-    `,
-  },
-  {
-    day: 23,
-    date: '2026-01-11',
-    tanya_gift: 'Black Moon',
-    zebra_gift: 'Декаф',
-    tanya_bonus: 'Зомби-трость',
-    zebra_bonus: 'Зомби-трость',
-    title: 'День 22',
-    tanya_message: `
-      <img src="${images.bless4}" />
+    `},{day:23,date:"2026-01-11",tanya_gift:"Black Moon",zebra_gift:"Декаф",tanya_bonus:"Зомби-трость",zebra_bonus:"Зомби-трость",title:"День 22",tanya_message:`
+      <img src="${o.bless4}" />
       <p>Сегодняшнее христианское послание предполагалось немного зловещим. Как и сегодняшний кофе!</p>
 
       <h3>Black Moon Coffee — кофе с той стороны 🌑☕💀</h3>
       <p>Сегодня у вас <strong>чёрный кофе под чёрной луной</strong> — и зомби-тросточка в придачу (она так и называлась, натурально)🧟‍♂️</p>
   
       <p><strong>Black Moon (Чёрная Луна)</strong> — одно из самых редких (и зловещих) лунных явлений!</p>
-      <img src="${images.moon1}" />
+      <img src="${o.moon1}" />
       <p><strong>Что это:</strong></p>
       <ul>
         <li><strong>Второе новолуние в одном месяце</strong> (происходит раз в 29 месяцев)</li>
@@ -4983,7 +4734,7 @@ export const windowMessages = [
         <li>Ближайшая случится 31 августа 2027 года</li>
         <li>Некая ее противоположность - Голубая Луна (она существует!), и это третье по счету полнолуние в астрономическом сезоне с четырьмя полнолуниями (я забыла это в тот же миг, как прочитала).</li>
       </ul>
-      <img src="${images.mooncoffee}" />
+      <img src="${o.mooncoffee}" />
   
       <p><strong>Духовное значение:</strong></p>
       <ul>
@@ -4994,7 +4745,7 @@ export const windowMessages = [
   
       <iframe width="100%" src="https://www.youtube.com/embed/k7Il8L0O1AQ?si=Ttg5Yx8LssD2JyZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <p><em>Вместо госпела у нас сегодня вуду от Дисней. Почувствуйте силу вуду! Может, она вернет нас в строй в первый рабочий день </em></p>
-      <img src="${images.scarycoffee}" />
+      <img src="${o.scarycoffee}" />
   
       <h3>Задание 🎯</h3>
       <ol>
@@ -5007,16 +4758,15 @@ export const windowMessages = [
       <h3>Цитата дня 🎩</h3>
       <p><em>"You got what you wanted, but you lost what you had."</em></p>
       <p>— Dr. Facilier, "Friends on the Other Side"</p>
-    `,
-    zebra_message: `
-      <img src="${images.bless4}" />
+    `,zebra_message:`
+      <img src="${o.bless4}" />
       <p>Сегодняшнее христианское послание предполагалось немного зловещим. Как и сегодняшний кофе!</p>
       <p>У Таньки там арабика "Черная луна", у тебя, кажется, просто черный декаф и зомби-тросточка в придачу (она так и называлась, натурально)🧟‍♂️</p>
-      <img src="${images.moon1}" />
+      <img src="${o.moon1}" />
       
       <iframe width="100%" src="https://www.youtube.com/embed/k7Il8L0O1AQ?si=Ttg5Yx8LssD2JyZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <p><em>Вместо госпела у нас сегодня вуду от Дисней. Почувствуйте силу вуду! А как иначе вернуться в строй в первый рабочий день?..</em></p>
-      <img src="${images.scarycoffee}" />
+      <img src="${o.scarycoffee}" />
   
       <h3>Задание 🎯</h3>
       <ol>
@@ -5025,44 +4775,23 @@ export const windowMessages = [
         <li>У тебя уже есть отличные блестки, чтобы бонусом превратиться в вампира из Сумерек.</li>
         <li>Пережить первый рабочий день.</li>
       </ol>
-      <img src="${images.mooncoffee}" />
+      <img src="${o.mooncoffee}" />
   
       <h3>Цитата дня 🎩</h3>
       <p><em>"You got what you wanted, but you lost what you had."</em></p>
       <p>— Dr. Facilier, "Friends on the Other Side"</p>
-    `,
-  },
-  {
-    day: 24,
-    date: '2026-01-12',
-    tanya_gift: 'Декаф Гватемала',
-    zebra_gift: 'Декаф Мексика (х2)',
-    tanya_bonus: 'Бэггинс кофе',
-    zebra_bonus: 'Бэггинс кофе (х2)',
-    title: 'День 23',
-    tanya_message: `
+    `},{day:24,date:"2026-01-12",tanya_gift:"Декаф Гватемала",zebra_gift:"Декаф Мексика (х2)",tanya_bonus:"Бэггинс кофе",zebra_bonus:"Бэггинс кофе (х2)",title:"День 23",tanya_message:`
       <p>Напишите, что у вас сегодня! У меня день совершенного провала в записях.</p>
-      <img src="${images.bless6}" />
+      <img src="${o.bless6}" />
       <p>Но вот самый странный госпел, который мне подвернулся.</p>
       <iframe width="100%" src="https://www.youtube.com/embed/qYhzhASuWrI?si=MPQGdSplONZ0w99g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    `,
-    zebra_message: `
+    `,zebra_message:`
       <p>Напишите, что у вас сегодня! У меня день совершенного провала в записях.</p>
-      <img src="${images.bless6}" />
+      <img src="${o.bless6}" />
       <p>Но вот самый странный госпел, который мне подвернулся.</p>  
       <iframe width="100%" src="https://www.youtube.com/embed/qYhzhASuWrI?si=MPQGdSplONZ0w99g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-`,
-  },
-  {
-    day: 25,
-    date: '2026-01-13',
-    tanya_gift: 'Желтая субмарина',
-    zebra_gift: 'Неведомый чай',
-    tanya_bonus: 'кофейная пастила',
-    zebra_bonus: 'Кофейная пастила',
-    title: 'День 24',
-    tanya_message: ` 
-      <img src="${images.bless10}" />
+`},{day:25,date:"2026-01-13",tanya_gift:"Желтая субмарина",zebra_gift:"Неведомый чай",tanya_bonus:"кофейная пастила",zebra_bonus:"Кофейная пастила",title:"День 24",tanya_message:` 
+      <img src="${o.bless10}" />
       <h3>Yellow Submarine + кофейная пастила — Beatles и кофеиновый заговор 🎶☕🍬</h3>
       <p><em>"All you need is love... and caffeine in every possible form!"</em> ☕</p>
       <p><strong>Единственное упоминание кофе в песнях Beatles:</strong></p>
@@ -5070,7 +4799,7 @@ export const windowMessages = [
         <li>"Savoy Truffle" (George Harrison, White Album 1968). Вся песня "Savoy Truffle" — список конфет!</li>
         <li>Строка: "A coffee dessert, yes you know it's good news". Это не про кофе, а про шоколадную конфету с кофейным вкусом из коробки Mackintosh's Good News!</li>
         <li>Песня написана про друга Джорджа — **Эрика Клэптона**, который обожал шоколад и от этого портил зубы</li>
-        <img src="${images.sweets}" />
+        <img src="${o.sweets}" />
         <li>И больше ни единого упоминания кофе, потому что чертовы британцы ☕🚫</li>
         <li>А еще кофе в 1960-е был редкостью. В Британии кофе = растворимый Nescafé (фу!)</li>
         <li>Эспрессо-культура пришла только в 1980-1990-х</li>
@@ -5078,7 +4807,7 @@ export const windowMessages = [
       </ul>
       <iframe width="100%" src="https://www.youtube.com/embed/CD5LEdgpKi8?si=QnM97xpcsTziDSss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <h3>Так почему Yellow Submarine называется кофе? 🤔</h3>
-      <img src="${images.beatles1}" />
+      <img src="${o.beatles1}" />
       <p>И внезапные Битлы в гладиолусах</p>
       <p><strong>Yellow Submarine = метафора убежища:</strong></p>
       <ul>
@@ -5086,15 +4815,14 @@ export const windowMessages = [
         <li>Где жизнь легка ("Life of ease")</li>
         <li>Где всё ярко и просто ("Sky of blue and sea of green")</li>
       </ul>
-      <img src="${images.beatles}" />
+      <img src="${o.beatles}" />
       <h3>Задание 🎯</h3>
       <ol>
         <li>Завари Yellow Submarine, съешь кофейную пастилу</li>
         <li>Beatles-философия: All You Need Is... что? ☕💕</li>
       </ol>
-    `,
-    zebra_message: `
-      <img src="${images.bless10}" />
+    `,zebra_message:`
+      <img src="${o.bless10}" />
       <p><strong>Сколько кофеина в кофейной пастиле?</strong></p>
       <ul>
         <li>Зависит от производителя, но примерно: **5-15 мг кофеина на штуку**</li>
@@ -5126,21 +4854,11 @@ export const windowMessages = [
         <li>"Я делаю паузу от кофе, но кофеин нашёл меня через пастилу. Touché, caffeine!" 🫖🍬⚡</li>
         <li>Beatles-философия: All You Need Is... что? ☕💕</li>
       </ol>
-      <img src="${images.beatles1}" />
+      <img src="${o.beatles1}" />
       <p>И внезапные Битлы в гладиолусах.</p>
-    `,
-  },
-  {
-    day: 26,
-    date: '2026-01-14',
-    tanya_gift: 'Иисус любит тебя',
-    zebra_gift: 'Эфиопия Гуджи (х2)',
-    tanya_bonus: 'Бразилия Фенси',
-    zebra_bonus: 'Бразилия Фенси (х2)',
-    title: 'День 25',
-    tanya_message: `
+    `},{day:26,date:"2026-01-14",tanya_gift:"Иисус любит тебя",zebra_gift:"Эфиопия Гуджи (х2)",tanya_bonus:"Бразилия Фенси",zebra_bonus:"Бразилия Фенси (х2)",title:"День 25",tanya_message:`
       <p>Внезапный день английского. Сорян, на русском такого эээээ еще не завезли.</p>
-      <img src="${images.blessed4}" />
+      <img src="${o.blessed4}" />
       <h2>5 Cozy Coffee Date Ideas with Jesus ☕✝️</h2>
 
       <h3>1. Morning Devotional Coffee Date 🌅</h3>
@@ -5170,10 +4888,9 @@ export const windowMessages = [
       
       <iframe width="100%" src="https://www.youtube.com/embed/EEjZ0Gh_y8I?si=zKBCIgl1vA2KzC7Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <p>Все равно я не помню, какой у вас сегодня кофе. Надеюсь, что это сырновый/лавандовый раф - дайте знать, если это так, я накидаю сюда лавандовых полей. Хорошего дня!</p>
-    `,
-    zebra_message: `
+    `,zebra_message:`
       <p>Внезапный день английского. Сорян, на русском такого эээээ еще не завезли.</p>
-      <img src="${images.blessed4}" />
+      <img src="${o.blessed4}" />
       <h2>5 Cozy Coffee Date Ideas with Jesus ☕✝️</h2>
 
       <h3>1. Morning Devotional Coffee Date 🌅</h3>
@@ -5203,21 +4920,11 @@ export const windowMessages = [
       
       <iframe width="100%" src="https://www.youtube.com/embed/EEjZ0Gh_y8I?si=zKBCIgl1vA2KzC7Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <p>Все равно я не помню, какой у вас сегодня кофе. Надеюсь, что это сырновый/лавандовый раф - дайте знать, если это так, я накидаю сюда лавандовых полей. Хорошего дня!</p>
-    `,
-  },
-  {
-    day: 27,
-    date: '2026-01-15',
-    tanya_gift: 'Иисус любит тебя',
-    zebra_gift: 'Эфиопия Гуджи (х2)',
-    tanya_bonus: 'Бразилия Фенси',
-    zebra_bonus: 'Бразилия Фенси (х2)',
-    title: 'День 25',
-    tanya_message: `
+    `},{day:27,date:"2026-01-15",tanya_gift:"Иисус любит тебя",zebra_gift:"Эфиопия Гуджи (х2)",tanya_bonus:"Бразилия Фенси",zebra_bonus:"Бразилия Фенси (х2)",title:"День 25",tanya_message:`
       <p>Кто-то молчит как партизан, так что я не знаю, какой у тебя сегодня кофе. Так что продолжим погружаться в особенности западной christian culture с пинтереста.</p>
-      <img src="${images.secrets}" />
+      <img src="${o.secrets}" />
       <h3>Prayer Board — твоя визуальная карта молитв 📌🙏✨</h3>
-      <img src="${images.pb1}" />
+      <img src="${o.pb1}" />
       <p><em>"Pray continually." — 1 Thessalonians 5:17</em></p>
       <h3>Что такое Prayer Wall/Prayer Board? 🖼️</h3>
       <p><strong>Prayer Wall (или Prayer Board)</strong> — это визуальная доска с молитвенными просьбами, фотографиями, стихами из Библии и напоминаниями о том, за что ты молишься.</p>
@@ -5230,7 +4937,7 @@ export const windowMessages = [
         <li>Answered prayers (ответы на молитвы!) в отдельной секции</li>
       </ul>
       <p><strong>Это как vision board, но для молитв!</strong> Только вместо "хочу машину" — "молюсь о мудрости в финансах". Вместо "хочу похудеть" — "молюсь о здоровье и дисциплине". 🙏💛</p>
-      <img src="${images.pb2}" />
+      <img src="${o.pb2}" />
       <h3>Зачем нужна Prayer Wall? 🤔</h3>
       <p><strong>Визуальное напоминание и организация молитв!</strong></p>
       <ul>
@@ -5241,7 +4948,7 @@ export const windowMessages = [
         <li>Не нужно вспоминать "а за кого я хотела помолиться?"</li>
         <li>Всё на виду!</li>
       </ul>
-      <img src="${images.pb3}" />
+      <img src="${o.pb3}" />
       <p><strong>Пошаговая инструкция:</strong></p>
       <ol>
         <li><strong>Выбери место:</strong> Стена в спальне, кухне, офисе — где часто видишь</li>
@@ -5273,7 +4980,7 @@ export const windowMessages = [
         <li>"The Lord is near to all who call on him." — Psalm 145:18</li>
         <li>"Do not be anxious about anything, but in everything by prayer..." — Philippians 4:6</li>
       </ul>
-      <img src="${images.pb4}" />
+      <img src="${o.pb4}" />
       <p><strong>Photos (фото):</strong></p>
       <ul>
         <li>Семья, друзья</li>
@@ -5312,7 +5019,7 @@ export const windowMessages = [
         <li>Пиши молитвы мелом</li>
         <li>Легко стирать и обновлять!</li>
       </ul>
-      <img src="${images.blessed11}" />
+      <img src="${o.blessed11}" />
       <h3>Prayer Wall в церкви ⛪</h3>
       <p>Многие церкви создают общие Prayer Walls:</p>
       <ul>
@@ -5333,17 +5040,16 @@ export const windowMessages = [
       <p><strong>Prayer Wall = современная версия личного молитвенника!</strong> 📌✝️</p>
       <p><strong>Q: Можно ли делать это в телефоне?</strong>  
       A: Да! Есть приложения для prayer lists. НО физическая доска = больше шансов увидеть и вспомнить.</p>
-      <img src="${images.blessed12}" />
+      <img src="${o.blessed12}" />
       <h3>Задание 🎯</h3>
       <ol>
         <li>Завари и выпей свой неведомый кофе с неведомым бонусом ☕</li>
         <li>Вообрази свою гипотетическую молитвенную доску. Какие там были бы подразделы, какие молитвы в "реализованных"?</li>
       </ol>
-    `,
-    zebra_message: `
+    `,zebra_message:`
       <p>Продолжаем погружаться в мир christian culture с пинтереста с его неотразимым вайбом</p>
       <h3>Prayer Board — твоя визуальная карта молитв 📌🙏✨</h3>
-      <img src="${images.pb1}" />
+      <img src="${o.pb1}" />
       <p><em>"Pray continually." — 1 Thessalonians 5:17</em></p>
       <h3>Что такое Prayer Wall/Prayer Board? 🖼️</h3>
       <p><strong>Prayer Wall (или Prayer Board)</strong> — это визуальная доска с молитвенными просьбами, фотографиями, стихами из Библии и напоминаниями о том, за что ты молишься.</p>
@@ -5356,7 +5062,7 @@ export const windowMessages = [
         <li>Answered prayers (ответы на молитвы!) в отдельной секции</li>
       </ul>
       <p><strong>Это как vision board, но для молитв!</strong> Только вместо "хочу машину" — "молюсь о мудрости в финансах". Вместо "хочу похудеть" — "молюсь о здоровье и дисциплине". 🙏💛</p>
-      <img src="${images.pb2}" />
+      <img src="${o.pb2}" />
       <h3>Зачем нужна Prayer Wall? 🤔</h3>
       <p><strong>Визуальное напоминание и организация молитв!</strong></p>
       <ul>
@@ -5367,7 +5073,7 @@ export const windowMessages = [
         <li>Не нужно вспоминать "а за кого я хотела помолиться?"</li>
         <li>Всё на виду!</li>
       </ul>
-      <img src="${images.pb3}" />
+      <img src="${o.pb3}" />
 
       <p><strong>Пошаговая инструкция:</strong></p>
       <ol>
@@ -5400,7 +5106,7 @@ export const windowMessages = [
         <li>"The Lord is near to all who call on him." — Psalm 145:18</li>
         <li>"Do not be anxious about anything, but in everything by prayer..." — Philippians 4:6</li>
       </ul>
-      <img src="${images.pb4}" />
+      <img src="${o.pb4}" />
       <p><strong>Photos (фото):</strong></p>
       <ul>
         <li>Семья, друзья</li>
@@ -5439,7 +5145,7 @@ export const windowMessages = [
         <li>Пиши молитвы мелом</li>
         <li>Легко стирать и обновлять!</li>
       </ul>
-      <img src="${images.blessed11}" />
+      <img src="${o.blessed11}" />
       <h3>Prayer Wall в церкви ⛪</h3>
       <p>Многие церкви создают общие Prayer Walls:</p>
       <ul>
@@ -5460,32 +5166,22 @@ export const windowMessages = [
       <p><strong>Prayer Wall = современная версия личного молитвенника!</strong> 📌✝️</p>
       <p><strong>Q: Можно ли делать это в телефоне?</strong>  
       A: Да! Есть приложения для prayer lists. НО физическая доска = больше шансов увидеть и вспомнить.</p>
-      <img src="${images.blessed12}" />
+      <img src="${o.blessed12}" />
       <h3>Задание 🎯</h3>
       <ol>
         <li>Завари и выпей свой неведомый кофе с неведомым бонусом ☕</li>
         <li>Вообрази свою гипотетическую молитвенную доску. Какие там были бы подразделы, какие молитвы в "реализованных"?</li>
       </ol>
-    `,
-  },
-  {
-    day: 28,
-    date: '2026-01-16',
-    tanya_gift: 'Шоколадная бомба',
-    zebra_gift: 'Шоколадная бомба',
-    tanya_bonus: 'Шоколадка Икеа',
-    zebra_bonus: 'Шоколадка Икеа',
-    title: 'День 25',
-    tanya_message: `
+    `},{day:28,date:"2026-01-16",tanya_gift:"Шоколадная бомба",zebra_gift:"Шоколадная бомба",tanya_bonus:"Шоколадка Икеа",zebra_bonus:"Шоколадка Икеа",title:"День 25",tanya_message:`
       <p>Кто пережил рабочую неделю и выжил (и молодец)? Да это же мы!</p>
-      <img src="${images.bomb1}" />
+      <img src="${o.bomb1}" />
       <h2>Сегодня у нас шоколадные бомбы (суббота, кофеин не нужен тебе) и шоколадка из Икеи, если я ничего не напутала.</h2>
       <p>А знаешь, что тебе нужно? Отдых.</p>
       <h3>Rest as Resistance — отдых как сопротивление 🛌✊</h3>
       <p>В <strong>2020-е</strong> началась волна <strong>sleep hygiene</strong> и <strong>rest as resistance</strong>!</p>
       <p><strong>Что это?</strong> Движение, созданное <strong>Tricia Hersey</strong> (The Nap Ministry, основано в 2016).</p>
       <p><strong>Главная идея:</strong> <strong>Отдых — это не роскошь, а политический акт сопротивления!</strong> ✊🛌</p>
-      <img src="${images.nm1}" />
+      <img src="${o.nm1}" />
       <p><strong>Почему?</strong></p>
       <ul>
         <li>🏭 <strong>Capitalism</strong> и <strong>white supremacy</strong> превратили нас в машины производства</li>
@@ -5493,7 +5189,7 @@ export const windowMessages = [
         <li>🪖 <strong>История:</strong> 300+ лет рабства (1525-1866) — Black people работали без отдыха от рассвета до заката</li>
         <li>😴 <strong>Not resting = насилие над собой</strong> — ты соглашаешься с системой, которая говорит: "твоё тело не твоё, продолжай работать!"</li>
       </ul>
-      <img src="${images.nap1}" />
+      <img src="${o.nap1}" />
       <p><strong>Tricia Hersey:</strong> Художник, теолог, активист. Master of Divinity (Emory University). Основала The Nap Ministry — организацию, которая создаёт безопасные пространства для отдыха через коллективный сон, performance art, workshops.</p>
       <p><strong>Корни движения:</strong></p>
       <ul>
@@ -5502,7 +5198,7 @@ export const windowMessages = [
         <li>🧘 <strong>Somatics</strong> (телесные практики)</li>
         <li>🚀 <strong>Afrofuturism</strong> (афрофутуризм)</li>
       </ul>
-      <img src="${images.nm2}" />
+      <img src="${o.nm2}" />
       <p>(если ваша вечеринка не поъожа на это...)</p>
 
       <p><strong>Цитата Tricia Hersey:</strong><br>
@@ -5510,7 +5206,7 @@ export const windowMessages = [
   
       <p><strong>Пример:</strong> Бабушка Tricia — пережила линчевание в Mississippi, бежала в Chicago во время Great Migration (1950s), растила 9 детей, работала в больнице, но <strong>каждый день медитировала 30 минут на жёлтом диване!</strong> Это был её <strong>акт сопротивления</strong>! 🛋️✊</p>
       <p><strong>Harriet Tubman:</strong> Во время миссий Underground Railroad (помощь рабам в побеге) она <strong>останавливалась, чтобы вздремнуть и помолиться</strong>. Даже в ситуациях жизни-смерти она отдыхала, мечтала, стратегически думала. <strong>Её никогда не поймали!</strong> 🙏🛌</p>
-      <img src="${images.rr}" />
+      <img src="${o.rr}" />
       <p><strong>"Rest as resistance" — это НЕ self-care!</strong></p>
       <ul>
         <li>❌ Это не "побалуй себя спа-процедурами"</li>
@@ -5538,7 +5234,7 @@ export const windowMessages = [
       <p><strong>Это сложно!</strong> Hersey предупреждает: "Resistance — это не милый хэштег. Это настоящая борьба, депrogramming, lifelong work!"</p>
 
       <h3>А теперь про шоколадные бомбы 🍫💥</h3>
-      <img src="${images.bomb}" />
+      <img src="${o.bomb}" />
       <p><strong>История:</strong> Создатель — Debbas Gourmet (California, 2019). Фотограф Eric Torres Garcia разместил фото → TikTok подхватил → вирус! Оказывается, это очень "молодая" штука.</p>
       <p><strong>1917:</strong> Angelus Marshmallows придумала класть маршмеллоу В горячий шоколад — классическое сочетание! 🎄</p>
       <p>Возможно, у этих бомб христианские корни: пустые шоколадные яйца, разумеется, пасхальная тема.</p>
@@ -5564,17 +5260,16 @@ export const windowMessages = [
       <p><strong>Bible (хо-хо, и там тоже!):</strong><br>
       <em>"Come to me, all who are weary and burdened, and I will give you rest."</em> — Matthew 11:28</p>
       <p>То есть сам бог велел отдыхать - особенно по субботам.</p>
-    `,
-    zebra_message: `
+    `,zebra_message:`
       <p>Кто пережил рабочую неделю и выжил (и молодец)? Да это же мы!</p>
-      <img src="${images.bomb1}" />
+      <img src="${o.bomb1}" />
       <h2>Сегодня у нас шоколадные бомбы (суббота, кофеин не нужен тебе) и шоколадка из Икеи, если я ничего не напутала.</h2>
       <p>А знаешь, что тебе нужно? Отдых.</p>
       <h3>Rest as Resistance — отдых как сопротивление 🛌✊</h3>
       <p>В <strong>2020-е</strong> началась волна <strong>sleep hygiene</strong> и <strong>rest as resistance</strong>!</p>
       <p><strong>Что это?</strong> Движение, созданное <strong>Tricia Hersey</strong> (The Nap Ministry, основано в 2016).</p>
       <p><strong>Главная идея:</strong> <strong>Отдых — это не роскошь, а политический акт сопротивления!</strong> ✊🛌</p>
-      <img src="${images.nm1}" />
+      <img src="${o.nm1}" />
       <p><strong>Почему?</strong></p>
       <ul>
         <li>🏭 <strong>Capitalism</strong> и <strong>white supremacy</strong> превратили нас в машины производства</li>
@@ -5582,7 +5277,7 @@ export const windowMessages = [
         <li>🪖 <strong>История:</strong> 300+ лет рабства (1525-1866) — Black people работали без отдыха от рассвета до заката</li>
         <li>😴 <strong>Not resting = насилие над собой</strong> — ты соглашаешься с системой, которая говорит: "твоё тело не твоё, продолжай работать!"</li>
       </ul>
-      <img src="${images.nap1}" />
+      <img src="${o.nap1}" />
       <p><strong>Tricia Hersey:</strong> Художник, теолог, активист. Master of Divinity (Emory University). Основала The Nap Ministry — организацию, которая создаёт безопасные пространства для отдыха через коллективный сон, performance art, workshops.</p>
       <p><strong>Корни движения:</strong></p>
       <ul>
@@ -5591,7 +5286,7 @@ export const windowMessages = [
         <li>🧘 <strong>Somatics</strong> (телесные практики)</li>
         <li>🚀 <strong>Afrofuturism</strong> (афрофутуризм)</li>
       </ul>
-      <img src="${images.nm2}" />
+      <img src="${o.nm2}" />
       <p>(если ваша вечеринка не поъожа на это...)</p>
 
       <p><strong>Цитата Tricia Hersey:</strong><br>
@@ -5599,7 +5294,7 @@ export const windowMessages = [
   
       <p><strong>Пример:</strong> Бабушка Tricia — пережила линчевание в Mississippi, бежала в Chicago во время Great Migration (1950s), растила 9 детей, работала в больнице, но <strong>каждый день медитировала 30 минут на жёлтом диване!</strong> Это был её <strong>акт сопротивления</strong>! 🛋️✊</p>
       <p><strong>Harriet Tubman:</strong> Во время миссий Underground Railroad (помощь рабам в побеге) она <strong>останавливалась, чтобы вздремнуть и помолиться</strong>. Даже в ситуациях жизни-смерти она отдыхала, мечтала, стратегически думала. <strong>Её никогда не поймали!</strong> 🙏🛌</p>
-      <img src="${images.rr}" />
+      <img src="${o.rr}" />
       <p><strong>"Rest as resistance" — это НЕ self-care!</strong></p>
       <ul>
         <li>❌ Это не "побалуй себя спа-процедурами"</li>
@@ -5627,7 +5322,7 @@ export const windowMessages = [
       <p><strong>Это сложно!</strong> Hersey предупреждает: "Resistance — это не милый хэштег. Это настоящая борьба, депrogramming, lifelong work!"</p>
 
       <h3>А теперь про шоколадные бомбы 🍫💥</h3>
-      <img src="${images.bomb}" />
+      <img src="${o.bomb}" />
       <p><strong>История:</strong> Создатель — Debbas Gourmet (California, 2019). Фотограф Eric Torres Garcia разместил фото → TikTok подхватил → вирус! Оказывается, это очень "молодая" штука.</p>
       <p><strong>1917:</strong> Angelus Marshmallows придумала класть маршмеллоу В горячий шоколад — классическое сочетание! 🎄</p>
       <p>Возможно, у этих бомб христианские корни: пустые шоколадные яйца, разумеется, пасхальная тема.</p>
@@ -5653,2598 +5348,4 @@ export const windowMessages = [
       <p><strong>Bible (хо-хо, и там тоже!):</strong><br>
       <em>"Come to me, all who are weary and burdened, and I will give you rest."</em> — Matthew 11:28</p>
       <p>То есть сам бог велел отдыхать - особенно по субботам.</p>
-    `,
-  },
-  {
-    day: 29,
-    date: '2026-01-17',
-    tanya_gift: 'Иисус любит тебя',
-    zebra_gift: 'Эфиопия Гуджи (х2)',
-    tanya_bonus: 'Бразилия Фенси',
-    zebra_bonus: 'Бразилия Фенси (х2)',
-    title: 'День 25',
-    tanya_message: `<p>Подарок: Иисус любит тебя</p><p>Бонус: Бразилия Фенси</p>`,
-    zebra_message: `<p>Подарок: Эфиопия Гуджи (х2)</p><p>Бонус: Бразилия Фенси (х2)</p>`,
-  },
-  {
-    day: 30,
-    date: '2026-01-18',
-    tanya_gift: 'Иисус любит тебя',
-    zebra_gift: 'Эфиопия Гуджи (х2)',
-    tanya_bonus: 'Бразилия Фенси',
-    zebra_bonus: 'Бразилия Фенси (х2)',
-    title: 'День 25',
-    tanya_message: `<p>Подарок: Иисус любит тебя</p><p>Бонус: Бразилия Фенси</p>`,
-    zebra_message: `<p>Подарок: Эфиопия Гуджи (х2)</p><p>Бонус: Бразилия Фенси (х2)</p>`,
-  },
-  {
-    day: 31,
-    date: '2026-01-19',
-    tanya_gift: 'Иисус любит тебя',
-    zebra_gift: 'Эфиопия Гуджи (х2)',
-    tanya_bonus: 'Бразилия Фенси',
-    zebra_bonus: 'Бразилия Фенси (х2)',
-    title: 'День 25',
-    tanya_message: `<p>Подарок: Иисус любит тебя</p><p>Бонус: Бразилия Фенси</p>`,
-    zebra_message: `<p>Подарок: Эфиопия Гуджи (х2)</p><p>Бонус: Бразилия Фенси (х2)</p>`,
-  },
-  {
-    day: 32,
-    date: '2026-01-20',
-    tanya_gift: 'Иисус любит тебя',
-    zebra_gift: 'Эфиопия Гуджи (х2)',
-    tanya_bonus: 'Бразилия Фенси',
-    zebra_bonus: 'Бразилия Фенси (х2)',
-    title: 'День 25',
-    tanya_message: `<p>Подарок: Иисус любит тебя</p><p>Бонус: Бразилия Фенси</p>`,
-    zebra_message: `<p>Подарок: Эфиопия Гуджи (х2)</p><p>Бонус: Бразилия Фенси (х2)</p>`,
-  },
-];
-
-/** 
- * 
- *  {
-    day: 3,
-    date: '2025-12-22',
-    tanya_gift: 'Бэггинс кофе',
-    zebra_gift: 'Питерский контркультурный декаф',
-    tanya_bonus: 'Сироп "Печёный каштан и хлебная корочка"',
-    zebra_bonus: 'Конфета вишня с перцем',
-    title: 'Хоббиты, кофе и литературные споры',
-    tanya_message: `
-      <p><strong>"Шииир! Бэггинс!.."</strong> — легендарная фраза Голлума из "Властелина колец"! 💍</p>
-      
-      <h3>Baggins Coffee — российская сеть из Питера</h3>
-      <p><strong>Baggins Coffee</strong> — это реальная сеть кофеен из Санкт-Петербурга! 195 кофеен по всей России, большинство работает по франшизе.</p>
-      
-      <p><strong>Судебная битва с Толкином:</strong> В 2024 году американская компания <strong>Middle-Earth Enterprises LLC</strong> (владеет правами на "Властелина колец" и "Хоббита") попыталась запретить российской компании использовать название Baggins! Они считали, что это вводит в заблуждение — ведь Baggins = фамилия Фродо и Бильбо.</p>
-      
-      <p><strong>Результат:</strong> Российская компания <strong>выиграла</strong>! Палата по патентным спорам решила: слово "coffee" и изображение козла на логотипе исключают путаницу с хоббитами. Кофейни сохранили название! ☕🎉</p>
-      
-      <h3>Толкин и Льюис: кофе vs чай в одной чашке</h3>
-      <p><strong>J.R.R. Tolkien</strong> и <strong>C.S. Lewis</strong> (автор "Хроник Нарнии") были друзьями, состояли в литературном клубе <strong>Инклинги</strong> (Оксфорд, 1930-1960-е). Встречались в пабах, читали друг другу свои рукописи.</p>
-      
-      <p><strong>Но у них были разногласия!</strong></p>
-      
-      <p><strong>Льюис обожал "Властелина колец":</strong></p>
-      <ul>
-        <li>Считал его великим шедевром</li>
-        <li>Постоянно подбадривал Толкина: "Заканчивай! Публикуй!"</li>
-        <li>Писал восторженные рецензии</li>
-      </ul>
-      
-      <p><strong>Толкин НЕ любил "Хроники Нарнии":</strong></p>
-      <ul>
-        <li>Был <strong>пуристом мифологии</strong> — каждый миф должен быть чистым, не смешанным!</li>
-        <li>В Нарнии Льюис смешал: римскую мифологию (фавны), греческую (кентавры), скандинавскую (гномы), христианство (Аслан = Христос)</li>
-        <li>Толкин говорил: это как <strong>"кофе и чай в одной чашке"</strong> — невыносимо! ☕🍵❌</li>
-      </ul>
-      
-      <p><strong>Цитата пасынка Льюиса (Дуглас Грешам):</strong> "Толкин не любил 'Льва, колдунью и платяной шкаф'. Идея смешивания мифологий была для него невыносима. Он не мог этого понять."</p>
-      
-      <p><strong>Справедливости ради:</strong> В Инклингах <strong>Хьюго Дайсон</strong> (третий член) терпеть не мог "Властелина колец"! Так что Толкин был не один в своём критицизме. 😄</p>
-      
-      <p><strong>Но дружба сохранилась!</strong> Несмотря на литературные споры, они оставались близкими друзьями до конца жизни.</p>
-      
-      <h3>Печёный каштан и хлебная корочка 🌰🍞</h3>
-      <p>Этот сироп — <strong>чистая эстетика хоббичьего уюта</strong>!</p>
-      
-      <p><strong>Хоббиты и еда:</strong> Семь приёмов пищи в день (завтрак, второй завтрак, ланч, полдник, обед, ужин, поздний ужин). Обожают хлеб, пироги, сыр, грибы!</p>
-      
-      <p><strong>Печёный каштан:</strong> В Средиземье каштаны пекли на огне! Сладковатые, ореховые, согревающие.</p>
-      
-      <p><strong>Хлебная корочка:</strong> Запах свежеиспечённого хлеба = запах дома. Хоббиты в Шире пекли хлеб каждый день. Хлебная корочка в сиропе — сенсорная память, уют, домашний очаг.</p>
-      
-      <p><strong>Современная гастрономия:</strong> Сиропы с необычными вкусами (хлеб, сено, дым) — тренд specialty-кофеен! Это <strong>вкус воспоминаний</strong>.</p>
-      
-      <h3>Задание</h3>
-      <ol>
-        <li>Завари Baggins Coffee, добавь сироп</li>
-        <li><strong>Толкин vs Льюис:</strong> С кем ты согласна? Можно смешивать мифологии или нет? Напиши в чат!</li>
-        <li>Процитируй любимую фразу из ВК:
-          <ul>
-            <li><em>"Не всё золото, что блестит"</em></li>
-            <li><em>"Даже самый маленький может изменить ход истории"</em></li>
-            <li><em>"My precious!"</em> (про кофе! 😄)</li>
-          </ul>
-        </li>
-        <li>Музыка: <a href="https://www.youtube.com/watch?v=_pGaz_qN0cw" target="_blank">Howard Shore — "Concerning Hobbits"</a></li>
-      </ol>
-      
-      <p>Представь себя в Шире, в норе с круглой дверью, с кофе... но БЕЗ смешивания с чаем! 😄🏡☕</p>
-    `,
-    zebra_message: `
-      <p><strong>"Питерская контркультурная обжарка"</strong> + декаф = философский парадокс! ⚡</p>
-      
-      <h3>Санкт-Петербург и кофе</h3>
-      <p><strong>Петербург</strong> = кофейная столица России!</p>
-      
-      <p><strong>История:</strong></p>
-      <ul>
-        <li><strong>1720:</strong> Пётр I приказал открывать кофейни (копируя Амстердам)</li>
-        <li><strong>Литературные кофейни XIX-XX веков:</strong> Ахматова, Блок, Мандельштам</li>
-        <li><strong>Современность:</strong> Больше кофе (2008), Кооператив Чёрный, Coffee 22</li>
-      </ul>
-      
-      <h3>Контркультура</h3>
-      <p>В кофе:</p>
-      <ul>
-        <li>Anti-mainstream, не Starbucks</li>
-        <li>Specialty, местная обжарка</li>
-        <li><strong>Декаф как бунт:</strong> "Мне не нужен кофеин для продуктивности!"</li>
-      </ul>
-      
-      <p><strong>Питерская эстетика:</strong> Дождь, туман, меланхолия + уютные кофейни. Медленный темп, рефлексия, поэзия.</p>
-      
-      <h3>Вишня с перцем 🌶️🍒</h3>
-      <p>Сладко-острая бомба! Capsaicin (перец) + сахар = взрыв вкуса!</p>
-      
-      <p>Ацтеки пили шоколад с чили для воинов. Острое + сладкое = древняя комбинация.</p>
-      
-      <h3>Задание</h3>
-      <ol>
-        <li>Выпей декаф, съешь конфету</li>
-        <li>Включи питерский рок:
-          <ul>
-            <li><a href="https://www.youtube.com/watch?v=h_nCoJQBTT8" target="_blank">Аквариум — "Город золотой"</a></li>
-            <li><a href="https://www.youtube.com/watch?v=wuJa6LXhMug" target="_blank">Кино — "Перемен"</a></li>
-          </ul>
-        </li>
-        <li>Напиши депрессивный стих (3 строки) в чат! 🌧️</li>
-      </ol>
-    `
-  },
-
-  // ... продолжу с остальными днями!
-
-  {
-    day: 5,
-    date: '2025-12-24',
-    tanya_gift: 'Детский армянский кофе 3в1',
-    zebra_gift: 'Детский армянский кофе 3в1 (х2)',
-    tanya_bonus: 'Зефир-лапка (малиновый)',
-    zebra_bonus: 'Зефир-лапка (малиновый)',
-    title: 'Армянский кофе и кошачьи лапки',
-    tanya_message: `
-      <p><strong>ДЕТСКИЙ АРМЯНСКИЙ КОФЕ!</strong> Армяне настолько любят кофе, что сделали версию даже для детей! 🇦🇲👶☕</p>
-      
-      <h3>Армения — страна, одержимая кофе</h3>
-      <p><strong>Армяне пьют кофе ВЕЗДЕ и ВСЕГДА:</strong></p>
-      <ul>
-        <li>Утром — кофе</li>
-        <li>После обеда — кофе</li>
-        <li>Встреча друзей — кофе</li>
-        <li>Похороны — кофе</li>
-        <li>Свадьба — кофе</li>
-      </ul>
-      
-      <p><strong>Soorj</strong> (սուրճ) — так армяне называют кофе.</p>
-      
-      <p><strong>Армянский способ:</strong> Варят в <strong>джезве</strong> (турка), как турецкий, НО часто добавляют <strong>кардамон</strong> (влияние персов). Подают с водой и сладостями (пахлава, гата).</p>
-      
-      <h3>Детский кофе — культурный феномен</h3>
-      <p>Это <strong>ячменный напиток</strong> или <strong>цикорий</strong> с молоком. Кофеина ноль, но вкус "кофейный"!</p>
-      
-      <p><strong>Зачем?</strong> Армянские дети видят, что взрослые пьют кофе 24/7, и требуют своё! Родители дают детский "кофе" = все счастливы. 😄</p>
-      
-      <p><strong>Культурный момент:</strong> В армянских семьях кофе — это <strong>ритуал общения</strong>. Даже детей приучают участвовать. Это не просто напиток, это способ быть вместе.</p>
-      
-      <h3>Ереван — город кофеен</h3>
-      <p><strong>Must-visit кофейни</strong> (для будущей поездки!):</p>
-      <ul>
-        <li><strong>The Club</strong> — Туманяна 40, легендарное место</li>
-        <li><strong>Mirzoyan Library</strong> — кофейня в старой библиотеке, книги повсюду!</li>
-        <li><strong>Lav Eli</strong> — "Хорошо будет", атмосферное место</li>
-      </ul>
-      
-      <p><strong>Что ещё посетить:</strong></p>
-      <ul>
-        <li><strong>Каскад</strong> — гигантская лестница с кафе на каждом уровне, вид на Арарат!</li>
-        <li><strong>Vernissage</strong> — блошиный рынок (выходные), винтаж, советские артефакты</li>
-        <li><strong>Озеро Севан</strong> — высокогорное озеро, монастыри</li>
-      </ul>
-      
-      <p><strong>Почему Ереван — отличная идея:</strong></p>
-      <ul>
-        <li>Дёшево (по сравнению с Европой!)</li>
-        <li>Безопасно для женской компании</li>
-        <li>Вкусная еда (хоровац, долма, лаваш!)</li>
-        <li>Коньяк Арарат!</li>
-        <li>Тёплые люди — армянское гостеприимство легендарно</li>
-      </ul>
-      
-      <h3>Зефир-лапка 🐾💕</h3>
-      <p><strong>Малиновый зефир в форме кошачьей лапки!</strong> Это слишком мило, чтобы сразу съесть...</p>
-      
-      <p><strong>Русский зефир:</strong> Делают из яблочного пюре + сахар + яичный белок + агар. В СССР был культовым (дефицитным!) десертом.</p>
-      
-      <p><strong>Фигурный зефир</strong> — тренд последних 5 лет. Кондитеры делают зефир-единорогов, зефир-сердечки, зефир-лапки для Instagram!</p>
-      
-      <h3>Задание</h3>
-      <ol>
-        <li>Выпей армянский детский кофе</li>
-        <li>Выучи фразу: <strong>"Շնորհակալություն սուրճի համար"</strong> (Шноракалутюн сурчи амар) = "Спасибо за кофе"</li>
-        <li>Отправь голосовое в чат с попыткой произнести! 🎤</li>
-        <li><strong>Фото с зефиром-лапкой:</strong> Зефир "держит" чашку кофе (поставь рядом с ручкой). Художественная фотосессия! 🐾☕</li>
-        <li><strong>Потом</strong> съешь с чувством благодарности кошкам мира 🐱</li>
-      </ol>
-      
-      <p><strong>Музыка:</strong> <a href="https://www.youtube.com/watch?v=WfD8Dnh2xho" target="_blank">Serj Tankian (System of a Down) — "Empty Walls"</a> (он армянин!)</p>
-      
-      <p>Или традиционный <strong>дудук</strong>: <a href="https://open.spotify.com/artist/0XvVgHP68P0Zt9FdbS6F4e" target="_blank">Djivan Gasparyan</a></p>
-      
-      <p><strong>Чат:</strong> "В 2025 году мы точно едем в Ереван! 🇦🇲✈️"</p>
-    `,
-    zebra_message: `
-      <p><strong>АРМЯНСКИЙ ДЕТСКИЙ КОФЕ!</strong> И у тебя два пакетика для семейного кофепития! 🇦🇲☕</p>
-      
-      <h3>Армения и кофе</h3>
-      <p>Армяне пьют кофе <strong>постоянно</strong> — утром, днём, вечером, на встречах, праздниках, похоронах!</p>
-      
-      <p><strong>Детский кофе:</strong> Ячмень или цикорий с молоком. Кофеина нет, но вкус "взрослый"! Дети требуют кофе как взрослые — родители придумали решение. 😄</p>
-      
-      <p><strong>Культура:</strong> Кофе = ритуал общения в армянских семьях. Даже детей приучают участвовать!</p>
-      
-      <h3>Ереван — мечта для поездки</h3>
-      <p><strong>Кофейни:</strong></p>
-      <ul>
-        <li>The Club (Туманяна 40)</li>
-        <li>Mirzoyan Library (библиотека-кофейня!)</li>
-        <li>Lav Eli ("Хорошо будет")</li>
-      </ul>
-      
-      <p><strong>Достопримечательности:</strong></p>
-      <ul>
-        <li><strong>Каскад</strong> — лестница с видом на Арарат</li>
-        <li><strong>Vernissage</strong> — блошиный рынок, винтаж</li>
-        <li><strong>Озеро Севан</strong> — высокогорное, монастыри</li>
-      </ul>
-      
-      <p><strong>Почему круто:</strong> Дёшево, безопасно, вкусная еда (долма!), коньяк, тёплые люди!</p>
-      
-      <h3>Зефир-лапка 🐾</h3>
-      <p>Малиновый зефир в форме кошачьей лапки! Слишком мило! 💕</p>
-      
-      <p>Фигурный зефир — тренд для Instagram. Русский зефир делают из яблочного пюре + яичный белок.</p>
-      
-      <h3>Задание на двоих</h3>
-      <ol>
-        <li>Заварите два армянских кофе</li>
-        <li>Выучите вместе: <strong>"Շնորհակալություն"</strong> (Шноракалутюн) = "Спасибо"</li>
-        <li>Отправьте дуэтом голосовое в чат! 🎤</li>
-        <li>Зефир-лапка "держит" чашку — сфотографируйте! 🐾☕</li>
-      </ol>
-      
-      <p><strong>Музыка:</strong> <a href="https://www.youtube.com/watch?v=WfD8Dnh2xho" target="_blank">Serj Tankian</a> или <a href="https://open.spotify.com/artist/0XvVgHP68P0Zt9FdbS6F4e" target="_blank">дудук</a></p>
-      
-      <p><strong>Чат:</strong> "2025 = Ереван! 🇦🇲✈️"</p>
-    `
-  }
-];
-Продолжить с днями 6-26? 😊Да, продолжи, пожалуйста.17 дек.typescript  {
-    day: 6,
-    date: '2025-12-25',
-    tanya_gift: 'Гондурас (серебристые голографические пакетики)',
-    zebra_gift: 'Декаф Колумбия',
-    tanya_bonus: 'Протеиновое печенье',
-    zebra_bonus: 'Протеиновое печенье',
-    title: 'Гондурас и Колумбия',
-    tanya_message: `
-      <p><strong>Красивый Гондурас</strong> в серебристых голографических пакетиках! ✨</p>
-      
-      <h3>Гондурас — кофейная страна 🇭🇳</h3>
-      <p><strong>Гондурас</strong> = топ-5 производителей кофе в Центральной Америке!</p>
-      
-      <p><strong>География:</strong> Горная страна, высота 1000-1700 м. Идеальный климат для арабики!</p>
-      
-      <p><strong>Регионы:</strong></p>
-      <ul>
-        <li><strong>Copán</strong> (Копан) — западный регион, граница с Гватемалой. Вкус: шоколад, карамель, орех</li>
-        <li><strong>Montecillos</strong> — центральный, высокогорный. Вкус: цитрус, яблоко, цветочный</li>
-        <li><strong>Comayagua</strong> — южный. Вкус: сбалансированный, сладкий</li>
-      </ul>
-      
-      <p><strong>Профиль вкуса Гондураса:</strong> Сбалансированный, средняя кислотность, карамель, яблоко, орех. Часто используют в blend'ах (смесях) для основы.</p>
-      
-      <h3>Майя и кофе</h3>
-      <p>В Гондурасе живут потомки <strong>майя</strong>! Регион Копан — место древнего майянского города (UNESCO World Heritage).</p>
-      
-      <p>Современные майя работают на кофейных плантациях и создают свои кооперативы. Традиционные методы + specialty-качество!</p>
-      
-      <h3>Голографические пакетики ✨</h3>
-      <p>Твои пакетики <strong>серебристые голографические</strong> — это не просто красота, это <strong>функция</strong>!</p>
-      
-      <p><strong>Зачем металлизированная упаковка?</strong></p>
-      <ul>
-        <li><strong>Защита от света</strong> — свет разрушает вкусовые масла кофе</li>
-        <li><strong>Защита от кислорода</strong> — окисление = старение кофе</li>
-        <li><strong>Сохранение аромата</strong> — герметичность</li>
-      </ul>
-      
-      <p>Голография = high-tech упаковка для specialty-кофе! А ещё просто красиво блестит! 💎</p>
-      
-      <h3>Протеиновое печенье 💪🍪</h3>
-      <p><strong>Зачем белок в печенье?</strong> Фитнес-культура 2010-х! Все хотят gains (мышцы), но и сладкого хочется.</p>
-      
-      <p><strong>Состав:</strong> Сывороточный протеин (whey) или растительный (гороховый), мука, сахарозаменитель.</p>
-      
-      <p><strong>Идея:</strong> Десерт + польза = win-win!</p>
-      
-      <h3>Задание</h3>
-      <ol>
-        <li>Завари красивый голографический кофе</li>
-        <li>Съешь протеиновое печенье</li>
-        <li>Сделай 10 приседаний (gains от печенья надо отработать! 😄)</li>
-        <li>Сфотографируй голографический пакетик — он слишком красивый! ✨📸</li>
-        <li><strong>Чат:</strong> "Гондурас + gains = идеальное утро 💪☕"</li>
-      </ol>
-      
-      <p><strong>Музыка:</strong> Что-то энергичное для приседаний! <a href="https://www.youtube.com/watch?v=Qb-JSSGAccU" target="_blank">Eye of the Tiger</a>? 😄</p>
-    `,
-    zebra_message: `
-      <p><strong>Декаф Колумбия</strong> — классика specialty-кофе! 🇨🇴</p>
-      
-      <h3>Колумбия — легенда кофе</h3>
-      <p><strong>Колумбия</strong> = топ-3 производитель в мире! Синоним качества.</p>
-      
-      <p><strong>География:</strong> Анды, высота 1200-2000 м. Три горных хребта создают разные микроклиматы!</p>
-      
-      <p><strong>Регионы:</strong></p>
-      <ul>
-        <li><strong>Huila</strong> (Уила) — самый известный, сладкий, карамельный</li>
-        <li><strong>Nariño</strong> (Нариньо) — южный, высокогорный, яркая кислотность</li>
-        <li><strong>Tolima</strong> (Толима) — центральный, сбалансированный</li>
-      </ul>
-      
-      <p><strong>Профиль вкуса:</strong> Карамель, красное яблоко, орех, средняя кислотность, полное тело.</p>
-      
-      <h3>Juan Valdez — символ колумбийского кофе</h3>
-      <p><strong>Хуан Вальдес</strong> — вымышленный фермер с ослом, созданный в 1959 для рекламы. Стал иконой!</p>
-      
-      <p>Теперь Juan Valdez — реальная сеть кофеен (как Starbucks, но колумбийская!).</p>
-      
-      <h3>Декаф из Колумбии</h3>
-      <p>Колумбия делает <strong>качественный декаф</strong> (часто Swiss Water Process). Высокогорные зёрна → даже без кофеина вкус богатый!</p>
-      
-      <h3>Протеиновое печенье 💪</h3>
-      <p>Десерт + белок = фитнес-мечта! Whey или растительный протеин + мука + сахарозаменитель.</p>
-      
-      <h3>Задание на двоих</h3>
-      <ol>
-        <li>Заварите два декафа Колумбия</li>
-        <li>Съешьте протеиновые печенья</li>
-        <li>Сделайте по 10 приседаний каждый (кто первый? 😄)</li>
-        <li><strong>Чат:</strong> "Колумбия + gains на двоих! 💪☕"</li>
-      </ol>
-      
-      <p><strong>Музыка для тренировки:</strong> <a href="https://www.youtube.com/watch?v=Qb-JSSGAccU" target="_blank">Eye of the Tiger</a>!</p>
-    `
-  },
-
-  {
-    day: 7,
-    date: '2025-12-26',
-    tanya_gift: 'Какао с опоссумом',
-    zebra_gift: 'Какао с опоссумом (х2)',
-    tanya_bonus: 'Маршмеллоу',
-    zebra_bonus: 'Маршмеллоу',
-    title: 'Опоссум пьёт и не орёт',
-    tanya_message: `
-      <p><strong>"ПЬЁТ И НЕ ОРЁТ"</strong> — гениальная надпись на упаковке! 🦝☕</p>
-      
-      <h3>Опоссум — символ спокойствия?</h3>
-      <p><strong>Опоссумы</strong> (на самом деле это <strong>Virginia opossum</strong>) — единственные сумчатые в Северной Америке!</p>
-      
-      <p><strong>Суперспособность:</strong> Опоссумы <strong>притворяются мёртвыми</strong> при угрозе ("playing possum")! Падают, не двигаются, изображают труп. Хищник теряет интерес. Гениально!</p>
-      
-      <p><strong>Философия какао с опоссумом:</strong> Выпей какао, притворись мёртвым (расслабься полностью), НЕ ОРИ. Дзен! 🧘</p>
-      
-      <h3>История какао</h3>
-      <p><strong>Theobroma cacao</strong> = "пища богов" (греч.)</p>
-      
-      <p><strong>Ацтеки и майя:</strong></p>
-      <ul>
-        <li>Какао = священный напиток, пили горьким с чили и кукурузой</li>
-        <li><strong>Монтесума</strong> пил 50 чашек в день (для силы и... либидо! 😏)</li>
-        <li><strong>Какао-бобы = валюта!</strong> Можно было купить раба за 100 бобов</li>
-      </ul>
-      
-      <p><strong>Европа:</strong> Испанцы привезли в XVI веке, добавили сахар = горячий шоколад родился!</p>
-      
-      <p><strong>Швейцария (1800-е):</strong> Изобрели молочный шоколад (Daniel Peter + Henri Nestlé).</p>
-      
-      <h3>Маршмеллоу — от лекарства до десерта ☁️</h3>
-      <p><strong>История:</strong> Изначально делали из корня <strong>алтея</strong> (marshmallow plant) — лекарство от боли в горле (Древний Египет!).</p>
-      
-      <p>В XIX веке французы сделали десерт из желатина + сахар + яичный белок.</p>
-      
-      <p><strong>США, 1920-е:</strong> Традиция жарить маршмеллоу на костре (кэмпфайр)!</p>
-      
-      <p><strong>S'mores</strong> = маршмеллоу + шоколад + крекер. Название от "give me some more!" 😄</p>
-      
-      <h3>Задание: Ритуал спокойствия</h3>
-      <ol>
-        <li><strong>Обними подушку</strong> (или кота/собаку/человека)</li>
-        <li><strong>Закутайся в плед</strong></li>
-        <li>Завари какао, добавь маршмеллоу</li>
-        <li>Смотри, как маршмеллоу тает — это <strong>медитация</strong></li>
-        <li><strong>ПЕЙ БЕЗ КРИКОВ</strong></li>
-        <li>Притворись опоссумом = полное расслабление 🦝💤</li>
-      </ol>
-      
-      <p><strong>Фото в чат:</strong> Ты + плед + какао + умиротворённое лицо 😌</p>
-      
-      <p><strong>Музыка для релакса:</strong> <a href="https://www.youtube.com/watch?v=rVN1B-tUpgs" target="_blank">Max Richter — "On The Nature of Daylight"</a></p>
-      
-      <p>Или ASMR: <a href="https://www.youtube.com/results?search_query=cozy+fireplace+asmr" target="_blank">Cozy Fireplace Sounds</a></p>
-    `,
-    zebra_message: `
-      <p><strong>"ПЬЁТ И НЕ ОРЁТ"</strong> — и у вас два какао для двойного спокойствия! 🦝☕</p>
-      
-      <h3>Опоссум учит дзену</h3>
-      <p>Опоссумы <strong>притворяются мёртвыми</strong> ("playing possum") при опасности. Это защитный механизм!</p>
-      
-      <p><strong>Философия:</strong> Расслабься полностью, не ори, притворись опоссумом. Спокойствие — сила! 🧘</p>
-      
-      <h3>Какао — напиток богов</h3>
-      <p><strong>Ацтеки:</strong> Пили горький какао с чили. Монтесума пил 50 чашек в день!</p>
-      
-      <p><strong>Какао-бобы = деньги!</strong> 100 бобов = 1 раб.</p>
-      
-      <p><strong>Европа:</strong> Испанцы добавили сахар → горячий шоколад!</p>
-      
-      <h3>Маршмеллоу ☁️</h3>
-      <p>Изначально — лекарство (корень алтея). Теперь — десерт!</p>
-      
-      <p><strong>S'mores</strong> (США): маршмеллоу + шоколад + крекер = кэмпфайр-классика!</p>
-      
-      <h3>Задание на двоих: Релакс-ритуал</h3>
-      <ol>
-        <li><strong>Обниматься</strong> (друг друга или подушки 😄)</li>
-        <li><strong>Плед на двоих</strong></li>
-        <li>Заварите два какао с маршмеллоу</li>
-        <li>Смотрите, как маршмеллоу тают</li>
-        <li><strong>ПЕЙ��Е БЕЗ КРИКОВ</strong></li>
-        <li>Притворяйтесь опоссумами = total relax 🦝💤</li>
-      </ol>
-      
-      <p><strong>Фото:</strong> Вы двое + плед + какао + умиротворение 😌📸</p>
-      
-      <p><strong>Музыка:</strong> <a href="https://www.youtube.com/watch?v=rVN1B-tUpgs" target="_blank">Max Richter — "On The Nature of Daylight"</a></p>
-      
-      <p><strong>Чат:</strong> "Мы — опоссумы. Мы спокойны. Мы не орём. 🦝☕"</p>
-    `
-  },
-
-  {
-    day: 8,
-    date: '2025-12-27',
-    tanya_gift: 'Чай ромашковый',
-    zebra_gift: 'Чай ромашковый',
-    tanya_bonus: 'Твикс имбирный',
-    zebra_bonus: 'Твикс имбирный',
-    title: 'Ромашковый чай за 1000 рублей',
-    tanya_message: `
-      <p><strong>Ромашковый чай</strong> — напиток, который недавно прославился скандалом! 🌼☕💸</p>
-      
-      <h3>История про чай за 1000 рублей</h3>
-      <p>В конце 2024 года в соцсетях разгорелся спор: в <strong>пафосной московской кофейне</strong> подавали ромашковый чай за <strong>1000 рублей</strong>!</p>
-      
-      <p><strong>Реакция интернета:</strong></p>
-      <ul>
-        <li>"Это просто ромашка! Её в аптеке 50 рублей!"</li>
-        <li>"Вы платите за атмосферу, локацию, сервис!"</li>
-        <li>"Это наглость!"</li>
-        <li>"Это luxury-сегмент, не нравится — не ходите!"</li>
-      </ul>
-      
-      <p><strong>Мемы:</strong> "Ромашка за 1000₽" стала символом переплаты за бренд и атмосферу.</p>
-      
-      <h3>Почему так дорого?</h3>
-      <p><strong>Ценообразование в премиум-кофейнях:</strong></p>
-      <ul>
-        <li><strong>Локация:</strong> Центр Москвы, аренда 500,000₽/месяц</li>
-        <li><strong>Интерьер:</strong> Дизайнерский, инстаграммный</li>
-        <li><strong>Сервис:</strong> Обученный персонал, красивая подача</li>
-        <li><strong>Бренд:</strong> "Ты здесь не просто пьёшь чай, ты покупаешь статус"</li>
-      </ul>
-      
-      <p><strong>Себестоимость:</strong> Ромашка = 5₽, чашка = 50₽, работа бариста = 50₽. <strong>Итого: 105₽.</strong> Наценка = 900%! 😱</p>
-      
-      <p><strong>Но:</strong> В Starbucks обычный латте стоит 400₽ (себестоимость 50₽). Наценка 700%! Это норма для HoReCa (отели-рестораны-кафе).</p>
-      
-      <h3>Ромашка — простое, но мощное растение</h3>
-      <p><strong>Chamomile</strong> (Matricaria chamomilla) — одно из древнейших лекарственных растений!</p>
-      
-      <p><strong>История:</strong></p>
-      <ul>
-        <li><strong>Древний Египет:</strong> Посвящали ромашку богу солнца Ра, лечили лихорадку</li>
-        <li><strong>Древний Рим:</strong> Солдаты пили ромашковый чай перед битвой (успокоение)</li>
-        <li><strong>Средневековье:</strong> "Растение-целитель" — от всего!</li>
-      </ul>
-      
-      <p><strong>Польза:</strong></p>
-      <ul>
-        <li><strong>Успокоительное</strong> (апигенин связывается с GABA-рецепторами в мозге!)</li>
-        <li><strong>Сон</strong> (мягкое снотворное)</li>
-        <li><strong>Пищеварение</strong> (спазмолитик)</li>
-        <li><strong>Противовоспалительное</strong></li>
-      </ul>
-      
-      <p><strong>Наука:</strong> Исследования подтверждают! Ромашка реально работает.</p>
-      
-      <h3>Твикс имбирный 🍪</h3>
-      <p><strong>Имбирное печенье</strong> + карамель + шоколад = праздничный вкус!</p>
-      
-      <p><strong>Имбирь + шоколад</strong> — древнее сочетание. Ацтеки добавляли имбирь в <em>xocolātl</em> (горячий шоколад) для воинов.</p>
-      
-      <h3>Задание</h3>
-      <ol>
-        <li>Завари ромашковый чай (твой стоит не 1000₽, а гораздо меньше! 😄)</li>
-        <li>Съешь Твикс</li>
-        <li><strong>Чат-дискуссия:</strong> "Ромашка за 1000₽ — это:
-          <ul>
-            <li>а) Наглость</li>
-            <li>б) Законы рынка</li>
-            <li>в) Переплата за атмосферу</li>
-            <li>г) Твой вариант"</li>
-          </ul>
-        </li>
-        <li>Выпей чай, расслабься (ромашка работает!)</li>
-      </ol>
-      
-      <p><strong>Музыка для релакса:</strong> <a href="https://www.youtube.com/results?search_query=lofi+hip+hop+relax" target="_blank">Lo-fi Hip Hop</a></p>
-    `,
-    zebra_message: `
-      <p><strong>Ромашковый чай</strong> — звезда скандала 2024! 🌼💸</p>
-      
-      <h3>Чай за 1000 рублей</h3>
-      <p>В пафосной московской кофейне продавали ромашковый чай за <strong>1000₽</strong>! Интернет взорвался:</p>
-      
-      <ul>
-        <li>"Это просто ромашка! 50₽ в аптеке!"</li>
-        <li>"Вы платите за локацию и сервис!"</li>
-      </ul>
-      
-      <p><strong>Ценообразование:</strong></p>
-      <ul>
-        <li>Себестоимость: 105₽</li>
-        <li>Цена: 1000₽</li>
-        <li>Наценка: 900%!</li>
-      </ul>
-      
-      <p>Но в Starbucks наценка 700% — это норма HoReCa!</p>
-      
-      <h3>Ромашка — древний целитель</h3>
-      <p><strong>История:</strong> Египтяне, римляне, средневековые лекари использовали ромашку.</p>
-      
-      <p><strong>Польза:</strong></p>
-      <ul>
-        <li>Успокаивает (апигенин → GABA-рецепторы)</li>
-        <li>Улучшает сон</li>
-        <li>Помогает пищеварению</li>
-      </ul>
-      
-      <p>Наука подтверждает — работает!</p>
-      
-      <h3>Твикс имбирный 🍪</h3>
-      <p>Имбирь + карамель + шоколад = праздник! Ацтеки добавляли имбирь в шоколад для воинов.</p>
-      
-      <h3>Задание на двоих</h3>
-      <ol>
-        <li>Заварите ромашковый чай (не за 1000₽! 😄)</li>
-        <li>Съешьте Твиксы</li>
-        <li><strong>Обсудите:</strong> "1000₽ за чай — норм или нет?" Напишите вывод в чат!</li>
-        <li>Расслабьтесь с ромашкой 🌼😌</li>
-      </ol>
-      
-      <p><strong>Музыка:</strong> <a href="https://www.youtube.com/results?search_query=lofi+hip+hop+relax" target="_blank">Lo-fi Hip Hop</a></p>
-    `
-  },
-
-  {
-    day: 9,
-    date: '2025-12-28',
-    tanya_gift: 'Кофе Соловки',
-    zebra_gift: 'Декаф для беременных',
-    tanya_bonus: 'Розовая гималайская соль',
-    zebra_bonus: 'Розовая гималайская соль',
-    title: 'Святой кофе и розовая соль',
-    tanya_message: `
-      <p><strong>Кофе Соловки</strong> — святой кофе из святого места! ☦️☕</p>
-      
-      <h3>Соловецкий монастырь</h3>
-      <p><strong>Соловки</strong> (Соловецкие острова) — архипелаг в Белом море. Здесь находится <strong>Спасо-Преображенский Соловецкий монастырь</strong>, основанный в 1436 году!</p>
-      
-      <p><strong>История:</strong></p>
-      <ul>
-        <li><strong>XV-XX века:</strong> Один из важнейших монастырей России, духовный центр</li>
-        <li><strong>1920-1939:</strong> СЛОН (Соловецкий лагерь особого назначения) — первый ГУЛАГ СССР. Тысячи погибших.</li>
-        <li><strong>1990:</strong> Монастырь возрождён, UNESCO World Heritage</li>
-      </ul>
-      
-      <p><strong>Сейчас:</strong> Действующий монастырь, паломничество, туризм.</p>
-      
-      <h3>Монахи и кофе</h3>
-      <p>Монахи на Соловках <strong>обжаривают кофе</strong>! Как и Валаамский монастырь (помнишь День 3?), они делают кофе <strong>"с молитвой"</strong>.</p>
-      
-      <p><strong>Философия:</strong> Труд монахов = молитва. Каждое действие (обжарка зёрен, упаковка) совершается с молитвой и благословением.</p>
-      
-      <h3>Кофейная молитва ☕🙏</h3>
-      <p>Повторим Orthodox Coffee Prayer (или прочитай свою!):</p>
-      
-      <p><em>"Bless this coffee, O Lord, as You blessed the water at Cana. Give us strength for our work and keep us alert in Your service. Through the intercession of Saint Drogo, patron of coffee, may this drink refresh our bodies and enliven our spirits. Amen."</em></p>
-      
-      <p><strong>Перевод:</strong> "Благослови этот кофе, Господи, как Ты благословил воду в Кане. Дай нам силу для работы и сохрани нас бдительными в Твоём служении. По заступничеству святого Друго, покровителя кофе, пусть этот напиток освежит наши тела и оживит дух. Аминь."</p>
-      
-      <h3>Святой Drogo — покровитель кофе</h3>
-      <p><strong>Святой Друго</strong> (1105-1186) — реальный святой!</p>
-      
-      <ul>
-        <li>Был пастухом-отшельником во Фландрии</li>
-        <li>Легенда: мог <strong>присутствовать в двух местах одновременно</strong> (bilocation!) — на мессе и на работе</li>
-        <li>Стал покровителем пастухов, <strong>кофеен и бариста</strong>!</li>
-      </ul>
-      
-      <p><strong>Почему кофе?</strong> Связь возникла позже (XVI-XVII века), когда кофейни стали местами встречи паломников. Друго — покровитель путешественников → покровитель кофеен!</p>
-      
-      <h3>Розовая гималайская соль 🧂💕</h3>
-      <p><strong>Почему розовая?</strong></p>
-      
-      <p><strong>Происхождение:</strong> Добывают в <strong>Пакистане</strong> (Khewra Salt Mine, Пенджаб) — одна из древнейших и крупнейших соляных шахт мира!</p>
-      
-      <p><strong>Цвет:</strong> Розовый от <strong>оксида железа</strong> (ржавчина!) и других минералов (магний, калий, кальций). Это примеси в соли.</p>
-      
-      <p><strong>Возраст:</strong> Соль образовалась 250 миллионов лет назад из древнего океана!</p>
-      
-      <p><strong>Маркетинг vs реальность:</strong></p>
-      <ul>
-        <li><strong>Маркетинг говорит:</strong> "84 минерала! Детокс! Энергия!"</li>
-        <li><strong>Наука говорит:</strong> Минералов там крошечные количества. По вкусу и пользе = обычная соль.</li>
-        <li><strong>НО:</strong> Выглядит красиво! Розовая соль = эстетика и ритуал.</li>
-      </ul>
-      
-      <p><strong>Соль в кофе (вспоминаем!):</strong> Щепотка соли убирает горечь, усиливает вкус. Эфиопы и турки так делают столетиями!</p>
-      
-      <h3>Задание</h3>
-      <ol>
-        <li>Завари кофе Соловки</li>
-        <li>Прочитай кофейContinue17 дек.��ую молитву перед завариванием (вслух или про себя)</li>
-<li><strong>Добавь щепотку розовой соли</strong> в кофе!</li>
-<li>Выпей медленно, с благодарностью</li>
-<li><strong>Чат:</strong> "Святой кофе + святая соль = благословенное утро ☦️☕🧂"</li>
-</ol>
-  <p><strong>Музыка:</strong> Православное песнопение или <a href="https://www.youtube.com/results?search_query=orthodox+chant+solovki" target="_blank">Соловецкий хор</a></p>
-`,
-zebra_message: `
-  <p><strong>Декаф для беременных</strong> — специальный кофе! 🤰☕</p>
-  
-  <p><em>(Примечание: если ты не беременна, это всё равно отличный декаф! Просто производители подчеркнули безопасность)</em></p>
-  
-  <h3>Кофе и беременность</h3>
-  <p><strong>Кофеин при беременности:</strong> Врачи рекомендуют ограничить до <strong>200 мг/день</strong> (≈ 1-2 чашки обычного кофе).</p>
-  
-  <p><strong>Почему ограничивать?</strong></p>
-  <ul>
-    <li>Кофеин проходит через плаценту</li>
-    <li>Плод не может метаболизировать кофеин</li>
-    <li>Высокие дозы связаны с низким весом при рождении</li>
-  </ul>
-  
-  <p><strong>Декаф = безопасная альтернатива!</strong> Можно пить сколько угодно (вкус кофе без кофеина).</p>
-  
-  <h3>Розовая гималайская соль 🧂💕</h3>
-  <p><strong>Почему розовая?</strong></p>
-  
-  <p><strong>Происхождение:</strong> Пакистан (Khewra Salt Mine). Добывают из древнего океана (250 млн лет!).</p>
-  
-  <p><strong>Цвет:</strong> Оксид железа (ржавчина!) + минералы (магний, калий, кальций).</p>
-  
-  <p><strong>Маркетинг:</strong> "84 минерала! Детокс! Энергия!"  
-  <br><strong>Реальность:</strong> Минералов мало, по пользе = обычная соль. Но красивая! 💕</p>
-  
-  <p><strong>Соль в кофе:</strong> Щепотка убирает горечь! Эфиопская и турецкая традиция.</p>
-  
-  <h3>Кофейная молитва 🙏</h3>
-  <p><em>"Bless this coffee, O Lord. Give us strength for our work and keep us alert in Your service. Amen."</em></p>
-  
-  <p>Или своими словами!</p>
-  
-  <h3>Задание</h3>
-  <ol>
-    <li>Завари декаф</li>
-    <li>Прочитай молитву (или просто подумай с благодарностью)</li>
-    <li><strong>Добавь щепотку розовой соли</strong> — попробуй!</li>
-    <li>Выпей медленно</li>
-    <li><strong>Чат:</strong> "Декаф + розовая соль = безопасное волшебство! 🧂☕💕"</li>
-  </ol>
-  
-  <p><strong>Музыка:</strong> <a href="https://www.youtube.com/results?search_query=orthodox+chant" target="_blank">Православное песнопение</a> или что-то спокойное</p>
-`
-},
-{
-day: 10,
-date: '2025-12-29',
-tanya_gift: 'Матча латте',
-zebra_gift: 'Матча латте',
-tanya_bonus: 'Цветная шоколадка без сахара',
-zebra_bonus: 'Цветная шоколадка без сахара',
-title: 'Матча — напиток инстаграма',
-tanya_message: `
-<p><strong>Матча латте</strong> — напиток лучшей пафосной жизни! 🍵✨📸</p>
-  <h3>Матча — от дзен-монахов до инстаграма</h3>
-  <p><strong>Матча</strong> (抹茶, matcha) — японский порошковый зелёный чай.</p>
-  
-  <p><strong>История:</strong></p>
-  <ul>
-    <li><strong>IX век, Китай:</strong> Буддийские монахи измельчали чай в порошок, пили для медитации</li>
-    <li><strong>XII век:</strong> Монах Эйсай привёз матчу в <strong>Японию</strong></li>
-    <li><strong>XVI век:</strong> Чайная церемония (<strong>茶道, chadō</strong>) с матчей стала искусством дзен-буддизма</li>
-  </ul>
-  
-  <p><strong>Традиционный способ:</strong> Порошок матчи + горячая вода (не кипяток!) взбивают бамбуковым венчиком (<strong>茶筅, chasen</strong>) до пены. Пьют из пиалы, медленно, с уважением.</p>
-  
-  <h3>Матча латте — западная адаптация</h3>
-  <p><strong>2000-е:</strong> Матча пришла на Запад. Starbucks, specialty-кофейни начали делать <strong>матча латте</strong> = матча + вспененное молоко + сахар.</p>
-  
-  <p><strong>2010-е:</strong> <strong>Instagram взорвался!</strong> 📸</p>
-  
-  <p><strong>Почему матча = инстаграм?</strong></p>
-  <ul>
-    <li><strong>Цвет:</strong> Ярко-зелёный, фотогеничный!</li>
-    <li><strong>Эстетика:</strong> Минимализм, дзен, японский стиль</li>
-    <li><strong>Wellness-культура:</strong> "Я забочусь о здоровье!"</li>
-    <li><strong>Статус:</strong> Матча дороже обычного кофе = "Я могу себе позволить"</li>
-  </ul>
-  
-  <p><strong>Хэштеги:</strong> #matchalatte #matchalover #matchaaddict — миллионы постов!</p>
-  
-  <h3>Матча = суперфуд?</h3>
-  <p><strong>Маркетинг говорит:</strong> Антиоксиданты! L-теанин! Спокойная энергия! Детокс!</p>
-  
-  <p><strong>Наука говорит:</strong></p>
-  <ul>
-    <li><strong>Антиоксиданты (EGCG):</strong> Да, больше, чем в обычном зелёном чае (ты пьёшь весь лист, а не настой!)</li>
-    <li><strong>L-теанин:</strong> Аминокислота, которая успокаивает + кофеин = "спокойная бодрость" (не нервозность!)</li>
-    <li><strong>Детокс:</strong> Нет научных доказательств. Печень сама детоксит.</li>
-  </ul>
-  
-  <p><strong>Итог:</strong> Матча полезна, но не волшебная. Хороший чай, но маркетинг преувеличивает.</p>
-  
-  <h3>Пафосная жизнь = матча + инстаграм</h3>
-  <p><strong>Стереотип:</strong> Девушка в <strong>lululemon</strong> (спортивная одежда за $100), с <strong>матча латте</strong>, в <strong>эстетичной кофейне</strong>, делает фото для Instagram. Подпись: "Self-care Sunday ✨🍵"</p>
-  
-  <p><strong>Мемы:</strong> "Basic matcha girl" (но мы любим!).</p>
-  
-  <p><strong>Реальность:</strong> Матча — это вкусно, красиво, и если ты наслаждаешься — никакой иронии! Пей матчу, фоткай, живи! 📸✨</p>
-  
-  <h3>Цветная шоколадка без сахара 🌈🍫</h3>
-  <p><strong>Красивая, фруктовая, без сахара!</strong></p>
-  
-  <p><strong>Сахарозаменители:</strong> Эритрит, стевия, или монк-фрукт (monk fruit). Калорий мало, но сладко!</p>
-  
-  <p><strong>Цвета:</strong> Натуральные красители (спирулина = синий, свёкла = розовый, куркума = жёлтый).</p>
-  
-  <p><strong>Wellness-шоколад</strong> = тренд! Красиво + полезно + инстаграмм но!</p>
-  
-  <h3>Задание</h3>
-  <ol>
-    <li>Завари матча латте</li>
-    <li><strong>СФОТОГРАФИРУЙ</strong> красиво! Свет, угол, минимализм. Ты — инстаграм-эстет! 📸</li>
-    <li>Выложи в чат с подписью: "Self-care day ✨🍵" (с иронией или без — твой выбор! 😄)</li>
-    <li>Выбери цветную шоколадку <strong>по цвету настроения</strong>:
-      <ul>
-        <li>Синий = спокойствие</li>
-        <li>Розовый = радость</li>
-        <li>Зелёный = баланс</li>
-        <li>Жёлтый = энергия</li>
-      </ul>
-    </li>
-    <li>Съешь, впитай цвет! 🌈</li>
-  </ol>
-  
-  <p><strong>Музыка:</strong> <a href="https://www.youtube.com/results?search_query=japanese+lofi" target="_blank">Japanese Lo-Fi</a> — идеально для матчи!</p>
-`,
-zebra_message: `
-  <p><strong>Матча латте</strong> — напиток инстаграма и wellness-культуры! 🍵✨</p>
-  
-  <h3>Матча: от монахов до Instagram</h3>
-  <p><strong>История:</strong> IX век Китай → XII век Япония → дзен-монахи → чайная церемония.</p>
-  
-  <p><strong>2010-е:</strong> Instagram + матча = взрыв! Ярко-зелёный, фотогеничный, wellness-статус.</p>
-  
-  <p><strong>Стереотип:</strong> "Basic matcha girl" в lululemon с латте. Но мы любим! 💚</p>
-  
-  <h3>Польза матчи</h3>
-  <ul>
-    <li><strong>Антиоксиданты:</strong> Больше, чем в обычном чае</li>
-    <li><strong>L-теанин + кофеин:</strong> Спокойная бодрость (не нервозность!)</li>
-    <li><strong>Детокс?</strong> Маркетинг. Печень сама справляется.</li>
-  </ul>
-  
-  <p>Матча полезна, но не волшебная!</p>
-  
-  <h3>Цветная шоколадка 🌈</h3>
-  <p>Без сахара (эритрит/стевия), натуральные красители (спирулина, свёкла, куркума). Wellness-шоколад!</p>
-  
-  <h3>Задание на двоих</h3>
-  <ol>
-    <li>Заварите два матча латте</li>
-    <li><strong>Фотосессия!</strong> Красивый кадр с двумя чашками 📸</li>
-    <li>Выложите в чат: "Self-care together ✨🍵"</li>
-    <li>Выберите шоколадки по цвету настроения (каждый свой цвет!)</li>
-    <li>Съешьте, обменяйтесь впечатлениями 🌈</li>
-  </ol>
-  
-  <p><strong>Музыка:</strong> <a href="https://www.youtube.com/results?search_query=japanese+lofi" target="_blank">Japanese Lo-Fi</a></p>
-`
-}
-];
-
-Продолжить с днями 11-26? 😊Да, давай продолжим18 дек.typescript  {
-    day: 11,
-    date: '2025-12-30',
-    tanya_gift: 'Кофе цикорий',
-    zebra_gift: 'Кофе цикорий',
-    tanya_bonus: 'Пастила со вкусом кофе',
-    zebra_bonus: 'Пастила со вкусом кофе',
-    title: 'Цикорий — кофе дефицита',
-    tanya_message: `
-      <p><strong>Цикорий</strong> — заменитель кофе с богатой историей! ☕</p>
-      
-      <h3>Что такое цикорий?</h3>
-      <p><strong>Цикорий</strong> (Chicory, Cichorium intybus) — корень растения с голубыми цветами. Обжаривают, мелют, заваривают как кофе.</p>
-      
-      <p><strong>Вкус:</strong> Горький (похож на кофе!), древесный, ореховый, немного сладковатый. БЕЗ кофеина!</p>
-      
-      <h3>История цикория в Европе</h3>
-      <p><strong>XVII век:</strong> Европейцы начали использовать цикорий как добавку к кофе (удешевление).</p>
-      
-      <p><strong>Франция, Наполеоновские войны (1806-1814):</strong></p>
-      <p>Это <strong>ключевой момент!</strong></p>
-      
-      <p><strong>Континентальная блокада:</strong> Наполеон ввёл запрет на торговлю с Британией. Британцы контролировали морские пути → кофе из колоний (Ява, Карибы) не мог попасть в континентальную Европу!</p>
-      
-      <p><strong>Результат:</strong> Кофе стал <strong>дефицитом</strong>. Цены взлетели. Французы <strong>массово</strong> перешли на цикорий!</p>
-      
-      <p><strong>После войны:</strong> Блокада закончилась, но традиция осталась! Французы привыкли к цикорию. В кафе до сих пор можно заказать <strong>café au lait</strong> с цикорием.</p>
-      
-      <h3>Цикорий в США — New Orleans</h3>
-      <p><strong>Луизиана</strong> была французской колонией → французские традиции!</p>
-      
-      <p><strong>Гражданская война США (1861-1865):</strong> Блокада портов Юга → кофе снова стал дефицитом!</p>
-      
-      <p><strong>New Orleans:</strong> Жители вспомнили французскую традицию, начали добавлять цикорий в кофе.</p>
-      
-      <p><strong>Café du Monde</strong> (легендарное кафе с 1862 года!) до сих пор подаёт <strong>Coffee & Chicory</strong> — смесь кофе + цикорий + горячее молоко + сахар = классический новоорлеанский <strong>Café au Lait</strong>!</p>
-      
-      <p><strong>Адрес:</strong> 800 Decatur St, New Orleans. Работает <strong>24/7</strong>! Туристы стоят в очереди за бенье (пончики в сахарной пудре) + café au lait.</p>
-      
-      <h3>Цикорий в России</h3>
-      <p><strong>СССР:</strong> Цикорий был популярен как "кофе для народа" (дешёвый, доступный). Особенно в войну и дефицит.</p>
-      
-      <p><strong>Бренды:</strong> "Здоровье", "Русский цикорий" — продаются до сих пор!</p>
-      
-      <p><strong>Современность:</strong> Цикорий вернулся как <strong>wellness-напиток</strong> (без кофеина, с инулином для кишечника!).</p>
-      
-      <h3>Польза цикория</h3>
-      <ul>
-        <li><strong>Инулин</strong> — пребиотик (кормит полезные бактерии в кишечнике!)</li>
-        <li><strong>Антиоксиданты</strong></li>
-        <li><strong>Поддерживает печень</strong></li>
-        <li><strong>Без кофеина</strong> — можно вечером!</li>
-      </ul>
-      
-      <h3>Пастила со вкусом кофе</h3>
-      <p><strong>Белёвская пастила</strong> — русская традиция! Взбитое яблочное пюре + яичный белок, запечённое слоями.</p>
-      
-      <p><strong>История:</strong> Изобретена в Белёве (Тульская область) купцом Амвросием Прохоровым (1888). Экспортировалась в Европу!</p>
-      
-      <p>Твоя версия с кофе — современная вариация. Яблоко + кофейный вкус = интересное сочетание!</p>
-      
-      <h3>Задание</h3>
-      <ol>
-        <li>Завари цикорий (можно с молоком, как французы!)</li>
-        <li>Съешь пастилу</li>
-        <li><strong>Чат-история:</strong> "Цикорий спас французов от дефицита! А ты бы выжила без кофе? 😄"</li>
-        <li>Выпей медленно, представь Париж 1810 года или New Orleans 1865...</li>
-      </ol>
-      
-      <p><strong>Музыка:</strong> <a href="https://www.youtube.com/results?search_query=french+cafe+music" target="_blank">French Café Music</a> или <a href="https://www.youtube.com/results?search_query=new+orleans+jazz" target="_blank">New Orleans Jazz</a></p>
-    `,
-    zebra_message: `
-      <p><strong>Цикорий</strong> — напиток дефицита и выживания! ☕</p>
-      
-      <h3>История цикория</h3>
-      <p><strong>Наполеоновские войны (1806-1814):</strong> Континентальная блокада → кофе не попадал в Европу → французы перешли на цикорий!</p>
-      
-      <p><strong>Гражданская война США (1861-1865):</strong> Блокада Юга → New Orleans снова использовал цикорий.</p>
-      
-      <p><strong>Café du Monde</strong> (с 1862!) до сих пор подаёт Coffee & Chicory!</p>
-      
-      <h3>Что такое цикорий?</h3>
-      <p>Корень растения, обжаренный и молотый. Вкус: горький, ореховый. БЕЗ кофеина!</p>
-      
-      <p><strong>Польза:</strong></p>
-      <ul>
-        <li>Инулин (пребиотик для кишечника!)</li>
-        <li>Антиоксиданты</li>
-        <li>Поддержка печени</li>
-      </ul>
-      
-      <h3>Пастила кофе</h3>
-      <p>Белёвская пастила (Тульская область, 1888) — взбитое яблоко + белок, запечённое. С кофейным вкусом — современная версия!</p>
-      
-      <h3>Задание</h3>
-      <ol>
-        <li>Заварите цикорий (можно с молоком!)</li>
-        <li>Съешьте пастилу</li>
-        <li><strong>Чат:</strong> "Цикорий = напиток выживания! Смогли бы мы без кофе? 😄"</li>
-        <li>Представьте Париж 1810 или New Orleans 1865...</li>
-      </ol>
-      
-      <p><strong>Музыка:</strong> <a href="https://www.youtube.com/results?search_query=french+cafe+music" target="_blank">French Café</a> или <a href="https://www.youtube.com/results?search_query=new+orleans+jazz" target="_blank">New Orleans Jazz</a></p>
-    `
-  },
-
-  {
-    day: 12,
-    date: '2025-12-31',
-    tanya_gift: 'Рождественский кофе с лошадью',
-    zebra_gift: 'Глинтвейн (специи + сухофрукты)',
-    tanya_bonus: 'Конфеты "Буржуйские" с колой',
-    zebra_bonus: 'Конфеты "Буржуйские" с колой',
-    title: 'Новогодняя ночь!',
-    tanya_message: `
-      <p><strong>С Новым Годом! 🎄✨🎉</strong></p>
-      
-      <p>Последний день года! Рождественский кофе с лошадью на упаковке — это про тройку, зиму и русскую душу! 🐴❄️</p>
-      
-      <h3>Лошади и Рождество</h3>
-      <p><strong>Европейская традиция:</strong></p>
-      <ul>
-        <li><strong>Три волхва</strong> ехали к младенцу Иисусу (на верблюдах или лошадях?)</li>
-        <li><strong>Святой Николай</strong> (Sinterklaas) в Нидерландах ездит на <strong>белом коне</strong>!</li>
-        <li><strong>Рождественские ярмарки</strong> — конные упряжки, сани</li>
-      </ul>
-      
-      <p><strong>Русская традиция — тройка лошадей!</strong></p>
-      <p>🐴🐴🐴 + колокольчики + снег = иконический зимний образ!</p>
-      
-      <p><strong>Песня "Три белых коня"</strong> (из фильма "Чародеи", 1982):</p>
-      
-      <p><em>"Остыли реки, и земля остыла,<br>
-      И чуть нахохлились дома.<br>
-      Это в городе тепло и сыро,<br>
-      А за городом зима, зима, зима!<br><br>
-      
-      Снег летит, снег летит,<br>
-      Словно падает с небес.<br>
-      Три белых коня — это декабрь, январь и февраль!"</em></p>
-      
-      <p><strong>Слушай:</strong> <a href="https://www.youtube.com/watch?v=qYJW1JHMpsA" target="_blank">"Три белых коня"</a> — это MUST новогодней ночи!</p>
-      
-      <h3>Буржуйские конфеты с колой 🥤</h3>
-      <p><strong>"Буржуйские"</strong> — название ироничное! Кола + взрывная карамель = буржуазное декадентство! 😄</p>
-      
-      <p><strong>Взрывная карамель</strong> (Pop Rocks) изобретена в 1956 году случайно! Углекислый газ в сахаре создаёт микровзрывы во рту.</p>
-      
-      <p><strong>Кола</strong> — классика газировки. Кола + карамель = ностальгия по детству!</p>
-      
-      <h3>Задание: Новогодний ритуал</h3>
-      <ol>
-        <li>Завари рождественский кофе</li>
-        <li><strong>Включи "Три белых коня"</strong> (обязательно!)</li>
-        <li>Съешь "Буржуйские" конфеты, почувствуй взрывы! 💥</li>
-        <li><strong>В 23:55</strong> (за 5 минут до Нового Года) напиши в чат:
-          <ul>
-            <li>"В 2026 году я хочу: [мечта]"</li>
-            <li>"Благодарю 2054 за: [что-то хорошее]"</li>
-            <li>"Желаю подругам: [пожелание]"</li>
-          </ul>
-        </li>
-        <li><strong>В 00:00</strong> — обнимашки, шампанское, салют! 🎆🥂</li>
-      </ol>
-      
-      <p><strong>С Новым Годом, дорогая! Пусть 2025 будет волшебным! ✨💕🎄</strong></p>
-    `,
-    zebra_message: `
-      <p><strong>С Новым Годом! 🎄✨🎉</strong></p>
-      
-      <p>Последний день года! Глинтвейн + специи + сухофрукты = тепло и уют! 🍷✨</p>
-      
-      <h3>Глинтвейн — согревающий напиток</h3>
-      <p><strong>Glühwein</strong> (нем. "светящееся вино") — горячее вино со специями!</p>
-      
-      <p><strong>История:</strong> Средневековая Европа грела вино со специями (корица, гвоздика, мускатный орех) для согрева, здоровья, вкуса.</p>
-      
-      <p><strong>Рождественские ярмарки</strong> (Weihnachtsmarkt) в Германии, Австрии — глинтвейн в кружках с 1500-х годов!</p>
-      
-      <p><strong>Безалкогольная версия:</strong> Можно сделать на соке (виноградный, яблочный) + специи = детский глинтвейн!</p>
-      
-      <h3>Твой набор: специи + сухофрукты</h3>
-      <p><strong>Специи:</strong> Корица, гвоздика, бадьян, кардамон, имбирь</p>
-      <p><strong>Сухофрукты:</strong> Изюм, курага, чернослив — добавляют сладость и глубину!</p>
-      
-      <p><strong>Рецепт:</strong></p>
-      <ol>
-        <li>Подогрей сок (виноградный/яблочный) или вино (если хочешь алкогольный)</li>
-        <li>Добавь специи + сухофрукты</li>
-        <li>Вари 10-15 минут (НЕ кипятить!)</li>
-        <li>Процеди, разлей в кружки</li>
-      </ol>
-      
-      <h3>Буржуйские конфеты 🥤💥</h3>
-      <p>Кола + взрывная карамель (Pop Rocks) = весёлая бомба во рту!</p>
-      
-      <h3>Новогодний ритуал на двоих</h3>
-      <ol>
-        <li>Приготовьте глинтвейн вместе</li>
-        <li>Включите <a href="https://www.youtube.com/watch?v=qYJW1JHMpsA" target="_blank">"Три белых коня"</a></li>
-        <li>Съешьте конфеты (взрывы на двоих! 💥)</li>
-        <li><strong>В 23:55</strong> напишите в чат (каждый своё):
-          <ul>
-            <li>"В 2026 мы хотим: [общая мечта]"</li>
-            <li>"Благодарим 2025 за: [что-то хорошее]"</li>
-          </ul>
-        </li>
-        <li><strong>В 00:00</strong> — поцелуй, шампанское, салют! 🎆🥂💕</li>
-      </ol>
-      
-      <p><strong>С Новым Годом, любимые! Пусть 2025 принесёт счастье! ✨💕🎄</strong></p>
-    `
-  },
-
-  {
-    day: 13,
-    date: '2025-01-01',
-    tanya_gift: 'Кофе с идальго и морошкой (2 вида)',
-    zebra_gift: 'Декаф с небом',
-    tanya_bonus: 'Кофейная маска для лица',
-    zebra_bonus: 'Нетканная маска для лица',
-    title: 'Новый год начался!',
-    tanya_message: `
-      <p><strong>С Новым 2025 Годом! 🎉✨</strong></p>
-      
-      <p>Первый день года! У тебя два кофе — <strong>идальго</strong> (вспоминаем День 6-7 из предыдущего списка) и <strong>морошка</strong>!</p>
-      
-      <h3>Морошка — арктическая ягода 🍇</h3>
-      <p><strong>Cloudberry</strong> (англ.) или <strong>Rubus chamaemorus</strong> — растёт в болотах Скандинавии, России, Канады.</p>
-      
-      <p><strong>Цвет:</strong> Незрелая красная, спелая — янтарно-золотая ✨</p>
-      
-      <p><strong>Вкус:</strong> Кисло-сладкая, с медовыми нотами, чуть терпкая</p>
-      
-      <p><strong>Цена:</strong> В Финляндии $30-50/кг! Собирают вручную на болотах.</p>
-      
-      <p><strong>Культурное значение:</strong></p>
-      <ul>
-        <li><strong>Финляндия:</strong> Морошковое варенье (lakka) — деликатес! Есть морошковый ликёр <strong>Lapponia Lakka</strong></li>
-        <li><strong>Швеция:</strong> Морошковое мороженое, торт</li>
-        <li><strong>Россия:</strong> "Царская ягода" — подавали при дворе!</li>
-        <li><strong>Норвегия:</strong> Морошка на монете (2 кроны)!</li>
-      </ul>
-      
-      <p><strong>Fun fact:</strong> Морошка почти не культивируется (капризная!), только дикая сбор!</p>
-      
-      <p><strong>Видео:</strong> <a href="https://www.youtube.com/results?search_query=cloudberry+picking+lapland" target="_blank">Cloudberry Picking in Lapland</a> — посмотри, как собирают!</p>
-      
-      <h3>Кофейная маска для лица ☕✨</h3>
-      <p><strong>СПА-день дома!</strong></p>
-      
-      <p><strong>Польза кофе для кожи:</strong></p>
-      <ul>
-        <li><strong>Кофеин</strong> подтягивает кожу, уменьшает отёки</li>
-        <li><strong>Антиоксиданты</strong> борются со старением</li>
-        <li><strong>Скраб-эффект</strong> отшелушивает</li>
-      </ul>
-      
-      <p><strong>Научное обоснование:</strong> Исследование 2013 (International Journal of Dermatology) — топический кофеин уменьшает целлюлит!</p>
-      
-      <h3>Задание: Новогодний СПА</h3>
-      <ol>
-        <li>Завари оба кофе, попробуй оба! Какой вкуснее?</li>
-        <li><strong>Вечером:</strong> Нанеси кофейную маску, подожди 15-20 минут</li>
-        <li>Смой тёплой водой</li>
-        <li>Выпей второй кофе, расслабься</li>
-        <li><strong>Чат:</strong> "Новый год = новая я! СПА + морошка = царская жизнь! 👑✨"</li>
-      </ol>
-      
-      <p><strong>Музыка:</strong> <a href="https://www.youtube.com/results?search_query=spa+music+relaxing" target="_blank">Spa Music</a></p>
-    `,
-    zebra_message: `
-      <p><strong>С Новым 2025 Годом! 🎉✨</strong></p>
-      
-      <p>Первый день года! Декаф с небом на упаковке — рассветное, мечтательное! 🌅☕</p>
-      
-      <h3>Небо на упаковке</h3>
-      <p>Рассвет = новое начало, надежда! Идеальный символ для первого дня года!</p>
-      
-      <p><strong>Golden hour</strong> (золотой час) — первый час после рассвета. Свет мягкий, тёплый, фотографы обожают!</p>
-      
-      <h3>Маска для лица</h3>
-      <p><strong>Нетканная маска</strong> — современная косметология!</p>
-      
-      <p><strong>Как работает:</strong> Ткань пропитана сывороткой (гиалуроновая кислота, витамины). Накладываешь на лицо, ждёшь 15-20 минут, снимаешь — кожа увлажнённая!</p>
-      
-      <p><strong>Корейская косметика</strong> (K-beauty) популяризировала тканевые маски в 2010-е!</p>
-      
-      <h3>Задание: Новогодний relax</h3>
-      <ol>
-        <li>Завари декаф с небом</li>
-        <li><strong>Вечером:</strong> Нанеси маску, ляг, расслабься 15-20 минут</li>
-        <li>Сними маску, помассируй остатки в кожу</li>
-        <li>Выпей второй декаф (или чай)</li>
-        <li><strong>Чат:</strong> "Новый год = новая я! СПА-релакс! ✨😌"</li>
-      </ol>
-      
-      <p><strong>Музыка:</strong> <a href="https://www.youtube.com/results?search_query=spa+music+relaxing" target="_blank">Spa Relax Music</a></p>
-    `
-  },
-
-  {
-    day: 14,
-    date: '2025-01-02',
-    tanya_gift: 'Кофе гадательный',
-    zebra_gift: 'Какао re-feel с грибами рейши',
-    tanya_bonus: 'Цветная шоколадка',
-    zebra_bonus: 'Цветная шоколадка',
-    title: 'Гадания и грибы',
-    tanya_message: `
-      <p><strong>Дрип для гаданий</strong> с картами Таро на упаковке! 🔮☕</p>
-      
-      <h3>Квест: Погадай и спроси нейросеть!</h3>
-      
-      <p><strong>Задание (шаг за шагом):</strong></p>
-      
-      <ol>
-        <li>Завари кофе, выпей, оставь немного гущи на дне</li>
-        <li>Загадай вопрос</li>
-        <li>Накрой чашку блюдцем, переверни, три раза поверни по часовой стрелке</li>
-        <li>Переверни обратно, дай стечь 2 минуты</li>
-        <li><strong>Сфотографируй узоры!</strong> 📸</li>
-        <li>Загрузи фото в нейросеть (ChatGPT, Claude, Gemini) с запросом:
-          <br><em>"Ты — профессиональная турецкая гадалка в четвёртом поколении. Интерпретируй эту кофейную гущу."</em>
-        </li>
-      </ol>
-      
-      <h3>Как нейросеть "видит" изображения?</h3>
-      
-      <p><strong>Компьютерное зрение (Computer Vision):</strong></p>
-      
-      <p>Нейросети обрабатывают изображения через <strong>свёрточные нейронные сети (CNN)</strong>:</p>
-      
-      <ul>
-        <li><strong>Шаг 1:</strong> Изображение разбивается на пиксели (матрица чисел)</li>
-        <li><strong>Шаг 2:</strong> CNN выделяет <strong>признаки</strong> (edges, textures, patterns)</li>
-        <li><strong>Шаг 3:</strong> Слои сети "видят" всё более сложные паттерны:
-          <ul>
-            <li>Первый слой: линии, края</li>
-            <li>Средние слои: формы, текстуры</li>
-            <li>Глубокие слои: объекты, лица, сцены</li>
-          </ul>
-        </li>
-        <li><strong>Шаг 4:</strong> Модель классифицирует или описывает изображение</li>
-      </ul>
-      
-      <p><strong>Для гадания на кофе:</strong></p>
-      <ul>
-        <li>Нейросеть <strong>не "знает" магии</strong>, но видит <strong>паттерны</strong></li>
-        <li>Она <strong>парейдолит</strong> (как человек видит лица в облаках!)</li>
-        <li>Комбинирует визуальное + текстовое (знания о символах гадания)</li>
-        <li>Генерирует интерпретацию на основе <strong>обучения на текстах</strong> про гадания</li>
-      </ul>
-      
-      <p><strong>По сути:</strong> Нейросеть делает то же, что гадалка — находит формы, интерпретирует через культурные символы!</p>
-      
-      <h3>Если не доверяешь AI: Базовые символы</h3>
-      <ul>
-        <li><strong>Птица</strong> — новости издалека, хорошие вести</li>
-        <li><strong>Дерево</strong> — рост, желание сбудется, здоровье</li>
-        <li><strong>Глаз</strong> — защита от сглаза (или кто-то наблюдает!)</li>
-        <li><strong>Рыба</strong> — деньги плывут к тебе</li>
-        <li><strong>Лестница</strong> — продвижение вверх, карьера</li>
-        <li><strong>Круги</strong> — деньги, успех, завершение цикла</li>
-        <li><strong>Треугольник</strong> — защита, сильная энергия</li>
-      </ul>
-      
-      <p><strong>Гайд:</strong> <a href="https://www.thespruceeats.com/turkish-coffee-fortune-telling-4174025" target="_blank">Turkish Coffee Fortune Telling Guide</a></p>
-      
-      <h3>Задание в чат</h3>
-      <ol>
-        <li>Поделись фото кофейной гущи</li>
-        <li>Поделись интерпретацией от нейросети</li>
-        <li>Поделись своей интерпретацией (что ты видишь?)</li>
-      </ol>
-      
-      <p><strong>Цветная шоколадка:</strong> Выбери по цвету предсказания! 🌈</p>
-    `,
-    zebra_message: `
-      <p><strong>Какао Re-Feel с грибами рейши!</strong> 🍄☕</p>
-      
-      <h3>Что такое рейши?</h3>
-      <p><strong>Reishi</strong> (рейши, Ganoderma lucidum) — "гриб бессмертия" в традиционной китайской медицине!</p>
-      
-      <p><strong>История:</strong> Используется в Китае, Японии, Корее <strong>2000+ лет</strong>!</p>
-      
-      <p><strong>Названия:</strong></p>
-      <ul>
-        <li><strong>Китай:</strong> Línɡzhī (靈芝) = "гриб духовной силы"</li>
-        <li><strong>Япония:</strong> Reishi (霊芝) = "гриб духа"</li>
-      </ul>
-      
-      <p><strong>Внешний вид:</strong>Continue18 дек.Красно-коричневый, глянцевый, растёт на деревьях. Выглядит как лакированный!</p>
-  <h3>Польза рейши (что говорит наука)</h3>
-  
-  <p><strong>1. Адаптоген</strong></p>
-  <ul>
-    <li>Помогает организму справляться со <strong>стрессом</strong></li>
-    <li>Балансирует гормоны (кортизол)</li>
-  </ul>
-  
-  <p><strong>2. Иммунная система</strong></p>
-  <ul>
-    <li>Содержит <strong>полисахариды</strong> и <strong>бета-глюканы</strong></li>
-    <li>Стимулирует работу иммунных клеток (макрофаги, NK-клетки)</li>
-    <li>Исследования показывают эффект!</li>
-  </ul>
-  
-  <p><strong>3. Сон и релаксация</strong></p>
-  <ul>
-    <li>Рейши <strong>успокаивает</strong> (в отличие от кофе!)</li>
-    <li>Улучшает качество сна</li>
-    <li>Снижает тревожность</li>
-  </ul>
-  
-  <p><strong>4. Антиоксиданты</strong></p>
-  <ul>
-    <li>Тритерпены — мощные антиоксиданты</li>
-    <li>Противовоспалительный эффект</li>
-  </ul>
-  
-  <p><strong>5. Долголетие?</strong></p>
-  <ul>
-    <li>В традиции — гриб долголетия</li>
-    <li>Научные исследования на животных обещающие, на людях — пока неясно</li>
-  </ul>
-  
-  <h3>Почему рейши в какао?</h3>
-  <p>Рейши <strong>горький</strong> (очень!). В чистом виде неприятно пить. Какао маскирует горечь!</p>
-  
-  <p><strong>Re-Feel</strong> — бренд wellness-напитков. Рейши + какао = вкусно + польза!</p>
-  
-  <h3>Вкус рейши</h3>
-  <p>Землистый, древесный, горьковатый. В какао — почти незаметен!</p>
-  
-  <h3>Задание</h3>
-  <ol>
-    <li>Завари какао с рейши</li>
-    <li>Выпей медленно, почувствуй <strong>спокойствие</strong> (рейши работает!)</li>
-    <li>Съешь цветную шоколадку 🌈</li>
-    <li><strong>Чат:</strong> "Пью гриб бессмертия! Стану бессмертной? 😄🍄"</li>
-  </ol>
-  
-  <p><strong>Музыка для релакса:</strong> <a href="https://www.youtube.com/results?search_query=meditation+music" target="_blank">Meditation Music</a></p>
-`
-}
-];
-
-Продолжить с днями 15-26? 😊Да, давай продолжим18 дек.typescript  {
-    day: 15,
-    date: '2025-01-03',
-    tanya_gift: 'Японский кофе дрип с индустриальным городским пейзажем',
-    zebra_gift: 'Японский кофе дрип с индустриальным городским пейзажем',
-    tanya_bonus: 'Конфета вишня с перцем',
-    zebra_bonus: 'Сироп Мисо-карамель',
-    title: 'Японский индустриальный кофе',
-    tanya_message: `
-      <p><strong>Японский кофе с индустриальным городским пейзажем</strong> на упаковке! 🏙️☕</p>
-      
-      <h3>Японская кофейная культура</h3>
-      <p>Япония = <strong>третий крупнейший импортёр кофе</strong> в мире! Они не выращивают (климат не подходит), но <strong>обжаривают и варят</strong> как мастера.</p>
-      
-      <p><strong>Kissaten</strong> (喫茶店) — традиционные японские кофейни с 1950-х:</p>
-      <ul>
-        <li>Тихие, медленные, ретро-эстетика</li>
-        <li>Старинные кофемашины, винил, деревянная мебель</li>
-        <li>Чашка кофе = ритуал, не спешка</li>
-      </ul>
-      
-      <p><strong>Siphon coffee</strong> — вакуумный метод варки (как научная лаборатория!). Популярен в Японии.</p>
-      
-      <p><strong>Pour-over</strong> — японцы возвели пуровер в искусство. <strong>Hario V60</strong> — японское изобретение!</p>
-      
-      <h3>Индустриальный пейзаж</h3>
-      <p>На твоей упаковке — <strong>городской пейзаж</strong>! Это намёк на:</p>
-      
-      <ul>
-        <li><strong>Токио</strong> — мегаполис, неоновые огни, небоскрёбы</li>
-        <li><strong>Osaka</strong> — индустриальный город, порт</li>
-        <li><strong>Yokohama</strong> — портовый город с небоскрёбами</li>
-      </ul>
-      
-      <p><strong>Японская эстетика контрастов:</strong></p>
-      <ul>
-        <li>Древние храмы + неоновый Токио</li>
-        <li>Дзен-сады + индустриальные районы</li>
-        <li>Тишина kissaten + шум улиц</li>
-      </ul>
-      
-      <p><strong>Cyberpunk vibe:</strong> Индустриальная Япония вдохновила фильмы "Бегущий по лезвию", "Призрак в доспехах", аниме!</p>
-      
-      <h3>Вишня с перцем 🌶️🍒</h3>
-      <p>Острое + сладкое = японская философия контрастов!</p>
-      
-      <p>В Японии любят <strong>wasabi + сладкое</strong>, <strong>соевый соус + сахар</strong>. Баланс противоположностей!</p>
-      
-      <h3>Задание</h3>
-      <ol>
-        <li>Завари японский дрип <strong>медленно</strong> (как в kissaten!)</li>
-        <li>Выпей в <strong>тишине</strong> (или под японскую музыку)</li>
-        <li>Съешь вишню с перцем — почувствуй контраст! 🌶️🍒</li>
-        <li><strong>Чат:</strong> "Япония учит балансу: тишина + индустрия, сладкое + острое. 🏙️☕"</li>
-      </ol>
-      
-      <p><strong>Музыка:</strong></p>
-      <ul>
-        <li><a href="https://www.youtube.com/results?search_query=japanese+city+pop" target="_blank">Japanese City Pop</a> (80-е, ретро-футуризм!)</li>
-        <li><a href="https://www.youtube.com/results?search_query=nujabes" target="_blank">Nujabes</a> — японский lo-fi hip-hop</li>
-      </ul>
-      
-      <p><strong>Видео-вдохновение:</strong> <a href="https://www.youtube.com/results?search_query=tokyo+walking+tour+night" target="_blank">Tokyo Night Walk</a> — виртуальная прогулка по неоновому Токио!</p>
-    `,
-    zebra_message: `
-      <p><strong>Японский кофе с городом</strong> на упаковке! 🏙️☕</p>
-      
-      <h3>Японская кофейная культура</h3>
-      <p>Япония = мастера кофе! <strong>Kissaten</strong> (喫茶店) — традиционные кофейни:</p>
-      <ul>
-        <li>Тихие, медленные, ретро</li>
-        <li>Siphon coffee (вакуумная варка!)</li>
-        <li>Hario V60 — японское изобретение</li>
-      </ul>
-      
-      <h3>Индустриальный пейзаж</h3>
-      <p>Токио, Osaka, Yokohama — мегаполисы с небоскрёбами, неоном, контрастами:</p>
-      <ul>
-        <li>Дзен-храмы + киберпанк</li>
-        <li>Тишина + шум</li>
-        <li>Древность + будущее</li>
-      </ul>
-      
-      <p>Вдохновение для "Бегущего по лезвию" и аниме!</p>
-      
-      <h3>Сироп Мисо-карамель 🧈✨</h3>
-      <p><strong>Высокая кухня в чашке!</strong></p>
-      
-      <p><strong>Мисо</strong> (みそ) — японская ферментированная соевая паста. Солёная, умами, богата глутаматом.</p>
-      
-      <p><strong>Мисо в десертах</strong> — тренд 2010-х:</p>
-      <ul>
-        <li><strong>Momofuku Milk Bar</strong> (Christina Tosi, NYC, 2008) начали добавлять мисо в cookies!</li>
-        <li><strong>Nobu</strong> делал мисо-карамельный соус</li>
-        <li>Теперь miso caramel — классика fusion-кухни</li>
-      </ul>
-      
-      <p><strong>Почему работает?</strong></p>
-      <ul>
-        <li>Солёное усиливает сладкое (salted caramel эффект!)</li>
-        <li>Умами добавляет глубину</li>
-        <li>Ферментация = сложный вкус</li>
-      </ul>
-      
-      <p><strong>В кофе:</strong> Добавь сироп в латте = <strong>Miso Latte</strong> (тренд Токио и Сеула!)</p>
-      
-      <h3>Задание на двоих</h3>
-      <ol>
-        <li>Заварите японский кофе <strong>медленно</strong></li>
-        <li>Добавьте мисо-карамель в один из них (эксперимент!)</li>
-        <li>Попробуйте оба — сравните!</li>
-        <li>Выпейте в тишине (или под японскую музыку)</li>
-        <li><strong>Чат:</strong> "Мисо в кофе — это безумие или гениально? Наш вердикт: ___"</li>
-      </ol>
-      
-      <p><strong>Музыка:</strong></p>
-      <ul>
-        <li><a href="https://www.youtube.com/results?search_query=japanese+city+pop" target="_blank">Japanese City Pop</a></li>
-        <li><a href="https://www.youtube.com/results?search_query=nujabes" target="_blank">Nujabes</a></li>
-      </ul>
-    `
-  },
-
-  {
-    day: 16,
-    date: '2025-01-04',
-    tanya_gift: 'Марципановый фисташковый растворимый кофе',
-    zebra_gift: 'Марципановый фисташковый растворимый кофе',
-    tanya_bonus: 'Безе',
-    zebra_bonus: 'Безе',
-    title: 'Марципан и фисташки',
-    tanya_message: `
-      <p><strong>Марципановый фисташковый кофе</strong> — это десерт в чашке! 🥐☕✨</p>
-      
-      <h3>Марципан — миндальное золото</h3>
-      <p><strong>Marzipan</strong> (марципан) — смесь молотого миндаля + сахар.</p>
-      
-      <p><strong>Происхождение:</strong> Спорят <strong>Персия</strong> или <strong>Италия</strong>!</p>
-      
-      <p><strong>Любекский марципан</strong> (Германия) — самый знаменитый! С 1400-х годов.</p>
-      <ul>
-        <li><strong>Niederegger</strong> (с 1806) — легендарная фабрика в Любеке</li>
-        <li>Туристы везут марципановые фигурки (фрукты, животные) как сувениры</li>
-      </ul>
-      
-      <p><strong>Марципан на Рождество:</strong> Традиция делать марципановые фигурки к празднику (ёлочки, свинки на счастье!).</p>
-      
-      <h3>Фисташки — зелёное золото 🟢</h3>
-      <p><strong>Pistachio</strong> (фисташка) — орех из Ближнего Востока.</p>
-      
-      <p><strong>История:</strong></p>
-      <ul>
-        <li>Выращивают 9000+ лет!</li>
-        <li>Древняя Персия (Иран) — фисташки для королей</li>
-        <li>Царица Савская объявила фисташки <strong>королевским орехом</strong> (простолюдинам запрещено!)</li>
-      </ul>
-      
-      <p><strong>Сицилийские фисташки (Bronte):</strong></p>
-      <ul>
-        <li>Растут на вулкане <strong>Этна</strong></li>
-        <li>Зелёные, интенсивный вкус</li>
-        <li>Цена: <strong>дороже трюфелей!</strong> ($50-70/кг)</li>
-        <li>Называют "зелёное золото Сицилии"</li>
-      </ul>
-      
-      <p><strong>Фисташковая паста:</strong> В Италии делают пасту из сицилийских фисташек — деликатес для десертов!</p>
-      
-      <h3>Марципан + фисташка = роскошь</h3>
-      <p>Оба ореха = дорогие, изысканные. Вместе = двойная роскошь!</p>
-      
-      <p>В specialty-кофейнях <strong>фисташковый латте</strong> — хит! Ореховая сливочность без молока.</p>
-      
-      <h3>Безе — французская классика ☁️</h3>
-      <p><strong>Meringue</strong> (безе) — взбитый яичный белок + сахар, запечённый.</p>
-      
-      <p><strong>История:</strong> Изобретено в швейцарском городе <strong>Meiringen</strong> (1600-е) или итальянским поваром (спорят!).</p>
-      
-      <p><strong>Типы безе:</strong></p>
-      <ul>
-        <li><strong>Французское</strong> — хрустящее, тает во рту</li>
-        <li><strong>Швейцарское</strong> — плотное, для тортов</li>
-        <li><strong>Итальянское</strong> — с горячим сиропом, для кремов</li>
-      </ul>
-      
-      <p><strong>Павлова</strong> — знаменитый десерт (Австралия/Новая Зеландия спорят!) = безе + взбитые сливки + фрукты. Назван в честь балерины <strong>Анны Павловой</strong> (1926)!</p>
-      
-      <h3>Задание</h3>
-      <ol>
-        <li>Завари марципаново-фисташковый кофе</li>
-        <li>Съешь безе — оно тает во рту! ☁️</li>
-        <li><strong>Чат:</strong> "Сегодня я королева! Фисташки + марципан + безе = роскошь! 👑✨"</li>
-        <li><strong>Представь:</strong> Ты в кафе в Любеке или на Сицилии... 🇩🇪🇮🇹</li>
-      </ol>
-      
-      <p><strong>Музыка:</strong> Что-то изысканное — <a href="https://www.youtube.com/results?search_query=french+cafe+jazz" target="_blank">French Café Jazz</a></p>
-    `,
-    zebra_message: `
-      <p><strong>Марципаново-фисташковый кофе</strong> — двойная роскошь! 🥐✨</p>
-      
-      <h3>Марципан</h3>
-      <p>Молотый миндаль + сахар. <strong>Любекский марципан</strong> (Германия, с 1400-х) — легенда!</p>
-      
-      <p><strong>Niederegger</strong> (с 1806) — фабрика-музей. Марципановые фигурки к Рождеству!</p>
-      
-      <h3>Фисташки — зелёное золото</h3>
-      <p><strong>Сицилийские фисташки (Bronte):</strong></p>
-      <ul>
-        <li>Растут на вулкане Этна</li>
-        <li>Дороже трюфелей! ($50-70/кг)</li>
-        <li>"Зелёное золото Сицилии"</li>
-      </ul>
-      
-      <p>Царица Савская объявила фисташки <strong>королевским орехом</strong> — простолюдинам запрещено!</p>
-      
-      <h3>Безе ☁️</h3>
-      <p>Взбитый белок + сахар. Изобретено в Швейцарии (Meiringen, 1600-е).</p>
-      
-      <p><strong>Павлова</strong> — безе + сливки + фрукты. Назван в честь балерины Анны Павловой!</p>
-      
-      <h3>Задание</h3>
-      <ol>
-        <li>Заварите кофе</li>
-        <li>Съешьте безе (оно тает!) ☁️</li>
-        <li><strong>Чат:</strong> "Мы — королевская чета! Фисташки + марципан! 👑✨"</li>
-      </ol>
-      
-      <p><strong>Музыка:</strong> <a href="https://www.youtube.com/results?search_query=french+cafe+jazz" target="_blank">French Café Jazz</a></p>
-    `
-  },
-
-  {
-    day: 17,
-    date: '2025-01-05',
-    tanya_gift: 'Кофе кедровый',
-    zebra_gift: 'Кофе кедровый',
-    tanya_bonus: 'Солёные ириски',
-    zebra_bonus: 'Солёные ириски',
-    title: 'Кедровый кофе и солёные ириски',
-    tanya_message: `
-      <p><strong>Кедровый "кофе"</strong> — это не кофе! Это <strong>обжаренные кедровые орехи</strong>, молотые в порошок. 🌲☕</p>
-      
-      <h3>История кедрового кофе</h3>
-      <p><strong>Старообрядцы в Сибири (XIX век):</strong></p>
-      
-      <p>Кофе был <strong>дорогим импортом</strong> и считался "греховным" (пришёл от мусульман, потом от католиков). Старообрядцы хотели свой, <strong>православный, сибирский</strong> напиток!</p>
-      
-      <p>Решение: кедровые орехи! Обжарить, смолоть = получается напиток, похожий на кофе (горячий, тёмный, бодрящий по ощущениям).</p>
-      
-      <p><strong>Современный ренессанс:</strong> В 2010-х кедровый кофе вернулся как <strong>"суперфуд"</strong>. Маркетологи называют его "сибирским кофе" (хотя это как называть квас "русским вином" 😄).</p>
-      
-      <h3>Вкус кедрового кофе</h3>
-      <ul>
-        <li><strong>Ореховый</strong> (очевидно!)</li>
-        <li><strong>Сладковатый</strong> (кедровые орехи сладкие)</li>
-        <li><strong>Маслянистый</strong> (много жиров в орехах)</li>
-        <li><strong>БЕЗ кофеина</strong> — можно пить вечером!</li>
-      </ul>
-      
-      <p><strong>Польза:</strong></p>
-      <ul>
-        <li>Витамин E</li>
-        <li>Жирные кислоты (омега)</li>
-        <li>Магний, цинк</li>
-      </ul>
-      
-      <h3>Солёные ириски 🧂🍬</h3>
-      <p><strong>Salted caramel</strong> (солёная карамель) — одно из величайших изобретений кондитерского мира!</p>
-      
-      <p><strong>История:</strong></p>
-      
-      <p><strong>1970-е, Бретань (Франция):</strong> Кондитер <strong>Henri Le Roux</strong> добавил <strong>beurre salé</strong> (солёное масло, бретанская традиция) в карамель.</p>
-      
-      <p>Получилась <strong>caramel au beurre salé</strong> — солёная карамель! Взрыв вкуса!</p>
-      
-      <p><strong>2000-е:</strong> Salted caramel завоевал мир!</p>
-      <ul>
-        <li>Starbucks Salted Caramel Mocha</li>
-        <li>Häagen-Dazs Salted Caramel</li>
-        <li>Солёная карамель ВО ВСЁМ (шоколад, попкорн, мороженое, кофе!)</li>
-      </ul>
-      
-      <p><strong>Почему работает?</strong></p>
-      <ul>
-        <li><strong>Соль усиливает сладость</strong> (блокирует горькие рецепторы!)</li>
-        <li><strong>Контраст</strong> = интереснее, чем просто сладкое</li>
-        <li><strong>Умами + сладкое</strong> = сложный вкус</li>
-      </ul>
-      
-      <p><strong>Наука:</strong> Натрий (соль) активирует вкусовые рецепторы по-другому, создавая многослойный вкус.</p>
-      
-      <h3>Задание</h3>
-      <ol>
-        <li>Завари кедровый кофе</li>
-        <li>Съешь солёную ириску — почувствуй контраст! 🧂🍬</li>
-        <li><strong>Чат:</strong> "Сибирский кофе + бретанская карамель = кросс-культурный десерт! 🌲🇫🇷"</li>
-        <li><strong>Вопрос:</strong> Кедровый "кофе" — это обман или креатив? Твоё мнение!</li>
-      </ol>
-      
-      <p><strong>Музыка:</strong> Что-то сибирское и эпичное — <a href="https://www.youtube.com/results?search_query=siberian+folk+music" target="_blank">Siberian Folk Music</a></p>
-    `,
-    zebra_message: `
-      <p><strong>Кедровый "кофе"</strong> — обжаренные кедровые орехи! 🌲☕</p>
-      
-      <h3>История</h3>
-      <p>Старообрядцы в Сибири (XIX век) придумали: кофе дорогой и "греховный" → кедровые орехи обжарить, смолоть = свой, православный напиток!</p>
-      
-      <p><strong>Вкус:</strong> Ореховый, сладковатый, маслянистый. БЕЗ кофеина!</p>
-      
-      <p><strong>2010-е:</strong> Вернулся как "суперфуд", "сибирский кофе".</p>
-      
-      <h3>Солёные ириски 🧂🍬</h3>
-      <p><strong>1970-е, Бретань:</strong> Henri Le Roux добавил солёное масло в карамель = <strong>caramel au beurre salé</strong>!</p>
-      
-      <p><strong>2000-е:</strong> Salted caramel завоевал мир (Starbucks, Häagen-Dazs, всё!).</p>
-      
-      <p><strong>Почему работает?</strong> Соль усиливает сладость, создаёт контраст!</p>
-      
-      <h3>Задание</h3>
-      <ol>
-        <li>Заварите кедровый кофе</li>
-        <li>Съешьте ириски</li>
-        <li><strong>Чат:</strong> "Сибирь + Бретань = вкусовой союз! 🌲🇫🇷"</li>
-      </ol>
-      
-      <p><strong>Музыка:</strong> <a href="https://www.youtube.com/results?search_query=siberian+folk+music" target="_blank">Siberian Folk</a></p>
-    `
-  },
-
-  {
-    day: 18,
-    date: '2025-01-06',
-    tanya_gift: 'Рождественский кофе 2',
-    zebra_gift: 'Декаф Мексика',
-    tanya_bonus: 'Шоколадные монеты (луидоры, пиастры, гинеи, нобль)',
-    zebra_bonus: 'Шоколадные монеты',
-    title: 'Пиратские сокровища',
-    tanya_message: `
-      <p><strong>Рождественский кофе 2</strong> + <strong>пиратские монеты</strong>! 🏴‍☠️💰</p>
-      
-      <h3>Шоколадные монеты — история денег!</h3>
-      <p>У тебя <strong>4 вида монет</strong>: луидоры, пиастры, гинеи, нобль. Это реальные исторические валюты!</p>
-      
-      <h3>1. Луидор (Louis d'or) 🇫🇷</h3>
-      <p><strong>Франция, 1640:</strong> Золотая монета, названа в честь короля <strong>Людовика XIII</strong> (Louis = Людовик).</p>
-      
-      <ul>
-        <li>Чеканились при Людовике XIII, XIV, XV, XVI</li>
-        <li><strong>Людовик XIV</strong> (Король-Солнце) сделал луидор символом французской роскоши</li>
-        <li>Весил ~6.75 г золота</li>
-        <li>Использовался до Французской революции (1789)</li>
-      </ul>
-      
-      <p><strong>В литературе:</strong> "Три мушкетёра" Дюма — луидоры упоминаются постоянно!</p>
-      
-      <h3>2. Пиастр (Piece of Eight) 🇪🇸</h3>
-      <p><strong>Испания, XVI-XIX века:</strong> Серебряная монета, <strong>8 реалов</strong>.</p>
-      
-      <ul>
-        <li>Называли <strong>"pieces of eight"</strong> (восемь кусков) — можно было разрезать на 8 частей!</li>
-        <li><strong>Любимая валюта пиратов!</strong> Принималась везде: Карибы, Европа, Азия, Америка</li>
-        <li>Символ <strong>$</strong> (доллар) происходит от пиастра — стилизация цифры 8 с вертикальными линиями!</li>
-      </ul>
-      
-      <p><strong>В культуре:</strong> "Остров сокровищ", "Пираты Карибского моря" — пиастры везде!</p>
-      
-      <h3>3. Гинея (Guinea) 🇬🇧</h3>
-      <p><strong>Англия, 1663:</strong> Золотая монета, названа в честь региона <strong>Гвинея</strong> (Африка), откуда везли золото.</p>
-      
-      <ul>
-        <li>Стоила 1 фунт (20 шиллингов), но цена колебалась (золото дорожало!)</li>
-        <li>К 1717 зафиксировали: <strong>1 гинея = 21 шиллинг</strong></li>
-        <li>Использовалась для дорогих покупок (лошади, земля, предметы роскоши)</li>
-        <li>Джентльмены платили гинеями, простолюдины — фунтами!</li>
-      </ul>
-      
-      <p><strong>Гинея сегодня:</strong> На аукционах (Sotheby's, Christie's) цены до сих пор указывают в гинеях для престижа!</p>
-      
-      <h3>4. Нобль (Noble) 🏴󐁧󐁢󐁥󐁮󐁧󐁿</h3>
-      <p><strong>Англия, 1344:</strong> Золотая монета короля <strong>Эдуарда III</strong>.</p>
-      
-      <ul>
-        <li>Первая крупная английская золотая монета</li>
-        <li>На аверсе — король на корабле (символ морского могущества!)</li>
-        <li>Весила ~7 г золота</li>
-        <li>Называлась "нобль" = благородная!</li>
-      </ul>
-      
-      <p><strong>Исторический момент:</strong> Эдуард III начал <strong>Столетнюю войну</strong> (1337-1453) с Францией. Нобль чеканился для финансирования войны!</p>
-      
-      <h3>Пираты и монеты 🏴‍☠️</h3>
-      <p>Пираты <strong>Золотого века пиратства</strong> (1650-1730) грабили испанские галеоны с пиастрами! Это был главный приз.</p>
-      
-      <p><strong>Клады:</strong> Пираты зарывали сокровища на островах. Некоторые клады находят до сих пор!</p>
-      
-      <h3>Задание</h3>
-      <ol>
-        <li>Завари рождественский кофе</li>
-        <li>Разложи монеты, изучи каждую</li>
-        <li><strong>Придумай себе пиратское имя!</strong> Формула:
-          <ul>
-            <li>Прилагательное (Чёрная, Кровавая, Стальная, Хитрая) + существительное (Бо��да, Акула, Буря, Роза)</li>
-            <li>Пример: "Чёрная Роза", "Кровавая Борода",Continue18 дек."Стальная Акула"</li>
-</ul>
-</li>
-<li><strong>Чат:</strong> "Я — [пиратское имя]! Моё сокровище — [любимая монета]! ⚔️🏴‍☠️"</li>
-<li>Съешь монеты с чувством, что ты пират! 😄</li>
-</ol>
-  <p><strong>Музыка:</strong> <a href="https://www.youtube.com/results?search_query=pirates+of+the+caribbean+soundtrack" target="_blank">Pirates of the Caribbean Soundtrack</a> — He's a Pirate!</p>
-`,
-zebra_message: `
-  <p><strong>Декаф Мексика</strong> + <strong>пиратские монеты</strong>! 🏴‍☠️💰</p>
-  
-  <h3>Мексика (повторяем!)Human: Продолжи, пожалуйстаДавай продолжим с днями - они ведь еще остались?18 дек.Да, конечно! Продолжаем с дня 18 для Зёбры и далее:
-typescript    zebra_message: `
-      <p><strong>Декаф Мексика</strong> + <strong>пиратские монеты</strong>! 🏴‍☠️💰</p>
-      
-      <h3>Мексика и пираты</h3>
-      <p>Мексика (тогда Новая Испания) была <strong>главной целью пиратов</strong>!</p>
-      
-      <p><strong>Испанские галеоны</strong> везли серебро и золото из мексиканских рудников через Карибское море в Испанию. Пираты грабили их!</p>
-      
-      <p><strong>Веракрус</strong> — порт, откуда отплывали галеоны. Пираты атаковали город несколько раз!</p>
-      
-      <h3>4 вида монет</h3>
-      <ul>
-        <li><strong>Луидор</strong> 🇫🇷 — французская золотая, Людовик XIV</li>
-        <li><strong>Пиастр</strong> 🇪🇸 — испанская серебряная, "pieces of eight", любимая пиратами!</li>
-        <li><strong>Гинея</strong> 🇬🇧 — английская золотая, для джентльменов</li>
-        <li><strong>Нобль</strong> 🏴󐁧󐁢󐁥󐁮󐁧󐁿 — старинная английская, король на корабле!</li>
-      </ul>
-      
-      <p><strong>Символ $</strong> (доллар) происходит от пиастра!</p>
-      
-      <h3>Задание на двоих</h3>
-      <ol>
-        <li>Заварите декаф Мексика</li>
-        <li>Разложите монеты, изучите</li>
-        <li><strong>Придумайте пиратские имена!</strong> (Каждому своё)
-          <br>Формула: Прилагательное + Существительное
-          <br>Пример: "Грозный Шторм", "Хитрая Лиса"</li>
-        <li><strong>Чат:</strong> "Мы — [имена]! Наше сокровище — любовь! (И монеты 😄) 🏴‍☠️💕"</li>
-        <li>Съешьте монеты с пиратским настроением!</li>
-      </ol>
-      
-      <p><strong>Музыка:</strong> <a href="https://www.youtube.com/results?search_query=pirates+of+the+caribbean+soundtrack" target="_blank">Pirates of the Caribbean — He's a Pirate</a></p>
-    `
-  },
-
-  {
-    day: 19,
-    date: '2025-01-07',
-    tanya_gift: 'Кофе с картинками "Иисус любит тебя"',
-    zebra_gift: 'Кофе с картинками "Иисус любит тебя"',
-    tanya_bonus: 'Свечка с запахом кофе',
-    zebra_bonus: 'Свечка с запахом кофе',
-    title: 'Православное Рождество и госпел',
-    tanya_message: `
-      <p><strong>7 января — Православное Рождество! ☦️✨</strong></p>
-      
-      <p><strong>Кофе "Иисус любит тебя"</strong> с крестами на упаковке — идеальный день для него! ✝️☕</p>
-      
-      <h3>Христианский кофе</h3>
-      <p><strong>Christian Coffee</strong> — целый жанр в США!</p>
-      
-      <p><strong>Бренды:</strong> Faith Coffee, Gospel Grounds, Holy Grounds. Часть прибыли идёт миссионерам или церквям.</p>
-      
-      <p><strong>Слоганы:</strong></p>
-      <ul>
-        <li>"Jesus is my espresso" (игра слов!)</li>
-        <li>"Grounds for faith"</li>
-        <li>"Blessed beans"</li>
-      </ul>
-      
-      <p><strong>Ирония:</strong> Кофе изначально считался <strong>дьявольским напитком</strong>! Мусульмане его пили, христиане боялись. Пока Папа Климент VIII не попробовал и не благословил (1600).</p>
-      
-      <h3>Кофейная молитва (повторяем!) 🙏</h3>
-      <p><strong>Orthodox Coffee Prayer:</strong></p>
-      
-      <p><em>"Bless this coffee, O Lord, as You blessed the water at Cana. Give us strength for our work and keep us alert in Your service. Through the intercession of Saint Drogo, patron of coffee, may this drink refresh our bodies and enliven our spirits. Amen."</em></p>
-      
-      <p><strong>Перевод:</strong> "Благослови этот кофе, Господи, как Ты благословил воду в Кане. Дай нам силу для работы и сохрани нас бдительными в Твоём служении. По заступничеству святого Друго, покровителя кофе, пусть этот напиток освежит наши тела и оживит дух. Аминь."</p>
-      
-      <h3>Госпел — музыка для души! 🎵✨</h3>
-      <p><strong>Gospel</strong> (госпел) — афроамериканская христианская музыка.</p>
-      
-      <p><strong>История:</strong></p>
-      <ul>
-        <li><strong>Корни:</strong> Песни рабов (spirituals) + гимны + блюз</li>
-        <li><strong>1920-е:</strong> Современный госпел родился (Thomas Dorsey — "отец госпела")</li>
-        <li><strong>Золотой век:</strong> 1940-1960-е — Mahalia Jackson, Clara Ward</li>
-      </ul>
-      
-      <p><strong>Характеристики:</strong></p>
-      <ul>
-        <li>Мощные вокалы, эмоции</li>
-        <li>Хор (call-and-response)</li>
-        <li>Орган, пианино, хлопки в ладоши</li>
-        <li>Темы: вера, надежда, радость, освобождение</li>
-      </ul>
-      
-      <h3>Легенды госпела</h3>
-      
-      <p><strong>1. Mahalia Jackson</strong> (1911-1972) — "Королева госпела"</p>
-      <ul>
-        <li>Голос невероятной силы</li>
-        <li>Пела на марше Мартина Лютера Кинга (1963)</li>
-        <li>Отказывалась петь светскую музыку (только госпел!)</li>
-      </ul>
-      
-      <p><strong>Слушай:</strong> <a href="https://www.youtube.com/watch?v=GuKV2Z3eYTY" target="_blank">Mahalia Jackson — "Take My Hand, Precious Lord"</a></p>
-      
-      <p><strong>2. Kirk Franklin</strong> (современный) — "король современного госпела"</p>
-      <ul>
-        <li>Смешивает госпел + R&B + hip-hop</li>
-        <li>Grammy Awards</li>
-      </ul>
-      
-      <p><strong>Слушай:</strong> <a href="https://www.youtube.com/watch?v=qnMqJHN4aJM" target="_blank">Kirk Franklin — "I Smile"</a></p>
-      
-      <p><strong>3. "Oh Happy Day"</strong> — самая известная госпел-песня в мире!</p>
-      <ul>
-        <li>Edwin Hawkins Singers (1968)</li>
-        <li>Стала хитом (даже в светских чартах!)</li>
-      </ul>
-      
-      <p><strong>Слушай:</strong> <a href="https://www.youtube.com/watch?v=qnMqJHN4aJM" target="_blank">"Oh Happy Day"</a></p>
-      
-      <h3>Свечка с запахом кофе 🕯️☕</h3>
-      <p><strong>Кофейные свечи</strong> — популярны с 2000-х!</p>
-      
-      <p><strong>Olfactory priming</strong> (обонятельная подготовка): Запах кофе может улучшать когнитивные способности даже <strong>без питья кофе</strong>! (Исследования показывают!)</p>
-      
-      <p><strong>Создаёт атмосферу кофейни дома.</strong></p>
-      
-      <h3>Задание: Рождественский ритуал</h3>
-      <ol>
-        <li>Зажги кофейную свечку 🕯️</li>
-        <li>Завари кофе "Иисус любит тебя"</li>
-        <li>Прочитай кофейную молитву</li>
-        <li><strong>Включи госпел!</strong> Mahalia Jackson, Kirk Franklin, или "Oh Happy Day"</li>
-        <li>Выпей кофе, послушай музыку, почувствуй благодать</li>
-        <li><strong>Чат:</strong> "С Рождеством! ☦️ Иисус любит тебя (и кофе тоже! ☕✨)"</li>
-        <li><strong>Отправь комплимент или доброе слово</strong> кому-нибудь сегодня — распространяй любовь! ❤️</li>
-      </ol>
-      
-      <p><strong>С Рождеством Христовым! ☦️✨</strong></p>
-    `,
-    zebra_message: `
-      <p><strong>7 января — Православное Рождество! ☦️✨</strong></p>
-      
-      <p><strong>Кофе "Иисус любит тебя"</strong> — рождественский привет! ✝️☕</p>
-      
-      <h3>Христианский кофе</h3>
-      <p>В США есть Christian Coffee бренды (Faith Coffee, Gospel Grounds). Часть прибыли — миссионерам.</p>
-      
-      <p><strong>Ирония:</strong> Кофе раньше = "дьявольский напиток"! Папа Климент VIII благословил в 1600.</p>
-      
-      <h3>Кофейная молитва 🙏</h3>
-      <p><em>"Bless this coffee, O Lord. Give us strength for our work. Through Saint Drogo, may this drink refresh our bodies. Amen."</em></p>
-      
-      <h3>Госпел 🎵</h3>
-      <p>Афроамериканская христианская музыка. Мощные вокалы, хор, эмоции!</p>
-      
-      <p><strong>Слушай:</strong></p>
-      <ul>
-        <li><a href="https://www.youtube.com/watch?v=GuKV2Z3eYTY" target="_blank">Mahalia Jackson — "Take My Hand, Precious Lord"</a></li>
-        <li><a href="https://www.youtube.com/watch?v=qnMqJHN4aJM" target="_blank">Kirk Franklin — "I Smile"</a></li>
-        <li><a href="https://www.youtube.com/watch?v=qnMqJHN4aJM" target="_blank">"Oh Happy Day"</a></li>
-      </ul>
-      
-      <h3>Свечка кофейная 🕯️</h3>
-      <p>Запах кофе улучшает когнитивные способности! (Olfactory priming)</p>
-      
-      <h3>Задание на двоих</h3>
-      <ol>
-        <li>Зажгите свечку 🕯️</li>
-        <li>Заварите кофе</li>
-        <li>Прочитайте молитву вместе</li>
-        <li>Включите госпел</li>
-        <li>Выпейте в атмосфере благодати</li>
-        <li><strong>Чат:</strong> "С Рождеством! ☦️ Love & coffee! ☕✨"</li>
-      </ol>
-      
-      <p><strong>С Рождеством Христовым! ☦️✨</strong></p>
-    `
-  },
-
-  {
-    day: 20,
-    date: '2025-01-08',
-    tanya_gift: 'Шоколадная бомба',
-    zebra_gift: 'Шоколадная бомба',
-    tanya_bonus: 'Парварда (восточная сладость)',
-    zebra_bonus: 'Парварда',
-    title: 'Взрывы и восток',
-    tanya_message: `
-      <p><strong>Шоколадная бомба!</strong> 🍫💣</p>
-      
-      <h3>Hot Chocolate Bomb — вирусный тренд!</h3>
-      <p><strong>Что это:</strong> Полая шоколадная сфера с какао-порошком + маршмеллоу внутри.</p>
-      
-      <p><strong>Как работает:</strong> Заливаешь горячим молоком → бомба "взрывается", содержимое растворяется = instant горячий шоколад!</p>
-      
-      <p><strong>Происхождение:</strong></p>
-      <ul>
-        <li><strong>2018-2019:</strong> Кондитеры начали экспериментировать (Instagram-тренд)</li>
-        <li><strong>2020:</strong> <strong>TikTok взорвался!</strong> Видео с бомбами — миллиарды просмотров</li>
-        <li>Хэштег #hotchocolatebomb — вирусный контент</li>
-      </ul>
-      
-      <p><strong>Почему вирусно?</strong></p>
-      <ul>
-        <li><strong>ASMR:</strong> Звук растворения, шипение, маршмеллоу всплывают</li>
-        <li><strong>Визуал:</strong> Красиво, магически, satisfying!</li>
-        <li><strong>Удобно:</strong> Подарок, порционно</li>
-      </ul>
-      
-      <p><strong>Варианты:</strong></p>
-      <ul>
-        <li>Классика: молочный шоколад + маршмеллоу</li>
-        <li>Fancy: белый шоколад + клубника</li>
-        <li>Экстрим: с ликёром, с золотом (кандурин!), с печеньем</li>
-      </ul>
-      
-      <h3>Парварда — таджикская сладость 🍬</h3>
-      <p><strong>Парварда</strong> (پروردگار) — карамель из Таджикистана, Узбекистана, Ирана.</p>
-      
-      <p><strong>Что это:</strong> Вытянутая белая карамель, часто с лимоном или мятой. Хрустящая снаружи, тает во рту!</p>
-      
-      <p><strong>Процесс изготовления:</strong></p>
-      <ul>
-        <li>Сахар варят до карамели</li>
-        <li><strong>Вытягивают</strong> многократно (как taffy!)</li>
-        <li>Воздух попадает внутрь → карамель становится белой и пористой</li>
-        <li>Режут на кусочки</li>
-      </ul>
-      
-      <p><strong>Традиция:</strong> На Навруз (персидский Новый год, 21 марта) обязательно едят парварду!</p>
-      
-      <p><strong>Вкус:</strong> Сладкая, хрустящая, с цитрусовой ноткой. Тает во рту как снежинка!</p>
-      
-      <p><strong>Видео процесса:</strong> <a href="https://www.youtube.com/results?search_query=parvarda+making" target="_blank">Parvarda Making</a> — завораживающе!</p>
-      
-      <h3>Задание</h3>
-      <ol>
-        <li><strong>Раствори шоколадную бомбу</strong> в горячем молоке</li>
-        <li><strong>Сними видео</strong> процесса (ASMR-контент!) 📹</li>
-        <li>Размешай, выпей горячий шоколад</li>
-        <li>Съешь парварду — почувствуй Восток! 🍬✨</li>
-        <li><strong>Чат:</strong> "Шоколадный взрыв + восточная сладость = идеальный день! 💣🍬"</li>
-      </ol>
-      
-      <p><strong>Музыка:</strong> <a href="https://www.youtube.com/results?search_query=persian+traditional+music" target="_blank">Persian Traditional Music</a></p>
-    `,
-    zebra_message: `
-      <p><strong>Шоколадная бомба на двоих!</strong> 🍫💣</p>
-      
-      <h3>Hot Chocolate Bomb</h3>
-      <p>Полая шоколадная сфера + какао + маршмеллоу внутри. Заливаешь молоком → взрыв!</p>
-      
-      <p><strong>2020, TikTok:</strong> Вирусный тренд! Миллиарды просмотров. #hotchocolatebomb</p>
-      
-      <p><strong>Почему:</strong> ASMR (звук!), визуал (магия!), удобство (подарок!).</p>
-      
-      <h3>Парварда 🍬</h3>
-      <p>Таджикская/узбекская карамель. Белая, хрустящая, тает во рту!</p>
-      
-      <p><strong>Процесс:</strong> Сахар варят, вытягивают многократно (воздух → белый цвет!), режут.</p>
-      
-      <p><strong>Навруз</strong> (персидский Новый год) — обязательно едят парварду!</p>
-      
-      <p><strong>Видео:</strong> <a href="https://www.youtube.com/results?search_query=parvarda+making" target="_blank">Parvarda Making</a></p>
-      
-      <h3>Задание на двоих</h3>
-      <ol>
-        <li>Растворите бомбу в молоке (каждый свою!)</li>
-        <li><strong>Снимите видео</strong> процесса 📹</li>
-        <li>Выпейте горячий шоколад</li>
-        <li>Съешьте парварду</li>
-        <li><strong>Чат:</strong> "Двойной взрыв! 💣💣 + восточная сладость! 🍬"</li>
-      </ol>
-      
-      <p><strong>Музыка:</strong> <a href="https://www.youtube.com/results?search_query=persian+traditional+music" target="_blank">Persian Music</a></p>
-    `
-  },
-Продолжить с днями 22-26? 😊Да, прдолжи18 дек.typescript  {
-    day: 22,
-    date: '2025-01-10',
-    tanya_gift: 'Кофе Who Needs Sleep',
-    zebra_gift: 'Какао из Кот д'Ивуар',
-    tanya_bonus: 'Конфета единорог с неоновой палочкой',
-    zebra_bonus: 'Конфета единорог с неоновой палочкой',
-    title: 'Кто спит и Кот д'Ивуар',
-    tanya_message: `
-      <p><strong>WHO NEEDS SLEEP</strong> — манифест hustle-культуры! 💤❌☕</p>
-      
-      <h3>Who needs sleep? — культурный феномен</h3>
-      <p>Надпись на упаковке = отсылка к <strong>tech startups</strong> и <strong>hustle culture</strong> 2010-х.</p>
-      
-      <p><strong>Философия:</strong> "Кто спит — тот проигрывает! Работай 24/7, будь продуктивным, не трать время на сон!"</p>
-      
-      <p><strong>Примеры:</strong></p>
-      <ul>
-        <li><strong>Elon Musk:</strong> Спит 6 часов, работает 80-100 часов/неделю</li>
-        <li><strong>Марисса Майер</strong> (Yahoo): Спала 4 часа, принимала душ на работе</li>
-        <li><strong>Гари Вайнерчук:</strong> "18-hour hustle" — его мантра</li>
-      </ul>
-      
-      <p><strong>Backlash (ответная волна):</strong></p>
-      <p>В <strong>2020-е</strong> началась волна <strong>sleep hygiene</strong> и <strong>rest as resistance</strong>!</p>
-      
-      <ul>
-        <li><strong>Арианна Хаффингтон</strong> написала "The Sleep Revolution" (2016) — доказывает: недосып = падение продуктивности, креативности, здоровья</li>
-        <li>Исследования показали: 7-9 часов сна = обязательны для мозга!</li>
-        <li>Недосып связан с болезнями (диабет, сердце, депрессия)</li>
-      </ul>
-      
-      <p><strong>Ирония упаковки:</strong> Слабая обжарка = <strong>БОЛЬШЕ кофеина</strong>! (Да, это контринтуитивно!)</p>
-      
-      <p><strong>Почему?</strong> При обжарке кофеин частично разрушается. Светлая обжарка сохраняет максимум. Тёмная = меньше кофеина, больше горечи.</p>
-      
-      <p><strong>So... Who needs sleep?</strong> Все нуждаются! Но кофе помогает продержаться! 😄</p>
-      
-      <h3>Конфета-единорог 🦄✨</h3>
-      <p><strong>Единорог с неоновой палочкой</strong> — это чистая магия и китч!</p>
-      
-      <p><strong>Единороги в поп-культуре:</strong></p>
-      <ul>
-        <li><strong>2015-2020:</strong> Единороги захватили мир! Unicorn frappuccino, единороги на всём (одежда, еда, косметика)</li>
-        <li><strong>Символ:</strong> Магия, радость, детство, LGBTQ+ (радуга!)</li>
-        <li><strong>Aesthetic:</strong> Пастельные цвета, блёстки, сладость</li>
-      </ul>
-      
-      <p><strong>Неоновая палочка</strong> = rave vibes! Единорог на дискотеке! 💃🦄</p>
-      
-      <h3>Задание</h3>
-      <ol>
-        <li>Выпей <strong>Who Needs Sleep</strong> перед чем-то важным (работа, тренировка, креатив!)</li>
-        <li>Съешь единорога — впитай магию! 🦄✨</li>
-        <li><strong>Чат:</strong> "Who needs sleep? Я! Но сначала кофе! ☕💤"</li>
-        <li><strong>Вопрос:</strong> Ты — hustle culture или rest culture? Напиши свою философию сна!</li>
-      </ol>
-      
-      <p><strong>Музыка для энергии:</strong> <a href="https://www.youtube.com/results?search_query=upbeat+electronic+music" target="_blank">Upbeat Electronic</a></p>
-    `,
-    zebra_message: `
-      <p><strong>Какао из Кот д'Ивуар</strong> — шоколадная столица мира! 🇨🇮🍫</p>
-      
-      <h3>Кот д'Ивуар (Côte d'Ivoire, Берег Слоновой Кости)</h3>
-      <p><strong>Западная Африка, побережье Гвинейского залива.</strong></p>
-      
-      <p><strong>Столица:</strong> Ямусукро (официальная), но крупнейший город — <strong>Абиджан</strong>!</p>
-      
-      <h3>Кот д'Ивуар = 40% мирового какао!</h3>
-      <p><strong>№1 производитель какао в мире!</strong> За ними Гана (20%).</p>
-      
-      <p><strong>История какао в Кот д'Ивуаре:</strong></p>
-      <ul>
-        <li><strong>1880-е:</strong> Французы (колонизаторы) завезли какао</li>
-        <li><strong>1960:</strong> Независимость, но какао — основа экономики</li>
-        <li><strong>Сейчас:</strong> 2+ миллиона фермеров работают на плантациях</li>
-      </ul>
-      
-      <h3>Проблемы индустрии</h3>
-      <p><strong>Детский труд:</strong> К сожалению, какао-индустрия связана с эксплуатацией детей. Тысячи детей работают на плантациях (опасные условия, нет школы).</p>
-      
-      <p><strong>Низкие цены:</strong> Фермеры получают ~6% от цены шоколадного батончика. Основная прибыль — у корпораций (Nestlé, Mars, Ferrero).</p>
-      
-      <p><strong>Решения:</strong></p>
-      <ul>
-        <li><strong>Fair Trade</strong> (справедливая торговля) — сертификация, гарантирующая справедливую оплату</li>
-        <li><strong>Direct Trade</strong> — компании покупают напрямую у фермеров</li>
-        <li><strong>Ethical chocolate</strong> — бренды, заботящиеся о правах</li>
-      </ul>
-      
-      <h3>География Кот д'Ивуара</h3>
-      <p><strong>Природа:</strong></p>
-      <ul>
-        <li>Тропические леса (сокращаются из-за плантаций)</li>
-        <li>Саванны на севере</li>
-        <li>Побережье Атлантики</li>
-      </ul>
-      
-      <p><strong>Культура:</strong></p>
-      <ul>
-        <li>Более 60 этнических групп!</li>
-        <li>Французский — официальный язык (бывшая колония)</li>
-        <li>Музыка: Zouglou, Coupé-Décalé (танцевальные жанры!)</li>
-      </ul>
-      
-      <p><strong>Достопримечательности:</strong></p>
-      <ul>
-        <li><strong>Basilique Notre-Dame de la Paix</strong> (Ямусукро) — одна из крупнейших церквей мира! (Копия Собора Святого Петра в Риме)</li>
-        <li><strong>Национальный парк Таї</strong> — тропический лес, UNESCO</li>
-        <li><strong>Гран-Басам</strong> — колониальный город, пляжи</li>
-      </ul>
-      
-      <h3>Какао-туризм</h3>
-      <p>В Кот д'Ивуаре можно посетить <strong>какао-плантации</strong>!</p>
-      <ul>
-        <li>Увидеть, как растут какао-бобы (на деревьях!)</li>
-        <li>Процесс ферментации и сушки</li>
-        <li>Попробовать свежие бобы (горькие, но интересно!)</li>
-      </ul>
-      
-      <h3>Конфета-единорог 🦄</h3>
-      <p>Единорог + неоновая палочка = rave-магия!</p>
-      
-      <p>Единороги = символ 2015-2020-х (магия, радость, радуга, LGBTQ+).</p>
-      
-      <h3>Задание</h3>
-      <ol>
-        <li>Завари какао из Кот д'Ивуара</li>
-        <li>Подумай о фермерах, которые выращивали какао-бобы</li>
-        <li>Съешь единорога — магия!</li>
-        <li><strong>Чат:</strong> "40% мирового какао = из одной страны! Кот д'Ивуар — шоколадный герой! 🇨🇮🍫"</li>
-        <li><strong>Вопрос:</strong> Покупаешь ли ты Fair Trade шоколад? Стоит ли?</li>
-      </ol>
-      
-      <p><strong>Музыка:</strong> <a href="https://www.youtube.com/results?search_query=ivorian+music+coupe+decale" target="_blank">Coupé-Décalé</a> — ивуарийская танцевальная музыка!</p>
-    `
-  },
-
-  {
-    day: 23,
-    date: '2025-01-11',
-    tanya_gift: 'Кофе Black Moon',
-    zebra_gift: 'Декаф простой',
-    tanya_bonus: 'Леденцовая зомби-тросточка',
-    zebra_bonus: 'Леденцовая зомби-тросточка',
-    title: 'Чёрная луна и зомби',
-    tanya_message: `
-      <p><strong>Black Moon</strong> — таинственный кофе! 🌑☕</p>
-      
-      <h3>Что такое чёрная луна?</h3>
-      <p><strong>Black Moon</strong> (астрономия) — редкое явление:</p>
-      
-      <ul>
-        <li><strong>Определение 1:</strong> Второе новолуние в одном календарном месяце (бывает раз в ~29 месяцев)</li>
-        <li><strong>Определение 2:</strong> Месяц без новолуния (редко!)</li>
-        <li><strong>Определение 3:</strong> Третье новолуние в сезоне с четырьмя новолуниями</li>
-      </ul>
-      
-      <p><strong>Эзотерика:</strong> Чёрная луна = время для магии, ритуалов, новых начинаний, работы с тенью.</p>
-      
-      <p><strong>В астрологии:</strong> Лилит (Чёрная Луна) — точка лунной орбиты, символизирует тёмную сторону души, подавленные желания.</p>
-      
-      <h3>Black Moon кофе</h3>
-      <p>Скорее всего, кофе назван для <strong>эстетики</strong>:</p>
-      <ul>
-        <li>Тёмная обжарка?</li>
-        <li>Загадочный вкус?</li>
-        <li>Ночной кофе?</li>
-      </ul>
-      
-      <p><strong>Vibe:</strong> Готик, мистика, тайна. Кофе для ведьм! 🧙‍♀️🌑</p>
-      
-      <h3>Леденцовая зомби-тросточка 🧟‍♀️🍭</h3>
-      <p><strong>Зомби + леденец = Halloween vibes круглый год!</strong></p>
-      
-      <p><strong>Зомби в поп-культуре:</strong></p>
-      <ul>
-        <li><strong>Происхождение:</strong> Гаитянский вуду (zombi = ожившие мертвецы)</li>
-        <li><strong>Современность:</strong> "Ночь живых мертвецов" (1968), "Ходячие мертвецы", "Resident Evil"</li>
-        <li><strong>Символ:</strong> Апокалипсис, потеря человечности, массовое сознание</li>
-      </ul>
-      
-      <p><strong>Зомби-эстетика:</strong> Зелёный цвет, разложение, но милый (cute zombies!). Диснеефикация ужасов! 😄</p>
-      
-      <p><strong>Тросточка:</strong> Candy cane — традиционная рождественская сладость, но в зомби-версии!</p>
-      
-      <h3>Задание: Тёмная магия</h3>
-      <ol>
-        <li>Завари <strong>Black Moon</strong> вечером</li>
-        <li>Выключи свет, зажги свечу 🕯️</li>
-        <li>Выпей кофе в темноте (медитация с тенью!)</li>
-        <li>Съешь зомби-тросточку — впитай undead энергию! 🧟‍♀️</li>
-        <li><strong>Чат:</strong> "Чёрная луна, зомби, кофе. Я — ведьма ночи! 🌑🧙‍♀️"</li>
-        <li><strong>Ритуал:</strong> Напиши на бумаге что-то, от чего хочешь избавиться, сожги (безопасно!). Чёрная луна = время отпускать.</li>
-      </ol>
-      
-      <p><strong>Музыка:</strong> <a href="https://www.youtube.com/results?search_query=dark+ambient+music" target="_blank">Dark Ambient</a> или <a href="https://www.youtube.com/results?search_query=witch+house+music" target="_blank">Witch House</a></p>
-    `,
-    zebra_message: `
-      <p><strong>Декаф простой</strong> + <strong>зомби-тросточка</strong>! 🧟‍♀️🍭</p>
-      
-      <h3>Декаф без прикрас</h3>
-      <p>Иногда простое — лучшее! Декаф без ароматизаторов, без мистики, просто честный кофе без кофеина.</p>
-      
-      <p><strong>Для:</strong> Вечера, расслабления, беременности, здоровья.</p>
-      
-      <h3>Зомби-тросточка 🧟‍♀️</h3>
-      <p><strong>Зомби:</strong> Гаитянский вуду → современные фильмы/игры (Ходячие мертвецы, Resident Evil).</p>
-      
-      <p><strong>Символ:</strong> Апокалипсис, но милый (cute zombies!).</p>
-      
-      <p><strong>Candy cane зомби-версия</strong> = Halloween + Рождество!</p>
-      
-      <h3>Задание</h3>
-      <ol>
-        <li>Завари декаф вечером</li>
-        <li>Съешь зомби-тросточку</li>
-        <li>Посмотри что-то зомби-тематическое (или не смотри, если страшно! 😄)</li>
-        <li><strong>Чат:</strong> "Декаф + зомби = спокойная ночь! (Или нет? 🧟‍♀️)"</li>
-      </ol>
-      
-      <p><strong>Музыка:</strong> <a href="https://www.youtube.com/results?search_query=spooky+music" target="_blank">Spooky Music</a> (но не слишком страшная!)</p>
-    `
-  },
-
-  {
-    day: 24,
-    date: '2025-01-12',
-    tanya_gift: 'Кофе в пакетике с верёвочкой',
-    zebra_gift: 'Декаф Гватемала',
-    tanya_bonus: 'Пастила со вкусом алкоголя',
-    zebra_bonus: 'Пастила со вкусом алкоголя',
-    title: 'Чайный кофе и алкогольная пастила',
-    tanya_message: `
-      <p><strong>Кофе в пакетике с верёвочкой</strong> — как чай, но кофе! ☕🏮</p>
-      
-      <h3>История кофейных пакетиков</h3>
-      <p>Это необычно! Обычно кофе заваривают фильтром, туркой, френч-прессом. Но <strong>кофе в чайном формате</strong> — инновация!</p>
-      
-      <p><strong>Зачем?</strong></p>
-      <ul>
-        <li><strong>Удобство:</strong> Как чай — опустил, подождал, вынул!</li>
-        <li><strong>Порционность:</strong> Одна чашка, не надо отмерять</li>
-        <li><strong>Чистота:</strong> Без гущи, без фильтров</li>
-        <li><strong>Эксперимент:</strong> Что, если кофе варить как чай?</li>
-      </ul>
-      
-      <p><strong>Процесс:</strong> Кофе молотый (средний помол), упакован в бумажный фильтр-пакет, как чай. Заваривают 3-5 минут.</p>
-      
-      <p><strong>Вкус:</strong> Мягче, чем эспрессо, но крепче, чем фильтр-кофе. Промежуточный!</p>
-      
-      <p><strong>Японская эстетика:</strong> Подход "кофе как чай" популярен в Японии (медитативность, ритуал!).</p>
-      
-      <h3>Пастила со вкусом алкоголя 🍷🍬</h3>
-      <p><strong>Пастила</strong> — русская сладость (яблочное пюре + белок, запечённое слоями).</p>
-      
-      <p><strong>Алкогольные вкусы:</strong></p>
-      <ul>
-        <li>Коньяк</li>
-        <li>Ром</li>
-        <li>Ликёр</li>
-        <li>Вино</li>
-      </ul>
-      
-      <p><strong>НО:</strong> Алкоголя там нет (или следы!). Это <strong>ароматизатор</strong>, имитация вкуса.</p>
-      
-      <p><strong>Почему "алкогольные" сладости популярны?</strong></p>
-      <ul>
-        <li><strong>Взрослый вкус</strong> без опьянения</li>
-        <li><strong>Сложность:</strong> Алкоголь + сладость = интересный контраст</li>
-        <li><strong>Ассоциации:</strong> Коньяк = роскошь, ром = приключения</li>
-      </ul>
-      
-      <p><strong>Похожие сладости:</strong></p>
-      <ul>
-        <li>Конфеты "Вишня в ликёре" (Mon Cheri)</li>
-        <li>Шоколад с ромом</li>
-        <li>Торты с коньяком</li>
-      </ul>
-      
-      <h3>Задание</h3>
-      <ol>
-        <li>Завари кофе-пакетик <strong>медленно</strong> (как чай!)</li>
-        <li>Выпей, сравни с обычным кофе — разница есть?</li>
-        <li>Съешь пастилу, смакуй "алкогольный" вкус</li>
-        <li><strong>Чат:</strong> "Кофе как чай + пастила как коньяк = взрослый вечер без опьянения! 😄🍷☕"</li>
-      </ol>
-      
-      <p><strong>Музыка:</strong> <a href="https://www.youtube.com/results?search_query=jazz+lounge" target="_blank">Jazz Lounge</a> — для взрослого вечера!</p>
-    `,
-    zebra_message: `
-      <p><strong>Декаф Гватемала</strong> + <strong>алкогольная пастила</strong>! 🍷☕</p>
-      
-      <h3>Гватемала (снова!)</h3>
-      <p>Вулканы, горы, вкусный кофе! Декаф из высокогорных зёрен = даже без кофеина вкус богатый!</p>
-      
-      <h3>Пастила алкогольная 🍬</h3>
-      <p>Яблочное пюре + белок + вкус коньяка/рома/ликёра. НО алкоголя почти нет (ароматизатор!).</p>
-      
-      <p><strong>Зачем:</strong> Взрослый вкус без опьянения.</p>
-      
-      <h3>Задание</h3>
-      <ol>
-        <li>Заварите декаф</li>
-        <li>Съешьте пастилу</li>
-        <li><strong>Чат:</strong> "Декаф + 'коньяк' = вечер расслабления! 🍷☕"</li>
-      </ol>
-      
-      <p><strong>Музыка:</strong> <a href="https://www.youtube.com/results?search_query=jazz+lounge" target="_blank">Jazz Lounge</a></p>
-    `
-  },
-
-  {
-    day: 25,
-    date: '2025-01-13',
-    tanya_gift: 'Жидкий концентрат кофе',
-    zebra_gift: 'Чай в книжечке',
-    tanya_bonus: 'Орехи в глазури',
-    zebra_bonus: 'Орехи в глазури',
-    title: 'Концентрат и книжный чай',
-    tanya_message: `
-      <p><strong>Жидкий концентрат кофе</strong> — instant сила! ⚡☕</p>
-      
-      <h3>Кофейный концентрат</h3>
-      <p><strong>Liquid coffee concentrate</strong> — это кофе, сваренный очень крепким, упакованный в стики.</p>
-      
-      <p><strong>Как использовать:</strong></p>
-      <ul>
-        <li>Развести горячей/холодной водой или молоком</li>
-        <li>Добавить в коктейли (Espresso Martini!)</li>
-        <li>В десерты (тирамису!)</li>
-      </ul>
-      
-      <p><strong>Плюсы:</strong></p>
-      <ul>
-        <li>Удобно (взял стик, развел — готово!)</li>
-        <li>Путешествия, офис, дорога</li>
-        <li>Долго хранится</li>
-      </ul>
-      
-      <p><strong>История:</strong> Cold brew concentrate популяр��зировался в 2010-е. Жидкий концентрат = развитие этой идеи.</p>
-      
-      <h3>Орехи в глазури 🥜✨</h3>
-      <p><strong>Глазированные орехи</strong> — сладкая хрустящая оболочка + орех!</p>
-      
-      <p><strong>Типы глазури:</strong></p>
-      <ul>
-        <li>Сахарная (карамель)</li>
-        <li>Шоколадная</li>
-        <li>Медовая</li>
-        <li>Пряная (корица, имбирь)</li>
-      </ul>
-      
-      <p><strong>История:</strong> Глазированные орехи = древняя сладость! В Персии делали миндаль в мёде. В Европе — марципан.</p>
-      
-      <p><strong>Праздничная традиция:</strong> На рождественских ярмарках (Германия, Австрия) продают <strong>gebrannte Mandeln</strong> (жареный миндаль в карамели). Запах по всему рынку!</p>
-      
-      <h3>Задание: Концентрированная энергия</h3>
-      <ol>
-        <li>Разведи концентрат (экспериментируй с пропорциями!)</li>
-        <li>Съешь орехи — энергия + белок!</li>
-        <li><strong>Чат:</strong> "Концентрат = быстрая сила! Готова к свершениям! ⚡☕"</li>
-      </ol>
-      
-      <p><strong>Музыка для продуктивности:</strong> <a href="https://www.youtube.com/results?search_query=focus+music" target="_blank">Focus Music</a></p>
-    `,
-    zebra_message: `
-      <p><strong>Чай в книжечке</strong> + <strong>гадание</strong>! 📖🔮</p>
-      
-      <h3>Чай-книга</h3>
-      <p>Листовой чай упакован в <strong>маленькую книжечку с цитатами</strong>!</p>
-      
-      <p>Это не просто чай, это <strong>философия + напиток</strong>!</p>
-      
-      <h3>Bibliomancy — гадание на книгах 📚✨</h3>
-      <p><strong>Древняя практика:</strong> Задать вопрос, открыть книгу на случайной странице, прочитать — это ответ!</p>
-      
-      <p><strong>История:</strong></p>
-      <ul>
-        <li><strong>Sortes Virgilianae</strong> — римляне гадали по Виргилию</li>
-        <li><strong>Sortes Sanctorum</strong> — христиане по Библии</li>
-        <li><strong>I Ching</strong> — китайцы по "Книге Перемен"</li>
-      </ul>
-      
-      <p><strong>Принцип:</strong> Вселенная/подсознание направляет руку к нужной странице!</p>
-      
-      <p><strong>Современность:</strong> Люди гадают по любимым книгам (Коэльо, Руми, Оракул Ошо).</p>
-      
-      <h3>Орехи в глазури 🥜</h3>
-      <p>Сладкая карамель/шоколад + орех. Праздничная сладость!</p>
-      
-      <p>На рождественских ярмарках в Германии — gebrannte Mandeln (миндаль в карамели)!</p>
-      
-      <h3>Задание: Книжное гадание</h3>
-      <ol>
-        <li>Завари чай из книжки</li>
-        <li><strong>Загадай вопрос</strong></li>
-        <li>Закрой глаза, открой книгу на случайной странице</li>
-        <li>Прочитай цитату — <strong>это твой ответ!</strong></li>
-        <li><strong>Поделись цитатой в ОБЩИЙ чат</strong> (все подруги видят!)</li>
-        <li>Съешь орехи, поразмышляй над ответом</li>
-      </ol>
-      
-      <p><strong>Музыка:</strong> <a href="https://www.youtube.com/results?search_query=meditation+music" target="_blank">Meditation Music</a></p>
-      
-      <p><strong>Вопрос к вселенной:</strong> "Что мне нужно знать сегодня?"</p>
-    `
-  },
-
-  {
-    day: 26,
-    date: '2025-01-14',
-    tanya_gift: 'Кофе YellowContinue18 дек.Submarine',
-zebra_gift: 'Питерский контркультурный декаф',
-tanya_bonus: 'Цветная шоколадка',
-zebra_bonus: 'Цветная шоколадка',
-title: 'Финал адвента!',
-tanya_message: `
-<p><strong>ФИНАЛ АДВЕНТА! 🎉✨</strong></p>
-  <p><strong>Yellow Submarine</strong> — снова! Круг замкнулся! 🚢💛</p>
-  
-  <h3>Yellow Submarine (напоминание)</h3>
-  <p><strong>Beatles, 1966!</strong> Психоделический гимн!</p>
-  
-  <p><em>"We all live in a yellow submarine!"</em> 🎵</p>
-  
-  <p><strong>Бразилия</strong> = 40% мирового кофе. Профиль: шоколад, орех, карамель.</p>
-  
-  <h3>Финальное задание</h3>
-  <ol>
-    <li>Завари Yellow Submarine</li>
-    <li>Включи <a href="https://www.youtube.com/watch?v=m2uTFF_3MaA" target="_blank">The Beatles — Yellow Submarine</a></li>
-    <li>Съешь цветную шоколадку 🌈</li>
-    <li><strong>ФИНАЛЬНАЯ РЕФЛЕКСИЯ в чат:</strong>
-      <ul>
-        <li>"Адвент закончен. Я выпила ___ чашек."</li>
-        <li>"Лучший момент: ___"</li>
-        <li>"Самый странный кофе: ___"</li>
-        <li>"Открытие: ___"</li>
-        <li>"Благодарю за ___"</li>
-        <li>"В 2025 мы точно: [мечта]"</li>
-      </ul>
-    </li>
-  </ol>
-  
-  <p><strong>Спасибо за адвент!</strong> ☕❤️✨</p>
-  
-  <p><strong>Путешествие закончено, но кофе продолжается! До встречи в Стамбуле, Ереване, или просто за чашкой кофе! 🌍☕💕</strong></p>
-`,
-zebra_message: `
-  <p><strong>ФИНАЛ АДВЕНТА! 🎉✨</strong></p>
-  
-  <p><strong>Питерский контркультурный декаф</strong> (снова!) + цветная шоколадка! 🌈</p>
-  
-  <h3>Питер (напоминание)</h3>
-  <p>Кофейная столица России! Контркультура = specialty, не массмаркет. Декаф = бунт против hustle!</p>
-  
-  <h3>Финальное задание</h3>
-  <ol>
-    <li>Заварите декаф</li>
-    <li>Съешьте шоколадку 🌈</li>
-    <li><strong>ФИНАЛЬНАЯ РЕФЛЕКСИЯ в чат (вместе!):</strong>
-      <ul>
-        <li>"Адвент закончен!"</li>
-        <li>"Лучший момент вместе: ___"</li>
-        <li>"Самое смешное: ___"</li>
-        <li>"Благодарим за ___"</li>
-        <li>"В 2025 мы точно: [общая мечта]"</li>
-      </ul>
-    </li>
-  </ol>
-  
-  <p><strong>Спасибо за адвент!</strong> ☕❤️✨</p>
-  
-  <p><strong>До встречи за кофе (или декафом!) в Стамбуле, Ереване, Орле, или где угодно! Главное — вместе! 💕🌍☕</strong></p>
-`
-}
-];
-export default ADVENT_DATA;
-
-**Готово! Все 26 дней адвента с развёрнутыми текстами! 🎉**
-
-Теперь у тебя есть полный массив данных с:
-- Историями и фактами
-- Ссылками на музыку и видео
-- Заданиями для чата
-- Культурными экскурсами
-- Личными моментами для подруг
-
-Можешь использовать это в своём React-приложении! ☕✨💕А есть ли факты о Битлз и кофе?
-В блоке про кофейные пакетики расскажи о происхождении чайных пакетиков - это тоже будет неплохо.18 дек.Отлично! Добавлю факты о Beatles и кофе, а также историю чайных пакетиков!
-typescript// Обновление для дня 16 (Yellow Submarine):
-
-    tanya_message: `
-      <p><strong>YELLOW SUBMARINE!!!** 🚢💛</p>
-      
-      <h3>Beatles и кофе ☕🎸</h3>
-      
-      <p><strong>The Beatles любили кофе!</strong></p>
-      
-      <p><strong>Cavern Club</strong> (Ливерпуль, где Beatles начинали) — кофейня + музыкальный клуб! В 1950-1960-е британские кофейни были местом встречи музыкантов.</p>
-      
-      <p><strong>Coffee houses = рок-н-ролл:</strong> В послевоенной Британии молодёжь собиралась в кофейнях (не пабах!), слушала американский рок, джаз. Это была контркультура!</p>
-      
-      <p><strong>The Casbah Coffee Club</strong> — ещё одна кофейня, где Beatles играли в 1959-1962! Открыла Мона Бест (мама Пита Беста, первого барабанщика Beatles).</p>
-      
-      <p><strong>Hamburg, Germany:</strong> Когда Beatles играли в Гамбурге (1960-1962), они пили **огромное количество кофе** (и принимали Preludin — таблетки для бодрости). Играли по 8 часов в сутки! Кофе = выживание.</p>
-      
-      <p><strong>Студия Abbey Road:</strong> Во время записи альбомов Beatles пили кофе литрами. Есть фотографии с чашками кофе в студии!</p>
-      
-      <p><strong>Paul McCartney:</strong> Известный любитель чая, НО также пил кофе. В интервью упоминал, что утро начинает с крепкого кофе.</p>
-      
-      <p><strong>John Lennon:</strong> Предпочитал чай, но в Нью-Йорке (1970-е) пил американский кофе. В его квартире в Dakota Building была кофемашина.</p>
-      
-      <p><strong>George Harrison:</strong> Увлёкся индийской культурой → чай! Но в молодости пил кофе в кофейнях Ливерпуля.</p>
-      
-      <p><strong>Интересный факт:</strong> В 1960-е в Британии появился **instant coffee** (растворимый). Nescafé рекламировал с рок-н-роллом! Beatles были частью этой культуры.</p>
-      
-      <h3>Песня "Yellow Submarine"</h3>
-      <p><strong>1966, альбом "Revolver"</strong></p>
-      
-      <ul>
-        <li>Написал Paul McCartney для Ringo Starr (он пел!)</li>
-        <li>Детская, психоделическая, странная</li>
-        <li>В студии использовали звуковые эффекты: пузыри (дули через соломинки в воду!), цепи (якорь), John кричал в стакан</li>
-        <li>**Мультфильм "Yellow Submarine" (1968)** — триповый шедевр психоделии!</li>
-      </ul>
-      
-      <p><strong>Почему на кофе?</strong> Sibaristica (производитель) — российская specialty-обжарка с креативными названиями. Yellow Submarine = солнечная Бразилия + путешествие!</p>
-      
-      <h3>Протеиновое печенье 💪</h3>
-      <p>Фитнес-культура 2010-х! Десерт + белок = gains без вины! 😄</p>
-      
-      <h3>Задание</h3>
-      <ol>
-        <li>Завари Yellow Submarine</li>
-        <li>**Включи полный альбом!** <a href="https://www.youtube.com/watch?v=m2uTFF_3MaA" target="_blank">"Yellow Submarine"</a> или "Revolver"</li>
-        <li>Съешь печенье, сделай 10 приседаний под Beatles! 💪🎵</li>
-        <li>**Чат:** "We all live in a yellow submarine (и пьём кофе!)** 🚢💛☕</li>
-        <li>**Бонус:** Нарисуй жёлтую подводную лодку (криво = идеально!)</li>
-      </ol>
-      
-      <p><strong>Чатовое:</strong> "Мы все живём в жёлтой подводной лодке!"</p>
-    `,
-
-// Обновление для дня 24 (кофе в пакетике с верёвочкой):
-
-    tanya_message: `
-      <p><strong>Кофе в пакетике с верёвочкой</strong> — как чай, но кофе! ☕🏮</p>
-      
-      <h3>История чайных пакетиков (откуда идея!)</h3>
-      
-      <p><strong>1901-1904, США:</strong> Две женщины независимо изобрели концепцию!</p>
-      
-      <p><strong>Roberta C. Lawson и Mary Molaren</strong> (1901) запатентовали "tea leaf holder" — мешочек для чайных листьев.</p>
-      
-      <p>**НО настоящий прорыв:**</p>
-      
-      <p><strong>Thomas Sullivan</strong> (торговец чаем, Нью-Йорк, 1908) — случайное изобретение!</p>
-      
-      <ul>
-        <li>Sullivan рассылал образцы чая клиентам в **маленьких шёлковых мешочках** (для экономии, вместо жестяных банок)</li>
-        <li>Клиенты подумали, что мешочки надо **опускать в воду целиком** (как сейчас!)</li>
-        <li>Они писали: "Отличная идея! Пришлите ещё!"</li>
-        <li>Sullivan понял, что случайно изобрёл новый способ заваривания!</li>
-      </ul>
-      
-      <p><strong>Развитие:</strong></p>
-      <ul>
-        <li>**1920-е:** Шёлк заменили **марлей** (дешевле)</li>
-        <li>**1930-е:** Появилась **бумага** (термосвариваемая)</li>
-        <li>**1950-е:** Добавили **верёвочку** и **ярлычок** (чтобы легко вынимать!)</li>
-        <li>**1960-е:** Квадратные пакетики → **прямоугольные** (больше места для листьев)</li>
-      </ul>
-      
-      <p><strong>Сейчас:</strong> 96% чая в США продаётся в пакетиках!</p>
-      
-      <h3>Кофе в пакетиках — логичная эволюция</h3>
-      
-      <p>Если чай можно, почему не кофе?</p>
-      
-      <p><strong>Плюсы:</strong></p>
-      <ul>
-        <li>Удобство (как чай!)</li>
-        <li>Порционность</li>
-        <li>Без гущи</li>
-        <li>Медитативный процесс (медленное заваривание)</li>
-      </ul>
-      
-      <p><strong>Минусы:</strong></p>
-      <ul>
-        <li>Кофе лучше экстрагируется под давлением или в турке</li>
-        <li>Вкус мягче, чем эспрессо</li>
-      </ul>
-      
-      <p><strong>Но эксперимент интересный!**</p>
-      
-      <h3>Пастила со вкусом алкоголя 🍷</h3>
-      
-      <p>Белёвская пастила (1888, Тульская область) + алкогольные ароматизаторы (коньяк, ром, ликёр).</p>
-      
-      <p>**Взрослый вкус без опьянения!** Смакуй как дорогой коньяк! 🥃</p>
-      
-      <h3>Задание</h3>
-      <ol>
-        <li>Завари кофе-пакетик **медленно** (3-5 минут, как чай!)</li>
-        <li>Подумай о **Thomas Sullivan** и его случайном изобретении</li>
-        <li>Выпей, сравни с обычным кофе</li>
-        <li>Съешь пастилу</li>
-        <li>**Чат:** "Кофе как чай — спасибо случайности 1908 года! ☕🏮"</li>
-      </ol>
-      
-      <p><strong>Музыка:</strong> <a href="https://www.youtube.com/results?search_query=jazz+lounge" target="_blank">Jazz Lounge</a></p>
-*/
+    `},{day:29,date:"2026-01-17",tanya_gift:"Иисус любит тебя",zebra_gift:"Эфиопия Гуджи (х2)",tanya_bonus:"Бразилия Фенси",zebra_bonus:"Бразилия Фенси (х2)",title:"День 25",tanya_message:"<p>Подарок: Иисус любит тебя</p><p>Бонус: Бразилия Фенси</p>",zebra_message:"<p>Подарок: Эфиопия Гуджи (х2)</p><p>Бонус: Бразилия Фенси (х2)</p>"},{day:30,date:"2026-01-18",tanya_gift:"Иисус любит тебя",zebra_gift:"Эфиопия Гуджи (х2)",tanya_bonus:"Бразилия Фенси",zebra_bonus:"Бразилия Фенси (х2)",title:"День 25",tanya_message:"<p>Подарок: Иисус любит тебя</p><p>Бонус: Бразилия Фенси</p>",zebra_message:"<p>Подарок: Эфиопия Гуджи (х2)</p><p>Бонус: Бразилия Фенси (х2)</p>"},{day:31,date:"2026-01-19",tanya_gift:"Иисус любит тебя",zebra_gift:"Эфиопия Гуджи (х2)",tanya_bonus:"Бразилия Фенси",zebra_bonus:"Бразилия Фенси (х2)",title:"День 25",tanya_message:"<p>Подарок: Иисус любит тебя</p><p>Бонус: Бразилия Фенси</p>",zebra_message:"<p>Подарок: Эфиопия Гуджи (х2)</p><p>Бонус: Бразилия Фенси (х2)</p>"},{day:32,date:"2026-01-20",tanya_gift:"Иисус любит тебя",zebra_gift:"Эфиопия Гуджи (х2)",tanya_bonus:"Бразилия Фенси",zebra_bonus:"Бразилия Фенси (х2)",title:"День 25",tanya_message:"<p>Подарок: Иисус любит тебя</p><p>Бонус: Бразилия Фенси</p>",zebra_message:"<p>Подарок: Эфиопия Гуджи (х2)</p><p>Бонус: Бразилия Фенси (х2)</p>"}];function Q1({currentDate:v,userName:A}){const[O,p]=wl.useState(()=>qf()),[j,x]=wl.useState(null),Y=E=>{const N=La(E);if($a(N,v)&&(x(E),!O.has(E))){const V=Xm(E);p(V)}},P=()=>{x(null)},_=[...Array.from({length:32},(E,N)=>N+1)].sort((E,N)=>{const V=La(E),yl=La(N),vl=mr(V,v),zl=mr(yl,v),Ul=O.has(E),bl=O.has(N),jl=$a(V,v),ol=$a(yl,v),_l=jl&&!Ul,Ql=ol&&!bl,Sl=vl&&Ul,k=zl&&bl,Rl=!jl,Kl=!ol,Ft=Ul&&!vl&&jl,pt=bl&&!zl&&ol;return _l&&!Ql?-1:!_l&&Ql?1:_l&&Ql?E-N:Sl&&!k?-1:!Sl&&k?1:Rl&&!Kl?-1:!Rl&&Kl?1:Rl&&Kl||Ft&&pt?E-N:0});return d.jsxs(d.Fragment,{children:[d.jsx("div",{className:"calendar-grid",children:_.map(E=>{const N=La(E),V=$a(N,v),yl=O.has(E),vl=mr(N,v);return d.jsx(Wm,{windowNumber:E,isActive:V,isOpened:yl,isExactMatch:vl,onClick:()=>Y(E)},E)})}),j!==null&&(()=>{const E=$1[j-1],N=A==="Tanya"?E.tanya_message:A==="Zebra"?E.zebra_message:"<p>Тут ничего нет.</p> <p>Никаких секретных посланий</p>";return d.jsx(Fm,{windowNumber:j,message:N,onClose:P})})()]})}function Z1(){const[v,A]=wl.useState(!1),O=wl.useRef(null),[p,j]=wl.useState(!1);wl.useEffect(()=>{const Y=localStorage.getItem("musicEnabled");console.debug("[AudioControls] mount - musicPref=",Y),Y==="true"&&(console.debug("[AudioControls] stored preference requests autoplay but user gesture required"),j(!0))},[]),wl.useEffect(()=>{if(!p)return;const Y=()=>{console.debug("[AudioControls] user gesture detected, starting audio"),A(!0),j(!1),window.removeEventListener("pointerdown",Y),window.removeEventListener("keydown",Y)};return window.addEventListener("pointerdown",Y,{once:!0}),window.addEventListener("keydown",Y,{once:!0}),()=>{window.removeEventListener("pointerdown",Y),window.removeEventListener("keydown",Y)}},[p]),wl.useEffect(()=>{if(console.debug("[AudioControls] effect isMusicPlaying=",v,"ref=",O.current),!O.current)return;const Y=O.current;if(v)console.debug("[AudioControls] calling play()"),Y.play().then(()=>console.debug("[AudioControls] play() fulfilled")).catch(P=>{console.error("[AudioControls] Music play failed:",P),P&&P.name==="NotAllowedError"&&(console.debug("[AudioControls] play blocked; awaiting user gesture to resume"),j(!0))});else{console.debug("[AudioControls] calling pause()");try{Y.pause()}catch(P){console.error("[AudioControls] pause() failed:",P)}}},[v]);const x=()=>{const Y=!v;console.debug("[AudioControls] toggleMusic ->",Y),A(Y),localStorage.setItem("musicEnabled",String(Y))};return d.jsxs("div",{className:"audio-controls",children:[d.jsxs("button",{className:`audio-button ${v?"audio-active":""}`,onClick:x,title:"Toggle Christmas Music",children:[v?d.jsx(Bm,{size:20}):d.jsx(Hm,{size:20}),d.jsx(Om,{size:16,className:"audio-icon-secondary"})]}),d.jsx("audio",{ref:O,loop:!0,preload:"auto",src:"audio/Frost_Waltz.mp3",onCanPlay:()=>console.debug("[AudioControls] audio canplay"),onPlay:()=>console.debug("[AudioControls] audio event: play"),onPause:()=>console.debug("[AudioControls] audio event: pause"),onError:Y=>console.error("[AudioControls] audio event: error",Y)})]})}function V1(){return d.jsx("div",{className:"snowfall",children:Array.from({length:100}).map((v,A)=>d.jsx("div",{className:"snowflake",style:{left:`${Math.random()*100}%`,animationDuration:`${Math.random()*8+10}s`,animationDelay:`${Math.random()*8}s`,width:`${Math.random()*6+4}px`,height:`${Math.random()*6+4}px`}},A))})}const k1=()=>new Date;function K1(){const[v,A]=wl.useState(()=>{const x=localStorage.getItem("adventCalendarUser");return x==="Tanya"||x==="Zebra"?x:(localStorage.clear(),null)}),[O,p]=wl.useState(k1),j=x=>{localStorage.clear(),A(x),localStorage.setItem("adventCalendarUser",x)};return wl.useEffect(()=>{(async()=>{try{const P=await(await fetch("https://worldtimeapi.org/api/ip")).json(),U=new Date(P.datetime);p(U)}catch(Y){console.error("Failed to fetch current date:",Y),p(new Date)}})()},[]),d.jsxs("div",{className:"app-container",children:[d.jsx($m,{}),d.jsx(V1,{}),d.jsx(Z1,{}),d.jsxs("div",{className:"content-wrapper",children:[d.jsx(Lm,{userName:v,onUserSelect:j}),d.jsx(Q1,{currentDate:O,userName:v})]})]})}vm.createRoot(document.getElementById("root")).render(d.jsx(wl.StrictMode,{children:d.jsx(K1,{})}));

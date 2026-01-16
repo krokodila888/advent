@@ -216,6 +216,12 @@ import pb2 from '../images/pb2.jpg';
 import pb3 from '../images/pb3.jpg';
 import pb4 from '../images/pb4.jpg';
 import secrets from '../images/secrets.jpg';
+import bomb from '../images/bomb.jpg';
+import bomb1 from '../images/bomb1.jpg';
+import rr from '../images/rr.jpg';
+import nm1 from '../images/nm1.jpg';
+import nm2 from '../images/nm2.jpg';
+import nap1 from '../images/nap1.jpg';
 
 export const images = {
   muerte,
@@ -436,4 +442,10 @@ export const images = {
   pb3,
   pb4,
   secrets,
+  bomb,
+  bomb1,
+  rr,
+  nm1,
+  nm2,
+  nap1,
 };
