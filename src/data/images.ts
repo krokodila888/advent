@@ -208,6 +208,14 @@ import beatles1 from '../images/beatles1.jpg';
 import sweets from '../images/sweets.jpg';
 import bless10 from '../images/bless10.jpg';
 import blessed4 from '../images/blessed4.jpg'
+import blessed12 from '../images/blessed12.jpg';
+import blessed13 from '../images/blessed13.jpg';
+import blessed11 from '../images/blessed11.jpg';
+import pb1 from '../images/pb1.jpg';
+import pb2 from '../images/pb2.jpg';
+import pb3 from '../images/pb3.jpg';
+import pb4 from '../images/pb4.jpg';
+import secrets from '../images/secrets.jpg';
 
 export const images = {
   muerte,
@@ -420,4 +428,12 @@ export const images = {
   beatles1,
   sweets,
   blessed4,
+  blessed12,
+  blessed13,
+  blessed11,
+  pb1,
+  pb2,
+  pb3,
+  pb4,
+  secrets,
 };
