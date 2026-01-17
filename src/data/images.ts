@@ -222,6 +222,15 @@ import rr from '../images/rr.jpg';
 import nm1 from '../images/nm1.jpg';
 import nm2 from '../images/nm2.jpg';
 import nap1 from '../images/nap1.jpg';
+import farm from '../images/farm.jpg';
+import caramel from '../images/caramel.jpg';
+import gvat1 from '../images/gvat1.jpg';
+import gvat2 from '../images/gvat2.jpg';
+import beans from '../images/beans.jpg';
+import beans1 from '../images/beans1.jpg';
+import gvat3 from '../images/gvat3.jpg';
+import gvat4 from '../images/gvat4.jpg';
+import gvat5 from '../images/gvat5.jpg';
 
 export const images = {
   muerte,
@@ -448,4 +457,13 @@ export const images = {
   nm1,
   nm2,
   nap1,
+  farm,
+  caramel,
+  gvat1,
+  gvat2,
+  beans,
+  beans1,
+  gvat3,
+  gvat4,
+  gvat5,
 };
