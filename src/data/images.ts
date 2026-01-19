@@ -231,6 +231,7 @@ import beans1 from '../images/beans1.jpg';
 import gvat3 from '../images/gvat3.jpg';
 import gvat4 from '../images/gvat4.jpg';
 import gvat5 from '../images/gvat5.jpg';
+import blessed15 from '../images/blessed15.jpg';
 
 export const images = {
   muerte,
@@ -466,4 +467,5 @@ export const images = {
   gvat3,
   gvat4,
   gvat5,
+  blessed15,
 };
