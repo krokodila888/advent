@@ -40,7 +40,7 @@ export function Calendar({ currentDate, userName }: CalendarProps) {
   // 2. Today's window (if opened) - special position for easy access
   // 3. Unavailable windows (chronological)
   // 4. Other opened windows (chronological)
-  const windowNumbers = Array.from({ length: 32 }, (_, i) => i + 1);
+  const windowNumbers = Array.from({ length: 38 }, (_, i) => i + 1);
   const sortedWindows = [...windowNumbers].sort((a, b) => {
     const aDate = getWindowDate(a);
     const bDate = getWindowDate(b);

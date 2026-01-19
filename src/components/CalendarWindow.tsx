@@ -43,6 +43,14 @@ const windowSizes = [
   'window-small',
   'window-medium',
   'window-large',
+  'window-small',
+  'window-medium',
+  'window-medium',
+  'window-large',
+  'window-small',
+  'window-medium',
+  'window-large',
+  'window-small',
 ];
 
 const windowShapes = [
@@ -76,6 +84,14 @@ const windowShapes = [
   'window-rect',
   'window-tall',
   'window-rect',
+  'window-square',
+  'window-tall',
+  'window-rect',
+  'window-square',
+  'window-tall',
+  'window-rect',
+  'window-square',
+  'window-tall',
   'window-square',
   'window-tall',
 ];
@@ -114,6 +130,14 @@ const elementTypes = [
   'window',
   'door',
   'window',
+  'door',
+  'door',
+  'window',
+  'door',
+  'window',
+  'door',
+  'door',
+  'window',
 ];
 
 const doorDesigns = [
@@ -128,7 +152,9 @@ const doorDesigns = [
   { type: 'door-double', wood: 'aged', handle: 'pinecone', hasKeyhole: true, frame: 'carved' },
   { type: 'door-rect', wood: 'oak', handle: 'fantasy', hasKeyhole: false, frame: 'simple' },
   { type: 'door-arched', wood: 'pine', handle: 'brass-dot', hasKeyhole: true, frame: 'molding' },
-  { type: 'door-double', wood: 'aged', handle: 'ring', hasKeyhole: false, frame: 'carved' },
+  { type: 'door-double', wood: 'aged', handle: 'pinecone', hasKeyhole: true, frame: 'carved' },
+  { type: 'door-arched', wood: 'pine', handle: 'brass-dot', hasKeyhole: false, frame: 'simple' },
+  
 ];
 
 const windowDesigns = [
@@ -145,6 +171,8 @@ const windowDesigns = [
   { shape: 'hexagonal', panes: 0, glass: 'stained', hasPlant: true, hasSill: true },
   { shape: 'square', panes: 4, glass: 'frosted', hasPlant: false, hasSill: true },
   { shape: 'arched', panes: 6, glass: 'cracked', hasPlant: false, hasSill: true },
+  { shape: 'circular', panes: 4, glass: 'cracked', hasPlant: false, hasSill: false },
+  { shape: 'circular', panes: 0, glass: 'frosted', hasPlant: true, hasSill: true },
 ];
 
 const doorDecorations = [
@@ -159,6 +187,9 @@ const doorDecorations = [
   'none',
   'bow',
   'wreath',
+  'holly',
+  'wreath',
+  'bow',
   'holly',
 ];
 const windowDecorations = [
@@ -175,6 +206,11 @@ const windowDecorations = [
   'lights',
   'candle',
   'holly',
+  'none',
+  'lights',
+  'candle',
+  'holly',
+  'none',
 ];
 
 const renderHandle = (handleType: string) => {
@@ -325,7 +361,7 @@ export function CalendarWindow({
       : isActive && isExactMatch
         ? 'window-glow-intense'
         : '';
-  const roundSet = new Set([11, 6, 12, 16, 25, 30]);
+  const roundSet = new Set([11, 6, 12, 16, 25, 30, 33, 36, 37]);
   const isRound = roundSet.has(windowNumber);
   const appliedShapeClass = isRound ? 'window-round' : shapeClass;
   // Determine whether this slot is a door or window (layout from CalendarWindow1)
