@@ -232,6 +232,10 @@ import gvat3 from '../images/gvat3.jpg';
 import gvat4 from '../images/gvat4.jpg';
 import gvat5 from '../images/gvat5.jpg';
 import blessed15 from '../images/blessed15.jpg';
+import kenia from '../images/kenia.jpg';
+import zebra1 from '../images/zebra1.jpg';
+import zebra2 from '../images/zebra2.jpg';
+import zebra3 from '../images/zebra3.jpg';
 
 export const images = {
   muerte,
@@ -468,4 +472,8 @@ export const images = {
   gvat4,
   gvat5,
   blessed15,
+  kenia,
+  zebra1,
+  zebra2,
+  zebra3,
 };
