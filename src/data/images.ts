@@ -236,6 +236,9 @@ import kenia from '../images/kenia.jpg';
 import zebra1 from '../images/zebra1.jpg';
 import zebra2 from '../images/zebra2.jpg';
 import zebra3 from '../images/zebra3.jpg';
+import meme10 from '../images/meme10.jpg';
+import anime from '../images/anime.jpg';
+import cats from '../images/cats.jpg';
 
 export const images = {
   muerte,
@@ -476,4 +479,7 @@ export const images = {
   zebra1,
   zebra2,
   zebra3,
+  meme10,
+  anime,
+  cats,
 };
