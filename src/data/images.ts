@@ -239,6 +239,10 @@ import zebra3 from '../images/zebra3.jpg';
 import meme10 from '../images/meme10.jpg';
 import anime from '../images/anime.jpg';
 import cats from '../images/cats.jpg';
+import pumpkin1 from '../images/pumpkin1.jpg';
+import pumpkin2 from '../images/pumpkin2.jpg';
+import pumpkin3 from '../images/pumpkin3.jpg';
+import pumpkin4 from '../images/pumpkin4.png';
 
 export const images = {
   muerte,
@@ -482,4 +486,8 @@ export const images = {
   meme10,
   anime,
   cats,
+  pumpkin1,
+  pumpkin2,
+  pumpkin3,
+  pumpkin4,
 };
