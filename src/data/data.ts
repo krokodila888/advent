@@ -6273,6 +6273,100 @@ export const windowMessages = [
 
       <img src="${images.pumpkin3}" />
       <p>Бонусом там кофейные духи (кажется, ты стала ненавидеть запахи чуть меньше в последнее время)</p>
+    `
+  },
+  {
+    day: 35,
+    date: '2026-01-23',
+    tanya_gift: 'Какой-то приятный Вкусвилл',
+    zebra_gift: 'Бэггинс декаф',
+    tanya_bonus: 'Пряник на чашку',
+    zebra_bonus: 'Пряник на чашку',
+    title: 'Хоббиты, кофе и литературные споры',
+    tanya_message: `
+      <p>Кажется, у вас сегодня какой-то симпатичный Вкусвилловский дрип - все ради пряника на чашку.</p>
+      <p>Так что вот вам еще один ОТЛИЧНЫЙ ХРИСТИАНСКЙ ГАЙД!</p>
+      <img src="${images.blessParty}" />
+      <h3>5 Essential Steps to Host a Coffee Party for Your Bible Study Group ☕✝️</h3>
+
+<p>There's something special about pairing faith with coffee. Hosting a Bible study coffee party creates a warm and welcoming space for fellowship, conversation, and reflection.</p>
+
+<p>Whether you're planning a simple gathering or a full Bible theme party, these five essential steps will help you create an experience that nourishes both the soul and the senses.</p>
+
+<h4>1. Choose the Right Setting</h4>
+<p>You don't need a big house or fancy furniture for your coffee party... just a welcoming atmosphere. A kitchen table, cozy living room corner, or even a shaded porch works beautifully. Think comfortable and calm, not perfect.</p>
+<p><strong>Hosting Tip:</strong> Set out enough chairs, soft lighting, and maybe a few cozy throw blankets. Let the space feel like home.</p>
+<p><em>"Peace I leave with you; my peace I give you."</em> — John 14:27</p>
+
+<h4>2. Set the Tone with Invitations and Intentions</h4>
+<p>Send a friendly message that invites people into something more than a coffee party for a study... it's a time for rest, encouragement, and growing closer to Jesus. Be clear about the time, location, and what to bring (like a Bible or notebook).</p>
+<p><strong>Hosting Tip:</strong> Include a thoughtful phrase like: <em>"Join us for coffee, connection, and Christ."</em></p>
+<p><em>"Therefore encourage one another and build each other up."</em> — 1 Thessalonians 5:11</p>
+
+<h4>3. Create a Simple and Inviting Coffee Setup</h4>
+<p>A warm, welcoming coffee bar makes everyone feel relaxed. Set out a pot of brewed coffee, creamers, syrups, and mugs (even mix-and-match ones work!).</p>
+<p>You can have some tea or cocoa at your coffee party for variety. Bonus: include a card with a Bible verse near the coffee pot!</p>
+<p><strong>Hosting Tip:</strong> Use this time to talk, laugh, and ease into deeper conversation before starting the study.</p>
+
+<h4>4. Plan a Flexible Bible Study Flow</h4>
+<p>Decide ahead if you'll read from a devotional, go through a Bible passage, or focus on discussion and prayer. Keep your coffee party flexible and Spirit-led. Don't worry about "leading" perfectly... just guide with grace.</p>
+<p><strong>Hosting Tip:</strong> Allow time for check-ins, a short reading or discussion, and group prayer.</p>
+<p><em>"For where two or three gather in my name, there am I with them."</em> — Matthew 18:20</p>
+
+<h4>5. Add Meaningful Touches for Lasting Impact</h4>
+<p>A small extra... like a take-home Bible verse card, prayer journal page, or handwritten note... can leave a lasting impression. You can also offer printables to use during the coffee party and Bible study, especially those that match the theme like peace, patience, or purpose.</p>
+<p><em>"Share with the Lord's people who are in need. Practice hospitality."</em> — Romans 12:13</p>
+
+<h3>Conclusion</h3>
+<p>Hosting a Bible study coffee party is less about presentation and more about presence... yours and God's. By creating a warm, relaxed environment and keeping Christ at the center, you're offering your friends more than coffee... you're offering comfort, truth, and love.</p>
+
+<p>It's okay to start small. You'll grow into it. And just like a slow drip of coffee, the blessings will flow in their own time. ☕✨</p>
+
+<p><strong>Source (чтобы вы не думали, что я это все придумала):</strong> <a href="https://coffeeandchristshop.com/blogs/coffee/coffee-party-for-bible-study" target="_blank">Coffee and Christ Shop</a></p>
+    
+    `,
+    
+    zebra_message: `
+      <p>Кажется, у тебя сегодня дубль Бэггинс кофе - все ради пряника на чашку.</p>
+      <p>Дай мне знать, если захочешь послушить те крутанские лекции по Властелину Колец.</p>
+      <p>Так что вот еще один ОТЛИЧНЫЙ ХРИСТИАНСКЙ ГАЙД!</p>
+      <img src="${images.blessParty}" />
+      <h3>5 Essential Steps to Host a Coffee Party for Your Bible Study Group ☕✝️</h3>
+
+<p>There's something special about pairing faith with coffee. Hosting a Bible study coffee party creates a warm and welcoming space for fellowship, conversation, and reflection.</p>
+
+<p>Whether you're planning a simple gathering or a full Bible theme party, these five essential steps will help you create an experience that nourishes both the soul and the senses.</p>
+
+<h4>1. Choose the Right Setting</h4>
+<p>You don't need a big house or fancy furniture for your coffee party... just a welcoming atmosphere. A kitchen table, cozy living room corner, or even a shaded porch works beautifully. Think comfortable and calm, not perfect.</p>
+<p><strong>Hosting Tip:</strong> Set out enough chairs, soft lighting, and maybe a few cozy throw blankets. Let the space feel like home.</p>
+<p><em>"Peace I leave with you; my peace I give you."</em> — John 14:27</p>
+
+<h4>2. Set the Tone with Invitations and Intentions</h4>
+<p>Send a friendly message that invites people into something more than a coffee party for a study... it's a time for rest, encouragement, and growing closer to Jesus. Be clear about the time, location, and what to bring (like a Bible or notebook).</p>
+<p><strong>Hosting Tip:</strong> Include a thoughtful phrase like: <em>"Join us for coffee, connection, and Christ."</em></p>
+<p><em>"Therefore encourage one another and build each other up."</em> — 1 Thessalonians 5:11</p>
+
+<h4>3. Create a Simple and Inviting Coffee Setup</h4>
+<p>A warm, welcoming coffee bar makes everyone feel relaxed. Set out a pot of brewed coffee, creamers, syrups, and mugs (even mix-and-match ones work!).</p>
+<p>You can have some tea or cocoa at your coffee party for variety. Bonus: include a card with a Bible verse near the coffee pot!</p>
+<p><strong>Hosting Tip:</strong> Use this time to talk, laugh, and ease into deeper conversation before starting the study.</p>
+
+<h4>4. Plan a Flexible Bible Study Flow</h4>
+<p>Decide ahead if you'll read from a devotional, go through a Bible passage, or focus on discussion and prayer. Keep your coffee party flexible and Spirit-led. Don't worry about "leading" perfectly... just guide with grace.</p>
+<p><strong>Hosting Tip:</strong> Allow time for check-ins, a short reading or discussion, and group prayer.</p>
+<p><em>"For where two or three gather in my name, there am I with them."</em> — Matthew 18:20</p>
+
+<h4>5. Add Meaningful Touches for Lasting Impact</h4>
+<p>A small extra... like a take-home Bible verse card, prayer journal page, or handwritten note... can leave a lasting impression. You can also offer printables to use during the coffee party and Bible study, especially those that match the theme like peace, patience, or purpose.</p>
+<p><em>"Share with the Lord's people who are in need. Practice hospitality."</em> — Romans 12:13</p>
+
+<h3>Conclusion</h3>
+<p>Hosting a Bible study coffee party is less about presentation and more about presence... yours and God's. By creating a warm, relaxed environment and keeping Christ at the center, you're offering your friends more than coffee... you're offering comfort, truth, and love.</p>
+
+<p>It's okay to start small. You'll grow into it. And just like a slow drip of coffee, the blessings will flow in their own time. ☕✨</p>
+
+<p><strong>Source (чтобы вы не думали, что я это все придумала):</strong> <a href="https://coffeeandchristshop.com/blogs/coffee/coffee-party-for-bible-study" target="_blank">Coffee and Christ Shop</a></p>
     `,
     }
 ];

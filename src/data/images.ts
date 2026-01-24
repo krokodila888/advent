@@ -243,6 +243,7 @@ import pumpkin1 from '../images/pumpkin1.jpg';
 import pumpkin2 from '../images/pumpkin2.jpg';
 import pumpkin3 from '../images/pumpkin3.jpg';
 import pumpkin4 from '../images/pumpkin4.png';
+import blessParty from '../images/blessParty.jpg';
 
 export const images = {
   muerte,
@@ -490,4 +491,5 @@ export const images = {
   pumpkin2,
   pumpkin3,
   pumpkin4,
+  blessParty,
 };
