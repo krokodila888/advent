@@ -244,6 +244,9 @@ import pumpkin2 from '../images/pumpkin2.jpg';
 import pumpkin3 from '../images/pumpkin3.jpg';
 import pumpkin4 from '../images/pumpkin4.png';
 import blessParty from '../images/blessParty.jpg';
+import pine from '../images/pine.jpg';
+import pine1 from '../images/pine1.jpg';
+import pine2 from '../images/pine2.jpg';
 
 export const images = {
   muerte,
@@ -492,4 +495,7 @@ export const images = {
   pumpkin3,
   pumpkin4,
   blessParty,
+  pine,
+  pine1,
+  pine2,
 };
