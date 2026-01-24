@@ -6285,7 +6285,8 @@ export const windowMessages = [
     title: 'Хоббиты, кофе и литературные споры',
     tanya_message: `
       <p>Кажется, у вас сегодня какой-то симпатичный Вкусвилловский дрип - все ради пряника на чашку.</p>
-      <p>Так что вот вам еще один ОТЛИЧНЫЙ ХРИСТИАНСКЙ ГАЙД!</p>
+      <p>Но какого-то исключительного текста у меня нет, так что вот еще один ОТЛИЧНЫЙ ХРИСТИАНСКЙ ГАЙД!</p>
+      <p>Если ваша вечеринка не похожа на эту...</p>
       <img src="${images.blessParty}" />
       <h3>5 Essential Steps to Host a Coffee Party for Your Bible Study Group ☕✝️</h3>
 
@@ -6302,7 +6303,7 @@ export const windowMessages = [
 <p>Send a friendly message that invites people into something more than a coffee party for a study... it's a time for rest, encouragement, and growing closer to Jesus. Be clear about the time, location, and what to bring (like a Bible or notebook).</p>
 <p><strong>Hosting Tip:</strong> Include a thoughtful phrase like: <em>"Join us for coffee, connection, and Christ."</em></p>
 <p><em>"Therefore encourage one another and build each other up."</em> — 1 Thessalonians 5:11</p>
-
+<img src="${images.bless7}" />
 <h4>3. Create a Simple and Inviting Coffee Setup</h4>
 <p>A warm, welcoming coffee bar makes everyone feel relaxed. Set out a pot of brewed coffee, creamers, syrups, and mugs (even mix-and-match ones work!).</p>
 <p>You can have some tea or cocoa at your coffee party for variety. Bonus: include a card with a Bible verse near the coffee pot!</p>
@@ -6323,13 +6324,15 @@ export const windowMessages = [
 <p>It's okay to start small. You'll grow into it. And just like a slow drip of coffee, the blessings will flow in their own time. ☕✨</p>
 
 <p><strong>Source (чтобы вы не думали, что я это все придумала):</strong> <a href="https://coffeeandchristshop.com/blogs/coffee/coffee-party-for-bible-study" target="_blank">Coffee and Christ Shop</a></p>
+<img src="${images.blessed5}" />
     
     `,
-    
+
     zebra_message: `
       <p>Кажется, у тебя сегодня дубль Бэггинс кофе - все ради пряника на чашку.</p>
       <p>Дай мне знать, если захочешь послушить те крутанские лекции по Властелину Колец.</p>
-      <p>Так что вот еще один ОТЛИЧНЫЙ ХРИСТИАНСКЙ ГАЙД!</p>
+      <p>Но какого-то исключительного текста у меня нет, так что вот еще один ОТЛИЧНЫЙ ХРИСТИАНСКЙ ГАЙД!</p>
+      <p>Если ваша вечеринка не похожа на эту...</p>
       <img src="${images.blessParty}" />
       <h3>5 Essential Steps to Host a Coffee Party for Your Bible Study Group ☕✝️</h3>
 
@@ -6346,7 +6349,7 @@ export const windowMessages = [
 <p>Send a friendly message that invites people into something more than a coffee party for a study... it's a time for rest, encouragement, and growing closer to Jesus. Be clear about the time, location, and what to bring (like a Bible or notebook).</p>
 <p><strong>Hosting Tip:</strong> Include a thoughtful phrase like: <em>"Join us for coffee, connection, and Christ."</em></p>
 <p><em>"Therefore encourage one another and build each other up."</em> — 1 Thessalonians 5:11</p>
-
+<img src="${images.bless7}" />
 <h4>3. Create a Simple and Inviting Coffee Setup</h4>
 <p>A warm, welcoming coffee bar makes everyone feel relaxed. Set out a pot of brewed coffee, creamers, syrups, and mugs (even mix-and-match ones work!).</p>
 <p>You can have some tea or cocoa at your coffee party for variety. Bonus: include a card with a Bible verse near the coffee pot!</p>
@@ -6363,10 +6366,11 @@ export const windowMessages = [
 
 <h3>Conclusion</h3>
 <p>Hosting a Bible study coffee party is less about presentation and more about presence... yours and God's. By creating a warm, relaxed environment and keeping Christ at the center, you're offering your friends more than coffee... you're offering comfort, truth, and love.</p>
-
+<img src="${images.bless9}" />
 <p>It's okay to start small. You'll grow into it. And just like a slow drip of coffee, the blessings will flow in their own time. ☕✨</p>
 
 <p><strong>Source (чтобы вы не думали, что я это все придумала):</strong> <a href="https://coffeeandchristshop.com/blogs/coffee/coffee-party-for-bible-study" target="_blank">Coffee and Christ Shop</a></p>
+<img src="${images.blessed5}" />
     `,
     }
 ];
